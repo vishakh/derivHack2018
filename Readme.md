@@ -5,10 +5,10 @@ The following design address the adoption curve of a derivaties ledger in a new 
 A trusted messaging service and a log of events. A store of Provenance.  A standardization layer, a store of metadata. Access Control Layer.
 
 * Layer 1 - A Standard Event Interpretation layer
-An event interepretation layer that provides a transparent set of state transfer functions.  The design of this layer is setup to drive the adpotion curve.
+An event interepretation layer that provides a transparent set of state transfer functions (which are also persisted on a DLT platform).  The design of this layer is setup to drive the adpotion curve.
 
     * Hack 1 - A standard event store with event versioning. (This is a well solved problem and can be either delegated to the DLT of choice).
-        * Goals - All market participants can consume and produce their events into Layer 0.  All interactions with Layer 0 are immutable and the DTL of choice or some other subsystem guarantees it manages a WAL of all messages.
+        * Goals - All market participants can consume and produce their events into Layer 0.  All interactions with Layer 0 are immutable and the DLT of choice or some other subsystem guarantees it manages a WAL of all messages.
 
     * Hack 2 - A event transition store. 
         * Goals - Support on-chain and off-chain representations of event transitions.

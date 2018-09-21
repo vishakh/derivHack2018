@@ -1,0 +1,7 @@
+@startuml
+
+    class PassThroughValidator [[PassThroughValidator.html]] {
+        +validate(PassThrough): ValidationResult<PassThrough>
+    }
+
+@enduml

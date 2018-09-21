@@ -1,0 +1,9 @@
+@startuml
+
+    class DateList.DateListBuilder [[DateList.DateListBuilder.html]] {
+        +getDate(): List<LocalDate>
+        +addDate(LocalDate): DateList.DateListBuilder
+        +build(): DateList
+    }
+
+@enduml

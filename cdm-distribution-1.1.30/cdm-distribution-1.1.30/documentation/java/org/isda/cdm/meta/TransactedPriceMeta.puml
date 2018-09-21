@@ -1,0 +1,12 @@
+@startuml
+
+    class TransactedPriceMeta [[TransactedPriceMeta.html]] {
+        +dataRules(): List<Validator<TransactedPrice>>
+        +choiceRuleValidators(): List<Validator<TransactedPrice>>
+        +getOutMappings(): Multimap<String, OutMapping<TransactedPrice, ?>>
+        +getQualifyFunctions(): List<Function<TransactedPrice, QualifyResult>>
+        +validator(): Validator<TransactedPrice>
+        +onlyExistsValidator(): ValidatorWithArg<TransactedPrice, String>
+    }
+
+@enduml

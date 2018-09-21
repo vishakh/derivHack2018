@@ -1,0 +1,19 @@
+@startuml
+
+    class Bond.BondBuilder [[Bond.BondBuilder.html]] {
+        +getDayCountFraction(): DayCountFractionEnum
+        +getDayCountFractionScheme(): String
+        +getIssuanceFaceAmount(): BigDecimal
+        +getParValue(): BigDecimal
+        +getPaymentFrequency(): Period.PeriodBuilder
+        +getOrCreatePaymentFrequency(): Period.PeriodBuilder
+        +setDayCountFraction(DayCountFractionEnum): Bond.BondBuilder
+        +setDayCountFractionScheme(String): Bond.BondBuilder
+        +setIssuanceFaceAmount(BigDecimal): Bond.BondBuilder
+        +setParValue(BigDecimal): Bond.BondBuilder
+        +setPaymentFrequency(Period): Bond.BondBuilder
+        +setPaymentFrequencyBuilder(Period.PeriodBuilder): Bond.BondBuilder
+        +build(): Bond
+    }
+
+@enduml

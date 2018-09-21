@@ -1,0 +1,7 @@
+@startuml
+
+    class AdditionalFixedPaymentsMortgagesDataRule [[AdditionalFixedPaymentsMortgagesDataRule.html]] {
+        +validate(Contract): ValidationResult<Contract>
+    }
+
+@enduml

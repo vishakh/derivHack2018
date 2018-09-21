@@ -1,0 +1,17 @@
+@startuml
+
+    class StubPeriod.StubPeriodBuilder [[StubPeriod.StubPeriodBuilder.html]] {
+        +getCalculationPeriodDatesReference(): String
+        +getFinalStub(): StubValue.StubValueBuilder
+        +getOrCreateFinalStub(): StubValue.StubValueBuilder
+        +getInitialStub(): StubValue.StubValueBuilder
+        +getOrCreateInitialStub(): StubValue.StubValueBuilder
+        +setCalculationPeriodDatesReference(String): StubPeriod.StubPeriodBuilder
+        +setFinalStub(StubValue): StubPeriod.StubPeriodBuilder
+        +setFinalStubBuilder(StubValue.StubValueBuilder): StubPeriod.StubPeriodBuilder
+        +setInitialStub(StubValue): StubPeriod.StubPeriodBuilder
+        +setInitialStubBuilder(StubValue.StubValueBuilder): StubPeriod.StubPeriodBuilder
+        +build(): StubPeriod
+    }
+
+@enduml

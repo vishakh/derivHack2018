@@ -1,0 +1,13 @@
+@startuml
+
+    enum TimeUnitEnum [[TimeUnitEnum.html]] {
+        {static} +SECOND
+        {static} +MINUTE
+        {static} +HOUR
+        {static} +DAY
+        {static} +WEEK
+        {static} +MONTH
+        {static} +YEAR
+    }
+
+@enduml

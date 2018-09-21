@@ -1,0 +1,7 @@
+@startuml
+
+    class StubValueValidator [[StubValueValidator.html]] {
+        +validate(StubValue): ValidationResult<StubValue>
+    }
+
+@enduml

@@ -1,0 +1,198 @@
+{
+  "effectiveDate" : "2018-05-25",
+  "eventDate" : "2018-05-21",
+  "eventEffect" : {
+    "contract" : [ "1b7488a5" ],
+    "contractReference" : [ "c40ab5f7" ],
+    "effectedContract" : [ "9a3230e2" ],
+    "effectedEvent" : "a82a79c7"
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "NOV-12345"
+    },
+    "version" : 1
+  },
+  "eventQualifier" : "Novation",
+  "intent" : "NOVATION",
+  "party" : [ {
+    "id" : "p1",
+    "partyId" : [ "Party1" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "p2",
+    "partyId" : [ "Party2" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "p3",
+    "partyId" : [ "Party3" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "newTrade" : [ {
+      "contract" : {
+        "contractIdentifier" : [ {
+          "identifierValue" : {
+            "identifier" : "CDX-5678234",
+            "identifierScheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+          },
+          "partyReference" : "p1"
+        } ],
+        "contractualProduct" : {
+          "economicTerms" : {
+            "payout" : {
+              "creditDefaultPayout" : {
+                "generalTerms" : {
+                  "buyerSeller" : {
+                    "buyerPartyReference" : "p1",
+                    "sellerPartyReference" : "p3"
+                  },
+                  "indexReferenceInformation" : {
+                    "indexAnnexDate" : "2004-07-06",
+                    "indexAnnexSource" : "PUBLISHER",
+                    "indexName" : "Dow Jones CDX NA IG.2",
+                    "indexSeries" : 2
+                  }
+                },
+                "protectionTerms" : {
+                  "notionalAmount" : {
+                    "amount" : 25000000,
+                    "currency" : "USD"
+                  }
+                },
+                "rosettaKeyValue" : "c8941696"
+              },
+              "interestRatePayout" : [ {
+                "calculationPeriodDates" : {
+                  "effectiveDate" : {
+                    "adjustableDate" : {
+                      "unadjustedDate" : "2018-05-25"
+                    }
+                  },
+                  "terminationDate" : {
+                    "unadjustedDate" : "2020-03-20"
+                  }
+                },
+                "interestRate" : {
+                  "fixedRate" : {
+                    "initialValue" : 0.0060
+                  }
+                },
+                "payerReceiver" : {
+                  "payerPartyReference" : "p1",
+                  "receiverPartyReference" : "p3"
+                },
+                "rosettaKeyValue" : "6b75823b"
+              } ]
+            },
+            "rosettaKeyValue" : "f7238e3b"
+          }
+        },
+        "documentation" : {
+          "masterConfirmation" : {
+            "masterConfirmationDate" : "2004-10-18",
+            "masterConfirmationType" : "DJ_CDX_NA"
+          }
+        },
+        "tradeDate" : {
+          "date" : "2018-05-21"
+        },
+        "rosettaKey" : "1b7488a5"
+      }
+    } ],
+    "quantityChange" : [ {
+      "after" : {
+        "contractReference" : [ {
+          "identifierValue" : {
+            "identifier" : "CDX1234",
+            "identifierScheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+          },
+          "partyReference" : "p1",
+          "state" : "NOVATED",
+          "rosettaKey" : "c40ab5f7"
+        } ]
+      },
+      "before" : {
+        "contract" : [ {
+          "contractIdentifier" : [ {
+            "identifierValue" : {
+              "identifier" : "CDX1234",
+              "identifierScheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+            },
+            "partyReference" : "p1"
+          } ],
+          "contractualProduct" : {
+            "economicTerms" : {
+              "payout" : {
+                "creditDefaultPayout" : {
+                  "generalTerms" : {
+                    "buyerSeller" : {
+                      "buyerPartyReference" : "p1",
+                      "sellerPartyReference" : "p2"
+                    },
+                    "indexReferenceInformation" : {
+                      "indexAnnexDate" : "2004-07-06",
+                      "indexAnnexSource" : "PUBLISHER",
+                      "indexName" : "Dow Jones CDX NA IG.2",
+                      "indexSeries" : 2
+                    }
+                  },
+                  "protectionTerms" : {
+                    "notionalAmount" : {
+                      "amount" : 25000000,
+                      "currency" : "USD"
+                    }
+                  },
+                  "rosettaKeyValue" : "c8941696"
+                },
+                "interestRatePayout" : [ {
+                  "calculationPeriodDates" : {
+                    "effectiveDate" : {
+                      "adjustableDate" : {
+                        "unadjustedDate" : "2017-03-23"
+                      }
+                    },
+                    "terminationDate" : {
+                      "unadjustedDate" : "2020-03-20"
+                    }
+                  },
+                  "interestRate" : {
+                    "fixedRate" : {
+                      "initialValue" : 0.0060
+                    }
+                  },
+                  "payerReceiver" : {
+                    "payerPartyReference" : "p1",
+                    "receiverPartyReference" : "p2"
+                  },
+                  "rosettaKeyValue" : "edb7c57d"
+                } ]
+              },
+              "rosettaKeyValue" : "bd29b339"
+            }
+          },
+          "documentation" : {
+            "masterConfirmation" : {
+              "masterConfirmationDate" : "2004-10-18",
+              "masterConfirmationType" : "DJ_CDX_NA"
+            }
+          },
+          "tradeDate" : {
+            "date" : "2017-03-20"
+          },
+          "rosettaKey" : "9a3230e2"
+        } ]
+      },
+      "change" : [ {
+        "notionalAmount" : {
+          "amount" : -25000000,
+          "currency" : "USD"
+        }
+      } ]
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2018-05-21T18:13:51"
+  },
+  "rosettaKey" : "a82a79c7"
+}

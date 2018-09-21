@@ -1,0 +1,7 @@
+@startuml
+
+    class EventEffectValidator [[EventEffectValidator.html]] {
+        +validate(EventEffect): ValidationResult<EventEffect>
+    }
+
+@enduml

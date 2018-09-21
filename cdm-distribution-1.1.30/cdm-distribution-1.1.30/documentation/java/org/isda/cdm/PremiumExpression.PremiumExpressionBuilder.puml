@@ -1,0 +1,15 @@
+@startuml
+
+    class PremiumExpression.PremiumExpressionBuilder [[PremiumExpression.PremiumExpressionBuilder.html]] {
+        +getPercentageOfNotional(): BigDecimal
+        +getPremiumType(): PremiumTypeEnum
+        +getPricePerOption(): Money.MoneyBuilder
+        +getOrCreatePricePerOption(): Money.MoneyBuilder
+        +setPercentageOfNotional(BigDecimal): PremiumExpression.PremiumExpressionBuilder
+        +setPremiumType(PremiumTypeEnum): PremiumExpression.PremiumExpressionBuilder
+        +setPricePerOption(Money): PremiumExpression.PremiumExpressionBuilder
+        +setPricePerOptionBuilder(Money.MoneyBuilder): PremiumExpression.PremiumExpressionBuilder
+        +build(): PremiumExpression
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class BasketName [[BasketName.html]] {
+        +getBasketId(): List<String>
+        +getBasketIdScheme(): String
+        +getBasketName(): String
+        +getBasketNameScheme(): String
+        +toBuilder(): BasketName.BasketNameBuilder
+        {static} +builder(): BasketName.BasketNameBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

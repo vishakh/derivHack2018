@@ -1,0 +1,12 @@
+@startuml
+
+    class ExercisePrimitiveMeta [[ExercisePrimitiveMeta.html]] {
+        +dataRules(): List<Validator<ExercisePrimitive>>
+        +choiceRuleValidators(): List<Validator<ExercisePrimitive>>
+        +getOutMappings(): Multimap<String, OutMapping<ExercisePrimitive, ?>>
+        +getQualifyFunctions(): List<Function<ExercisePrimitive, QualifyResult>>
+        +validator(): Validator<ExercisePrimitive>
+        +onlyExistsValidator(): ValidatorWithArg<ExercisePrimitive, String>
+    }
+
+@enduml

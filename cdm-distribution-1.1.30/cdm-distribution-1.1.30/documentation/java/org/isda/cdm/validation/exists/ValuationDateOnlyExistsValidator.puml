@@ -1,0 +1,7 @@
+@startuml
+
+    class ValuationDateOnlyExistsValidator [[ValuationDateOnlyExistsValidator.html]] {
+        +validate(ValuationDate, String): ValidationResult<ValuationDate>
+    }
+
+@enduml

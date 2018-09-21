@@ -1,0 +1,7 @@
+@startuml
+
+    class AdditionalFixedPaymentsOnlyExistsValidator [[AdditionalFixedPaymentsOnlyExistsValidator.html]] {
+        +validate(AdditionalFixedPayments, String): ValidationResult<AdditionalFixedPayments>
+    }
+
+@enduml

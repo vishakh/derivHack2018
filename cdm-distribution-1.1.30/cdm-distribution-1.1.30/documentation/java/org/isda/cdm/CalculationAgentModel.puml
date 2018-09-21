@@ -1,0 +1,11 @@
+@startuml
+
+    class CalculationAgentModel [[CalculationAgentModel.html]] {
+        +getCalculationAgent(): CalculationAgent
+        +getCalculationAgentBusinessCenter(): BusinessCenterEnum
+        +toBuilder(): CalculationAgentModel.CalculationAgentModelBuilder
+        {static} +builder(): CalculationAgentModel.CalculationAgentModelBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class RoundingOnlyExistsValidator [[RoundingOnlyExistsValidator.html]] {
+        +validate(Rounding, String): ValidationResult<Rounding>
+    }
+
+@enduml

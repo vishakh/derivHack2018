@@ -1,0 +1,7 @@
+@startuml
+
+    class LegalEntityOnlyExistsValidator [[LegalEntityOnlyExistsValidator.html]] {
+        +validate(LegalEntity, String): ValidationResult<LegalEntity>
+    }
+
+@enduml

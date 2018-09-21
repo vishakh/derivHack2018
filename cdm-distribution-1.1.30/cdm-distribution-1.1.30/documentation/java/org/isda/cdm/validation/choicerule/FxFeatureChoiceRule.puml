@@ -1,0 +1,7 @@
+@startuml
+
+    class FxFeatureChoiceRule [[FxFeatureChoiceRule.html]] {
+        +validate(FxFeature): ValidationResult<FxFeature>
+    }
+
+@enduml

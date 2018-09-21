@@ -1,0 +1,19 @@
+@startuml
+
+    class ContractualProduct.ContractualProductBuilder [[ContractualProduct.ContractualProductBuilder.html]] {
+        +getEconomicTerms(): EconomicTerms.EconomicTermsBuilder
+        +getOrCreateEconomicTerms(): EconomicTerms.EconomicTermsBuilder
+        +getProductIdentification(): ProductIdentification.ProductIdentificationBuilder
+        +getOrCreateProductIdentification(): ProductIdentification.ProductIdentificationBuilder
+        +getProductTaxonomy(): List<ProductTaxonomy.ProductTaxonomyBuilder>
+        +getOrCreateProductTaxonomy(int): ProductTaxonomy.ProductTaxonomyBuilder
+        +setEconomicTerms(EconomicTerms): ContractualProduct.ContractualProductBuilder
+        +setEconomicTermsBuilder(EconomicTerms.EconomicTermsBuilder): ContractualProduct.ContractualProductBuilder
+        +setProductIdentification(ProductIdentification): ContractualProduct.ContractualProductBuilder
+        +setProductIdentificationBuilder(ProductIdentification.ProductIdentificationBuilder): ContractualProduct.ContractualProductBuilder
+        +addProductTaxonomy(ProductTaxonomy): ContractualProduct.ContractualProductBuilder
+        +addProductTaxonomyBuilder(ProductTaxonomy.ProductTaxonomyBuilder): ContractualProduct.ContractualProductBuilder
+        +build(): ContractualProduct
+    }
+
+@enduml

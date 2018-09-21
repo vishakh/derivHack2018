@@ -1,0 +1,12 @@
+@startuml
+
+    class PartyContractIdentifierMeta [[PartyContractIdentifierMeta.html]] {
+        +dataRules(): List<Validator<PartyContractIdentifier>>
+        +choiceRuleValidators(): List<Validator<PartyContractIdentifier>>
+        +getOutMappings(): Multimap<String, OutMapping<PartyContractIdentifier, ?>>
+        +getQualifyFunctions(): List<Function<PartyContractIdentifier, QualifyResult>>
+        +validator(): Validator<PartyContractIdentifier>
+        +onlyExistsValidator(): ValidatorWithArg<PartyContractIdentifier, String>
+    }
+
+@enduml

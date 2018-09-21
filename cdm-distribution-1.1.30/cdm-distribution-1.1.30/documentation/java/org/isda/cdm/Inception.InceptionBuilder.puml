@@ -1,0 +1,15 @@
+@startuml
+
+    class Inception.InceptionBuilder [[Inception.InceptionBuilder.html]] {
+        +getAfter(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +getOrCreateAfter(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +getBefore(): List<ContractOrContractReference.ContractOrContractReferenceBuilder>
+        +getOrCreateBefore(int): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +setAfter(ContractOrContractReference): Inception.InceptionBuilder
+        +setAfterBuilder(ContractOrContractReference.ContractOrContractReferenceBuilder): Inception.InceptionBuilder
+        +addBefore(ContractOrContractReference): Inception.InceptionBuilder
+        +addBeforeBuilder(ContractOrContractReference.ContractOrContractReferenceBuilder): Inception.InceptionBuilder
+        +build(): Inception
+    }
+
+@enduml

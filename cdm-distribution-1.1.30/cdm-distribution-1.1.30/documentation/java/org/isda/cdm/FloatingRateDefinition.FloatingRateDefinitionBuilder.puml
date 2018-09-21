@@ -1,0 +1,25 @@
+@startuml
+
+    class FloatingRateDefinition.FloatingRateDefinitionBuilder [[FloatingRateDefinition.FloatingRateDefinitionBuilder.html]] {
+        +getCalculatedRate(): BigDecimal
+        +getCapRate(): List<Strike.StrikeBuilder>
+        +getOrCreateCapRate(int): Strike.StrikeBuilder
+        +getFloatingRateMultiplier(): BigDecimal
+        +getFloorRate(): List<Strike.StrikeBuilder>
+        +getOrCreateFloorRate(int): Strike.StrikeBuilder
+        +getRateObservation(): List<RateObservation.RateObservationBuilder>
+        +getOrCreateRateObservation(int): RateObservation.RateObservationBuilder
+        +getSpread(): BigDecimal
+        +setCalculatedRate(BigDecimal): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        +addCapRate(Strike): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        +addCapRateBuilder(Strike.StrikeBuilder): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        +setFloatingRateMultiplier(BigDecimal): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        +addFloorRate(Strike): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        +addFloorRateBuilder(Strike.StrikeBuilder): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        +addRateObservation(RateObservation): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        +addRateObservationBuilder(RateObservation.RateObservationBuilder): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        +setSpread(BigDecimal): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        +build(): FloatingRateDefinition
+    }
+
+@enduml

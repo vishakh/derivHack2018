@@ -1,0 +1,20 @@
+@startuml
+
+    class OptionCashSettlement [[OptionCashSettlement.html]] {
+        +getCashPriceAlternateMethod(): CashPriceMethod
+        +getCashPriceMethod(): CashPriceMethod
+        +getCashSettlementPaymentDate(): CashSettlementPaymentDate
+        +getCashSettlementValuationDate(): RelativeDateOffset
+        +getCashSettlementValuationTime(): BusinessCenterTime
+        +getCollateralizedCashPriceMethod(): YieldCurveMethod
+        +getCrossCurrencyMethod(): CrossCurrencyMethod
+        +getId(): String
+        +getParYieldCurveAdjustedMethod(): YieldCurveMethod
+        +getParYieldCurveUnadjustedMethod(): YieldCurveMethod
+        +getZeroCouponYieldAdjustedMethod(): YieldCurveMethod
+        +toBuilder(): OptionCashSettlement.OptionCashSettlementBuilder
+        {static} +builder(): OptionCashSettlement.OptionCashSettlementBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

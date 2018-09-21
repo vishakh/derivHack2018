@@ -1,0 +1,15 @@
+@startuml
+
+    class Quanto.QuantoBuilder [[Quanto.QuantoBuilder.html]] {
+        +getFxRate(): List<FxRate.FxRateBuilder>
+        +getOrCreateFxRate(int): FxRate.FxRateBuilder
+        +getFxSpotRateSource(): FxSpotRateSource.FxSpotRateSourceBuilder
+        +getOrCreateFxSpotRateSource(): FxSpotRateSource.FxSpotRateSourceBuilder
+        +addFxRate(FxRate): Quanto.QuantoBuilder
+        +addFxRateBuilder(FxRate.FxRateBuilder): Quanto.QuantoBuilder
+        +setFxSpotRateSource(FxSpotRateSource): Quanto.QuantoBuilder
+        +setFxSpotRateSourceBuilder(FxSpotRateSource.FxSpotRateSourceBuilder): Quanto.QuantoBuilder
+        +build(): Quanto
+    }
+
+@enduml

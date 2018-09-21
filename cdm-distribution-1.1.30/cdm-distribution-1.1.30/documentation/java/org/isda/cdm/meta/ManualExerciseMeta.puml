@@ -1,0 +1,12 @@
+@startuml
+
+    class ManualExerciseMeta [[ManualExerciseMeta.html]] {
+        +dataRules(): List<Validator<ManualExercise>>
+        +choiceRuleValidators(): List<Validator<ManualExercise>>
+        +getOutMappings(): Multimap<String, OutMapping<ManualExercise, ?>>
+        +getQualifyFunctions(): List<Function<ManualExercise, QualifyResult>>
+        +validator(): Validator<ManualExercise>
+        +onlyExistsValidator(): ValidatorWithArg<ManualExercise, String>
+    }
+
+@enduml

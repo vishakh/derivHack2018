@@ -1,0 +1,7 @@
+@startuml
+
+    class AllocationPrimitiveOnlyExistsValidator [[AllocationPrimitiveOnlyExistsValidator.html]] {
+        +validate(AllocationPrimitive, String): ValidationResult<AllocationPrimitive>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class CashSettlementTermsValidator [[CashSettlementTermsValidator.html]] {
+        +validate(CashSettlementTerms): ValidationResult<CashSettlementTerms>
+    }
+
+@enduml

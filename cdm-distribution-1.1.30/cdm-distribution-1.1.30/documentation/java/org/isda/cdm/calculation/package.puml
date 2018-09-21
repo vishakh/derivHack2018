@@ -1,0 +1,123 @@
+@startuml
+
+    namespace org.isda.cdm.calculation {
+
+        class DayCountFractionEnum [[DayCountFractionEnum.html]] {
+            +DayCountFractionEnum(DaysInPeriod, CalculationPeriod)
+            +calculate(InterestRatePayout, DayCountFractionEnum): BigDecimal
+        }
+
+        class org.isda.cdm.calculation.DayCountFractionEnum.ACT_365_FIXED [[DayCountFractionEnum.ACT_365_FIXED.html]] {
+            +ACT_365_FIXED(DaysInPeriod)
+            +calculate(InterestRatePayout): DayCountFractionEnum.CalculationResult
+        }
+
+        class org.isda.cdm.calculation.DayCountFractionEnum.ACT_365_FIXED._Input [[DayCountFractionEnum.ACT_365_FIXED._Input.html]] {
+            +create(InterestRatePayout, DaysInPeriod): DayCountFractionEnum.ACT_365_FIXED._Input
+        }
+
+        class org.isda.cdm.calculation.DayCountFractionEnum.ACT_360 [[DayCountFractionEnum.ACT_360.html]] {
+            +ACT_360(DaysInPeriod)
+            +calculate(InterestRatePayout): DayCountFractionEnum.CalculationResult
+        }
+
+        class org.isda.cdm.calculation.DayCountFractionEnum.ACT_360._Input [[DayCountFractionEnum.ACT_360._Input.html]] {
+            +create(InterestRatePayout, DaysInPeriod): DayCountFractionEnum.ACT_360._Input
+        }
+
+        class org.isda.cdm.calculation.DayCountFractionEnum._30_360 [[DayCountFractionEnum._30_360.html]] {
+            +_30_360(CalculationPeriod)
+            +calculate(InterestRatePayout): DayCountFractionEnum.CalculationResult
+        }
+
+        class org.isda.cdm.calculation.DayCountFractionEnum._30_360._Input [[DayCountFractionEnum._30_360._Input.html]] {
+            +create(InterestRatePayout, CalculationPeriod): DayCountFractionEnum._30_360._Input
+        }
+
+        class org.isda.cdm.calculation.DayCountFractionEnum._30E_360 [[DayCountFractionEnum._30E_360.html]] {
+            +_30E_360(CalculationPeriod)
+            +calculate(InterestRatePayout): DayCountFractionEnum.CalculationResult
+        }
+
+        class org.isda.cdm.calculation.DayCountFractionEnum._30E_360._Input [[DayCountFractionEnum._30E_360._Input.html]] {
+            +create(InterestRatePayout, CalculationPeriod): DayCountFractionEnum._30E_360._Input
+        }
+
+        class org.isda.cdm.calculation.DayCountFractionEnum.CalculationResult [[DayCountFractionEnum.CalculationResult.html]] {
+            +getValue(): BigDecimal
+            +setValue(BigDecimal): DayCountFractionEnum.CalculationResult
+            +getAttributes(): List<IResult.Attribute<?>>
+        }
+
+        class FloatingAmount [[FloatingAmount.html]] {
+            +FloatingAmount(ResolveRateIndex, GetRateSchedule, DaysInPeriod, CalculationPeriod)
+            +calculate(InterestRatePayout): FloatingAmount.CalculationResult
+        }
+
+        class org.isda.cdm.calculation.FloatingAmount._Input [[FloatingAmount._Input.html]] {
+            +create(InterestRatePayout, ResolveRateIndex, GetRateSchedule, DaysInPeriod, CalculationPeriod): FloatingAmount._Input
+        }
+
+        class org.isda.cdm.calculation.FloatingAmount.CalculationResult [[FloatingAmount.CalculationResult.html]] {
+            +getFloatingAmount(): BigDecimal
+            +setFloatingAmount(BigDecimal): FloatingAmount.CalculationResult
+            +getCurrencyAmount(): String
+            +setCurrencyAmount(String): FloatingAmount.CalculationResult
+            +getAttributes(): List<IResult.Attribute<?>>
+        }
+
+        class FixedAmount [[FixedAmount.html]] {
+            +FixedAmount(DaysInPeriod, CalculationPeriod)
+            +calculate(InterestRatePayout): FixedAmount.CalculationResult
+        }
+
+        class org.isda.cdm.calculation.FixedAmount._Input [[FixedAmount._Input.html]] {
+            +create(InterestRatePayout, DaysInPeriod, CalculationPeriod): FixedAmount._Input
+        }
+
+        class org.isda.cdm.calculation.FixedAmount.CalculationResult [[FixedAmount.CalculationResult.html]] {
+            +getFixedAmount(): BigDecimal
+            +setFixedAmount(BigDecimal): FixedAmount.CalculationResult
+            +getCurrencyAmount(): String
+            +setCurrencyAmount(String): FixedAmount.CalculationResult
+            +getAttributes(): List<IResult.Attribute<?>>
+        }
+
+        DayCountFractionEnum +-- org.isda.cdm.calculation.DayCountFractionEnum.ACT_365_FIXED
+
+        org.isda.cdm.calculation.DayCountFractionEnum.ACT_365_FIXED +-- org.isda.cdm.calculation.DayCountFractionEnum.ACT_365_FIXED._Input
+
+        DayCountFractionEnum +-- org.isda.cdm.calculation.DayCountFractionEnum.ACT_360
+
+        org.isda.cdm.calculation.DayCountFractionEnum.ACT_360 +-- org.isda.cdm.calculation.DayCountFractionEnum.ACT_360._Input
+
+        DayCountFractionEnum +-- org.isda.cdm.calculation.DayCountFractionEnum._30_360
+
+        org.isda.cdm.calculation.DayCountFractionEnum._30_360 +-- org.isda.cdm.calculation.DayCountFractionEnum._30_360._Input
+
+        DayCountFractionEnum +-- org.isda.cdm.calculation.DayCountFractionEnum._30E_360
+
+        org.isda.cdm.calculation.DayCountFractionEnum._30E_360 +-- org.isda.cdm.calculation.DayCountFractionEnum._30E_360._Input
+
+        interface com.rosetta.model.lib.functions.IResult {
+            {abstract} +getAttributes(): List<IResult.Attribute<?>>
+        }
+        com.rosetta.model.lib.functions.IResult <|.. org.isda.cdm.calculation.DayCountFractionEnum.CalculationResult
+
+        DayCountFractionEnum +-- org.isda.cdm.calculation.DayCountFractionEnum.CalculationResult
+
+        FloatingAmount +-- org.isda.cdm.calculation.FloatingAmount._Input
+
+        com.rosetta.model.lib.functions.IResult <|.. org.isda.cdm.calculation.FloatingAmount.CalculationResult
+
+        FloatingAmount +-- org.isda.cdm.calculation.FloatingAmount.CalculationResult
+
+        FixedAmount +-- org.isda.cdm.calculation.FixedAmount._Input
+
+        com.rosetta.model.lib.functions.IResult <|.. org.isda.cdm.calculation.FixedAmount.CalculationResult
+
+        FixedAmount +-- org.isda.cdm.calculation.FixedAmount.CalculationResult
+
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class EarlyTerminationEventValidator [[EarlyTerminationEventValidator.html]] {
+        +validate(EarlyTerminationEvent): ValidationResult<EarlyTerminationEvent>
+    }
+
+@enduml

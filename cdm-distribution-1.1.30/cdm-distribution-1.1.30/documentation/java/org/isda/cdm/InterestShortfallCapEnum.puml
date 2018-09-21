@@ -1,0 +1,8 @@
+@startuml
+
+    enum InterestShortfallCapEnum [[InterestShortfallCapEnum.html]] {
+        {static} +FIXED
+        {static} +VARIABLE
+    }
+
+@enduml

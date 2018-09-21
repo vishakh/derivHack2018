@@ -1,0 +1,8 @@
+@startuml
+
+    enum MasterAgreementTypeEnum [[MasterAgreementTypeEnum.html]] {
+        {static} +AFB
+        {static} +ISDA
+    }
+
+@enduml

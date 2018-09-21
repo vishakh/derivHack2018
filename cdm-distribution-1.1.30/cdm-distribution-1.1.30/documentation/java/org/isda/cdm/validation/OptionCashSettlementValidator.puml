@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionCashSettlementValidator [[OptionCashSettlementValidator.html]] {
+        +validate(OptionCashSettlement): ValidationResult<OptionCashSettlement>
+    }
+
+@enduml

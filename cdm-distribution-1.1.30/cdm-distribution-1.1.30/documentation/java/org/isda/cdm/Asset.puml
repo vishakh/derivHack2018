@@ -1,0 +1,11 @@
+@startuml
+
+    class Asset [[Asset.html]] {
+        +getCommodity(): Commodity
+        +getListedProduct(): ListedProduct
+        +toBuilder(): Asset.AssetBuilder
+        {static} +builder(): Asset.AssetBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

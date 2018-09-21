@@ -1,0 +1,27 @@
+@startuml
+
+    class BasketReferenceInformation.BasketReferenceInformationBuilder [[BasketReferenceInformation.BasketReferenceInformationBuilder.html]] {
+        +getBasketId(): List<String>
+        +getBasketIdScheme(): String
+        +getBasketName(): BasketName.BasketNameBuilder
+        +getOrCreateBasketName(): BasketName.BasketNameBuilder
+        +getMthToDefault(): Integer
+        +getNthToDefault(): Integer
+        +getReferencePool(): ReferencePool.ReferencePoolBuilder
+        +getOrCreateReferencePool(): ReferencePool.ReferencePoolBuilder
+        +getTranche(): Tranche.TrancheBuilder
+        +getOrCreateTranche(): Tranche.TrancheBuilder
+        +addBasketId(String): BasketReferenceInformation.BasketReferenceInformationBuilder
+        +setBasketIdScheme(String): BasketReferenceInformation.BasketReferenceInformationBuilder
+        +setBasketName(BasketName): BasketReferenceInformation.BasketReferenceInformationBuilder
+        +setBasketNameBuilder(BasketName.BasketNameBuilder): BasketReferenceInformation.BasketReferenceInformationBuilder
+        +setMthToDefault(Integer): BasketReferenceInformation.BasketReferenceInformationBuilder
+        +setNthToDefault(Integer): BasketReferenceInformation.BasketReferenceInformationBuilder
+        +setReferencePool(ReferencePool): BasketReferenceInformation.BasketReferenceInformationBuilder
+        +setReferencePoolBuilder(ReferencePool.ReferencePoolBuilder): BasketReferenceInformation.BasketReferenceInformationBuilder
+        +setTranche(Tranche): BasketReferenceInformation.BasketReferenceInformationBuilder
+        +setTrancheBuilder(Tranche.TrancheBuilder): BasketReferenceInformation.BasketReferenceInformationBuilder
+        +build(): BasketReferenceInformation
+    }
+
+@enduml

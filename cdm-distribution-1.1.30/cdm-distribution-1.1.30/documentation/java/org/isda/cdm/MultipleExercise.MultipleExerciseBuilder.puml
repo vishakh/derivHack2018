@@ -1,0 +1,11 @@
+@startuml
+
+    class MultipleExercise.MultipleExerciseBuilder [[MultipleExercise.MultipleExerciseBuilder.html]] {
+        +getMaximumNotionalAmount(): BigDecimal
+        +getMaximumNumberOfOptions(): BigDecimal
+        +setMaximumNotionalAmount(BigDecimal): MultipleExercise.MultipleExerciseBuilder
+        +setMaximumNumberOfOptions(BigDecimal): MultipleExercise.MultipleExerciseBuilder
+        +build(): MultipleExercise
+    }
+
+@enduml

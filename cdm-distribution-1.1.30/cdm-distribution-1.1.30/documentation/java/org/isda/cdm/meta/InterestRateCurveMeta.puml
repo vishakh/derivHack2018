@@ -1,0 +1,12 @@
+@startuml
+
+    class InterestRateCurveMeta [[InterestRateCurveMeta.html]] {
+        +dataRules(): List<Validator<InterestRateCurve>>
+        +choiceRuleValidators(): List<Validator<InterestRateCurve>>
+        +getOutMappings(): Multimap<String, OutMapping<InterestRateCurve, ?>>
+        +getQualifyFunctions(): List<Function<InterestRateCurve, QualifyResult>>
+        +validator(): Validator<InterestRateCurve>
+        +onlyExistsValidator(): ValidatorWithArg<InterestRateCurve, String>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLIrd44DataRule [[FpMLIrd44DataRule.html]] {
+        +validate(MandatoryEarlyTerminationAdjustedDates): ValidationResult<MandatoryEarlyTerminationAdjustedDates>
+    }
+
+@enduml

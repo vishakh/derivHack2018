@@ -1,0 +1,7 @@
+@startuml
+
+    class CreditEventsMortgagesDataRule [[CreditEventsMortgagesDataRule.html]] {
+        +validate(Contract): ValidationResult<Contract>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class AveragingObservationListMeta [[AveragingObservationListMeta.html]] {
+        +dataRules(): List<Validator<AveragingObservationList>>
+        +choiceRuleValidators(): List<Validator<AveragingObservationList>>
+        +getOutMappings(): Multimap<String, OutMapping<AveragingObservationList, ?>>
+        +getQualifyFunctions(): List<Function<AveragingObservationList, QualifyResult>>
+        +validator(): Validator<AveragingObservationList>
+        +onlyExistsValidator(): ValidatorWithArg<AveragingObservationList, String>
+    }
+
+@enduml

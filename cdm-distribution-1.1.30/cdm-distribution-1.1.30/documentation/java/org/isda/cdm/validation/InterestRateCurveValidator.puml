@@ -1,0 +1,7 @@
+@startuml
+
+    class InterestRateCurveValidator [[InterestRateCurveValidator.html]] {
+        +validate(InterestRateCurve): ValidationResult<InterestRateCurve>
+    }
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+
+    enum PaymentTypeEnum [[PaymentTypeEnum.html]] {
+        {static} +NET_CASHFLOW
+        {static} +BROKERAGE_COMMISSION
+        {static} +FEE
+        {static} +INTEREST
+        {static} +NET_INTEREST
+        {static} +NOVATION_FEE
+        {static} +PREMIUM
+        {static} +TERMINATION_FEE
+    }
+
+@enduml

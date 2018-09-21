@@ -1,0 +1,13 @@
+@startuml
+
+    enum CreditSupportAgreementTypeEnum [[CreditSupportAgreementTypeEnum.html]] {
+        {static} +ISDA_1994_CREDIT_SUPPORT_ANNEX_NEW_YORK_LAW
+        {static} +ISDA_1995_CREDIT_SUPPORT_ANNEX_ENGLISH_LAW
+        {static} +ISDA_1995_CREDIT_SUPPORT_ANNEX_JAPANESE_LAW
+        {static} +ISDA_1995_CREDIT_SUPPORT_DEED_ENGLISH_LAW
+        {static} +ISDA_2001_MARGIN_PROVISIONS
+        {static} +ISDA_2013_STANDARD_CREDIT_SUPPORT_AGREEMENT
+        {static} +ISDA_2014_STANDARD_CREDIT_SUPPORT_AGREEMENT
+    }
+
+@enduml

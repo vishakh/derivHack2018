@@ -1,0 +1,8 @@
+@startuml
+
+    enum LengthUnitEnum [[LengthUnitEnum.html]] {
+        {static} +PAGES
+        {static} +TIME_UNIT
+    }
+
+@enduml

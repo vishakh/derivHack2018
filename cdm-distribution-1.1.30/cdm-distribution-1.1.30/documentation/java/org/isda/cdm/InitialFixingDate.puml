@@ -1,0 +1,11 @@
+@startuml
+
+    class InitialFixingDate [[InitialFixingDate.html]] {
+        +getInitialFixingDate(): LocalDate
+        +getRelativeDateOffset(): RelativeDateOffset
+        +toBuilder(): InitialFixingDate.InitialFixingDateBuilder
+        {static} +builder(): InitialFixingDate.InitialFixingDateBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

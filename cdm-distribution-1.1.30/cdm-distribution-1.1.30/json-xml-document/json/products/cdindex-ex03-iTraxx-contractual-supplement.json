@@ -1,0 +1,106 @@
+{
+  "account" : [ {
+    "accountNumber" : "12345PartyA",
+    "accountNumberScheme" : "http://www.partyA/accountId",
+    "id" : "t7653d",
+    "servicingParty" : "ruytb"
+  }, {
+    "accountNumber" : "67899PartyB",
+    "accountNumberScheme" : "http://partyB/accountId",
+    "id" : "uyr3fdf",
+    "servicingParty" : "g56bw4"
+  } ],
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "ITRAXX1234",
+      "identifierScheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+    },
+    "partyReference" : "g56bw4"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "cashflow" : [ {
+          "payerReceiver" : {
+            "payerPartyReference" : "g56bw4",
+            "receiverPartyReference" : "ruytb"
+          },
+          "cashflowAmount" : {
+            "amount" : 17000,
+            "currency" : "EUR"
+          },
+          "rosettaKeyValue" : "abbcfb8a"
+        } ],
+        "creditDefaultPayout" : {
+          "generalTerms" : {
+            "buyerSeller" : {
+              "buyerPartyReference" : "g56bw4",
+              "sellerPartyReference" : "ruytb"
+            },
+            "indexReferenceInformation" : {
+              "excludedReferenceEntity" : [ {
+                "name" : "TESCO PLC"
+              } ],
+              "indexAnnexDate" : "2005-11-01",
+              "indexAnnexSource" : "PUBLISHER",
+              "indexAnnexVersion" : 1,
+              "indexName" : "Dow Jones iTraxx Europe Consumers Series 2 Version 1",
+              "indexSeries" : 2
+            }
+          },
+          "protectionTerms" : {
+            "notionalAmount" : {
+              "amount" : 25000000,
+              "currency" : "EUR"
+            }
+          },
+          "rosettaKeyValue" : "e5b72060"
+        },
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "terminationDate" : {
+              "unadjustedDate" : "2010-03-20"
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "g56bw4",
+            "receiverPartyReference" : "ruytb"
+          },
+          "rosettaKeyValue" : "c27c22ac"
+        } ]
+      },
+      "rosettaKeyValue" : "3e949b6a"
+    }
+  },
+  "documentation" : {
+    "contractualTermsSupplement" : [ {
+      "publicationDate" : "2005-09-19",
+      "type" : "I_TRAXX_EUROPE_DEALER",
+      "typeScheme" : "http://www.fpml.org/coding-scheme/contractual-supplement"
+    } ],
+    "masterAgreement" : {
+      "masterAgreementDate" : "2000-01-01",
+      "masterAgreementType" : "ISDA",
+      "masterAgreementVersion" : "1992"
+    }
+  },
+  "party" : [ {
+    "id" : "ruytb",
+    "legalEntity" : {
+      "name" : "Party A"
+    },
+    "partyId" : [ "PARTYABICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "g56bw4",
+    "legalEntity" : {
+      "name" : "Party B"
+    },
+    "partyId" : [ "PARTYBBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2005-11-03"
+  },
+  "rosettaKey" : "97828ac7"
+}

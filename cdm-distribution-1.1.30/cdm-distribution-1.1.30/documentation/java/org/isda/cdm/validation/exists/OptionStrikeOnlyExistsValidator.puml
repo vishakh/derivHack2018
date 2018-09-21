@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionStrikeOnlyExistsValidator [[OptionStrikeOnlyExistsValidator.html]] {
+        +validate(OptionStrike, String): ValidationResult<OptionStrike>
+    }
+
+@enduml

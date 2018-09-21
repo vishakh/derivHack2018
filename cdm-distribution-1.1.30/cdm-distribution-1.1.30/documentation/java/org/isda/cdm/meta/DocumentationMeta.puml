@@ -1,0 +1,12 @@
+@startuml
+
+    class DocumentationMeta [[DocumentationMeta.html]] {
+        +dataRules(): List<Validator<Documentation>>
+        +choiceRuleValidators(): List<Validator<Documentation>>
+        +getOutMappings(): Multimap<String, OutMapping<Documentation, ?>>
+        +getQualifyFunctions(): List<Function<Documentation, QualifyResult>>
+        +validator(): Validator<Documentation>
+        +onlyExistsValidator(): ValidatorWithArg<Documentation, String>
+    }
+
+@enduml

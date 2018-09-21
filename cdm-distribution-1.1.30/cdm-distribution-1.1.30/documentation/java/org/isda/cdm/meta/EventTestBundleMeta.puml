@@ -1,0 +1,12 @@
+@startuml
+
+    class EventTestBundleMeta [[EventTestBundleMeta.html]] {
+        +dataRules(): List<Validator<EventTestBundle>>
+        +choiceRuleValidators(): List<Validator<EventTestBundle>>
+        +getOutMappings(): Multimap<String, OutMapping<EventTestBundle, ?>>
+        +getQualifyFunctions(): List<Function<EventTestBundle, QualifyResult>>
+        +validator(): Validator<EventTestBundle>
+        +onlyExistsValidator(): ValidatorWithArg<EventTestBundle, String>
+    }
+
+@enduml

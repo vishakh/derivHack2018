@@ -1,0 +1,12 @@
+@startuml
+
+    class FxSpotRateSource [[FxSpotRateSource.html]] {
+        +getFixingTime(): BusinessCenterTime
+        +getPrimaryRateSource(): InformationSource
+        +getSecondaryRateSource(): InformationSource
+        +toBuilder(): FxSpotRateSource.FxSpotRateSourceBuilder
+        {static} +builder(): FxSpotRateSource.FxSpotRateSourceBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

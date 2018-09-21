@@ -1,0 +1,12 @@
+@startuml
+
+    class OptionStyleMeta [[OptionStyleMeta.html]] {
+        +dataRules(): List<Validator<OptionStyle>>
+        +choiceRuleValidators(): List<Validator<OptionStyle>>
+        +getOutMappings(): Multimap<String, OutMapping<OptionStyle, ?>>
+        +getQualifyFunctions(): List<Function<OptionStyle, QualifyResult>>
+        +validator(): Validator<OptionStyle>
+        +onlyExistsValidator(): ValidatorWithArg<OptionStyle, String>
+    }
+
+@enduml

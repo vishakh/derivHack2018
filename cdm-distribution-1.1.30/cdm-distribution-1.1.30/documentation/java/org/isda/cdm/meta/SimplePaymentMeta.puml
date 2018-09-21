@@ -1,0 +1,12 @@
+@startuml
+
+    class SimplePaymentMeta [[SimplePaymentMeta.html]] {
+        +dataRules(): List<Validator<SimplePayment>>
+        +choiceRuleValidators(): List<Validator<SimplePayment>>
+        +getOutMappings(): Multimap<String, OutMapping<SimplePayment, ?>>
+        +getQualifyFunctions(): List<Function<SimplePayment, QualifyResult>>
+        +validator(): Validator<SimplePayment>
+        +onlyExistsValidator(): ValidatorWithArg<SimplePayment, String>
+    }
+
+@enduml

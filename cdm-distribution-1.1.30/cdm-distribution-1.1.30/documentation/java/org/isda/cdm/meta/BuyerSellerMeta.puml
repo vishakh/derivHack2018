@@ -1,0 +1,12 @@
+@startuml
+
+    class BuyerSellerMeta [[BuyerSellerMeta.html]] {
+        +dataRules(): List<Validator<BuyerSeller>>
+        +choiceRuleValidators(): List<Validator<BuyerSeller>>
+        +getOutMappings(): Multimap<String, OutMapping<BuyerSeller, ?>>
+        +getQualifyFunctions(): List<Function<BuyerSeller, QualifyResult>>
+        +validator(): Validator<BuyerSeller>
+        +onlyExistsValidator(): ValidatorWithArg<BuyerSeller, String>
+    }
+
+@enduml

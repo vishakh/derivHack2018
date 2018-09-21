@@ -1,0 +1,13 @@
+@startuml
+
+    class BusinessCenterTime.BusinessCenterTimeBuilder [[BusinessCenterTime.BusinessCenterTimeBuilder.html]] {
+        +getBusinessCenter(): BusinessCenterEnum
+        +getBusinessCenterScheme(): String
+        +getHourMinuteTime(): LocalTime
+        +setBusinessCenter(BusinessCenterEnum): BusinessCenterTime.BusinessCenterTimeBuilder
+        +setBusinessCenterScheme(String): BusinessCenterTime.BusinessCenterTimeBuilder
+        +setHourMinuteTime(LocalTime): BusinessCenterTime.BusinessCenterTimeBuilder
+        +build(): BusinessCenterTime
+    }
+
+@enduml

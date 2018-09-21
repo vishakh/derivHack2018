@@ -1,0 +1,12 @@
+@startuml
+
+    class SwapCurveValuationMeta [[SwapCurveValuationMeta.html]] {
+        +dataRules(): List<Validator<SwapCurveValuation>>
+        +choiceRuleValidators(): List<Validator<SwapCurveValuation>>
+        +getOutMappings(): Multimap<String, OutMapping<SwapCurveValuation, ?>>
+        +getQualifyFunctions(): List<Function<SwapCurveValuation, QualifyResult>>
+        +validator(): Validator<SwapCurveValuation>
+        +onlyExistsValidator(): ValidatorWithArg<SwapCurveValuation, String>
+    }
+
+@enduml

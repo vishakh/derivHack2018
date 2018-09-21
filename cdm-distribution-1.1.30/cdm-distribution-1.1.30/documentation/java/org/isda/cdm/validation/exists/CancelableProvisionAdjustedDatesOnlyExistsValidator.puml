@@ -1,0 +1,7 @@
+@startuml
+
+    class CancelableProvisionAdjustedDatesOnlyExistsValidator [[CancelableProvisionAdjustedDatesOnlyExistsValidator.html]] {
+        +validate(CancelableProvisionAdjustedDates, String): ValidationResult<CancelableProvisionAdjustedDates>
+    }
+
+@enduml

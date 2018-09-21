@@ -1,0 +1,12 @@
+@startuml
+
+    class CalculationPeriodDatesMeta [[CalculationPeriodDatesMeta.html]] {
+        +dataRules(): List<Validator<CalculationPeriodDates>>
+        +choiceRuleValidators(): List<Validator<CalculationPeriodDates>>
+        +getOutMappings(): Multimap<String, OutMapping<CalculationPeriodDates, ?>>
+        +getQualifyFunctions(): List<Function<CalculationPeriodDates, QualifyResult>>
+        +validator(): Validator<CalculationPeriodDates>
+        +onlyExistsValidator(): ValidatorWithArg<CalculationPeriodDates, String>
+    }
+
+@enduml

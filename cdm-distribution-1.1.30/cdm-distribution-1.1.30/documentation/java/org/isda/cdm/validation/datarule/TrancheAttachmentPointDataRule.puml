@@ -1,0 +1,7 @@
+@startuml
+
+    class TrancheAttachmentPointDataRule [[TrancheAttachmentPointDataRule.html]] {
+        +validate(Tranche): ValidationResult<Tranche>
+    }
+
+@enduml

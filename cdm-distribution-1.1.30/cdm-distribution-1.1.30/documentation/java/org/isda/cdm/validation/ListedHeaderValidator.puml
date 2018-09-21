@@ -1,0 +1,7 @@
+@startuml
+
+    class ListedHeaderValidator [[ListedHeaderValidator.html]] {
+        +validate(ListedHeader): ValidationResult<ListedHeader>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class CashSettlementPaymentDateChoiceRule [[CashSettlementPaymentDateChoiceRule.html]] {
+        +validate(CashSettlementPaymentDate): ValidationResult<CashSettlementPaymentDate>
+    }
+
+@enduml

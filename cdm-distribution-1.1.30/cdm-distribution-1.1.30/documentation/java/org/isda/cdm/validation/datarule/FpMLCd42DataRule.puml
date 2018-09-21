@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLCd42DataRule [[FpMLCd42DataRule.html]] {
+        +validate(GeneralTerms): ValidationResult<GeneralTerms>
+    }
+
+@enduml

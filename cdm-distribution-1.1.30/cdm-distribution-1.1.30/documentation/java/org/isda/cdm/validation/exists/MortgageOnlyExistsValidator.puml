@@ -1,0 +1,7 @@
+@startuml
+
+    class MortgageOnlyExistsValidator [[MortgageOnlyExistsValidator.html]] {
+        +validate(Mortgage, String): ValidationResult<Mortgage>
+    }
+
+@enduml

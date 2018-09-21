@@ -1,0 +1,12 @@
+@startuml
+
+    class IdentifierValueMeta [[IdentifierValueMeta.html]] {
+        +dataRules(): List<Validator<IdentifierValue>>
+        +choiceRuleValidators(): List<Validator<IdentifierValue>>
+        +getOutMappings(): Multimap<String, OutMapping<IdentifierValue, ?>>
+        +getQualifyFunctions(): List<Function<IdentifierValue, QualifyResult>>
+        +validator(): Validator<IdentifierValue>
+        +onlyExistsValidator(): ValidatorWithArg<IdentifierValue, String>
+    }
+
+@enduml

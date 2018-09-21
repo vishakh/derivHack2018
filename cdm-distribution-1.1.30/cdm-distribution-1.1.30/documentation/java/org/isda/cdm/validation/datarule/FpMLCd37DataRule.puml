@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLCd37DataRule [[FpMLCd37DataRule.html]] {
+        +validate(CashSettlementTerms): ValidationResult<CashSettlementTerms>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractIdentifierOnlyExistsValidator [[ContractIdentifierOnlyExistsValidator.html]] {
+        +validate(ContractIdentifier, String): ValidationResult<ContractIdentifier>
+    }
+
+@enduml

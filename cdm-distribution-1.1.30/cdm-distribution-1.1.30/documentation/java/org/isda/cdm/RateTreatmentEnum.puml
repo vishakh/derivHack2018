@@ -1,0 +1,8 @@
+@startuml
+
+    enum RateTreatmentEnum [[RateTreatmentEnum.html]] {
+        {static} +BOND_EQUIVALENT_YIELD
+        {static} +MONEY_MARKET_YIELD
+    }
+
+@enduml

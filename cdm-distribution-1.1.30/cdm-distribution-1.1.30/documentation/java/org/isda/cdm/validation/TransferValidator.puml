@@ -1,0 +1,7 @@
+@startuml
+
+    class TransferValidator [[TransferValidator.html]] {
+        +validate(Transfer): ValidationResult<Transfer>
+    }
+
+@enduml

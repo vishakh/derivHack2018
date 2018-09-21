@@ -1,0 +1,11 @@
+@startuml
+
+    class BondOptionStrike [[BondOptionStrike.html]] {
+        +getPrice(): OptionStrike
+        +getReferenceSwapCurve(): ReferenceSwapCurve
+        +toBuilder(): BondOptionStrike.BondOptionStrikeBuilder
+        {static} +builder(): BondOptionStrike.BondOptionStrikeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

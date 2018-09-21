@@ -1,0 +1,12 @@
+@startuml
+
+    class ResourceMeta [[ResourceMeta.html]] {
+        +dataRules(): List<Validator<Resource>>
+        +choiceRuleValidators(): List<Validator<Resource>>
+        +getOutMappings(): Multimap<String, OutMapping<Resource, ?>>
+        +getQualifyFunctions(): List<Function<Resource, QualifyResult>>
+        +validator(): Validator<Resource>
+        +onlyExistsValidator(): ValidatorWithArg<Resource, String>
+    }
+
+@enduml

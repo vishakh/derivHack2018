@@ -1,0 +1,15 @@
+@startuml
+
+    class ComputedAmount.ComputedAmountBuilder [[ComputedAmount.ComputedAmountBuilder.html]] {
+        +getAmount(): BigDecimal
+        +getCallFunction(): String
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +setAmount(BigDecimal): ComputedAmount.ComputedAmountBuilder
+        +setCallFunction(String): ComputedAmount.ComputedAmountBuilder
+        +setCurrency(String): ComputedAmount.ComputedAmountBuilder
+        +setCurrencyScheme(String): ComputedAmount.ComputedAmountBuilder
+        +build(): ComputedAmount
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class ContractOrContractReference [[ContractOrContractReference.html]] {
+        +getContract(): List<Contract>
+        +getContractReference(): List<ContractReference>
+        +toBuilder(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        {static} +builder(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

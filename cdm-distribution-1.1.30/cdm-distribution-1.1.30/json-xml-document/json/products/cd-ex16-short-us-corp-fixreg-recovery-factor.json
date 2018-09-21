@@ -1,0 +1,116 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "IRG858TH30",
+      "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+    },
+    "partyReference" : "rt4563"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "creditDefaultPayout" : {
+          "cashSettlementTerms" : {
+            "recoveryFactor" : 0.60
+          },
+          "generalTerms" : {
+            "buyerSeller" : {
+              "buyerPartyReference" : "rt4563",
+              "sellerPartyReference" : "u6789r"
+            },
+            "referenceInformation" : {
+              "referenceEntity" : {
+                "entityId" : "8G836J",
+                "entityIdScheme" : "http://www.fpml.org/spec/2003/entity-id-RED-1-0",
+                "id" : "tyr34",
+                "name" : "Tenet Healthcare Corporation"
+              },
+              "referenceObligation" : [ {
+                "bond" : {
+                  "productIdentifierScheme" : "http://www.fpml.org/spec/2002/instrument-id-CUSIP-1-0",
+                  "couponRate" : 0.06,
+                  "maturity" : "2011-12-01"
+                },
+                "primaryObligorReference" : "tyr34"
+              } ]
+            }
+          },
+          "protectionTerms" : {
+            "creditEvents" : {
+              "restructuring" : {
+                "applicable" : true,
+                "restructuringType" : "MOD_R"
+              }
+            },
+            "notionalAmount" : {
+              "amount" : 5000000,
+              "currency" : "USD"
+            }
+          },
+          "rosettaKeyValue" : "3375f50e"
+        },
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodFrequency" : {
+              "rollConvention" : "_6"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "unadjustedDate" : "2002-12-04"
+              }
+            },
+            "terminationDate" : {
+              "unadjustedDate" : "2007-09-06"
+            }
+          },
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.01
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "rt4563",
+            "receiverPartyReference" : "u6789r"
+          },
+          "paymentDates" : {
+            "firstPaymentDate" : "2003-03-06",
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            }
+          },
+          "rosettaKeyValue" : "8a69eb56"
+        } ]
+      },
+      "rosettaKeyValue" : "f0a068f8"
+    }
+  },
+  "documentation" : {
+    "contractualMatrix" : [ {
+      "matrixType" : "CREDIT_DERIVATIVES_PHYSICAL_SETTLEMENT_MATRIX"
+    } ],
+    "masterConfirmation" : {
+      "masterConfirmationDate" : "2001-01-04",
+      "masterConfirmationType" : "ISDA_1999_CREDIT"
+    }
+  },
+  "party" : [ {
+    "id" : "rt4563",
+    "legalEntity" : {
+      "name" : "XYZ Bank"
+    },
+    "partyId" : [ "XYZBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "u6789r",
+    "legalEntity" : {
+      "name" : "ABC Bank"
+    },
+    "partyId" : [ "ABCBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2002-12-03"
+  },
+  "rosettaKey" : "77d361d7"
+}

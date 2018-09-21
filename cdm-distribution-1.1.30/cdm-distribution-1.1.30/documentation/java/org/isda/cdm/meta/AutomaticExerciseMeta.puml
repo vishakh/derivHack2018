@@ -1,0 +1,12 @@
+@startuml
+
+    class AutomaticExerciseMeta [[AutomaticExerciseMeta.html]] {
+        +dataRules(): List<Validator<AutomaticExercise>>
+        +choiceRuleValidators(): List<Validator<AutomaticExercise>>
+        +getOutMappings(): Multimap<String, OutMapping<AutomaticExercise, ?>>
+        +getQualifyFunctions(): List<Function<AutomaticExercise, QualifyResult>>
+        +validator(): Validator<AutomaticExercise>
+        +onlyExistsValidator(): ValidatorWithArg<AutomaticExercise, String>
+    }
+
+@enduml

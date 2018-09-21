@@ -1,0 +1,15 @@
+@startuml
+
+    class ReferenceSwapCurve.ReferenceSwapCurveBuilder [[ReferenceSwapCurve.ReferenceSwapCurveBuilder.html]] {
+        +getMakeWholeAmount(): MakeWholeAmount.MakeWholeAmountBuilder
+        +getOrCreateMakeWholeAmount(): MakeWholeAmount.MakeWholeAmountBuilder
+        +getSwapUnwindValue(): SwapCurveValuation.SwapCurveValuationBuilder
+        +getOrCreateSwapUnwindValue(): SwapCurveValuation.SwapCurveValuationBuilder
+        +setMakeWholeAmount(MakeWholeAmount): ReferenceSwapCurve.ReferenceSwapCurveBuilder
+        +setMakeWholeAmountBuilder(MakeWholeAmount.MakeWholeAmountBuilder): ReferenceSwapCurve.ReferenceSwapCurveBuilder
+        +setSwapUnwindValue(SwapCurveValuation): ReferenceSwapCurve.ReferenceSwapCurveBuilder
+        +setSwapUnwindValueBuilder(SwapCurveValuation.SwapCurveValuationBuilder): ReferenceSwapCurve.ReferenceSwapCurveBuilder
+        +build(): ReferenceSwapCurve
+    }
+
+@enduml

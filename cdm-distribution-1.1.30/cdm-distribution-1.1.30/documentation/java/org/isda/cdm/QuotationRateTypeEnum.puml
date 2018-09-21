@@ -1,0 +1,10 @@
+@startuml
+
+    enum QuotationRateTypeEnum [[QuotationRateTypeEnum.html]] {
+        {static} +BID
+        {static} +ASK
+        {static} +MID
+        {static} +EXERCISING_PARTY_PAYS
+    }
+
+@enduml

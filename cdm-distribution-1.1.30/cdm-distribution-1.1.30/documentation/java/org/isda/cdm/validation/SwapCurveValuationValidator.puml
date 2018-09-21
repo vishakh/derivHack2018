@@ -1,0 +1,7 @@
+@startuml
+
+    class SwapCurveValuationValidator [[SwapCurveValuationValidator.html]] {
+        +validate(SwapCurveValuation): ValidationResult<SwapCurveValuation>
+    }
+
+@enduml

@@ -1,0 +1,153 @@
+{
+  "calculationAgent" : {
+    "calculationAgentPartyReference" : [ "jhf45s" ]
+  },
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "Trade234",
+      "identifierScheme" : "http://www.PartyA.com/coding-scheme/trade-id"
+    },
+    "partyReference" : "jhf45s"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "optionPayout" : [ {
+          "buyerSeller" : {
+            "buyerPartyReference" : "fdkhjbgr",
+            "sellerPartyReference" : "jhf45s"
+          },
+          "denomination" : {
+            "entitlementCurrency" : "CHF",
+            "numberOfOptions" : 1,
+            "optionEntitlement" : 1100000
+          },
+          "exerciseTerms" : {
+            "exerciseProcedure" : {
+              "followUpConfirmation" : true,
+              "limitedRightToConfirm" : false,
+              "manualExercise" : {
+                "exerciseNotice" : {
+                  "businessCenter" : "GBLO",
+                  "partyReference" : "jhf45s"
+                }
+              },
+              "splitTicket" : true
+            },
+            "optionStyle" : {
+              "americanExercise" : {
+                "commencementDate" : {
+                  "adjustableDate" : {
+                    "dateAdjustments" : {
+                      "businessCenters" : {
+                        "businessCenter" : [ "GBLO", "CHZU" ]
+                      },
+                      "businessDayConvention" : "FOLLOWING"
+                    },
+                    "unadjustedDate" : "2006-01-19"
+                  }
+                },
+                "earliestExerciseTime" : {
+                  "businessCenter" : "GBLO",
+                  "hourMinuteTime" : "09:00:00"
+                },
+                "expirationDate" : {
+                  "adjustableDate" : {
+                    "dateAdjustments" : {
+                      "businessCenters" : {
+                        "businessCenter" : [ "GBLO", "CHZU" ]
+                      },
+                      "businessDayConvention" : "FOLLOWING"
+                    },
+                    "unadjustedDate" : "2010-08-05"
+                  }
+                },
+                "expirationTime" : {
+                  "businessCenter" : "GBLO",
+                  "hourMinuteTime" : "16:00:00"
+                },
+                "id" : "f746f"
+              }
+            },
+            "settlement" : {
+              "settlementDate" : {
+                "relativeDate" : {
+                  "period" : "D",
+                  "periodMultiplier" : 8,
+                  "dayType" : "BUSINESS",
+                  "businessCenters" : {
+                    "businessCenter" : [ "GBLO", "CHZU" ]
+                  },
+                  "businessDayConvention" : "NONE",
+                  "dateRelativeTo" : "f746f"
+                }
+              },
+              "settlementType" : "PHYSICAL"
+            },
+            "strike" : {
+              "referenceSwapCurve" : {
+                "makeWholeAmount" : {
+                  "floatingRateIndex" : "EUR_LIBOR_BBA",
+                  "side" : "BID",
+                  "spread" : 85,
+                  "earlyCallDate" : "2006-07-19",
+                  "interpolationMethod" : "LINEAR_ZERO_YIELD"
+                },
+                "swapUnwindValue" : {
+                  "floatingRateIndex" : "EUR_LIBOR_BBA",
+                  "indexTenor" : {
+                    "period" : "M",
+                    "periodMultiplier" : 6
+                  },
+                  "side" : "BID",
+                  "spread" : 85
+                }
+              }
+            }
+          },
+          "id" : "g123456",
+          "optionType" : "CALL",
+          "underlyer" : {
+            "listedProduct" : {
+              "convertibleBond" : {
+                "clearanceSystem" : "Euroclear",
+                "currency" : "CHF",
+                "productIdentifierScheme" : "ISIN",
+                "couponRate" : 0.0,
+                "issuerName" : "ABC Finance",
+                "maturity" : "2013-08-26",
+                "issuanceFaceAmount" : 1100000,
+                "parValue" : 1100000,
+                "paymentFrequency" : {
+                  "period" : "M",
+                  "periodMultiplier" : 6
+                },
+                "redemptionDate" : "2010-08-26"
+              },
+              "rosettaKey" : "8665e9c6"
+            }
+          },
+          "rosettaKeyValue" : "debf4e33"
+        } ]
+      },
+      "rosettaKeyValue" : "debf4e33"
+    },
+    "productIdentification" : {
+      "productQualifier" : "InterestRate_Option_DebtOption"
+    }
+  },
+  "party" : [ {
+    "id" : "jhf45s",
+    "partyId" : [ "Party A" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "fdkhjbgr",
+    "partyId" : [ "Party B" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2006-01-16",
+    "id" : "uyrt76w4"
+  },
+  "rosettaKey" : "1562e53f"
+}

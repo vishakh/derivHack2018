@@ -1,0 +1,7 @@
+@startuml
+
+    class QuotedCurrencyPairOnlyExistsValidator [[QuotedCurrencyPairOnlyExistsValidator.html]] {
+        +validate(QuotedCurrencyPair, String): ValidationResult<QuotedCurrencyPair>
+    }
+
+@enduml

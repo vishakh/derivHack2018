@@ -1,0 +1,23 @@
+@startuml
+
+    class OptionExercise.OptionExerciseBuilder [[OptionExercise.OptionExerciseBuilder.html]] {
+        +getExerciseProcedure(): ExerciseProcedure.ExerciseProcedureBuilder
+        +getOrCreateExerciseProcedure(): ExerciseProcedure.ExerciseProcedureBuilder
+        +getOptionStyle(): OptionStyle.OptionStyleBuilder
+        +getOrCreateOptionStyle(): OptionStyle.OptionStyleBuilder
+        +getSettlement(): OptionSettlement.OptionSettlementBuilder
+        +getOrCreateSettlement(): OptionSettlement.OptionSettlementBuilder
+        +getStrike(): OptionStrike.OptionStrikeBuilder
+        +getOrCreateStrike(): OptionStrike.OptionStrikeBuilder
+        +setExerciseProcedure(ExerciseProcedure): OptionExercise.OptionExerciseBuilder
+        +setExerciseProcedureBuilder(ExerciseProcedure.ExerciseProcedureBuilder): OptionExercise.OptionExerciseBuilder
+        +setOptionStyle(OptionStyle): OptionExercise.OptionExerciseBuilder
+        +setOptionStyleBuilder(OptionStyle.OptionStyleBuilder): OptionExercise.OptionExerciseBuilder
+        +setSettlement(OptionSettlement): OptionExercise.OptionExerciseBuilder
+        +setSettlementBuilder(OptionSettlement.OptionSettlementBuilder): OptionExercise.OptionExerciseBuilder
+        +setStrike(OptionStrike): OptionExercise.OptionExerciseBuilder
+        +setStrikeBuilder(OptionStrike.OptionStrikeBuilder): OptionExercise.OptionExerciseBuilder
+        +build(): OptionExercise
+    }
+
+@enduml

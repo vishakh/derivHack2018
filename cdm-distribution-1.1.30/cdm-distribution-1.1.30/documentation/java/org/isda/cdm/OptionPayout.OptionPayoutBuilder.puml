@@ -1,0 +1,35 @@
+@startuml
+
+    class OptionPayout.OptionPayoutBuilder [[OptionPayout.OptionPayoutBuilder.html]] {
+        +getBuyerSeller(): BuyerSeller.BuyerSellerBuilder
+        +getOrCreateBuyerSeller(): BuyerSeller.BuyerSellerBuilder
+        +getDenomination(): OptionDenomination.OptionDenominationBuilder
+        +getOrCreateDenomination(): OptionDenomination.OptionDenominationBuilder
+        +getExerciseTerms(): OptionExercise.OptionExerciseBuilder
+        +getOrCreateExerciseTerms(): OptionExercise.OptionExerciseBuilder
+        +getFeature(): OptionFeature.OptionFeatureBuilder
+        +getOrCreateFeature(): OptionFeature.OptionFeatureBuilder
+        +getId(): String
+        +getOptionType(): OptionTypeEnum
+        +getQuantity(): ContractualQuantity.ContractualQuantityBuilder
+        +getOrCreateQuantity(): ContractualQuantity.ContractualQuantityBuilder
+        +getUnderlyer(): Product.ProductBuilder
+        +getOrCreateUnderlyer(): Product.ProductBuilder
+        +setBuyerSeller(BuyerSeller): OptionPayout.OptionPayoutBuilder
+        +setBuyerSellerBuilder(BuyerSeller.BuyerSellerBuilder): OptionPayout.OptionPayoutBuilder
+        +setDenomination(OptionDenomination): OptionPayout.OptionPayoutBuilder
+        +setDenominationBuilder(OptionDenomination.OptionDenominationBuilder): OptionPayout.OptionPayoutBuilder
+        +setExerciseTerms(OptionExercise): OptionPayout.OptionPayoutBuilder
+        +setExerciseTermsBuilder(OptionExercise.OptionExerciseBuilder): OptionPayout.OptionPayoutBuilder
+        +setFeature(OptionFeature): OptionPayout.OptionPayoutBuilder
+        +setFeatureBuilder(OptionFeature.OptionFeatureBuilder): OptionPayout.OptionPayoutBuilder
+        +setId(String): OptionPayout.OptionPayoutBuilder
+        +setOptionType(OptionTypeEnum): OptionPayout.OptionPayoutBuilder
+        +setQuantity(ContractualQuantity): OptionPayout.OptionPayoutBuilder
+        +setQuantityBuilder(ContractualQuantity.ContractualQuantityBuilder): OptionPayout.OptionPayoutBuilder
+        +setUnderlyer(Product): OptionPayout.OptionPayoutBuilder
+        +setUnderlyerBuilder(Product.ProductBuilder): OptionPayout.OptionPayoutBuilder
+        +build(): OptionPayout
+    }
+
+@enduml

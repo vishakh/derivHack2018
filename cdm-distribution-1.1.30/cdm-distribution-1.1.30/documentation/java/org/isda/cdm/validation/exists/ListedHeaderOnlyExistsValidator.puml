@@ -1,0 +1,7 @@
+@startuml
+
+    class ListedHeaderOnlyExistsValidator [[ListedHeaderOnlyExistsValidator.html]] {
+        +validate(ListedHeader, String): ValidationResult<ListedHeader>
+    }
+
+@enduml

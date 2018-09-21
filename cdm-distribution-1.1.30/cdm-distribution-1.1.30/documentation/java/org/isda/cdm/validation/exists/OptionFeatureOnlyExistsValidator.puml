@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionFeatureOnlyExistsValidator [[OptionFeatureOnlyExistsValidator.html]] {
+        +validate(OptionFeature, String): ValidationResult<OptionFeature>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractualMatrixOnlyExistsValidator [[ContractualMatrixOnlyExistsValidator.html]] {
+        +validate(ContractualMatrix, String): ValidationResult<ContractualMatrix>
+    }
+
+@enduml

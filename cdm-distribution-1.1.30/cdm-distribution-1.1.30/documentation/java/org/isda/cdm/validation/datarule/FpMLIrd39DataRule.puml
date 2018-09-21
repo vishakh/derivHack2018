@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLIrd39DataRule [[FpMLIrd39DataRule.html]] {
+        +validate(EarlyTerminationEvent): ValidationResult<EarlyTerminationEvent>
+    }
+
+@enduml

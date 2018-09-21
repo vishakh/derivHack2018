@@ -1,0 +1,7 @@
+@startuml
+
+    class CrossCurrencyTermsValidator [[CrossCurrencyTermsValidator.html]] {
+        +validate(CrossCurrencyTerms): ValidationResult<CrossCurrencyTerms>
+    }
+
+@enduml

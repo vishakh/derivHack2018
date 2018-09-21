@@ -1,0 +1,13 @@
+@startuml
+
+    class OptionDenomination [[OptionDenomination.html]] {
+        +getEntitlementCurrency(): String
+        +getEntitlementCurrencyScheme(): String
+        +getNumberOfOptions(): BigDecimal
+        +getOptionEntitlement(): BigDecimal
+        +toBuilder(): OptionDenomination.OptionDenominationBuilder
+        {static} +builder(): OptionDenomination.OptionDenominationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

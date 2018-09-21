@@ -1,0 +1,12 @@
+@startuml
+
+    class BusinessCenterTime [[BusinessCenterTime.html]] {
+        +getBusinessCenter(): BusinessCenterEnum
+        +getBusinessCenterScheme(): String
+        +getHourMinuteTime(): LocalTime
+        +toBuilder(): BusinessCenterTime.BusinessCenterTimeBuilder
+        {static} +builder(): BusinessCenterTime.BusinessCenterTimeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

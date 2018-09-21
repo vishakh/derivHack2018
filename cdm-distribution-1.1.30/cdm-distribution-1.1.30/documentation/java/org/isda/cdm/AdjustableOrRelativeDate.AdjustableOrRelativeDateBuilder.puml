@@ -1,0 +1,17 @@
+@startuml
+
+    class AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder [[AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder.html]] {
+        +getAdjustableDate(): AdjustableDate.AdjustableDateBuilder
+        +getOrCreateAdjustableDate(): AdjustableDate.AdjustableDateBuilder
+        +getId(): String
+        +getRelativeDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getOrCreateRelativeDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +setAdjustableDate(AdjustableDate): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +setAdjustableDateBuilder(AdjustableDate.AdjustableDateBuilder): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +setId(String): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +setRelativeDate(RelativeDateOffset): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +setRelativeDateBuilder(RelativeDateOffset.RelativeDateOffsetBuilder): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +build(): AdjustableOrRelativeDate
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class Curve.CurveBuilder [[Curve.CurveBuilder.html]] {
+        +getCommodityCurve(): CommodityReferencePriceEnum
+        +getCommodityCurveScheme(): String
+        +getInterestRateCurve(): InterestRateCurve.InterestRateCurveBuilder
+        +getOrCreateInterestRateCurve(): InterestRateCurve.InterestRateCurveBuilder
+        +setCommodityCurve(CommodityReferencePriceEnum): Curve.CurveBuilder
+        +setCommodityCurveScheme(String): Curve.CurveBuilder
+        +setInterestRateCurve(InterestRateCurve): Curve.CurveBuilder
+        +setInterestRateCurveBuilder(InterestRateCurve.InterestRateCurveBuilder): Curve.CurveBuilder
+        +build(): Curve
+    }
+
+@enduml

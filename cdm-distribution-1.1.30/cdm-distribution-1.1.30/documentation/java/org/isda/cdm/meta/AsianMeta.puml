@@ -1,0 +1,12 @@
+@startuml
+
+    class AsianMeta [[AsianMeta.html]] {
+        +dataRules(): List<Validator<Asian>>
+        +choiceRuleValidators(): List<Validator<Asian>>
+        +getOutMappings(): Multimap<String, OutMapping<Asian, ?>>
+        +getQualifyFunctions(): List<Function<Asian, QualifyResult>>
+        +validator(): Validator<Asian>
+        +onlyExistsValidator(): ValidatorWithArg<Asian, String>
+    }
+
+@enduml

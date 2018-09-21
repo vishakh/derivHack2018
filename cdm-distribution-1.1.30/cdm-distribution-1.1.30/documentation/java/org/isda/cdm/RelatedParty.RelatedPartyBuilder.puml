@@ -1,0 +1,13 @@
+@startuml
+
+    class RelatedParty.RelatedPartyBuilder [[RelatedParty.RelatedPartyBuilder.html]] {
+        +getAccountReference(): String
+        +getPartyReference(): String
+        +getRole(): PartyRoleEnum
+        +setAccountReference(String): RelatedParty.RelatedPartyBuilder
+        +setPartyReference(String): RelatedParty.RelatedPartyBuilder
+        +setRole(PartyRoleEnum): RelatedParty.RelatedPartyBuilder
+        +build(): RelatedParty
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class NonNegativeAmountScheduleMeta [[NonNegativeAmountScheduleMeta.html]] {
+        +dataRules(): List<Validator<NonNegativeAmountSchedule>>
+        +choiceRuleValidators(): List<Validator<NonNegativeAmountSchedule>>
+        +getOutMappings(): Multimap<String, OutMapping<NonNegativeAmountSchedule, ?>>
+        +getQualifyFunctions(): List<Function<NonNegativeAmountSchedule, QualifyResult>>
+        +validator(): Validator<NonNegativeAmountSchedule>
+        +onlyExistsValidator(): ValidatorWithArg<NonNegativeAmountSchedule, String>
+    }
+
+@enduml

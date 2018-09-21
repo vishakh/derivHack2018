@@ -1,0 +1,12 @@
+@startuml
+
+    class ExtendibleProvisionMeta [[ExtendibleProvisionMeta.html]] {
+        +dataRules(): List<Validator<ExtendibleProvision>>
+        +choiceRuleValidators(): List<Validator<ExtendibleProvision>>
+        +getOutMappings(): Multimap<String, OutMapping<ExtendibleProvision, ?>>
+        +getQualifyFunctions(): List<Function<ExtendibleProvision, QualifyResult>>
+        +validator(): Validator<ExtendibleProvision>
+        +onlyExistsValidator(): ValidatorWithArg<ExtendibleProvision, String>
+    }
+
+@enduml

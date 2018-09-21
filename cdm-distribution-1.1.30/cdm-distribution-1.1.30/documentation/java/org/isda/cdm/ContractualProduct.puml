@@ -1,0 +1,12 @@
+@startuml
+
+    class ContractualProduct [[ContractualProduct.html]] {
+        +getEconomicTerms(): EconomicTerms
+        +getProductIdentification(): ProductIdentification
+        +getProductTaxonomy(): List<ProductTaxonomy>
+        +toBuilder(): ContractualProduct.ContractualProductBuilder
+        {static} +builder(): ContractualProduct.ContractualProductBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

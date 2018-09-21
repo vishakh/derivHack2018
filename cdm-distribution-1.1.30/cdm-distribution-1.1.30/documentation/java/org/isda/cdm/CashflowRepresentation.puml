@@ -1,0 +1,12 @@
+@startuml
+
+    class CashflowRepresentation [[CashflowRepresentation.html]] {
+        +getCashflowsMatchParameters(): Boolean
+        +getPaymentCalculationPeriod(): List<PaymentCalculationPeriod>
+        +getPrincipalExchange(): List<PrincipalExchange>
+        +toBuilder(): CashflowRepresentation.CashflowRepresentationBuilder
+        {static} +builder(): CashflowRepresentation.CashflowRepresentationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

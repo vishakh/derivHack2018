@@ -1,0 +1,32 @@
+@startuml
+
+    class DeliverableObligations [[DeliverableObligations.html]] {
+        +getAcceleratedOrMatured(): Boolean
+        +getAccruedInterest(): Boolean
+        +getAssignableLoan(): PCDeliverableObligationCharac
+        +getCategory(): ObligationCategoryEnum
+        +getConsentRequiredLoan(): PCDeliverableObligationCharac
+        +getDirectLoanParticipation(): LoanParticipation
+        +getExcluded(): String
+        +getFullFaithAndCreditObLiability(): Boolean
+        +getGeneralFundObligationLiability(): Boolean
+        +getIndirectLoanParticipation(): LoanParticipation
+        +getListed(): Boolean
+        +getMaximumMaturity(): Period
+        +getNotBearer(): Boolean
+        +getNotContingent(): Boolean
+        +getNotDomesticCurrency(): NotDomesticCurrency
+        +getNotDomesticIssuance(): Boolean
+        +getNotDomesticLaw(): Boolean
+        +getNotSovereignLender(): Boolean
+        +getNotSubordinated(): Boolean
+        +getOthReferenceEntityObligations(): String
+        +getRevenueObligationLiability(): Boolean
+        +getSpecifiedCurrency(): SpecifiedCurrency
+        +getTransferable(): Boolean
+        +toBuilder(): DeliverableObligations.DeliverableObligationsBuilder
+        {static} +builder(): DeliverableObligations.DeliverableObligationsBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class NotifyingParty [[NotifyingParty.html]] {
+        +getBuyerPartyReference(): String
+        +getSellerPartyReference(): String
+        +toBuilder(): NotifyingParty.NotifyingPartyBuilder
+        {static} +builder(): NotifyingParty.NotifyingPartyBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

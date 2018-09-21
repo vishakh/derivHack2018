@@ -1,0 +1,7 @@
+@startuml
+
+    class SettlementProvisionValidator [[SettlementProvisionValidator.html]] {
+        +validate(SettlementProvision): ValidationResult<SettlementProvision>
+    }
+
+@enduml

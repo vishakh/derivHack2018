@@ -1,0 +1,7 @@
+@startuml
+
+    class ExerciseFeeScheduleChoiceRule [[ExerciseFeeScheduleChoiceRule.html]] {
+        +validate(ExerciseFeeSchedule): ValidationResult<ExerciseFeeSchedule>
+    }
+
+@enduml

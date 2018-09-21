@@ -1,0 +1,25 @@
+@startuml
+
+    enum FloatingRateIndexEnum [[FloatingRateIndexEnum.html]] {
+        {static} +AED_EBOR_REUTERS
+        {static} +AUD_AONIA_OIS_COMPOUND
+        {static} +AUD_AONIA_OIS_COMPOUND_SWAP_MARKER
+        {static} +BRL_CDI
+        {static} +CAD_BA_CDOR
+        {static} +CNY_CNREPOFIX_CFXS_REUTERS
+        {static} +EUR_EONIA_OIS_COMPOUND
+        {static} +EUR_EURIBOR_REUTERS
+        {static} +EUR_EURIBOR_TELERATE
+        {static} +EUR_LIBOR_BBA
+        {static} +GBP_LIBOR_BBA
+        {static} +GBP_LIBOR_ISDA
+        {static} +GBP_SONIA_COMPOUND
+        {static} +INR_FBIL_MIBOR_OIS_COMPOUND
+        {static} +KRW_CD_KSDA_BLOOMBERG
+        {static} +UK_RPIX
+        {static} +USA_CPI_U
+        {static} +USD_FEDERAL_FUNDS_H_15_OIS_COMPOUND
+        {static} +USD_LIBOR_BBA
+    }
+
+@enduml

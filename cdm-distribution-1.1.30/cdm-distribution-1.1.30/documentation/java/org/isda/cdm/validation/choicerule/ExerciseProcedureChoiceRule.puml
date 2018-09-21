@@ -1,0 +1,7 @@
+@startuml
+
+    class ExerciseProcedureChoiceRule [[ExerciseProcedureChoiceRule.html]] {
+        +validate(ExerciseProcedure): ValidationResult<ExerciseProcedure>
+    }
+
+@enduml

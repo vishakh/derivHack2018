@@ -1,0 +1,12 @@
+@startuml
+
+    class SettledEntityMatrixMeta [[SettledEntityMatrixMeta.html]] {
+        +dataRules(): List<Validator<SettledEntityMatrix>>
+        +choiceRuleValidators(): List<Validator<SettledEntityMatrix>>
+        +getOutMappings(): Multimap<String, OutMapping<SettledEntityMatrix, ?>>
+        +getQualifyFunctions(): List<Function<SettledEntityMatrix, QualifyResult>>
+        +validator(): Validator<SettledEntityMatrix>
+        +onlyExistsValidator(): ValidatorWithArg<SettledEntityMatrix, String>
+    }
+
+@enduml

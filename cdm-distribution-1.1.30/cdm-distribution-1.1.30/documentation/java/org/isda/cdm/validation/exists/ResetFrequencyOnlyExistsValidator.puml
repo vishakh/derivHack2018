@@ -1,0 +1,7 @@
+@startuml
+
+    class ResetFrequencyOnlyExistsValidator [[ResetFrequencyOnlyExistsValidator.html]] {
+        +validate(ResetFrequency, String): ValidationResult<ResetFrequency>
+    }
+
+@enduml

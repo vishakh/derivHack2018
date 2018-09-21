@@ -1,0 +1,13 @@
+@startuml
+
+    class TimeZone.TimeZoneBuilder [[TimeZone.TimeZoneBuilder.html]] {
+        +getLocation(): String
+        +getLocationScheme(): String
+        +getTime(): LocalTime
+        +setLocation(String): TimeZone.TimeZoneBuilder
+        +setLocationScheme(String): TimeZone.TimeZoneBuilder
+        +setTime(LocalTime): TimeZone.TimeZoneBuilder
+        +build(): TimeZone
+    }
+
+@enduml

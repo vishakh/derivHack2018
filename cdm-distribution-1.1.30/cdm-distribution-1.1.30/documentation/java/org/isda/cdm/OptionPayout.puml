@@ -1,0 +1,18 @@
+@startuml
+
+    class OptionPayout [[OptionPayout.html]] {
+        +getBuyerSeller(): BuyerSeller
+        +getDenomination(): OptionDenomination
+        +getExerciseTerms(): OptionExercise
+        +getFeature(): OptionFeature
+        +getId(): String
+        +getOptionType(): OptionTypeEnum
+        +getQuantity(): ContractualQuantity
+        +getUnderlyer(): Product
+        +toBuilder(): OptionPayout.OptionPayoutBuilder
+        {static} +builder(): OptionPayout.OptionPayoutBuilder
+        +getRosettaKeyValue(): String
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class PackageInformation.PackageInformationBuilder [[PackageInformation.PackageInformationBuilder.html]] {
+        +getCategory(): List<CategoryEnum>
+        +getIntentToAllocate(): Boolean
+        +getRelatedParty(): List<RelatedParty.RelatedPartyBuilder>
+        +getOrCreateRelatedParty(int): RelatedParty.RelatedPartyBuilder
+        +addCategory(CategoryEnum): PackageInformation.PackageInformationBuilder
+        +setIntentToAllocate(Boolean): PackageInformation.PackageInformationBuilder
+        +addRelatedParty(RelatedParty): PackageInformation.PackageInformationBuilder
+        +addRelatedPartyBuilder(RelatedParty.RelatedPartyBuilder): PackageInformation.PackageInformationBuilder
+        +build(): PackageInformation
+    }
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+
+    class StubValue.StubValueBuilder [[StubValue.StubValueBuilder.html]] {
+        +getFloatingRate(): List<StubFloatingRate.StubFloatingRateBuilder>
+        +getOrCreateFloatingRate(int): StubFloatingRate.StubFloatingRateBuilder
+        +getStubAmount(): Money.MoneyBuilder
+        +getOrCreateStubAmount(): Money.MoneyBuilder
+        +getStubRate(): BigDecimal
+        +addFloatingRate(StubFloatingRate): StubValue.StubValueBuilder
+        +addFloatingRateBuilder(StubFloatingRate.StubFloatingRateBuilder): StubValue.StubValueBuilder
+        +setStubAmount(Money): StubValue.StubValueBuilder
+        +setStubAmountBuilder(Money.MoneyBuilder): StubValue.StubValueBuilder
+        +setStubRate(BigDecimal): StubValue.StubValueBuilder
+        +build(): StubValue
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class CalendarSpreadValidator [[CalendarSpreadValidator.html]] {
+        +validate(CalendarSpread): ValidationResult<CalendarSpread>
+    }
+
+@enduml

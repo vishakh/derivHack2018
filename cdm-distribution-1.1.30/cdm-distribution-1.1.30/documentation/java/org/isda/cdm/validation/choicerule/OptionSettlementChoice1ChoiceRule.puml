@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionSettlementChoice1ChoiceRule [[OptionSettlementChoice1ChoiceRule.html]] {
+        +validate(OptionSettlement): ValidationResult<OptionSettlement>
+    }
+
+@enduml

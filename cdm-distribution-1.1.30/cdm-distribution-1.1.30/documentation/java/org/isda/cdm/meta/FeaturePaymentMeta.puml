@@ -1,0 +1,12 @@
+@startuml
+
+    class FeaturePaymentMeta [[FeaturePaymentMeta.html]] {
+        +dataRules(): List<Validator<FeaturePayment>>
+        +choiceRuleValidators(): List<Validator<FeaturePayment>>
+        +getOutMappings(): Multimap<String, OutMapping<FeaturePayment, ?>>
+        +getQualifyFunctions(): List<Function<FeaturePayment, QualifyResult>>
+        +validator(): Validator<FeaturePayment>
+        +onlyExistsValidator(): ValidatorWithArg<FeaturePayment, String>
+    }
+
+@enduml

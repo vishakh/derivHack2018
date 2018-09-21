@@ -1,0 +1,18 @@
+@startuml
+
+    class Account [[Account.html]] {
+        +getAccountBeneficiary(): String
+        +getAccountName(): String
+        +getAccountNameScheme(): String
+        +getAccountNumber(): String
+        +getAccountNumberScheme(): String
+        +getAccountType(): AccountTypeEnum
+        +getAccountTypeScheme(): String
+        +getId(): String
+        +getServicingParty(): String
+        +toBuilder(): Account.AccountBuilder
+        {static} +builder(): Account.AccountBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

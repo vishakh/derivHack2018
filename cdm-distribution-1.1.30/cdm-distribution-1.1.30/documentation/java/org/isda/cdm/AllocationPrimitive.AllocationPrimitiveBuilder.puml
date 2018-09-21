@@ -1,0 +1,15 @@
+@startuml
+
+    class AllocationPrimitive.AllocationPrimitiveBuilder [[AllocationPrimitive.AllocationPrimitiveBuilder.html]] {
+        +getAfter(): AllocationOutcome.AllocationOutcomeBuilder
+        +getOrCreateAfter(): AllocationOutcome.AllocationOutcomeBuilder
+        +getBefore(): Execution.ExecutionBuilder
+        +getOrCreateBefore(): Execution.ExecutionBuilder
+        +setAfter(AllocationOutcome): AllocationPrimitive.AllocationPrimitiveBuilder
+        +setAfterBuilder(AllocationOutcome.AllocationOutcomeBuilder): AllocationPrimitive.AllocationPrimitiveBuilder
+        +setBefore(Execution): AllocationPrimitive.AllocationPrimitiveBuilder
+        +setBeforeBuilder(Execution.ExecutionBuilder): AllocationPrimitive.AllocationPrimitiveBuilder
+        +build(): AllocationPrimitive
+    }
+
+@enduml

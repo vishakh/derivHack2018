@@ -1,0 +1,7 @@
+@startuml
+
+    class LinkIdValidator [[LinkIdValidator.html]] {
+        +validate(LinkId): ValidationResult<LinkId>
+    }
+
+@enduml

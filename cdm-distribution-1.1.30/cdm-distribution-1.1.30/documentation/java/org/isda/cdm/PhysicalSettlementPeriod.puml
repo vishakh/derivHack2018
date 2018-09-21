@@ -1,0 +1,12 @@
+@startuml
+
+    class PhysicalSettlementPeriod [[PhysicalSettlementPeriod.html]] {
+        +getBusinessDays(): Integer
+        +getBusinessDaysNotSpecified(): Boolean
+        +getMaximumBusinessDays(): Integer
+        +toBuilder(): PhysicalSettlementPeriod.PhysicalSettlementPeriodBuilder
+        {static} +builder(): PhysicalSettlementPeriod.PhysicalSettlementPeriodBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

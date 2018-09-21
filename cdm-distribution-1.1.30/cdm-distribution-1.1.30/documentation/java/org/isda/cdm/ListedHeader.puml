@@ -1,0 +1,17 @@
+@startuml
+
+    abstract class ListedHeader [[ListedHeader.html]] {
+        +getClearanceSystem(): String
+        +getClearanceSystemScheme(): String
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +getDescription(): String
+        +getId(): String
+        +getProductIdentifier(): List<ProductIdentifier>
+        +getProductIdentifierScheme(): String
+        +getProductTaxonomy(): List<ProductTaxonomy>
+        #rosettaKeyValueHashCode(): int
+        {abstract} +toBuilder(): ListedHeader.ListedHeaderBuilder
+    }
+
+@enduml

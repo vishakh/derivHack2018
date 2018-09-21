@@ -1,0 +1,11 @@
+@startuml
+
+    class AveragingObservationList.AveragingObservationListBuilder [[AveragingObservationList.AveragingObservationListBuilder.html]] {
+        +getAveragingObservation(): List<WeightedAveragingObservation.WeightedAveragingObservationBuilder>
+        +getOrCreateAveragingObservation(int): WeightedAveragingObservation.WeightedAveragingObservationBuilder
+        +addAveragingObservation(WeightedAveragingObservation): AveragingObservationList.AveragingObservationListBuilder
+        +addAveragingObservationBuilder(WeightedAveragingObservation.WeightedAveragingObservationBuilder): AveragingObservationList.AveragingObservationListBuilder
+        +build(): AveragingObservationList
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class ValuationPostponementMeta [[ValuationPostponementMeta.html]] {
+        +dataRules(): List<Validator<ValuationPostponement>>
+        +choiceRuleValidators(): List<Validator<ValuationPostponement>>
+        +getOutMappings(): Multimap<String, OutMapping<ValuationPostponement, ?>>
+        +getQualifyFunctions(): List<Function<ValuationPostponement, QualifyResult>>
+        +validator(): Validator<ValuationPostponement>
+        +onlyExistsValidator(): ValidatorWithArg<ValuationPostponement, String>
+    }
+
+@enduml

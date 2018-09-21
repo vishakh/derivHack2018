@@ -1,0 +1,7 @@
+@startuml
+
+    class NovationFeeDataRule [[NovationFeeDataRule.html]] {
+        +validate(Event): ValidationResult<Event>
+    }
+
+@enduml

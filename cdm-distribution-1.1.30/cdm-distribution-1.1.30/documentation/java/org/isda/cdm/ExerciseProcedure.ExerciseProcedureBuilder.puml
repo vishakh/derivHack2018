@@ -1,0 +1,21 @@
+@startuml
+
+    class ExerciseProcedure.ExerciseProcedureBuilder [[ExerciseProcedure.ExerciseProcedureBuilder.html]] {
+        +getAutomaticExercise(): AutomaticExercise.AutomaticExerciseBuilder
+        +getOrCreateAutomaticExercise(): AutomaticExercise.AutomaticExerciseBuilder
+        +getFollowUpConfirmation(): Boolean
+        +getLimitedRightToConfirm(): Boolean
+        +getManualExercise(): ManualExercise.ManualExerciseBuilder
+        +getOrCreateManualExercise(): ManualExercise.ManualExerciseBuilder
+        +getSplitTicket(): Boolean
+        +setAutomaticExercise(AutomaticExercise): ExerciseProcedure.ExerciseProcedureBuilder
+        +setAutomaticExerciseBuilder(AutomaticExercise.AutomaticExerciseBuilder): ExerciseProcedure.ExerciseProcedureBuilder
+        +setFollowUpConfirmation(Boolean): ExerciseProcedure.ExerciseProcedureBuilder
+        +setLimitedRightToConfirm(Boolean): ExerciseProcedure.ExerciseProcedureBuilder
+        +setManualExercise(ManualExercise): ExerciseProcedure.ExerciseProcedureBuilder
+        +setManualExerciseBuilder(ManualExercise.ManualExerciseBuilder): ExerciseProcedure.ExerciseProcedureBuilder
+        +setSplitTicket(Boolean): ExerciseProcedure.ExerciseProcedureBuilder
+        +build(): ExerciseProcedure
+    }
+
+@enduml

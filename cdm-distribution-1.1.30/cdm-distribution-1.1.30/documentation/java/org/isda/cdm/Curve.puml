@@ -1,0 +1,12 @@
+@startuml
+
+    class Curve [[Curve.html]] {
+        +getCommodityCurve(): CommodityReferencePriceEnum
+        +getCommodityCurveScheme(): String
+        +getInterestRateCurve(): InterestRateCurve
+        +toBuilder(): Curve.CurveBuilder
+        {static} +builder(): Curve.CurveBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

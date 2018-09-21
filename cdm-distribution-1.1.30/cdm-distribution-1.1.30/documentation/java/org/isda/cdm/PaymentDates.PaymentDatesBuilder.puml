@@ -1,0 +1,35 @@
+@startuml
+
+    class PaymentDates.PaymentDatesBuilder [[PaymentDates.PaymentDatesBuilder.html]] {
+        +getCalculationPeriodDatesReference(): String
+        +getFirstPaymentDate(): LocalDate
+        +getId(): String
+        +getLastRegularPaymentDate(): LocalDate
+        +getPayRelativeTo(): PayRelativeToEnum
+        +getPaymentDatesAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getOrCreatePaymentDatesAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getPaymentDaysOffset(): Offset.OffsetBuilder
+        +getOrCreatePaymentDaysOffset(): Offset.OffsetBuilder
+        +getPaymentDelay(): Boolean
+        +getPaymentFrequency(): Frequency.FrequencyBuilder
+        +getOrCreatePaymentFrequency(): Frequency.FrequencyBuilder
+        +getResetDatesReference(): String
+        +getValuationDatesReference(): String
+        +setCalculationPeriodDatesReference(String): PaymentDates.PaymentDatesBuilder
+        +setFirstPaymentDate(LocalDate): PaymentDates.PaymentDatesBuilder
+        +setId(String): PaymentDates.PaymentDatesBuilder
+        +setLastRegularPaymentDate(LocalDate): PaymentDates.PaymentDatesBuilder
+        +setPayRelativeTo(PayRelativeToEnum): PaymentDates.PaymentDatesBuilder
+        +setPaymentDatesAdjustments(BusinessDayAdjustments): PaymentDates.PaymentDatesBuilder
+        +setPaymentDatesAdjustmentsBuilder(BusinessDayAdjustments.BusinessDayAdjustmentsBuilder): PaymentDates.PaymentDatesBuilder
+        +setPaymentDaysOffset(Offset): PaymentDates.PaymentDatesBuilder
+        +setPaymentDaysOffsetBuilder(Offset.OffsetBuilder): PaymentDates.PaymentDatesBuilder
+        +setPaymentDelay(Boolean): PaymentDates.PaymentDatesBuilder
+        +setPaymentFrequency(Frequency): PaymentDates.PaymentDatesBuilder
+        +setPaymentFrequencyBuilder(Frequency.FrequencyBuilder): PaymentDates.PaymentDatesBuilder
+        +setResetDatesReference(String): PaymentDates.PaymentDatesBuilder
+        +setValuationDatesReference(String): PaymentDates.PaymentDatesBuilder
+        +build(): PaymentDates
+    }
+
+@enduml

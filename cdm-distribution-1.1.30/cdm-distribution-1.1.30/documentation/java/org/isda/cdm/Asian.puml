@@ -1,0 +1,13 @@
+@startuml
+
+    class Asian [[Asian.html]] {
+        +getAveragingInOut(): AveragingInOutEnum
+        +getAveragingPeriodIn(): AveragingPeriod
+        +getAveragingPeriodOut(): AveragingPeriod
+        +getStrikeFactor(): BigDecimal
+        +toBuilder(): Asian.AsianBuilder
+        {static} +builder(): Asian.AsianBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

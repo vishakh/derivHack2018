@@ -1,0 +1,21 @@
+@startuml
+
+    class ExercisePrimitive.ExercisePrimitiveBuilder [[ExercisePrimitive.ExercisePrimitiveBuilder.html]] {
+        +getAfter(): ExerciseOutcome.ExerciseOutcomeBuilder
+        +getOrCreateAfter(): ExerciseOutcome.ExerciseOutcomeBuilder
+        +getBefore(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +getOrCreateBefore(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +getExerciseDate(): LocalDate
+        +getExerciseTime(): LocalTime
+        +getFullExercise(): Boolean
+        +setAfter(ExerciseOutcome): ExercisePrimitive.ExercisePrimitiveBuilder
+        +setAfterBuilder(ExerciseOutcome.ExerciseOutcomeBuilder): ExercisePrimitive.ExercisePrimitiveBuilder
+        +setBefore(ContractOrContractReference): ExercisePrimitive.ExercisePrimitiveBuilder
+        +setBeforeBuilder(ContractOrContractReference.ContractOrContractReferenceBuilder): ExercisePrimitive.ExercisePrimitiveBuilder
+        +setExerciseDate(LocalDate): ExercisePrimitive.ExercisePrimitiveBuilder
+        +setExerciseTime(LocalTime): ExercisePrimitive.ExercisePrimitiveBuilder
+        +setFullExercise(Boolean): ExercisePrimitive.ExercisePrimitiveBuilder
+        +build(): ExercisePrimitive
+    }
+
+@enduml

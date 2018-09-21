@@ -1,0 +1,7 @@
+@startuml
+
+    class PartyAndAccountReferenceValidator [[PartyAndAccountReferenceValidator.html]] {
+        +validate(PartyAndAccountReference): ValidationResult<PartyAndAccountReference>
+    }
+
+@enduml

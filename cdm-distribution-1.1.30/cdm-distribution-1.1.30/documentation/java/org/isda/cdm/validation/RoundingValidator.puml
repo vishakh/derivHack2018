@@ -1,0 +1,7 @@
+@startuml
+
+    class RoundingValidator [[RoundingValidator.html]] {
+        +validate(Rounding): ValidationResult<Rounding>
+    }
+
+@enduml

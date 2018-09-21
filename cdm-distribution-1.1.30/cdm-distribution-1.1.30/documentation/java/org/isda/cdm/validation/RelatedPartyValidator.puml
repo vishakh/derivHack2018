@@ -1,0 +1,7 @@
+@startuml
+
+    class RelatedPartyValidator [[RelatedPartyValidator.html]] {
+        +validate(RelatedParty): ValidationResult<RelatedParty>
+    }
+
+@enduml

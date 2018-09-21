@@ -1,0 +1,94 @@
+@startuml
+
+    namespace org.isda.cdm.functions {
+
+        interface DaysInPeriod [[DaysInPeriod.html]] {
+            {abstract} +execute(CalculationPeriodDates): DaysInPeriod.CalculationResult
+        }
+
+        class org.isda.cdm.functions.DaysInPeriod.CalculationResult [[DaysInPeriod.CalculationResult.html]] {
+            +getDays(): Integer
+            +setDays(Integer): DaysInPeriod.CalculationResult
+            +getAttributes(): List<IResult.Attribute<?>>
+        }
+
+        interface ResolveRateIndex [[ResolveRateIndex.html]] {
+            {abstract} +execute(FloatingRateIndexEnum): ResolveRateIndex.CalculationResult
+        }
+
+        class org.isda.cdm.functions.ResolveRateIndex.CalculationResult [[ResolveRateIndex.CalculationResult.html]] {
+            +getRate(): BigDecimal
+            +setRate(BigDecimal): ResolveRateIndex.CalculationResult
+            +getAttributes(): List<IResult.Attribute<?>>
+        }
+
+        interface GetRateSchedule [[GetRateSchedule.html]] {
+            {abstract} +execute(FloatingRateCalculation): GetRateSchedule.CalculationResult
+        }
+
+        class org.isda.cdm.functions.GetRateSchedule.CalculationResult [[GetRateSchedule.CalculationResult.html]] {
+            +getSchedule(): SpreadSchedule
+            +setSchedule(SpreadSchedule): GetRateSchedule.CalculationResult
+            +getAttributes(): List<IResult.Attribute<?>>
+        }
+
+        interface CalculationPeriod [[CalculationPeriod.html]] {
+            {abstract} +execute(CalculationPeriodDates): CalculationPeriod.CalculationResult
+        }
+
+        class org.isda.cdm.functions.CalculationPeriod.CalculationResult [[CalculationPeriod.CalculationResult.html]] {
+            +getStartDate(): Date
+            +setStartDate(Date): CalculationPeriod.CalculationResult
+            +getEndDate(): Date
+            +setEndDate(Date): CalculationPeriod.CalculationResult
+            +getAttributes(): List<IResult.Attribute<?>>
+        }
+
+        class ResolveRateIndexImpl [[ResolveRateIndexImpl.html]] {
+            +execute(FloatingRateIndexEnum): ResolveRateIndex.CalculationResult
+        }
+
+        class GetRateScheduleImpl [[GetRateScheduleImpl.html]] {
+            +execute(FloatingRateCalculation): GetRateSchedule.CalculationResult
+        }
+
+        class DaysInPeriodImpl [[DaysInPeriodImpl.html]] {
+            +DaysInPeriodImpl(LocalDate)
+            +execute(CalculationPeriodDates): DaysInPeriod.CalculationResult
+        }
+
+        class CalculationPeriodImpl [[CalculationPeriodImpl.html]] {
+            +CalculationPeriodImpl(LocalDate)
+            +execute(CalculationPeriodDates): CalculationPeriod.CalculationResult
+        }
+
+        interface com.rosetta.model.lib.functions.IResult {
+            {abstract} +getAttributes(): List<IResult.Attribute<?>>
+        }
+        com.rosetta.model.lib.functions.IResult <|.. org.isda.cdm.functions.DaysInPeriod.CalculationResult
+
+        DaysInPeriod +-- org.isda.cdm.functions.DaysInPeriod.CalculationResult
+
+        com.rosetta.model.lib.functions.IResult <|.. org.isda.cdm.functions.ResolveRateIndex.CalculationResult
+
+        ResolveRateIndex +-- org.isda.cdm.functions.ResolveRateIndex.CalculationResult
+
+        com.rosetta.model.lib.functions.IResult <|.. org.isda.cdm.functions.GetRateSchedule.CalculationResult
+
+        GetRateSchedule +-- org.isda.cdm.functions.GetRateSchedule.CalculationResult
+
+        com.rosetta.model.lib.functions.IResult <|.. org.isda.cdm.functions.CalculationPeriod.CalculationResult
+
+        CalculationPeriod +-- org.isda.cdm.functions.CalculationPeriod.CalculationResult
+
+        ResolveRateIndex <|.. ResolveRateIndexImpl
+
+        GetRateSchedule <|.. GetRateScheduleImpl
+
+        DaysInPeriod <|.. DaysInPeriodImpl
+
+        CalculationPeriod <|.. CalculationPeriodImpl
+
+    }
+
+@enduml

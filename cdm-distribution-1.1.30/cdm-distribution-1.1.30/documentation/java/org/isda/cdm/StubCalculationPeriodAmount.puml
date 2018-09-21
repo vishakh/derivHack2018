@@ -1,0 +1,12 @@
+@startuml
+
+    class StubCalculationPeriodAmount [[StubCalculationPeriodAmount.html]] {
+        +getCalculationPeriodDatesReference(): String
+        +getFinalStub(): StubValue
+        +getInitialStub(): StubValue
+        +toBuilder(): StubCalculationPeriodAmount.StubCalculationPeriodAmountBuilder
+        {static} +builder(): StubCalculationPeriodAmount.StubCalculationPeriodAmountBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

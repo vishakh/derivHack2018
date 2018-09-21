@@ -1,0 +1,7 @@
+@startuml
+
+    class SettledEntityMatrixValidator [[SettledEntityMatrixValidator.html]] {
+        +validate(SettledEntityMatrix): ValidationResult<SettledEntityMatrix>
+    }
+
+@enduml

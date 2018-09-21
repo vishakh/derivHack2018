@@ -1,0 +1,11 @@
+@startuml
+
+    class ResourceLength [[ResourceLength.html]] {
+        +getLengthUnit(): LengthUnitEnum
+        +getLengthValue(): BigDecimal
+        +toBuilder(): ResourceLength.ResourceLengthBuilder
+        {static} +builder(): ResourceLength.ResourceLengthBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+
+    enum SettledEntityMatrixSourceEnum [[SettledEntityMatrixSourceEnum.html]] {
+        {static} +CONFIRMATION_ANNEX
+        {static} +NOT_APPLICABLE
+        {static} +PUBLISHER
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class IdentifierOnlyExistsValidator [[IdentifierOnlyExistsValidator.html]] {
+        +validate(Identifier, String): ValidationResult<Identifier>
+    }
+
+@enduml

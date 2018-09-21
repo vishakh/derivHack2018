@@ -1,0 +1,17 @@
+@startuml
+
+    class CrossCurrencyMethod.CrossCurrencyMethodBuilder [[CrossCurrencyMethod.CrossCurrencyMethodBuilder.html]] {
+        +getCashSettlementCurrency(): List<String>
+        +getCashSettlementCurrencyScheme(): String
+        +getCashSettlementReferenceBanks(): List<CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder>
+        +getOrCreateCashSettlementReferenceBanks(int): CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder
+        +getQuotationRateType(): QuotationRateTypeEnum
+        +addCashSettlementCurrency(String): CrossCurrencyMethod.CrossCurrencyMethodBuilder
+        +setCashSettlementCurrencyScheme(String): CrossCurrencyMethod.CrossCurrencyMethodBuilder
+        +addCashSettlementReferenceBanks(CashSettlementReferenceBanks): CrossCurrencyMethod.CrossCurrencyMethodBuilder
+        +addCashSettlementReferenceBanksBuilder(CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder): CrossCurrencyMethod.CrossCurrencyMethodBuilder
+        +setQuotationRateType(QuotationRateTypeEnum): CrossCurrencyMethod.CrossCurrencyMethodBuilder
+        +build(): CrossCurrencyMethod
+    }
+
+@enduml

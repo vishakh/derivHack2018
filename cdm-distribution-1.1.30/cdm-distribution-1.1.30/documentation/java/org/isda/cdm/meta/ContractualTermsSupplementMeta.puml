@@ -1,0 +1,12 @@
+@startuml
+
+    class ContractualTermsSupplementMeta [[ContractualTermsSupplementMeta.html]] {
+        +dataRules(): List<Validator<ContractualTermsSupplement>>
+        +choiceRuleValidators(): List<Validator<ContractualTermsSupplement>>
+        +getOutMappings(): Multimap<String, OutMapping<ContractualTermsSupplement, ?>>
+        +getQualifyFunctions(): List<Function<ContractualTermsSupplement, QualifyResult>>
+        +validator(): Validator<ContractualTermsSupplement>
+        +onlyExistsValidator(): ValidatorWithArg<ContractualTermsSupplement, String>
+    }
+
+@enduml

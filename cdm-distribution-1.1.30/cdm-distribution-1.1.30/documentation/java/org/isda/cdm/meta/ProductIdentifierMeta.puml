@@ -1,0 +1,12 @@
+@startuml
+
+    class ProductIdentifierMeta [[ProductIdentifierMeta.html]] {
+        +dataRules(): List<Validator<ProductIdentifier>>
+        +choiceRuleValidators(): List<Validator<ProductIdentifier>>
+        +getOutMappings(): Multimap<String, OutMapping<ProductIdentifier, ?>>
+        +getQualifyFunctions(): List<Function<ProductIdentifier, QualifyResult>>
+        +validator(): Validator<ProductIdentifier>
+        +onlyExistsValidator(): ValidatorWithArg<ProductIdentifier, String>
+    }
+
+@enduml

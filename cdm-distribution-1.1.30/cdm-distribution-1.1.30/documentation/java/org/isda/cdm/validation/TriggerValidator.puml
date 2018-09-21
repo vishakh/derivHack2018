@@ -1,0 +1,7 @@
+@startuml
+
+    class TriggerValidator [[TriggerValidator.html]] {
+        +validate(Trigger): ValidationResult<Trigger>
+    }
+
+@enduml

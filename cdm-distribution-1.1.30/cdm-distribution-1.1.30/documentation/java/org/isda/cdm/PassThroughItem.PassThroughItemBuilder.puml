@@ -1,0 +1,13 @@
+@startuml
+
+    class PassThroughItem.PassThroughItemBuilder [[PassThroughItem.PassThroughItemBuilder.html]] {
+        +getPassThroughPercentage(): BigDecimal
+        +getPayerReceiver(): PayerReceiver.PayerReceiverBuilder
+        +getOrCreatePayerReceiver(): PayerReceiver.PayerReceiverBuilder
+        +setPassThroughPercentage(BigDecimal): PassThroughItem.PassThroughItemBuilder
+        +setPayerReceiver(PayerReceiver): PassThroughItem.PassThroughItemBuilder
+        +setPayerReceiverBuilder(PayerReceiver.PayerReceiverBuilder): PassThroughItem.PassThroughItemBuilder
+        +build(): PassThroughItem
+    }
+
+@enduml

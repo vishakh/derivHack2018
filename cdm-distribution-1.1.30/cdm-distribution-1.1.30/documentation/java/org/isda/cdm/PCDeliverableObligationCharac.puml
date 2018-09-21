@@ -1,0 +1,11 @@
+@startuml
+
+    class PCDeliverableObligationCharac [[PCDeliverableObligationCharac.html]] {
+        +getApplicable(): Boolean
+        +getPartialCashSettlement(): Boolean
+        +toBuilder(): PCDeliverableObligationCharac.PCDeliverableObligationCharacBuilder
+        {static} +builder(): PCDeliverableObligationCharac.PCDeliverableObligationCharacBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

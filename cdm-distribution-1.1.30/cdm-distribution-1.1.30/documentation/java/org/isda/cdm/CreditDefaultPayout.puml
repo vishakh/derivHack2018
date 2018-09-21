@@ -1,0 +1,16 @@
+@startuml
+
+    class CreditDefaultPayout [[CreditDefaultPayout.html]] {
+        +getCashSettlementTerms(): CashSettlementTerms
+        +getGeneralTerms(): GeneralTerms
+        +getId(): String
+        +getPhysicalSettlementTerms(): PhysicalSettlementTerms
+        +getProtectionTerms(): ProtectionTerms
+        +getTransactedPrice(): TransactedPrice
+        +toBuilder(): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        {static} +builder(): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +getRosettaKeyValue(): String
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

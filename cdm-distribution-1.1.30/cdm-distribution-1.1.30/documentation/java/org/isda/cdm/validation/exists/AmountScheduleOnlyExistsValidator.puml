@@ -1,0 +1,7 @@
+@startuml
+
+    class AmountScheduleOnlyExistsValidator [[AmountScheduleOnlyExistsValidator.html]] {
+        +validate(AmountSchedule, String): ValidationResult<AmountSchedule>
+    }
+
+@enduml

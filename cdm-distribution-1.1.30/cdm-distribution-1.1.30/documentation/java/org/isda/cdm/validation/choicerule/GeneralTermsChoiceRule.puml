@@ -1,0 +1,7 @@
+@startuml
+
+    class GeneralTermsChoiceRule [[GeneralTermsChoiceRule.html]] {
+        +validate(GeneralTerms): ValidationResult<GeneralTerms>
+    }
+
+@enduml

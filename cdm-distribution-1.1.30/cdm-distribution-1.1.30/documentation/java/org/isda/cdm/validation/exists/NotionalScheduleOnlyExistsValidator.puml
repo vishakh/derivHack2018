@@ -1,0 +1,7 @@
+@startuml
+
+    class NotionalScheduleOnlyExistsValidator [[NotionalScheduleOnlyExistsValidator.html]] {
+        +validate(NotionalSchedule, String): ValidationResult<NotionalSchedule>
+    }
+
+@enduml

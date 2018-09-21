@@ -1,0 +1,39 @@
+@startuml
+
+    class IndexReferenceInformation.IndexReferenceInformationBuilder [[IndexReferenceInformation.IndexReferenceInformationBuilder.html]] {
+        +getExcludedReferenceEntity(): List<LegalEntity.LegalEntityBuilder>
+        +getOrCreateExcludedReferenceEntity(int): LegalEntity.LegalEntityBuilder
+        +getId(): String
+        +getIndexAnnexDate(): LocalDate
+        +getIndexAnnexSource(): IndexAnnexSourceEnum
+        +getIndexAnnexSourceScheme(): String
+        +getIndexAnnexVersion(): Integer
+        +getIndexId(): List<String>
+        +getIndexIdScheme(): String
+        +getIndexName(): String
+        +getIndexNameScheme(): String
+        +getIndexSeries(): Integer
+        +getSettledEntityMatrix(): SettledEntityMatrix.SettledEntityMatrixBuilder
+        +getOrCreateSettledEntityMatrix(): SettledEntityMatrix.SettledEntityMatrixBuilder
+        +getTranche(): Tranche.TrancheBuilder
+        +getOrCreateTranche(): Tranche.TrancheBuilder
+        +addExcludedReferenceEntity(LegalEntity): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +addExcludedReferenceEntityBuilder(LegalEntity.LegalEntityBuilder): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setId(String): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setIndexAnnexDate(LocalDate): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setIndexAnnexSource(IndexAnnexSourceEnum): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setIndexAnnexSourceScheme(String): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setIndexAnnexVersion(Integer): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +addIndexId(String): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setIndexIdScheme(String): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setIndexName(String): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setIndexNameScheme(String): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setIndexSeries(Integer): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setSettledEntityMatrix(SettledEntityMatrix): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setSettledEntityMatrixBuilder(SettledEntityMatrix.SettledEntityMatrixBuilder): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setTranche(Tranche): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +setTrancheBuilder(Tranche.TrancheBuilder): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +build(): IndexReferenceInformation
+    }
+
+@enduml

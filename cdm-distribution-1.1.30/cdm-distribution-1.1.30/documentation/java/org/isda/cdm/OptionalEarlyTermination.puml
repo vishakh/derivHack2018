@@ -1,0 +1,18 @@
+@startuml
+
+    class OptionalEarlyTermination [[OptionalEarlyTermination.html]] {
+        +getAmericanExercise(): AmericanExercise
+        +getBermudaExercise(): BermudaExercise
+        +getCalculationAgent(): CalculationAgent
+        +getCashSettlement(): OptionCashSettlement
+        +getEuropeanExercise(): EuropeanExercise
+        +getExerciseNotice(): List<ExerciseNotice>
+        +getFollowUpConfirmation(): Boolean
+        +getOptionalEarlyTerminationAdjustedDates(): OptionalEarlyTerminationAdjustedDates
+        +getSinglePartyOption(): BuyerSeller
+        +toBuilder(): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        {static} +builder(): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

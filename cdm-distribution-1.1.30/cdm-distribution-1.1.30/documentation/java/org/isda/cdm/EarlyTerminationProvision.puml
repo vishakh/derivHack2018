@@ -1,0 +1,14 @@
+@startuml
+
+    class EarlyTerminationProvision [[EarlyTerminationProvision.html]] {
+        +getId(): String
+        +getMandatoryEarlyTermination(): MandatoryEarlyTermination
+        +getMandatoryEarlyTerminationDateTenor(): Period
+        +getOptionalEarlyTermination(): OptionalEarlyTermination
+        +getOptionalEarlyTerminationParameters(): ExercisePeriod
+        +toBuilder(): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        {static} +builder(): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

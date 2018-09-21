@@ -1,0 +1,49 @@
+@startuml
+
+    class Obligations.ObligationsBuilder [[Obligations.ObligationsBuilder.html]] {
+        +getCashSettlementOnly(): Boolean
+        +getCategory(): ObligationCategoryEnum
+        +getContinuity(): Boolean
+        +getDeliveryOfCommitments(): Boolean
+        +getDesignatedPriority(): String
+        +getDesignatedPriorityScheme(): String
+        +getExcluded(): String
+        +getFullFaithAndCreditObLiability(): Boolean
+        +getGeneralFundObligationLiability(): Boolean
+        +getListed(): Boolean
+        +getNotContingent(): Boolean
+        +getNotDomesticCurrency(): NotDomesticCurrency.NotDomesticCurrencyBuilder
+        +getOrCreateNotDomesticCurrency(): NotDomesticCurrency.NotDomesticCurrencyBuilder
+        +getNotDomesticIssuance(): Boolean
+        +getNotDomesticLaw(): Boolean
+        +getNotSovereignLender(): Boolean
+        +getNotSubordinated(): Boolean
+        +getOthReferenceEntityObligations(): String
+        +getRevenueObligationLiability(): Boolean
+        +getSpecifiedCurrency(): SpecifiedCurrency.SpecifiedCurrencyBuilder
+        +getOrCreateSpecifiedCurrency(): SpecifiedCurrency.SpecifiedCurrencyBuilder
+        +setCashSettlementOnly(Boolean): Obligations.ObligationsBuilder
+        +setCategory(ObligationCategoryEnum): Obligations.ObligationsBuilder
+        +setContinuity(Boolean): Obligations.ObligationsBuilder
+        +setDeliveryOfCommitments(Boolean): Obligations.ObligationsBuilder
+        +setDesignatedPriority(String): Obligations.ObligationsBuilder
+        +setDesignatedPriorityScheme(String): Obligations.ObligationsBuilder
+        +setExcluded(String): Obligations.ObligationsBuilder
+        +setFullFaithAndCreditObLiability(Boolean): Obligations.ObligationsBuilder
+        +setGeneralFundObligationLiability(Boolean): Obligations.ObligationsBuilder
+        +setListed(Boolean): Obligations.ObligationsBuilder
+        +setNotContingent(Boolean): Obligations.ObligationsBuilder
+        +setNotDomesticCurrency(NotDomesticCurrency): Obligations.ObligationsBuilder
+        +setNotDomesticCurrencyBuilder(NotDomesticCurrency.NotDomesticCurrencyBuilder): Obligations.ObligationsBuilder
+        +setNotDomesticIssuance(Boolean): Obligations.ObligationsBuilder
+        +setNotDomesticLaw(Boolean): Obligations.ObligationsBuilder
+        +setNotSovereignLender(Boolean): Obligations.ObligationsBuilder
+        +setNotSubordinated(Boolean): Obligations.ObligationsBuilder
+        +setOthReferenceEntityObligations(String): Obligations.ObligationsBuilder
+        +setRevenueObligationLiability(Boolean): Obligations.ObligationsBuilder
+        +setSpecifiedCurrency(SpecifiedCurrency): Obligations.ObligationsBuilder
+        +setSpecifiedCurrencyBuilder(SpecifiedCurrency.SpecifiedCurrencyBuilder): Obligations.ObligationsBuilder
+        +build(): Obligations
+    }
+
+@enduml

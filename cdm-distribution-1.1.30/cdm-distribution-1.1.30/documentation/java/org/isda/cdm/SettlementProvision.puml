@@ -1,0 +1,12 @@
+@startuml
+
+    class SettlementProvision [[SettlementProvision.html]] {
+        +getNonDeliverableSettlement(): NonDeliverableSettlement
+        +getSettlementCurrency(): String
+        +getSettlementCurrencyScheme(): String
+        +toBuilder(): SettlementProvision.SettlementProvisionBuilder
+        {static} +builder(): SettlementProvision.SettlementProvisionBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

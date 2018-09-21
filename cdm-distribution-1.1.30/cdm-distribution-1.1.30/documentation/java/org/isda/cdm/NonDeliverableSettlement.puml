@@ -1,0 +1,16 @@
+@startuml
+
+    class NonDeliverableSettlement [[NonDeliverableSettlement.html]] {
+        +getFxFixingDate(): FxFixingDate
+        +getFxFixingSchedule(): AdjustableDates
+        +getPriceSourceDisruption(): PriceSourceDisruption
+        +getReferenceCurrency(): String
+        +getReferenceCurrencyScheme(): String
+        +getSettlementRateOption(): SettlementRateOptionEnum
+        +getSettlementRateOptionScheme(): String
+        +toBuilder(): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        {static} +builder(): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

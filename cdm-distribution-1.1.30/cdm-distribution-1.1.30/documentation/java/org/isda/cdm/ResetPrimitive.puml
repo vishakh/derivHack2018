@@ -1,0 +1,13 @@
+@startuml
+
+    class ResetPrimitive [[ResetPrimitive.html]] {
+        +getCashflow(): Cashflow
+        +getDate(): LocalDate
+        +getResetValue(): BigDecimal
+        +toBuilder(): ResetPrimitive.ResetPrimitiveBuilder
+        {static} +builder(): ResetPrimitive.ResetPrimitiveBuilder
+        +getRosettaKey(): String
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

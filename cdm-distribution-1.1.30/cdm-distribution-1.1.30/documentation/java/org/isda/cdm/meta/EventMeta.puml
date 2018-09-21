@@ -1,0 +1,12 @@
+@startuml
+
+    class EventMeta [[EventMeta.html]] {
+        +dataRules(): List<Validator<Event>>
+        +choiceRuleValidators(): List<Validator<Event>>
+        +getOutMappings(): Multimap<String, OutMapping<Event, ?>>
+        +getQualifyFunctions(): List<Function<Event, QualifyResult>>
+        +validator(): Validator<Event>
+        +onlyExistsValidator(): ValidatorWithArg<Event, String>
+    }
+
+@enduml

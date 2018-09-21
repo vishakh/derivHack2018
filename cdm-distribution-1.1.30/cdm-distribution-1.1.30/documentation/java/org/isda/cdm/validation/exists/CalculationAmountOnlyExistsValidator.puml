@@ -1,0 +1,7 @@
+@startuml
+
+    class CalculationAmountOnlyExistsValidator [[CalculationAmountOnlyExistsValidator.html]] {
+        +validate(CalculationAmount, String): ValidationResult<CalculationAmount>
+    }
+
+@enduml

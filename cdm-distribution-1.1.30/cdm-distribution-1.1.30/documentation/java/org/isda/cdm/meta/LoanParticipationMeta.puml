@@ -1,0 +1,12 @@
+@startuml
+
+    class LoanParticipationMeta [[LoanParticipationMeta.html]] {
+        +dataRules(): List<Validator<LoanParticipation>>
+        +choiceRuleValidators(): List<Validator<LoanParticipation>>
+        +getOutMappings(): Multimap<String, OutMapping<LoanParticipation, ?>>
+        +getQualifyFunctions(): List<Function<LoanParticipation, QualifyResult>>
+        +validator(): Validator<LoanParticipation>
+        +onlyExistsValidator(): ValidatorWithArg<LoanParticipation, String>
+    }
+
+@enduml

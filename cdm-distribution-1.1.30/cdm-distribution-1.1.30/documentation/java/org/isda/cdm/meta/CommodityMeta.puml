@@ -1,0 +1,12 @@
+@startuml
+
+    class CommodityMeta [[CommodityMeta.html]] {
+        +dataRules(): List<Validator<Commodity>>
+        +choiceRuleValidators(): List<Validator<Commodity>>
+        +getOutMappings(): Multimap<String, OutMapping<Commodity, ?>>
+        +getQualifyFunctions(): List<Function<Commodity, QualifyResult>>
+        +validator(): Validator<Commodity>
+        +onlyExistsValidator(): ValidatorWithArg<Commodity, String>
+    }
+
+@enduml

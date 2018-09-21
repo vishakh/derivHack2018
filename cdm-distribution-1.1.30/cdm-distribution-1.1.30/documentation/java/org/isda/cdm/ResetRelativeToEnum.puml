@@ -1,0 +1,8 @@
+@startuml
+
+    enum ResetRelativeToEnum [[ResetRelativeToEnum.html]] {
+        {static} +CALCULATION_PERIOD_START_DATE
+        {static} +CALCULATION_PERIOD_END_DATE
+    }
+
+@enduml

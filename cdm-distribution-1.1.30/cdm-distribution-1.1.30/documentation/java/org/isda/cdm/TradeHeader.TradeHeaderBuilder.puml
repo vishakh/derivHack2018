@@ -1,0 +1,13 @@
+@startuml
+
+    class TradeHeader.TradeHeaderBuilder [[TradeHeader.TradeHeaderBuilder.html]] {
+        +getIdentifier(): List<PartyContractIdentifier.PartyContractIdentifierBuilder>
+        +getOrCreateIdentifier(int): PartyContractIdentifier.PartyContractIdentifierBuilder
+        +getTradeDate(): LocalDate
+        +addIdentifier(PartyContractIdentifier): TradeHeader.TradeHeaderBuilder
+        +addIdentifierBuilder(PartyContractIdentifier.PartyContractIdentifierBuilder): TradeHeader.TradeHeaderBuilder
+        +setTradeDate(LocalDate): TradeHeader.TradeHeaderBuilder
+        +build(): TradeHeader
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class NotionalStepRuleOnlyExistsValidator [[NotionalStepRuleOnlyExistsValidator.html]] {
+        +validate(NotionalStepRule, String): ValidationResult<NotionalStepRule>
+    }
+
+@enduml

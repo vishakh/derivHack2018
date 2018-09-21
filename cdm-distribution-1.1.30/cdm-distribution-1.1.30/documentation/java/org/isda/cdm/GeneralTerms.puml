@@ -1,0 +1,18 @@
+@startuml
+
+    class GeneralTerms [[GeneralTerms.html]] {
+        +getAdditionalTerm(): List<String>
+        +getAdditionalTermScheme(): String
+        +getBasketReferenceInformation(): BasketReferenceInformation
+        +getBuyerSeller(): BuyerSeller
+        +getDateAdjustments(): BusinessDayAdjustments
+        +getIndexReferenceInformation(): IndexReferenceInformation
+        +getModifiedEquityDelivery(): Boolean
+        +getReferenceInformation(): ReferenceInformation
+        +getSubstitution(): Boolean
+        +toBuilder(): GeneralTerms.GeneralTermsBuilder
+        {static} +builder(): GeneralTerms.GeneralTermsBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

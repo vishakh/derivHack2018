@@ -1,0 +1,37 @@
+@startuml
+
+    class Resource.ResourceBuilder [[Resource.ResourceBuilder.html]] {
+        +getComments(): String
+        +getLanguage(): String
+        +getLanguageScheme(): String
+        +getLength(): ResourceLength.ResourceLengthBuilder
+        +getOrCreateLength(): ResourceLength.ResourceLengthBuilder
+        +getMimeType(): String
+        +getMimeTypeScheme(): String
+        +getName(): String
+        +getResourceId(): String
+        +getResourceIdScheme(): String
+        +getResourceType(): ResourceTypeEnum
+        +getResourceTypeScheme(): String
+        +getSizeInBytes(): BigDecimal
+        +getString(): String
+        +getUrl(): String
+        +setComments(String): Resource.ResourceBuilder
+        +setLanguage(String): Resource.ResourceBuilder
+        +setLanguageScheme(String): Resource.ResourceBuilder
+        +setLength(ResourceLength): Resource.ResourceBuilder
+        +setLengthBuilder(ResourceLength.ResourceLengthBuilder): Resource.ResourceBuilder
+        +setMimeType(String): Resource.ResourceBuilder
+        +setMimeTypeScheme(String): Resource.ResourceBuilder
+        +setName(String): Resource.ResourceBuilder
+        +setResourceId(String): Resource.ResourceBuilder
+        +setResourceIdScheme(String): Resource.ResourceBuilder
+        +setResourceType(ResourceTypeEnum): Resource.ResourceBuilder
+        +setResourceTypeScheme(String): Resource.ResourceBuilder
+        +setSizeInBytes(BigDecimal): Resource.ResourceBuilder
+        +setString(String): Resource.ResourceBuilder
+        +setUrl(String): Resource.ResourceBuilder
+        +build(): Resource
+    }
+
+@enduml

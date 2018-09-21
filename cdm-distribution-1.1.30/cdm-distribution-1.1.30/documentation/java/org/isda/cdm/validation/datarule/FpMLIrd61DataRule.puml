@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLIrd61DataRule [[FpMLIrd61DataRule.html]] {
+        +validate(NotionalSchedule): ValidationResult<NotionalSchedule>
+    }
+
+@enduml

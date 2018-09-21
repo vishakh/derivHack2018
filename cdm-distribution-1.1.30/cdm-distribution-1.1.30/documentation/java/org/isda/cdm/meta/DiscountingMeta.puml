@@ -1,0 +1,12 @@
+@startuml
+
+    class DiscountingMeta [[DiscountingMeta.html]] {
+        +dataRules(): List<Validator<Discounting>>
+        +choiceRuleValidators(): List<Validator<Discounting>>
+        +getOutMappings(): Multimap<String, OutMapping<Discounting, ?>>
+        +getQualifyFunctions(): List<Function<Discounting, QualifyResult>>
+        +validator(): Validator<Discounting>
+        +onlyExistsValidator(): ValidatorWithArg<Discounting, String>
+    }
+
+@enduml

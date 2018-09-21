@@ -1,0 +1,7 @@
+@startuml
+
+    class PaymentDatesPaymentFrequencyDataRule [[PaymentDatesPaymentFrequencyDataRule.html]] {
+        +validate(Payout): ValidationResult<Payout>
+    }
+
+@enduml

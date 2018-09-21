@@ -1,0 +1,238 @@
+{
+  "effectiveDate" : "2018-05-25",
+  "eventDate" : "2018-05-21",
+  "eventEffect" : {
+    "contract" : [ "5e5bf2f1", "3c6867c3" ],
+    "contractReference" : [ "d721ae86" ],
+    "effectedContractReference" : [ "a1764b35", "cab6a5e9" ],
+    "effectedEvent" : "2eb35a6b",
+    "payment" : [ "5c245e1" ]
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "NOV-12345"
+    },
+    "version" : 1
+  },
+  "eventQualifier" : "Compression",
+  "intent" : "COMPRESSION",
+  "party" : [ {
+    "id" : "p1",
+    "partyId" : [ "Party1" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "p2",
+    "partyId" : [ "Party2" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "p3",
+    "partyId" : [ "CompressionUtility" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "newTrade" : [ {
+      "contract" : {
+        "contractIdentifier" : [ {
+          "identifierValue" : {
+            "identifier" : "IRG858TH30",
+            "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+          },
+          "partyReference" : "p1"
+        } ],
+        "contractualProduct" : {
+          "economicTerms" : {
+            "payout" : {
+              "creditDefaultPayout" : {
+                "generalTerms" : {
+                  "buyerSeller" : {
+                    "buyerPartyReference" : "p1",
+                    "sellerPartyReference" : "p2"
+                  },
+                  "indexReferenceInformation" : {
+                    "excludedReferenceEntity" : [ {
+                      "name" : "TESCO PLC"
+                    } ],
+                    "indexAnnexVersion" : 1,
+                    "indexName" : "Dow Jones iTraxx Europe Consumers Series 2 Version 1",
+                    "indexSeries" : 2
+                  }
+                },
+                "protectionTerms" : {
+                  "notionalAmount" : {
+                    "amount" : 1000000,
+                    "currency" : "USD"
+                  }
+                },
+                "rosettaKeyValue" : "d6b483c8"
+              },
+              "interestRatePayout" : [ {
+                "calculationPeriodDates" : {
+                  "terminationDate" : {
+                    "unadjustedDate" : "2030-03-20"
+                  }
+                },
+                "interestRate" : {
+                  "fixedRate" : {
+                    "initialValue" : 0.0060
+                  }
+                },
+                "payerReceiver" : {
+                  "payerPartyReference" : "p1",
+                  "receiverPartyReference" : "p2"
+                },
+                "rosettaKeyValue" : "5c1fc1f4"
+              } ]
+            },
+            "rosettaKeyValue" : "237b2e54"
+          }
+        },
+        "documentation" : {
+          "masterConfirmation" : {
+            "masterConfirmationDate" : "2004-10-11",
+            "masterConfirmationType" : "DJ_I_TRAXX_EUROPE"
+          }
+        },
+        "tradeDate" : {
+          "date" : "2017-11-03"
+        },
+        "rosettaKey" : "5e5bf2f1"
+      }
+    } ],
+    "payment" : [ {
+      "payerReceiver" : {
+        "payerPartyReference" : "p1",
+        "receiverPartyReference" : "p2"
+      },
+      "paymentAmount" : {
+        "amount" : 4830,
+        "currency" : "USD"
+      },
+      "rosettaKey" : "5c245e1"
+    } ],
+    "quantityChange" : [ {
+      "after" : {
+        "contractReference" : [ {
+          "identifierValue" : {
+            "identifier" : "TR346NHFDERLN",
+            "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+          },
+          "version" : 2,
+          "partyReference" : "p1",
+          "state" : "TERMINATED",
+          "rosettaKey" : "d721ae86"
+        } ]
+      },
+      "before" : {
+        "contractReference" : [ {
+          "identifierValue" : {
+            "identifier" : "TR346NHFDERLN",
+            "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+          },
+          "partyReference" : "p1",
+          "rosettaKey" : "a1764b35"
+        } ]
+      },
+      "change" : [ {
+        "notionalAmount" : {
+          "amount" : -5000000,
+          "currency" : "USD"
+        }
+      } ]
+    }, {
+      "after" : {
+        "contract" : [ {
+          "contractIdentifier" : [ {
+            "identifierValue" : {
+              "identifier" : "CDX45RTD",
+              "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+            },
+            "partyReference" : "p1"
+          } ],
+          "contractualProduct" : {
+            "economicTerms" : {
+              "payout" : {
+                "cashflow" : [ {
+                  "payerReceiver" : {
+                    "payerPartyReference" : "p1",
+                    "receiverPartyReference" : "p2"
+                  },
+                  "cashflowAmount" : {
+                    "amount" : 17000,
+                    "currency" : "EUR"
+                  },
+                  "rosettaKeyValue" : "abbcfb8a"
+                } ],
+                "creditDefaultPayout" : {
+                  "generalTerms" : {
+                    "buyerSeller" : {
+                      "buyerPartyReference" : "p1",
+                      "sellerPartyReference" : "p2"
+                    },
+                    "indexReferenceInformation" : {
+                      "excludedReferenceEntity" : [ {
+                        "name" : "TESCO PLC"
+                      } ],
+                      "indexAnnexVersion" : 1,
+                      "indexName" : "Dow Jones iTraxx Europe Consumers Series 2 Version 1",
+                      "indexSeries" : 2
+                    }
+                  },
+                  "protectionTerms" : {
+                    "notionalAmount" : {
+                      "amount" : 10000000,
+                      "currency" : "USD"
+                    }
+                  },
+                  "rosettaKeyValue" : "df9b808"
+                },
+                "interestRatePayout" : [ {
+                  "calculationPeriodDates" : {
+                    "terminationDate" : {
+                      "unadjustedDate" : "2021-03-20"
+                    }
+                  },
+                  "payerReceiver" : {
+                    "payerPartyReference" : "p1",
+                    "receiverPartyReference" : "p2"
+                  },
+                  "rosettaKeyValue" : "d354caac"
+                } ]
+              },
+              "rosettaKeyValue" : "6acc4112"
+            }
+          },
+          "documentation" : {
+            "masterConfirmation" : {
+              "masterConfirmationDate" : "2004-10-11",
+              "masterConfirmationType" : "DJ_I_TRAXX_EUROPE"
+            }
+          },
+          "tradeDate" : {
+            "date" : "2010-11-03"
+          },
+          "rosettaKey" : "3c6867c3"
+        } ]
+      },
+      "before" : {
+        "contractReference" : [ {
+          "identifierValue" : {
+            "identifier" : "CDX45RTD",
+            "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+          },
+          "partyReference" : "p1",
+          "rosettaKey" : "cab6a5e9"
+        } ]
+      },
+      "change" : [ {
+        "notionalAmount" : {
+          "amount" : -1500000,
+          "currency" : "USD"
+        }
+      } ]
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2018-05-21T18:13:51"
+  },
+  "rosettaKey" : "2eb35a6b"
+}

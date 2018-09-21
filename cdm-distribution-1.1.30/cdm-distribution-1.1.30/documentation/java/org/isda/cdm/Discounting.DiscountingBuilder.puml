@@ -1,0 +1,15 @@
+@startuml
+
+    class Discounting.DiscountingBuilder [[Discounting.DiscountingBuilder.html]] {
+        +getDiscountRate(): BigDecimal
+        +getDiscountRateDayCountFraction(): DayCountFractionEnum
+        +getDiscountRateDayCountFractionScheme(): String
+        +getDiscountingType(): DiscountingTypeEnum
+        +setDiscountRate(BigDecimal): Discounting.DiscountingBuilder
+        +setDiscountRateDayCountFraction(DayCountFractionEnum): Discounting.DiscountingBuilder
+        +setDiscountRateDayCountFractionScheme(String): Discounting.DiscountingBuilder
+        +setDiscountingType(DiscountingTypeEnum): Discounting.DiscountingBuilder
+        +build(): Discounting
+    }
+
+@enduml

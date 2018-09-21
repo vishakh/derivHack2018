@@ -1,0 +1,7 @@
+@startuml
+
+    class TriggerEventOnlyExistsValidator [[TriggerEventOnlyExistsValidator.html]] {
+        +validate(TriggerEvent, String): ValidationResult<TriggerEvent>
+    }
+
+@enduml

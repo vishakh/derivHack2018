@@ -1,0 +1,9 @@
+@startuml
+
+    class ContractReference.ContractReferenceBuilder [[ContractReference.ContractReferenceBuilder.html]] {
+        +getState(): StateEnum
+        +setState(StateEnum): ContractReference.ContractReferenceBuilder
+        +build(): ContractReference
+    }
+
+@enduml

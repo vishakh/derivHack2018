@@ -1,0 +1,12 @@
+@startuml
+
+    class DateTimeListMeta [[DateTimeListMeta.html]] {
+        +dataRules(): List<Validator<DateTimeList>>
+        +choiceRuleValidators(): List<Validator<DateTimeList>>
+        +getOutMappings(): Multimap<String, OutMapping<DateTimeList, ?>>
+        +getQualifyFunctions(): List<Function<DateTimeList, QualifyResult>>
+        +validator(): Validator<DateTimeList>
+        +onlyExistsValidator(): ValidatorWithArg<DateTimeList, String>
+    }
+
+@enduml

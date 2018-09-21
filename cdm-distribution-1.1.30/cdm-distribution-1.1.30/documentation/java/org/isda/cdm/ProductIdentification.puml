@@ -1,0 +1,18 @@
+@startuml
+
+    class ProductIdentification [[ProductIdentification.html]] {
+        +getPrimaryAssetClass(): AssetClassEnum
+        +getPrimaryAssetClassScheme(): String
+        +getProductId(): List<String>
+        +getProductIdScheme(): String
+        +getProductQualifier(): String
+        +getProductType(): List<String>
+        +getProductTypeScheme(): String
+        +getSecondaryAssetClass(): List<AssetClassEnum>
+        +getSecondaryAssetClassScheme(): String
+        +toBuilder(): ProductIdentification.ProductIdentificationBuilder
+        {static} +builder(): ProductIdentification.ProductIdentificationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

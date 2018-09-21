@@ -1,0 +1,25 @@
+@startuml
+
+    class PhysicalSettlementTerms.PhysicalSettlementTermsBuilder [[PhysicalSettlementTerms.PhysicalSettlementTermsBuilder.html]] {
+        +getDeliverableObligations(): DeliverableObligations.DeliverableObligationsBuilder
+        +getOrCreateDeliverableObligations(): DeliverableObligations.DeliverableObligationsBuilder
+        +getEscrow(): Boolean
+        +getId(): String
+        +getPhysicalSettlementPeriod(): PhysicalSettlementPeriod.PhysicalSettlementPeriodBuilder
+        +getOrCreatePhysicalSettlementPeriod(): PhysicalSettlementPeriod.PhysicalSettlementPeriodBuilder
+        +getSettlementCurrency(): String
+        +getSettlementCurrencyScheme(): String
+        +getSixtyBusinessDaySettlementCap(): Boolean
+        +setDeliverableObligations(DeliverableObligations): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        +setDeliverableObligationsBuilder(DeliverableObligations.DeliverableObligationsBuilder): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        +setEscrow(Boolean): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        +setId(String): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        +setPhysicalSettlementPeriod(PhysicalSettlementPeriod): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        +setPhysicalSettlementPeriodBuilder(PhysicalSettlementPeriod.PhysicalSettlementPeriodBuilder): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        +setSettlementCurrency(String): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        +setSettlementCurrencyScheme(String): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        +setSixtyBusinessDaySettlementCap(Boolean): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        +build(): PhysicalSettlementTerms
+    }
+
+@enduml

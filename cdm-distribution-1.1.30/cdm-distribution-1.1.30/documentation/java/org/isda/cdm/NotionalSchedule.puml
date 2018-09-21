@@ -1,0 +1,12 @@
+@startuml
+
+    class NotionalSchedule [[NotionalSchedule.html]] {
+        +getId(): String
+        +getNotionalStepParameters(): NotionalStepRule
+        +getNotionalStepSchedule(): NonNegativeAmountSchedule
+        +toBuilder(): NotionalSchedule.NotionalScheduleBuilder
+        {static} +builder(): NotionalSchedule.NotionalScheduleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

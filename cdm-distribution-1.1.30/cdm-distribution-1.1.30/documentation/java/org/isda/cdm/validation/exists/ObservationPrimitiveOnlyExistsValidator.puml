@@ -1,0 +1,7 @@
+@startuml
+
+    class ObservationPrimitiveOnlyExistsValidator [[ObservationPrimitiveOnlyExistsValidator.html]] {
+        +validate(ObservationPrimitive, String): ValidationResult<ObservationPrimitive>
+    }
+
+@enduml

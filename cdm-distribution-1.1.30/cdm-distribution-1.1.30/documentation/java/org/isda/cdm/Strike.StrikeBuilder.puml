@@ -1,0 +1,15 @@
+@startuml
+
+    class Strike.StrikeBuilder [[Strike.StrikeBuilder.html]] {
+        +getBuyer(): PayerReceiverEnum
+        +getId(): String
+        +getSeller(): PayerReceiverEnum
+        +getStrikeRate(): BigDecimal
+        +setBuyer(PayerReceiverEnum): Strike.StrikeBuilder
+        +setId(String): Strike.StrikeBuilder
+        +setSeller(PayerReceiverEnum): Strike.StrikeBuilder
+        +setStrikeRate(BigDecimal): Strike.StrikeBuilder
+        +build(): Strike
+    }
+
+@enduml

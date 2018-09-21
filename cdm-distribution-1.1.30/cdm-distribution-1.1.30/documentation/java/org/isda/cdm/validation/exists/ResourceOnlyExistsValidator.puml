@@ -1,0 +1,7 @@
+@startuml
+
+    class ResourceOnlyExistsValidator [[ResourceOnlyExistsValidator.html]] {
+        +validate(Resource, String): ValidationResult<Resource>
+    }
+
+@enduml

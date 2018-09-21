@@ -1,0 +1,12 @@
+@startuml
+
+    class CurveMeta [[CurveMeta.html]] {
+        +dataRules(): List<Validator<Curve>>
+        +choiceRuleValidators(): List<Validator<Curve>>
+        +getOutMappings(): Multimap<String, OutMapping<Curve, ?>>
+        +getQualifyFunctions(): List<Function<Curve, QualifyResult>>
+        +validator(): Validator<Curve>
+        +onlyExistsValidator(): ValidatorWithArg<Curve, String>
+    }
+
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+
+    class AutomaticExercise.AutomaticExerciseBuilder [[AutomaticExercise.AutomaticExerciseBuilder.html]] {
+        +getThresholdRate(): BigDecimal
+        +setThresholdRate(BigDecimal): AutomaticExercise.AutomaticExerciseBuilder
+        +build(): AutomaticExercise
+    }
+
+@enduml

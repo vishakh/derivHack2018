@@ -1,0 +1,29 @@
+@startuml
+
+    class PaymentCalculationPeriod.PaymentCalculationPeriodBuilder [[PaymentCalculationPeriod.PaymentCalculationPeriodBuilder.html]] {
+        +getAdjustedPaymentDate(): LocalDate
+        +getCalculationPeriod(): List<CalculationPeriod.CalculationPeriodBuilder>
+        +getOrCreateCalculationPeriod(int): CalculationPeriod.CalculationPeriodBuilder
+        +getDiscountFactor(): BigDecimal
+        +getFixedPaymentAmount(): BigDecimal
+        +getForecastPaymentAmount(): Money.MoneyBuilder
+        +getOrCreateForecastPaymentAmount(): Money.MoneyBuilder
+        +getId(): String
+        +getPresentValueAmount(): Money.MoneyBuilder
+        +getOrCreatePresentValueAmount(): Money.MoneyBuilder
+        +getUnadjustedPaymentDate(): LocalDate
+        +setAdjustedPaymentDate(LocalDate): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        +addCalculationPeriod(CalculationPeriod): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        +addCalculationPeriodBuilder(CalculationPeriod.CalculationPeriodBuilder): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        +setDiscountFactor(BigDecimal): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        +setFixedPaymentAmount(BigDecimal): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        +setForecastPaymentAmount(Money): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        +setForecastPaymentAmountBuilder(Money.MoneyBuilder): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        +setId(String): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        +setPresentValueAmount(Money): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        +setPresentValueAmountBuilder(Money.MoneyBuilder): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        +setUnadjustedPaymentDate(LocalDate): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        +build(): PaymentCalculationPeriod
+    }
+
+@enduml

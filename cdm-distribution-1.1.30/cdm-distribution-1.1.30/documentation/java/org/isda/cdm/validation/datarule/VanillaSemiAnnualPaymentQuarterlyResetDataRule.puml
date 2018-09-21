@@ -1,0 +1,7 @@
+@startuml
+
+    class VanillaSemiAnnualPaymentQuarterlyResetDataRule [[VanillaSemiAnnualPaymentQuarterlyResetDataRule.html]] {
+        +validate(EconomicTerms): ValidationResult<EconomicTerms>
+    }
+
+@enduml

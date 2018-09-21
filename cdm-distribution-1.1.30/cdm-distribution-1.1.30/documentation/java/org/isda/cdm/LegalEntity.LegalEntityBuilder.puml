@@ -1,0 +1,17 @@
+@startuml
+
+    class LegalEntity.LegalEntityBuilder [[LegalEntity.LegalEntityBuilder.html]] {
+        +getEntityId(): String
+        +getEntityIdScheme(): String
+        +getId(): String
+        +getName(): String
+        +getNameScheme(): String
+        +setEntityId(String): LegalEntity.LegalEntityBuilder
+        +setEntityIdScheme(String): LegalEntity.LegalEntityBuilder
+        +setId(String): LegalEntity.LegalEntityBuilder
+        +setName(String): LegalEntity.LegalEntityBuilder
+        +setNameScheme(String): LegalEntity.LegalEntityBuilder
+        +build(): LegalEntity
+    }
+
+@enduml

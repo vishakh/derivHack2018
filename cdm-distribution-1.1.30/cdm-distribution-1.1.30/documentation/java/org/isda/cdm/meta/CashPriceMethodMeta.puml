@@ -1,0 +1,12 @@
+@startuml
+
+    class CashPriceMethodMeta [[CashPriceMethodMeta.html]] {
+        +dataRules(): List<Validator<CashPriceMethod>>
+        +choiceRuleValidators(): List<Validator<CashPriceMethod>>
+        +getOutMappings(): Multimap<String, OutMapping<CashPriceMethod, ?>>
+        +getQualifyFunctions(): List<Function<CashPriceMethod, QualifyResult>>
+        +validator(): Validator<CashPriceMethod>
+        +onlyExistsValidator(): ValidatorWithArg<CashPriceMethod, String>
+    }
+
+@enduml

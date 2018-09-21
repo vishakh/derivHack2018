@@ -1,0 +1,12 @@
+@startuml
+
+    class ContractualMatrixMeta [[ContractualMatrixMeta.html]] {
+        +dataRules(): List<Validator<ContractualMatrix>>
+        +choiceRuleValidators(): List<Validator<ContractualMatrix>>
+        +getOutMappings(): Multimap<String, OutMapping<ContractualMatrix, ?>>
+        +getQualifyFunctions(): List<Function<ContractualMatrix, QualifyResult>>
+        +validator(): Validator<ContractualMatrix>
+        +onlyExistsValidator(): ValidatorWithArg<ContractualMatrix, String>
+    }
+
+@enduml

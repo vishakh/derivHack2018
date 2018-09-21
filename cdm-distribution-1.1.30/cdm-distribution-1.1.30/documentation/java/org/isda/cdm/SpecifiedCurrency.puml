@@ -1,0 +1,12 @@
+@startuml
+
+    class SpecifiedCurrency [[SpecifiedCurrency.html]] {
+        +getApplicable(): Boolean
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +toBuilder(): SpecifiedCurrency.SpecifiedCurrencyBuilder
+        {static} +builder(): SpecifiedCurrency.SpecifiedCurrencyBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

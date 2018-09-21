@@ -1,0 +1,7 @@
+@startuml
+
+    class PayerReceiverOnlyExistsValidator [[PayerReceiverOnlyExistsValidator.html]] {
+        +validate(PayerReceiver, String): ValidationResult<PayerReceiver>
+    }
+
+@enduml

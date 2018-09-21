@@ -1,0 +1,7 @@
+@startuml
+
+    class ObservationPrimitiveValidator [[ObservationPrimitiveValidator.html]] {
+        +validate(ObservationPrimitive): ValidationResult<ObservationPrimitive>
+    }
+
+@enduml

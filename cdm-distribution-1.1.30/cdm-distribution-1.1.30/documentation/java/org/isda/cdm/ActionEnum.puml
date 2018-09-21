@@ -1,0 +1,9 @@
+@startuml
+
+    enum ActionEnum [[ActionEnum.html]] {
+        {static} +NEW
+        {static} +CORRECT
+        {static} +CANCEL
+    }
+
+@enduml

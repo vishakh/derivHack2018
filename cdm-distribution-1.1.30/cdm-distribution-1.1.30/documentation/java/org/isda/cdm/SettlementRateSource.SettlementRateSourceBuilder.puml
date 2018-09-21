@@ -1,0 +1,15 @@
+@startuml
+
+    class SettlementRateSource.SettlementRateSourceBuilder [[SettlementRateSource.SettlementRateSourceBuilder.html]] {
+        +getCashSettlementReferenceBanks(): CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder
+        +getOrCreateCashSettlementReferenceBanks(): CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder
+        +getInformationSource(): InformationSource.InformationSourceBuilder
+        +getOrCreateInformationSource(): InformationSource.InformationSourceBuilder
+        +setCashSettlementReferenceBanks(CashSettlementReferenceBanks): SettlementRateSource.SettlementRateSourceBuilder
+        +setCashSettlementReferenceBanksBuilder(CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder): SettlementRateSource.SettlementRateSourceBuilder
+        +setInformationSource(InformationSource): SettlementRateSource.SettlementRateSourceBuilder
+        +setInformationSourceBuilder(InformationSource.InformationSourceBuilder): SettlementRateSource.SettlementRateSourceBuilder
+        +build(): SettlementRateSource
+    }
+
+@enduml

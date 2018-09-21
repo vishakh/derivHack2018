@@ -1,0 +1,7 @@
+@startuml
+
+    class PrincipalExchangesValidator [[PrincipalExchangesValidator.html]] {
+        +validate(PrincipalExchanges): ValidationResult<PrincipalExchanges>
+    }
+
+@enduml

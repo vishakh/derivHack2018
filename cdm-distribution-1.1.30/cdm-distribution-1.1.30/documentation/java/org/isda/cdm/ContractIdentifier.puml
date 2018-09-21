@@ -1,0 +1,11 @@
+@startuml
+
+    class ContractIdentifier [[ContractIdentifier.html]] {
+        +getAccountReference(): String
+        +getPartyReference(): String
+        +toBuilder(): ContractIdentifier.ContractIdentifierBuilder
+        {static} +builder(): ContractIdentifier.ContractIdentifierBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

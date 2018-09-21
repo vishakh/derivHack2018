@@ -1,0 +1,16 @@
+@startuml
+
+    class EuropeanExercise [[EuropeanExercise.html]] {
+        +getEarliestExerciseTime(): BusinessCenterTime
+        +getExerciseFee(): ExerciseFee
+        +getExpirationDate(): AdjustableOrRelativeDate
+        +getExpirationTime(): BusinessCenterTime
+        +getId(): String
+        +getPartialExercise(): PartialExercise
+        +getRelevantUnderlyingDate(): AdjustableOrRelativeDates
+        +toBuilder(): EuropeanExercise.EuropeanExerciseBuilder
+        {static} +builder(): EuropeanExercise.EuropeanExerciseBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

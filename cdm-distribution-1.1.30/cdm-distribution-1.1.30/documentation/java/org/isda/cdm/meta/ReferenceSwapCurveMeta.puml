@@ -1,0 +1,12 @@
+@startuml
+
+    class ReferenceSwapCurveMeta [[ReferenceSwapCurveMeta.html]] {
+        +dataRules(): List<Validator<ReferenceSwapCurve>>
+        +choiceRuleValidators(): List<Validator<ReferenceSwapCurve>>
+        +getOutMappings(): Multimap<String, OutMapping<ReferenceSwapCurve, ?>>
+        +getQualifyFunctions(): List<Function<ReferenceSwapCurve, QualifyResult>>
+        +validator(): Validator<ReferenceSwapCurve>
+        +onlyExistsValidator(): ValidatorWithArg<ReferenceSwapCurve, String>
+    }
+
+@enduml

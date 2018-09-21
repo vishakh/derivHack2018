@@ -1,0 +1,17 @@
+@startuml
+
+    class InformationSource.InformationSourceBuilder [[InformationSource.InformationSourceBuilder.html]] {
+        +getSourcePage(): String
+        +getSourcePageHeading(): String
+        +getSourcePageScheme(): String
+        +getSourceProvider(): InformationProviderEnum
+        +getSourceProviderScheme(): String
+        +setSourcePage(String): InformationSource.InformationSourceBuilder
+        +setSourcePageHeading(String): InformationSource.InformationSourceBuilder
+        +setSourcePageScheme(String): InformationSource.InformationSourceBuilder
+        +setSourceProvider(InformationProviderEnum): InformationSource.InformationSourceBuilder
+        +setSourceProviderScheme(String): InformationSource.InformationSourceBuilder
+        +build(): InformationSource
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class ContractIdentifierExtendedMeta [[ContractIdentifierExtendedMeta.html]] {
+        +dataRules(): List<Validator<ContractIdentifierExtended>>
+        +choiceRuleValidators(): List<Validator<ContractIdentifierExtended>>
+        +getOutMappings(): Multimap<String, OutMapping<ContractIdentifierExtended, ?>>
+        +getQualifyFunctions(): List<Function<ContractIdentifierExtended, QualifyResult>>
+        +validator(): Validator<ContractIdentifierExtended>
+        +onlyExistsValidator(): ValidatorWithArg<ContractIdentifierExtended, String>
+    }
+
+@enduml

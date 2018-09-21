@@ -1,0 +1,12 @@
+@startuml
+
+    class OptionExerciseMeta [[OptionExerciseMeta.html]] {
+        +dataRules(): List<Validator<OptionExercise>>
+        +choiceRuleValidators(): List<Validator<OptionExercise>>
+        +getOutMappings(): Multimap<String, OutMapping<OptionExercise, ?>>
+        +getQualifyFunctions(): List<Function<OptionExercise, QualifyResult>>
+        +validator(): Validator<OptionExercise>
+        +onlyExistsValidator(): ValidatorWithArg<OptionExercise, String>
+    }
+
+@enduml

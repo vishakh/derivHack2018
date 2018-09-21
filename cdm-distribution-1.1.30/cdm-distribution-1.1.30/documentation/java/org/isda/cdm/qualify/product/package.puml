@@ -1,0 +1,100 @@
+@startuml
+
+    namespace org.isda.cdm.qualify.product {
+
+        class IsInterestRateOptionDebtOption [[IsInterestRateOptionDebtOption.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateOptionSwaption [[IsInterestRateOptionSwaption.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateInflationSwapBasisZeroCoupon [[IsInterestRateInflationSwapBasisZeroCoupon.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateInflationSwapBasisYearOnYear [[IsInterestRateInflationSwapBasisYearOnYear.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateInflationSwapFixedFloatZeroCoupon [[IsInterestRateInflationSwapFixedFloatZeroCoupon.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateInflationSwapFixedFloatYearOnYear [[IsInterestRateInflationSwapFixedFloatYearOnYear.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateIRSwapBasisOIS [[IsInterestRateIRSwapBasisOIS.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateIRSwapFixedFloatOIS [[IsInterestRateIRSwapFixedFloatOIS.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateIRSwapFixedFloatZeroCoupon [[IsInterestRateIRSwapFixedFloatZeroCoupon.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateCrossCurrencyFixedFloat [[IsInterestRateCrossCurrencyFixedFloat.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateCrossCurrencyBasis [[IsInterestRateCrossCurrencyBasis.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateIRSwapFixedFixed [[IsInterestRateIRSwapFixedFixed.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateIRSwapFixedFloat [[IsInterestRateIRSwapFixedFloat.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateIRSwapFixedFloatPlainVanilla [[IsInterestRateIRSwapFixedFloatPlainVanilla.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        class IsInterestRateIRSwapBasis [[IsInterestRateIRSwapBasis.html]] {
+            +apply(EconomicTerms): QualifyResult
+        }
+
+        interface java.util.function.Function<T, R> {
+            {abstract} +apply(T): R
+        }
+        java.util.function.Function <|.. IsInterestRateOptionDebtOption
+
+        java.util.function.Function <|.. IsInterestRateOptionSwaption
+
+        java.util.function.Function <|.. IsInterestRateInflationSwapBasisZeroCoupon
+
+        java.util.function.Function <|.. IsInterestRateInflationSwapBasisYearOnYear
+
+        java.util.function.Function <|.. IsInterestRateInflationSwapFixedFloatZeroCoupon
+
+        java.util.function.Function <|.. IsInterestRateInflationSwapFixedFloatYearOnYear
+
+        java.util.function.Function <|.. IsInterestRateIRSwapBasisOIS
+
+        java.util.function.Function <|.. IsInterestRateIRSwapFixedFloatOIS
+
+        java.util.function.Function <|.. IsInterestRateIRSwapFixedFloatZeroCoupon
+
+        java.util.function.Function <|.. IsInterestRateCrossCurrencyFixedFloat
+
+        java.util.function.Function <|.. IsInterestRateCrossCurrencyBasis
+
+        java.util.function.Function <|.. IsInterestRateIRSwapFixedFixed
+
+        java.util.function.Function <|.. IsInterestRateIRSwapFixedFloat
+
+        java.util.function.Function <|.. IsInterestRateIRSwapFixedFloatPlainVanilla
+
+        java.util.function.Function <|.. IsInterestRateIRSwapBasis
+
+    }
+
+@enduml

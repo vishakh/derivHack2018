@@ -1,0 +1,7 @@
+@startuml
+
+    class NaturalPersonRoleOnlyExistsValidator [[NaturalPersonRoleOnlyExistsValidator.html]] {
+        +validate(NaturalPersonRole, String): ValidationResult<NaturalPersonRole>
+    }
+
+@enduml

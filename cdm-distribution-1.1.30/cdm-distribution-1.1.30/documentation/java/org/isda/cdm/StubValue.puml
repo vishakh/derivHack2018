@@ -1,0 +1,12 @@
+@startuml
+
+    class StubValue [[StubValue.html]] {
+        +getFloatingRate(): List<StubFloatingRate>
+        +getStubAmount(): Money
+        +getStubRate(): BigDecimal
+        +toBuilder(): StubValue.StubValueBuilder
+        {static} +builder(): StubValue.StubValueBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

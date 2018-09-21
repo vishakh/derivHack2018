@@ -1,0 +1,12 @@
+@startuml
+
+    class BusinessDayAdjustmentsMeta [[BusinessDayAdjustmentsMeta.html]] {
+        +dataRules(): List<Validator<BusinessDayAdjustments>>
+        +choiceRuleValidators(): List<Validator<BusinessDayAdjustments>>
+        +getOutMappings(): Multimap<String, OutMapping<BusinessDayAdjustments, ?>>
+        +getQualifyFunctions(): List<Function<BusinessDayAdjustments, QualifyResult>>
+        +validator(): Validator<BusinessDayAdjustments>
+        +onlyExistsValidator(): ValidatorWithArg<BusinessDayAdjustments, String>
+    }
+
+@enduml

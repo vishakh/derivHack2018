@@ -1,0 +1,12 @@
+@startuml
+
+    class FloatingRateMeta [[FloatingRateMeta.html]] {
+        +dataRules(): List<Validator<FloatingRate>>
+        +choiceRuleValidators(): List<Validator<FloatingRate>>
+        +getOutMappings(): Multimap<String, OutMapping<FloatingRate, ?>>
+        +getQualifyFunctions(): List<Function<FloatingRate, QualifyResult>>
+        +validator(): Validator<FloatingRate>
+        +onlyExistsValidator(): ValidatorWithArg<FloatingRate, String>
+    }
+
+@enduml

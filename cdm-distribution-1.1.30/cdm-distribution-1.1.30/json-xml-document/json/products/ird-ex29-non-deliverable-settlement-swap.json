@@ -1,0 +1,246 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "E2000098N10184",
+      "identifierScheme" : "http://www.partyA.com/swaps/trade-id"
+    },
+    "partyReference" : "party1"
+  }, {
+    "identifierValue" : {
+      "identifier" : "1234",
+      "identifierScheme" : "http://www.barclays.com/swaps/trade-id"
+    },
+    "partyReference" : "party2"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "USNY", "GBLO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6,
+              "rollConvention" : "_16"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessCenters" : {
+                    "businessCenter" : [ "USNY", "GBLO" ]
+                  },
+                  "businessDayConvention" : "MODFOLLOWING"
+                },
+                "unadjustedDate" : "2004-12-16"
+              }
+            },
+            "id" : "E2000098N10184",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "USNY", "GBLO" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2007-12-16"
+            }
+          },
+          "cashflowRepresentation" : {
+            "cashflowsMatchParameters" : false,
+            "principalExchange" : [ {
+              "principalExchangeAmount" : 26415000000.00,
+              "unadjustedPrincipalExchangeDate" : "2007-12-16"
+            } ]
+          },
+          "crossCurrencyTerms" : {
+            "principalExchanges" : {
+              "finalExchange" : true,
+              "id" : "PrincipalExchanges",
+              "initialExchange" : false,
+              "intermediateExchange" : false
+            },
+            "settlementProvision" : {
+              "nonDeliverableSettlement" : {
+                "fxFixingDate" : {
+                  "period" : "D",
+                  "periodMultiplier" : 2,
+                  "dayType" : "BUSINESS",
+                  "businessCenters" : {
+                    "businessCenter" : [ "USNY", "GBLO" ]
+                  },
+                  "businessDayConvention" : "MODFOLLOWING",
+                  "dateRelativeToPaymentDates" : {
+                    "paymentDatesReference" : [ "PaymentDatesID", "PrincipalExchanges" ]
+                  }
+                },
+                "referenceCurrency" : "KRW",
+                "settlementRateOption" : "KRW_KFTC18_KRW02"
+              },
+              "settlementCurrency" : "USD"
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.0273000
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party1",
+            "receiverPartyReference" : "party2"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "E2000098N10184",
+            "id" : "PaymentDatesID",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "USNY", "GBLO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "id" : "E2000098notional-0-LTAA0200000096.1",
+                "initialValue" : 26415000000.00,
+                "currency" : "KRW"
+              }
+            }
+          },
+          "rosettaKeyValue" : "b3bc97c9"
+        }, {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "USNY", "GBLO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6,
+              "rollConvention" : "_16"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessCenters" : {
+                    "businessCenter" : [ "USNY", "GBLO" ]
+                  },
+                  "businessDayConvention" : "MODFOLLOWING"
+                },
+                "unadjustedDate" : "2004-12-16"
+              }
+            },
+            "id" : "E2000098N10AC8",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "USNY", "GBLO" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2007-12-16"
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "USD_LIBOR_BBA",
+              "indexTenor" : {
+                "period" : "M",
+                "periodMultiplier" : 3
+              },
+              "rateTreatment" : "MONEY_MARKET_YIELD",
+              "initialRate" : 0.01650000
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party2",
+            "receiverPartyReference" : "party1"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "E2000098N10AC8",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "USNY", "GBLO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "id" : "E2000098notional-1-LTAA0200000096.1",
+                "initialValue" : 25000000.00,
+                "currency" : "USD"
+              }
+            }
+          },
+          "resetDates" : {
+            "calculationPeriodDatesReference" : "E2000098N10AC8",
+            "fixingDates" : {
+              "period" : "D",
+              "periodMultiplier" : -2,
+              "dayType" : "BUSINESS",
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO" ]
+              },
+              "businessDayConvention" : "NONE",
+              "dateRelativeTo" : "E2000098N10DDE"
+            },
+            "id" : "E2000098N10DDE",
+            "resetDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "resetFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            },
+            "resetRelativeTo" : "CALCULATION_PERIOD_START_DATE"
+          },
+          "rosettaKeyValue" : "137148d8"
+        } ]
+      },
+      "rosettaKeyValue" : "1e8e337f"
+    },
+    "productIdentification" : {
+      "productQualifier" : "InterestRate_CrossCurrency_FixedFloat"
+    }
+  },
+  "party" : [ {
+    "id" : "party1",
+    "legalEntity" : {
+      "name" : "Party A"
+    },
+    "partyId" : [ "76095221801" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "party2",
+    "partyId" : [ "00680112001" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "1994-12-12"
+  },
+  "rosettaKey" : "2a253b58"
+}

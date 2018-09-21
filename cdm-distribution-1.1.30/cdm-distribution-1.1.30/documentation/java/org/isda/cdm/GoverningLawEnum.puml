@@ -1,0 +1,7 @@
+@startuml
+
+    enum GoverningLawEnum [[GoverningLawEnum.html]] {
+        {static} +AS_SPECIFIED_IN_MASTER_AGREEMENT
+    }
+
+@enduml

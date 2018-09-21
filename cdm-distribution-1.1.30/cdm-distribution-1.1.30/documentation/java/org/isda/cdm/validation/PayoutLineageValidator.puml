@@ -1,0 +1,7 @@
+@startuml
+
+    class PayoutLineageValidator [[PayoutLineageValidator.html]] {
+        +validate(PayoutLineage): ValidationResult<PayoutLineage>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class ProductIdentifier [[ProductIdentifier.html]] {
+        +getProductId(): String
+        +getProductIdScheme(): String
+        +getProductIdSource(): ProductIdSourceEnum
+        +toBuilder(): ProductIdentifier.ProductIdentifierBuilder
+        {static} +builder(): ProductIdentifier.ProductIdentifierBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class ReferenceBankMeta [[ReferenceBankMeta.html]] {
+        +dataRules(): List<Validator<ReferenceBank>>
+        +choiceRuleValidators(): List<Validator<ReferenceBank>>
+        +getOutMappings(): Multimap<String, OutMapping<ReferenceBank, ?>>
+        +getQualifyFunctions(): List<Function<ReferenceBank, QualifyResult>>
+        +validator(): Validator<ReferenceBank>
+        +onlyExistsValidator(): ValidatorWithArg<ReferenceBank, String>
+    }
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+
+    class MessageInformation.MessageInformationBuilder [[MessageInformation.MessageInformationBuilder.html]] {
+        +getCopyTo(): List<String>
+        +getCopyToScheme(): String
+        +getMessageId(): String
+        +getMessageIdScheme(): String
+        +getSentBy(): String
+        +getSentByScheme(): String
+        +getSentTo(): String
+        +getSentToScheme(): String
+        +addCopyTo(String): MessageInformation.MessageInformationBuilder
+        +setCopyToScheme(String): MessageInformation.MessageInformationBuilder
+        +setMessageId(String): MessageInformation.MessageInformationBuilder
+        +setMessageIdScheme(String): MessageInformation.MessageInformationBuilder
+        +setSentBy(String): MessageInformation.MessageInformationBuilder
+        +setSentByScheme(String): MessageInformation.MessageInformationBuilder
+        +setSentTo(String): MessageInformation.MessageInformationBuilder
+        +setSentToScheme(String): MessageInformation.MessageInformationBuilder
+        +build(): MessageInformation
+    }
+
+@enduml

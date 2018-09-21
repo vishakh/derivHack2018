@@ -1,0 +1,1648 @@
+@startuml
+
+    namespace org.isda.cdm.validation.exists {
+
+        class PartyRoleOnlyExistsValidator [[PartyRoleOnlyExistsValidator.html]] {
+            +validate(PartyRole, String): ValidationResult<PartyRole>
+        }
+
+        class PartyAndAccountReferenceOnlyExistsValidator [[PartyAndAccountReferenceOnlyExistsValidator.html]] {
+            +validate(PartyAndAccountReference, String): ValidationResult<PartyAndAccountReference>
+        }
+
+        class PartyOnlyExistsValidator [[PartyOnlyExistsValidator.html]] {
+            +validate(Party, String): ValidationResult<Party>
+        }
+
+        class NaturalPersonRoleOnlyExistsValidator [[NaturalPersonRoleOnlyExistsValidator.html]] {
+            +validate(NaturalPersonRole, String): ValidationResult<NaturalPersonRole>
+        }
+
+        class NaturalPersonOnlyExistsValidator [[NaturalPersonOnlyExistsValidator.html]] {
+            +validate(NaturalPerson, String): ValidationResult<NaturalPerson>
+        }
+
+        class LegalEntityOnlyExistsValidator [[LegalEntityOnlyExistsValidator.html]] {
+            +validate(LegalEntity, String): ValidationResult<LegalEntity>
+        }
+
+        class AccountOnlyExistsValidator [[AccountOnlyExistsValidator.html]] {
+            +validate(Account, String): ValidationResult<Account>
+        }
+
+        class ProductTaxonomyOnlyExistsValidator [[ProductTaxonomyOnlyExistsValidator.html]] {
+            +validate(ProductTaxonomy, String): ValidationResult<ProductTaxonomy>
+        }
+
+        class ProductIdentifierOnlyExistsValidator [[ProductIdentifierOnlyExistsValidator.html]] {
+            +validate(ProductIdentifier, String): ValidationResult<ProductIdentifier>
+        }
+
+        class ListedProductOnlyExistsValidator [[ListedProductOnlyExistsValidator.html]] {
+            +validate(ListedProduct, String): ValidationResult<ListedProduct>
+        }
+
+        class ListedHeaderOnlyExistsValidator [[ListedHeaderOnlyExistsValidator.html]] {
+            +validate(ListedHeader, String): ValidationResult<ListedHeader>
+        }
+
+        class StubValueOnlyExistsValidator [[StubValueOnlyExistsValidator.html]] {
+            +validate(StubValue, String): ValidationResult<StubValue>
+        }
+
+        class StubFloatingRateOnlyExistsValidator [[StubFloatingRateOnlyExistsValidator.html]] {
+            +validate(StubFloatingRate, String): ValidationResult<StubFloatingRate>
+        }
+
+        class StrikeScheduleOnlyExistsValidator [[StrikeScheduleOnlyExistsValidator.html]] {
+            +validate(StrikeSchedule, String): ValidationResult<StrikeSchedule>
+        }
+
+        class StrikeOnlyExistsValidator [[StrikeOnlyExistsValidator.html]] {
+            +validate(Strike, String): ValidationResult<Strike>
+        }
+
+        class StepOnlyExistsValidator [[StepOnlyExistsValidator.html]] {
+            +validate(Step, String): ValidationResult<Step>
+        }
+
+        class SpreadScheduleOnlyExistsValidator [[SpreadScheduleOnlyExistsValidator.html]] {
+            +validate(SpreadSchedule, String): ValidationResult<SpreadSchedule>
+        }
+
+        class SimplePaymentOnlyExistsValidator [[SimplePaymentOnlyExistsValidator.html]] {
+            +validate(SimplePayment, String): ValidationResult<SimplePayment>
+        }
+
+        class SettlementRateSourceOnlyExistsValidator [[SettlementRateSourceOnlyExistsValidator.html]] {
+            +validate(SettlementRateSource, String): ValidationResult<SettlementRateSource>
+        }
+
+        class ScheduleOnlyExistsValidator [[ScheduleOnlyExistsValidator.html]] {
+            +validate(Schedule, String): ValidationResult<Schedule>
+        }
+
+        class RoundingOnlyExistsValidator [[RoundingOnlyExistsValidator.html]] {
+            +validate(Rounding, String): ValidationResult<Rounding>
+        }
+
+        class ResourceLengthOnlyExistsValidator [[ResourceLengthOnlyExistsValidator.html]] {
+            +validate(ResourceLength, String): ValidationResult<ResourceLength>
+        }
+
+        class ResourceOnlyExistsValidator [[ResourceOnlyExistsValidator.html]] {
+            +validate(Resource, String): ValidationResult<Resource>
+        }
+
+        class ResetFrequencyOnlyExistsValidator [[ResetFrequencyOnlyExistsValidator.html]] {
+            +validate(ResetFrequency, String): ValidationResult<ResetFrequency>
+        }
+
+        class RelativeDateOffsetOnlyExistsValidator [[RelativeDateOffsetOnlyExistsValidator.html]] {
+            +validate(RelativeDateOffset, String): ValidationResult<RelativeDateOffset>
+        }
+
+        class RelativeDatesOnlyExistsValidator [[RelativeDatesOnlyExistsValidator.html]] {
+            +validate(RelativeDates, String): ValidationResult<RelativeDates>
+        }
+
+        class RelatedPartyOnlyExistsValidator [[RelatedPartyOnlyExistsValidator.html]] {
+            +validate(RelatedParty, String): ValidationResult<RelatedParty>
+        }
+
+        class ReferenceBankOnlyExistsValidator [[ReferenceBankOnlyExistsValidator.html]] {
+            +validate(ReferenceBank, String): ValidationResult<ReferenceBank>
+        }
+
+        class RateObservationOnlyExistsValidator [[RateObservationOnlyExistsValidator.html]] {
+            +validate(RateObservation, String): ValidationResult<RateObservation>
+        }
+
+        class QuotedCurrencyPairOnlyExistsValidator [[QuotedCurrencyPairOnlyExistsValidator.html]] {
+            +validate(QuotedCurrencyPair, String): ValidationResult<QuotedCurrencyPair>
+        }
+
+        class PriorDateInstanceOnlyExistsValidator [[PriorDateInstanceOnlyExistsValidator.html]] {
+            +validate(PriorDateInstance, String): ValidationResult<PriorDateInstance>
+        }
+
+        class PrincipalExchangesOnlyExistsValidator [[PrincipalExchangesOnlyExistsValidator.html]] {
+            +validate(PrincipalExchanges, String): ValidationResult<PrincipalExchanges>
+        }
+
+        class PremiumExpressionOnlyExistsValidator [[PremiumExpressionOnlyExistsValidator.html]] {
+            +validate(PremiumExpression, String): ValidationResult<PremiumExpression>
+        }
+
+        class PeriodOnlyExistsValidator [[PeriodOnlyExistsValidator.html]] {
+            +validate(Period, String): ValidationResult<Period>
+        }
+
+        class PaymentRuleOnlyExistsValidator [[PaymentRuleOnlyExistsValidator.html]] {
+            +validate(PaymentRule, String): ValidationResult<PaymentRule>
+        }
+
+        class PaymentDiscountingOnlyExistsValidator [[PaymentDiscountingOnlyExistsValidator.html]] {
+            +validate(PaymentDiscounting, String): ValidationResult<PaymentDiscounting>
+        }
+
+        class PaymentDetailOnlyExistsValidator [[PaymentDetailOnlyExistsValidator.html]] {
+            +validate(PaymentDetail, String): ValidationResult<PaymentDetail>
+        }
+
+        class PaymentOnlyExistsValidator [[PaymentOnlyExistsValidator.html]] {
+            +validate(Payment, String): ValidationResult<Payment>
+        }
+
+        class PayerReceiverOnlyExistsValidator [[PayerReceiverOnlyExistsValidator.html]] {
+            +validate(PayerReceiver, String): ValidationResult<PayerReceiver>
+        }
+
+        class PartialExerciseOnlyExistsValidator [[PartialExerciseOnlyExistsValidator.html]] {
+            +validate(PartialExercise, String): ValidationResult<PartialExercise>
+        }
+
+        class OtherAgreementOnlyExistsValidator [[OtherAgreementOnlyExistsValidator.html]] {
+            +validate(OtherAgreement, String): ValidationResult<OtherAgreement>
+        }
+
+        class OptionPhysicalSettlementOnlyExistsValidator [[OptionPhysicalSettlementOnlyExistsValidator.html]] {
+            +validate(OptionPhysicalSettlement, String): ValidationResult<OptionPhysicalSettlement>
+        }
+
+        class OffsetOnlyExistsValidator [[OffsetOnlyExistsValidator.html]] {
+            +validate(Offset, String): ValidationResult<Offset>
+        }
+
+        class NonNegativeStepOnlyExistsValidator [[NonNegativeStepOnlyExistsValidator.html]] {
+            +validate(NonNegativeStep, String): ValidationResult<NonNegativeStep>
+        }
+
+        class NonNegativeScheduleOnlyExistsValidator [[NonNegativeScheduleOnlyExistsValidator.html]] {
+            +validate(NonNegativeSchedule, String): ValidationResult<NonNegativeSchedule>
+        }
+
+        class NonNegativeAmountScheduleOnlyExistsValidator [[NonNegativeAmountScheduleOnlyExistsValidator.html]] {
+            +validate(NonNegativeAmountSchedule, String): ValidationResult<NonNegativeAmountSchedule>
+        }
+
+        class MultipleExerciseOnlyExistsValidator [[MultipleExerciseOnlyExistsValidator.html]] {
+            +validate(MultipleExercise, String): ValidationResult<MultipleExercise>
+        }
+
+        class MoneyOnlyExistsValidator [[MoneyOnlyExistsValidator.html]] {
+            +validate(Money, String): ValidationResult<Money>
+        }
+
+        class MasterConfirmationOnlyExistsValidator [[MasterConfirmationOnlyExistsValidator.html]] {
+            +validate(MasterConfirmation, String): ValidationResult<MasterConfirmation>
+        }
+
+        class MasterAgreementOnlyExistsValidator [[MasterAgreementOnlyExistsValidator.html]] {
+            +validate(MasterAgreement, String): ValidationResult<MasterAgreement>
+        }
+
+        class ManualExerciseOnlyExistsValidator [[ManualExerciseOnlyExistsValidator.html]] {
+            +validate(ManualExercise, String): ValidationResult<ManualExercise>
+        }
+
+        class IssuerTradeIdOnlyExistsValidator [[IssuerTradeIdOnlyExistsValidator.html]] {
+            +validate(IssuerTradeId, String): ValidationResult<IssuerTradeId>
+        }
+
+        class InitialFixingDateOnlyExistsValidator [[InitialFixingDateOnlyExistsValidator.html]] {
+            +validate(InitialFixingDate, String): ValidationResult<InitialFixingDate>
+        }
+
+        class InformationSourceOnlyExistsValidator [[InformationSourceOnlyExistsValidator.html]] {
+            +validate(InformationSource, String): ValidationResult<InformationSource>
+        }
+
+        class IndependentAmountOnlyExistsValidator [[IndependentAmountOnlyExistsValidator.html]] {
+            +validate(IndependentAmount, String): ValidationResult<IndependentAmount>
+        }
+
+        class FxSpotRateSourceOnlyExistsValidator [[FxSpotRateSourceOnlyExistsValidator.html]] {
+            +validate(FxSpotRateSource, String): ValidationResult<FxSpotRateSource>
+        }
+
+        class FxRateOnlyExistsValidator [[FxRateOnlyExistsValidator.html]] {
+            +validate(FxRate, String): ValidationResult<FxRate>
+        }
+
+        class FutureValueAmountOnlyExistsValidator [[FutureValueAmountOnlyExistsValidator.html]] {
+            +validate(FutureValueAmount, String): ValidationResult<FutureValueAmount>
+        }
+
+        class FrequencyOnlyExistsValidator [[FrequencyOnlyExistsValidator.html]] {
+            +validate(Frequency, String): ValidationResult<Frequency>
+        }
+
+        class FloatingRateCalculationOnlyExistsValidator [[FloatingRateCalculationOnlyExistsValidator.html]] {
+            +validate(FloatingRateCalculation, String): ValidationResult<FloatingRateCalculation>
+        }
+
+        class FloatingRateOnlyExistsValidator [[FloatingRateOnlyExistsValidator.html]] {
+            +validate(FloatingRate, String): ValidationResult<FloatingRate>
+        }
+
+        class ExerciseProcedureOnlyExistsValidator [[ExerciseProcedureOnlyExistsValidator.html]] {
+            +validate(ExerciseProcedure, String): ValidationResult<ExerciseProcedure>
+        }
+
+        class ExerciseNoticeOnlyExistsValidator [[ExerciseNoticeOnlyExistsValidator.html]] {
+            +validate(ExerciseNotice, String): ValidationResult<ExerciseNotice>
+        }
+
+        class ExerciseFeeScheduleOnlyExistsValidator [[ExerciseFeeScheduleOnlyExistsValidator.html]] {
+            +validate(ExerciseFeeSchedule, String): ValidationResult<ExerciseFeeSchedule>
+        }
+
+        class ExerciseFeeOnlyExistsValidator [[ExerciseFeeOnlyExistsValidator.html]] {
+            +validate(ExerciseFee, String): ValidationResult<ExerciseFee>
+        }
+
+        class EuropeanExerciseOnlyExistsValidator [[EuropeanExerciseOnlyExistsValidator.html]] {
+            +validate(EuropeanExercise, String): ValidationResult<EuropeanExercise>
+        }
+
+        class DocumentationOnlyExistsValidator [[DocumentationOnlyExistsValidator.html]] {
+            +validate(Documentation, String): ValidationResult<Documentation>
+        }
+
+        class DateTimeListOnlyExistsValidator [[DateTimeListOnlyExistsValidator.html]] {
+            +validate(DateTimeList, String): ValidationResult<DateTimeList>
+        }
+
+        class DateListOnlyExistsValidator [[DateListOnlyExistsValidator.html]] {
+            +validate(DateList, String): ValidationResult<DateList>
+        }
+
+        class DateInstancesOnlyExistsValidator [[DateInstancesOnlyExistsValidator.html]] {
+            +validate(DateInstances, String): ValidationResult<DateInstances>
+        }
+
+        class DateRangeOnlyExistsValidator [[DateRangeOnlyExistsValidator.html]] {
+            +validate(DateRange, String): ValidationResult<DateRange>
+        }
+
+        class CreditSupportAgreementOnlyExistsValidator [[CreditSupportAgreementOnlyExistsValidator.html]] {
+            +validate(CreditSupportAgreement, String): ValidationResult<CreditSupportAgreement>
+        }
+
+        class ContractualTermsSupplementOnlyExistsValidator [[ContractualTermsSupplementOnlyExistsValidator.html]] {
+            +validate(ContractualTermsSupplement, String): ValidationResult<ContractualTermsSupplement>
+        }
+
+        class ContractualMatrixOnlyExistsValidator [[ContractualMatrixOnlyExistsValidator.html]] {
+            +validate(ContractualMatrix, String): ValidationResult<ContractualMatrix>
+        }
+
+        class CollateralOnlyExistsValidator [[CollateralOnlyExistsValidator.html]] {
+            +validate(Collateral, String): ValidationResult<Collateral>
+        }
+
+        class CashSettlementReferenceBanksOnlyExistsValidator [[CashSettlementReferenceBanksOnlyExistsValidator.html]] {
+            +validate(CashSettlementReferenceBanks, String): ValidationResult<CashSettlementReferenceBanks>
+        }
+
+        class CalculationPeriodFrequencyOnlyExistsValidator [[CalculationPeriodFrequencyOnlyExistsValidator.html]] {
+            +validate(CalculationPeriodFrequency, String): ValidationResult<CalculationPeriodFrequency>
+        }
+
+        class CalculationAgentOnlyExistsValidator [[CalculationAgentOnlyExistsValidator.html]] {
+            +validate(CalculationAgent, String): ValidationResult<CalculationAgent>
+        }
+
+        class BuyerSellerOnlyExistsValidator [[BuyerSellerOnlyExistsValidator.html]] {
+            +validate(BuyerSeller, String): ValidationResult<BuyerSeller>
+        }
+
+        class BusinessDayAdjustmentsOnlyExistsValidator [[BusinessDayAdjustmentsOnlyExistsValidator.html]] {
+            +validate(BusinessDayAdjustments, String): ValidationResult<BusinessDayAdjustments>
+        }
+
+        class BusinessDateRangeOnlyExistsValidator [[BusinessDateRangeOnlyExistsValidator.html]] {
+            +validate(BusinessDateRange, String): ValidationResult<BusinessDateRange>
+        }
+
+        class BusinessCenterTimeOnlyExistsValidator [[BusinessCenterTimeOnlyExistsValidator.html]] {
+            +validate(BusinessCenterTime, String): ValidationResult<BusinessCenterTime>
+        }
+
+        class BusinessCentersOnlyExistsValidator [[BusinessCentersOnlyExistsValidator.html]] {
+            +validate(BusinessCenters, String): ValidationResult<BusinessCenters>
+        }
+
+        class BrokerConfirmationOnlyExistsValidator [[BrokerConfirmationOnlyExistsValidator.html]] {
+            +validate(BrokerConfirmation, String): ValidationResult<BrokerConfirmation>
+        }
+
+        class BermudaExerciseOnlyExistsValidator [[BermudaExerciseOnlyExistsValidator.html]] {
+            +validate(BermudaExercise, String): ValidationResult<BermudaExercise>
+        }
+
+        class AutomaticExerciseOnlyExistsValidator [[AutomaticExerciseOnlyExistsValidator.html]] {
+            +validate(AutomaticExercise, String): ValidationResult<AutomaticExercise>
+        }
+
+        class AmountScheduleOnlyExistsValidator [[AmountScheduleOnlyExistsValidator.html]] {
+            +validate(AmountSchedule, String): ValidationResult<AmountSchedule>
+        }
+
+        class AmericanExerciseOnlyExistsValidator [[AmericanExerciseOnlyExistsValidator.html]] {
+            +validate(AmericanExercise, String): ValidationResult<AmericanExercise>
+        }
+
+        class AdjustedRelativeDateOffsetOnlyExistsValidator [[AdjustedRelativeDateOffsetOnlyExistsValidator.html]] {
+            +validate(AdjustedRelativeDateOffset, String): ValidationResult<AdjustedRelativeDateOffset>
+        }
+
+        class AdjustableOrRelativeDatesOnlyExistsValidator [[AdjustableOrRelativeDatesOnlyExistsValidator.html]] {
+            +validate(AdjustableOrRelativeDates, String): ValidationResult<AdjustableOrRelativeDates>
+        }
+
+        class AdjustableOrRelativeDateOnlyExistsValidator [[AdjustableOrRelativeDateOnlyExistsValidator.html]] {
+            +validate(AdjustableOrRelativeDate, String): ValidationResult<AdjustableOrRelativeDate>
+        }
+
+        class AdjustableOrAdjustedOrRelativeDateOnlyExistsValidator [[AdjustableOrAdjustedOrRelativeDateOnlyExistsValidator.html]] {
+            +validate(AdjustableOrAdjustedOrRelativeDate, String): ValidationResult<AdjustableOrAdjustedOrRelativeDate>
+        }
+
+        class AdjustableOrAdjustedDateOnlyExistsValidator [[AdjustableOrAdjustedDateOnlyExistsValidator.html]] {
+            +validate(AdjustableOrAdjustedDate, String): ValidationResult<AdjustableOrAdjustedDate>
+        }
+
+        class AdjustableDatesOnlyExistsValidator [[AdjustableDatesOnlyExistsValidator.html]] {
+            +validate(AdjustableDates, String): ValidationResult<AdjustableDates>
+        }
+
+        class AdjustableDateOnlyExistsValidator [[AdjustableDateOnlyExistsValidator.html]] {
+            +validate(AdjustableDate, String): ValidationResult<AdjustableDate>
+        }
+
+        class WeightedAveragingObservationOnlyExistsValidator [[WeightedAveragingObservationOnlyExistsValidator.html]] {
+            +validate(WeightedAveragingObservation, String): ValidationResult<WeightedAveragingObservation>
+        }
+
+        class TriggerEventOnlyExistsValidator [[TriggerEventOnlyExistsValidator.html]] {
+            +validate(TriggerEvent, String): ValidationResult<TriggerEvent>
+        }
+
+        class TriggerOnlyExistsValidator [[TriggerOnlyExistsValidator.html]] {
+            +validate(Trigger, String): ValidationResult<Trigger>
+        }
+
+        class StrikeSpreadOnlyExistsValidator [[StrikeSpreadOnlyExistsValidator.html]] {
+            +validate(StrikeSpread, String): ValidationResult<StrikeSpread>
+        }
+
+        class StrategyFeatureOnlyExistsValidator [[StrategyFeatureOnlyExistsValidator.html]] {
+            +validate(StrategyFeature, String): ValidationResult<StrategyFeature>
+        }
+
+        class RestructuringOnlyExistsValidator [[RestructuringOnlyExistsValidator.html]] {
+            +validate(Restructuring, String): ValidationResult<Restructuring>
+        }
+
+        class QuantoOnlyExistsValidator [[QuantoOnlyExistsValidator.html]] {
+            +validate(Quanto, String): ValidationResult<Quanto>
+        }
+
+        class PubliclyAvailableInformationOnlyExistsValidator [[PubliclyAvailableInformationOnlyExistsValidator.html]] {
+            +validate(PubliclyAvailableInformation, String): ValidationResult<PubliclyAvailableInformation>
+        }
+
+        class PassThroughItemOnlyExistsValidator [[PassThroughItemOnlyExistsValidator.html]] {
+            +validate(PassThroughItem, String): ValidationResult<PassThroughItem>
+        }
+
+        class PassThroughOnlyExistsValidator [[PassThroughOnlyExistsValidator.html]] {
+            +validate(PassThrough, String): ValidationResult<PassThrough>
+        }
+
+        class OptionStyleOnlyExistsValidator [[OptionStyleOnlyExistsValidator.html]] {
+            +validate(OptionStyle, String): ValidationResult<OptionStyle>
+        }
+
+        class OptionSettlementOnlyExistsValidator [[OptionSettlementOnlyExistsValidator.html]] {
+            +validate(OptionSettlement, String): ValidationResult<OptionSettlement>
+        }
+
+        class OptionFeatureOnlyExistsValidator [[OptionFeatureOnlyExistsValidator.html]] {
+            +validate(OptionFeature, String): ValidationResult<OptionFeature>
+        }
+
+        class OptionDenominationOnlyExistsValidator [[OptionDenominationOnlyExistsValidator.html]] {
+            +validate(OptionDenomination, String): ValidationResult<OptionDenomination>
+        }
+
+        class NotifyingPartyOnlyExistsValidator [[NotifyingPartyOnlyExistsValidator.html]] {
+            +validate(NotifyingParty, String): ValidationResult<NotifyingParty>
+        }
+
+        class KnockOnlyExistsValidator [[KnockOnlyExistsValidator.html]] {
+            +validate(Knock, String): ValidationResult<Knock>
+        }
+
+        class GracePeriodExtensionOnlyExistsValidator [[GracePeriodExtensionOnlyExistsValidator.html]] {
+            +validate(GracePeriodExtension, String): ValidationResult<GracePeriodExtension>
+        }
+
+        class FxFeatureOnlyExistsValidator [[FxFeatureOnlyExistsValidator.html]] {
+            +validate(FxFeature, String): ValidationResult<FxFeature>
+        }
+
+        class FeaturePaymentOnlyExistsValidator [[FeaturePaymentOnlyExistsValidator.html]] {
+            +validate(FeaturePayment, String): ValidationResult<FeaturePayment>
+        }
+
+        class FailureToPayOnlyExistsValidator [[FailureToPayOnlyExistsValidator.html]] {
+            +validate(FailureToPay, String): ValidationResult<FailureToPay>
+        }
+
+        class CreditEventNoticeOnlyExistsValidator [[CreditEventNoticeOnlyExistsValidator.html]] {
+            +validate(CreditEventNotice, String): ValidationResult<CreditEventNotice>
+        }
+
+        class CreditEventsOnlyExistsValidator [[CreditEventsOnlyExistsValidator.html]] {
+            +validate(CreditEvents, String): ValidationResult<CreditEvents>
+        }
+
+        class CompositeOnlyExistsValidator [[CompositeOnlyExistsValidator.html]] {
+            +validate(Composite, String): ValidationResult<Composite>
+        }
+
+        class CalendarSpreadOnlyExistsValidator [[CalendarSpreadOnlyExistsValidator.html]] {
+            +validate(CalendarSpread, String): ValidationResult<CalendarSpread>
+        }
+
+        class BarrierOnlyExistsValidator [[BarrierOnlyExistsValidator.html]] {
+            +validate(Barrier, String): ValidationResult<Barrier>
+        }
+
+        class AveragingScheduleOnlyExistsValidator [[AveragingScheduleOnlyExistsValidator.html]] {
+            +validate(AveragingSchedule, String): ValidationResult<AveragingSchedule>
+        }
+
+        class AveragingPeriodOnlyExistsValidator [[AveragingPeriodOnlyExistsValidator.html]] {
+            +validate(AveragingPeriod, String): ValidationResult<AveragingPeriod>
+        }
+
+        class AveragingObservationListOnlyExistsValidator [[AveragingObservationListOnlyExistsValidator.html]] {
+            +validate(AveragingObservationList, String): ValidationResult<AveragingObservationList>
+        }
+
+        class AsianOnlyExistsValidator [[AsianOnlyExistsValidator.html]] {
+            +validate(Asian, String): ValidationResult<Asian>
+        }
+
+        class YieldCurveMethodOnlyExistsValidator [[YieldCurveMethodOnlyExistsValidator.html]] {
+            +validate(YieldCurveMethod, String): ValidationResult<YieldCurveMethod>
+        }
+
+        class ValuationPostponementOnlyExistsValidator [[ValuationPostponementOnlyExistsValidator.html]] {
+            +validate(ValuationPostponement, String): ValidationResult<ValuationPostponement>
+        }
+
+        class StubCalculationPeriodAmountOnlyExistsValidator [[StubCalculationPeriodAmountOnlyExistsValidator.html]] {
+            +validate(StubCalculationPeriodAmount, String): ValidationResult<StubCalculationPeriodAmount>
+        }
+
+        class SettlementProvisionOnlyExistsValidator [[SettlementProvisionOnlyExistsValidator.html]] {
+            +validate(SettlementProvision, String): ValidationResult<SettlementProvision>
+        }
+
+        class ResetDatesOnlyExistsValidator [[ResetDatesOnlyExistsValidator.html]] {
+            +validate(ResetDates, String): ValidationResult<ResetDates>
+        }
+
+        class PrincipalExchangeOnlyExistsValidator [[PrincipalExchangeOnlyExistsValidator.html]] {
+            +validate(PrincipalExchange, String): ValidationResult<PrincipalExchange>
+        }
+
+        class PriceSourceDisruptionOnlyExistsValidator [[PriceSourceDisruptionOnlyExistsValidator.html]] {
+            +validate(PriceSourceDisruption, String): ValidationResult<PriceSourceDisruption>
+        }
+
+        class PaymentCalculationPeriodOnlyExistsValidator [[PaymentCalculationPeriodOnlyExistsValidator.html]] {
+            +validate(PaymentCalculationPeriod, String): ValidationResult<PaymentCalculationPeriod>
+        }
+
+        class OptionCashSettlementOnlyExistsValidator [[OptionCashSettlementOnlyExistsValidator.html]] {
+            +validate(OptionCashSettlement, String): ValidationResult<OptionCashSettlement>
+        }
+
+        class OptionalEarlyTerminationAdjustedDatesOnlyExistsValidator [[OptionalEarlyTerminationAdjustedDatesOnlyExistsValidator.html]] {
+            +validate(OptionalEarlyTerminationAdjustedDates, String): ValidationResult<OptionalEarlyTerminationAdjustedDates>
+        }
+
+        class OptionalEarlyTerminationOnlyExistsValidator [[OptionalEarlyTerminationOnlyExistsValidator.html]] {
+            +validate(OptionalEarlyTermination, String): ValidationResult<OptionalEarlyTermination>
+        }
+
+        class NotionalStepRuleOnlyExistsValidator [[NotionalStepRuleOnlyExistsValidator.html]] {
+            +validate(NotionalStepRule, String): ValidationResult<NotionalStepRule>
+        }
+
+        class NonDeliverableSettlementOnlyExistsValidator [[NonDeliverableSettlementOnlyExistsValidator.html]] {
+            +validate(NonDeliverableSettlement, String): ValidationResult<NonDeliverableSettlement>
+        }
+
+        class MandatoryEarlyTerminationAdjustedDatesOnlyExistsValidator [[MandatoryEarlyTerminationAdjustedDatesOnlyExistsValidator.html]] {
+            +validate(MandatoryEarlyTerminationAdjustedDates, String): ValidationResult<MandatoryEarlyTerminationAdjustedDates>
+        }
+
+        class MandatoryEarlyTerminationOnlyExistsValidator [[MandatoryEarlyTerminationOnlyExistsValidator.html]] {
+            +validate(MandatoryEarlyTermination, String): ValidationResult<MandatoryEarlyTermination>
+        }
+
+        class InflationRateCalculationOnlyExistsValidator [[InflationRateCalculationOnlyExistsValidator.html]] {
+            +validate(InflationRateCalculation, String): ValidationResult<InflationRateCalculation>
+        }
+
+        class FxLinkedNotionalScheduleOnlyExistsValidator [[FxLinkedNotionalScheduleOnlyExistsValidator.html]] {
+            +validate(FxLinkedNotionalSchedule, String): ValidationResult<FxLinkedNotionalSchedule>
+        }
+
+        class FxLinkedNotionalAmountOnlyExistsValidator [[FxLinkedNotionalAmountOnlyExistsValidator.html]] {
+            +validate(FxLinkedNotionalAmount, String): ValidationResult<FxLinkedNotionalAmount>
+        }
+
+        class FxFixingDateOnlyExistsValidator [[FxFixingDateOnlyExistsValidator.html]] {
+            +validate(FxFixingDate, String): ValidationResult<FxFixingDate>
+        }
+
+        class FloatingRateDefinitionOnlyExistsValidator [[FloatingRateDefinitionOnlyExistsValidator.html]] {
+            +validate(FloatingRateDefinition, String): ValidationResult<FloatingRateDefinition>
+        }
+
+        class FinalCalculationPeriodDateAdjustmentOnlyExistsValidator [[FinalCalculationPeriodDateAdjustmentOnlyExistsValidator.html]] {
+            +validate(FinalCalculationPeriodDateAdjustment, String): ValidationResult<FinalCalculationPeriodDateAdjustment>
+        }
+
+        class FallbackReferencePriceOnlyExistsValidator [[FallbackReferencePriceOnlyExistsValidator.html]] {
+            +validate(FallbackReferencePrice, String): ValidationResult<FallbackReferencePrice>
+        }
+
+        class ExtensionEventOnlyExistsValidator [[ExtensionEventOnlyExistsValidator.html]] {
+            +validate(ExtensionEvent, String): ValidationResult<ExtensionEvent>
+        }
+
+        class ExtendibleProvisionAdjustedDatesOnlyExistsValidator [[ExtendibleProvisionAdjustedDatesOnlyExistsValidator.html]] {
+            +validate(ExtendibleProvisionAdjustedDates, String): ValidationResult<ExtendibleProvisionAdjustedDates>
+        }
+
+        class ExtendibleProvisionOnlyExistsValidator [[ExtendibleProvisionOnlyExistsValidator.html]] {
+            +validate(ExtendibleProvision, String): ValidationResult<ExtendibleProvision>
+        }
+
+        class ExercisePeriodOnlyExistsValidator [[ExercisePeriodOnlyExistsValidator.html]] {
+            +validate(ExercisePeriod, String): ValidationResult<ExercisePeriod>
+        }
+
+        class ExerciseEventOnlyExistsValidator [[ExerciseEventOnlyExistsValidator.html]] {
+            +validate(ExerciseEvent, String): ValidationResult<ExerciseEvent>
+        }
+
+        class EarlyTerminationProvisionOnlyExistsValidator [[EarlyTerminationProvisionOnlyExistsValidator.html]] {
+            +validate(EarlyTerminationProvision, String): ValidationResult<EarlyTerminationProvision>
+        }
+
+        class EarlyTerminationEventOnlyExistsValidator [[EarlyTerminationEventOnlyExistsValidator.html]] {
+            +validate(EarlyTerminationEvent, String): ValidationResult<EarlyTerminationEvent>
+        }
+
+        class DiscountingOnlyExistsValidator [[DiscountingOnlyExistsValidator.html]] {
+            +validate(Discounting, String): ValidationResult<Discounting>
+        }
+
+        class DateRelativeToPaymentDatesOnlyExistsValidator [[DateRelativeToPaymentDatesOnlyExistsValidator.html]] {
+            +validate(DateRelativeToPaymentDates, String): ValidationResult<DateRelativeToPaymentDates>
+        }
+
+        class DateRelativeToCalculationPeriodDatesOnlyExistsValidator [[DateRelativeToCalculationPeriodDatesOnlyExistsValidator.html]] {
+            +validate(DateRelativeToCalculationPeriodDates, String): ValidationResult<DateRelativeToCalculationPeriodDates>
+        }
+
+        class CrossCurrencyMethodOnlyExistsValidator [[CrossCurrencyMethodOnlyExistsValidator.html]] {
+            +validate(CrossCurrencyMethod, String): ValidationResult<CrossCurrencyMethod>
+        }
+
+        class CashSettlementPaymentDateOnlyExistsValidator [[CashSettlementPaymentDateOnlyExistsValidator.html]] {
+            +validate(CashSettlementPaymentDate, String): ValidationResult<CashSettlementPaymentDate>
+        }
+
+        class CashPriceMethodOnlyExistsValidator [[CashPriceMethodOnlyExistsValidator.html]] {
+            +validate(CashPriceMethod, String): ValidationResult<CashPriceMethod>
+        }
+
+        class CashflowRepresentationOnlyExistsValidator [[CashflowRepresentationOnlyExistsValidator.html]] {
+            +validate(CashflowRepresentation, String): ValidationResult<CashflowRepresentation>
+        }
+
+        class CancellationEventOnlyExistsValidator [[CancellationEventOnlyExistsValidator.html]] {
+            +validate(CancellationEvent, String): ValidationResult<CancellationEvent>
+        }
+
+        class CancelableProvisionAdjustedDatesOnlyExistsValidator [[CancelableProvisionAdjustedDatesOnlyExistsValidator.html]] {
+            +validate(CancelableProvisionAdjustedDates, String): ValidationResult<CancelableProvisionAdjustedDates>
+        }
+
+        class CancelableProvisionOnlyExistsValidator [[CancelableProvisionOnlyExistsValidator.html]] {
+            +validate(CancelableProvision, String): ValidationResult<CancelableProvision>
+        }
+
+        class CalculationPeriodDatesOnlyExistsValidator [[CalculationPeriodDatesOnlyExistsValidator.html]] {
+            +validate(CalculationPeriodDates, String): ValidationResult<CalculationPeriodDates>
+        }
+
+        class CalculationPeriodOnlyExistsValidator [[CalculationPeriodOnlyExistsValidator.html]] {
+            +validate(CalculationPeriod, String): ValidationResult<CalculationPeriod>
+        }
+
+        class BondReferenceOnlyExistsValidator [[BondReferenceOnlyExistsValidator.html]] {
+            +validate(BondReference, String): ValidationResult<BondReference>
+        }
+
+        class PercentageRuleOnlyExistsValidator [[PercentageRuleOnlyExistsValidator.html]] {
+            +validate(PercentageRule, String): ValidationResult<PercentageRule>
+        }
+
+        class PartyContractInformationOnlyExistsValidator [[PartyContractInformationOnlyExistsValidator.html]] {
+            +validate(PartyContractInformation, String): ValidationResult<PartyContractInformation>
+        }
+
+        class PartyContractIdentifierOnlyExistsValidator [[PartyContractIdentifierOnlyExistsValidator.html]] {
+            +validate(PartyContractIdentifier, String): ValidationResult<PartyContractIdentifier>
+        }
+
+        class PackageInformationOnlyExistsValidator [[PackageInformationOnlyExistsValidator.html]] {
+            +validate(PackageInformation, String): ValidationResult<PackageInformation>
+        }
+
+        class LinkIdOnlyExistsValidator [[LinkIdOnlyExistsValidator.html]] {
+            +validate(LinkId, String): ValidationResult<LinkId>
+        }
+
+        class IdentifierValueOnlyExistsValidator [[IdentifierValueOnlyExistsValidator.html]] {
+            +validate(IdentifierValue, String): ValidationResult<IdentifierValue>
+        }
+
+        class IdentifierOnlyExistsValidator [[IdentifierOnlyExistsValidator.html]] {
+            +validate(Identifier, String): ValidationResult<Identifier>
+        }
+
+        class ContractIdentifierExtendedOnlyExistsValidator [[ContractIdentifierExtendedOnlyExistsValidator.html]] {
+            +validate(ContractIdentifierExtended, String): ValidationResult<ContractIdentifierExtended>
+        }
+
+        class ContractIdentifierOnlyExistsValidator [[ContractIdentifierOnlyExistsValidator.html]] {
+            +validate(ContractIdentifier, String): ValidationResult<ContractIdentifier>
+        }
+
+        class CalculationAgentModelOnlyExistsValidator [[CalculationAgentModelOnlyExistsValidator.html]] {
+            +validate(CalculationAgentModel, String): ValidationResult<CalculationAgentModel>
+        }
+
+        class ValuationDateOnlyExistsValidator [[ValuationDateOnlyExistsValidator.html]] {
+            +validate(ValuationDate, String): ValidationResult<ValuationDate>
+        }
+
+        class TrancheOnlyExistsValidator [[TrancheOnlyExistsValidator.html]] {
+            +validate(Tranche, String): ValidationResult<Tranche>
+        }
+
+        class SpecifiedCurrencyOnlyExistsValidator [[SpecifiedCurrencyOnlyExistsValidator.html]] {
+            +validate(SpecifiedCurrency, String): ValidationResult<SpecifiedCurrency>
+        }
+
+        class SingleValuationDateOnlyExistsValidator [[SingleValuationDateOnlyExistsValidator.html]] {
+            +validate(SingleValuationDate, String): ValidationResult<SingleValuationDate>
+        }
+
+        class SettledEntityMatrixOnlyExistsValidator [[SettledEntityMatrixOnlyExistsValidator.html]] {
+            +validate(SettledEntityMatrix, String): ValidationResult<SettledEntityMatrix>
+        }
+
+        class ReferencePoolItemOnlyExistsValidator [[ReferencePoolItemOnlyExistsValidator.html]] {
+            +validate(ReferencePoolItem, String): ValidationResult<ReferencePoolItem>
+        }
+
+        class ReferencePoolOnlyExistsValidator [[ReferencePoolOnlyExistsValidator.html]] {
+            +validate(ReferencePool, String): ValidationResult<ReferencePool>
+        }
+
+        class ReferencePairOnlyExistsValidator [[ReferencePairOnlyExistsValidator.html]] {
+            +validate(ReferencePair, String): ValidationResult<ReferencePair>
+        }
+
+        class ReferenceObligationOnlyExistsValidator [[ReferenceObligationOnlyExistsValidator.html]] {
+            +validate(ReferenceObligation, String): ValidationResult<ReferenceObligation>
+        }
+
+        class ReferenceInformationOnlyExistsValidator [[ReferenceInformationOnlyExistsValidator.html]] {
+            +validate(ReferenceInformation, String): ValidationResult<ReferenceInformation>
+        }
+
+        class ProtectionTermsOnlyExistsValidator [[ProtectionTermsOnlyExistsValidator.html]] {
+            +validate(ProtectionTerms, String): ValidationResult<ProtectionTerms>
+        }
+
+        class PhysicalSettlementTermsOnlyExistsValidator [[PhysicalSettlementTermsOnlyExistsValidator.html]] {
+            +validate(PhysicalSettlementTerms, String): ValidationResult<PhysicalSettlementTerms>
+        }
+
+        class PhysicalSettlementPeriodOnlyExistsValidator [[PhysicalSettlementPeriodOnlyExistsValidator.html]] {
+            +validate(PhysicalSettlementPeriod, String): ValidationResult<PhysicalSettlementPeriod>
+        }
+
+        class PCDeliverableObligationCharacOnlyExistsValidator [[PCDeliverableObligationCharacOnlyExistsValidator.html]] {
+            +validate(PCDeliverableObligationCharac, String): ValidationResult<PCDeliverableObligationCharac>
+        }
+
+        class OptionStrikeOnlyExistsValidator [[OptionStrikeOnlyExistsValidator.html]] {
+            +validate(OptionStrike, String): ValidationResult<OptionStrike>
+        }
+
+        class NotDomesticCurrencyOnlyExistsValidator [[NotDomesticCurrencyOnlyExistsValidator.html]] {
+            +validate(NotDomesticCurrency, String): ValidationResult<NotDomesticCurrency>
+        }
+
+        class MultipleValuationDatesOnlyExistsValidator [[MultipleValuationDatesOnlyExistsValidator.html]] {
+            +validate(MultipleValuationDates, String): ValidationResult<MultipleValuationDates>
+        }
+
+        class LoanParticipationOnlyExistsValidator [[LoanParticipationOnlyExistsValidator.html]] {
+            +validate(LoanParticipation, String): ValidationResult<LoanParticipation>
+        }
+
+        class InterestShortFallOnlyExistsValidator [[InterestShortFallOnlyExistsValidator.html]] {
+            +validate(InterestShortFall, String): ValidationResult<InterestShortFall>
+        }
+
+        class IndexReferenceInformationOnlyExistsValidator [[IndexReferenceInformationOnlyExistsValidator.html]] {
+            +validate(IndexReferenceInformation, String): ValidationResult<IndexReferenceInformation>
+        }
+
+        class FloatingAmountProvisionsOnlyExistsValidator [[FloatingAmountProvisionsOnlyExistsValidator.html]] {
+            +validate(FloatingAmountProvisions, String): ValidationResult<FloatingAmountProvisions>
+        }
+
+        class FloatingAmountEventsOnlyExistsValidator [[FloatingAmountEventsOnlyExistsValidator.html]] {
+            +validate(FloatingAmountEvents, String): ValidationResult<FloatingAmountEvents>
+        }
+
+        class ObligationsOnlyExistsValidator [[ObligationsOnlyExistsValidator.html]] {
+            +validate(Obligations, String): ValidationResult<Obligations>
+        }
+
+        class DeliverableObligationsOnlyExistsValidator [[DeliverableObligationsOnlyExistsValidator.html]] {
+            +validate(DeliverableObligations, String): ValidationResult<DeliverableObligations>
+        }
+
+        class CashSettlementTermsOnlyExistsValidator [[CashSettlementTermsOnlyExistsValidator.html]] {
+            +validate(CashSettlementTerms, String): ValidationResult<CashSettlementTerms>
+        }
+
+        class CalculationAmountOnlyExistsValidator [[CalculationAmountOnlyExistsValidator.html]] {
+            +validate(CalculationAmount, String): ValidationResult<CalculationAmount>
+        }
+
+        class BasketReferenceInformationOnlyExistsValidator [[BasketReferenceInformationOnlyExistsValidator.html]] {
+            +validate(BasketReferenceInformation, String): ValidationResult<BasketReferenceInformation>
+        }
+
+        class BasketNameOnlyExistsValidator [[BasketNameOnlyExistsValidator.html]] {
+            +validate(BasketName, String): ValidationResult<BasketName>
+        }
+
+        class AdditionalFixedPaymentsOnlyExistsValidator [[AdditionalFixedPaymentsOnlyExistsValidator.html]] {
+            +validate(AdditionalFixedPayments, String): ValidationResult<AdditionalFixedPayments>
+        }
+
+        class SwapCurveValuationOnlyExistsValidator [[SwapCurveValuationOnlyExistsValidator.html]] {
+            +validate(SwapCurveValuation, String): ValidationResult<SwapCurveValuation>
+        }
+
+        class ReferenceSwapCurveOnlyExistsValidator [[ReferenceSwapCurveOnlyExistsValidator.html]] {
+            +validate(ReferenceSwapCurve, String): ValidationResult<ReferenceSwapCurve>
+        }
+
+        class MakeWholeAmountOnlyExistsValidator [[MakeWholeAmountOnlyExistsValidator.html]] {
+            +validate(MakeWholeAmount, String): ValidationResult<MakeWholeAmount>
+        }
+
+        class BondOptionStrikeOnlyExistsValidator [[BondOptionStrikeOnlyExistsValidator.html]] {
+            +validate(BondOptionStrike, String): ValidationResult<BondOptionStrike>
+        }
+
+        class MortgageOnlyExistsValidator [[MortgageOnlyExistsValidator.html]] {
+            +validate(Mortgage, String): ValidationResult<Mortgage>
+        }
+
+        class LoanOnlyExistsValidator [[LoanOnlyExistsValidator.html]] {
+            +validate(Loan, String): ValidationResult<Loan>
+        }
+
+        class IdentifiedAssetOnlyExistsValidator [[IdentifiedAssetOnlyExistsValidator.html]] {
+            +validate(IdentifiedAsset, String): ValidationResult<IdentifiedAsset>
+        }
+
+        class FixedIncomeSecurityOnlyExistsValidator [[FixedIncomeSecurityOnlyExistsValidator.html]] {
+            +validate(FixedIncomeSecurity, String): ValidationResult<FixedIncomeSecurity>
+        }
+
+        class EquityAssetOnlyExistsValidator [[EquityAssetOnlyExistsValidator.html]] {
+            +validate(EquityAsset, String): ValidationResult<EquityAsset>
+        }
+
+        class ConvertibleBondOnlyExistsValidator [[ConvertibleBondOnlyExistsValidator.html]] {
+            +validate(ConvertibleBond, String): ValidationResult<ConvertibleBond>
+        }
+
+        class ConstituentWeightOnlyExistsValidator [[ConstituentWeightOnlyExistsValidator.html]] {
+            +validate(ConstituentWeight, String): ValidationResult<ConstituentWeight>
+        }
+
+        class CommodityOnlyExistsValidator [[CommodityOnlyExistsValidator.html]] {
+            +validate(Commodity, String): ValidationResult<Commodity>
+        }
+
+        class BondOnlyExistsValidator [[BondOnlyExistsValidator.html]] {
+            +validate(Bond, String): ValidationResult<Bond>
+        }
+
+        class AssetPoolOnlyExistsValidator [[AssetPoolOnlyExistsValidator.html]] {
+            +validate(AssetPool, String): ValidationResult<AssetPool>
+        }
+
+        class AssetOnlyExistsValidator [[AssetOnlyExistsValidator.html]] {
+            +validate(Asset, String): ValidationResult<Asset>
+        }
+
+        class TransactedPriceOnlyExistsValidator [[TransactedPriceOnlyExistsValidator.html]] {
+            +validate(TransactedPrice, String): ValidationResult<TransactedPrice>
+        }
+
+        class StubPeriodOnlyExistsValidator [[StubPeriodOnlyExistsValidator.html]] {
+            +validate(StubPeriod, String): ValidationResult<StubPeriod>
+        }
+
+        class QuantityOnlyExistsValidator [[QuantityOnlyExistsValidator.html]] {
+            +validate(Quantity, String): ValidationResult<Quantity>
+        }
+
+        class ProductIdentificationOnlyExistsValidator [[ProductIdentificationOnlyExistsValidator.html]] {
+            +validate(ProductIdentification, String): ValidationResult<ProductIdentification>
+        }
+
+        class ProductOnlyExistsValidator [[ProductOnlyExistsValidator.html]] {
+            +validate(Product, String): ValidationResult<Product>
+        }
+
+        class PayoutOnlyExistsValidator [[PayoutOnlyExistsValidator.html]] {
+            +validate(Payout, String): ValidationResult<Payout>
+        }
+
+        class PaymentDatesOnlyExistsValidator [[PaymentDatesOnlyExistsValidator.html]] {
+            +validate(PaymentDates, String): ValidationResult<PaymentDates>
+        }
+
+        class OptionPayoutOnlyExistsValidator [[OptionPayoutOnlyExistsValidator.html]] {
+            +validate(OptionPayout, String): ValidationResult<OptionPayout>
+        }
+
+        class OptionExerciseOnlyExistsValidator [[OptionExerciseOnlyExistsValidator.html]] {
+            +validate(OptionExercise, String): ValidationResult<OptionExercise>
+        }
+
+        class NotionalScheduleOnlyExistsValidator [[NotionalScheduleOnlyExistsValidator.html]] {
+            +validate(NotionalSchedule, String): ValidationResult<NotionalSchedule>
+        }
+
+        class InterestRatePayoutOnlyExistsValidator [[InterestRatePayoutOnlyExistsValidator.html]] {
+            +validate(InterestRatePayout, String): ValidationResult<InterestRatePayout>
+        }
+
+        class InterestRateOnlyExistsValidator [[InterestRateOnlyExistsValidator.html]] {
+            +validate(InterestRate, String): ValidationResult<InterestRate>
+        }
+
+        class GeneralTermsOnlyExistsValidator [[GeneralTermsOnlyExistsValidator.html]] {
+            +validate(GeneralTerms, String): ValidationResult<GeneralTerms>
+        }
+
+        class EconomicTermsOnlyExistsValidator [[EconomicTermsOnlyExistsValidator.html]] {
+            +validate(EconomicTerms, String): ValidationResult<EconomicTerms>
+        }
+
+        class CreditDefaultPayoutOnlyExistsValidator [[CreditDefaultPayoutOnlyExistsValidator.html]] {
+            +validate(CreditDefaultPayout, String): ValidationResult<CreditDefaultPayout>
+        }
+
+        class CrossCurrencyTermsOnlyExistsValidator [[CrossCurrencyTermsOnlyExistsValidator.html]] {
+            +validate(CrossCurrencyTerms, String): ValidationResult<CrossCurrencyTerms>
+        }
+
+        class ContractualQuantityOnlyExistsValidator [[ContractualQuantityOnlyExistsValidator.html]] {
+            +validate(ContractualQuantity, String): ValidationResult<ContractualQuantity>
+        }
+
+        class ContractualProductOnlyExistsValidator [[ContractualProductOnlyExistsValidator.html]] {
+            +validate(ContractualProduct, String): ValidationResult<ContractualProduct>
+        }
+
+        class ContractOnlyExistsValidator [[ContractOnlyExistsValidator.html]] {
+            +validate(Contract, String): ValidationResult<Contract>
+        }
+
+        class CashflowBaseOnlyExistsValidator [[CashflowBaseOnlyExistsValidator.html]] {
+            +validate(CashflowBase, String): ValidationResult<CashflowBase>
+        }
+
+        class CashflowOnlyExistsValidator [[CashflowOnlyExistsValidator.html]] {
+            +validate(Cashflow, String): ValidationResult<Cashflow>
+        }
+
+        class TransferorTransfereeOnlyExistsValidator [[TransferorTransfereeOnlyExistsValidator.html]] {
+            +validate(TransferorTransferee, String): ValidationResult<TransferorTransferee>
+        }
+
+        class TransferOnlyExistsValidator [[TransferOnlyExistsValidator.html]] {
+            +validate(Transfer, String): ValidationResult<Transfer>
+        }
+
+        class TradeHeaderOnlyExistsValidator [[TradeHeaderOnlyExistsValidator.html]] {
+            +validate(TradeHeader, String): ValidationResult<TradeHeader>
+        }
+
+        class TimeZoneOnlyExistsValidator [[TimeZoneOnlyExistsValidator.html]] {
+            +validate(TimeZone, String): ValidationResult<TimeZone>
+        }
+
+        class TermsChangePrimitiveOnlyExistsValidator [[TermsChangePrimitiveOnlyExistsValidator.html]] {
+            +validate(TermsChangePrimitive, String): ValidationResult<TermsChangePrimitive>
+        }
+
+        class ResetPrimitiveOnlyExistsValidator [[ResetPrimitiveOnlyExistsValidator.html]] {
+            +validate(ResetPrimitive, String): ValidationResult<ResetPrimitive>
+        }
+
+        class QuantityChangePrimitiveOnlyExistsValidator [[QuantityChangePrimitiveOnlyExistsValidator.html]] {
+            +validate(QuantityChangePrimitive, String): ValidationResult<QuantityChangePrimitive>
+        }
+
+        class PrimitiveEventOnlyExistsValidator [[PrimitiveEventOnlyExistsValidator.html]] {
+            +validate(PrimitiveEvent, String): ValidationResult<PrimitiveEvent>
+        }
+
+        class PhysicalExerciseOnlyExistsValidator [[PhysicalExerciseOnlyExistsValidator.html]] {
+            +validate(PhysicalExercise, String): ValidationResult<PhysicalExercise>
+        }
+
+        class PayoutLineageOnlyExistsValidator [[PayoutLineageOnlyExistsValidator.html]] {
+            +validate(PayoutLineage, String): ValidationResult<PayoutLineage>
+        }
+
+        class ObservationSourceOnlyExistsValidator [[ObservationSourceOnlyExistsValidator.html]] {
+            +validate(ObservationSource, String): ValidationResult<ObservationSource>
+        }
+
+        class ObservationPrimitiveOnlyExistsValidator [[ObservationPrimitiveOnlyExistsValidator.html]] {
+            +validate(ObservationPrimitive, String): ValidationResult<ObservationPrimitive>
+        }
+
+        class NewTradePrimitiveOnlyExistsValidator [[NewTradePrimitiveOnlyExistsValidator.html]] {
+            +validate(NewTradePrimitive, String): ValidationResult<NewTradePrimitive>
+        }
+
+        class MessageInformationOnlyExistsValidator [[MessageInformationOnlyExistsValidator.html]] {
+            +validate(MessageInformation, String): ValidationResult<MessageInformation>
+        }
+
+        class LineageOnlyExistsValidator [[LineageOnlyExistsValidator.html]] {
+            +validate(Lineage, String): ValidationResult<Lineage>
+        }
+
+        class InterestRateCurveOnlyExistsValidator [[InterestRateCurveOnlyExistsValidator.html]] {
+            +validate(InterestRateCurve, String): ValidationResult<InterestRateCurve>
+        }
+
+        class InceptionOnlyExistsValidator [[InceptionOnlyExistsValidator.html]] {
+            +validate(Inception, String): ValidationResult<Inception>
+        }
+
+        class GrossCashflowOnlyExistsValidator [[GrossCashflowOnlyExistsValidator.html]] {
+            +validate(GrossCashflow, String): ValidationResult<GrossCashflow>
+        }
+
+        class ExecutionOnlyExistsValidator [[ExecutionOnlyExistsValidator.html]] {
+            +validate(Execution, String): ValidationResult<Execution>
+        }
+
+        class ExercisePrimitiveOnlyExistsValidator [[ExercisePrimitiveOnlyExistsValidator.html]] {
+            +validate(ExercisePrimitive, String): ValidationResult<ExercisePrimitive>
+        }
+
+        class ExerciseOutcomeOnlyExistsValidator [[ExerciseOutcomeOnlyExistsValidator.html]] {
+            +validate(ExerciseOutcome, String): ValidationResult<ExerciseOutcome>
+        }
+
+        class ExecutionReferenceOnlyExistsValidator [[ExecutionReferenceOnlyExistsValidator.html]] {
+            +validate(ExecutionReference, String): ValidationResult<ExecutionReference>
+        }
+
+        class EventTimestampOnlyExistsValidator [[EventTimestampOnlyExistsValidator.html]] {
+            +validate(EventTimestamp, String): ValidationResult<EventTimestamp>
+        }
+
+        class EventTestBundleOnlyExistsValidator [[EventTestBundleOnlyExistsValidator.html]] {
+            +validate(EventTestBundle, String): ValidationResult<EventTestBundle>
+        }
+
+        class EventEffectOnlyExistsValidator [[EventEffectOnlyExistsValidator.html]] {
+            +validate(EventEffect, String): ValidationResult<EventEffect>
+        }
+
+        class EventOnlyExistsValidator [[EventOnlyExistsValidator.html]] {
+            +validate(Event, String): ValidationResult<Event>
+        }
+
+        class CurveOnlyExistsValidator [[CurveOnlyExistsValidator.html]] {
+            +validate(Curve, String): ValidationResult<Curve>
+        }
+
+        class ContractReferenceOnlyExistsValidator [[ContractReferenceOnlyExistsValidator.html]] {
+            +validate(ContractReference, String): ValidationResult<ContractReference>
+        }
+
+        class ContractOrContractReferenceOnlyExistsValidator [[ContractOrContractReferenceOnlyExistsValidator.html]] {
+            +validate(ContractOrContractReference, String): ValidationResult<ContractOrContractReference>
+        }
+
+        class ComputedAmountOnlyExistsValidator [[ComputedAmountOnlyExistsValidator.html]] {
+            +validate(ComputedAmount, String): ValidationResult<ComputedAmount>
+        }
+
+        class AllocationPrimitiveOnlyExistsValidator [[AllocationPrimitiveOnlyExistsValidator.html]] {
+            +validate(AllocationPrimitive, String): ValidationResult<AllocationPrimitive>
+        }
+
+        class AllocationOutcomeOnlyExistsValidator [[AllocationOutcomeOnlyExistsValidator.html]] {
+            +validate(AllocationOutcome, String): ValidationResult<AllocationOutcome>
+        }
+
+        interface com.rosetta.model.lib.validation.ValidatorWithArg<T, A> {
+            {abstract} +validate(T, A): ValidationResult<T>
+        }
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PartyRoleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PartyAndAccountReferenceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PartyOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. NaturalPersonRoleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. NaturalPersonOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. LegalEntityOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AccountOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ProductTaxonomyOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ProductIdentifierOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ListedProductOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ListedHeaderOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. StubValueOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. StubFloatingRateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. StrikeScheduleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. StrikeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. StepOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. SpreadScheduleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. SimplePaymentOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. SettlementRateSourceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ScheduleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. RoundingOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ResourceLengthOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ResourceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ResetFrequencyOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. RelativeDateOffsetOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. RelativeDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. RelatedPartyOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ReferenceBankOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. RateObservationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. QuotedCurrencyPairOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PriorDateInstanceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PrincipalExchangesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PremiumExpressionOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PeriodOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PaymentRuleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PaymentDiscountingOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PaymentDetailOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PaymentOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PayerReceiverOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PartialExerciseOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OtherAgreementOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OptionPhysicalSettlementOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OffsetOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. NonNegativeStepOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. NonNegativeScheduleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. NonNegativeAmountScheduleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. MultipleExerciseOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. MoneyOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. MasterConfirmationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. MasterAgreementOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ManualExerciseOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. IssuerTradeIdOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. InitialFixingDateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. InformationSourceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. IndependentAmountOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FxSpotRateSourceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FxRateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FutureValueAmountOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FrequencyOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FloatingRateCalculationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FloatingRateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExerciseProcedureOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExerciseNoticeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExerciseFeeScheduleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExerciseFeeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. EuropeanExerciseOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. DocumentationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. DateTimeListOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. DateListOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. DateInstancesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. DateRangeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CreditSupportAgreementOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ContractualTermsSupplementOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ContractualMatrixOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CollateralOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CashSettlementReferenceBanksOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CalculationPeriodFrequencyOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CalculationAgentOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BuyerSellerOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BusinessDayAdjustmentsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BusinessDateRangeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BusinessCenterTimeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BusinessCentersOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BrokerConfirmationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BermudaExerciseOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AutomaticExerciseOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AmountScheduleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AmericanExerciseOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AdjustedRelativeDateOffsetOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AdjustableOrRelativeDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AdjustableOrRelativeDateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AdjustableOrAdjustedOrRelativeDateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AdjustableOrAdjustedDateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AdjustableDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AdjustableDateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. WeightedAveragingObservationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. TriggerEventOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. TriggerOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. StrikeSpreadOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. StrategyFeatureOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. RestructuringOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. QuantoOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PubliclyAvailableInformationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PassThroughItemOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PassThroughOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OptionStyleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OptionSettlementOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OptionFeatureOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OptionDenominationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. NotifyingPartyOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. KnockOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. GracePeriodExtensionOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FxFeatureOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FeaturePaymentOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FailureToPayOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CreditEventNoticeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CreditEventsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CompositeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CalendarSpreadOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BarrierOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AveragingScheduleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AveragingPeriodOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AveragingObservationListOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AsianOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. YieldCurveMethodOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ValuationPostponementOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. StubCalculationPeriodAmountOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. SettlementProvisionOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ResetDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PrincipalExchangeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PriceSourceDisruptionOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PaymentCalculationPeriodOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OptionCashSettlementOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OptionalEarlyTerminationAdjustedDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OptionalEarlyTerminationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. NotionalStepRuleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. NonDeliverableSettlementOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. MandatoryEarlyTerminationAdjustedDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. MandatoryEarlyTerminationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. InflationRateCalculationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FxLinkedNotionalScheduleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FxLinkedNotionalAmountOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FxFixingDateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FloatingRateDefinitionOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FinalCalculationPeriodDateAdjustmentOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FallbackReferencePriceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExtensionEventOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExtendibleProvisionAdjustedDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExtendibleProvisionOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExercisePeriodOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExerciseEventOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. EarlyTerminationProvisionOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. EarlyTerminationEventOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. DiscountingOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. DateRelativeToPaymentDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. DateRelativeToCalculationPeriodDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CrossCurrencyMethodOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CashSettlementPaymentDateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CashPriceMethodOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CashflowRepresentationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CancellationEventOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CancelableProvisionAdjustedDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CancelableProvisionOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CalculationPeriodDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CalculationPeriodOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BondReferenceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PercentageRuleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PartyContractInformationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PartyContractIdentifierOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PackageInformationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. LinkIdOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. IdentifierValueOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. IdentifierOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ContractIdentifierExtendedOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ContractIdentifierOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CalculationAgentModelOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ValuationDateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. TrancheOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. SpecifiedCurrencyOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. SingleValuationDateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. SettledEntityMatrixOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ReferencePoolItemOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ReferencePoolOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ReferencePairOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ReferenceObligationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ReferenceInformationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ProtectionTermsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PhysicalSettlementTermsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PhysicalSettlementPeriodOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PCDeliverableObligationCharacOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OptionStrikeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. NotDomesticCurrencyOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. MultipleValuationDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. LoanParticipationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. InterestShortFallOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. IndexReferenceInformationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FloatingAmountProvisionsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FloatingAmountEventsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ObligationsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. DeliverableObligationsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CashSettlementTermsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CalculationAmountOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BasketReferenceInformationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BasketNameOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AdditionalFixedPaymentsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. SwapCurveValuationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ReferenceSwapCurveOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. MakeWholeAmountOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BondOptionStrikeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. MortgageOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. LoanOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. IdentifiedAssetOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. FixedIncomeSecurityOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. EquityAssetOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ConvertibleBondOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ConstituentWeightOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CommodityOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. BondOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AssetPoolOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AssetOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. TransactedPriceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. StubPeriodOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. QuantityOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ProductIdentificationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ProductOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PayoutOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PaymentDatesOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OptionPayoutOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. OptionExerciseOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. NotionalScheduleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. InterestRatePayoutOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. InterestRateOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. GeneralTermsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. EconomicTermsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CreditDefaultPayoutOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CrossCurrencyTermsOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ContractualQuantityOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ContractualProductOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ContractOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CashflowBaseOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CashflowOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. TransferorTransfereeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. TransferOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. TradeHeaderOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. TimeZoneOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. TermsChangePrimitiveOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ResetPrimitiveOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. QuantityChangePrimitiveOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PrimitiveEventOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PhysicalExerciseOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. PayoutLineageOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ObservationSourceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ObservationPrimitiveOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. NewTradePrimitiveOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. MessageInformationOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. LineageOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. InterestRateCurveOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. InceptionOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. GrossCashflowOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExecutionOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExercisePrimitiveOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExerciseOutcomeOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ExecutionReferenceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. EventTimestampOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. EventTestBundleOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. EventEffectOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. EventOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. CurveOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ContractReferenceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ContractOrContractReferenceOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. ComputedAmountOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AllocationPrimitiveOnlyExistsValidator
+
+        com.rosetta.model.lib.validation.ValidatorWithArg <|.. AllocationOutcomeOnlyExistsValidator
+
+    }
+
+@enduml

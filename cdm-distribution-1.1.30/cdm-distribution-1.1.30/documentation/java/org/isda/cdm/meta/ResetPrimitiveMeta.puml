@@ -1,0 +1,12 @@
+@startuml
+
+    class ResetPrimitiveMeta [[ResetPrimitiveMeta.html]] {
+        +dataRules(): List<Validator<ResetPrimitive>>
+        +choiceRuleValidators(): List<Validator<ResetPrimitive>>
+        +getOutMappings(): Multimap<String, OutMapping<ResetPrimitive, ?>>
+        +getQualifyFunctions(): List<Function<ResetPrimitive, QualifyResult>>
+        +validator(): Validator<ResetPrimitive>
+        +onlyExistsValidator(): ValidatorWithArg<ResetPrimitive, String>
+    }
+
+@enduml

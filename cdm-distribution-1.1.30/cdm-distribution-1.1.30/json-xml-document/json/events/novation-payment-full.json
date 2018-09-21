@@ -1,0 +1,71 @@
+{
+  "eventDate" : "2018-03-20",
+  "eventEffect" : {
+    "effectedEvent" : "f8d5a1ea",
+    "payment" : [ "428d3a5d" ]
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "nov-fee-12345"
+    }
+  },
+  "eventQualifier" : "Payment",
+  "lineage" : {
+    "contractReference" : [ {
+      "identifierValue" : {
+        "identifier" : "CDX1234"
+      },
+      "issuer" : "p1"
+    }, {
+      "identifierValue" : {
+        "identifier" : "CDX-5678234"
+      },
+      "issuer" : "p1"
+    } ],
+    "eventReference" : [ {
+      "identifierValue" : {
+        "identifier" : "NOV-12345"
+      }
+    } ]
+  },
+  "party" : [ {
+    "id" : "p1",
+    "partyId" : [ "Party1" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "p2",
+    "partyId" : [ "Party2" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "p3",
+    "partyId" : [ "Party3" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "payment" : [ {
+      "payerReceiver" : {
+        "payerPartyReference" : "p2",
+        "receiverPartyReference" : "p3"
+      },
+      "paymentAmount" : {
+        "amount" : 74000.00,
+        "currency" : "USD"
+      },
+      "paymentDate" : {
+        "dateAdjustments" : {
+          "businessCenters" : {
+            "businessCenter" : [ "USNY" ]
+          },
+          "businessDayConvention" : "MODFOLLOWING"
+        },
+        "unadjustedDate" : "2018-03-28"
+      },
+      "paymentType" : "NOVATION_FEE",
+      "rosettaKey" : "428d3a5d"
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2018-03-20T18:13:51"
+  },
+  "rosettaKey" : "f8d5a1ea"
+}

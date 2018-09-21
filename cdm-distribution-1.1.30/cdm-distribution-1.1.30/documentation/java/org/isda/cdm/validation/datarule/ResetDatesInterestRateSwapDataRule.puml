@@ -1,0 +1,7 @@
+@startuml
+
+    class ResetDatesInterestRateSwapDataRule [[ResetDatesInterestRateSwapDataRule.html]] {
+        +validate(Payout): ValidationResult<Payout>
+    }
+
+@enduml

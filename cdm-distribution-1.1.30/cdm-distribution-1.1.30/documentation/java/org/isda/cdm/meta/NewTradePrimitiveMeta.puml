@@ -1,0 +1,12 @@
+@startuml
+
+    class NewTradePrimitiveMeta [[NewTradePrimitiveMeta.html]] {
+        +dataRules(): List<Validator<NewTradePrimitive>>
+        +choiceRuleValidators(): List<Validator<NewTradePrimitive>>
+        +getOutMappings(): Multimap<String, OutMapping<NewTradePrimitive, ?>>
+        +getQualifyFunctions(): List<Function<NewTradePrimitive, QualifyResult>>
+        +validator(): Validator<NewTradePrimitive>
+        +onlyExistsValidator(): ValidatorWithArg<NewTradePrimitive, String>
+    }
+
+@enduml

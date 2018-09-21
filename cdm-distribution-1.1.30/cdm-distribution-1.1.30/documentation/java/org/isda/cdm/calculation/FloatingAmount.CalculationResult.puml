@@ -1,0 +1,11 @@
+@startuml
+
+    class FloatingAmount.CalculationResult [[FloatingAmount.CalculationResult.html]] {
+        +getFloatingAmount(): BigDecimal
+        +setFloatingAmount(BigDecimal): FloatingAmount.CalculationResult
+        +getCurrencyAmount(): String
+        +setCurrencyAmount(String): FloatingAmount.CalculationResult
+        +getAttributes(): List<IResult.Attribute<?>>
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class TermsChangePrimitive.TermsChangePrimitiveBuilder [[TermsChangePrimitive.TermsChangePrimitiveBuilder.html]] {
+        +getAfter(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +getOrCreateAfter(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +getBefore(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +getOrCreateBefore(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +setAfter(ContractOrContractReference): TermsChangePrimitive.TermsChangePrimitiveBuilder
+        +setAfterBuilder(ContractOrContractReference.ContractOrContractReferenceBuilder): TermsChangePrimitive.TermsChangePrimitiveBuilder
+        +setBefore(ContractOrContractReference): TermsChangePrimitive.TermsChangePrimitiveBuilder
+        +setBeforeBuilder(ContractOrContractReference.ContractOrContractReferenceBuilder): TermsChangePrimitive.TermsChangePrimitiveBuilder
+        +build(): TermsChangePrimitive
+    }
+
+@enduml

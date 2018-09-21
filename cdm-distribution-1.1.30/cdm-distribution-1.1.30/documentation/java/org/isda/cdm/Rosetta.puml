@@ -1,0 +1,7 @@
+@startuml
+
+    class Rosetta [[Rosetta.html]] {
+        {static} +classes(): List<Class<?>>
+    }
+
+@enduml

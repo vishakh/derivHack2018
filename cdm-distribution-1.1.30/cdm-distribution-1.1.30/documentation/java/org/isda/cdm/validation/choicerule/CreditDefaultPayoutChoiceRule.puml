@@ -1,0 +1,7 @@
+@startuml
+
+    class CreditDefaultPayoutChoiceRule [[CreditDefaultPayoutChoiceRule.html]] {
+        +validate(CreditDefaultPayout): ValidationResult<CreditDefaultPayout>
+    }
+
+@enduml

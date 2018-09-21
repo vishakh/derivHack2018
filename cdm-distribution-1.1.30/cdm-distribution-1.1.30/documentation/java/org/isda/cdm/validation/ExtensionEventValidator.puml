@@ -1,0 +1,7 @@
+@startuml
+
+    class ExtensionEventValidator [[ExtensionEventValidator.html]] {
+        +validate(ExtensionEvent): ValidationResult<ExtensionEvent>
+    }
+
+@enduml

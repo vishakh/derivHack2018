@@ -1,0 +1,18 @@
+@startuml
+
+    enum DayCountFractionEnum [[DayCountFractionEnum.html]] {
+        {static} +_1_1
+        {static} +_30_360
+        {static} +_30E_360
+        {static} +_30E_360_ISDA
+        {static} +ACT_360
+        {static} +ACT_365_FIXED
+        {static} +ACT_365L
+        {static} +ACT_ACT_AFB
+        {static} +ACT_ACT_ICMA
+        {static} +ACT_ACT_ISDA
+        {static} +ACT_ACT_ISMA
+        {static} +BUS_252
+    }
+
+@enduml

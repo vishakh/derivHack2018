@@ -1,0 +1,12 @@
+@startuml
+
+    class IndexReferenceInformationMeta [[IndexReferenceInformationMeta.html]] {
+        +dataRules(): List<Validator<IndexReferenceInformation>>
+        +choiceRuleValidators(): List<Validator<IndexReferenceInformation>>
+        +getOutMappings(): Multimap<String, OutMapping<IndexReferenceInformation, ?>>
+        +getQualifyFunctions(): List<Function<IndexReferenceInformation, QualifyResult>>
+        +validator(): Validator<IndexReferenceInformation>
+        +onlyExistsValidator(): ValidatorWithArg<IndexReferenceInformation, String>
+    }
+
+@enduml

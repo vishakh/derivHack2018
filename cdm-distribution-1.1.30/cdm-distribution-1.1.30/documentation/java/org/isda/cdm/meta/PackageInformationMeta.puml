@@ -1,0 +1,12 @@
+@startuml
+
+    class PackageInformationMeta [[PackageInformationMeta.html]] {
+        +dataRules(): List<Validator<PackageInformation>>
+        +choiceRuleValidators(): List<Validator<PackageInformation>>
+        +getOutMappings(): Multimap<String, OutMapping<PackageInformation, ?>>
+        +getQualifyFunctions(): List<Function<PackageInformation, QualifyResult>>
+        +validator(): Validator<PackageInformation>
+        +onlyExistsValidator(): ValidatorWithArg<PackageInformation, String>
+    }
+
+@enduml

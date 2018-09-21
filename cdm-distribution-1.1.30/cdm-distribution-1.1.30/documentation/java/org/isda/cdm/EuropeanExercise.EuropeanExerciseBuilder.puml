@@ -1,0 +1,33 @@
+@startuml
+
+    class EuropeanExercise.EuropeanExerciseBuilder [[EuropeanExercise.EuropeanExerciseBuilder.html]] {
+        +getEarliestExerciseTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getOrCreateEarliestExerciseTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getExerciseFee(): ExerciseFee.ExerciseFeeBuilder
+        +getOrCreateExerciseFee(): ExerciseFee.ExerciseFeeBuilder
+        +getExpirationDate(): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +getOrCreateExpirationDate(): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +getExpirationTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getOrCreateExpirationTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getId(): String
+        +getPartialExercise(): PartialExercise.PartialExerciseBuilder
+        +getOrCreatePartialExercise(): PartialExercise.PartialExerciseBuilder
+        +getRelevantUnderlyingDate(): AdjustableOrRelativeDates.AdjustableOrRelativeDatesBuilder
+        +getOrCreateRelevantUnderlyingDate(): AdjustableOrRelativeDates.AdjustableOrRelativeDatesBuilder
+        +setEarliestExerciseTime(BusinessCenterTime): EuropeanExercise.EuropeanExerciseBuilder
+        +setEarliestExerciseTimeBuilder(BusinessCenterTime.BusinessCenterTimeBuilder): EuropeanExercise.EuropeanExerciseBuilder
+        +setExerciseFee(ExerciseFee): EuropeanExercise.EuropeanExerciseBuilder
+        +setExerciseFeeBuilder(ExerciseFee.ExerciseFeeBuilder): EuropeanExercise.EuropeanExerciseBuilder
+        +setExpirationDate(AdjustableOrRelativeDate): EuropeanExercise.EuropeanExerciseBuilder
+        +setExpirationDateBuilder(AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder): EuropeanExercise.EuropeanExerciseBuilder
+        +setExpirationTime(BusinessCenterTime): EuropeanExercise.EuropeanExerciseBuilder
+        +setExpirationTimeBuilder(BusinessCenterTime.BusinessCenterTimeBuilder): EuropeanExercise.EuropeanExerciseBuilder
+        +setId(String): EuropeanExercise.EuropeanExerciseBuilder
+        +setPartialExercise(PartialExercise): EuropeanExercise.EuropeanExerciseBuilder
+        +setPartialExerciseBuilder(PartialExercise.PartialExerciseBuilder): EuropeanExercise.EuropeanExerciseBuilder
+        +setRelevantUnderlyingDate(AdjustableOrRelativeDates): EuropeanExercise.EuropeanExerciseBuilder
+        +setRelevantUnderlyingDateBuilder(AdjustableOrRelativeDates.AdjustableOrRelativeDatesBuilder): EuropeanExercise.EuropeanExerciseBuilder
+        +build(): EuropeanExercise
+    }
+
+@enduml

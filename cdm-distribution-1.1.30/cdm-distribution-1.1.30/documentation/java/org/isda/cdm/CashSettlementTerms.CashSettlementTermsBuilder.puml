@@ -1,0 +1,47 @@
+@startuml
+
+    class CashSettlementTerms.CashSettlementTermsBuilder [[CashSettlementTerms.CashSettlementTermsBuilder.html]] {
+        +getAccruedInterest(): Boolean
+        +getCashSettlementAmount(): Money.MoneyBuilder
+        +getOrCreateCashSettlementAmount(): Money.MoneyBuilder
+        +getCashSettlementBusinessDays(): Integer
+        +getDealer(): String
+        +getFixedSettlement(): Boolean
+        +getId(): String
+        +getMinimumQuotationAmout(): Money.MoneyBuilder
+        +getOrCreateMinimumQuotationAmout(): Money.MoneyBuilder
+        +getQuotationAmount(): Money.MoneyBuilder
+        +getOrCreateQuotationAmount(): Money.MoneyBuilder
+        +getQuotationMethod(): QuotationRateTypeEnum
+        +getRecoveryFactor(): BigDecimal
+        +getSettlementCurrency(): String
+        +getSettlementCurrencyScheme(): String
+        +getValuationDate(): ValuationDate.ValuationDateBuilder
+        +getOrCreateValuationDate(): ValuationDate.ValuationDateBuilder
+        +getValuationMethod(): ValuationMethodEnum
+        +getValuationTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getOrCreateValuationTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +setAccruedInterest(Boolean): CashSettlementTerms.CashSettlementTermsBuilder
+        +setCashSettlementAmount(Money): CashSettlementTerms.CashSettlementTermsBuilder
+        +setCashSettlementAmountBuilder(Money.MoneyBuilder): CashSettlementTerms.CashSettlementTermsBuilder
+        +setCashSettlementBusinessDays(Integer): CashSettlementTerms.CashSettlementTermsBuilder
+        +setDealer(String): CashSettlementTerms.CashSettlementTermsBuilder
+        +setFixedSettlement(Boolean): CashSettlementTerms.CashSettlementTermsBuilder
+        +setId(String): CashSettlementTerms.CashSettlementTermsBuilder
+        +setMinimumQuotationAmout(Money): CashSettlementTerms.CashSettlementTermsBuilder
+        +setMinimumQuotationAmoutBuilder(Money.MoneyBuilder): CashSettlementTerms.CashSettlementTermsBuilder
+        +setQuotationAmount(Money): CashSettlementTerms.CashSettlementTermsBuilder
+        +setQuotationAmountBuilder(Money.MoneyBuilder): CashSettlementTerms.CashSettlementTermsBuilder
+        +setQuotationMethod(QuotationRateTypeEnum): CashSettlementTerms.CashSettlementTermsBuilder
+        +setRecoveryFactor(BigDecimal): CashSettlementTerms.CashSettlementTermsBuilder
+        +setSettlementCurrency(String): CashSettlementTerms.CashSettlementTermsBuilder
+        +setSettlementCurrencyScheme(String): CashSettlementTerms.CashSettlementTermsBuilder
+        +setValuationDate(ValuationDate): CashSettlementTerms.CashSettlementTermsBuilder
+        +setValuationDateBuilder(ValuationDate.ValuationDateBuilder): CashSettlementTerms.CashSettlementTermsBuilder
+        +setValuationMethod(ValuationMethodEnum): CashSettlementTerms.CashSettlementTermsBuilder
+        +setValuationTime(BusinessCenterTime): CashSettlementTerms.CashSettlementTermsBuilder
+        +setValuationTimeBuilder(BusinessCenterTime.BusinessCenterTimeBuilder): CashSettlementTerms.CashSettlementTermsBuilder
+        +build(): CashSettlementTerms
+    }
+
+@enduml

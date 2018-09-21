@@ -1,0 +1,7 @@
+@startuml
+
+    class DateInstancesOnlyExistsValidator [[DateInstancesOnlyExistsValidator.html]] {
+        +validate(DateInstances, String): ValidationResult<DateInstances>
+    }
+
+@enduml

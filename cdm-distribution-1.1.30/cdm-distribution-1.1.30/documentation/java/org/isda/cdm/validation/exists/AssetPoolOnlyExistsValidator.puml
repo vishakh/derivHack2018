@@ -1,0 +1,7 @@
+@startuml
+
+    class AssetPoolOnlyExistsValidator [[AssetPoolOnlyExistsValidator.html]] {
+        +validate(AssetPool, String): ValidationResult<AssetPool>
+    }
+
+@enduml

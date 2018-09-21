@@ -1,0 +1,14 @@
+@startuml
+
+    class Cashflow [[Cashflow.html]] {
+        +getCashflowAmount(): Money
+        +getCashflowCalculation(): String
+        +getCashflowDate(): AdjustableOrAdjustedOrRelativeDate
+        +getCashflowType(): CashflowTypeEnum
+        +toBuilder(): Cashflow.CashflowBuilder
+        {static} +builder(): Cashflow.CashflowBuilder
+        +getRosettaKeyValue(): String
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

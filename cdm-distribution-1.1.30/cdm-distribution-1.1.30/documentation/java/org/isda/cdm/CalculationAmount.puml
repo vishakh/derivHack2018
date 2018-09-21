@@ -1,0 +1,10 @@
+@startuml
+
+    class CalculationAmount [[CalculationAmount.html]] {
+        +getStep(): List<Step>
+        +toBuilder(): CalculationAmount.CalculationAmountBuilder
+        {static} +builder(): CalculationAmount.CalculationAmountBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

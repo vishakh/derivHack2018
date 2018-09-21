@@ -1,0 +1,7 @@
+@startuml
+
+    class NaturalPersonChoiceRule [[NaturalPersonChoiceRule.html]] {
+        +validate(NaturalPerson): ValidationResult<NaturalPerson>
+    }
+
+@enduml

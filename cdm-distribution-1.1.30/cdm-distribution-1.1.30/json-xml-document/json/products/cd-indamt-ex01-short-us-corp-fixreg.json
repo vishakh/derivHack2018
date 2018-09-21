@@ -1,0 +1,137 @@
+{
+  "collateral" : {
+    "independentAmount" : {
+      "payerPartyReference" : "nf4f5",
+      "receiverPartyReference" : "koy4rt1",
+      "paymentDetail" : [ {
+        "paymentRule" : {
+          "percentageRule" : {
+            "notionalAmountReference" : "notional",
+            "paymentPercent" : 0.02
+          }
+        }
+      } ]
+    }
+  },
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "xyz1234",
+      "identifierScheme" : "http://www.xyzbank.com/cd-trade-id"
+    },
+    "partyReference" : "koy4rt1"
+  }, {
+    "identifierValue" : {
+      "identifier" : "abc1234",
+      "identifierScheme" : "http://www.abcbank.com/cd-trade-id"
+    },
+    "partyReference" : "nf4f5"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "creditDefaultPayout" : {
+          "generalTerms" : {
+            "buyerSeller" : {
+              "buyerPartyReference" : "koy4rt1",
+              "sellerPartyReference" : "nf4f5"
+            },
+            "referenceInformation" : {
+              "referenceEntity" : {
+                "entityId" : "8G836J",
+                "entityIdScheme" : "http://www.fpml.org/spec/2003/entity-id-RED-1-0",
+                "id" : "jg45d",
+                "name" : "Tenet Healthcare Corporation"
+              },
+              "referenceObligation" : [ {
+                "bond" : {
+                  "productIdentifierScheme" : "http://www.fpml.org/spec/2002/instrument-id-CUSIP-1-0",
+                  "couponRate" : 0.06,
+                  "maturity" : "2011-12-01"
+                },
+                "primaryObligorReference" : "jg45d"
+              } ]
+            }
+          },
+          "protectionTerms" : {
+            "creditEvents" : {
+              "bankruptcy" : false,
+              "governmentalIntervention" : true,
+              "obligationAcceleration" : true,
+              "obligationDefault" : false,
+              "repudiationMoratorium" : true,
+              "restructuring" : {
+                "applicable" : true,
+                "multipleHolderObligation" : true,
+                "restructuringType" : "MOD_R"
+              }
+            },
+            "notionalAmount" : {
+              "amount" : 5000000,
+              "currency" : "USD",
+              "id" : "notional"
+            }
+          },
+          "rosettaKeyValue" : "16248faa"
+        },
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodFrequency" : {
+              "rollConvention" : "_6"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "unadjustedDate" : "2002-12-04"
+              }
+            },
+            "terminationDate" : {
+              "unadjustedDate" : "2007-09-06"
+            }
+          },
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.01
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "koy4rt1",
+            "receiverPartyReference" : "nf4f5"
+          },
+          "paymentDates" : {
+            "firstPaymentDate" : "2003-03-06",
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            }
+          },
+          "rosettaKeyValue" : "8a69eb56"
+        } ]
+      },
+      "rosettaKeyValue" : "e212cc94"
+    }
+  },
+  "documentation" : {
+    "masterConfirmation" : {
+      "masterConfirmationDate" : "2003-06-06",
+      "masterConfirmationType" : "ISDA_2003_CREDIT_NORTH_AMERICAN"
+    }
+  },
+  "party" : [ {
+    "id" : "koy4rt1",
+    "legalEntity" : {
+      "name" : "XYZ Bank"
+    },
+    "partyId" : [ "XYZBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "nf4f5",
+    "legalEntity" : {
+      "name" : "ABC Bank"
+    },
+    "partyId" : [ "ABCBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2002-12-03"
+  },
+  "rosettaKey" : "a0a23fb8"
+}

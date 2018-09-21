@@ -1,0 +1,7 @@
+@startuml
+
+    class ExercisePeriodValidator [[ExercisePeriodValidator.html]] {
+        +validate(ExercisePeriod): ValidationResult<ExercisePeriod>
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class Step.StepBuilder [[Step.StepBuilder.html]] {
+        +getId(): String
+        +getStepDate(): LocalDate
+        +getStepValue(): BigDecimal
+        +setId(String): Step.StepBuilder
+        +setStepDate(LocalDate): Step.StepBuilder
+        +setStepValue(BigDecimal): Step.StepBuilder
+        +build(): Step
+    }
+
+@enduml

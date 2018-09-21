@@ -1,0 +1,7 @@
+@startuml
+
+    class StrategyFeatureOnlyExistsValidator [[StrategyFeatureOnlyExistsValidator.html]] {
+        +validate(StrategyFeature, String): ValidationResult<StrategyFeature>
+    }
+
+@enduml

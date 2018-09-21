@@ -1,0 +1,14 @@
+@startuml
+
+    class Bond [[Bond.html]] {
+        +getDayCountFraction(): DayCountFractionEnum
+        +getDayCountFractionScheme(): String
+        +getIssuanceFaceAmount(): BigDecimal
+        +getParValue(): BigDecimal
+        +getPaymentFrequency(): Period
+        +toBuilder(): Bond.BondBuilder
+        {static} +builder(): Bond.BondBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

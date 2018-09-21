@@ -1,0 +1,27 @@
+@startuml
+
+    class ReferenceInformation.ReferenceInformationBuilder [[ReferenceInformation.ReferenceInformationBuilder.html]] {
+        +getAllGuarantees(): Boolean
+        +getNoReferenceObligation(): Boolean
+        +getReferenceEntity(): LegalEntity.LegalEntityBuilder
+        +getOrCreateReferenceEntity(): LegalEntity.LegalEntityBuilder
+        +getReferenceObligation(): List<ReferenceObligation.ReferenceObligationBuilder>
+        +getOrCreateReferenceObligation(int): ReferenceObligation.ReferenceObligationBuilder
+        +getReferencePolicy(): Boolean
+        +getReferencePrice(): BigDecimal
+        +getSecuredList(): Boolean
+        +getUnknownReferenceObligation(): Boolean
+        +setAllGuarantees(Boolean): ReferenceInformation.ReferenceInformationBuilder
+        +setNoReferenceObligation(Boolean): ReferenceInformation.ReferenceInformationBuilder
+        +setReferenceEntity(LegalEntity): ReferenceInformation.ReferenceInformationBuilder
+        +setReferenceEntityBuilder(LegalEntity.LegalEntityBuilder): ReferenceInformation.ReferenceInformationBuilder
+        +addReferenceObligation(ReferenceObligation): ReferenceInformation.ReferenceInformationBuilder
+        +addReferenceObligationBuilder(ReferenceObligation.ReferenceObligationBuilder): ReferenceInformation.ReferenceInformationBuilder
+        +setReferencePolicy(Boolean): ReferenceInformation.ReferenceInformationBuilder
+        +setReferencePrice(BigDecimal): ReferenceInformation.ReferenceInformationBuilder
+        +setSecuredList(Boolean): ReferenceInformation.ReferenceInformationBuilder
+        +setUnknownReferenceObligation(Boolean): ReferenceInformation.ReferenceInformationBuilder
+        +build(): ReferenceInformation
+    }
+
+@enduml

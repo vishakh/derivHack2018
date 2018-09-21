@@ -1,0 +1,13 @@
+@startuml
+
+    class ManualExercise.ManualExerciseBuilder [[ManualExercise.ManualExerciseBuilder.html]] {
+        +getExerciseNotice(): ExerciseNotice.ExerciseNoticeBuilder
+        +getOrCreateExerciseNotice(): ExerciseNotice.ExerciseNoticeBuilder
+        +getFallbackExercise(): Boolean
+        +setExerciseNotice(ExerciseNotice): ManualExercise.ManualExerciseBuilder
+        +setExerciseNoticeBuilder(ExerciseNotice.ExerciseNoticeBuilder): ManualExercise.ManualExerciseBuilder
+        +setFallbackExercise(Boolean): ManualExercise.ManualExerciseBuilder
+        +build(): ManualExercise
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractualProductValidator [[ContractualProductValidator.html]] {
+        +validate(ContractualProduct): ValidationResult<ContractualProduct>
+    }
+
+@enduml

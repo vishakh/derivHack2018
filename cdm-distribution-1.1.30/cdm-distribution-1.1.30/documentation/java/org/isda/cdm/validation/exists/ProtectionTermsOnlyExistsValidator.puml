@@ -1,0 +1,7 @@
+@startuml
+
+    class ProtectionTermsOnlyExistsValidator [[ProtectionTermsOnlyExistsValidator.html]] {
+        +validate(ProtectionTerms, String): ValidationResult<ProtectionTerms>
+    }
+
+@enduml

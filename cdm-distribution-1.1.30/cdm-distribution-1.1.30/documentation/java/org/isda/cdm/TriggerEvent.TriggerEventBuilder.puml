@@ -1,0 +1,23 @@
+@startuml
+
+    class TriggerEvent.TriggerEventBuilder [[TriggerEvent.TriggerEventBuilder.html]] {
+        +getFeaturePayment(): FeaturePayment.FeaturePaymentBuilder
+        +getOrCreateFeaturePayment(): FeaturePayment.FeaturePaymentBuilder
+        +getSchedule(): List<AveragingSchedule.AveragingScheduleBuilder>
+        +getOrCreateSchedule(int): AveragingSchedule.AveragingScheduleBuilder
+        +getTrigger(): Trigger.TriggerBuilder
+        +getOrCreateTrigger(): Trigger.TriggerBuilder
+        +getTriggerDates(): DateList.DateListBuilder
+        +getOrCreateTriggerDates(): DateList.DateListBuilder
+        +setFeaturePayment(FeaturePayment): TriggerEvent.TriggerEventBuilder
+        +setFeaturePaymentBuilder(FeaturePayment.FeaturePaymentBuilder): TriggerEvent.TriggerEventBuilder
+        +addSchedule(AveragingSchedule): TriggerEvent.TriggerEventBuilder
+        +addScheduleBuilder(AveragingSchedule.AveragingScheduleBuilder): TriggerEvent.TriggerEventBuilder
+        +setTrigger(Trigger): TriggerEvent.TriggerEventBuilder
+        +setTriggerBuilder(Trigger.TriggerBuilder): TriggerEvent.TriggerEventBuilder
+        +setTriggerDates(DateList): TriggerEvent.TriggerEventBuilder
+        +setTriggerDatesBuilder(DateList.DateListBuilder): TriggerEvent.TriggerEventBuilder
+        +build(): TriggerEvent
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class MoneyOnlyExistsValidator [[MoneyOnlyExistsValidator.html]] {
+        +validate(Money, String): ValidationResult<Money>
+    }
+
+@enduml

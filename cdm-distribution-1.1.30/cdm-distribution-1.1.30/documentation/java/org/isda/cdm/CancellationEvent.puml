@@ -1,0 +1,12 @@
+@startuml
+
+    class CancellationEvent [[CancellationEvent.html]] {
+        +getAdjustedEarlyTerminationDate(): LocalDate
+        +getAdjustedExerciseDate(): LocalDate
+        +getId(): String
+        +toBuilder(): CancellationEvent.CancellationEventBuilder
+        {static} +builder(): CancellationEvent.CancellationEventBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

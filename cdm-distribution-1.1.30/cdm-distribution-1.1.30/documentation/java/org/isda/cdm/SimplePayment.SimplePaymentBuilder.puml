@@ -1,0 +1,17 @@
+@startuml
+
+    class SimplePayment.SimplePaymentBuilder [[SimplePayment.SimplePaymentBuilder.html]] {
+        +getId(): String
+        +getPaymentAmount(): Money.MoneyBuilder
+        +getOrCreatePaymentAmount(): Money.MoneyBuilder
+        +getPaymentDate(): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +getOrCreatePaymentDate(): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +setId(String): SimplePayment.SimplePaymentBuilder
+        +setPaymentAmount(Money): SimplePayment.SimplePaymentBuilder
+        +setPaymentAmountBuilder(Money.MoneyBuilder): SimplePayment.SimplePaymentBuilder
+        +setPaymentDate(AdjustableOrRelativeDate): SimplePayment.SimplePaymentBuilder
+        +setPaymentDateBuilder(AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder): SimplePayment.SimplePaymentBuilder
+        +build(): SimplePayment
+    }
+
+@enduml

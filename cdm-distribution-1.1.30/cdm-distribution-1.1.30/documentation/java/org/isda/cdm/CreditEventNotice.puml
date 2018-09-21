@@ -1,0 +1,12 @@
+@startuml
+
+    class CreditEventNotice [[CreditEventNotice.html]] {
+        +getBusinessCenter(): BusinessCenterEnum
+        +getNotifyingParty(): NotifyingParty
+        +getPubliclyAvailableInformation(): PubliclyAvailableInformation
+        +toBuilder(): CreditEventNotice.CreditEventNoticeBuilder
+        {static} +builder(): CreditEventNotice.CreditEventNoticeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

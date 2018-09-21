@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionalEarlyTerminationChoiceRule [[OptionalEarlyTerminationChoiceRule.html]] {
+        +validate(OptionalEarlyTermination): ValidationResult<OptionalEarlyTermination>
+    }
+
+@enduml

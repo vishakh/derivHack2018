@@ -1,0 +1,15 @@
+@startuml
+
+    class MasterConfirmation [[MasterConfirmation.html]] {
+        +getMasterConfirmationAnnexDate(): LocalDate
+        +getMasterConfirmationAnnexType(): MasterConfirmationAnnexTypeEnum
+        +getMasterConfirmationAnnexTypeScheme(): String
+        +getMasterConfirmationDate(): LocalDate
+        +getMasterConfirmationType(): MasterConfirmationTypeEnum
+        +getMasterConfirmationTypeScheme(): String
+        +toBuilder(): MasterConfirmation.MasterConfirmationBuilder
+        {static} +builder(): MasterConfirmation.MasterConfirmationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

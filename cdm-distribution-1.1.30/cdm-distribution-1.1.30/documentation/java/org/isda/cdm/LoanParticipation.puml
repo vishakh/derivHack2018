@@ -1,0 +1,10 @@
+@startuml
+
+    class LoanParticipation [[LoanParticipation.html]] {
+        +getQualifyingParticipationSeller(): String
+        +toBuilder(): LoanParticipation.LoanParticipationBuilder
+        {static} +builder(): LoanParticipation.LoanParticipationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

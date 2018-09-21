@@ -1,0 +1,7 @@
+@startuml
+
+    class GrossCashflowValidator [[GrossCashflowValidator.html]] {
+        +validate(GrossCashflow): ValidationResult<GrossCashflow>
+    }
+
+@enduml

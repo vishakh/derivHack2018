@@ -1,0 +1,10 @@
+@startuml
+
+    class AllocationOutcome [[AllocationOutcome.html]] {
+        +getExecution(): ExecutionReference
+        +toBuilder(): AllocationOutcome.AllocationOutcomeBuilder
+        {static} +builder(): AllocationOutcome.AllocationOutcomeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+
+    class FxFixingDate.FxFixingDateBuilder [[FxFixingDate.FxFixingDateBuilder.html]] {
+        +getBusinessCenters(): BusinessCenters.BusinessCentersBuilder
+        +getOrCreateBusinessCenters(): BusinessCenters.BusinessCentersBuilder
+        +getBusinessCentersReference(): String
+        +getBusinessDayConvention(): BusinessDayConventionEnum
+        +getDateRelativeToCalculationPeriodDates(): DateRelativeToCalculationPeriodDates.DateRelativeToCalculationPeriodDatesBuilder
+        +getOrCreateDateRelativeToCalculationPeriodDates(): DateRelativeToCalculationPeriodDates.DateRelativeToCalculationPeriodDatesBuilder
+        +getDateRelativeToPaymentDates(): DateRelativeToPaymentDates.DateRelativeToPaymentDatesBuilder
+        +getOrCreateDateRelativeToPaymentDates(): DateRelativeToPaymentDates.DateRelativeToPaymentDatesBuilder
+        +setBusinessCenters(BusinessCenters): FxFixingDate.FxFixingDateBuilder
+        +setBusinessCentersBuilder(BusinessCenters.BusinessCentersBuilder): FxFixingDate.FxFixingDateBuilder
+        +setBusinessCentersReference(String): FxFixingDate.FxFixingDateBuilder
+        +setBusinessDayConvention(BusinessDayConventionEnum): FxFixingDate.FxFixingDateBuilder
+        +setDateRelativeToCalculationPeriodDates(DateRelativeToCalculationPeriodDates): FxFixingDate.FxFixingDateBuilder
+        +setDateRelativeToCalculationPeriodDatesBuilder(DateRelativeToCalculationPeriodDates.DateRelativeToCalculationPeriodDatesBuilder): FxFixingDate.FxFixingDateBuilder
+        +setDateRelativeToPaymentDates(DateRelativeToPaymentDates): FxFixingDate.FxFixingDateBuilder
+        +setDateRelativeToPaymentDatesBuilder(DateRelativeToPaymentDates.DateRelativeToPaymentDatesBuilder): FxFixingDate.FxFixingDateBuilder
+        +build(): FxFixingDate
+    }
+
+@enduml

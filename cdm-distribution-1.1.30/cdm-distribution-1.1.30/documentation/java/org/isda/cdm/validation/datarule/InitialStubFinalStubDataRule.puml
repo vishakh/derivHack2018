@@ -1,0 +1,7 @@
+@startuml
+
+    class InitialStubFinalStubDataRule [[InitialStubFinalStubDataRule.html]] {
+        +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+    }
+
+@enduml

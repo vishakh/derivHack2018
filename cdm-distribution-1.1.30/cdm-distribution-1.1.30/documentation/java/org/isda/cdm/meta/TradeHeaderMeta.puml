@@ -1,0 +1,12 @@
+@startuml
+
+    class TradeHeaderMeta [[TradeHeaderMeta.html]] {
+        +dataRules(): List<Validator<TradeHeader>>
+        +choiceRuleValidators(): List<Validator<TradeHeader>>
+        +getOutMappings(): Multimap<String, OutMapping<TradeHeader, ?>>
+        +getQualifyFunctions(): List<Function<TradeHeader, QualifyResult>>
+        +validator(): Validator<TradeHeader>
+        +onlyExistsValidator(): ValidatorWithArg<TradeHeader, String>
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class StrikeSchedule [[StrikeSchedule.html]] {
+        +getBuyer(): PayerReceiverEnum
+        +getSeller(): PayerReceiverEnum
+        +toBuilder(): StrikeSchedule.StrikeScheduleBuilder
+        {static} +builder(): StrikeSchedule.StrikeScheduleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

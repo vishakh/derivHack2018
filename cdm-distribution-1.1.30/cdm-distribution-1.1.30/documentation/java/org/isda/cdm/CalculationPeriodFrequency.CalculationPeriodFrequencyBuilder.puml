@@ -1,0 +1,9 @@
+@startuml
+
+    class CalculationPeriodFrequency.CalculationPeriodFrequencyBuilder [[CalculationPeriodFrequency.CalculationPeriodFrequencyBuilder.html]] {
+        +getRollConvention(): RollConventionEnum
+        +setRollConvention(RollConventionEnum): CalculationPeriodFrequency.CalculationPeriodFrequencyBuilder
+        +build(): CalculationPeriodFrequency
+    }
+
+@enduml

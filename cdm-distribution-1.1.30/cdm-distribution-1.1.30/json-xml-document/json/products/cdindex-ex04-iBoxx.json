@@ -1,0 +1,120 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "CDX1234",
+      "identifierScheme" : "http://www.newbank.com/trade-id"
+    },
+    "partyReference" : "party1"
+  }, {
+    "identifierValue" : {
+      "identifier" : "1234A6",
+      "identifierScheme" : "http://www.massivebank.com/trade-id"
+    },
+    "partyReference" : "party2"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "cashflow" : [ {
+          "payerReceiver" : {
+            "payerPartyReference" : "party1",
+            "receiverPartyReference" : "party2"
+          },
+          "cashflowAmount" : {
+            "amount" : 16000,
+            "currency" : "USD"
+          },
+          "rosettaKeyValue" : "75918666"
+        } ],
+        "creditDefaultPayout" : {
+          "generalTerms" : {
+            "buyerSeller" : {
+              "buyerPartyReference" : "party2",
+              "sellerPartyReference" : "party1"
+            },
+            "indexReferenceInformation" : {
+              "indexId" : [ "DE0006301161" ],
+              "indexIdScheme" : "http://www.fpml.org/spec/2002/instrument-id-ISIN",
+              "indexName" : "iBoxx EUR Corporates"
+            }
+          },
+          "protectionTerms" : {
+            "notionalAmount" : {
+              "amount" : 25000000,
+              "currency" : "USD"
+            }
+          },
+          "rosettaKeyValue" : "d955bbae"
+        },
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "unadjustedDate" : "2014-03-23"
+              }
+            },
+            "terminationDate" : {
+              "unadjustedDate" : "2019-03-20"
+            }
+          },
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "USD_LIBOR_BBA",
+              "floatingRateIndexScheme" : "http://www.fpml.org/coding-scheme/floating-rate-index",
+              "spreadSchedule" : [ {
+                "initialValue" : 0.02
+              } ],
+              "initialRate" : 0.025
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party2",
+            "receiverPartyReference" : "party1"
+          },
+          "quantity" : {
+            "notionalAmount" : {
+              "amount" : 1000000,
+              "currency" : "USD"
+            }
+          },
+          "resetDates" : {
+            "finalFixingDate" : {
+              "dateAdjustments" : {
+                "businessDayConvention" : "NOT_APPLICABLE"
+              },
+              "unadjustedDate" : "2019-03-20"
+            },
+            "initialFixingDate" : {
+              "initialFixingDate" : "2014-03-23"
+            }
+          },
+          "rosettaKeyValue" : "fc37a135"
+        } ]
+      },
+      "rosettaKeyValue" : "f7792573"
+    }
+  },
+  "documentation" : {
+    "contractualDefinitions" : [ "ISDA2006" ],
+    "contractualDefinitionsScheme" : "http://www.fpml.org/coding-scheme/contractual-definitions"
+  },
+  "party" : [ {
+    "id" : "party1",
+    "legalEntity" : {
+      "name" : "New Bank, New York"
+    },
+    "partyId" : [ "HPFHU0OQ28E4N0NFVK49" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "party2",
+    "legalEntity" : {
+      "name" : "Massive Bank, New York"
+    },
+    "partyId" : [ "254900O1WT2BXINL9612" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "tradeDate" : {
+    "date" : "2005-01-24"
+  },
+  "rosettaKey" : "b8baf535"
+}

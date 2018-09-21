@@ -1,0 +1,12 @@
+@startuml
+
+    class ReferenceBank [[ReferenceBank.html]] {
+        +getReferenceBankId(): String
+        +getReferenceBankIdScheme(): String
+        +getReferenceBankName(): String
+        +toBuilder(): ReferenceBank.ReferenceBankBuilder
+        {static} +builder(): ReferenceBank.ReferenceBankBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

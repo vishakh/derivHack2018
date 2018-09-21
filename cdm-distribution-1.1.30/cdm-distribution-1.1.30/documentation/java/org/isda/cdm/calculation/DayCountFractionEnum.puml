@@ -1,0 +1,8 @@
+@startuml
+
+    class DayCountFractionEnum [[DayCountFractionEnum.html]] {
+        +DayCountFractionEnum(DaysInPeriod, CalculationPeriod)
+        +calculate(InterestRatePayout, DayCountFractionEnum): BigDecimal
+    }
+
+@enduml

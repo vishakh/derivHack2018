@@ -1,0 +1,13 @@
+@startuml
+
+    class Tranche.TrancheBuilder [[Tranche.TrancheBuilder.html]] {
+        +getAttachmentPoint(): BigDecimal
+        +getExhaustionPoint(): BigDecimal
+        +getIncurredRecoveryApplicable(): Boolean
+        +setAttachmentPoint(BigDecimal): Tranche.TrancheBuilder
+        +setExhaustionPoint(BigDecimal): Tranche.TrancheBuilder
+        +setIncurredRecoveryApplicable(Boolean): Tranche.TrancheBuilder
+        +build(): Tranche
+    }
+
+@enduml

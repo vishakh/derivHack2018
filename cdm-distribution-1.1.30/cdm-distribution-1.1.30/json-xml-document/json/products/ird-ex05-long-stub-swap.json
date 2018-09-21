@@ -1,0 +1,238 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "921934",
+      "identifierScheme" : "http://www.partyA.com/swaps/trade-id"
+    },
+    "partyReference" : "party1"
+  }, {
+    "identifierValue" : {
+      "identifier" : "204334",
+      "identifierScheme" : "http://www.ubsw.com/swaps/trade-id"
+    },
+    "partyReference" : "party2"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "primaryBusinessCenters"
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6,
+              "rollConvention" : "_5"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2000-04-05"
+              }
+            },
+            "firstPeriodStartDate" : {
+              "dateAdjustments" : {
+                "businessDayConvention" : "NONE"
+              },
+              "unadjustedDate" : "2000-03-05"
+            },
+            "firstRegularPeriodStartDate" : "2000-10-05",
+            "id" : "floatingCalcPeriodDates",
+            "lastRegularPeriodEndDate" : "2004-10-05",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "EUTA" ],
+                  "id" : "primaryBusinessCenters"
+                },
+                "businessDayConvention" : "FOLLOWING"
+              },
+              "unadjustedDate" : "2005-01-05"
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "EUR_EURIBOR_TELERATE",
+              "indexTenor" : {
+                "period" : "M",
+                "periodMultiplier" : 6
+              },
+              "spreadSchedule" : [ {
+                "initialValue" : 0.001
+              } ]
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party1",
+            "receiverPartyReference" : "party2"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates",
+            "firstPaymentDate" : "2000-10-05",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "primaryBusinessCenters"
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 75000000.00,
+                "currency" : "EUR"
+              }
+            }
+          },
+          "resetDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates",
+            "fixingDates" : {
+              "period" : "D",
+              "periodMultiplier" : -2,
+              "dayType" : "BUSINESS",
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "NONE",
+              "dateRelativeTo" : "resetDates"
+            },
+            "id" : "resetDates",
+            "resetDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "primaryBusinessCenters"
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "resetFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            },
+            "resetRelativeTo" : "CALCULATION_PERIOD_START_DATE"
+          },
+          "stubPeriod" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates",
+            "finalStub" : {
+              "floatingRate" : [ {
+                "floatingRateIndex" : "EUR_EURIBOR_TELERATE",
+                "indexTenor" : {
+                  "period" : "M",
+                  "periodMultiplier" : 3
+                }
+              } ]
+            },
+            "initialStub" : {
+              "stubRate" : 0.05125
+            }
+          },
+          "rosettaKeyValue" : "7598e440"
+        }, {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "primaryBusinessCenters"
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1,
+              "rollConvention" : "_5"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2000-04-05"
+              }
+            },
+            "firstPeriodStartDate" : {
+              "dateAdjustments" : {
+                "businessDayConvention" : "NONE"
+              },
+              "unadjustedDate" : "2000-03-05"
+            },
+            "firstRegularPeriodStartDate" : "2000-10-05",
+            "id" : "fixedCalcPeriodDates",
+            "lastRegularPeriodEndDate" : "2004-10-05",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCentersReference" : "primaryBusinessCenters"
+                },
+                "businessDayConvention" : "FOLLOWING"
+              },
+              "unadjustedDate" : "2005-01-05"
+            }
+          },
+          "dayCountFraction" : "_30_360",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.0525
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party2",
+            "receiverPartyReference" : "party1"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "fixedCalcPeriodDates",
+            "firstPaymentDate" : "2000-10-05",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "primaryBusinessCenters"
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 75000000.00,
+                "currency" : "EUR"
+              }
+            }
+          },
+          "rosettaKeyValue" : "a471ec05"
+        } ]
+      },
+      "rosettaKeyValue" : "274f385b"
+    },
+    "productIdentification" : {
+      "productQualifier" : "InterestRate_IRSwap_FixedFloat"
+    }
+  },
+  "party" : [ {
+    "id" : "party1",
+    "legalEntity" : {
+      "name" : "Party A"
+    },
+    "partyId" : [ "PARTYAUS33" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "party2",
+    "partyId" : [ "UBSWUS33" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2000-04-03"
+  },
+  "rosettaKey" : "b257d8b0"
+}

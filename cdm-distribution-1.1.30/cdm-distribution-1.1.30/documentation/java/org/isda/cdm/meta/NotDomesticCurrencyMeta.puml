@@ -1,0 +1,12 @@
+@startuml
+
+    class NotDomesticCurrencyMeta [[NotDomesticCurrencyMeta.html]] {
+        +dataRules(): List<Validator<NotDomesticCurrency>>
+        +choiceRuleValidators(): List<Validator<NotDomesticCurrency>>
+        +getOutMappings(): Multimap<String, OutMapping<NotDomesticCurrency, ?>>
+        +getQualifyFunctions(): List<Function<NotDomesticCurrency, QualifyResult>>
+        +validator(): Validator<NotDomesticCurrency>
+        +onlyExistsValidator(): ValidatorWithArg<NotDomesticCurrency, String>
+    }
+
+@enduml

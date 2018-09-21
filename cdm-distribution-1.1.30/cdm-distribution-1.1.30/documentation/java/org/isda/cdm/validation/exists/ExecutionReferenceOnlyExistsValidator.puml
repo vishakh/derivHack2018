@@ -1,0 +1,7 @@
+@startuml
+
+    class ExecutionReferenceOnlyExistsValidator [[ExecutionReferenceOnlyExistsValidator.html]] {
+        +validate(ExecutionReference, String): ValidationResult<ExecutionReference>
+    }
+
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+
+    class AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder [[AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder.html]] {
+        +getAdjustedDate(): LocalDate
+        +getDateAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getOrCreateDateAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getId(): String
+        +getRelativeDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getOrCreateRelativeDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getUnadjustedDate(): LocalDate
+        +setAdjustedDate(LocalDate): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +setDateAdjustments(BusinessDayAdjustments): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +setDateAdjustmentsBuilder(BusinessDayAdjustments.BusinessDayAdjustmentsBuilder): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +setId(String): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +setRelativeDate(RelativeDateOffset): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +setRelativeDateBuilder(RelativeDateOffset.RelativeDateOffsetBuilder): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +setUnadjustedDate(LocalDate): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +build(): AdjustableOrAdjustedOrRelativeDate
+    }
+
+@enduml

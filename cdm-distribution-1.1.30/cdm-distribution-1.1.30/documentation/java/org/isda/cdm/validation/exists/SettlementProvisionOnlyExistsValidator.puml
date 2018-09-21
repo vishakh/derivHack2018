@@ -1,0 +1,7 @@
+@startuml
+
+    class SettlementProvisionOnlyExistsValidator [[SettlementProvisionOnlyExistsValidator.html]] {
+        +validate(SettlementProvision, String): ValidationResult<SettlementProvision>
+    }
+
+@enduml

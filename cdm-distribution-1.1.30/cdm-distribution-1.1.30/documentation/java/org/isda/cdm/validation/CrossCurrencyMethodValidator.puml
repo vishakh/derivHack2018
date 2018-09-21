@@ -1,0 +1,7 @@
+@startuml
+
+    class CrossCurrencyMethodValidator [[CrossCurrencyMethodValidator.html]] {
+        +validate(CrossCurrencyMethod): ValidationResult<CrossCurrencyMethod>
+    }
+
+@enduml

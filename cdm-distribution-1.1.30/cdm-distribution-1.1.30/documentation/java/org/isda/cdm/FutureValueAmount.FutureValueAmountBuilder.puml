@@ -1,0 +1,11 @@
+@startuml
+
+    class FutureValueAmount.FutureValueAmountBuilder [[FutureValueAmount.FutureValueAmountBuilder.html]] {
+        +getCalculationPeriodNumberOfDays(): Integer
+        +getValueDate(): LocalDate
+        +setCalculationPeriodNumberOfDays(Integer): FutureValueAmount.FutureValueAmountBuilder
+        +setValueDate(LocalDate): FutureValueAmount.FutureValueAmountBuilder
+        +build(): FutureValueAmount
+    }
+
+@enduml

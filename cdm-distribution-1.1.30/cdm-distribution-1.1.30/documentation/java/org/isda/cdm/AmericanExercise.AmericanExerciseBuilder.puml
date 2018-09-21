@@ -1,0 +1,41 @@
+@startuml
+
+    class AmericanExercise.AmericanExerciseBuilder [[AmericanExercise.AmericanExerciseBuilder.html]] {
+        +getCommencementDate(): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +getOrCreateCommencementDate(): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +getEarliestExerciseTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getOrCreateEarliestExerciseTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getExerciseFeeSchedule(): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        +getOrCreateExerciseFeeSchedule(): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        +getExpirationDate(): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +getOrCreateExpirationDate(): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +getExpirationTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getOrCreateExpirationTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getId(): String
+        +getLatestExerciseTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getOrCreateLatestExerciseTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getMultipleExercise(): MultipleExercise.MultipleExerciseBuilder
+        +getOrCreateMultipleExercise(): MultipleExercise.MultipleExerciseBuilder
+        +getRelevantUnderlyingDate(): AdjustableOrRelativeDates.AdjustableOrRelativeDatesBuilder
+        +getOrCreateRelevantUnderlyingDate(): AdjustableOrRelativeDates.AdjustableOrRelativeDatesBuilder
+        +setCommencementDate(AdjustableOrRelativeDate): AmericanExercise.AmericanExerciseBuilder
+        +setCommencementDateBuilder(AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder): AmericanExercise.AmericanExerciseBuilder
+        +setEarliestExerciseTime(BusinessCenterTime): AmericanExercise.AmericanExerciseBuilder
+        +setEarliestExerciseTimeBuilder(BusinessCenterTime.BusinessCenterTimeBuilder): AmericanExercise.AmericanExerciseBuilder
+        +setExerciseFeeSchedule(ExerciseFeeSchedule): AmericanExercise.AmericanExerciseBuilder
+        +setExerciseFeeScheduleBuilder(ExerciseFeeSchedule.ExerciseFeeScheduleBuilder): AmericanExercise.AmericanExerciseBuilder
+        +setExpirationDate(AdjustableOrRelativeDate): AmericanExercise.AmericanExerciseBuilder
+        +setExpirationDateBuilder(AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder): AmericanExercise.AmericanExerciseBuilder
+        +setExpirationTime(BusinessCenterTime): AmericanExercise.AmericanExerciseBuilder
+        +setExpirationTimeBuilder(BusinessCenterTime.BusinessCenterTimeBuilder): AmericanExercise.AmericanExerciseBuilder
+        +setId(String): AmericanExercise.AmericanExerciseBuilder
+        +setLatestExerciseTime(BusinessCenterTime): AmericanExercise.AmericanExerciseBuilder
+        +setLatestExerciseTimeBuilder(BusinessCenterTime.BusinessCenterTimeBuilder): AmericanExercise.AmericanExerciseBuilder
+        +setMultipleExercise(MultipleExercise): AmericanExercise.AmericanExerciseBuilder
+        +setMultipleExerciseBuilder(MultipleExercise.MultipleExerciseBuilder): AmericanExercise.AmericanExerciseBuilder
+        +setRelevantUnderlyingDate(AdjustableOrRelativeDates): AmericanExercise.AmericanExerciseBuilder
+        +setRelevantUnderlyingDateBuilder(AdjustableOrRelativeDates.AdjustableOrRelativeDatesBuilder): AmericanExercise.AmericanExerciseBuilder
+        +build(): AmericanExercise
+    }
+
+@enduml

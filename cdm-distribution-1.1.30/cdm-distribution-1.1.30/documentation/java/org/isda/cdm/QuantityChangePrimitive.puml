@@ -1,0 +1,12 @@
+@startuml
+
+    class QuantityChangePrimitive [[QuantityChangePrimitive.html]] {
+        +getAfter(): ContractOrContractReference
+        +getBefore(): ContractOrContractReference
+        +getChange(): List<ContractualQuantity>
+        +toBuilder(): QuantityChangePrimitive.QuantityChangePrimitiveBuilder
+        {static} +builder(): QuantityChangePrimitive.QuantityChangePrimitiveBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

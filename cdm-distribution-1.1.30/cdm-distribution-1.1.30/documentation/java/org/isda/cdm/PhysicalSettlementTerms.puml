@@ -1,0 +1,16 @@
+@startuml
+
+    class PhysicalSettlementTerms [[PhysicalSettlementTerms.html]] {
+        +getDeliverableObligations(): DeliverableObligations
+        +getEscrow(): Boolean
+        +getId(): String
+        +getPhysicalSettlementPeriod(): PhysicalSettlementPeriod
+        +getSettlementCurrency(): String
+        +getSettlementCurrencyScheme(): String
+        +getSixtyBusinessDaySettlementCap(): Boolean
+        +toBuilder(): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        {static} +builder(): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

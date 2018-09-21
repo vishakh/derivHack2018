@@ -1,0 +1,7 @@
+@startuml
+
+    class DateRelativeToCalculationPeriodDatesValidator [[DateRelativeToCalculationPeriodDatesValidator.html]] {
+        +validate(DateRelativeToCalculationPeriodDates): ValidationResult<DateRelativeToCalculationPeriodDates>
+    }
+
+@enduml

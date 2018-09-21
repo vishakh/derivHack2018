@@ -1,0 +1,346 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "56323",
+      "identifierScheme" : "http://www.partyA.com/swaps/trade-id"
+    },
+    "partyReference" : "party1"
+  }, {
+    "identifierValue" : {
+      "identifier" : "56990",
+      "identifierScheme" : "http://www.msdw/swaps/trade-id"
+    },
+    "partyReference" : "party2"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "primaryBusinessCenters"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3,
+              "rollConvention" : "_27"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2000-04-27"
+              }
+            },
+            "id" : "floatingCalcPeriodDates",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "GBLO", "USNY" ],
+                  "id" : "primaryBusinessCenters"
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2002-04-27"
+            }
+          },
+          "cashflowRepresentation" : {
+            "cashflowsMatchParameters" : true,
+            "paymentCalculationPeriod" : [ {
+              "adjustedPaymentDate" : "2000-11-03",
+              "calculationPeriod" : [ {
+                "adjustedEndDate" : "2000-07-27",
+                "adjustedStartDate" : "2000-04-27",
+                "floatingRateDefinition" : {
+                  "rateObservation" : [ {
+                    "adjustedFixingDate" : "2000-04-25",
+                    "observationWeight" : 1
+                  } ]
+                },
+                "notionalAmount" : 100000000.00
+              }, {
+                "adjustedEndDate" : "2000-10-27",
+                "adjustedStartDate" : "2000-07-27",
+                "floatingRateDefinition" : {
+                  "rateObservation" : [ {
+                    "adjustedFixingDate" : "2000-07-25",
+                    "observationWeight" : 1
+                  } ]
+                },
+                "notionalAmount" : 100000000.00
+              } ]
+            }, {
+              "adjustedPaymentDate" : "2001-05-04",
+              "calculationPeriod" : [ {
+                "adjustedEndDate" : "2001-01-29",
+                "adjustedStartDate" : "2000-10-27",
+                "floatingRateDefinition" : {
+                  "rateObservation" : [ {
+                    "adjustedFixingDate" : "2000-10-25",
+                    "observationWeight" : 1
+                  } ]
+                },
+                "notionalAmount" : 100000000.00
+              }, {
+                "adjustedEndDate" : "2001-04-27",
+                "adjustedStartDate" : "2001-01-29",
+                "floatingRateDefinition" : {
+                  "rateObservation" : [ {
+                    "adjustedFixingDate" : "2001-01-25",
+                    "observationWeight" : 1
+                  } ]
+                },
+                "notionalAmount" : 100000000.00
+              } ]
+            }, {
+              "adjustedPaymentDate" : "2001-11-05",
+              "calculationPeriod" : [ {
+                "adjustedEndDate" : "2001-07-27",
+                "adjustedStartDate" : "2001-04-27",
+                "floatingRateDefinition" : {
+                  "rateObservation" : [ {
+                    "adjustedFixingDate" : "2001-04-25",
+                    "observationWeight" : 1
+                  } ]
+                },
+                "notionalAmount" : 100000000.00
+              }, {
+                "adjustedEndDate" : "2001-10-29",
+                "adjustedStartDate" : "2001-07-27",
+                "floatingRateDefinition" : {
+                  "rateObservation" : [ {
+                    "adjustedFixingDate" : "2001-07-25",
+                    "observationWeight" : 1
+                  } ]
+                },
+                "notionalAmount" : 100000000.00
+              } ]
+            }, {
+              "adjustedPaymentDate" : "2002-05-06",
+              "calculationPeriod" : [ {
+                "adjustedEndDate" : "2002-01-29",
+                "adjustedStartDate" : "2001-10-29",
+                "floatingRateDefinition" : {
+                  "rateObservation" : [ {
+                    "adjustedFixingDate" : "2001-10-25",
+                    "observationWeight" : 1
+                  } ]
+                },
+                "notionalAmount" : 100000000.00
+              }, {
+                "adjustedEndDate" : "2002-04-29",
+                "adjustedStartDate" : "2002-01-29",
+                "floatingRateDefinition" : {
+                  "rateObservation" : [ {
+                    "adjustedFixingDate" : "2002-01-25",
+                    "observationWeight" : 1
+                  } ]
+                },
+                "notionalAmount" : 100000000.00
+              } ]
+            } ]
+          },
+          "compoundingMethod" : "FLAT",
+          "dayCountFraction" : "ACT_360",
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "USD_LIBOR_BBA",
+              "indexTenor" : {
+                "period" : "M",
+                "periodMultiplier" : 3
+              },
+              "finalRateRounding" : {
+                "precision" : 7,
+                "roundingDirection" : "NEAREST"
+              }
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party2",
+            "receiverPartyReference" : "party1"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "primaryBusinessCenters"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentDaysOffset" : {
+              "period" : "D",
+              "periodMultiplier" : 5,
+              "dayType" : "BUSINESS"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 100000000.00,
+                "currency" : "USD"
+              }
+            }
+          },
+          "resetDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates",
+            "fixingDates" : {
+              "period" : "D",
+              "periodMultiplier" : -2,
+              "dayType" : "BUSINESS",
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO" ]
+              },
+              "businessDayConvention" : "NONE",
+              "dateRelativeTo" : "resetDates"
+            },
+            "id" : "resetDates",
+            "resetDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "primaryBusinessCenters"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "resetFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            },
+            "resetRelativeTo" : "CALCULATION_PERIOD_START_DATE"
+          },
+          "rosettaKeyValue" : "71deb28d"
+        }, {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "primaryBusinessCenters"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6,
+              "rollConvention" : "_27"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2000-04-27"
+              }
+            },
+            "id" : "fixedCalcPeriodDates",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCentersReference" : "primaryBusinessCenters"
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2002-04-27"
+            }
+          },
+          "cashflowRepresentation" : {
+            "cashflowsMatchParameters" : true,
+            "paymentCalculationPeriod" : [ {
+              "adjustedPaymentDate" : "2000-11-03",
+              "calculationPeriod" : [ {
+                "adjustedEndDate" : "2000-10-27",
+                "adjustedStartDate" : "2000-04-27",
+                "fixedRate" : 0.0585,
+                "notionalAmount" : 100000000.00
+              } ]
+            }, {
+              "adjustedPaymentDate" : "2001-05-04",
+              "calculationPeriod" : [ {
+                "adjustedEndDate" : "2001-04-27",
+                "adjustedStartDate" : "2000-10-27",
+                "fixedRate" : 0.0585,
+                "notionalAmount" : 100000000.00
+              } ]
+            }, {
+              "adjustedPaymentDate" : "2001-11-05",
+              "calculationPeriod" : [ {
+                "adjustedEndDate" : "2001-10-29",
+                "adjustedStartDate" : "2001-04-27",
+                "fixedRate" : 0.0585,
+                "notionalAmount" : 100000000.00
+              } ]
+            }, {
+              "adjustedPaymentDate" : "2002-05-06",
+              "calculationPeriod" : [ {
+                "adjustedEndDate" : "2002-04-29",
+                "adjustedStartDate" : "2001-10-29",
+                "fixedRate" : 0.0585,
+                "notionalAmount" : 100000000.00
+              } ]
+            } ]
+          },
+          "dayCountFraction" : "_30_360",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.0585
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party1",
+            "receiverPartyReference" : "party2"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "fixedCalcPeriodDates",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "primaryBusinessCenters"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentDaysOffset" : {
+              "period" : "D",
+              "periodMultiplier" : 5,
+              "dayType" : "BUSINESS"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 100000000.00,
+                "currency" : "USD"
+              }
+            }
+          },
+          "rosettaKeyValue" : "adb210f4"
+        } ]
+      },
+      "rosettaKeyValue" : "d287ac9f"
+    },
+    "productIdentification" : {
+      "productQualifier" : "InterestRate_IRSwap_FixedFloat"
+    }
+  },
+  "party" : [ {
+    "id" : "party1",
+    "partyId" : [ "PartyA" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "party2",
+    "partyId" : [ "MSLNGB2XSWP" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2000-04-25"
+  },
+  "rosettaKey" : "4defe4ed"
+}

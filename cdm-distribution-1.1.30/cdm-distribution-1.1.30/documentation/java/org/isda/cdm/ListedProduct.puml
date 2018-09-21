@@ -1,0 +1,12 @@
+@startuml
+
+    class ListedProduct [[ListedProduct.html]] {
+        +getBond(): Bond
+        +getConvertibleBond(): ConvertibleBond
+        +toBuilder(): ListedProduct.ListedProductBuilder
+        {static} +builder(): ListedProduct.ListedProductBuilder
+        +getRosettaKey(): String
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

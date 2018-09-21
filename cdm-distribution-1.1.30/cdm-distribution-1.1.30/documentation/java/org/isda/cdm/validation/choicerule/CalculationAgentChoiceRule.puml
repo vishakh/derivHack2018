@@ -1,0 +1,7 @@
+@startuml
+
+    class CalculationAgentChoiceRule [[CalculationAgentChoiceRule.html]] {
+        +validate(CalculationAgent): ValidationResult<CalculationAgent>
+    }
+
+@enduml

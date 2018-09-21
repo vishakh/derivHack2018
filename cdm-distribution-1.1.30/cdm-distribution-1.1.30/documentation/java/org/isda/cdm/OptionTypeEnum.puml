@@ -1,0 +1,11 @@
+@startuml
+
+    enum OptionTypeEnum [[OptionTypeEnum.html]] {
+        {static} +PUT
+        {static} +CALL
+        {static} +PAYER
+        {static} +RECEIVER
+        {static} +STRADDLE
+    }
+
+@enduml

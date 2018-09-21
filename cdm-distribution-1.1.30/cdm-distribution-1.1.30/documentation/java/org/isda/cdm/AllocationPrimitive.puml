@@ -1,0 +1,11 @@
+@startuml
+
+    class AllocationPrimitive [[AllocationPrimitive.html]] {
+        +getAfter(): AllocationOutcome
+        +getBefore(): Execution
+        +toBuilder(): AllocationPrimitive.AllocationPrimitiveBuilder
+        {static} +builder(): AllocationPrimitive.AllocationPrimitiveBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

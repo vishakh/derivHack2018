@@ -1,0 +1,7 @@
+@startuml
+
+    class ValuationPostponementValidator [[ValuationPostponementValidator.html]] {
+        +validate(ValuationPostponement): ValidationResult<ValuationPostponement>
+    }
+
+@enduml

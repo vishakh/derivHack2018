@@ -1,0 +1,9 @@
+@startuml
+
+    enum CouponTypeEnum [[CouponTypeEnum.html]] {
+        {static} +FIXED
+        {static} +FLOAT
+        {static} +STRUCTURED
+    }
+
+@enduml

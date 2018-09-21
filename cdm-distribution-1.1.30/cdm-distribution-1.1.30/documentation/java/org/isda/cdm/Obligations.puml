@@ -1,0 +1,28 @@
+@startuml
+
+    class Obligations [[Obligations.html]] {
+        +getCashSettlementOnly(): Boolean
+        +getCategory(): ObligationCategoryEnum
+        +getContinuity(): Boolean
+        +getDeliveryOfCommitments(): Boolean
+        +getDesignatedPriority(): String
+        +getDesignatedPriorityScheme(): String
+        +getExcluded(): String
+        +getFullFaithAndCreditObLiability(): Boolean
+        +getGeneralFundObligationLiability(): Boolean
+        +getListed(): Boolean
+        +getNotContingent(): Boolean
+        +getNotDomesticCurrency(): NotDomesticCurrency
+        +getNotDomesticIssuance(): Boolean
+        +getNotDomesticLaw(): Boolean
+        +getNotSovereignLender(): Boolean
+        +getNotSubordinated(): Boolean
+        +getOthReferenceEntityObligations(): String
+        +getRevenueObligationLiability(): Boolean
+        +getSpecifiedCurrency(): SpecifiedCurrency
+        +toBuilder(): Obligations.ObligationsBuilder
+        {static} +builder(): Obligations.ObligationsBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

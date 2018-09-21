@@ -1,0 +1,7 @@
+@startuml
+
+    enum MatrixTermEnum [[MatrixTermEnum.html]] {
+        {static} +IVS_1_OPEN_MARKETS
+    }
+
+@enduml

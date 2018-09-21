@@ -1,0 +1,16 @@
+@startuml
+
+    enum PartyIdSourceEnum [[PartyIdSourceEnum.html]] {
+        {static} +BIC
+        {static} +LEI
+        {static} +ARNU
+        {static} +CCPT
+        {static} +CUST
+        {static} +DRLC
+        {static} +EMPL
+        {static} +NIDN
+        {static} +SOSE
+        {static} +TXID
+    }
+
+@enduml

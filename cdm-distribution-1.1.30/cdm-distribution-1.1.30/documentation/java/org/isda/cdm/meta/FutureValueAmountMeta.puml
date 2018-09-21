@@ -1,0 +1,12 @@
+@startuml
+
+    class FutureValueAmountMeta [[FutureValueAmountMeta.html]] {
+        +dataRules(): List<Validator<FutureValueAmount>>
+        +choiceRuleValidators(): List<Validator<FutureValueAmount>>
+        +getOutMappings(): Multimap<String, OutMapping<FutureValueAmount, ?>>
+        +getQualifyFunctions(): List<Function<FutureValueAmount, QualifyResult>>
+        +validator(): Validator<FutureValueAmount>
+        +onlyExistsValidator(): ValidatorWithArg<FutureValueAmount, String>
+    }
+
+@enduml

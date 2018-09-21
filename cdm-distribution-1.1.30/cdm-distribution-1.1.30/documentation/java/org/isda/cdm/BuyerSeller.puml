@@ -1,0 +1,13 @@
+@startuml
+
+    class BuyerSeller [[BuyerSeller.html]] {
+        +getBuyerAccountReference(): String
+        +getBuyerPartyReference(): String
+        +getSellerAccountReference(): String
+        +getSellerPartyReference(): String
+        +toBuilder(): BuyerSeller.BuyerSellerBuilder
+        {static} +builder(): BuyerSeller.BuyerSellerBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

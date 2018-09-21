@@ -1,0 +1,8 @@
+@startuml
+
+    enum AveragingMethodEnum [[AveragingMethodEnum.html]] {
+        {static} +UNWEIGHTED
+        {static} +WEIGHTED
+    }
+
+@enduml

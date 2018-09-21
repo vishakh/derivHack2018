@@ -1,0 +1,12 @@
+@startuml
+
+    class ContractualProductMeta [[ContractualProductMeta.html]] {
+        +dataRules(): List<Validator<ContractualProduct>>
+        +choiceRuleValidators(): List<Validator<ContractualProduct>>
+        +getOutMappings(): Multimap<String, OutMapping<ContractualProduct, ?>>
+        +getQualifyFunctions(): List<Function<ContractualProduct, QualifyResult>>
+        +validator(): Validator<ContractualProduct>
+        +onlyExistsValidator(): ValidatorWithArg<ContractualProduct, String>
+    }
+
+@enduml

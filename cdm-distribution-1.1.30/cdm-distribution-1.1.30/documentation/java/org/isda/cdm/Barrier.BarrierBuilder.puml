@@ -1,0 +1,15 @@
+@startuml
+
+    class Barrier.BarrierBuilder [[Barrier.BarrierBuilder.html]] {
+        +getBarrierCap(): TriggerEvent.TriggerEventBuilder
+        +getOrCreateBarrierCap(): TriggerEvent.TriggerEventBuilder
+        +getBarrierFloor(): TriggerEvent.TriggerEventBuilder
+        +getOrCreateBarrierFloor(): TriggerEvent.TriggerEventBuilder
+        +setBarrierCap(TriggerEvent): Barrier.BarrierBuilder
+        +setBarrierCapBuilder(TriggerEvent.TriggerEventBuilder): Barrier.BarrierBuilder
+        +setBarrierFloor(TriggerEvent): Barrier.BarrierBuilder
+        +setBarrierFloorBuilder(TriggerEvent.TriggerEventBuilder): Barrier.BarrierBuilder
+        +build(): Barrier
+    }
+
+@enduml

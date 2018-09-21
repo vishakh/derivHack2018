@@ -1,0 +1,17 @@
+@startuml
+
+    class FailureToPay.FailureToPayBuilder [[FailureToPay.FailureToPayBuilder.html]] {
+        +getApplicable(): Boolean
+        +getGracePeriodExtension(): GracePeriodExtension.GracePeriodExtensionBuilder
+        +getOrCreateGracePeriodExtension(): GracePeriodExtension.GracePeriodExtensionBuilder
+        +getPaymentRequirement(): Money.MoneyBuilder
+        +getOrCreatePaymentRequirement(): Money.MoneyBuilder
+        +setApplicable(Boolean): FailureToPay.FailureToPayBuilder
+        +setGracePeriodExtension(GracePeriodExtension): FailureToPay.FailureToPayBuilder
+        +setGracePeriodExtensionBuilder(GracePeriodExtension.GracePeriodExtensionBuilder): FailureToPay.FailureToPayBuilder
+        +setPaymentRequirement(Money): FailureToPay.FailureToPayBuilder
+        +setPaymentRequirementBuilder(Money.MoneyBuilder): FailureToPay.FailureToPayBuilder
+        +build(): FailureToPay
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class ExerciseOutcomeOnlyExistsValidator [[ExerciseOutcomeOnlyExistsValidator.html]] {
+        +validate(ExerciseOutcome, String): ValidationResult<ExerciseOutcome>
+    }
+
+@enduml

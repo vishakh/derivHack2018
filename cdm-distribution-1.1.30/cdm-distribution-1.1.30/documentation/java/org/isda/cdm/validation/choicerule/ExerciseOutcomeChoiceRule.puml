@@ -1,0 +1,7 @@
+@startuml
+
+    class ExerciseOutcomeChoiceRule [[ExerciseOutcomeChoiceRule.html]] {
+        +validate(ExerciseOutcome): ValidationResult<ExerciseOutcome>
+    }
+
+@enduml

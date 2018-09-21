@@ -1,0 +1,13 @@
+@startuml
+
+    class PaymentDiscounting.PaymentDiscountingBuilder [[PaymentDiscounting.PaymentDiscountingBuilder.html]] {
+        +getDiscountFactor(): BigDecimal
+        +getPresentValueAmount(): Money.MoneyBuilder
+        +getOrCreatePresentValueAmount(): Money.MoneyBuilder
+        +setDiscountFactor(BigDecimal): PaymentDiscounting.PaymentDiscountingBuilder
+        +setPresentValueAmount(Money): PaymentDiscounting.PaymentDiscountingBuilder
+        +setPresentValueAmountBuilder(Money.MoneyBuilder): PaymentDiscounting.PaymentDiscountingBuilder
+        +build(): PaymentDiscounting
+    }
+
+@enduml

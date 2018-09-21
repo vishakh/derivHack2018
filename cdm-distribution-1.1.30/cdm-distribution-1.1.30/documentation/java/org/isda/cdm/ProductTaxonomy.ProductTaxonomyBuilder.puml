@@ -1,0 +1,11 @@
+@startuml
+
+    class ProductTaxonomy.ProductTaxonomyBuilder [[ProductTaxonomy.ProductTaxonomyBuilder.html]] {
+        +getTaxonomySource(): TaxonomySourceEnum
+        +getTaxonomyValue(): String
+        +setTaxonomySource(TaxonomySourceEnum): ProductTaxonomy.ProductTaxonomyBuilder
+        +setTaxonomyValue(String): ProductTaxonomy.ProductTaxonomyBuilder
+        +build(): ProductTaxonomy
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class RoundingMeta [[RoundingMeta.html]] {
+        +dataRules(): List<Validator<Rounding>>
+        +choiceRuleValidators(): List<Validator<Rounding>>
+        +getOutMappings(): Multimap<String, OutMapping<Rounding, ?>>
+        +getQualifyFunctions(): List<Function<Rounding, QualifyResult>>
+        +validator(): Validator<Rounding>
+        +onlyExistsValidator(): ValidatorWithArg<Rounding, String>
+    }
+
+@enduml

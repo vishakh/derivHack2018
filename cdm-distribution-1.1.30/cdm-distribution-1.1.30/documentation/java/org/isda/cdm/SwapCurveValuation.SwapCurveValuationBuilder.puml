@@ -1,0 +1,17 @@
+@startuml
+
+    class SwapCurveValuation.SwapCurveValuationBuilder [[SwapCurveValuation.SwapCurveValuationBuilder.html]] {
+        +getFloatingRateIndex(): FloatingRateIndexEnum
+        +getIndexTenor(): Period.PeriodBuilder
+        +getOrCreateIndexTenor(): Period.PeriodBuilder
+        +getSide(): QuotationSideEnum
+        +getSpread(): BigDecimal
+        +setFloatingRateIndex(FloatingRateIndexEnum): SwapCurveValuation.SwapCurveValuationBuilder
+        +setIndexTenor(Period): SwapCurveValuation.SwapCurveValuationBuilder
+        +setIndexTenorBuilder(Period.PeriodBuilder): SwapCurveValuation.SwapCurveValuationBuilder
+        +setSide(QuotationSideEnum): SwapCurveValuation.SwapCurveValuationBuilder
+        +setSpread(BigDecimal): SwapCurveValuation.SwapCurveValuationBuilder
+        +build(): SwapCurveValuation
+    }
+
+@enduml

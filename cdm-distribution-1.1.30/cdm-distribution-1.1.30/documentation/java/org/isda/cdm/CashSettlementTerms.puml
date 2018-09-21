@@ -1,0 +1,24 @@
+@startuml
+
+    class CashSettlementTerms [[CashSettlementTerms.html]] {
+        +getAccruedInterest(): Boolean
+        +getCashSettlementAmount(): Money
+        +getCashSettlementBusinessDays(): Integer
+        +getDealer(): String
+        +getFixedSettlement(): Boolean
+        +getId(): String
+        +getMinimumQuotationAmout(): Money
+        +getQuotationAmount(): Money
+        +getQuotationMethod(): QuotationRateTypeEnum
+        +getRecoveryFactor(): BigDecimal
+        +getSettlementCurrency(): String
+        +getSettlementCurrencyScheme(): String
+        +getValuationDate(): ValuationDate
+        +getValuationMethod(): ValuationMethodEnum
+        +getValuationTime(): BusinessCenterTime
+        +toBuilder(): CashSettlementTerms.CashSettlementTermsBuilder
+        {static} +builder(): CashSettlementTerms.CashSettlementTermsBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

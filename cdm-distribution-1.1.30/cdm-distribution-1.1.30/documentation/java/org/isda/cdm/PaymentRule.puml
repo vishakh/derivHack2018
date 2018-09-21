@@ -1,0 +1,10 @@
+@startuml
+
+    class PaymentRule [[PaymentRule.html]] {
+        +getPercentageRule(): PercentageRule
+        +toBuilder(): PaymentRule.PaymentRuleBuilder
+        {static} +builder(): PaymentRule.PaymentRuleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

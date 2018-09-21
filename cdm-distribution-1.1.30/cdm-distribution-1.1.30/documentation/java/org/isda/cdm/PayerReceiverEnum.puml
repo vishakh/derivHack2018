@@ -1,0 +1,8 @@
+@startuml
+
+    enum PayerReceiverEnum [[PayerReceiverEnum.html]] {
+        {static} +PAYER
+        {static} +RECEIVER
+    }
+
+@enduml

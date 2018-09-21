@@ -1,0 +1,16 @@
+@startuml
+
+    class MasterAgreement [[MasterAgreement.html]] {
+        +getMasterAgreementDate(): LocalDate
+        +getMasterAgreementId(): String
+        +getMasterAgreementIdScheme(): String
+        +getMasterAgreementType(): MasterAgreementTypeEnum
+        +getMasterAgreementTypeScheme(): String
+        +getMasterAgreementVersion(): String
+        +getMasterAgreementVersionScheme(): String
+        +toBuilder(): MasterAgreement.MasterAgreementBuilder
+        {static} +builder(): MasterAgreement.MasterAgreementBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

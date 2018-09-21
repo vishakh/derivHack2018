@@ -1,0 +1,7 @@
+@startuml
+
+    class ExecutionOnlyExistsValidator [[ExecutionOnlyExistsValidator.html]] {
+        +validate(Execution, String): ValidationResult<Execution>
+    }
+
+@enduml

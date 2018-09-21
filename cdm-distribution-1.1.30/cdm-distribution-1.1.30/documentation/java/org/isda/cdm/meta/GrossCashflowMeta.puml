@@ -1,0 +1,12 @@
+@startuml
+
+    class GrossCashflowMeta [[GrossCashflowMeta.html]] {
+        +dataRules(): List<Validator<GrossCashflow>>
+        +choiceRuleValidators(): List<Validator<GrossCashflow>>
+        +getOutMappings(): Multimap<String, OutMapping<GrossCashflow, ?>>
+        +getQualifyFunctions(): List<Function<GrossCashflow, QualifyResult>>
+        +validator(): Validator<GrossCashflow>
+        +onlyExistsValidator(): ValidatorWithArg<GrossCashflow, String>
+    }
+
+@enduml

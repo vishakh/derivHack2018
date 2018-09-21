@@ -1,0 +1,12 @@
+@startuml
+
+    class Lineage [[Lineage.html]] {
+        +getContractReference(): List<Identifier>
+        +getContractReferenceScheme(): String
+        +getEventReference(): List<Identifier>
+        +toBuilder(): Lineage.LineageBuilder
+        {static} +builder(): Lineage.LineageBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

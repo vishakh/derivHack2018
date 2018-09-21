@@ -1,0 +1,12 @@
+@startuml
+
+    class IndependentAmountMeta [[IndependentAmountMeta.html]] {
+        +dataRules(): List<Validator<IndependentAmount>>
+        +choiceRuleValidators(): List<Validator<IndependentAmount>>
+        +getOutMappings(): Multimap<String, OutMapping<IndependentAmount, ?>>
+        +getQualifyFunctions(): List<Function<IndependentAmount, QualifyResult>>
+        +validator(): Validator<IndependentAmount>
+        +onlyExistsValidator(): ValidatorWithArg<IndependentAmount, String>
+    }
+
+@enduml

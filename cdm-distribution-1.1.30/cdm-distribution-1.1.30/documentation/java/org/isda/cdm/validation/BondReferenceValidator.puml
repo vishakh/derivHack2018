@@ -1,0 +1,7 @@
+@startuml
+
+    class BondReferenceValidator [[BondReferenceValidator.html]] {
+        +validate(BondReference): ValidationResult<BondReference>
+    }
+
+@enduml

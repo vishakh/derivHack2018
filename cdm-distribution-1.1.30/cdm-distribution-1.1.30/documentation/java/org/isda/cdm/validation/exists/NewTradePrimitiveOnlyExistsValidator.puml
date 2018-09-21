@@ -1,0 +1,7 @@
+@startuml
+
+    class NewTradePrimitiveOnlyExistsValidator [[NewTradePrimitiveOnlyExistsValidator.html]] {
+        +validate(NewTradePrimitive, String): ValidationResult<NewTradePrimitive>
+    }
+
+@enduml

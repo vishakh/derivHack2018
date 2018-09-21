@@ -1,0 +1,27 @@
+@startuml
+
+    class FeaturePayment.FeaturePaymentBuilder [[FeaturePayment.FeaturePaymentBuilder.html]] {
+        +getAmount(): BigDecimal
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +getFeaturePaymentDate(): AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder
+        +getOrCreateFeaturePaymentDate(): AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder
+        +getId(): String
+        +getLevelPercentage(): BigDecimal
+        +getPayerReceiver(): PayerReceiver.PayerReceiverBuilder
+        +getOrCreatePayerReceiver(): PayerReceiver.PayerReceiverBuilder
+        +getTime(): TimeTypeEnum
+        +setAmount(BigDecimal): FeaturePayment.FeaturePaymentBuilder
+        +setCurrency(String): FeaturePayment.FeaturePaymentBuilder
+        +setCurrencyScheme(String): FeaturePayment.FeaturePaymentBuilder
+        +setFeaturePaymentDate(AdjustableOrAdjustedDate): FeaturePayment.FeaturePaymentBuilder
+        +setFeaturePaymentDateBuilder(AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder): FeaturePayment.FeaturePaymentBuilder
+        +setId(String): FeaturePayment.FeaturePaymentBuilder
+        +setLevelPercentage(BigDecimal): FeaturePayment.FeaturePaymentBuilder
+        +setPayerReceiver(PayerReceiver): FeaturePayment.FeaturePaymentBuilder
+        +setPayerReceiverBuilder(PayerReceiver.PayerReceiverBuilder): FeaturePayment.FeaturePaymentBuilder
+        +setTime(TimeTypeEnum): FeaturePayment.FeaturePaymentBuilder
+        +build(): FeaturePayment
+    }
+
+@enduml

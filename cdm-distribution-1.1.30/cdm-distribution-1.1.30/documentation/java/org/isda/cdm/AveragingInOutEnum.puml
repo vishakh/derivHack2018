@@ -1,0 +1,9 @@
+@startuml
+
+    enum AveragingInOutEnum [[AveragingInOutEnum.html]] {
+        {static} +IN
+        {static} +OUT
+        {static} +BOTH
+    }
+
+@enduml

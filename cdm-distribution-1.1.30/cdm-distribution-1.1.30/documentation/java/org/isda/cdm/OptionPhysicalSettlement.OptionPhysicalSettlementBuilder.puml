@@ -1,0 +1,11 @@
+@startuml
+
+    class OptionPhysicalSettlement.OptionPhysicalSettlementBuilder [[OptionPhysicalSettlement.OptionPhysicalSettlementBuilder.html]] {
+        +getClearedPhysicalSettlement(): Boolean
+        +getPredeterminedClearingOrganizationPartyReference(): String
+        +setClearedPhysicalSettlement(Boolean): OptionPhysicalSettlement.OptionPhysicalSettlementBuilder
+        +setPredeterminedClearingOrganizationPartyReference(String): OptionPhysicalSettlement.OptionPhysicalSettlementBuilder
+        +build(): OptionPhysicalSettlement
+    }
+
+@enduml

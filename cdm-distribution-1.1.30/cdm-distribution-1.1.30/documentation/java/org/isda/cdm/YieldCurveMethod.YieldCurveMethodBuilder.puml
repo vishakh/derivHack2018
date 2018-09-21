@@ -1,0 +1,13 @@
+@startuml
+
+    class YieldCurveMethod.YieldCurveMethodBuilder [[YieldCurveMethod.YieldCurveMethodBuilder.html]] {
+        +getQuotationRateType(): QuotationRateTypeEnum
+        +getSettlementRateSource(): SettlementRateSource.SettlementRateSourceBuilder
+        +getOrCreateSettlementRateSource(): SettlementRateSource.SettlementRateSourceBuilder
+        +setQuotationRateType(QuotationRateTypeEnum): YieldCurveMethod.YieldCurveMethodBuilder
+        +setSettlementRateSource(SettlementRateSource): YieldCurveMethod.YieldCurveMethodBuilder
+        +setSettlementRateSourceBuilder(SettlementRateSource.SettlementRateSourceBuilder): YieldCurveMethod.YieldCurveMethodBuilder
+        +build(): YieldCurveMethod
+    }
+
+@enduml

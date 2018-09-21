@@ -1,0 +1,12 @@
+@startuml
+
+    class TriggerMeta [[TriggerMeta.html]] {
+        +dataRules(): List<Validator<Trigger>>
+        +choiceRuleValidators(): List<Validator<Trigger>>
+        +getOutMappings(): Multimap<String, OutMapping<Trigger, ?>>
+        +getQualifyFunctions(): List<Function<Trigger, QualifyResult>>
+        +validator(): Validator<Trigger>
+        +onlyExistsValidator(): ValidatorWithArg<Trigger, String>
+    }
+
+@enduml

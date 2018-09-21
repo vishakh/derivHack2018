@@ -1,0 +1,10 @@
+@startuml
+
+    enum TransferStatusEnum [[TransferStatusEnum.html]] {
+        {static} +DISPUTED
+        {static} +INSTRUCTED
+        {static} +PENDING
+        {static} +SETTLED
+    }
+
+@enduml

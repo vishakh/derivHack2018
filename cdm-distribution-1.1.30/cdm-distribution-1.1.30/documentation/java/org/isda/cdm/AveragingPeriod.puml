@@ -1,0 +1,14 @@
+@startuml
+
+    class AveragingPeriod [[AveragingPeriod.html]] {
+        +getAveragingDateTimes(): DateTimeList
+        +getAveragingObservations(): AveragingObservationList
+        +getMarketDisruption(): MarketDisruptionEnum
+        +getMarketDisruptionScheme(): String
+        +getSchedule(): List<AveragingSchedule>
+        +toBuilder(): AveragingPeriod.AveragingPeriodBuilder
+        {static} +builder(): AveragingPeriod.AveragingPeriodBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

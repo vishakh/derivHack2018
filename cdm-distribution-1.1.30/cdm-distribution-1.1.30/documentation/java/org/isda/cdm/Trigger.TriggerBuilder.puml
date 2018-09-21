@@ -1,0 +1,21 @@
+@startuml
+
+    class Trigger.TriggerBuilder [[Trigger.TriggerBuilder.html]] {
+        +getCreditEvents(): CreditEvents.CreditEventsBuilder
+        +getOrCreateCreditEvents(): CreditEvents.CreditEventsBuilder
+        +getCreditEventsReference(): String
+        +getLevel(): BigDecimal
+        +getLevelPercentage(): BigDecimal
+        +getTriggerTimeType(): TriggerTimeTypeEnum
+        +getTriggerType(): TriggerTypeEnum
+        +setCreditEvents(CreditEvents): Trigger.TriggerBuilder
+        +setCreditEventsBuilder(CreditEvents.CreditEventsBuilder): Trigger.TriggerBuilder
+        +setCreditEventsReference(String): Trigger.TriggerBuilder
+        +setLevel(BigDecimal): Trigger.TriggerBuilder
+        +setLevelPercentage(BigDecimal): Trigger.TriggerBuilder
+        +setTriggerTimeType(TriggerTimeTypeEnum): Trigger.TriggerBuilder
+        +setTriggerType(TriggerTypeEnum): Trigger.TriggerBuilder
+        +build(): Trigger
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class FxLinkedNotionalAmount.FxLinkedNotionalAmountBuilder [[FxLinkedNotionalAmount.FxLinkedNotionalAmountBuilder.html]] {
+        +getAdjustedFxSpotFixingDate(): LocalDate
+        +getNotionalAmount(): BigDecimal
+        +getObservedFxSpotRate(): BigDecimal
+        +getResetDate(): LocalDate
+        +setAdjustedFxSpotFixingDate(LocalDate): FxLinkedNotionalAmount.FxLinkedNotionalAmountBuilder
+        +setNotionalAmount(BigDecimal): FxLinkedNotionalAmount.FxLinkedNotionalAmountBuilder
+        +setObservedFxSpotRate(BigDecimal): FxLinkedNotionalAmount.FxLinkedNotionalAmountBuilder
+        +setResetDate(LocalDate): FxLinkedNotionalAmount.FxLinkedNotionalAmountBuilder
+        +build(): FxLinkedNotionalAmount
+    }
+
+@enduml

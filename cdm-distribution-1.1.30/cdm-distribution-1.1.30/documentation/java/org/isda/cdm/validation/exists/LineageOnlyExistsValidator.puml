@@ -1,0 +1,7 @@
+@startuml
+
+    class LineageOnlyExistsValidator [[LineageOnlyExistsValidator.html]] {
+        +validate(Lineage, String): ValidationResult<Lineage>
+    }
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+
+    class AveragingPeriod.AveragingPeriodBuilder [[AveragingPeriod.AveragingPeriodBuilder.html]] {
+        +getAveragingDateTimes(): DateTimeList.DateTimeListBuilder
+        +getOrCreateAveragingDateTimes(): DateTimeList.DateTimeListBuilder
+        +getAveragingObservations(): AveragingObservationList.AveragingObservationListBuilder
+        +getOrCreateAveragingObservations(): AveragingObservationList.AveragingObservationListBuilder
+        +getMarketDisruption(): MarketDisruptionEnum
+        +getMarketDisruptionScheme(): String
+        +getSchedule(): List<AveragingSchedule.AveragingScheduleBuilder>
+        +getOrCreateSchedule(int): AveragingSchedule.AveragingScheduleBuilder
+        +setAveragingDateTimes(DateTimeList): AveragingPeriod.AveragingPeriodBuilder
+        +setAveragingDateTimesBuilder(DateTimeList.DateTimeListBuilder): AveragingPeriod.AveragingPeriodBuilder
+        +setAveragingObservations(AveragingObservationList): AveragingPeriod.AveragingPeriodBuilder
+        +setAveragingObservationsBuilder(AveragingObservationList.AveragingObservationListBuilder): AveragingPeriod.AveragingPeriodBuilder
+        +setMarketDisruption(MarketDisruptionEnum): AveragingPeriod.AveragingPeriodBuilder
+        +setMarketDisruptionScheme(String): AveragingPeriod.AveragingPeriodBuilder
+        +addSchedule(AveragingSchedule): AveragingPeriod.AveragingPeriodBuilder
+        +addScheduleBuilder(AveragingSchedule.AveragingScheduleBuilder): AveragingPeriod.AveragingPeriodBuilder
+        +build(): AveragingPeriod
+    }
+
+@enduml

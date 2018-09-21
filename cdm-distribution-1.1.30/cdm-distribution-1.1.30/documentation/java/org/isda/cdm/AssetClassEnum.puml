@@ -1,0 +1,11 @@
+@startuml
+
+    enum AssetClassEnum [[AssetClassEnum.html]] {
+        {static} +COMMODITY
+        {static} +CREDIT
+        {static} +EQUITY
+        {static} +FOREIGN_EXCHANGE
+        {static} +INTEREST_RATE
+    }
+
+@enduml

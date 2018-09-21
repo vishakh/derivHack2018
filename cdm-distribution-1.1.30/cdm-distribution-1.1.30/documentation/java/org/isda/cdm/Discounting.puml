@@ -1,0 +1,13 @@
+@startuml
+
+    class Discounting [[Discounting.html]] {
+        +getDiscountRate(): BigDecimal
+        +getDiscountRateDayCountFraction(): DayCountFractionEnum
+        +getDiscountRateDayCountFractionScheme(): String
+        +getDiscountingType(): DiscountingTypeEnum
+        +toBuilder(): Discounting.DiscountingBuilder
+        {static} +builder(): Discounting.DiscountingBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

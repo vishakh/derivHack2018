@@ -1,0 +1,22 @@
+@startuml
+
+    class IndexReferenceInformation [[IndexReferenceInformation.html]] {
+        +getExcludedReferenceEntity(): List<LegalEntity>
+        +getId(): String
+        +getIndexAnnexDate(): LocalDate
+        +getIndexAnnexSource(): IndexAnnexSourceEnum
+        +getIndexAnnexSourceScheme(): String
+        +getIndexAnnexVersion(): Integer
+        +getIndexId(): List<String>
+        +getIndexIdScheme(): String
+        +getIndexName(): String
+        +getIndexNameScheme(): String
+        +getIndexSeries(): Integer
+        +getSettledEntityMatrix(): SettledEntityMatrix
+        +getTranche(): Tranche
+        +toBuilder(): IndexReferenceInformation.IndexReferenceInformationBuilder
+        {static} +builder(): IndexReferenceInformation.IndexReferenceInformationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

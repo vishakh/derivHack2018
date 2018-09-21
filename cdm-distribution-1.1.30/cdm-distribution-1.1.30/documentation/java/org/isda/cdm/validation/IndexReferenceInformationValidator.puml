@@ -1,0 +1,7 @@
+@startuml
+
+    class IndexReferenceInformationValidator [[IndexReferenceInformationValidator.html]] {
+        +validate(IndexReferenceInformation): ValidationResult<IndexReferenceInformation>
+    }
+
+@enduml

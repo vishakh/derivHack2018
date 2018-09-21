@@ -1,0 +1,7 @@
+@startuml
+
+    class PartyContractIdentifierOnlyExistsValidator [[PartyContractIdentifierOnlyExistsValidator.html]] {
+        +validate(PartyContractIdentifier, String): ValidationResult<PartyContractIdentifier>
+    }
+
+@enduml

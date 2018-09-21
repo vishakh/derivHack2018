@@ -1,0 +1,11 @@
+@startuml
+
+    class PercentageRule.PercentageRuleBuilder [[PercentageRule.PercentageRuleBuilder.html]] {
+        +getNotionalAmountReference(): String
+        +getPaymentPercent(): BigDecimal
+        +setNotionalAmountReference(String): PercentageRule.PercentageRuleBuilder
+        +setPaymentPercent(BigDecimal): PercentageRule.PercentageRuleBuilder
+        +build(): PercentageRule
+    }
+
+@enduml

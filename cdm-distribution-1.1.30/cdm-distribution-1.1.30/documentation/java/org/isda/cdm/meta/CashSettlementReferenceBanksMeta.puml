@@ -1,0 +1,12 @@
+@startuml
+
+    class CashSettlementReferenceBanksMeta [[CashSettlementReferenceBanksMeta.html]] {
+        +dataRules(): List<Validator<CashSettlementReferenceBanks>>
+        +choiceRuleValidators(): List<Validator<CashSettlementReferenceBanks>>
+        +getOutMappings(): Multimap<String, OutMapping<CashSettlementReferenceBanks, ?>>
+        +getQualifyFunctions(): List<Function<CashSettlementReferenceBanks, QualifyResult>>
+        +validator(): Validator<CashSettlementReferenceBanks>
+        +onlyExistsValidator(): ValidatorWithArg<CashSettlementReferenceBanks, String>
+    }
+
+@enduml

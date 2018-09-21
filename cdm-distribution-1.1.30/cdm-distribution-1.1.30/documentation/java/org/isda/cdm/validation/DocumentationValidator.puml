@@ -1,0 +1,7 @@
+@startuml
+
+    class DocumentationValidator [[DocumentationValidator.html]] {
+        +validate(Documentation): ValidationResult<Documentation>
+    }
+
+@enduml

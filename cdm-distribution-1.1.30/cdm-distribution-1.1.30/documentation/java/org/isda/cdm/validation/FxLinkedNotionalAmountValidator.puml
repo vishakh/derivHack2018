@@ -1,0 +1,7 @@
+@startuml
+
+    class FxLinkedNotionalAmountValidator [[FxLinkedNotionalAmountValidator.html]] {
+        +validate(FxLinkedNotionalAmount): ValidationResult<FxLinkedNotionalAmount>
+    }
+
+@enduml

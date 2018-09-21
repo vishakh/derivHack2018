@@ -1,0 +1,11 @@
+@startuml
+
+    class EventTestBundle [[EventTestBundle.html]] {
+        +getComputedAmount(): List<ComputedAmount>
+        +getEvent(): List<Event>
+        +toBuilder(): EventTestBundle.EventTestBundleBuilder
+        {static} +builder(): EventTestBundle.EventTestBundleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class ResourceLengthMeta [[ResourceLengthMeta.html]] {
+        +dataRules(): List<Validator<ResourceLength>>
+        +choiceRuleValidators(): List<Validator<ResourceLength>>
+        +getOutMappings(): Multimap<String, OutMapping<ResourceLength, ?>>
+        +getQualifyFunctions(): List<Function<ResourceLength, QualifyResult>>
+        +validator(): Validator<ResourceLength>
+        +onlyExistsValidator(): ValidatorWithArg<ResourceLength, String>
+    }
+
+@enduml

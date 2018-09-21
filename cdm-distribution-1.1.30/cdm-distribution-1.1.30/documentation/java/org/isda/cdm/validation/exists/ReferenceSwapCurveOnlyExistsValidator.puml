@@ -1,0 +1,7 @@
+@startuml
+
+    class ReferenceSwapCurveOnlyExistsValidator [[ReferenceSwapCurveOnlyExistsValidator.html]] {
+        +validate(ReferenceSwapCurve, String): ValidationResult<ReferenceSwapCurve>
+    }
+
+@enduml

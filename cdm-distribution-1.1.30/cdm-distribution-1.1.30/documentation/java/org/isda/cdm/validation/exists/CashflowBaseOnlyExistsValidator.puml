@@ -1,0 +1,7 @@
+@startuml
+
+    class CashflowBaseOnlyExistsValidator [[CashflowBaseOnlyExistsValidator.html]] {
+        +validate(CashflowBase, String): ValidationResult<CashflowBase>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class DiscountingDiscountRateDataRule [[DiscountingDiscountRateDataRule.html]] {
+        +validate(Discounting): ValidationResult<Discounting>
+    }
+
+@enduml

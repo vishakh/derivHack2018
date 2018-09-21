@@ -1,0 +1,12 @@
+@startuml
+
+    class KnockMeta [[KnockMeta.html]] {
+        +dataRules(): List<Validator<Knock>>
+        +choiceRuleValidators(): List<Validator<Knock>>
+        +getOutMappings(): Multimap<String, OutMapping<Knock, ?>>
+        +getQualifyFunctions(): List<Function<Knock, QualifyResult>>
+        +validator(): Validator<Knock>
+        +onlyExistsValidator(): ValidatorWithArg<Knock, String>
+    }
+
+@enduml

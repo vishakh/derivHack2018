@@ -1,0 +1,7 @@
+@startuml
+
+    class FutureValueAmountValidator [[FutureValueAmountValidator.html]] {
+        +validate(FutureValueAmount): ValidationResult<FutureValueAmount>
+    }
+
+@enduml

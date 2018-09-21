@@ -1,0 +1,7 @@
+@startuml
+
+    class ObservationSourceOnlyExistsValidator [[ObservationSourceOnlyExistsValidator.html]] {
+        +validate(ObservationSource, String): ValidationResult<ObservationSource>
+    }
+
+@enduml

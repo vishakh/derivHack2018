@@ -1,0 +1,21 @@
+@startuml
+
+    class PaymentDetail.PaymentDetailBuilder [[PaymentDetail.PaymentDetailBuilder.html]] {
+        +getId(): String
+        +getPaymentAmount(): Money.MoneyBuilder
+        +getOrCreatePaymentAmount(): Money.MoneyBuilder
+        +getPaymentDate(): AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder
+        +getOrCreatePaymentDate(): AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder
+        +getPaymentRule(): PaymentRule.PaymentRuleBuilder
+        +getOrCreatePaymentRule(): PaymentRule.PaymentRuleBuilder
+        +setId(String): PaymentDetail.PaymentDetailBuilder
+        +setPaymentAmount(Money): PaymentDetail.PaymentDetailBuilder
+        +setPaymentAmountBuilder(Money.MoneyBuilder): PaymentDetail.PaymentDetailBuilder
+        +setPaymentDate(AdjustableOrAdjustedDate): PaymentDetail.PaymentDetailBuilder
+        +setPaymentDateBuilder(AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder): PaymentDetail.PaymentDetailBuilder
+        +setPaymentRule(PaymentRule): PaymentDetail.PaymentDetailBuilder
+        +setPaymentRuleBuilder(PaymentRule.PaymentRuleBuilder): PaymentDetail.PaymentDetailBuilder
+        +build(): PaymentDetail
+    }
+
+@enduml

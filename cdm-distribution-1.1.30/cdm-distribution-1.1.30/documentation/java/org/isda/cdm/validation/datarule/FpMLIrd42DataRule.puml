@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLIrd42DataRule [[FpMLIrd42DataRule.html]] {
+        +validate(ExtensionEvent): ValidationResult<ExtensionEvent>
+    }
+
+@enduml

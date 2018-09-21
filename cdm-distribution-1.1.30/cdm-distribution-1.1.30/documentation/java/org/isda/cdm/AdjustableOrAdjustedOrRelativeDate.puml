@@ -1,0 +1,14 @@
+@startuml
+
+    class AdjustableOrAdjustedOrRelativeDate [[AdjustableOrAdjustedOrRelativeDate.html]] {
+        +getAdjustedDate(): LocalDate
+        +getDateAdjustments(): BusinessDayAdjustments
+        +getId(): String
+        +getRelativeDate(): RelativeDateOffset
+        +getUnadjustedDate(): LocalDate
+        +toBuilder(): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        {static} +builder(): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

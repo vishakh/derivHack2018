@@ -1,0 +1,167 @@
+{
+  "calculationAgent" : {
+    "calculationAgentBusinessCenter" : "USNY",
+    "calculationAgentPartyReference" : [ "trg6836" ]
+  },
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "56ERT7RHWE4",
+      "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+    },
+    "partyReference" : "trg6836"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "cashflow" : [ {
+          "id" : "iey785",
+          "cashflowAmount" : {
+            "amount" : 148000,
+            "currency" : "USD"
+          },
+          "cashflowDate" : {
+            "unadjustedDate" : "2006-12-27"
+          },
+          "rosettaKeyValue" : "df406a4b"
+        } ],
+        "creditDefaultPayout" : {
+          "generalTerms" : {
+            "buyerSeller" : {
+              "buyerPartyReference" : "zx456j",
+              "sellerPartyReference" : "trg6836"
+            },
+            "dateAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY" ]
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "referenceInformation" : {
+              "allGuarantees" : false,
+              "referenceEntity" : {
+                "name" : "MERRILL LYNCH/COUNTRYWIDE COMM, 2006-3"
+              },
+              "referenceObligation" : [ {
+                "mortgage" : {
+                  "currency" : "USD",
+                  "productIdentifierScheme" : "http://www.fpml.org/spec/2002/instrument-id-Bloomberg-1-0",
+                  "maturity" : "2046-07-12",
+                  "originalPrincipalAmount" : 21219000,
+                  "pool" : {
+                    "initialFactor" : 1
+                  },
+                  "sector" : "CMBS",
+                  "tranche" : "H"
+                },
+                "primaryObligor" : {
+                  "name" : "MERRILL LYNCH/COUNTRYWIDE COMM, 2006-3"
+                }
+              } ]
+            }
+          },
+          "physicalSettlementTerms" : {
+            "escrow" : true,
+            "physicalSettlementPeriod" : {
+              "businessDays" : 5
+            }
+          },
+          "protectionTerms" : {
+            "creditEvents" : {
+              "distressedRatingsDowngrade" : true,
+              "failureToPayInterest" : false,
+              "failureToPayPrincipal" : true,
+              "impliedWritedown" : true,
+              "maturityExtension" : false,
+              "writedown" : true
+            },
+            "floatingAmountEvents" : {
+              "additionalFixedPayments" : {
+                "interestShortfallReimbursement" : true,
+                "principalShortfallReimbursement" : true,
+                "writedownReimbursement" : true
+              },
+              "failureToPayPrincipal" : true,
+              "floatingAmountProvisions" : {
+                "wacCapInterestProvision" : true
+              },
+              "impliedWritedown" : false,
+              "interestShortfall" : {
+                "compounding" : true,
+                "interestShortfallCap" : "FIXED",
+                "rateSource" : "USD_LIBOR_BBA"
+              },
+              "writedown" : true
+            },
+            "notionalAmount" : {
+              "amount" : 15000000.00,
+              "currency" : "USD"
+            }
+          },
+          "rosettaKeyValue" : "b75f0256"
+        },
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessCenters" : {
+                    "businessCenter" : [ "GBLO", "USNY" ]
+                  },
+                  "businessDayConvention" : "FOLLOWING"
+                },
+                "unadjustedDate" : "2006-11-17"
+              }
+            },
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessDayConvention" : "NONE"
+              },
+              "unadjustedDate" : "2046-07-12"
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "zx456j",
+            "receiverPartyReference" : "trg6836"
+          },
+          "paymentDates" : {
+            "paymentDelay" : false
+          },
+          "rosettaKeyValue" : "cea4ff4c"
+        } ]
+      },
+      "rosettaKeyValue" : "6ab41cdf"
+    }
+  },
+  "documentation" : {
+    "contractualDefinitions" : [ "ISDA_2003_CREDIT" ],
+    "contractualMatrix" : [ {
+      "matrixType" : "CREDIT_DERIVATIVES_PHYSICAL_SETTLEMENT_MATRIX"
+    } ],
+    "contractualTermsSupplement" : [ {
+      "type" : "ISDA_2003_CREDIT_MAY_2003"
+    } ],
+    "masterAgreement" : {
+      "masterAgreementType" : "ISDA",
+      "masterAgreementVersion" : "1992"
+    }
+  },
+  "party" : [ {
+    "id" : "trg6836",
+    "legalEntity" : {
+      "name" : "XYZ Bank"
+    },
+    "partyId" : [ "XYZBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "zx456j",
+    "legalEntity" : {
+      "name" : "ABC Bank"
+    },
+    "partyId" : [ "ABCBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2006-11-14"
+  },
+  "rosettaKey" : "830a9210"
+}

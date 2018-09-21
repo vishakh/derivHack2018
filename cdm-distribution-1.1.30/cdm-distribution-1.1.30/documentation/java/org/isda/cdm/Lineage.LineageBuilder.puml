@@ -1,0 +1,17 @@
+@startuml
+
+    class Lineage.LineageBuilder [[Lineage.LineageBuilder.html]] {
+        +getContractReference(): List<Identifier.IdentifierBuilder>
+        +getOrCreateContractReference(int): Identifier.IdentifierBuilder
+        +getContractReferenceScheme(): String
+        +getEventReference(): List<Identifier.IdentifierBuilder>
+        +getOrCreateEventReference(int): Identifier.IdentifierBuilder
+        +addContractReference(Identifier): Lineage.LineageBuilder
+        +addContractReferenceBuilder(Identifier.IdentifierBuilder): Lineage.LineageBuilder
+        +setContractReferenceScheme(String): Lineage.LineageBuilder
+        +addEventReference(Identifier): Lineage.LineageBuilder
+        +addEventReferenceBuilder(Identifier.IdentifierBuilder): Lineage.LineageBuilder
+        +build(): Lineage
+    }
+
+@enduml

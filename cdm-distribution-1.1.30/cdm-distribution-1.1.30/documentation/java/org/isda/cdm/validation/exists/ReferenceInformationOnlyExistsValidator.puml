@@ -1,0 +1,7 @@
+@startuml
+
+    class ReferenceInformationOnlyExistsValidator [[ReferenceInformationOnlyExistsValidator.html]] {
+        +validate(ReferenceInformation, String): ValidationResult<ReferenceInformation>
+    }
+
+@enduml

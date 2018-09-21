@@ -1,0 +1,37 @@
+@startuml
+
+    class ReferenceObligation.ReferenceObligationBuilder [[ReferenceObligation.ReferenceObligationBuilder.html]] {
+        +getBond(): Bond.BondBuilder
+        +getOrCreateBond(): Bond.BondBuilder
+        +getConvertibleBond(): ConvertibleBond.ConvertibleBondBuilder
+        +getOrCreateConvertibleBond(): ConvertibleBond.ConvertibleBondBuilder
+        +getGuarantor(): LegalEntity.LegalEntityBuilder
+        +getOrCreateGuarantor(): LegalEntity.LegalEntityBuilder
+        +getGuarantorReference(): String
+        +getLoan(): Loan.LoanBuilder
+        +getOrCreateLoan(): Loan.LoanBuilder
+        +getMortgage(): Mortgage.MortgageBuilder
+        +getOrCreateMortgage(): Mortgage.MortgageBuilder
+        +getPrimaryObligor(): LegalEntity.LegalEntityBuilder
+        +getOrCreatePrimaryObligor(): LegalEntity.LegalEntityBuilder
+        +getPrimaryObligorReference(): String
+        +getStandardReferenceObligation(): Boolean
+        +setBond(Bond): ReferenceObligation.ReferenceObligationBuilder
+        +setBondBuilder(Bond.BondBuilder): ReferenceObligation.ReferenceObligationBuilder
+        +setConvertibleBond(ConvertibleBond): ReferenceObligation.ReferenceObligationBuilder
+        +setConvertibleBondBuilder(ConvertibleBond.ConvertibleBondBuilder): ReferenceObligation.ReferenceObligationBuilder
+        +setGuarantor(LegalEntity): ReferenceObligation.ReferenceObligationBuilder
+        +setGuarantorBuilder(LegalEntity.LegalEntityBuilder): ReferenceObligation.ReferenceObligationBuilder
+        +setGuarantorReference(String): ReferenceObligation.ReferenceObligationBuilder
+        +setLoan(Loan): ReferenceObligation.ReferenceObligationBuilder
+        +setLoanBuilder(Loan.LoanBuilder): ReferenceObligation.ReferenceObligationBuilder
+        +setMortgage(Mortgage): ReferenceObligation.ReferenceObligationBuilder
+        +setMortgageBuilder(Mortgage.MortgageBuilder): ReferenceObligation.ReferenceObligationBuilder
+        +setPrimaryObligor(LegalEntity): ReferenceObligation.ReferenceObligationBuilder
+        +setPrimaryObligorBuilder(LegalEntity.LegalEntityBuilder): ReferenceObligation.ReferenceObligationBuilder
+        +setPrimaryObligorReference(String): ReferenceObligation.ReferenceObligationBuilder
+        +setStandardReferenceObligation(Boolean): ReferenceObligation.ReferenceObligationBuilder
+        +build(): ReferenceObligation
+    }
+
+@enduml

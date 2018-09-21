@@ -1,0 +1,12 @@
+@startuml
+
+    class InterestShortFallMeta [[InterestShortFallMeta.html]] {
+        +dataRules(): List<Validator<InterestShortFall>>
+        +choiceRuleValidators(): List<Validator<InterestShortFall>>
+        +getOutMappings(): Multimap<String, OutMapping<InterestShortFall, ?>>
+        +getQualifyFunctions(): List<Function<InterestShortFall, QualifyResult>>
+        +validator(): Validator<InterestShortFall>
+        +onlyExistsValidator(): ValidatorWithArg<InterestShortFall, String>
+    }
+
+@enduml

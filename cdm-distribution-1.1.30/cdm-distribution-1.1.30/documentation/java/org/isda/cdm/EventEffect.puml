@@ -1,0 +1,17 @@
+@startuml
+
+    class EventEffect [[EventEffect.html]] {
+        +getContract(): List<String>
+        +getContractReference(): List<String>
+        +getEffectedContract(): List<String>
+        +getEffectedContractReference(): List<String>
+        +getEffectedEvent(): String
+        +getListedProduct(): List<String>
+        +getPayment(): List<String>
+        +getTransfer(): List<String>
+        +toBuilder(): EventEffect.EventEffectBuilder
+        {static} +builder(): EventEffect.EventEffectBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

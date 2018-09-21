@@ -1,0 +1,7 @@
+@startuml
+
+    class CalculationPeriodFrequencyValidator [[CalculationPeriodFrequencyValidator.html]] {
+        +validate(CalculationPeriodFrequency): ValidationResult<CalculationPeriodFrequency>
+    }
+
+@enduml

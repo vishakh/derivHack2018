@@ -1,0 +1,9 @@
+@startuml
+
+    class DayCountFractionEnum.CalculationResult [[DayCountFractionEnum.CalculationResult.html]] {
+        +getValue(): BigDecimal
+        +setValue(BigDecimal): DayCountFractionEnum.CalculationResult
+        +getAttributes(): List<IResult.Attribute<?>>
+    }
+
+@enduml

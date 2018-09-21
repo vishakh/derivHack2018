@@ -1,0 +1,12 @@
+@startuml
+
+    class AllocationPrimitiveMeta [[AllocationPrimitiveMeta.html]] {
+        +dataRules(): List<Validator<AllocationPrimitive>>
+        +choiceRuleValidators(): List<Validator<AllocationPrimitive>>
+        +getOutMappings(): Multimap<String, OutMapping<AllocationPrimitive, ?>>
+        +getQualifyFunctions(): List<Function<AllocationPrimitive, QualifyResult>>
+        +validator(): Validator<AllocationPrimitive>
+        +onlyExistsValidator(): ValidatorWithArg<AllocationPrimitive, String>
+    }
+
+@enduml

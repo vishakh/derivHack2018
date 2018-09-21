@@ -1,0 +1,12 @@
+@startuml
+
+    class EventTimestampMeta [[EventTimestampMeta.html]] {
+        +dataRules(): List<Validator<EventTimestamp>>
+        +choiceRuleValidators(): List<Validator<EventTimestamp>>
+        +getOutMappings(): Multimap<String, OutMapping<EventTimestamp, ?>>
+        +getQualifyFunctions(): List<Function<EventTimestamp, QualifyResult>>
+        +validator(): Validator<EventTimestamp>
+        +onlyExistsValidator(): ValidatorWithArg<EventTimestamp, String>
+    }
+
+@enduml

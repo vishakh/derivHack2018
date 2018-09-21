@@ -1,0 +1,12 @@
+@startuml
+
+    class AdjustableOrRelativeDateMeta [[AdjustableOrRelativeDateMeta.html]] {
+        +dataRules(): List<Validator<AdjustableOrRelativeDate>>
+        +choiceRuleValidators(): List<Validator<AdjustableOrRelativeDate>>
+        +getOutMappings(): Multimap<String, OutMapping<AdjustableOrRelativeDate, ?>>
+        +getQualifyFunctions(): List<Function<AdjustableOrRelativeDate, QualifyResult>>
+        +validator(): Validator<AdjustableOrRelativeDate>
+        +onlyExistsValidator(): ValidatorWithArg<AdjustableOrRelativeDate, String>
+    }
+
+@enduml

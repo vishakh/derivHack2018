@@ -1,0 +1,87 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "IRG858TH30",
+      "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+    },
+    "partyReference" : "yuhge34"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "cashflow" : [ {
+          "payerReceiver" : {
+            "payerPartyReference" : "yuhge34",
+            "receiverPartyReference" : "z45rdfg"
+          },
+          "cashflowAmount" : {
+            "amount" : 17000,
+            "currency" : "EUR"
+          },
+          "rosettaKeyValue" : "abbcfb8a"
+        } ],
+        "creditDefaultPayout" : {
+          "generalTerms" : {
+            "buyerSeller" : {
+              "buyerPartyReference" : "yuhge34",
+              "sellerPartyReference" : "z45rdfg"
+            },
+            "indexReferenceInformation" : {
+              "excludedReferenceEntity" : [ {
+                "name" : "TESCO PLC"
+              } ],
+              "indexAnnexVersion" : 1,
+              "indexName" : "Dow Jones iTraxx Europe Consumers Series 2 Version 1",
+              "indexSeries" : 2
+            }
+          },
+          "protectionTerms" : {
+            "notionalAmount" : {
+              "amount" : 25000000,
+              "currency" : "USD"
+            }
+          },
+          "rosettaKeyValue" : "6a17b9c8"
+        },
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "terminationDate" : {
+              "unadjustedDate" : "2010-03-20"
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "yuhge34",
+            "receiverPartyReference" : "z45rdfg"
+          },
+          "rosettaKeyValue" : "c27c22ac"
+        } ]
+      },
+      "rosettaKeyValue" : "2d347ad2"
+    }
+  },
+  "documentation" : {
+    "masterConfirmation" : {
+      "masterConfirmationDate" : "2004-10-11",
+      "masterConfirmationType" : "DJ_I_TRAXX_EUROPE"
+    }
+  },
+  "party" : [ {
+    "id" : "yuhge34",
+    "legalEntity" : {
+      "name" : "New Bank, New York"
+    },
+    "partyId" : [ "NEWBANKLDNBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "z45rdfg",
+    "legalEntity" : {
+      "name" : "Massive Bank, New York"
+    },
+    "partyId" : [ "MASSIVELDNBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2004-11-03"
+  },
+  "rosettaKey" : "1d0faf43"
+}

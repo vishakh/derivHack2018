@@ -1,0 +1,12 @@
+@startuml
+
+    class CrossCurrencyTermsMeta [[CrossCurrencyTermsMeta.html]] {
+        +dataRules(): List<Validator<CrossCurrencyTerms>>
+        +choiceRuleValidators(): List<Validator<CrossCurrencyTerms>>
+        +getOutMappings(): Multimap<String, OutMapping<CrossCurrencyTerms, ?>>
+        +getQualifyFunctions(): List<Function<CrossCurrencyTerms, QualifyResult>>
+        +validator(): Validator<CrossCurrencyTerms>
+        +onlyExistsValidator(): ValidatorWithArg<CrossCurrencyTerms, String>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class RateObservationMeta [[RateObservationMeta.html]] {
+        +dataRules(): List<Validator<RateObservation>>
+        +choiceRuleValidators(): List<Validator<RateObservation>>
+        +getOutMappings(): Multimap<String, OutMapping<RateObservation, ?>>
+        +getQualifyFunctions(): List<Function<RateObservation, QualifyResult>>
+        +validator(): Validator<RateObservation>
+        +onlyExistsValidator(): ValidatorWithArg<RateObservation, String>
+    }
+
+@enduml

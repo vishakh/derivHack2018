@@ -1,0 +1,13 @@
+@startuml
+
+    class StrikeSpread.StrikeSpreadBuilder [[StrikeSpread.StrikeSpreadBuilder.html]] {
+        +getUpperStrike(): OptionStrike.OptionStrikeBuilder
+        +getOrCreateUpperStrike(): OptionStrike.OptionStrikeBuilder
+        +getUpperStrikeNumberOfOptions(): BigDecimal
+        +setUpperStrike(OptionStrike): StrikeSpread.StrikeSpreadBuilder
+        +setUpperStrikeBuilder(OptionStrike.OptionStrikeBuilder): StrikeSpread.StrikeSpreadBuilder
+        +setUpperStrikeNumberOfOptions(BigDecimal): StrikeSpread.StrikeSpreadBuilder
+        +build(): StrikeSpread
+    }
+
+@enduml

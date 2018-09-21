@@ -1,0 +1,7 @@
+@startuml
+
+    class ReferenceBankValidator [[ReferenceBankValidator.html]] {
+        +validate(ReferenceBank): ValidationResult<ReferenceBank>
+    }
+
+@enduml

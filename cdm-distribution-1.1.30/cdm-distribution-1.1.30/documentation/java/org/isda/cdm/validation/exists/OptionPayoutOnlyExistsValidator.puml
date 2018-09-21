@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionPayoutOnlyExistsValidator [[OptionPayoutOnlyExistsValidator.html]] {
+        +validate(OptionPayout, String): ValidationResult<OptionPayout>
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class PartyRole.PartyRoleBuilder [[PartyRole.PartyRoleBuilder.html]] {
+        +getPartyReference(): String
+        +getRole(): PartyRoleEnum
+        +setPartyReference(String): PartyRole.PartyRoleBuilder
+        +setRole(PartyRoleEnum): PartyRole.PartyRoleBuilder
+        +build(): PartyRole
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class IsInterestRateOptionDebtOption [[IsInterestRateOptionDebtOption.html]] {
+        +apply(EconomicTerms): QualifyResult
+    }
+
+@enduml

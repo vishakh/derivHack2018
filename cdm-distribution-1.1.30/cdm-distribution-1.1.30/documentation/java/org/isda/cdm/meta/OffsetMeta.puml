@@ -1,0 +1,12 @@
+@startuml
+
+    class OffsetMeta [[OffsetMeta.html]] {
+        +dataRules(): List<Validator<Offset>>
+        +choiceRuleValidators(): List<Validator<Offset>>
+        +getOutMappings(): Multimap<String, OutMapping<Offset, ?>>
+        +getQualifyFunctions(): List<Function<Offset, QualifyResult>>
+        +validator(): Validator<Offset>
+        +onlyExistsValidator(): ValidatorWithArg<Offset, String>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class IsInterestRateIRSwapBasis [[IsInterestRateIRSwapBasis.html]] {
+        +apply(EconomicTerms): QualifyResult
+    }
+
+@enduml

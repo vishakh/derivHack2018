@@ -1,0 +1,11 @@
+@startuml
+
+    class CalendarSpread.CalendarSpreadBuilder [[CalendarSpread.CalendarSpreadBuilder.html]] {
+        +getExpirationDateTwo(): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +getOrCreateExpirationDateTwo(): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +setExpirationDateTwo(AdjustableOrRelativeDate): CalendarSpread.CalendarSpreadBuilder
+        +setExpirationDateTwoBuilder(AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder): CalendarSpread.CalendarSpreadBuilder
+        +build(): CalendarSpread
+    }
+
+@enduml

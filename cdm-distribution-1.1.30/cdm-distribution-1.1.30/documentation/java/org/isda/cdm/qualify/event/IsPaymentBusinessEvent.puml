@@ -1,0 +1,7 @@
+@startuml
+
+    class IsPaymentBusinessEvent [[IsPaymentBusinessEvent.html]] {
+        +apply(Event): QualifyResult
+    }
+
+@enduml

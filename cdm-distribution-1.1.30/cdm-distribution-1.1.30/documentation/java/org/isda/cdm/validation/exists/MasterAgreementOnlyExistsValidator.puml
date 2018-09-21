@@ -1,0 +1,7 @@
+@startuml
+
+    class MasterAgreementOnlyExistsValidator [[MasterAgreementOnlyExistsValidator.html]] {
+        +validate(MasterAgreement, String): ValidationResult<MasterAgreement>
+    }
+
+@enduml

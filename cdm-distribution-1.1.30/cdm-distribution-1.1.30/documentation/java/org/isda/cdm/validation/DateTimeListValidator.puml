@@ -1,0 +1,7 @@
+@startuml
+
+    class DateTimeListValidator [[DateTimeListValidator.html]] {
+        +validate(DateTimeList): ValidationResult<DateTimeList>
+    }
+
+@enduml

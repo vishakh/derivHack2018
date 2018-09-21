@@ -1,0 +1,13 @@
+@startuml
+
+    class FxLinkedNotionalAmount [[FxLinkedNotionalAmount.html]] {
+        +getAdjustedFxSpotFixingDate(): LocalDate
+        +getNotionalAmount(): BigDecimal
+        +getObservedFxSpotRate(): BigDecimal
+        +getResetDate(): LocalDate
+        +toBuilder(): FxLinkedNotionalAmount.FxLinkedNotionalAmountBuilder
+        {static} +builder(): FxLinkedNotionalAmount.FxLinkedNotionalAmountBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class NaturalPersonRole [[NaturalPersonRole.html]] {
+        +getPersonReference(): String
+        +getRole(): NaturalPersonRoleEnum
+        +getRoleScheme(): String
+        +toBuilder(): NaturalPersonRole.NaturalPersonRoleBuilder
+        {static} +builder(): NaturalPersonRole.NaturalPersonRoleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

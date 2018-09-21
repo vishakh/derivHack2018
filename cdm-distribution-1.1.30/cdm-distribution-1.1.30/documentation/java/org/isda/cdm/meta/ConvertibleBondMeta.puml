@@ -1,0 +1,12 @@
+@startuml
+
+    class ConvertibleBondMeta [[ConvertibleBondMeta.html]] {
+        +dataRules(): List<Validator<ConvertibleBond>>
+        +choiceRuleValidators(): List<Validator<ConvertibleBond>>
+        +getOutMappings(): Multimap<String, OutMapping<ConvertibleBond, ?>>
+        +getQualifyFunctions(): List<Function<ConvertibleBond, QualifyResult>>
+        +validator(): Validator<ConvertibleBond>
+        +onlyExistsValidator(): ValidatorWithArg<ConvertibleBond, String>
+    }
+
+@enduml

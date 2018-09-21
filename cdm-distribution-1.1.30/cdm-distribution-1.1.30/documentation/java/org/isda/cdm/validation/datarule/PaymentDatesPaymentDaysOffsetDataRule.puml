@@ -1,0 +1,7 @@
+@startuml
+
+    class PaymentDatesPaymentDaysOffsetDataRule [[PaymentDatesPaymentDaysOffsetDataRule.html]] {
+        +validate(PaymentDates): ValidationResult<PaymentDates>
+    }
+
+@enduml

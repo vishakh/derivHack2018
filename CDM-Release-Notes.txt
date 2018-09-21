@@ -1,0 +1,74 @@
+************************
+RELEASE NOTE 1.1.26
+************************
+
+*What is being released*
+
+Initial implementation of two of the new primitives proposed by the CDM sub-group: `Transfer` and `Inception`.
+
+As part of this work the following model adjustments have been undertaken:
+- The `GrossCashflow` class has been enhanced to provide lineage into the contract payout, through the `PayoutLineage` class
+- The `ExercisePrimitive` class has been adjusted in order to provide additional data points deemed relevant to specify an exercise event, leveraging in part the FpML `OptionExercise` construct:
+- `exerciseDate`, `exerciseTime` and `fullExercise` attributes have been added to the `ExercisePrimitive` class.
+- The `quantity` and `cashflow` attributes have been added to the `ExerciseOutcome` class for the purpose of properly specifying the exercise of a listed security, although more work will be required in this respect.
+
+*Review directions*
+
+_Model review_
+
+Start from the `PrimitiveEvent` class, which has 2 new attributes and then navigate into the various model components:
+- `inception`
+- `transfer`
+
+The following event qualification have been created, which naming will be adjusted if and when the `newTrade` and `payment` primitives are deprecated:
+- `isEvent` `NewTradeBusinessEvent`
+- `isEvent` `PaymentBusinessEvent`
+- `isEvent` `SecurityTransfer`
+- `isEvent` `CommodityTransfer`
+
+_Sample transactions_
+
+Following CDM members’ request to have more bundle sample transaction, the following sample transactions have been added to illustrate those new features:
+- `transfer-cash-netted-bundle` combines a new cross-currency IRS contract, followed by an observation event, a correction of that observation event, a reset event, a correction of that reset event and a transfer event with lineage into the IRS contract. This bundle makes use of the new `ird-ex32-zero-coupon-swap` trade sample.
+- `transfer-xccy-cash-netted-bundle`, combines an IRS contract, followed by an observation event, a reset event, a correction to a reset event and a transfer event which involves 2 currency payments with lineage into the IRS contract. This bundle makes use of the new `ird-ex06-xccy-swap` trade sample.
+- `transfer-physical-exercise-bundle` combines a physically settling bond option, an exercise event and a security and cash transfer in relation to the exercised bond.
+
+
+************************
+RELEASE NOTE 1.1.29
+************************
+
+*What is being released*
+
+- Provided the ability to create bundle without having to hook the interest accrual calculation
+- Refined the event primitive implementation with respect to the `Inception`, `Transfer` and `Inactivate` primitives, alongside the `Exercise` primitive
+- Provided further event sample transactions in relation to the above
+- Added example of how to use CDM Java API to qualify products and events to the CDM Examples download in the portal
+- Bugfix to the rosettaKey generator such that Enumerations are treated consistently to other Rosetta objects, so that identical rosettaKey entries are generated across different java runtimes
+
+*Review directions*
+
+Review the following sample transactions:
+- `transfer-cash-netted-bundle`
+- `transfer-physical-exercise-bundle`
+- `transfer-xccy-cash-netted-bundle`
+- `inception-cds`
+- `inception-irs`
+- `transfer-cash-netted`
+- `transfer-security-settlement`
+- `transfer-security`
+
+Review the `Qualification.java` example in the CDM Examples download pack, accessible via the portal.
+
+
+************************
+RELEASE NOTE 1.1.30
+************************
+
+*What is being released*
+
+Bugfix to the rosettaKeyValue generator in line with the fix applied to `rosettaKey` generation in release 1.1.29.
+
+*Review directions*
+
+From the Ingestion UI, take a CDM JSON document, deserialise in your Java runtime and compare the `rosettaKeyValue`.

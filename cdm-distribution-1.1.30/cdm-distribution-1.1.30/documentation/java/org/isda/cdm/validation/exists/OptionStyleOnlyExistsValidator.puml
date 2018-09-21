@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionStyleOnlyExistsValidator [[OptionStyleOnlyExistsValidator.html]] {
+        +validate(OptionStyle, String): ValidationResult<OptionStyle>
+    }
+
+@enduml

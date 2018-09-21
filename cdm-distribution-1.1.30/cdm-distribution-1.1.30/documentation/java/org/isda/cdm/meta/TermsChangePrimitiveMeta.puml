@@ -1,0 +1,12 @@
+@startuml
+
+    class TermsChangePrimitiveMeta [[TermsChangePrimitiveMeta.html]] {
+        +dataRules(): List<Validator<TermsChangePrimitive>>
+        +choiceRuleValidators(): List<Validator<TermsChangePrimitive>>
+        +getOutMappings(): Multimap<String, OutMapping<TermsChangePrimitive, ?>>
+        +getQualifyFunctions(): List<Function<TermsChangePrimitive, QualifyResult>>
+        +validator(): Validator<TermsChangePrimitive>
+        +onlyExistsValidator(): ValidatorWithArg<TermsChangePrimitive, String>
+    }
+
+@enduml

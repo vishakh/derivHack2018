@@ -1,0 +1,7 @@
+@startuml
+
+    class PaymentDiscountingValidator [[PaymentDiscountingValidator.html]] {
+        +validate(PaymentDiscounting): ValidationResult<PaymentDiscounting>
+    }
+
+@enduml

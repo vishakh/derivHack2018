@@ -1,0 +1,10 @@
+@startuml
+
+    enum StubPeriodTypeEnum [[StubPeriodTypeEnum.html]] {
+        {static} +SHORT_INITIAL
+        {static} +SHORT_FINAL
+        {static} +LONG_INITIAL
+        {static} +LONG_FINAL
+    }
+
+@enduml

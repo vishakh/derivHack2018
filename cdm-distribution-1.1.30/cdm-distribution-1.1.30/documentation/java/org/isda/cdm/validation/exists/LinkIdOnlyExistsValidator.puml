@@ -1,0 +1,7 @@
+@startuml
+
+    class LinkIdOnlyExistsValidator [[LinkIdOnlyExistsValidator.html]] {
+        +validate(LinkId, String): ValidationResult<LinkId>
+    }
+
+@enduml

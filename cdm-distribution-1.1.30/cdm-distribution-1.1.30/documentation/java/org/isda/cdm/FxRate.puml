@@ -1,0 +1,11 @@
+@startuml
+
+    class FxRate [[FxRate.html]] {
+        +getQuotedCurrencyPair(): QuotedCurrencyPair
+        +getRate(): BigDecimal
+        +toBuilder(): FxRate.FxRateBuilder
+        {static} +builder(): FxRate.FxRateBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

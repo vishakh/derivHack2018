@@ -1,0 +1,18 @@
+@startuml
+
+    class AmericanExercise [[AmericanExercise.html]] {
+        +getCommencementDate(): AdjustableOrRelativeDate
+        +getEarliestExerciseTime(): BusinessCenterTime
+        +getExerciseFeeSchedule(): ExerciseFeeSchedule
+        +getExpirationDate(): AdjustableOrRelativeDate
+        +getExpirationTime(): BusinessCenterTime
+        +getId(): String
+        +getLatestExerciseTime(): BusinessCenterTime
+        +getMultipleExercise(): MultipleExercise
+        +getRelevantUnderlyingDate(): AdjustableOrRelativeDates
+        +toBuilder(): AmericanExercise.AmericanExerciseBuilder
+        {static} +builder(): AmericanExercise.AmericanExerciseBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

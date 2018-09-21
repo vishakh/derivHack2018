@@ -1,0 +1,12 @@
+@startuml
+
+    class PhysicalExerciseMeta [[PhysicalExerciseMeta.html]] {
+        +dataRules(): List<Validator<PhysicalExercise>>
+        +choiceRuleValidators(): List<Validator<PhysicalExercise>>
+        +getOutMappings(): Multimap<String, OutMapping<PhysicalExercise, ?>>
+        +getQualifyFunctions(): List<Function<PhysicalExercise, QualifyResult>>
+        +validator(): Validator<PhysicalExercise>
+        +onlyExistsValidator(): ValidatorWithArg<PhysicalExercise, String>
+    }
+
+@enduml

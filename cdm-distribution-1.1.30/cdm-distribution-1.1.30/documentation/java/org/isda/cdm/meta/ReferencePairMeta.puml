@@ -1,0 +1,12 @@
+@startuml
+
+    class ReferencePairMeta [[ReferencePairMeta.html]] {
+        +dataRules(): List<Validator<ReferencePair>>
+        +choiceRuleValidators(): List<Validator<ReferencePair>>
+        +getOutMappings(): Multimap<String, OutMapping<ReferencePair, ?>>
+        +getQualifyFunctions(): List<Function<ReferencePair, QualifyResult>>
+        +validator(): Validator<ReferencePair>
+        +onlyExistsValidator(): ValidatorWithArg<ReferencePair, String>
+    }
+
+@enduml

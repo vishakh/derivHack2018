@@ -1,0 +1,52 @@
+@startuml
+
+    enum RollConventionEnum [[RollConventionEnum.html]] {
+        {static} +EOM
+        {static} +FRN
+        {static} +IMM
+        {static} +IMMCAD
+        {static} +IMMAUD
+        {static} +IMMNZD
+        {static} +SFE
+        {static} +NONE
+        {static} +TBILL
+        {static} +_1
+        {static} +_2
+        {static} +_3
+        {static} +_4
+        {static} +_5
+        {static} +_6
+        {static} +_7
+        {static} +_8
+        {static} +_9
+        {static} +_10
+        {static} +_11
+        {static} +_12
+        {static} +_13
+        {static} +_14
+        {static} +_15
+        {static} +_16
+        {static} +_17
+        {static} +_18
+        {static} +_19
+        {static} +_20
+        {static} +_21
+        {static} +_22
+        {static} +_23
+        {static} +_24
+        {static} +_25
+        {static} +_26
+        {static} +_27
+        {static} +_28
+        {static} +_29
+        {static} +_30
+        {static} +MON
+        {static} +TUE
+        {static} +WED
+        {static} +THU
+        {static} +FRI
+        {static} +SAT
+        {static} +SUN
+    }
+
+@enduml

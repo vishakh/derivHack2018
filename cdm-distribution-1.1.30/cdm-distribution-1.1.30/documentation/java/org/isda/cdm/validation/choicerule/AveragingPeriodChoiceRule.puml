@@ -1,0 +1,7 @@
+@startuml
+
+    class AveragingPeriodChoiceRule [[AveragingPeriodChoiceRule.html]] {
+        +validate(AveragingPeriod): ValidationResult<AveragingPeriod>
+    }
+
+@enduml

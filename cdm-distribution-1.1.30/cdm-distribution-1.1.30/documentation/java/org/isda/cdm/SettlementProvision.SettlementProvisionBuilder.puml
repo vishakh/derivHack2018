@@ -1,0 +1,15 @@
+@startuml
+
+    class SettlementProvision.SettlementProvisionBuilder [[SettlementProvision.SettlementProvisionBuilder.html]] {
+        +getNonDeliverableSettlement(): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        +getOrCreateNonDeliverableSettlement(): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        +getSettlementCurrency(): String
+        +getSettlementCurrencyScheme(): String
+        +setNonDeliverableSettlement(NonDeliverableSettlement): SettlementProvision.SettlementProvisionBuilder
+        +setNonDeliverableSettlementBuilder(NonDeliverableSettlement.NonDeliverableSettlementBuilder): SettlementProvision.SettlementProvisionBuilder
+        +setSettlementCurrency(String): SettlementProvision.SettlementProvisionBuilder
+        +setSettlementCurrencyScheme(String): SettlementProvision.SettlementProvisionBuilder
+        +build(): SettlementProvision
+    }
+
+@enduml

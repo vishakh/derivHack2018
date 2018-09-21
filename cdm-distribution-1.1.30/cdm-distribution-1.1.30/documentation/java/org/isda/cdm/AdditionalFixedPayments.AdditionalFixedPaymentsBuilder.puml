@@ -1,0 +1,13 @@
+@startuml
+
+    class AdditionalFixedPayments.AdditionalFixedPaymentsBuilder [[AdditionalFixedPayments.AdditionalFixedPaymentsBuilder.html]] {
+        +getInterestShortfallReimbursement(): Boolean
+        +getPrincipalShortfallReimbursement(): Boolean
+        +getWritedownReimbursement(): Boolean
+        +setInterestShortfallReimbursement(Boolean): AdditionalFixedPayments.AdditionalFixedPaymentsBuilder
+        +setPrincipalShortfallReimbursement(Boolean): AdditionalFixedPayments.AdditionalFixedPaymentsBuilder
+        +setWritedownReimbursement(Boolean): AdditionalFixedPayments.AdditionalFixedPaymentsBuilder
+        +build(): AdditionalFixedPayments
+    }
+
+@enduml

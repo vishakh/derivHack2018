@@ -1,0 +1,13 @@
+@startuml
+
+    class ReferenceBank.ReferenceBankBuilder [[ReferenceBank.ReferenceBankBuilder.html]] {
+        +getReferenceBankId(): String
+        +getReferenceBankIdScheme(): String
+        +getReferenceBankName(): String
+        +setReferenceBankId(String): ReferenceBank.ReferenceBankBuilder
+        +setReferenceBankIdScheme(String): ReferenceBank.ReferenceBankBuilder
+        +setReferenceBankName(String): ReferenceBank.ReferenceBankBuilder
+        +build(): ReferenceBank
+    }
+
+@enduml

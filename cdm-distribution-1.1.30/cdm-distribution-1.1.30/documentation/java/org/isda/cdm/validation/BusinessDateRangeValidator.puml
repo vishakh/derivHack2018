@@ -1,0 +1,7 @@
+@startuml
+
+    class BusinessDateRangeValidator [[BusinessDateRangeValidator.html]] {
+        +validate(BusinessDateRange): ValidationResult<BusinessDateRange>
+    }
+
+@enduml

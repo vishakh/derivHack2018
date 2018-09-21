@@ -1,0 +1,7 @@
+@startuml
+
+    class CalculationPeriodDatesCalculationPeriodDatesAdjustmentsDataRule [[CalculationPeriodDatesCalculationPeriodDatesAdjustmentsDataRule.html]] {
+        +validate(Payout): ValidationResult<Payout>
+    }
+
+@enduml

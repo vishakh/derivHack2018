@@ -1,0 +1,17 @@
+@startuml
+
+    class MessageInformation [[MessageInformation.html]] {
+        +getCopyTo(): List<String>
+        +getCopyToScheme(): String
+        +getMessageId(): String
+        +getMessageIdScheme(): String
+        +getSentBy(): String
+        +getSentByScheme(): String
+        +getSentTo(): String
+        +getSentToScheme(): String
+        +toBuilder(): MessageInformation.MessageInformationBuilder
+        {static} +builder(): MessageInformation.MessageInformationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

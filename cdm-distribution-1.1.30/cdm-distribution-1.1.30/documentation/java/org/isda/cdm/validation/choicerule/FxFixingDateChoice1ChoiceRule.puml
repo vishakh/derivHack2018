@@ -1,0 +1,7 @@
+@startuml
+
+    class FxFixingDateChoice1ChoiceRule [[FxFixingDateChoice1ChoiceRule.html]] {
+        +validate(FxFixingDate): ValidationResult<FxFixingDate>
+    }
+
+@enduml

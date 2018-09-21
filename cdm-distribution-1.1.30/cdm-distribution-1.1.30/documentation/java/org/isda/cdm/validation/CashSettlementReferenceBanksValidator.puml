@@ -1,0 +1,7 @@
+@startuml
+
+    class CashSettlementReferenceBanksValidator [[CashSettlementReferenceBanksValidator.html]] {
+        +validate(CashSettlementReferenceBanks): ValidationResult<CashSettlementReferenceBanks>
+    }
+
+@enduml

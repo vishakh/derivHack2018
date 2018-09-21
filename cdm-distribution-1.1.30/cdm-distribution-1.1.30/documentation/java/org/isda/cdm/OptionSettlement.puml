@@ -1,0 +1,16 @@
+@startuml
+
+    class OptionSettlement [[OptionSettlement.html]] {
+        +getCashSettlementTerms(): OptionCashSettlement
+        +getPhysicalSettlementTerms(): OptionPhysicalSettlement
+        +getSettlementAmount(): Money
+        +getSettlementCurrency(): String
+        +getSettlementCurrencyScheme(): String
+        +getSettlementDate(): AdjustableOrRelativeDate
+        +getSettlementType(): SettlementTypeEnum
+        +toBuilder(): OptionSettlement.OptionSettlementBuilder
+        {static} +builder(): OptionSettlement.OptionSettlementBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

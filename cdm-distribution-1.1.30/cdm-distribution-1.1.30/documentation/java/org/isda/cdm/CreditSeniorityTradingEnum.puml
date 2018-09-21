@@ -1,0 +1,8 @@
+@startuml
+
+    enum CreditSeniorityTradingEnum [[CreditSeniorityTradingEnum.html]] {
+        {static} +SENIOR
+        {static} +SUBORDINATE
+    }
+
+@enduml

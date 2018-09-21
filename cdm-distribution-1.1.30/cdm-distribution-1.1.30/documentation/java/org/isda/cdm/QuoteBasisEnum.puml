@@ -1,0 +1,8 @@
+@startuml
+
+    enum QuoteBasisEnum [[QuoteBasisEnum.html]] {
+        {static} +CURRENCY_1_PER_CURRENCY_2
+        {static} +CURRENCY_2_PER_CURRENCY_1
+    }
+
+@enduml

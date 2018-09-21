@@ -1,0 +1,14 @@
+@startuml
+
+    enum BusinessDayConventionEnum [[BusinessDayConventionEnum.html]] {
+        {static} +FOLLOWING
+        {static} +FRN
+        {static} +MODFOLLOWING
+        {static} +PRECEDING
+        {static} +MODPRECEDING
+        {static} +NEAREST
+        {static} +NONE
+        {static} +NOT_APPLICABLE
+    }
+
+@enduml

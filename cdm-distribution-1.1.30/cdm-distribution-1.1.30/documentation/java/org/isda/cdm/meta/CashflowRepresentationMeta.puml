@@ -1,0 +1,12 @@
+@startuml
+
+    class CashflowRepresentationMeta [[CashflowRepresentationMeta.html]] {
+        +dataRules(): List<Validator<CashflowRepresentation>>
+        +choiceRuleValidators(): List<Validator<CashflowRepresentation>>
+        +getOutMappings(): Multimap<String, OutMapping<CashflowRepresentation, ?>>
+        +getQualifyFunctions(): List<Function<CashflowRepresentation, QualifyResult>>
+        +validator(): Validator<CashflowRepresentation>
+        +onlyExistsValidator(): ValidatorWithArg<CashflowRepresentation, String>
+    }
+
+@enduml

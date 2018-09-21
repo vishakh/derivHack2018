@@ -1,0 +1,11 @@
+@startuml
+
+    class ResourceLength.ResourceLengthBuilder [[ResourceLength.ResourceLengthBuilder.html]] {
+        +getLengthUnit(): LengthUnitEnum
+        +getLengthValue(): BigDecimal
+        +setLengthUnit(LengthUnitEnum): ResourceLength.ResourceLengthBuilder
+        +setLengthValue(BigDecimal): ResourceLength.ResourceLengthBuilder
+        +build(): ResourceLength
+    }
+
+@enduml

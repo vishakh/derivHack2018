@@ -1,0 +1,12 @@
+@startuml
+
+    class EventEffectMeta [[EventEffectMeta.html]] {
+        +dataRules(): List<Validator<EventEffect>>
+        +choiceRuleValidators(): List<Validator<EventEffect>>
+        +getOutMappings(): Multimap<String, OutMapping<EventEffect, ?>>
+        +getQualifyFunctions(): List<Function<EventEffect, QualifyResult>>
+        +validator(): Validator<EventEffect>
+        +onlyExistsValidator(): ValidatorWithArg<EventEffect, String>
+    }
+
+@enduml

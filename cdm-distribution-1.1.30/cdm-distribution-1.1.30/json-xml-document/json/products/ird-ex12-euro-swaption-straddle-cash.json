@@ -1,0 +1,300 @@
+{
+  "calculationAgent" : {
+    "calculationAgentPartyReference" : [ "party2" ]
+  },
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "123",
+      "identifierScheme" : "http://www.partyA.com/trade-id"
+    },
+    "partyReference" : "party1"
+  }, {
+    "identifierValue" : {
+      "identifier" : "123",
+      "identifierScheme" : "http://www.partyB.com/trade-id"
+    },
+    "partyReference" : "party2"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "cashflow" : [ {
+          "payerReceiver" : {
+            "payerPartyReference" : "party1",
+            "receiverPartyReference" : "party2"
+          },
+          "cashflowAmount" : {
+            "amount" : 100000,
+            "currency" : "EUR"
+          },
+          "cashflowDate" : {
+            "dateAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "unadjustedDate" : "2000-08-30"
+          },
+          "rosettaKeyValue" : "a75224ca"
+        } ],
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "accrualBusinessCenters0"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1,
+              "rollConvention" : "_30"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2001-08-30"
+              }
+            },
+            "id" : "CalcPeriodDates0",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "EUTA" ],
+                  "id" : "accrualBusinessCenters0"
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2006-08-30"
+            }
+          },
+          "dayCountFraction" : "_30_360",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.05
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party1",
+            "receiverPartyReference" : "party2"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "CalcPeriodDates0",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ],
+                "id" : "paymentBusinessCenters0"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 100000000,
+                "currency" : "EUR"
+              }
+            }
+          },
+          "rosettaKeyValue" : "184de6d"
+        }, {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "accrualBusinessCenters1"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6,
+              "rollConvention" : "_30"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2001-08-30"
+              }
+            },
+            "id" : "CalcPeriodDates1",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "EUTA" ],
+                  "id" : "accrualBusinessCenters1"
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2006-08-30"
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "EUR_EURIBOR_TELERATE",
+              "indexTenor" : {
+                "period" : "M",
+                "periodMultiplier" : 6
+              }
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party2",
+            "receiverPartyReference" : "party1"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "CalcPeriodDates1",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ],
+                "id" : "paymentBusinessCenters1"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 100000000,
+                "currency" : "EUR"
+              }
+            }
+          },
+          "resetDates" : {
+            "calculationPeriodDatesReference" : "CalcPeriodDates1",
+            "fixingDates" : {
+              "period" : "D",
+              "periodMultiplier" : -2,
+              "dayType" : "BUSINESS",
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ],
+                "id" : "fixingBusinessCenters0"
+              },
+              "businessDayConvention" : "NONE",
+              "dateRelativeTo" : "resetDates0"
+            },
+            "id" : "resetDates0",
+            "resetDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "paymentBusinessCenters1"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "resetFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            },
+            "resetRelativeTo" : "CALCULATION_PERIOD_START_DATE"
+          },
+          "rosettaKeyValue" : "6f7aa4a9"
+        } ],
+        "optionPayout" : [ {
+          "buyerSeller" : {
+            "buyerPartyReference" : "party1",
+            "sellerPartyReference" : "party2"
+          },
+          "exerciseTerms" : {
+            "exerciseProcedure" : {
+              "followUpConfirmation" : true,
+              "manualExercise" : {
+                "exerciseNotice" : {
+                  "businessCenter" : "BEBR",
+                  "partyReference" : "party1"
+                }
+              }
+            },
+            "optionStyle" : {
+              "europeanExercise" : {
+                "earliestExerciseTime" : {
+                  "businessCenter" : "GBLO",
+                  "hourMinuteTime" : "09:00:00"
+                },
+                "expirationDate" : {
+                  "adjustableDate" : {
+                    "dateAdjustments" : {
+                      "businessCenters" : {
+                        "businessCenter" : [ "EUTA", "GBLO" ]
+                      },
+                      "businessDayConvention" : "FOLLOWING"
+                    },
+                    "unadjustedDate" : "2001-08-28"
+                  }
+                },
+                "expirationTime" : {
+                  "businessCenter" : "GBLO",
+                  "hourMinuteTime" : "11:00:00"
+                },
+                "id" : "europeanExercise0"
+              }
+            },
+            "settlement" : {
+              "cashSettlementTerms" : {
+                "cashSettlementPaymentDate" : {
+                  "relativeDate" : {
+                    "period" : "D",
+                    "periodMultiplier" : 2,
+                    "dayType" : "BUSINESS",
+                    "businessCenters" : {
+                      "businessCenter" : [ "EUTA" ]
+                    },
+                    "businessDayConvention" : "NONE",
+                    "dateRelativeTo" : "europeanExercise0"
+                  }
+                },
+                "cashSettlementValuationDate" : {
+                  "period" : "D",
+                  "periodMultiplier" : 0,
+                  "businessDayConvention" : "NONE",
+                  "dateRelativeTo" : "europeanExercise0"
+                },
+                "cashSettlementValuationTime" : {
+                  "businessCenter" : "BEBR",
+                  "hourMinuteTime" : "11:00:00"
+                },
+                "id" : "cashSettlement0",
+                "parYieldCurveUnadjustedMethod" : {
+                  "quotationRateType" : "MID",
+                  "settlementRateSource" : {
+                    "informationSource" : {
+                      "sourceProvider" : "ISDA"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "rosettaKeyValue" : "f49890a3"
+        } ]
+      },
+      "rosettaKeyValue" : "f3b09f43"
+    }
+  },
+  "party" : [ {
+    "id" : "party1",
+    "partyId" : [ "party A" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "party2",
+    "partyId" : [ "party B" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2000-08-30"
+  },
+  "rosettaKey" : "edf1653e"
+}

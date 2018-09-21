@@ -1,0 +1,7 @@
+@startuml
+
+    class ResetDatesOnlyExistsValidator [[ResetDatesOnlyExistsValidator.html]] {
+        +validate(ResetDates, String): ValidationResult<ResetDates>
+    }
+
+@enduml

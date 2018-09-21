@@ -1,0 +1,25 @@
+@startuml
+
+    class Account.AccountBuilder [[Account.AccountBuilder.html]] {
+        +getAccountBeneficiary(): String
+        +getAccountName(): String
+        +getAccountNameScheme(): String
+        +getAccountNumber(): String
+        +getAccountNumberScheme(): String
+        +getAccountType(): AccountTypeEnum
+        +getAccountTypeScheme(): String
+        +getId(): String
+        +getServicingParty(): String
+        +setAccountBeneficiary(String): Account.AccountBuilder
+        +setAccountName(String): Account.AccountBuilder
+        +setAccountNameScheme(String): Account.AccountBuilder
+        +setAccountNumber(String): Account.AccountBuilder
+        +setAccountNumberScheme(String): Account.AccountBuilder
+        +setAccountType(AccountTypeEnum): Account.AccountBuilder
+        +setAccountTypeScheme(String): Account.AccountBuilder
+        +setId(String): Account.AccountBuilder
+        +setServicingParty(String): Account.AccountBuilder
+        +build(): Account
+    }
+
+@enduml

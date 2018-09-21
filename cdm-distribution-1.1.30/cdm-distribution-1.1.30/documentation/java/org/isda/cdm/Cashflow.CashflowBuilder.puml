@@ -1,0 +1,19 @@
+@startuml
+
+    class Cashflow.CashflowBuilder [[Cashflow.CashflowBuilder.html]] {
+        +getCashflowAmount(): Money.MoneyBuilder
+        +getOrCreateCashflowAmount(): Money.MoneyBuilder
+        +getCashflowCalculation(): String
+        +getCashflowDate(): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +getOrCreateCashflowDate(): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +getCashflowType(): CashflowTypeEnum
+        +setCashflowAmount(Money): Cashflow.CashflowBuilder
+        +setCashflowAmountBuilder(Money.MoneyBuilder): Cashflow.CashflowBuilder
+        +setCashflowCalculation(String): Cashflow.CashflowBuilder
+        +setCashflowDate(AdjustableOrAdjustedOrRelativeDate): Cashflow.CashflowBuilder
+        +setCashflowDateBuilder(AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder): Cashflow.CashflowBuilder
+        +setCashflowType(CashflowTypeEnum): Cashflow.CashflowBuilder
+        +build(): Cashflow
+    }
+
+@enduml

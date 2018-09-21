@@ -1,0 +1,7 @@
+@startuml
+
+    class EventEffectPathFilter [[EventEffectPathFilter.html]] {
+        {static} +test(HierarchicalPath, Class<?>, HierarchicalPath): boolean
+    }
+
+@enduml

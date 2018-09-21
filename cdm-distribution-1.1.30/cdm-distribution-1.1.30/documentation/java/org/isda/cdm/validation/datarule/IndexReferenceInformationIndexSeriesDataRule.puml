@@ -1,0 +1,7 @@
+@startuml
+
+    class IndexReferenceInformationIndexSeriesDataRule [[IndexReferenceInformationIndexSeriesDataRule.html]] {
+        +validate(IndexReferenceInformation): ValidationResult<IndexReferenceInformation>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class QuantityValidator [[QuantityValidator.html]] {
+        +validate(Quantity): ValidationResult<Quantity>
+    }
+
+@enduml

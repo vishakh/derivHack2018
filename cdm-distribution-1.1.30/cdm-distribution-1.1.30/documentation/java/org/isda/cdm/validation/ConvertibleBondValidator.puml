@@ -1,0 +1,7 @@
+@startuml
+
+    class ConvertibleBondValidator [[ConvertibleBondValidator.html]] {
+        +validate(ConvertibleBond): ValidationResult<ConvertibleBond>
+    }
+
+@enduml

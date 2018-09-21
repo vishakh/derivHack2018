@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionSettlementPhysicalSettlementTermsDataRule [[OptionSettlementPhysicalSettlementTermsDataRule.html]] {
+        +validate(OptionSettlement): ValidationResult<OptionSettlement>
+    }
+
+@enduml

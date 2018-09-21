@@ -1,0 +1,15 @@
+@startuml
+
+    class BusinessDayAdjustments.BusinessDayAdjustmentsBuilder [[BusinessDayAdjustments.BusinessDayAdjustmentsBuilder.html]] {
+        +getBusinessCenters(): BusinessCenters.BusinessCentersBuilder
+        +getOrCreateBusinessCenters(): BusinessCenters.BusinessCentersBuilder
+        +getBusinessDayConvention(): BusinessDayConventionEnum
+        +getId(): String
+        +setBusinessCenters(BusinessCenters): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +setBusinessCentersBuilder(BusinessCenters.BusinessCentersBuilder): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +setBusinessDayConvention(BusinessDayConventionEnum): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +setId(String): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +build(): BusinessDayAdjustments
+    }
+
+@enduml

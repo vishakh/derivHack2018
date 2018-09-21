@@ -1,0 +1,11 @@
+@startuml
+
+    class ManualExercise [[ManualExercise.html]] {
+        +getExerciseNotice(): ExerciseNotice
+        +getFallbackExercise(): Boolean
+        +toBuilder(): ManualExercise.ManualExerciseBuilder
+        {static} +builder(): ManualExercise.ManualExerciseBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

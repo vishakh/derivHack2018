@@ -1,0 +1,25 @@
+@startuml
+
+    class EarlyTerminationProvision.EarlyTerminationProvisionBuilder [[EarlyTerminationProvision.EarlyTerminationProvisionBuilder.html]] {
+        +getId(): String
+        +getMandatoryEarlyTermination(): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        +getOrCreateMandatoryEarlyTermination(): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        +getMandatoryEarlyTerminationDateTenor(): Period.PeriodBuilder
+        +getOrCreateMandatoryEarlyTerminationDateTenor(): Period.PeriodBuilder
+        +getOptionalEarlyTermination(): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +getOrCreateOptionalEarlyTermination(): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +getOptionalEarlyTerminationParameters(): ExercisePeriod.ExercisePeriodBuilder
+        +getOrCreateOptionalEarlyTerminationParameters(): ExercisePeriod.ExercisePeriodBuilder
+        +setId(String): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        +setMandatoryEarlyTermination(MandatoryEarlyTermination): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        +setMandatoryEarlyTerminationBuilder(MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        +setMandatoryEarlyTerminationDateTenor(Period): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        +setMandatoryEarlyTerminationDateTenorBuilder(Period.PeriodBuilder): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        +setOptionalEarlyTermination(OptionalEarlyTermination): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        +setOptionalEarlyTerminationBuilder(OptionalEarlyTermination.OptionalEarlyTerminationBuilder): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        +setOptionalEarlyTerminationParameters(ExercisePeriod): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        +setOptionalEarlyTerminationParametersBuilder(ExercisePeriod.ExercisePeriodBuilder): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        +build(): EarlyTerminationProvision
+    }
+
+@enduml

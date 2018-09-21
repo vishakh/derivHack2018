@@ -1,0 +1,12 @@
+@startuml
+
+    class YieldCurveMethodMeta [[YieldCurveMethodMeta.html]] {
+        +dataRules(): List<Validator<YieldCurveMethod>>
+        +choiceRuleValidators(): List<Validator<YieldCurveMethod>>
+        +getOutMappings(): Multimap<String, OutMapping<YieldCurveMethod, ?>>
+        +getQualifyFunctions(): List<Function<YieldCurveMethod, QualifyResult>>
+        +validator(): Validator<YieldCurveMethod>
+        +onlyExistsValidator(): ValidatorWithArg<YieldCurveMethod, String>
+    }
+
+@enduml

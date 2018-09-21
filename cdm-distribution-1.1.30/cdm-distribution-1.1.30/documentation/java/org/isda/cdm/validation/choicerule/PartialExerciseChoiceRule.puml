@@ -1,0 +1,7 @@
+@startuml
+
+    class PartialExerciseChoiceRule [[PartialExerciseChoiceRule.html]] {
+        +validate(PartialExercise): ValidationResult<PartialExercise>
+    }
+
+@enduml

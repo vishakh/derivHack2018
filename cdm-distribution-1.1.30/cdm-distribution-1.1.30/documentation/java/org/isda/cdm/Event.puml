@@ -1,0 +1,23 @@
+@startuml
+
+    class Event [[Event.html]] {
+        +getAction(): ActionEnum
+        +getEffectiveDate(): LocalDate
+        +getEventDate(): LocalDate
+        +getEventEffect(): EventEffect
+        +getEventIdentifier(): Identifier
+        +getEventQualifier(): String
+        +getFunctionCall(): String
+        +getIntent(): IntentEnum
+        +getLineage(): Lineage
+        +getMessageInformation(): MessageInformation
+        +getParty(): List<Party>
+        +getPrimitive(): PrimitiveEvent
+        +getTimestamp(): EventTimestamp
+        +toBuilder(): Event.EventBuilder
+        {static} +builder(): Event.EventBuilder
+        +getRosettaKey(): String
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

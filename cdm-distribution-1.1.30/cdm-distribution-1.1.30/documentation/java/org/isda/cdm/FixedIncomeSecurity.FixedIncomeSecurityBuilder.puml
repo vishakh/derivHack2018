@@ -1,0 +1,25 @@
+@startuml
+
+    class FixedIncomeSecurity.FixedIncomeSecurityBuilder [[FixedIncomeSecurity.FixedIncomeSecurityBuilder.html]] {
+        +getCouponRate(): BigDecimal
+        +getCouponType(): CouponTypeEnum
+        +getCouponTypeScheme(): String
+        +getIssueDate(): LocalDate
+        +getIssuerName(): String
+        +getIssuerReference(): String
+        +getMaturity(): LocalDate
+        +getSeniority(): CreditSeniorityEnum
+        +getSeniorityScheme(): String
+        +setCouponRate(BigDecimal): FixedIncomeSecurity.FixedIncomeSecurityBuilder
+        +setCouponType(CouponTypeEnum): FixedIncomeSecurity.FixedIncomeSecurityBuilder
+        +setCouponTypeScheme(String): FixedIncomeSecurity.FixedIncomeSecurityBuilder
+        +setIssueDate(LocalDate): FixedIncomeSecurity.FixedIncomeSecurityBuilder
+        +setIssuerName(String): FixedIncomeSecurity.FixedIncomeSecurityBuilder
+        +setIssuerReference(String): FixedIncomeSecurity.FixedIncomeSecurityBuilder
+        +setMaturity(LocalDate): FixedIncomeSecurity.FixedIncomeSecurityBuilder
+        +setSeniority(CreditSeniorityEnum): FixedIncomeSecurity.FixedIncomeSecurityBuilder
+        +setSeniorityScheme(String): FixedIncomeSecurity.FixedIncomeSecurityBuilder
+        +build(): FixedIncomeSecurity
+    }
+
+@enduml

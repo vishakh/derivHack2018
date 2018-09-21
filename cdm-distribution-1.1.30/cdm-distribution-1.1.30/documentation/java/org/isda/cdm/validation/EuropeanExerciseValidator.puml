@@ -1,0 +1,7 @@
+@startuml
+
+    class EuropeanExerciseValidator [[EuropeanExerciseValidator.html]] {
+        +validate(EuropeanExercise): ValidationResult<EuropeanExercise>
+    }
+
+@enduml

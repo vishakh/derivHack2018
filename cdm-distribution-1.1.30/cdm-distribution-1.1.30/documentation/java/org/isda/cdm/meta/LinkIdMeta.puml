@@ -1,0 +1,12 @@
+@startuml
+
+    class LinkIdMeta [[LinkIdMeta.html]] {
+        +dataRules(): List<Validator<LinkId>>
+        +choiceRuleValidators(): List<Validator<LinkId>>
+        +getOutMappings(): Multimap<String, OutMapping<LinkId, ?>>
+        +getQualifyFunctions(): List<Function<LinkId, QualifyResult>>
+        +validator(): Validator<LinkId>
+        +onlyExistsValidator(): ValidatorWithArg<LinkId, String>
+    }
+
+@enduml

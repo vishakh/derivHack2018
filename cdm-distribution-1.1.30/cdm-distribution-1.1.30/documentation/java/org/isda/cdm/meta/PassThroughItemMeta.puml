@@ -1,0 +1,12 @@
+@startuml
+
+    class PassThroughItemMeta [[PassThroughItemMeta.html]] {
+        +dataRules(): List<Validator<PassThroughItem>>
+        +choiceRuleValidators(): List<Validator<PassThroughItem>>
+        +getOutMappings(): Multimap<String, OutMapping<PassThroughItem, ?>>
+        +getQualifyFunctions(): List<Function<PassThroughItem, QualifyResult>>
+        +validator(): Validator<PassThroughItem>
+        +onlyExistsValidator(): ValidatorWithArg<PassThroughItem, String>
+    }
+
+@enduml

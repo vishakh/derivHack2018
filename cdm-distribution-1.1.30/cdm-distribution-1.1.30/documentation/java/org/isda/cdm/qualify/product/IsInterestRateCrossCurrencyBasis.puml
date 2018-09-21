@@ -1,0 +1,7 @@
+@startuml
+
+    class IsInterestRateCrossCurrencyBasis [[IsInterestRateCrossCurrencyBasis.html]] {
+        +apply(EconomicTerms): QualifyResult
+    }
+
+@enduml

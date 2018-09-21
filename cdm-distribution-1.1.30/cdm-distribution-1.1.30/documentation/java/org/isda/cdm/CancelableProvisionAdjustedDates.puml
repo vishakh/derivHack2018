@@ -1,0 +1,10 @@
+@startuml
+
+    class CancelableProvisionAdjustedDates [[CancelableProvisionAdjustedDates.html]] {
+        +getCancellationEvent(): List<CancellationEvent>
+        +toBuilder(): CancelableProvisionAdjustedDates.CancelableProvisionAdjustedDatesBuilder
+        {static} +builder(): CancelableProvisionAdjustedDates.CancelableProvisionAdjustedDatesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

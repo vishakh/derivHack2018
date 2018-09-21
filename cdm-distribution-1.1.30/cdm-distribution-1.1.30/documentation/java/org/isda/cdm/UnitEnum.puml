@@ -1,0 +1,11 @@
+@startuml
+
+    enum UnitEnum [[UnitEnum.html]] {
+        {static} +M_WH
+        {static} +MMBTU
+        {static} +BBL
+        {static} +GAL
+        {static} +BSH
+    }
+
+@enduml

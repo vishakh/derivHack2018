@@ -1,0 +1,12 @@
+@startuml
+
+    class InformationSourceMeta [[InformationSourceMeta.html]] {
+        +dataRules(): List<Validator<InformationSource>>
+        +choiceRuleValidators(): List<Validator<InformationSource>>
+        +getOutMappings(): Multimap<String, OutMapping<InformationSource, ?>>
+        +getQualifyFunctions(): List<Function<InformationSource, QualifyResult>>
+        +validator(): Validator<InformationSource>
+        +onlyExistsValidator(): ValidatorWithArg<InformationSource, String>
+    }
+
+@enduml

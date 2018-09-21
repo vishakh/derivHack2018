@@ -1,0 +1,12 @@
+@startuml
+
+    class Period [[Period.html]] {
+        +getId(): String
+        +getPeriod(): PeriodEnum
+        +getPeriodMultiplier(): Integer
+        +toBuilder(): Period.PeriodBuilder
+        {static} +builder(): Period.PeriodBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

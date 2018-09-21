@@ -1,0 +1,26 @@
+@startuml
+
+    class Contract [[Contract.html]] {
+        +getAccount(): List<Account>
+        +getCalculationAgent(): CalculationAgent
+        +getClearedDate(): LocalDate
+        +getCollateral(): Collateral
+        +getContractIdentifier(): List<PartyContractIdentifier>
+        +getContractualProduct(): ContractualProduct
+        +getDocumentation(): Documentation
+        +getGoverningLaw(): GoverningLawEnum
+        +getGoverningLawScheme(): String
+        +getId(): String
+        +getOtherPartyPayment(): List<Payment>
+        +getParty(): List<Party>
+        +getPartyContractInformation(): List<PartyContractInformation>
+        +getPartyRole(): List<PartyRole>
+        +getState(): StateEnum
+        +getTradeDate(): DateInstances
+        +toBuilder(): Contract.ContractBuilder
+        {static} +builder(): Contract.ContractBuilder
+        +getRosettaKey(): String
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

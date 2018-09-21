@@ -1,0 +1,7 @@
+@startuml
+
+    class MandatoryEarlyTerminationValidator [[MandatoryEarlyTerminationValidator.html]] {
+        +validate(MandatoryEarlyTermination): ValidationResult<MandatoryEarlyTermination>
+    }
+
+@enduml

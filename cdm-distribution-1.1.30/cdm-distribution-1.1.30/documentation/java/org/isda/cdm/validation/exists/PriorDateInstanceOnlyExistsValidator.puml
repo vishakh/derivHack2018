@@ -1,0 +1,7 @@
+@startuml
+
+    class PriorDateInstanceOnlyExistsValidator [[PriorDateInstanceOnlyExistsValidator.html]] {
+        +validate(PriorDateInstance, String): ValidationResult<PriorDateInstance>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class SettlementProvisionMeta [[SettlementProvisionMeta.html]] {
+        +dataRules(): List<Validator<SettlementProvision>>
+        +choiceRuleValidators(): List<Validator<SettlementProvision>>
+        +getOutMappings(): Multimap<String, OutMapping<SettlementProvision, ?>>
+        +getQualifyFunctions(): List<Function<SettlementProvision, QualifyResult>>
+        +validator(): Validator<SettlementProvision>
+        +onlyExistsValidator(): ValidatorWithArg<SettlementProvision, String>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class EuropeanExerciseMeta [[EuropeanExerciseMeta.html]] {
+        +dataRules(): List<Validator<EuropeanExercise>>
+        +choiceRuleValidators(): List<Validator<EuropeanExercise>>
+        +getOutMappings(): Multimap<String, OutMapping<EuropeanExercise, ?>>
+        +getQualifyFunctions(): List<Function<EuropeanExercise, QualifyResult>>
+        +validator(): Validator<EuropeanExercise>
+        +onlyExistsValidator(): ValidatorWithArg<EuropeanExercise, String>
+    }
+
+@enduml

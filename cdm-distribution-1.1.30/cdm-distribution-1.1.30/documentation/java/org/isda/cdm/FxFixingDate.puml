@@ -1,0 +1,14 @@
+@startuml
+
+    class FxFixingDate [[FxFixingDate.html]] {
+        +getBusinessCenters(): BusinessCenters
+        +getBusinessCentersReference(): String
+        +getBusinessDayConvention(): BusinessDayConventionEnum
+        +getDateRelativeToCalculationPeriodDates(): DateRelativeToCalculationPeriodDates
+        +getDateRelativeToPaymentDates(): DateRelativeToPaymentDates
+        +toBuilder(): FxFixingDate.FxFixingDateBuilder
+        {static} +builder(): FxFixingDate.FxFixingDateBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

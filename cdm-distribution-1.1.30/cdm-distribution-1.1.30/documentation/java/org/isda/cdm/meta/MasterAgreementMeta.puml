@@ -1,0 +1,12 @@
+@startuml
+
+    class MasterAgreementMeta [[MasterAgreementMeta.html]] {
+        +dataRules(): List<Validator<MasterAgreement>>
+        +choiceRuleValidators(): List<Validator<MasterAgreement>>
+        +getOutMappings(): Multimap<String, OutMapping<MasterAgreement, ?>>
+        +getQualifyFunctions(): List<Function<MasterAgreement, QualifyResult>>
+        +validator(): Validator<MasterAgreement>
+        +onlyExistsValidator(): ValidatorWithArg<MasterAgreement, String>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    enum MasterConfirmationAnnexTypeEnum [[MasterConfirmationAnnexTypeEnum.html]] {
+        {static} +ISDA_2004_INDEX_VARIANCE_SWAP_AMERICAS_INTERDEALER
+    }
+
+@enduml

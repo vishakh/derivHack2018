@@ -1,0 +1,12 @@
+@startuml
+
+    class ContractMeta [[ContractMeta.html]] {
+        +dataRules(): List<Validator<Contract>>
+        +choiceRuleValidators(): List<Validator<Contract>>
+        +getOutMappings(): Multimap<String, OutMapping<Contract, ?>>
+        +getQualifyFunctions(): List<Function<Contract, QualifyResult>>
+        +validator(): Validator<Contract>
+        +onlyExistsValidator(): ValidatorWithArg<Contract, String>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class OptionFeatureMeta [[OptionFeatureMeta.html]] {
+        +dataRules(): List<Validator<OptionFeature>>
+        +choiceRuleValidators(): List<Validator<OptionFeature>>
+        +getOutMappings(): Multimap<String, OutMapping<OptionFeature, ?>>
+        +getQualifyFunctions(): List<Function<OptionFeature, QualifyResult>>
+        +validator(): Validator<OptionFeature>
+        +onlyExistsValidator(): ValidatorWithArg<OptionFeature, String>
+    }
+
+@enduml

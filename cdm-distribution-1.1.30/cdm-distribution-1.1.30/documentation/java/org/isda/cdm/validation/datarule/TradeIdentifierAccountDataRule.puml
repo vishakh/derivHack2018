@@ -1,0 +1,7 @@
+@startuml
+
+    class TradeIdentifierAccountDataRule [[TradeIdentifierAccountDataRule.html]] {
+        +validate(ContractIdentifier): ValidationResult<ContractIdentifier>
+    }
+
+@enduml

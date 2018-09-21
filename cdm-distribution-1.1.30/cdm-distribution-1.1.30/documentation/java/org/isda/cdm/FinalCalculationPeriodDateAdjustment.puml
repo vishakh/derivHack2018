@@ -1,0 +1,12 @@
+@startuml
+
+    class FinalCalculationPeriodDateAdjustment [[FinalCalculationPeriodDateAdjustment.html]] {
+        +getBusinessDayConvention(): BusinessDayConventionEnum
+        +getRelevantUnderlyingDateReference(): String
+        +getSwapStreamReference(): String
+        +toBuilder(): FinalCalculationPeriodDateAdjustment.FinalCalculationPeriodDateAdjustmentBuilder
+        {static} +builder(): FinalCalculationPeriodDateAdjustment.FinalCalculationPeriodDateAdjustmentBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

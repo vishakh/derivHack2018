@@ -1,0 +1,177 @@
+{
+  "eventDate" : "2017-03-20",
+  "eventEffect" : {
+    "contract" : [ "a4f73b21" ],
+    "effectedEvent" : "81a440d1"
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "RT1568FGHGC"
+    },
+    "version" : 1
+  },
+  "eventQualifier" : "Allocation",
+  "party" : [ {
+    "id" : "p1",
+    "partyId" : [ "SellSideLEI" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "p2",
+    "partyId" : [ "ExecutionAgentLEI" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "p3",
+    "partyId" : [ "FundALEI" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "allocation" : [ {
+      "after" : {
+        "contract" : [ {
+          "contractIdentifier" : [ {
+            "identifierValue" : {
+              "identifier" : "CDX1235",
+              "identifierScheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+            },
+            "partyReference" : "p1"
+          } ],
+          "contractualProduct" : {
+            "economicTerms" : {
+              "payout" : {
+                "creditDefaultPayout" : {
+                  "generalTerms" : {
+                    "buyerSeller" : {
+                      "buyerPartyReference" : "p1",
+                      "sellerPartyReference" : "p3"
+                    },
+                    "indexReferenceInformation" : {
+                      "indexAnnexDate" : "2004-07-06",
+                      "indexAnnexSource" : "PUBLISHER",
+                      "indexName" : "Dow Jones CDX NA IG.2",
+                      "indexSeries" : 2
+                    }
+                  },
+                  "protectionTerms" : {
+                    "notionalAmount" : {
+                      "amount" : 25000000,
+                      "currency" : "USD"
+                    }
+                  },
+                  "rosettaKeyValue" : "c8941696"
+                },
+                "interestRatePayout" : [ {
+                  "calculationPeriodDates" : {
+                    "effectiveDate" : {
+                      "adjustableDate" : {
+                        "unadjustedDate" : "2017-03-23"
+                      }
+                    },
+                    "terminationDate" : {
+                      "unadjustedDate" : "2020-03-20"
+                    }
+                  },
+                  "interestRate" : {
+                    "fixedRate" : {
+                      "initialValue" : 0.0060
+                    }
+                  },
+                  "payerReceiver" : {
+                    "payerPartyReference" : "p1",
+                    "receiverPartyReference" : "p3"
+                  },
+                  "rosettaKeyValue" : "edb7c57d"
+                } ]
+              },
+              "rosettaKeyValue" : "bd29b339"
+            }
+          },
+          "documentation" : {
+            "masterConfirmation" : {
+              "masterConfirmationDate" : "2004-10-18",
+              "masterConfirmationType" : "DJ_CDX_NA"
+            }
+          },
+          "tradeDate" : {
+            "date" : "2017-03-20"
+          },
+          "rosettaKey" : "a4f73b21"
+        } ],
+        "execution" : {
+          "executionReference" : {
+            "identifierValue" : {
+              "identifier" : "CDX1234"
+            },
+            "issuer" : "p1"
+          },
+          "state" : "ALLOCATED"
+        }
+      },
+      "before" : {
+        "contractualProduct" : {
+          "economicTerms" : {
+            "payout" : {
+              "creditDefaultPayout" : {
+                "generalTerms" : {
+                  "buyerSeller" : {
+                    "buyerPartyReference" : "p1",
+                    "sellerPartyReference" : "p2"
+                  },
+                  "indexReferenceInformation" : {
+                    "indexAnnexDate" : "2004-07-06",
+                    "indexAnnexSource" : "PUBLISHER",
+                    "indexName" : "Dow Jones CDX NA IG.2",
+                    "indexSeries" : 2
+                  }
+                },
+                "protectionTerms" : {
+                  "notionalAmount" : {
+                    "amount" : 25000000,
+                    "currency" : "USD"
+                  }
+                },
+                "rosettaKeyValue" : "c8941696"
+              },
+              "interestRatePayout" : [ {
+                "calculationPeriodDates" : {
+                  "effectiveDate" : {
+                    "adjustableDate" : {
+                      "unadjustedDate" : "2017-03-23"
+                    }
+                  },
+                  "terminationDate" : {
+                    "unadjustedDate" : "2020-03-20"
+                  }
+                },
+                "interestRate" : {
+                  "fixedRate" : {
+                    "initialValue" : 0.0060
+                  }
+                },
+                "payerReceiver" : {
+                  "payerPartyReference" : "p1",
+                  "receiverPartyReference" : "p2"
+                },
+                "rosettaKeyValue" : "edb7c57d"
+              } ]
+            },
+            "rosettaKeyValue" : "bd29b339"
+          }
+        },
+        "tradeHeader" : {
+          "identifier" : [ {
+            "identifierValue" : {
+              "identifier" : "CDX1234",
+              "identifierScheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+            },
+            "partyReference" : "p1"
+          } ],
+          "tradeDate" : "2017-03-20"
+        }
+      }
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2018-05-21T18:13:51"
+  },
+  "rosettaKey" : "81a440d1"
+}

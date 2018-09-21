@@ -1,0 +1,12 @@
+@startuml
+
+    class GeneralTermsMeta [[GeneralTermsMeta.html]] {
+        +dataRules(): List<Validator<GeneralTerms>>
+        +choiceRuleValidators(): List<Validator<GeneralTerms>>
+        +getOutMappings(): Multimap<String, OutMapping<GeneralTerms, ?>>
+        +getQualifyFunctions(): List<Function<GeneralTerms, QualifyResult>>
+        +validator(): Validator<GeneralTerms>
+        +onlyExistsValidator(): ValidatorWithArg<GeneralTerms, String>
+    }
+
+@enduml

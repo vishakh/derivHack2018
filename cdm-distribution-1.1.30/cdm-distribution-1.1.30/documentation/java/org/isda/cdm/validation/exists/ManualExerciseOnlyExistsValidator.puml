@@ -1,0 +1,7 @@
+@startuml
+
+    class ManualExerciseOnlyExistsValidator [[ManualExerciseOnlyExistsValidator.html]] {
+        +validate(ManualExercise, String): ValidationResult<ManualExercise>
+    }
+
+@enduml

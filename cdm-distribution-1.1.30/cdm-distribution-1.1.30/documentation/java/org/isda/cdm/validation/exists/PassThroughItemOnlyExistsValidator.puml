@@ -1,0 +1,7 @@
+@startuml
+
+    class PassThroughItemOnlyExistsValidator [[PassThroughItemOnlyExistsValidator.html]] {
+        +validate(PassThroughItem, String): ValidationResult<PassThroughItem>
+    }
+
+@enduml

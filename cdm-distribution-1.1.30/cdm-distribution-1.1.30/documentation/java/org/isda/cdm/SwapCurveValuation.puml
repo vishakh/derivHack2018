@@ -1,0 +1,13 @@
+@startuml
+
+    class SwapCurveValuation [[SwapCurveValuation.html]] {
+        +getFloatingRateIndex(): FloatingRateIndexEnum
+        +getIndexTenor(): Period
+        +getSide(): QuotationSideEnum
+        +getSpread(): BigDecimal
+        +toBuilder(): SwapCurveValuation.SwapCurveValuationBuilder
+        {static} +builder(): SwapCurveValuation.SwapCurveValuationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

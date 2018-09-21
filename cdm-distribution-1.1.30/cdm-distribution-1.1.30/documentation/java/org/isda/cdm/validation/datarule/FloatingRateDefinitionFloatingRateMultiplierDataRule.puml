@@ -1,0 +1,7 @@
+@startuml
+
+    class FloatingRateDefinitionFloatingRateMultiplierDataRule [[FloatingRateDefinitionFloatingRateMultiplierDataRule.html]] {
+        +validate(FloatingRateDefinition): ValidationResult<FloatingRateDefinition>
+    }
+
+@enduml

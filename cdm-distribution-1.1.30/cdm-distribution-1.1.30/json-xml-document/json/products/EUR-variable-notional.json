@@ -1,0 +1,367 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "UNKNOWN",
+      "identifierScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/trade-id"
+    },
+    "partyReference" : "party1"
+  }, {
+    "identifierValue" : {
+      "identifier" : "LCH00023655407",
+      "identifierScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/trade-id"
+    },
+    "partyReference" : "party2"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1,
+              "rollConvention" : "_2"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2012-09-02"
+              }
+            },
+            "id" : "fixedCalcPeriodDates1",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "EUTA" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2020-09-02"
+            }
+          },
+          "dayCountFraction" : "_30_360",
+          "id" : "fixedLeg1",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.06779467,
+              "step" : [ {
+                "stepDate" : "2012-09-02",
+                "stepValue" : 0.025
+              }, {
+                "stepDate" : "2013-09-02",
+                "stepValue" : 0.025
+              }, {
+                "stepDate" : "2014-09-02",
+                "stepValue" : 0.025
+              }, {
+                "stepDate" : "2015-09-02",
+                "stepValue" : 0.025
+              }, {
+                "stepDate" : "2016-09-02",
+                "stepValue" : 0.025
+              }, {
+                "stepDate" : "2017-09-02",
+                "stepValue" : 0.025
+              }, {
+                "stepDate" : "2018-09-02",
+                "stepValue" : 0.025
+              }, {
+                "stepDate" : "2019-09-02",
+                "stepValue" : 0.025
+              } ]
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party2",
+            "receiverPartyReference" : "party1"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "fixedCalcPeriodDates1",
+            "id" : "paymentDates1",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 1000000,
+                "step" : [ {
+                  "stepDate" : "2012-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2013-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2014-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2015-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2016-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2017-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2018-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2019-09-02",
+                  "stepValue" : 100
+                } ],
+                "currency" : "EUR"
+              }
+            }
+          },
+          "rosettaKeyValue" : "238574a"
+        }, {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6,
+              "rollConvention" : "_2"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2012-09-02"
+              }
+            },
+            "id" : "floatingCalcPeriodDates2",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "EUTA" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2020-09-02"
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "id" : "floatingLeg2",
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "EUR_LIBOR_BBA",
+              "indexTenor" : {
+                "period" : "M",
+                "periodMultiplier" : 6
+              },
+              "spreadSchedule" : [ {
+                "initialValue" : 0,
+                "step" : [ {
+                  "stepDate" : "2012-09-02",
+                  "stepValue" : 0.00025
+                }, {
+                  "stepDate" : "2013-03-02",
+                  "stepValue" : 0.00025
+                }, {
+                  "stepDate" : "2013-09-02",
+                  "stepValue" : 0.00023
+                }, {
+                  "stepDate" : "2014-03-02",
+                  "stepValue" : 0.00023
+                }, {
+                  "stepDate" : "2014-09-02",
+                  "stepValue" : 0.00023
+                }, {
+                  "stepDate" : "2015-03-02",
+                  "stepValue" : 0.00023
+                }, {
+                  "stepDate" : "2015-09-02",
+                  "stepValue" : 0.00021
+                }, {
+                  "stepDate" : "2016-03-02",
+                  "stepValue" : 0.00021
+                }, {
+                  "stepDate" : "2016-09-02",
+                  "stepValue" : 0.00015
+                }, {
+                  "stepDate" : "2017-03-02",
+                  "stepValue" : 0.00015
+                }, {
+                  "stepDate" : "2017-09-02",
+                  "stepValue" : 0.00013
+                }, {
+                  "stepDate" : "2018-03-02",
+                  "stepValue" : 0.00013
+                }, {
+                  "stepDate" : "2018-09-02",
+                  "stepValue" : 0.00012
+                }, {
+                  "stepDate" : "2019-03-02",
+                  "stepValue" : 0.00012
+                }, {
+                  "stepDate" : "2019-09-02",
+                  "stepValue" : 0.00012
+                }, {
+                  "stepDate" : "2020-03-02",
+                  "stepValue" : 0
+                } ]
+              } ]
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party1",
+            "receiverPartyReference" : "party2"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates2",
+            "id" : "paymentDates2",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 1000000,
+                "step" : [ {
+                  "stepDate" : "2012-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2013-03-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2013-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2014-03-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2014-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2015-03-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2015-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2016-03-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2016-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2017-03-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2017-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2018-03-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2018-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2019-03-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2019-09-02",
+                  "stepValue" : 100
+                }, {
+                  "stepDate" : "2020-03-02",
+                  "stepValue" : 100
+                } ],
+                "currency" : "EUR"
+              }
+            }
+          },
+          "resetDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates2",
+            "fixingDates" : {
+              "period" : "D",
+              "periodMultiplier" : -2,
+              "dayType" : "BUSINESS",
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "EUTA" ]
+              },
+              "businessDayConvention" : "NONE",
+              "dateRelativeTo" : "resetDates2"
+            },
+            "id" : "resetDates2",
+            "resetDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "resetFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            },
+            "resetRelativeTo" : "CALCULATION_PERIOD_START_DATE"
+          },
+          "rosettaKeyValue" : "25ff75ff"
+        } ]
+      },
+      "rosettaKeyValue" : "dec1dbd7"
+    },
+    "productIdentification" : {
+      "primaryAssetClass" : "INTEREST_RATE",
+      "productId" : [ "InterestRate:IRSwap:FixedFloat" ],
+      "productIdScheme" : "http://www.fpml.org/coding-scheme/product-taxonomy",
+      "productQualifier" : "InterestRate_IRSwap_FixedFloat",
+      "productType" : [ "InterestRate:IRSwap:FixedFloat" ],
+      "productTypeScheme" : "http://www.fpml.org/coding-scheme/product-taxonomy",
+      "secondaryAssetClassScheme" : "http://www.fpml.org/coding-scheme/asset-class-simple"
+    }
+  },
+  "documentation" : {
+    "contractualDefinitions" : [ "ISDA2006" ],
+    "contractualDefinitionsScheme" : "http://www.fpml.org/coding-scheme/contractual-definitions",
+    "masterAgreement" : {
+      "masterAgreementType" : "ISDA",
+      "masterAgreementTypeScheme" : "http://www.fpml.org/coding-scheme/master-agreement-type"
+    }
+  },
+  "party" : [ {
+    "id" : "party1",
+    "partyId" : [ "COUNTERPARTY" ],
+    "partyIdScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/party-id"
+  }, {
+    "id" : "party2",
+    "partyId" : [ "LCHLGB22XXX" ],
+    "partyIdScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/party-id"
+  } ],
+  "tradeDate" : {
+    "date" : "2018-01-30"
+  },
+  "rosettaKey" : "ec535d90"
+}

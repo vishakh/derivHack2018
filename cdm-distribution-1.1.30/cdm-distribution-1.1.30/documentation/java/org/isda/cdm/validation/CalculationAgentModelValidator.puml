@@ -1,0 +1,7 @@
+@startuml
+
+    class CalculationAgentModelValidator [[CalculationAgentModelValidator.html]] {
+        +validate(CalculationAgentModel): ValidationResult<CalculationAgentModel>
+    }
+
+@enduml

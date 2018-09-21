@@ -1,0 +1,7 @@
+@startuml
+
+    class FutureValueAmountNonNegativeAmountDataRule [[FutureValueAmountNonNegativeAmountDataRule.html]] {
+        +validate(FutureValueAmount): ValidationResult<FutureValueAmount>
+    }
+
+@enduml

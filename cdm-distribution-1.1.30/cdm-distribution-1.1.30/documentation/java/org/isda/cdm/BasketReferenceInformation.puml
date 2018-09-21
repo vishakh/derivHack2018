@@ -1,0 +1,16 @@
+@startuml
+
+    class BasketReferenceInformation [[BasketReferenceInformation.html]] {
+        +getBasketId(): List<String>
+        +getBasketIdScheme(): String
+        +getBasketName(): BasketName
+        +getMthToDefault(): Integer
+        +getNthToDefault(): Integer
+        +getReferencePool(): ReferencePool
+        +getTranche(): Tranche
+        +toBuilder(): BasketReferenceInformation.BasketReferenceInformationBuilder
+        {static} +builder(): BasketReferenceInformation.BasketReferenceInformationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

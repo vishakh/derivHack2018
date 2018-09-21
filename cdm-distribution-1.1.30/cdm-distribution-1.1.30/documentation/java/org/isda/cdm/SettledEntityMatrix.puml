@@ -1,0 +1,12 @@
+@startuml
+
+    class SettledEntityMatrix [[SettledEntityMatrix.html]] {
+        +getMatrixSource(): SettledEntityMatrixSourceEnum
+        +getMatrixSourceScheme(): String
+        +getPublicationDate(): LocalDate
+        +toBuilder(): SettledEntityMatrix.SettledEntityMatrixBuilder
+        {static} +builder(): SettledEntityMatrix.SettledEntityMatrixBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

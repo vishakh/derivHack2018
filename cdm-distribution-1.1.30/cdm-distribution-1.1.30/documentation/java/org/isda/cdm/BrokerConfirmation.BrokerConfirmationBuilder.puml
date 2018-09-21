@@ -1,0 +1,11 @@
+@startuml
+
+    class BrokerConfirmation.BrokerConfirmationBuilder [[BrokerConfirmation.BrokerConfirmationBuilder.html]] {
+        +getBrokerConfirmationType(): BrokerConfirmationTypeEnum
+        +getBrokerConfirmationTypeScheme(): String
+        +setBrokerConfirmationType(BrokerConfirmationTypeEnum): BrokerConfirmation.BrokerConfirmationBuilder
+        +setBrokerConfirmationTypeScheme(String): BrokerConfirmation.BrokerConfirmationBuilder
+        +build(): BrokerConfirmation
+    }
+
+@enduml

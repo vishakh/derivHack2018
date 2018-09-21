@@ -1,0 +1,7 @@
+@startuml
+
+    class ResetFrequencyNotWeeklyDataRule [[ResetFrequencyNotWeeklyDataRule.html]] {
+        +validate(ResetDates): ValidationResult<ResetDates>
+    }
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+
+    enum SettlementTypeEnum [[SettlementTypeEnum.html]] {
+        {static} +CASH
+        {static} +PHYSICAL
+        {static} +ELECTION
+        {static} +CASH_OR_PHYSICAL
+    }
+
+@enduml

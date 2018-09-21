@@ -1,0 +1,7 @@
+@startuml
+
+    class FirstRegularPeriodStartDateInitialStubDataRule [[FirstRegularPeriodStartDateInitialStubDataRule.html]] {
+        +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+    }
+
+@enduml

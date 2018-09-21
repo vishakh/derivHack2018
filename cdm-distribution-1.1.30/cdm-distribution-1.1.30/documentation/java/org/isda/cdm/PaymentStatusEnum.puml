@@ -1,0 +1,10 @@
+@startuml
+
+    enum PaymentStatusEnum [[PaymentStatusEnum.html]] {
+        {static} +DISPUTED
+        {static} +INSTRUCTED
+        {static} +PENDING
+        {static} +SETTLED
+    }
+
+@enduml

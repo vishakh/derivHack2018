@@ -1,0 +1,15 @@
+@startuml
+
+    class AveragingSchedule.AveragingScheduleBuilder [[AveragingSchedule.AveragingScheduleBuilder.html]] {
+        +getAveragingPeriodFrequency(): CalculationPeriodFrequency.CalculationPeriodFrequencyBuilder
+        +getOrCreateAveragingPeriodFrequency(): CalculationPeriodFrequency.CalculationPeriodFrequencyBuilder
+        +getEndDate(): LocalDate
+        +getStartDate(): LocalDate
+        +setAveragingPeriodFrequency(CalculationPeriodFrequency): AveragingSchedule.AveragingScheduleBuilder
+        +setAveragingPeriodFrequencyBuilder(CalculationPeriodFrequency.CalculationPeriodFrequencyBuilder): AveragingSchedule.AveragingScheduleBuilder
+        +setEndDate(LocalDate): AveragingSchedule.AveragingScheduleBuilder
+        +setStartDate(LocalDate): AveragingSchedule.AveragingScheduleBuilder
+        +build(): AveragingSchedule
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class StrikeSchedule.StrikeScheduleBuilder [[StrikeSchedule.StrikeScheduleBuilder.html]] {
+        +getBuyer(): PayerReceiverEnum
+        +getSeller(): PayerReceiverEnum
+        +setBuyer(PayerReceiverEnum): StrikeSchedule.StrikeScheduleBuilder
+        +setSeller(PayerReceiverEnum): StrikeSchedule.StrikeScheduleBuilder
+        +build(): StrikeSchedule
+    }
+
+@enduml

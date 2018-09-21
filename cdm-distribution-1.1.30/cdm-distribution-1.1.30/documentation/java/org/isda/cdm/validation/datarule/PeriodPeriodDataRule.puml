@@ -1,0 +1,7 @@
+@startuml
+
+    class PeriodPeriodDataRule [[PeriodPeriodDataRule.html]] {
+        +validate(Period): ValidationResult<Period>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class AdditionalFixedPaymentsMeta [[AdditionalFixedPaymentsMeta.html]] {
+        +dataRules(): List<Validator<AdditionalFixedPayments>>
+        +choiceRuleValidators(): List<Validator<AdditionalFixedPayments>>
+        +getOutMappings(): Multimap<String, OutMapping<AdditionalFixedPayments, ?>>
+        +getQualifyFunctions(): List<Function<AdditionalFixedPayments, QualifyResult>>
+        +validator(): Validator<AdditionalFixedPayments>
+        +onlyExistsValidator(): ValidatorWithArg<AdditionalFixedPayments, String>
+    }
+
+@enduml

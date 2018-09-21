@@ -1,0 +1,9 @@
+@startuml
+
+    class DaysInPeriod.CalculationResult [[DaysInPeriod.CalculationResult.html]] {
+        +getDays(): Integer
+        +setDays(Integer): DaysInPeriod.CalculationResult
+        +getAttributes(): List<IResult.Attribute<?>>
+    }
+
+@enduml

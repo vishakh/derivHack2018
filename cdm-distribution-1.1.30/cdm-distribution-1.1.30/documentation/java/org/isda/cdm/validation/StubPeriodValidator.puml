@@ -1,0 +1,7 @@
+@startuml
+
+    class StubPeriodValidator [[StubPeriodValidator.html]] {
+        +validate(StubPeriod): ValidationResult<StubPeriod>
+    }
+
+@enduml

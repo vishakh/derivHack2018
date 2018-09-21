@@ -1,0 +1,10 @@
+@startuml
+
+    class Offset [[Offset.html]] {
+        +getDayType(): DayTypeEnum
+        +toBuilder(): Offset.OffsetBuilder
+        {static} +builder(): Offset.OffsetBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

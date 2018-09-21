@@ -1,0 +1,17 @@
+@startuml
+
+    class CreditEventNotice.CreditEventNoticeBuilder [[CreditEventNotice.CreditEventNoticeBuilder.html]] {
+        +getBusinessCenter(): BusinessCenterEnum
+        +getNotifyingParty(): NotifyingParty.NotifyingPartyBuilder
+        +getOrCreateNotifyingParty(): NotifyingParty.NotifyingPartyBuilder
+        +getPubliclyAvailableInformation(): PubliclyAvailableInformation.PubliclyAvailableInformationBuilder
+        +getOrCreatePubliclyAvailableInformation(): PubliclyAvailableInformation.PubliclyAvailableInformationBuilder
+        +setBusinessCenter(BusinessCenterEnum): CreditEventNotice.CreditEventNoticeBuilder
+        +setNotifyingParty(NotifyingParty): CreditEventNotice.CreditEventNoticeBuilder
+        +setNotifyingPartyBuilder(NotifyingParty.NotifyingPartyBuilder): CreditEventNotice.CreditEventNoticeBuilder
+        +setPubliclyAvailableInformation(PubliclyAvailableInformation): CreditEventNotice.CreditEventNoticeBuilder
+        +setPubliclyAvailableInformationBuilder(PubliclyAvailableInformation.PubliclyAvailableInformationBuilder): CreditEventNotice.CreditEventNoticeBuilder
+        +build(): CreditEventNotice
+    }
+
+@enduml

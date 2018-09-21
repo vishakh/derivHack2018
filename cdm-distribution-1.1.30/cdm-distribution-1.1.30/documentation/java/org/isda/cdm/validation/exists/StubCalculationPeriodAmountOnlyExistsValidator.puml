@@ -1,0 +1,7 @@
+@startuml
+
+    class StubCalculationPeriodAmountOnlyExistsValidator [[StubCalculationPeriodAmountOnlyExistsValidator.html]] {
+        +validate(StubCalculationPeriodAmount, String): ValidationResult<StubCalculationPeriodAmount>
+    }
+
+@enduml

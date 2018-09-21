@@ -1,0 +1,11 @@
+@startuml
+
+    class DateRange [[DateRange.html]] {
+        +getUnadjustedFirstDate(): LocalDate
+        +getUnadjustedLastDate(): LocalDate
+        +toBuilder(): DateRange.DateRangeBuilder
+        {static} +builder(): DateRange.DateRangeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

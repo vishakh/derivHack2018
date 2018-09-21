@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionPhysicalSettlementOnlyExistsValidator [[OptionPhysicalSettlementOnlyExistsValidator.html]] {
+        +validate(OptionPhysicalSettlement, String): ValidationResult<OptionPhysicalSettlement>
+    }
+
+@enduml

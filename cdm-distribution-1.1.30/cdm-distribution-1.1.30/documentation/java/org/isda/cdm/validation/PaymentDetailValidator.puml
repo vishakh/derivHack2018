@@ -1,0 +1,7 @@
+@startuml
+
+    class PaymentDetailValidator [[PaymentDetailValidator.html]] {
+        +validate(PaymentDetail): ValidationResult<PaymentDetail>
+    }
+
+@enduml

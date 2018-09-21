@@ -1,0 +1,15 @@
+@startuml
+
+    class Trigger [[Trigger.html]] {
+        +getCreditEvents(): CreditEvents
+        +getCreditEventsReference(): String
+        +getLevel(): BigDecimal
+        +getLevelPercentage(): BigDecimal
+        +getTriggerTimeType(): TriggerTimeTypeEnum
+        +getTriggerType(): TriggerTypeEnum
+        +toBuilder(): Trigger.TriggerBuilder
+        {static} +builder(): Trigger.TriggerBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

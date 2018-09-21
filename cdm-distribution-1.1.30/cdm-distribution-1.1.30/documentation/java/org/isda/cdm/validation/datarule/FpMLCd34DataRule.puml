@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLCd34DataRule [[FpMLCd34DataRule.html]] {
+        +validate(DeliverableObligations): ValidationResult<DeliverableObligations>
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class PhysicalSettlementPeriod.PhysicalSettlementPeriodBuilder [[PhysicalSettlementPeriod.PhysicalSettlementPeriodBuilder.html]] {
+        +getBusinessDays(): Integer
+        +getBusinessDaysNotSpecified(): Boolean
+        +getMaximumBusinessDays(): Integer
+        +setBusinessDays(Integer): PhysicalSettlementPeriod.PhysicalSettlementPeriodBuilder
+        +setBusinessDaysNotSpecified(Boolean): PhysicalSettlementPeriod.PhysicalSettlementPeriodBuilder
+        +setMaximumBusinessDays(Integer): PhysicalSettlementPeriod.PhysicalSettlementPeriodBuilder
+        +build(): PhysicalSettlementPeriod
+    }
+
+@enduml

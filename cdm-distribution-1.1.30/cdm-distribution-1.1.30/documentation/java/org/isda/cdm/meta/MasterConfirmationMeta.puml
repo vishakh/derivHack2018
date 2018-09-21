@@ -1,0 +1,12 @@
+@startuml
+
+    class MasterConfirmationMeta [[MasterConfirmationMeta.html]] {
+        +dataRules(): List<Validator<MasterConfirmation>>
+        +choiceRuleValidators(): List<Validator<MasterConfirmation>>
+        +getOutMappings(): Multimap<String, OutMapping<MasterConfirmation, ?>>
+        +getQualifyFunctions(): List<Function<MasterConfirmation, QualifyResult>>
+        +validator(): Validator<MasterConfirmation>
+        +onlyExistsValidator(): ValidatorWithArg<MasterConfirmation, String>
+    }
+
+@enduml

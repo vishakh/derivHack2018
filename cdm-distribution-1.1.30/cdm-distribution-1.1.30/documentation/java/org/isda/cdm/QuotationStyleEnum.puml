@@ -1,0 +1,9 @@
+@startuml
+
+    enum QuotationStyleEnum [[QuotationStyleEnum.html]] {
+        {static} +POINTS_UP_FRONT
+        {static} +TRADED_SPREAD
+        {static} +PRICE
+    }
+
+@enduml

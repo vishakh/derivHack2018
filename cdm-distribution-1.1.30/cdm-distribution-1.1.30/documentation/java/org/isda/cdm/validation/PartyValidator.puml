@@ -1,0 +1,7 @@
+@startuml
+
+    class PartyValidator [[PartyValidator.html]] {
+        +validate(Party): ValidationResult<Party>
+    }
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+
+    class OptionStrike [[OptionStrike.html]] {
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +getPercentage(): BigDecimal
+        +getPrice(): BigDecimal
+        +getReferenceSwapCurve(): ReferenceSwapCurve
+        +getSpread(): BigDecimal
+        +getStrikeReference(): String
+        +toBuilder(): OptionStrike.OptionStrikeBuilder
+        {static} +builder(): OptionStrike.OptionStrikeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

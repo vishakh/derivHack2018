@@ -1,0 +1,12 @@
+@startuml
+
+    class LineageMeta [[LineageMeta.html]] {
+        +dataRules(): List<Validator<Lineage>>
+        +choiceRuleValidators(): List<Validator<Lineage>>
+        +getOutMappings(): Multimap<String, OutMapping<Lineage, ?>>
+        +getQualifyFunctions(): List<Function<Lineage, QualifyResult>>
+        +validator(): Validator<Lineage>
+        +onlyExistsValidator(): ValidatorWithArg<Lineage, String>
+    }
+
+@enduml

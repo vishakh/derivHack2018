@@ -1,0 +1,10 @@
+@startuml
+
+    class ReferencePool [[ReferencePool.html]] {
+        +getReferencePoolItem(): List<ReferencePoolItem>
+        +toBuilder(): ReferencePool.ReferencePoolBuilder
+        {static} +builder(): ReferencePool.ReferencePoolBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

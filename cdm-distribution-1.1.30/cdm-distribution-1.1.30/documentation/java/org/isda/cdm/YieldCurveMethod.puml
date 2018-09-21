@@ -1,0 +1,11 @@
+@startuml
+
+    class YieldCurveMethod [[YieldCurveMethod.html]] {
+        +getQuotationRateType(): QuotationRateTypeEnum
+        +getSettlementRateSource(): SettlementRateSource
+        +toBuilder(): YieldCurveMethod.YieldCurveMethodBuilder
+        {static} +builder(): YieldCurveMethod.YieldCurveMethodBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

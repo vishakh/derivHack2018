@@ -1,0 +1,7 @@
+@startuml
+
+    class EquityAsset.EquityAssetBuilder [[EquityAsset.EquityAssetBuilder.html]] {
+        +build(): EquityAsset
+    }
+
+@enduml

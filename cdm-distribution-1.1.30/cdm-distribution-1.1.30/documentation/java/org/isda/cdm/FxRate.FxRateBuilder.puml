@@ -1,0 +1,13 @@
+@startuml
+
+    class FxRate.FxRateBuilder [[FxRate.FxRateBuilder.html]] {
+        +getQuotedCurrencyPair(): QuotedCurrencyPair.QuotedCurrencyPairBuilder
+        +getOrCreateQuotedCurrencyPair(): QuotedCurrencyPair.QuotedCurrencyPairBuilder
+        +getRate(): BigDecimal
+        +setQuotedCurrencyPair(QuotedCurrencyPair): FxRate.FxRateBuilder
+        +setQuotedCurrencyPairBuilder(QuotedCurrencyPair.QuotedCurrencyPairBuilder): FxRate.FxRateBuilder
+        +setRate(BigDecimal): FxRate.FxRateBuilder
+        +build(): FxRate
+    }
+
+@enduml

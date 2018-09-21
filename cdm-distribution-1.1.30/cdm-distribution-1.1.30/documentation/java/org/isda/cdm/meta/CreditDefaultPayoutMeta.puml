@@ -1,0 +1,12 @@
+@startuml
+
+    class CreditDefaultPayoutMeta [[CreditDefaultPayoutMeta.html]] {
+        +dataRules(): List<Validator<CreditDefaultPayout>>
+        +choiceRuleValidators(): List<Validator<CreditDefaultPayout>>
+        +getOutMappings(): Multimap<String, OutMapping<CreditDefaultPayout, ?>>
+        +getQualifyFunctions(): List<Function<CreditDefaultPayout, QualifyResult>>
+        +validator(): Validator<CreditDefaultPayout>
+        +onlyExistsValidator(): ValidatorWithArg<CreditDefaultPayout, String>
+    }
+
+@enduml

@@ -1,0 +1,37 @@
+@startuml
+
+    class CancelableProvision.CancelableProvisionBuilder [[CancelableProvision.CancelableProvisionBuilder.html]] {
+        +getAmericanExercise(): AmericanExercise.AmericanExerciseBuilder
+        +getOrCreateAmericanExercise(): AmericanExercise.AmericanExerciseBuilder
+        +getBermudaExercise(): BermudaExercise.BermudaExerciseBuilder
+        +getOrCreateBermudaExercise(): BermudaExercise.BermudaExerciseBuilder
+        +getCancelableProvisionAdjustedDates(): CancelableProvisionAdjustedDates.CancelableProvisionAdjustedDatesBuilder
+        +getOrCreateCancelableProvisionAdjustedDates(): CancelableProvisionAdjustedDates.CancelableProvisionAdjustedDatesBuilder
+        +getEuropeanExercise(): EuropeanExercise.EuropeanExerciseBuilder
+        +getOrCreateEuropeanExercise(): EuropeanExercise.EuropeanExerciseBuilder
+        +getExerciseNotice(): ExerciseNotice.ExerciseNoticeBuilder
+        +getOrCreateExerciseNotice(): ExerciseNotice.ExerciseNoticeBuilder
+        +getFinalCalculationPeriodDateAdjustment(): List<FinalCalculationPeriodDateAdjustment.FinalCalculationPeriodDateAdjustmentBuilder>
+        +getOrCreateFinalCalculationPeriodDateAdjustment(int): FinalCalculationPeriodDateAdjustment.FinalCalculationPeriodDateAdjustmentBuilder
+        +getFollowUpConfirmation(): Boolean
+        +getInitialFee(): SimplePayment.SimplePaymentBuilder
+        +getOrCreateInitialFee(): SimplePayment.SimplePaymentBuilder
+        +setAmericanExercise(AmericanExercise): CancelableProvision.CancelableProvisionBuilder
+        +setAmericanExerciseBuilder(AmericanExercise.AmericanExerciseBuilder): CancelableProvision.CancelableProvisionBuilder
+        +setBermudaExercise(BermudaExercise): CancelableProvision.CancelableProvisionBuilder
+        +setBermudaExerciseBuilder(BermudaExercise.BermudaExerciseBuilder): CancelableProvision.CancelableProvisionBuilder
+        +setCancelableProvisionAdjustedDates(CancelableProvisionAdjustedDates): CancelableProvision.CancelableProvisionBuilder
+        +setCancelableProvisionAdjustedDatesBuilder(CancelableProvisionAdjustedDates.CancelableProvisionAdjustedDatesBuilder): CancelableProvision.CancelableProvisionBuilder
+        +setEuropeanExercise(EuropeanExercise): CancelableProvision.CancelableProvisionBuilder
+        +setEuropeanExerciseBuilder(EuropeanExercise.EuropeanExerciseBuilder): CancelableProvision.CancelableProvisionBuilder
+        +setExerciseNotice(ExerciseNotice): CancelableProvision.CancelableProvisionBuilder
+        +setExerciseNoticeBuilder(ExerciseNotice.ExerciseNoticeBuilder): CancelableProvision.CancelableProvisionBuilder
+        +addFinalCalculationPeriodDateAdjustment(FinalCalculationPeriodDateAdjustment): CancelableProvision.CancelableProvisionBuilder
+        +addFinalCalculationPeriodDateAdjustmentBuilder(FinalCalculationPeriodDateAdjustment.FinalCalculationPeriodDateAdjustmentBuilder): CancelableProvision.CancelableProvisionBuilder
+        +setFollowUpConfirmation(Boolean): CancelableProvision.CancelableProvisionBuilder
+        +setInitialFee(SimplePayment): CancelableProvision.CancelableProvisionBuilder
+        +setInitialFeeBuilder(SimplePayment.SimplePaymentBuilder): CancelableProvision.CancelableProvisionBuilder
+        +build(): CancelableProvision
+    }
+
+@enduml

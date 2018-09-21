@@ -1,0 +1,17 @@
+@startuml
+
+    class ExerciseFee.ExerciseFeeBuilder [[ExerciseFee.ExerciseFeeBuilder.html]] {
+        +getFeeAmount(): BigDecimal
+        +getFeePaymentDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getOrCreateFeePaymentDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getFeeRate(): BigDecimal
+        +getNotionalReference(): String
+        +setFeeAmount(BigDecimal): ExerciseFee.ExerciseFeeBuilder
+        +setFeePaymentDate(RelativeDateOffset): ExerciseFee.ExerciseFeeBuilder
+        +setFeePaymentDateBuilder(RelativeDateOffset.RelativeDateOffsetBuilder): ExerciseFee.ExerciseFeeBuilder
+        +setFeeRate(BigDecimal): ExerciseFee.ExerciseFeeBuilder
+        +setNotionalReference(String): ExerciseFee.ExerciseFeeBuilder
+        +build(): ExerciseFee
+    }
+
+@enduml

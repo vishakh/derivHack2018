@@ -1,0 +1,7 @@
+@startuml
+
+    class PackageInformationOnlyExistsValidator [[PackageInformationOnlyExistsValidator.html]] {
+        +validate(PackageInformation, String): ValidationResult<PackageInformation>
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class ComputedAmount [[ComputedAmount.html]] {
+        +getAmount(): BigDecimal
+        +getCallFunction(): String
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +toBuilder(): ComputedAmount.ComputedAmountBuilder
+        {static} +builder(): ComputedAmount.ComputedAmountBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

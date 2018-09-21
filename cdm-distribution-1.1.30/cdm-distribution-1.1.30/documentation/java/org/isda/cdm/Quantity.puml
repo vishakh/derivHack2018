@@ -1,0 +1,11 @@
+@startuml
+
+    class Quantity [[Quantity.html]] {
+        +getAmount(): BigDecimal
+        +getUnit(): UnitEnum
+        +toBuilder(): Quantity.QuantityBuilder
+        {static} +builder(): Quantity.QuantityBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

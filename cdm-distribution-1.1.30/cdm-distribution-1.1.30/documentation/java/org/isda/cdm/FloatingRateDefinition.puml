@@ -1,0 +1,15 @@
+@startuml
+
+    class FloatingRateDefinition [[FloatingRateDefinition.html]] {
+        +getCalculatedRate(): BigDecimal
+        +getCapRate(): List<Strike>
+        +getFloatingRateMultiplier(): BigDecimal
+        +getFloorRate(): List<Strike>
+        +getRateObservation(): List<RateObservation>
+        +getSpread(): BigDecimal
+        +toBuilder(): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        {static} +builder(): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

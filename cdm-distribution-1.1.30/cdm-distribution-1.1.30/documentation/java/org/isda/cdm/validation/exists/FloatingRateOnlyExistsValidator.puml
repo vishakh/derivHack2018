@@ -1,0 +1,7 @@
+@startuml
+
+    class FloatingRateOnlyExistsValidator [[FloatingRateOnlyExistsValidator.html]] {
+        +validate(FloatingRate, String): ValidationResult<FloatingRate>
+    }
+
+@enduml

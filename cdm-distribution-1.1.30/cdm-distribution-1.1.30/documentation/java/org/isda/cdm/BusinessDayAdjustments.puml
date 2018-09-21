@@ -1,0 +1,12 @@
+@startuml
+
+    class BusinessDayAdjustments [[BusinessDayAdjustments.html]] {
+        +getBusinessCenters(): BusinessCenters
+        +getBusinessDayConvention(): BusinessDayConventionEnum
+        +getId(): String
+        +toBuilder(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        {static} +builder(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

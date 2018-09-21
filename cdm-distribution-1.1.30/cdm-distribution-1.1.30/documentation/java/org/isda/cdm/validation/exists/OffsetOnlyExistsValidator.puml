@@ -1,0 +1,7 @@
+@startuml
+
+    class OffsetOnlyExistsValidator [[OffsetOnlyExistsValidator.html]] {
+        +validate(Offset, String): ValidationResult<Offset>
+    }
+
+@enduml

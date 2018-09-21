@@ -1,0 +1,7 @@
+@startuml
+
+    class CashflowBaseValidator [[CashflowBaseValidator.html]] {
+        +validate(CashflowBase): ValidationResult<CashflowBase>
+    }
+
+@enduml

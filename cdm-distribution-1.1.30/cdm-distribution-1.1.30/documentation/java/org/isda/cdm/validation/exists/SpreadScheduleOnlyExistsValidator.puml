@@ -1,0 +1,7 @@
+@startuml
+
+    class SpreadScheduleOnlyExistsValidator [[SpreadScheduleOnlyExistsValidator.html]] {
+        +validate(SpreadSchedule, String): ValidationResult<SpreadSchedule>
+    }
+
+@enduml

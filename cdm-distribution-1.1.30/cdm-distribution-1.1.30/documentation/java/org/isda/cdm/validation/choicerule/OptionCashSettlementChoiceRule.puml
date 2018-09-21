@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionCashSettlementChoiceRule [[OptionCashSettlementChoiceRule.html]] {
+        +validate(OptionCashSettlement): ValidationResult<OptionCashSettlement>
+    }
+
+@enduml

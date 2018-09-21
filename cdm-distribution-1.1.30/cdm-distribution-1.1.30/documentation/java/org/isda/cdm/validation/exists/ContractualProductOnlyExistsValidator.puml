@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractualProductOnlyExistsValidator [[ContractualProductOnlyExistsValidator.html]] {
+        +validate(ContractualProduct, String): ValidationResult<ContractualProduct>
+    }
+
+@enduml

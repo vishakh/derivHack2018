@@ -1,0 +1,7 @@
+@startuml
+
+    class ProductIdentifierOnlyExistsValidator [[ProductIdentifierOnlyExistsValidator.html]] {
+        +validate(ProductIdentifier, String): ValidationResult<ProductIdentifier>
+    }
+
+@enduml

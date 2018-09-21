@@ -1,0 +1,15 @@
+@startuml
+
+    class EventTestBundle.EventTestBundleBuilder [[EventTestBundle.EventTestBundleBuilder.html]] {
+        +getComputedAmount(): List<ComputedAmount.ComputedAmountBuilder>
+        +getOrCreateComputedAmount(int): ComputedAmount.ComputedAmountBuilder
+        +getEvent(): List<Event.EventBuilder>
+        +getOrCreateEvent(int): Event.EventBuilder
+        +addComputedAmount(ComputedAmount): EventTestBundle.EventTestBundleBuilder
+        +addComputedAmountBuilder(ComputedAmount.ComputedAmountBuilder): EventTestBundle.EventTestBundleBuilder
+        +addEvent(Event): EventTestBundle.EventTestBundleBuilder
+        +addEventBuilder(Event.EventBuilder): EventTestBundle.EventTestBundleBuilder
+        +build(): EventTestBundle
+    }
+
+@enduml

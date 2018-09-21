@@ -1,0 +1,7 @@
+@startuml
+
+    class ReferenceObligationValidator [[ReferenceObligationValidator.html]] {
+        +validate(ReferenceObligation): ValidationResult<ReferenceObligation>
+    }
+
+@enduml

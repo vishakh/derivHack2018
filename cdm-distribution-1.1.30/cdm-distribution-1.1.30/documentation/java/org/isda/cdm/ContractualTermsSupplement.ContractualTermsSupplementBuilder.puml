@@ -1,0 +1,13 @@
+@startuml
+
+    class ContractualTermsSupplement.ContractualTermsSupplementBuilder [[ContractualTermsSupplement.ContractualTermsSupplementBuilder.html]] {
+        +getPublicationDate(): LocalDate
+        +getType(): ContractualSupplementEnum
+        +getTypeScheme(): String
+        +setPublicationDate(LocalDate): ContractualTermsSupplement.ContractualTermsSupplementBuilder
+        +setType(ContractualSupplementEnum): ContractualTermsSupplement.ContractualTermsSupplementBuilder
+        +setTypeScheme(String): ContractualTermsSupplement.ContractualTermsSupplementBuilder
+        +build(): ContractualTermsSupplement
+    }
+
+@enduml

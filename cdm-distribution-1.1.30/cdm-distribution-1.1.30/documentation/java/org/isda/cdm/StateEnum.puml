@@ -1,0 +1,10 @@
+@startuml
+
+    enum StateEnum [[StateEnum.html]] {
+        {static} +ALLOCATED
+        {static} +EXERCISED
+        {static} +NOVATED
+        {static} +TERMINATED
+    }
+
+@enduml

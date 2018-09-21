@@ -1,0 +1,14 @@
+@startuml
+
+    class FallbackReferencePrice [[FallbackReferencePrice.html]] {
+        +getCalculationAgenDetermination(): CalculationAgent
+        +getFallBackSettlementRateOption(): List<SettlementRateOptionEnum>
+        +getFallBackSettlementRateOptionScheme(): String
+        +getFallbackSurveyValuationPostponement(): Boolean
+        +getValuationPostponement(): ValuationPostponement
+        +toBuilder(): FallbackReferencePrice.FallbackReferencePriceBuilder
+        {static} +builder(): FallbackReferencePrice.FallbackReferencePriceBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class FloatingAmountProvisionsMeta [[FloatingAmountProvisionsMeta.html]] {
+        +dataRules(): List<Validator<FloatingAmountProvisions>>
+        +choiceRuleValidators(): List<Validator<FloatingAmountProvisions>>
+        +getOutMappings(): Multimap<String, OutMapping<FloatingAmountProvisions, ?>>
+        +getQualifyFunctions(): List<Function<FloatingAmountProvisions, QualifyResult>>
+        +validator(): Validator<FloatingAmountProvisions>
+        +onlyExistsValidator(): ValidatorWithArg<FloatingAmountProvisions, String>
+    }
+
+@enduml

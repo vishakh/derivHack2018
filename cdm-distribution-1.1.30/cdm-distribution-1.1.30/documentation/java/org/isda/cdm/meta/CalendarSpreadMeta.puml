@@ -1,0 +1,12 @@
+@startuml
+
+    class CalendarSpreadMeta [[CalendarSpreadMeta.html]] {
+        +dataRules(): List<Validator<CalendarSpread>>
+        +choiceRuleValidators(): List<Validator<CalendarSpread>>
+        +getOutMappings(): Multimap<String, OutMapping<CalendarSpread, ?>>
+        +getQualifyFunctions(): List<Function<CalendarSpread, QualifyResult>>
+        +validator(): Validator<CalendarSpread>
+        +onlyExistsValidator(): ValidatorWithArg<CalendarSpread, String>
+    }
+
+@enduml

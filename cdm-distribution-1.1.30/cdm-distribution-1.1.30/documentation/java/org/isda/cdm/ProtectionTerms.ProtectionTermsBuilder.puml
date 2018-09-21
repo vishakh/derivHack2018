@@ -1,0 +1,25 @@
+@startuml
+
+    class ProtectionTerms.ProtectionTermsBuilder [[ProtectionTerms.ProtectionTermsBuilder.html]] {
+        +getCreditEvents(): CreditEvents.CreditEventsBuilder
+        +getOrCreateCreditEvents(): CreditEvents.CreditEventsBuilder
+        +getFloatingAmountEvents(): FloatingAmountEvents.FloatingAmountEventsBuilder
+        +getOrCreateFloatingAmountEvents(): FloatingAmountEvents.FloatingAmountEventsBuilder
+        +getId(): String
+        +getNotionalAmount(): Money.MoneyBuilder
+        +getOrCreateNotionalAmount(): Money.MoneyBuilder
+        +getObligations(): Obligations.ObligationsBuilder
+        +getOrCreateObligations(): Obligations.ObligationsBuilder
+        +setCreditEvents(CreditEvents): ProtectionTerms.ProtectionTermsBuilder
+        +setCreditEventsBuilder(CreditEvents.CreditEventsBuilder): ProtectionTerms.ProtectionTermsBuilder
+        +setFloatingAmountEvents(FloatingAmountEvents): ProtectionTerms.ProtectionTermsBuilder
+        +setFloatingAmountEventsBuilder(FloatingAmountEvents.FloatingAmountEventsBuilder): ProtectionTerms.ProtectionTermsBuilder
+        +setId(String): ProtectionTerms.ProtectionTermsBuilder
+        +setNotionalAmount(Money): ProtectionTerms.ProtectionTermsBuilder
+        +setNotionalAmountBuilder(Money.MoneyBuilder): ProtectionTerms.ProtectionTermsBuilder
+        +setObligations(Obligations): ProtectionTerms.ProtectionTermsBuilder
+        +setObligationsBuilder(Obligations.ObligationsBuilder): ProtectionTerms.ProtectionTermsBuilder
+        +build(): ProtectionTerms
+    }
+
+@enduml

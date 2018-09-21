@@ -1,0 +1,15 @@
+@startuml
+
+    class TransferorTransferee.TransferorTransfereeBuilder [[TransferorTransferee.TransferorTransfereeBuilder.html]] {
+        +getTransfereeAccountReference(): String
+        +getTransfereePartyReference(): String
+        +getTransferorAccountReference(): String
+        +getTransferorPartyReference(): String
+        +setTransfereeAccountReference(String): TransferorTransferee.TransferorTransfereeBuilder
+        +setTransfereePartyReference(String): TransferorTransferee.TransferorTransfereeBuilder
+        +setTransferorAccountReference(String): TransferorTransferee.TransferorTransfereeBuilder
+        +setTransferorPartyReference(String): TransferorTransferee.TransferorTransfereeBuilder
+        +build(): TransferorTransferee
+    }
+
+@enduml

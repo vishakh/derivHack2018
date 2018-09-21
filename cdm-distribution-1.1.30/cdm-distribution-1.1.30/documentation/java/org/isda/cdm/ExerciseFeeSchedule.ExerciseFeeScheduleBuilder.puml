@@ -1,0 +1,21 @@
+@startuml
+
+    class ExerciseFeeSchedule.ExerciseFeeScheduleBuilder [[ExerciseFeeSchedule.ExerciseFeeScheduleBuilder.html]] {
+        +getFeeAmountSchedule(): AmountSchedule.AmountScheduleBuilder
+        +getOrCreateFeeAmountSchedule(): AmountSchedule.AmountScheduleBuilder
+        +getFeePaymentDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getOrCreateFeePaymentDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getFeeRateSchedule(): Schedule.ScheduleBuilder
+        +getOrCreateFeeRateSchedule(): Schedule.ScheduleBuilder
+        +getNotionalReference(): String
+        +setFeeAmountSchedule(AmountSchedule): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        +setFeeAmountScheduleBuilder(AmountSchedule.AmountScheduleBuilder): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        +setFeePaymentDate(RelativeDateOffset): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        +setFeePaymentDateBuilder(RelativeDateOffset.RelativeDateOffsetBuilder): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        +setFeeRateSchedule(Schedule): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        +setFeeRateScheduleBuilder(Schedule.ScheduleBuilder): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        +setNotionalReference(String): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        +build(): ExerciseFeeSchedule
+    }
+
+@enduml

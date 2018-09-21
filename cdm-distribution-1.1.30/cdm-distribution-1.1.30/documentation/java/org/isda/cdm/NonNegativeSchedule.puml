@@ -1,0 +1,12 @@
+@startuml
+
+    class NonNegativeSchedule [[NonNegativeSchedule.html]] {
+        +getId(): String
+        +getInitialValue(): BigDecimal
+        +getStep(): List<NonNegativeStep>
+        +toBuilder(): NonNegativeSchedule.NonNegativeScheduleBuilder
+        {static} +builder(): NonNegativeSchedule.NonNegativeScheduleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

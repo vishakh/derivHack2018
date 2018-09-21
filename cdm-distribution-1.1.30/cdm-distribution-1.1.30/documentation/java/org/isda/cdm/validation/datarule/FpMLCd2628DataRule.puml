@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLCd2628DataRule [[FpMLCd2628DataRule.html]] {
+        +validate(Payout): ValidationResult<Payout>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class ReferenceObligationOnlyExistsValidator [[ReferenceObligationOnlyExistsValidator.html]] {
+        +validate(ReferenceObligation, String): ValidationResult<ReferenceObligation>
+    }
+
+@enduml

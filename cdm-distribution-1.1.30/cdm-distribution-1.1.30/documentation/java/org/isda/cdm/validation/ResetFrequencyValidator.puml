@@ -1,0 +1,7 @@
+@startuml
+
+    class ResetFrequencyValidator [[ResetFrequencyValidator.html]] {
+        +validate(ResetFrequency): ValidationResult<ResetFrequency>
+    }
+
+@enduml

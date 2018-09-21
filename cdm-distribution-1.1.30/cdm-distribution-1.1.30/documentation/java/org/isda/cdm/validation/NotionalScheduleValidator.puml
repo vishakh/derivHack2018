@@ -1,0 +1,7 @@
+@startuml
+
+    class NotionalScheduleValidator [[NotionalScheduleValidator.html]] {
+        +validate(NotionalSchedule): ValidationResult<NotionalSchedule>
+    }
+
+@enduml

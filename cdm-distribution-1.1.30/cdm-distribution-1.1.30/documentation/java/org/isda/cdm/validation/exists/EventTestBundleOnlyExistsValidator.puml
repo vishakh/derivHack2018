@@ -1,0 +1,7 @@
+@startuml
+
+    class EventTestBundleOnlyExistsValidator [[EventTestBundleOnlyExistsValidator.html]] {
+        +validate(EventTestBundle, String): ValidationResult<EventTestBundle>
+    }
+
+@enduml

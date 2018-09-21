@@ -1,0 +1,29 @@
+@startuml
+
+    class ContractualQuantity.ContractualQuantityBuilder [[ContractualQuantity.ContractualQuantityBuilder.html]] {
+        +getFutureValueNotional(): FutureValueAmount.FutureValueAmountBuilder
+        +getOrCreateFutureValueNotional(): FutureValueAmount.FutureValueAmountBuilder
+        +getFxLinkedNotional(): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        +getOrCreateFxLinkedNotional(): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        +getNotionalAmount(): Money.MoneyBuilder
+        +getOrCreateNotionalAmount(): Money.MoneyBuilder
+        +getNotionalReference(): String
+        +getNotionalSchedule(): NotionalSchedule.NotionalScheduleBuilder
+        +getOrCreateNotionalSchedule(): NotionalSchedule.NotionalScheduleBuilder
+        +getQuantity(): Quantity.QuantityBuilder
+        +getOrCreateQuantity(): Quantity.QuantityBuilder
+        +setFutureValueNotional(FutureValueAmount): ContractualQuantity.ContractualQuantityBuilder
+        +setFutureValueNotionalBuilder(FutureValueAmount.FutureValueAmountBuilder): ContractualQuantity.ContractualQuantityBuilder
+        +setFxLinkedNotional(FxLinkedNotionalSchedule): ContractualQuantity.ContractualQuantityBuilder
+        +setFxLinkedNotionalBuilder(FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder): ContractualQuantity.ContractualQuantityBuilder
+        +setNotionalAmount(Money): ContractualQuantity.ContractualQuantityBuilder
+        +setNotionalAmountBuilder(Money.MoneyBuilder): ContractualQuantity.ContractualQuantityBuilder
+        +setNotionalReference(String): ContractualQuantity.ContractualQuantityBuilder
+        +setNotionalSchedule(NotionalSchedule): ContractualQuantity.ContractualQuantityBuilder
+        +setNotionalScheduleBuilder(NotionalSchedule.NotionalScheduleBuilder): ContractualQuantity.ContractualQuantityBuilder
+        +setQuantity(Quantity): ContractualQuantity.ContractualQuantityBuilder
+        +setQuantityBuilder(Quantity.QuantityBuilder): ContractualQuantity.ContractualQuantityBuilder
+        +build(): ContractualQuantity
+    }
+
+@enduml

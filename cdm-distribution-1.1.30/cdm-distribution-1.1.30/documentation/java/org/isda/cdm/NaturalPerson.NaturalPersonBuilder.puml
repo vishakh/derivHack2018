@@ -1,0 +1,23 @@
+@startuml
+
+    class NaturalPerson.NaturalPersonBuilder [[NaturalPerson.NaturalPersonBuilder.html]] {
+        +getDateOfBirth(): LocalDate
+        +getFirstName(): String
+        +getHonorific(): String
+        +getId(): String
+        +getInitial(): List<String>
+        +getMiddleName(): List<String>
+        +getSuffix(): String
+        +getSurname(): String
+        +setDateOfBirth(LocalDate): NaturalPerson.NaturalPersonBuilder
+        +setFirstName(String): NaturalPerson.NaturalPersonBuilder
+        +setHonorific(String): NaturalPerson.NaturalPersonBuilder
+        +setId(String): NaturalPerson.NaturalPersonBuilder
+        +addInitial(String): NaturalPerson.NaturalPersonBuilder
+        +addMiddleName(String): NaturalPerson.NaturalPersonBuilder
+        +setSuffix(String): NaturalPerson.NaturalPersonBuilder
+        +setSurname(String): NaturalPerson.NaturalPersonBuilder
+        +build(): NaturalPerson
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class PaymentCalculationPeriodOnlyExistsValidator [[PaymentCalculationPeriodOnlyExistsValidator.html]] {
+        +validate(PaymentCalculationPeriod, String): ValidationResult<PaymentCalculationPeriod>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class DayCountFractionEnum.ACT_360._Input [[DayCountFractionEnum.ACT_360._Input.html]] {
+        +create(InterestRatePayout, DaysInPeriod): DayCountFractionEnum.ACT_360._Input
+    }
+
+@enduml

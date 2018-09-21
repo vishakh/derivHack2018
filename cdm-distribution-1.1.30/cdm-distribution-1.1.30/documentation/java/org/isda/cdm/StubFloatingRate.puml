@@ -1,0 +1,17 @@
+@startuml
+
+    class StubFloatingRate [[StubFloatingRate.html]] {
+        +getCapRateSchedule(): List<StrikeSchedule>
+        +getFloatingRateIndex(): FloatingRateIndexEnum
+        +getFloatingRateMultiplierSchedule(): Schedule
+        +getFloorRateSchedule(): List<StrikeSchedule>
+        +getId(): String
+        +getIndexTenor(): Period
+        +getRateTreatment(): RateTreatmentEnum
+        +getSpreadSchedule(): List<SpreadSchedule>
+        +toBuilder(): StubFloatingRate.StubFloatingRateBuilder
+        {static} +builder(): StubFloatingRate.StubFloatingRateBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

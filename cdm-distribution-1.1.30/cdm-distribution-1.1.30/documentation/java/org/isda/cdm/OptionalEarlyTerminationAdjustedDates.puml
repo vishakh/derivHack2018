@@ -1,0 +1,10 @@
+@startuml
+
+    class OptionalEarlyTerminationAdjustedDates [[OptionalEarlyTerminationAdjustedDates.html]] {
+        +getEarlyTerminationEvent(): List<EarlyTerminationEvent>
+        +toBuilder(): OptionalEarlyTerminationAdjustedDates.OptionalEarlyTerminationAdjustedDatesBuilder
+        {static} +builder(): OptionalEarlyTerminationAdjustedDates.OptionalEarlyTerminationAdjustedDatesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class SpecifiedCurrency.SpecifiedCurrencyBuilder [[SpecifiedCurrency.SpecifiedCurrencyBuilder.html]] {
+        +getApplicable(): Boolean
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +setApplicable(Boolean): SpecifiedCurrency.SpecifiedCurrencyBuilder
+        +setCurrency(String): SpecifiedCurrency.SpecifiedCurrencyBuilder
+        +setCurrencyScheme(String): SpecifiedCurrency.SpecifiedCurrencyBuilder
+        +build(): SpecifiedCurrency
+    }
+
+@enduml

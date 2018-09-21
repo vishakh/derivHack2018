@@ -1,0 +1,15 @@
+@startuml
+
+    class NonNegativeSchedule.NonNegativeScheduleBuilder [[NonNegativeSchedule.NonNegativeScheduleBuilder.html]] {
+        +getId(): String
+        +getInitialValue(): BigDecimal
+        +getStep(): List<NonNegativeStep.NonNegativeStepBuilder>
+        +getOrCreateStep(int): NonNegativeStep.NonNegativeStepBuilder
+        +setId(String): NonNegativeSchedule.NonNegativeScheduleBuilder
+        +setInitialValue(BigDecimal): NonNegativeSchedule.NonNegativeScheduleBuilder
+        +addStep(NonNegativeStep): NonNegativeSchedule.NonNegativeScheduleBuilder
+        +addStepBuilder(NonNegativeStep.NonNegativeStepBuilder): NonNegativeSchedule.NonNegativeScheduleBuilder
+        +build(): NonNegativeSchedule
+    }
+
+@enduml

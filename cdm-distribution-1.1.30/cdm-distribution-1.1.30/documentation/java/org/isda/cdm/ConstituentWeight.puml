@@ -1,0 +1,11 @@
+@startuml
+
+    class ConstituentWeight [[ConstituentWeight.html]] {
+        +getBasketPercentage(): BigDecimal
+        +getOpenUnits(): BigDecimal
+        +toBuilder(): ConstituentWeight.ConstituentWeightBuilder
+        {static} +builder(): ConstituentWeight.ConstituentWeightBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

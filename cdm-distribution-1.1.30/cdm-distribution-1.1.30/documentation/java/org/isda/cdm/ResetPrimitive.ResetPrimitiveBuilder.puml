@@ -1,0 +1,15 @@
+@startuml
+
+    class ResetPrimitive.ResetPrimitiveBuilder [[ResetPrimitive.ResetPrimitiveBuilder.html]] {
+        +getCashflow(): Cashflow.CashflowBuilder
+        +getOrCreateCashflow(): Cashflow.CashflowBuilder
+        +getDate(): LocalDate
+        +getResetValue(): BigDecimal
+        +setCashflow(Cashflow): ResetPrimitive.ResetPrimitiveBuilder
+        +setCashflowBuilder(Cashflow.CashflowBuilder): ResetPrimitive.ResetPrimitiveBuilder
+        +setDate(LocalDate): ResetPrimitive.ResetPrimitiveBuilder
+        +setResetValue(BigDecimal): ResetPrimitive.ResetPrimitiveBuilder
+        +build(): ResetPrimitive
+    }
+
+@enduml

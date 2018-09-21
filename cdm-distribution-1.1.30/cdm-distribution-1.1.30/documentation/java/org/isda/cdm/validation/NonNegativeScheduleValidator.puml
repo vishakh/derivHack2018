@@ -1,0 +1,7 @@
+@startuml
+
+    class NonNegativeScheduleValidator [[NonNegativeScheduleValidator.html]] {
+        +validate(NonNegativeSchedule): ValidationResult<NonNegativeSchedule>
+    }
+
+@enduml

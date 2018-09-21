@@ -1,0 +1,7 @@
+@startuml
+
+    class IsSecurityTransfer [[IsSecurityTransfer.html]] {
+        +apply(Event): QualifyResult
+    }
+
+@enduml

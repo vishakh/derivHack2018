@@ -1,0 +1,12 @@
+@startuml
+
+    class MandatoryEarlyTerminationAdjustedDates [[MandatoryEarlyTerminationAdjustedDates.html]] {
+        +getAdjustedCashSettlementPaymentDate(): LocalDate
+        +getAdjustedCashSettlementValuationDate(): LocalDate
+        +getAdjustedEarlyTerminationDate(): LocalDate
+        +toBuilder(): MandatoryEarlyTerminationAdjustedDates.MandatoryEarlyTerminationAdjustedDatesBuilder
+        {static} +builder(): MandatoryEarlyTerminationAdjustedDates.MandatoryEarlyTerminationAdjustedDatesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

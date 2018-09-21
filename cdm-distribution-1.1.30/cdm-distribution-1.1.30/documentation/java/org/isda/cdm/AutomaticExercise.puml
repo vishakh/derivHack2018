@@ -1,0 +1,10 @@
+@startuml
+
+    class AutomaticExercise [[AutomaticExercise.html]] {
+        +getThresholdRate(): BigDecimal
+        +toBuilder(): AutomaticExercise.AutomaticExerciseBuilder
+        {static} +builder(): AutomaticExercise.AutomaticExerciseBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

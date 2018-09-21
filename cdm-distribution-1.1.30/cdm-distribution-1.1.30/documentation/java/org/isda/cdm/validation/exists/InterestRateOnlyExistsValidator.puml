@@ -1,0 +1,7 @@
+@startuml
+
+    class InterestRateOnlyExistsValidator [[InterestRateOnlyExistsValidator.html]] {
+        +validate(InterestRate, String): ValidationResult<InterestRate>
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class ReferencePool.ReferencePoolBuilder [[ReferencePool.ReferencePoolBuilder.html]] {
+        +getReferencePoolItem(): List<ReferencePoolItem.ReferencePoolItemBuilder>
+        +getOrCreateReferencePoolItem(int): ReferencePoolItem.ReferencePoolItemBuilder
+        +addReferencePoolItem(ReferencePoolItem): ReferencePool.ReferencePoolBuilder
+        +addReferencePoolItemBuilder(ReferencePoolItem.ReferencePoolItemBuilder): ReferencePool.ReferencePoolBuilder
+        +build(): ReferencePool
+    }
+
+@enduml

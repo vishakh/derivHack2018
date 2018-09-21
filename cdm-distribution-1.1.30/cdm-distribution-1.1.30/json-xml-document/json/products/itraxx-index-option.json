@@ -1,0 +1,227 @@
+{
+  "calculationAgent" : {
+    "calculationAgentPartyReference" : [ "f56m234" ]
+  },
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "56ERT7RHWE4",
+      "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+    },
+    "partyReference" : "f56m234"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "cashflow" : [ {
+          "payerReceiver" : {
+            "payerPartyReference" : "ikjgt45",
+            "receiverPartyReference" : "f56m234"
+          },
+          "premiumExpression" : {
+            "premiumType" : "FIXED"
+          },
+          "cashflowAmount" : {
+            "amount" : 600000,
+            "currency" : "EUR"
+          },
+          "cashflowDate" : {
+            "relativeDate" : {
+              "period" : "D",
+              "periodMultiplier" : 3,
+              "dayType" : "BUSINESS",
+              "businessDayConvention" : "NONE",
+              "dateRelativeTo" : "d4536d"
+            }
+          },
+          "rosettaKeyValue" : "4beca428"
+        } ],
+        "creditDefaultPayout" : {
+          "generalTerms" : {
+            "buyerSeller" : {
+              "buyerPartyReference" : "f56m234",
+              "sellerPartyReference" : "ikjgt45"
+            },
+            "dateAdjustments" : {
+              "businessDayConvention" : "NONE"
+            },
+            "indexReferenceInformation" : {
+              "excludedReferenceEntity" : [ {
+                "name" : "TESCO PLC"
+              } ],
+              "indexAnnexDate" : "2006-11-01",
+              "indexAnnexSource" : "PUBLISHER",
+              "indexAnnexVersion" : 1,
+              "indexName" : "Dow Jones iTraxx Europe Consumers Series 2 Version 1",
+              "indexSeries" : 2
+            }
+          },
+          "physicalSettlementTerms" : {
+            "deliverableObligations" : {
+              "accruedInterest" : false,
+              "assignableLoan" : {
+                "applicable" : true
+              },
+              "category" : "BOND_OR_LOAN",
+              "consentRequiredLoan" : {
+                "applicable" : true
+              },
+              "maximumMaturity" : {
+                "period" : "Y",
+                "periodMultiplier" : 30
+              },
+              "notBearer" : true,
+              "notContingent" : true,
+              "notSubordinated" : true,
+              "transferable" : true
+            },
+            "escrow" : true,
+            "physicalSettlementPeriod" : {
+              "maximumBusinessDays" : 30
+            },
+            "settlementCurrency" : "USD"
+          },
+          "protectionTerms" : {
+            "creditEvents" : {
+              "bankruptcy" : true,
+              "creditEventNotice" : {
+                "notifyingParty" : {
+                  "buyerPartyReference" : "f56m234",
+                  "sellerPartyReference" : "ikjgt45"
+                },
+                "publiclyAvailableInformation" : {
+                  "publicSource" : [ "Standard" ],
+                  "specifiedNumber" : 2
+                }
+              },
+              "failureToPay" : {
+                "applicable" : true,
+                "paymentRequirement" : {
+                  "amount" : 1000000,
+                  "currency" : "USD"
+                }
+              }
+            },
+            "notionalAmount" : {
+              "amount" : 250000000,
+              "currency" : "EUR",
+              "id" : "NOTIONAL"
+            },
+            "obligations" : {
+              "category" : "BORROWED_MONEY"
+            }
+          },
+          "rosettaKeyValue" : "3e5fe040"
+        },
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodFrequency" : {
+              "rollConvention" : "_20"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2006-03-20"
+              }
+            },
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessDayConvention" : "NONE"
+              },
+              "unadjustedDate" : "2011-06-20"
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.004
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "f56m234",
+            "receiverPartyReference" : "ikjgt45"
+          },
+          "paymentDates" : {
+            "firstPaymentDate" : "2007-03-20",
+            "lastRegularPaymentDate" : "2011-03-20",
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            }
+          },
+          "quantity" : {
+            "notionalAmount" : {
+              "amount" : 250000000,
+              "currency" : "EUR"
+            }
+          },
+          "rosettaKeyValue" : "af342c27"
+        } ],
+        "optionPayout" : [ {
+          "buyerSeller" : {
+            "buyerPartyReference" : "ikjgt45",
+            "sellerPartyReference" : "f56m234"
+          },
+          "exerciseTerms" : {
+            "exerciseProcedure" : {
+              "followUpConfirmation" : true,
+              "manualExercise" : {
+                "fallbackExercise" : false
+              }
+            },
+            "optionStyle" : {
+              "europeanExercise" : {
+                "earliestExerciseTime" : {
+                  "businessCenter" : "GBLO",
+                  "hourMinuteTime" : "09:00:00"
+                },
+                "expirationDate" : {
+                  "adjustableDate" : {
+                    "dateAdjustments" : {
+                      "businessCenters" : {
+                        "businessCenter" : [ "GBLO" ]
+                      },
+                      "businessDayConvention" : "FOLLOWING"
+                    },
+                    "unadjustedDate" : "2006-12-20"
+                  }
+                },
+                "expirationTime" : {
+                  "businessCenter" : "GBLO",
+                  "hourMinuteTime" : "16:00:00"
+                }
+              }
+            },
+            "settlement" : {
+              "settlementType" : "PHYSICAL"
+            },
+            "strike" : {
+              "spread" : 0.004
+            }
+          },
+          "optionType" : "RECEIVER",
+          "quantity" : {
+            "notionalReference" : "NOTIONAL"
+          },
+          "rosettaKeyValue" : "be293ef5"
+        } ]
+      },
+      "rosettaKeyValue" : "829672c6"
+    }
+  },
+  "party" : [ {
+    "id" : "f56m234",
+    "partyId" : [ "Party A" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "ikjgt45",
+    "partyId" : [ "Party B" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2006-01-16",
+    "id" : "d4536d"
+  },
+  "rosettaKey" : "7a72c697"
+}

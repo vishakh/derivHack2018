@@ -1,0 +1,7 @@
+@startuml
+
+    class PartyRoleOnlyExistsValidator [[PartyRoleOnlyExistsValidator.html]] {
+        +validate(PartyRole, String): ValidationResult<PartyRole>
+    }
+
+@enduml

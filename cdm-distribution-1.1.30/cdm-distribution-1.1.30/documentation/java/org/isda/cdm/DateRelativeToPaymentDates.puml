@@ -1,0 +1,10 @@
+@startuml
+
+    class DateRelativeToPaymentDates [[DateRelativeToPaymentDates.html]] {
+        +getPaymentDatesReference(): List<String>
+        +toBuilder(): DateRelativeToPaymentDates.DateRelativeToPaymentDatesBuilder
+        {static} +builder(): DateRelativeToPaymentDates.DateRelativeToPaymentDatesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

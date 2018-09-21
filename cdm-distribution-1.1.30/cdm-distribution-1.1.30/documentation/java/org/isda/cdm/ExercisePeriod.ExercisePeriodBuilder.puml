@@ -1,0 +1,17 @@
+@startuml
+
+    class ExercisePeriod.ExercisePeriodBuilder [[ExercisePeriod.ExercisePeriodBuilder.html]] {
+        +getEarliestExerciseDateTenor(): Period.PeriodBuilder
+        +getOrCreateEarliestExerciseDateTenor(): Period.PeriodBuilder
+        +getExerciseFrequency(): Period.PeriodBuilder
+        +getOrCreateExerciseFrequency(): Period.PeriodBuilder
+        +getId(): String
+        +setEarliestExerciseDateTenor(Period): ExercisePeriod.ExercisePeriodBuilder
+        +setEarliestExerciseDateTenorBuilder(Period.PeriodBuilder): ExercisePeriod.ExercisePeriodBuilder
+        +setExerciseFrequency(Period): ExercisePeriod.ExercisePeriodBuilder
+        +setExerciseFrequencyBuilder(Period.PeriodBuilder): ExercisePeriod.ExercisePeriodBuilder
+        +setId(String): ExercisePeriod.ExercisePeriodBuilder
+        +build(): ExercisePeriod
+    }
+
+@enduml

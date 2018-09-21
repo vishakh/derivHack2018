@@ -1,0 +1,17 @@
+@startuml
+
+    class FeaturePayment [[FeaturePayment.html]] {
+        +getAmount(): BigDecimal
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +getFeaturePaymentDate(): AdjustableOrAdjustedDate
+        +getId(): String
+        +getLevelPercentage(): BigDecimal
+        +getPayerReceiver(): PayerReceiver
+        +getTime(): TimeTypeEnum
+        +toBuilder(): FeaturePayment.FeaturePaymentBuilder
+        {static} +builder(): FeaturePayment.FeaturePaymentBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

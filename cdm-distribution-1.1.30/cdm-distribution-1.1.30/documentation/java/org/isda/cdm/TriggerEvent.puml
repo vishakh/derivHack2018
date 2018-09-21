@@ -1,0 +1,13 @@
+@startuml
+
+    class TriggerEvent [[TriggerEvent.html]] {
+        +getFeaturePayment(): FeaturePayment
+        +getSchedule(): List<AveragingSchedule>
+        +getTrigger(): Trigger
+        +getTriggerDates(): DateList
+        +toBuilder(): TriggerEvent.TriggerEventBuilder
+        {static} +builder(): TriggerEvent.TriggerEventBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

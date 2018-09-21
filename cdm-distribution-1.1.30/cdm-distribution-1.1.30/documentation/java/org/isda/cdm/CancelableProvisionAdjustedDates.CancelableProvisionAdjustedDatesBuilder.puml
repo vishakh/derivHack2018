@@ -1,0 +1,11 @@
+@startuml
+
+    class CancelableProvisionAdjustedDates.CancelableProvisionAdjustedDatesBuilder [[CancelableProvisionAdjustedDates.CancelableProvisionAdjustedDatesBuilder.html]] {
+        +getCancellationEvent(): List<CancellationEvent.CancellationEventBuilder>
+        +getOrCreateCancellationEvent(int): CancellationEvent.CancellationEventBuilder
+        +addCancellationEvent(CancellationEvent): CancelableProvisionAdjustedDates.CancelableProvisionAdjustedDatesBuilder
+        +addCancellationEventBuilder(CancellationEvent.CancellationEventBuilder): CancelableProvisionAdjustedDates.CancelableProvisionAdjustedDatesBuilder
+        +build(): CancelableProvisionAdjustedDates
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class OptionExercise [[OptionExercise.html]] {
+        +getExerciseProcedure(): ExerciseProcedure
+        +getOptionStyle(): OptionStyle
+        +getSettlement(): OptionSettlement
+        +getStrike(): OptionStrike
+        +toBuilder(): OptionExercise.OptionExerciseBuilder
+        {static} +builder(): OptionExercise.OptionExerciseBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

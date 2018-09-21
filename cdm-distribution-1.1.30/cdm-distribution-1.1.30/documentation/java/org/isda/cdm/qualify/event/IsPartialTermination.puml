@@ -1,0 +1,7 @@
+@startuml
+
+    class IsPartialTermination [[IsPartialTermination.html]] {
+        +apply(Event): QualifyResult
+    }
+
+@enduml

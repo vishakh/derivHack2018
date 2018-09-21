@@ -1,0 +1,7 @@
+@startuml
+
+    class NonNegativeStepStepValueDataRule [[NonNegativeStepStepValueDataRule.html]] {
+        +validate(NonNegativeStep): ValidationResult<NonNegativeStep>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class FinalCalculationPeriodDateAdjustmentOnlyExistsValidator [[FinalCalculationPeriodDateAdjustmentOnlyExistsValidator.html]] {
+        +validate(FinalCalculationPeriodDateAdjustment, String): ValidationResult<FinalCalculationPeriodDateAdjustment>
+    }
+
+@enduml

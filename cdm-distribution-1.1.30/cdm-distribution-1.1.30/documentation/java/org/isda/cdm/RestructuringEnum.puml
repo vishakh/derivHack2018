@@ -1,0 +1,9 @@
+@startuml
+
+    enum RestructuringEnum [[RestructuringEnum.html]] {
+        {static} +MOD_MOD_R
+        {static} +MOD_R
+        {static} +R
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class IssuerTradeId [[IssuerTradeId.html]] {
+        +getIdentifier(): String
+        +getIdentifierScheme(): String
+        +getIssuer(): String
+        +getIssuerScheme(): String
+        +toBuilder(): IssuerTradeId.IssuerTradeIdBuilder
+        {static} +builder(): IssuerTradeId.IssuerTradeIdBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class AmericanExerciseMeta [[AmericanExerciseMeta.html]] {
+        +dataRules(): List<Validator<AmericanExercise>>
+        +choiceRuleValidators(): List<Validator<AmericanExercise>>
+        +getOutMappings(): Multimap<String, OutMapping<AmericanExercise, ?>>
+        +getQualifyFunctions(): List<Function<AmericanExercise, QualifyResult>>
+        +validator(): Validator<AmericanExercise>
+        +onlyExistsValidator(): ValidatorWithArg<AmericanExercise, String>
+    }
+
+@enduml

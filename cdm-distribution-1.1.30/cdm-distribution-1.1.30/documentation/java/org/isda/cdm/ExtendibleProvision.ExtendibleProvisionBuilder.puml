@@ -1,0 +1,29 @@
+@startuml
+
+    class ExtendibleProvision.ExtendibleProvisionBuilder [[ExtendibleProvision.ExtendibleProvisionBuilder.html]] {
+        +getAmericanExercise(): AmericanExercise.AmericanExerciseBuilder
+        +getOrCreateAmericanExercise(): AmericanExercise.AmericanExerciseBuilder
+        +getBermudaExercise(): BermudaExercise.BermudaExerciseBuilder
+        +getOrCreateBermudaExercise(): BermudaExercise.BermudaExerciseBuilder
+        +getEuropeanExercise(): EuropeanExercise.EuropeanExerciseBuilder
+        +getOrCreateEuropeanExercise(): EuropeanExercise.EuropeanExerciseBuilder
+        +getExerciseNotice(): ExerciseNotice.ExerciseNoticeBuilder
+        +getOrCreateExerciseNotice(): ExerciseNotice.ExerciseNoticeBuilder
+        +getExtendibleProvisionAdjustedDates(): ExtendibleProvisionAdjustedDates.ExtendibleProvisionAdjustedDatesBuilder
+        +getOrCreateExtendibleProvisionAdjustedDates(): ExtendibleProvisionAdjustedDates.ExtendibleProvisionAdjustedDatesBuilder
+        +getFollowUpConfirmation(): Boolean
+        +setAmericanExercise(AmericanExercise): ExtendibleProvision.ExtendibleProvisionBuilder
+        +setAmericanExerciseBuilder(AmericanExercise.AmericanExerciseBuilder): ExtendibleProvision.ExtendibleProvisionBuilder
+        +setBermudaExercise(BermudaExercise): ExtendibleProvision.ExtendibleProvisionBuilder
+        +setBermudaExerciseBuilder(BermudaExercise.BermudaExerciseBuilder): ExtendibleProvision.ExtendibleProvisionBuilder
+        +setEuropeanExercise(EuropeanExercise): ExtendibleProvision.ExtendibleProvisionBuilder
+        +setEuropeanExerciseBuilder(EuropeanExercise.EuropeanExerciseBuilder): ExtendibleProvision.ExtendibleProvisionBuilder
+        +setExerciseNotice(ExerciseNotice): ExtendibleProvision.ExtendibleProvisionBuilder
+        +setExerciseNoticeBuilder(ExerciseNotice.ExerciseNoticeBuilder): ExtendibleProvision.ExtendibleProvisionBuilder
+        +setExtendibleProvisionAdjustedDates(ExtendibleProvisionAdjustedDates): ExtendibleProvision.ExtendibleProvisionBuilder
+        +setExtendibleProvisionAdjustedDatesBuilder(ExtendibleProvisionAdjustedDates.ExtendibleProvisionAdjustedDatesBuilder): ExtendibleProvision.ExtendibleProvisionBuilder
+        +setFollowUpConfirmation(Boolean): ExtendibleProvision.ExtendibleProvisionBuilder
+        +build(): ExtendibleProvision
+    }
+
+@enduml

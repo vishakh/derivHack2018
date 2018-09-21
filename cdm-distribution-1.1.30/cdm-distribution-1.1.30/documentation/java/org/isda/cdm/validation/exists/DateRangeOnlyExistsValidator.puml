@@ -1,0 +1,7 @@
+@startuml
+
+    class DateRangeOnlyExistsValidator [[DateRangeOnlyExistsValidator.html]] {
+        +validate(DateRange, String): ValidationResult<DateRange>
+    }
+
+@enduml

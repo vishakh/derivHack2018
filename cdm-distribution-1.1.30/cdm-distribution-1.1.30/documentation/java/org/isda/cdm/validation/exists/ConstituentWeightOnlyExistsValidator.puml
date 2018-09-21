@@ -1,0 +1,7 @@
+@startuml
+
+    class ConstituentWeightOnlyExistsValidator [[ConstituentWeightOnlyExistsValidator.html]] {
+        +validate(ConstituentWeight, String): ValidationResult<ConstituentWeight>
+    }
+
+@enduml

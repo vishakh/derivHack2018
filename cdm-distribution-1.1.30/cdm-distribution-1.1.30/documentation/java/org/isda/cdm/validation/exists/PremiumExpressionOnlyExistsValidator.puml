@@ -1,0 +1,7 @@
+@startuml
+
+    class PremiumExpressionOnlyExistsValidator [[PremiumExpressionOnlyExistsValidator.html]] {
+        +validate(PremiumExpression, String): ValidationResult<PremiumExpression>
+    }
+
+@enduml

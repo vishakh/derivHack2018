@@ -1,0 +1,12 @@
+@startuml
+
+    class PaymentDatesMeta [[PaymentDatesMeta.html]] {
+        +dataRules(): List<Validator<PaymentDates>>
+        +choiceRuleValidators(): List<Validator<PaymentDates>>
+        +getOutMappings(): Multimap<String, OutMapping<PaymentDates, ?>>
+        +getQualifyFunctions(): List<Function<PaymentDates, QualifyResult>>
+        +validator(): Validator<PaymentDates>
+        +onlyExistsValidator(): ValidatorWithArg<PaymentDates, String>
+    }
+
+@enduml

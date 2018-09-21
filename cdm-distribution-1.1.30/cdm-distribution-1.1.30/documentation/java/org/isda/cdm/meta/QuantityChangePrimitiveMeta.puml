@@ -1,0 +1,12 @@
+@startuml
+
+    class QuantityChangePrimitiveMeta [[QuantityChangePrimitiveMeta.html]] {
+        +dataRules(): List<Validator<QuantityChangePrimitive>>
+        +choiceRuleValidators(): List<Validator<QuantityChangePrimitive>>
+        +getOutMappings(): Multimap<String, OutMapping<QuantityChangePrimitive, ?>>
+        +getQualifyFunctions(): List<Function<QuantityChangePrimitive, QualifyResult>>
+        +validator(): Validator<QuantityChangePrimitive>
+        +onlyExistsValidator(): ValidatorWithArg<QuantityChangePrimitive, String>
+    }
+
+@enduml

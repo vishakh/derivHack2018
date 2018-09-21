@@ -1,0 +1,12 @@
+@startuml
+
+    class TimeZone [[TimeZone.html]] {
+        +getLocation(): String
+        +getLocationScheme(): String
+        +getTime(): LocalTime
+        +toBuilder(): TimeZone.TimeZoneBuilder
+        {static} +builder(): TimeZone.TimeZoneBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,200 @@
+{
+  "calculationAgent" : {
+    "calculationAgentBusinessCenter" : "GBLO",
+    "calculationAgentPartyReference" : [ "f845ge" ]
+  },
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "37209",
+      "identifierScheme" : "http://www.swapswire.com/spec/2001/trade-id-1-0"
+    },
+    "partyReference" : "f845ge"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "creditDefaultPayout" : {
+          "generalTerms" : {
+            "buyerSeller" : {
+              "buyerPartyReference" : "rsf765",
+              "sellerPartyReference" : "f845ge"
+            },
+            "dateAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY", "JPTO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "referenceInformation" : {
+              "referenceEntity" : {
+                "entityId" : "004CC9",
+                "entityIdScheme" : "http://www.fpml.org/spec/2003/entity-id-RED-1-0",
+                "id" : "fhjgt43",
+                "name" : "ACOM CO., LTD."
+              },
+              "referenceObligation" : [ {
+                "bond" : {
+                  "productIdentifierScheme" : "http://www.fpml.org/spec/2002/instrument-id-ISIN-1-0",
+                  "couponRate" : 0.0213,
+                  "maturity" : "2007-03-08"
+                },
+                "primaryObligorReference" : "fhjgt43"
+              } ],
+              "referencePrice" : 1.0
+            }
+          },
+          "physicalSettlementTerms" : {
+            "deliverableObligations" : {
+              "accruedInterest" : false,
+              "assignableLoan" : {
+                "applicable" : true
+              },
+              "category" : "BOND_OR_LOAN",
+              "consentRequiredLoan" : {
+                "applicable" : true
+              },
+              "maximumMaturity" : {
+                "period" : "Y",
+                "periodMultiplier" : 30
+              },
+              "notBearer" : true,
+              "notContingent" : true,
+              "notSubordinated" : true,
+              "specifiedCurrency" : {
+                "applicable" : true
+              },
+              "transferable" : true
+            },
+            "escrow" : true,
+            "physicalSettlementPeriod" : {
+              "businessDays" : 30
+            },
+            "settlementCurrency" : "JPY"
+          },
+          "protectionTerms" : {
+            "creditEvents" : {
+              "bankruptcy" : true,
+              "creditEventNotice" : {
+                "notifyingParty" : {
+                  "buyerPartyReference" : "rsf765",
+                  "sellerPartyReference" : "f845ge"
+                },
+                "publiclyAvailableInformation" : {
+                  "specifiedNumber" : 2,
+                  "standardPublicSources" : true
+                }
+              },
+              "defaultRequirement" : {
+                "amount" : 1000000000.0,
+                "currency" : "JPY"
+              },
+              "failureToPay" : {
+                "applicable" : true,
+                "paymentRequirement" : {
+                  "amount" : 100000000.0,
+                  "currency" : "JPY"
+                }
+              },
+              "restructuring" : {
+                "applicable" : true,
+                "restructuringType" : "R"
+              }
+            },
+            "notionalAmount" : {
+              "amount" : 500000000.0,
+              "currency" : "JPY"
+            },
+            "obligations" : {
+              "category" : "BORROWED_MONEY",
+              "notSubordinated" : true
+            }
+          },
+          "rosettaKeyValue" : "903ba675"
+        },
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodFrequency" : {
+              "rollConvention" : "_5"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2002-12-05"
+              }
+            },
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "GBLO", "USNY", "JPTO" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2007-12-05"
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.007
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "rsf765",
+            "receiverPartyReference" : "f845ge"
+          },
+          "paymentDates" : {
+            "firstPaymentDate" : "2003-03-05",
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            }
+          },
+          "quantity" : {
+            "notionalAmount" : {
+              "amount" : 500000000.0,
+              "currency" : "JPY"
+            }
+          },
+          "rosettaKeyValue" : "3538478d"
+        } ]
+      },
+      "rosettaKeyValue" : "e1bc8748"
+    }
+  },
+  "documentation" : {
+    "contractualDefinitions" : [ "ISDA_1999_CREDIT" ],
+    "contractualMatrix" : [ {
+      "matrixType" : "CREDIT_DERIVATIVES_PHYSICAL_SETTLEMENT_MATRIX"
+    } ],
+    "contractualTermsSupplement" : [ {
+      "type" : "ISDA_1999_CREDIT_SUCCESSOR_AND_CREDIT_EVENTS"
+    }, {
+      "type" : "ISDA_1999_CREDIT_CONVERTIBLE_EXCHANGEABLE_ACCRETING_OBLIGATIONS"
+    } ],
+    "masterAgreement" : {
+      "masterAgreementType" : "ISDA",
+      "masterAgreementVersion" : "1992"
+    }
+  },
+  "party" : [ {
+    "id" : "f845ge",
+    "legalEntity" : {
+      "name" : "XYZ Bank"
+    },
+    "partyId" : [ "XYZBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "rsf765",
+    "legalEntity" : {
+      "name" : "ABC Bank"
+    },
+    "partyId" : [ "ABCBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2002-12-04"
+  },
+  "rosettaKey" : "d16e78b5"
+}

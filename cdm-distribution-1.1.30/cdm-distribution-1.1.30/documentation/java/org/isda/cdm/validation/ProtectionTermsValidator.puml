@@ -1,0 +1,7 @@
+@startuml
+
+    class ProtectionTermsValidator [[ProtectionTermsValidator.html]] {
+        +validate(ProtectionTerms): ValidationResult<ProtectionTerms>
+    }
+
+@enduml

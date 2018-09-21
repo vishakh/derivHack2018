@@ -1,0 +1,7 @@
+@startuml
+
+    class OffsetValidator [[OffsetValidator.html]] {
+        +validate(Offset): ValidationResult<Offset>
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class BusinessCenters.BusinessCentersBuilder [[BusinessCenters.BusinessCentersBuilder.html]] {
+        +getBusinessCenter(): List<BusinessCenterEnum>
+        +getBusinessCenterScheme(): String
+        +getBusinessCentersReference(): String
+        +getId(): String
+        +addBusinessCenter(BusinessCenterEnum): BusinessCenters.BusinessCentersBuilder
+        +setBusinessCenterScheme(String): BusinessCenters.BusinessCentersBuilder
+        +setBusinessCentersReference(String): BusinessCenters.BusinessCentersBuilder
+        +setId(String): BusinessCenters.BusinessCentersBuilder
+        +build(): BusinessCenters
+    }
+
+@enduml

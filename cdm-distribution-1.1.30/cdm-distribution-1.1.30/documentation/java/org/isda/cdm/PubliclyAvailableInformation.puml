@@ -1,0 +1,12 @@
+@startuml
+
+    class PubliclyAvailableInformation [[PubliclyAvailableInformation.html]] {
+        +getPublicSource(): List<String>
+        +getSpecifiedNumber(): Integer
+        +getStandardPublicSources(): Boolean
+        +toBuilder(): PubliclyAvailableInformation.PubliclyAvailableInformationBuilder
+        {static} +builder(): PubliclyAvailableInformation.PubliclyAvailableInformationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

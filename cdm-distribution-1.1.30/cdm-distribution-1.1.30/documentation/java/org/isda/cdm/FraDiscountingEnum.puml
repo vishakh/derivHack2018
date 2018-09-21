@@ -1,0 +1,10 @@
+@startuml
+
+    enum FraDiscountingEnum [[FraDiscountingEnum.html]] {
+        {static} +ISDA
+        {static} +AFMA
+        {static} +NONE
+        {static} +ISDA_YIELD
+    }
+
+@enduml

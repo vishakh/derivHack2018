@@ -1,0 +1,13 @@
+@startuml
+
+    class ConvertibleBond.ConvertibleBondBuilder [[ConvertibleBond.ConvertibleBondBuilder.html]] {
+        +getRedemptionDate(): LocalDate
+        +getUnderlyingEquity(): EquityAsset.EquityAssetBuilder
+        +getOrCreateUnderlyingEquity(): EquityAsset.EquityAssetBuilder
+        +setRedemptionDate(LocalDate): ConvertibleBond.ConvertibleBondBuilder
+        +setUnderlyingEquity(EquityAsset): ConvertibleBond.ConvertibleBondBuilder
+        +setUnderlyingEquityBuilder(EquityAsset.EquityAssetBuilder): ConvertibleBond.ConvertibleBondBuilder
+        +build(): ConvertibleBond
+    }
+
+@enduml

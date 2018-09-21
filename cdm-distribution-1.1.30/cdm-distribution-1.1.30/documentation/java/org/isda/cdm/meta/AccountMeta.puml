@@ -1,0 +1,12 @@
+@startuml
+
+    class AccountMeta [[AccountMeta.html]] {
+        +dataRules(): List<Validator<Account>>
+        +choiceRuleValidators(): List<Validator<Account>>
+        +getOutMappings(): Multimap<String, OutMapping<Account, ?>>
+        +getQualifyFunctions(): List<Function<Account, QualifyResult>>
+        +validator(): Validator<Account>
+        +onlyExistsValidator(): ValidatorWithArg<Account, String>
+    }
+
+@enduml

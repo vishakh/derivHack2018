@@ -1,0 +1,19 @@
+@startuml
+
+    class EarlyTerminationEvent.EarlyTerminationEventBuilder [[EarlyTerminationEvent.EarlyTerminationEventBuilder.html]] {
+        +getAdjustedCashSettlementPaymentDate(): LocalDate
+        +getAdjustedCashSettlementValuationDate(): LocalDate
+        +getAdjustedEarlyTerminationDate(): LocalDate
+        +getAdjustedExerciseDate(): LocalDate
+        +getAdjustedExerciseFeePaymentDate(): LocalDate
+        +getId(): String
+        +setAdjustedCashSettlementPaymentDate(LocalDate): EarlyTerminationEvent.EarlyTerminationEventBuilder
+        +setAdjustedCashSettlementValuationDate(LocalDate): EarlyTerminationEvent.EarlyTerminationEventBuilder
+        +setAdjustedEarlyTerminationDate(LocalDate): EarlyTerminationEvent.EarlyTerminationEventBuilder
+        +setAdjustedExerciseDate(LocalDate): EarlyTerminationEvent.EarlyTerminationEventBuilder
+        +setAdjustedExerciseFeePaymentDate(LocalDate): EarlyTerminationEvent.EarlyTerminationEventBuilder
+        +setId(String): EarlyTerminationEvent.EarlyTerminationEventBuilder
+        +build(): EarlyTerminationEvent
+    }
+
+@enduml

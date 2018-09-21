@@ -1,0 +1,7 @@
+@startuml
+
+    class TermsChangePrimitiveValidator [[TermsChangePrimitiveValidator.html]] {
+        +validate(TermsChangePrimitive): ValidationResult<TermsChangePrimitive>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractIdentifierChoiceRule [[ContractIdentifierChoiceRule.html]] {
+        +validate(ContractIdentifier): ValidationResult<ContractIdentifier>
+    }
+
+@enduml

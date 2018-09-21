@@ -1,0 +1,7 @@
+@startuml
+
+    class NotionalStepRuleNotionalStepRateDataRule [[NotionalStepRuleNotionalStepRateDataRule.html]] {
+        +validate(NotionalStepRule): ValidationResult<NotionalStepRule>
+    }
+
+@enduml

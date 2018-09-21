@@ -1,0 +1,7 @@
+@startuml
+
+    class StrikeScheduleValidator [[StrikeScheduleValidator.html]] {
+        +validate(StrikeSchedule): ValidationResult<StrikeSchedule>
+    }
+
+@enduml

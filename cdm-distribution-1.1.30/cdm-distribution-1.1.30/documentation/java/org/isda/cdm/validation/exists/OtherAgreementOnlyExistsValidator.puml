@@ -1,0 +1,7 @@
+@startuml
+
+    class OtherAgreementOnlyExistsValidator [[OtherAgreementOnlyExistsValidator.html]] {
+        +validate(OtherAgreement, String): ValidationResult<OtherAgreement>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class BusinessCentersMeta [[BusinessCentersMeta.html]] {
+        +dataRules(): List<Validator<BusinessCenters>>
+        +choiceRuleValidators(): List<Validator<BusinessCenters>>
+        +getOutMappings(): Multimap<String, OutMapping<BusinessCenters, ?>>
+        +getQualifyFunctions(): List<Function<BusinessCenters, QualifyResult>>
+        +validator(): Validator<BusinessCenters>
+        +onlyExistsValidator(): ValidatorWithArg<BusinessCenters, String>
+    }
+
+@enduml

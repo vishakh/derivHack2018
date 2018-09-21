@@ -1,0 +1,7 @@
+@startuml
+
+    class FutureValueNotionalTerminationDateDataRule [[FutureValueNotionalTerminationDateDataRule.html]] {
+        +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+    }
+
+@enduml

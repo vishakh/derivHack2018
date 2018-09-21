@@ -1,0 +1,7 @@
+@startuml
+
+    class YieldCurveMethodValidator [[YieldCurveMethodValidator.html]] {
+        +validate(YieldCurveMethod): ValidationResult<YieldCurveMethod>
+    }
+
+@enduml

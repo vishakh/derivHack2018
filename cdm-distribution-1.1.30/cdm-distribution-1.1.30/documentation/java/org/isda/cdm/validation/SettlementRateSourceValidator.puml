@@ -1,0 +1,7 @@
+@startuml
+
+    class SettlementRateSourceValidator [[SettlementRateSourceValidator.html]] {
+        +validate(SettlementRateSource): ValidationResult<SettlementRateSource>
+    }
+
+@enduml

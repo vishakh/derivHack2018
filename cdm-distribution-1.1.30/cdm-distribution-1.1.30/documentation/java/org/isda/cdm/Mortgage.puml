@@ -1,0 +1,19 @@
+@startuml
+
+    class Mortgage [[Mortgage.html]] {
+        +getDayCountFraction(): DayCountFractionEnum
+        +getDayCountFractionScheme(): String
+        +getInsurer(): Party
+        +getInsurerReference(): String
+        +getOriginalPrincipalAmount(): BigDecimal
+        +getPaymentFrequency(): Period
+        +getPool(): AssetPool
+        +getSector(): MortgageSectorEnum
+        +getSectorScheme(): String
+        +getTranche(): String
+        +toBuilder(): Mortgage.MortgageBuilder
+        {static} +builder(): Mortgage.MortgageBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

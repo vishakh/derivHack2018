@@ -1,0 +1,12 @@
+@startuml
+
+    class ExercisePeriodMeta [[ExercisePeriodMeta.html]] {
+        +dataRules(): List<Validator<ExercisePeriod>>
+        +choiceRuleValidators(): List<Validator<ExercisePeriod>>
+        +getOutMappings(): Multimap<String, OutMapping<ExercisePeriod, ?>>
+        +getQualifyFunctions(): List<Function<ExercisePeriod, QualifyResult>>
+        +validator(): Validator<ExercisePeriod>
+        +onlyExistsValidator(): ValidatorWithArg<ExercisePeriod, String>
+    }
+
+@enduml

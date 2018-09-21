@@ -1,0 +1,15 @@
+@startuml
+
+    class NewTradePrimitive.NewTradePrimitiveBuilder [[NewTradePrimitive.NewTradePrimitiveBuilder.html]] {
+        +getContract(): Contract.ContractBuilder
+        +getOrCreateContract(): Contract.ContractBuilder
+        +getContractReference(): ContractIdentifier.ContractIdentifierBuilder
+        +getOrCreateContractReference(): ContractIdentifier.ContractIdentifierBuilder
+        +setContract(Contract): NewTradePrimitive.NewTradePrimitiveBuilder
+        +setContractBuilder(Contract.ContractBuilder): NewTradePrimitive.NewTradePrimitiveBuilder
+        +setContractReference(ContractIdentifier): NewTradePrimitive.NewTradePrimitiveBuilder
+        +setContractReferenceBuilder(ContractIdentifier.ContractIdentifierBuilder): NewTradePrimitive.NewTradePrimitiveBuilder
+        +build(): NewTradePrimitive
+    }
+
+@enduml

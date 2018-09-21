@@ -1,0 +1,12 @@
+@startuml
+
+    class BermudaExerciseMeta [[BermudaExerciseMeta.html]] {
+        +dataRules(): List<Validator<BermudaExercise>>
+        +choiceRuleValidators(): List<Validator<BermudaExercise>>
+        +getOutMappings(): Multimap<String, OutMapping<BermudaExercise, ?>>
+        +getQualifyFunctions(): List<Function<BermudaExercise, QualifyResult>>
+        +validator(): Validator<BermudaExercise>
+        +onlyExistsValidator(): ValidatorWithArg<BermudaExercise, String>
+    }
+
+@enduml

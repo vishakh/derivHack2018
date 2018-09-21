@@ -1,0 +1,12 @@
+@startuml
+
+    class BondMeta [[BondMeta.html]] {
+        +dataRules(): List<Validator<Bond>>
+        +choiceRuleValidators(): List<Validator<Bond>>
+        +getOutMappings(): Multimap<String, OutMapping<Bond, ?>>
+        +getQualifyFunctions(): List<Function<Bond, QualifyResult>>
+        +validator(): Validator<Bond>
+        +onlyExistsValidator(): ValidatorWithArg<Bond, String>
+    }
+
+@enduml

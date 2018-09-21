@@ -1,0 +1,12 @@
+@startuml
+
+    class ContractOrContractReferenceMeta [[ContractOrContractReferenceMeta.html]] {
+        +dataRules(): List<Validator<ContractOrContractReference>>
+        +choiceRuleValidators(): List<Validator<ContractOrContractReference>>
+        +getOutMappings(): Multimap<String, OutMapping<ContractOrContractReference, ?>>
+        +getQualifyFunctions(): List<Function<ContractOrContractReference, QualifyResult>>
+        +validator(): Validator<ContractOrContractReference>
+        +onlyExistsValidator(): ValidatorWithArg<ContractOrContractReference, String>
+    }
+
+@enduml

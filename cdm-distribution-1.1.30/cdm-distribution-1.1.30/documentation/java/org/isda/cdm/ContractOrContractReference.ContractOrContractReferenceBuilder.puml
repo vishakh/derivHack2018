@@ -1,0 +1,15 @@
+@startuml
+
+    class ContractOrContractReference.ContractOrContractReferenceBuilder [[ContractOrContractReference.ContractOrContractReferenceBuilder.html]] {
+        +getContract(): List<Contract.ContractBuilder>
+        +getOrCreateContract(int): Contract.ContractBuilder
+        +getContractReference(): List<ContractReference.ContractReferenceBuilder>
+        +getOrCreateContractReference(int): ContractReference.ContractReferenceBuilder
+        +addContract(Contract): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +addContractBuilder(Contract.ContractBuilder): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +addContractReference(ContractReference): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +addContractReferenceBuilder(ContractReference.ContractReferenceBuilder): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +build(): ContractOrContractReference
+    }
+
+@enduml

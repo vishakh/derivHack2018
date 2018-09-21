@@ -1,0 +1,7 @@
+@startuml
+
+    class FeaturePaymentAmountDataRule [[FeaturePaymentAmountDataRule.html]] {
+        +validate(FeaturePayment): ValidationResult<FeaturePayment>
+    }
+
+@enduml

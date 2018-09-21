@@ -1,0 +1,41 @@
+@startuml
+
+    class OptionalEarlyTermination.OptionalEarlyTerminationBuilder [[OptionalEarlyTermination.OptionalEarlyTerminationBuilder.html]] {
+        +getAmericanExercise(): AmericanExercise.AmericanExerciseBuilder
+        +getOrCreateAmericanExercise(): AmericanExercise.AmericanExerciseBuilder
+        +getBermudaExercise(): BermudaExercise.BermudaExerciseBuilder
+        +getOrCreateBermudaExercise(): BermudaExercise.BermudaExerciseBuilder
+        +getCalculationAgent(): CalculationAgent.CalculationAgentBuilder
+        +getOrCreateCalculationAgent(): CalculationAgent.CalculationAgentBuilder
+        +getCashSettlement(): OptionCashSettlement.OptionCashSettlementBuilder
+        +getOrCreateCashSettlement(): OptionCashSettlement.OptionCashSettlementBuilder
+        +getEuropeanExercise(): EuropeanExercise.EuropeanExerciseBuilder
+        +getOrCreateEuropeanExercise(): EuropeanExercise.EuropeanExerciseBuilder
+        +getExerciseNotice(): List<ExerciseNotice.ExerciseNoticeBuilder>
+        +getOrCreateExerciseNotice(int): ExerciseNotice.ExerciseNoticeBuilder
+        +getFollowUpConfirmation(): Boolean
+        +getOptionalEarlyTerminationAdjustedDates(): OptionalEarlyTerminationAdjustedDates.OptionalEarlyTerminationAdjustedDatesBuilder
+        +getOrCreateOptionalEarlyTerminationAdjustedDates(): OptionalEarlyTerminationAdjustedDates.OptionalEarlyTerminationAdjustedDatesBuilder
+        +getSinglePartyOption(): BuyerSeller.BuyerSellerBuilder
+        +getOrCreateSinglePartyOption(): BuyerSeller.BuyerSellerBuilder
+        +setAmericanExercise(AmericanExercise): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setAmericanExerciseBuilder(AmericanExercise.AmericanExerciseBuilder): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setBermudaExercise(BermudaExercise): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setBermudaExerciseBuilder(BermudaExercise.BermudaExerciseBuilder): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setCalculationAgent(CalculationAgent): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setCalculationAgentBuilder(CalculationAgent.CalculationAgentBuilder): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setCashSettlement(OptionCashSettlement): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setCashSettlementBuilder(OptionCashSettlement.OptionCashSettlementBuilder): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setEuropeanExercise(EuropeanExercise): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setEuropeanExerciseBuilder(EuropeanExercise.EuropeanExerciseBuilder): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +addExerciseNotice(ExerciseNotice): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +addExerciseNoticeBuilder(ExerciseNotice.ExerciseNoticeBuilder): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setFollowUpConfirmation(Boolean): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setOptionalEarlyTerminationAdjustedDates(OptionalEarlyTerminationAdjustedDates): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setOptionalEarlyTerminationAdjustedDatesBuilder(OptionalEarlyTerminationAdjustedDates.OptionalEarlyTerminationAdjustedDatesBuilder): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setSinglePartyOption(BuyerSeller): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +setSinglePartyOptionBuilder(BuyerSeller.BuyerSellerBuilder): OptionalEarlyTermination.OptionalEarlyTerminationBuilder
+        +build(): OptionalEarlyTermination
+    }
+
+@enduml

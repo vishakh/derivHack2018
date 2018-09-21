@@ -1,0 +1,11 @@
+@startuml
+
+    class FloatingAmountProvisions [[FloatingAmountProvisions.html]] {
+        +getStepUpProvision(): Boolean
+        +getWacCapInterestProvision(): Boolean
+        +toBuilder(): FloatingAmountProvisions.FloatingAmountProvisionsBuilder
+        {static} +builder(): FloatingAmountProvisions.FloatingAmountProvisionsBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

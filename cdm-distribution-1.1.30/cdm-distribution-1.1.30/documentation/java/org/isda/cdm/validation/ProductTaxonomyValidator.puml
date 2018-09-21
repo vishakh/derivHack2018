@@ -1,0 +1,7 @@
+@startuml
+
+    class ProductTaxonomyValidator [[ProductTaxonomyValidator.html]] {
+        +validate(ProductTaxonomy): ValidationResult<ProductTaxonomy>
+    }
+
+@enduml

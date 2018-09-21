@@ -1,0 +1,15 @@
+@startuml
+
+    class PayerReceiver.PayerReceiverBuilder [[PayerReceiver.PayerReceiverBuilder.html]] {
+        +getPayerAccountReference(): String
+        +getPayerPartyReference(): String
+        +getReceiverAccountReference(): String
+        +getReceiverPartyReference(): String
+        +setPayerAccountReference(String): PayerReceiver.PayerReceiverBuilder
+        +setPayerPartyReference(String): PayerReceiver.PayerReceiverBuilder
+        +setReceiverAccountReference(String): PayerReceiver.PayerReceiverBuilder
+        +setReceiverPartyReference(String): PayerReceiver.PayerReceiverBuilder
+        +build(): PayerReceiver
+    }
+
+@enduml

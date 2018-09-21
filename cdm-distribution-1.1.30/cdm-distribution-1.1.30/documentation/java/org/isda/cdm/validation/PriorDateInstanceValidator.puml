@@ -1,0 +1,7 @@
+@startuml
+
+    class PriorDateInstanceValidator [[PriorDateInstanceValidator.html]] {
+        +validate(PriorDateInstance): ValidationResult<PriorDateInstance>
+    }
+
+@enduml

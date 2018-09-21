@@ -1,0 +1,7 @@
+@startuml
+
+    class TransferorTransfereeOnlyExistsValidator [[TransferorTransfereeOnlyExistsValidator.html]] {
+        +validate(TransferorTransferee, String): ValidationResult<TransferorTransferee>
+    }
+
+@enduml

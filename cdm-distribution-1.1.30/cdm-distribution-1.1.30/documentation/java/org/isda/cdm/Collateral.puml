@@ -1,0 +1,10 @@
+@startuml
+
+    class Collateral [[Collateral.html]] {
+        +getIndependentAmount(): IndependentAmount
+        +toBuilder(): Collateral.CollateralBuilder
+        {static} +builder(): Collateral.CollateralBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

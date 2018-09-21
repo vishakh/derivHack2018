@@ -1,0 +1,47 @@
+@startuml
+
+    class PrimitiveEvent.PrimitiveEventBuilder [[PrimitiveEvent.PrimitiveEventBuilder.html]] {
+        +getAllocation(): List<AllocationPrimitive.AllocationPrimitiveBuilder>
+        +getOrCreateAllocation(int): AllocationPrimitive.AllocationPrimitiveBuilder
+        +getExercise(): ExercisePrimitive.ExercisePrimitiveBuilder
+        +getOrCreateExercise(): ExercisePrimitive.ExercisePrimitiveBuilder
+        +getInception(): List<Inception.InceptionBuilder>
+        +getOrCreateInception(int): Inception.InceptionBuilder
+        +getNewTrade(): List<NewTradePrimitive.NewTradePrimitiveBuilder>
+        +getOrCreateNewTrade(int): NewTradePrimitive.NewTradePrimitiveBuilder
+        +getObservation(): List<ObservationPrimitive.ObservationPrimitiveBuilder>
+        +getOrCreateObservation(int): ObservationPrimitive.ObservationPrimitiveBuilder
+        +getPayment(): List<Payment.PaymentBuilder>
+        +getOrCreatePayment(int): Payment.PaymentBuilder
+        +getQuantityChange(): List<QuantityChangePrimitive.QuantityChangePrimitiveBuilder>
+        +getOrCreateQuantityChange(int): QuantityChangePrimitive.QuantityChangePrimitiveBuilder
+        +getReset(): List<ResetPrimitive.ResetPrimitiveBuilder>
+        +getOrCreateReset(int): ResetPrimitive.ResetPrimitiveBuilder
+        +getTermsChange(): TermsChangePrimitive.TermsChangePrimitiveBuilder
+        +getOrCreateTermsChange(): TermsChangePrimitive.TermsChangePrimitiveBuilder
+        +getTransfer(): List<Transfer.TransferBuilder>
+        +getOrCreateTransfer(int): Transfer.TransferBuilder
+        +addAllocation(AllocationPrimitive): PrimitiveEvent.PrimitiveEventBuilder
+        +addAllocationBuilder(AllocationPrimitive.AllocationPrimitiveBuilder): PrimitiveEvent.PrimitiveEventBuilder
+        +setExercise(ExercisePrimitive): PrimitiveEvent.PrimitiveEventBuilder
+        +setExerciseBuilder(ExercisePrimitive.ExercisePrimitiveBuilder): PrimitiveEvent.PrimitiveEventBuilder
+        +addInception(Inception): PrimitiveEvent.PrimitiveEventBuilder
+        +addInceptionBuilder(Inception.InceptionBuilder): PrimitiveEvent.PrimitiveEventBuilder
+        +addNewTrade(NewTradePrimitive): PrimitiveEvent.PrimitiveEventBuilder
+        +addNewTradeBuilder(NewTradePrimitive.NewTradePrimitiveBuilder): PrimitiveEvent.PrimitiveEventBuilder
+        +addObservation(ObservationPrimitive): PrimitiveEvent.PrimitiveEventBuilder
+        +addObservationBuilder(ObservationPrimitive.ObservationPrimitiveBuilder): PrimitiveEvent.PrimitiveEventBuilder
+        +addPayment(Payment): PrimitiveEvent.PrimitiveEventBuilder
+        +addPaymentBuilder(Payment.PaymentBuilder): PrimitiveEvent.PrimitiveEventBuilder
+        +addQuantityChange(QuantityChangePrimitive): PrimitiveEvent.PrimitiveEventBuilder
+        +addQuantityChangeBuilder(QuantityChangePrimitive.QuantityChangePrimitiveBuilder): PrimitiveEvent.PrimitiveEventBuilder
+        +addReset(ResetPrimitive): PrimitiveEvent.PrimitiveEventBuilder
+        +addResetBuilder(ResetPrimitive.ResetPrimitiveBuilder): PrimitiveEvent.PrimitiveEventBuilder
+        +setTermsChange(TermsChangePrimitive): PrimitiveEvent.PrimitiveEventBuilder
+        +setTermsChangeBuilder(TermsChangePrimitive.TermsChangePrimitiveBuilder): PrimitiveEvent.PrimitiveEventBuilder
+        +addTransfer(Transfer): PrimitiveEvent.PrimitiveEventBuilder
+        +addTransferBuilder(Transfer.TransferBuilder): PrimitiveEvent.PrimitiveEventBuilder
+        +build(): PrimitiveEvent
+    }
+
+@enduml

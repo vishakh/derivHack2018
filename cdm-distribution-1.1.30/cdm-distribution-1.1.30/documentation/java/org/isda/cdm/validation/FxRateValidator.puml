@@ -1,0 +1,7 @@
+@startuml
+
+    class FxRateValidator [[FxRateValidator.html]] {
+        +validate(FxRate): ValidationResult<FxRate>
+    }
+
+@enduml

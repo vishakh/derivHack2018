@@ -1,0 +1,141 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "56ERT7RHWE4",
+      "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+    },
+    "partyReference" : "g4789"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "creditDefaultPayout" : {
+          "cashSettlementTerms" : {
+            "settlementCurrency" : "USD"
+          },
+          "generalTerms" : {
+            "buyerSeller" : {
+              "buyerPartyReference" : "xdf45",
+              "sellerPartyReference" : "g4789"
+            },
+            "dateAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "EUTA" ]
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "referenceInformation" : {
+              "referenceEntity" : {
+                "entityId" : " entityIdScheme=\"http://www.dtcc.com/coding-scheme/external/emir-reference-entity\">Identifier:549300YWR8TN1OFD4P06",
+                "name" : " entityNameScheme=\"http://www.fpml.org/spec/2003/entity-name-RED\">Petróleos de Venezuela, S.A."
+              },
+              "referenceObligation" : [ {
+                "bond" : {
+                  "productIdentifierScheme" : "http://www.fpml.org/spec/2002/instrument-id-CUSIP"
+                }
+              } ],
+              "referencePrice" : 0.486
+            }
+          },
+          "protectionTerms" : {
+            "creditEvents" : {
+              "bankruptcy" : false,
+              "creditEventNotice" : {
+                "notifyingParty" : {
+                  "buyerPartyReference" : "xdf45"
+                }
+              }
+            },
+            "notionalAmount" : {
+              "amount" : 1000000,
+              "currency" : "EUR"
+            },
+            "obligations" : {
+              "category" : "PAYMENT"
+            }
+          },
+          "rosettaKeyValue" : "7651c109"
+        },
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessCenters" : {
+                    "businessCentersReference" : "e789456"
+                  },
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2018-10-04"
+              }
+            },
+            "firstPeriodStartDate" : {
+              "unadjustedDate" : "2018-09-20"
+            },
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "GBLO", "EUTA" ],
+                  "id" : "e789456"
+                },
+                "businessDayConvention" : "NONE"
+              },
+              "unadjustedDate" : "2022-12-20"
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.01
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "xdf45",
+            "receiverPartyReference" : "g4789"
+          },
+          "paymentDates" : {
+            "firstPaymentDate" : "2018-12-20",
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            }
+          },
+          "quantity" : {
+            "notionalAmount" : {
+              "amount" : 1000000,
+              "currency" : "EUR"
+            }
+          },
+          "rosettaKeyValue" : "86251dd9"
+        } ]
+      },
+      "rosettaKeyValue" : "67644010"
+    },
+    "productIdentification" : {
+      "primaryAssetClass" : "CREDIT",
+      "productId" : [ "Credit_SingleName_Corporate_StandardEuropeanCorporate", "USP7807HAV70" ],
+      "productIdScheme" : "http://www.dtcc.com/coding-scheme/external/underlying-id/ISIN",
+      "productType" : [ "SCUCCX", "SNDB", "SW", "Untranched" ],
+      "productTypeScheme" : "http://www.dtcc.com/coding-scheme/external/product-classification/emir-tranched-product"
+    }
+  },
+  "documentation" : {
+    "contractualMatrix" : [ {
+      "matrixType" : "CREDIT_DERIVATIVES_PHYSICAL_SETTLEMENT_MATRIX"
+    } ]
+  },
+  "party" : [ {
+    "id" : "g4789",
+    "partyId" : [ "894500DM8LVOSCMP9T34" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "xdf45",
+    "partyId" : [ "549300JZDC6K840D7F79" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2018-10-02",
+    "id" : "tradeDate"
+  },
+  "rosettaKey" : "18a7feb4"
+}

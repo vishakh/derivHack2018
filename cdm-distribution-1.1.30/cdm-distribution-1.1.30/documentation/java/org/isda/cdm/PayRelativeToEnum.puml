@@ -1,0 +1,11 @@
+@startuml
+
+    enum PayRelativeToEnum [[PayRelativeToEnum.html]] {
+        {static} +CALCULATION_PERIOD_START_DATE
+        {static} +CALCULATION_PERIOD_END_DATE
+        {static} +LAST_PRICING_DATE
+        {static} +RESET_DATE
+        {static} +VALUATION_DATE
+    }
+
+@enduml

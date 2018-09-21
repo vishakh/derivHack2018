@@ -1,0 +1,16 @@
+@startuml
+
+    class FxLinkedNotionalSchedule [[FxLinkedNotionalSchedule.html]] {
+        +getConstantNotionalScheduleReference(): String
+        +getFxSpotRateSource(): FxSpotRateSource
+        +getInitialValue(): BigDecimal
+        +getVaryingNotionalCurrency(): String
+        +getVaryingNotionalCurrencyScheme(): String
+        +getVaryingNotionalFixingDates(): RelativeDateOffset
+        +getVaryingNotionalInterimExchangePaymentDates(): RelativeDateOffset
+        +toBuilder(): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        {static} +builder(): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class InitialFixingDate.InitialFixingDateBuilder [[InitialFixingDate.InitialFixingDateBuilder.html]] {
+        +getInitialFixingDate(): LocalDate
+        +getRelativeDateOffset(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getOrCreateRelativeDateOffset(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +setInitialFixingDate(LocalDate): InitialFixingDate.InitialFixingDateBuilder
+        +setRelativeDateOffset(RelativeDateOffset): InitialFixingDate.InitialFixingDateBuilder
+        +setRelativeDateOffsetBuilder(RelativeDateOffset.RelativeDateOffsetBuilder): InitialFixingDate.InitialFixingDateBuilder
+        +build(): InitialFixingDate
+    }
+
+@enduml

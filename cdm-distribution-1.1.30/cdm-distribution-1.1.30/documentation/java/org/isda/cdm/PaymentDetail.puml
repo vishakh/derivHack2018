@@ -1,0 +1,13 @@
+@startuml
+
+    class PaymentDetail [[PaymentDetail.html]] {
+        +getId(): String
+        +getPaymentAmount(): Money
+        +getPaymentDate(): AdjustableOrAdjustedDate
+        +getPaymentRule(): PaymentRule
+        +toBuilder(): PaymentDetail.PaymentDetailBuilder
+        {static} +builder(): PaymentDetail.PaymentDetailBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

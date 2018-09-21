@@ -1,0 +1,8 @@
+@startuml
+
+    enum InterpolationMethodEnum [[InterpolationMethodEnum.html]] {
+        {static} +LINEAR_ZERO_YIELD
+        {static} +NONE
+    }
+
+@enduml

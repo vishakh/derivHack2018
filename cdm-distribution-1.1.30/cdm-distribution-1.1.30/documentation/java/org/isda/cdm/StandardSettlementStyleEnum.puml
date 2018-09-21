@@ -1,0 +1,9 @@
+@startuml
+
+    enum StandardSettlementStyleEnum [[StandardSettlementStyleEnum.html]] {
+        {static} +STANDARD
+        {static} +NET
+        {static} +STANDARD_AND_NET
+    }
+
+@enduml

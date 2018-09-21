@@ -1,0 +1,11 @@
+@startuml
+
+    enum TriggerTypeEnum [[TriggerTypeEnum.html]] {
+        {static} +EQUAL_OR_LESS
+        {static} +EQUAL_OR_GREATER
+        {static} +EQUAL
+        {static} +LESS
+        {static} +GREATER
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    enum ObligationCategoryEnum [[ObligationCategoryEnum.html]] {
+        {static} +PAYMENT
+        {static} +BORROWED_MONEY
+        {static} +REFERENCE_OBLIGATIONS_ONLY
+        {static} +BOND
+        {static} +LOAN
+        {static} +BOND_OR_LOAN
+    }
+
+@enduml

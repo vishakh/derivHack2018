@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLIrd49DataRule [[FpMLIrd49DataRule.html]] {
+        +validate(ResetFrequency): ValidationResult<ResetFrequency>
+    }
+
+@enduml

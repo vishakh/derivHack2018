@@ -1,0 +1,10 @@
+@startuml
+
+    class PriceSourceDisruption [[PriceSourceDisruption.html]] {
+        +getFallbackReferencePrice(): FallbackReferencePrice
+        +toBuilder(): PriceSourceDisruption.PriceSourceDisruptionBuilder
+        {static} +builder(): PriceSourceDisruption.PriceSourceDisruptionBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

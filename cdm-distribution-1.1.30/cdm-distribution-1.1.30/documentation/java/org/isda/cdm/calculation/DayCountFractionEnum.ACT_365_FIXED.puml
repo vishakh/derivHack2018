@@ -1,0 +1,8 @@
+@startuml
+
+    class DayCountFractionEnum.ACT_365_FIXED [[DayCountFractionEnum.ACT_365_FIXED.html]] {
+        +ACT_365_FIXED(DaysInPeriod)
+        +calculate(InterestRatePayout): DayCountFractionEnum.CalculationResult
+    }
+
+@enduml

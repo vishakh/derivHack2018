@@ -1,0 +1,7 @@
+@startuml
+
+    class IsNewTradeBusinessEvent [[IsNewTradeBusinessEvent.html]] {
+        +apply(Event): QualifyResult
+    }
+
+@enduml

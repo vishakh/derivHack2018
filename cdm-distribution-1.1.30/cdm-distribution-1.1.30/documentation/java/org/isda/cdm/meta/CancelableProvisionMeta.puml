@@ -1,0 +1,12 @@
+@startuml
+
+    class CancelableProvisionMeta [[CancelableProvisionMeta.html]] {
+        +dataRules(): List<Validator<CancelableProvision>>
+        +choiceRuleValidators(): List<Validator<CancelableProvision>>
+        +getOutMappings(): Multimap<String, OutMapping<CancelableProvision, ?>>
+        +getQualifyFunctions(): List<Function<CancelableProvision, QualifyResult>>
+        +validator(): Validator<CancelableProvision>
+        +onlyExistsValidator(): ValidatorWithArg<CancelableProvision, String>
+    }
+
+@enduml

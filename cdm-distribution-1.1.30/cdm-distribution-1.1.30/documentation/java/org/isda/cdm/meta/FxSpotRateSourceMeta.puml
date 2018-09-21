@@ -1,0 +1,12 @@
+@startuml
+
+    class FxSpotRateSourceMeta [[FxSpotRateSourceMeta.html]] {
+        +dataRules(): List<Validator<FxSpotRateSource>>
+        +choiceRuleValidators(): List<Validator<FxSpotRateSource>>
+        +getOutMappings(): Multimap<String, OutMapping<FxSpotRateSource, ?>>
+        +getQualifyFunctions(): List<Function<FxSpotRateSource, QualifyResult>>
+        +validator(): Validator<FxSpotRateSource>
+        +onlyExistsValidator(): ValidatorWithArg<FxSpotRateSource, String>
+    }
+
+@enduml

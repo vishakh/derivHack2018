@@ -1,0 +1,12 @@
+@startuml
+
+    class CalculationAgentModelMeta [[CalculationAgentModelMeta.html]] {
+        +dataRules(): List<Validator<CalculationAgentModel>>
+        +choiceRuleValidators(): List<Validator<CalculationAgentModel>>
+        +getOutMappings(): Multimap<String, OutMapping<CalculationAgentModel, ?>>
+        +getQualifyFunctions(): List<Function<CalculationAgentModel, QualifyResult>>
+        +validator(): Validator<CalculationAgentModel>
+        +onlyExistsValidator(): ValidatorWithArg<CalculationAgentModel, String>
+    }
+
+@enduml

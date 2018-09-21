@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractOrContractReferenceOnlyExistsValidator [[ContractOrContractReferenceOnlyExistsValidator.html]] {
+        +validate(ContractOrContractReference, String): ValidationResult<ContractOrContractReference>
+    }
+
+@enduml

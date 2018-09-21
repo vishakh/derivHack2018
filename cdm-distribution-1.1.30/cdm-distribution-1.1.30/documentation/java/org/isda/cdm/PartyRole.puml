@@ -1,0 +1,11 @@
+@startuml
+
+    class PartyRole [[PartyRole.html]] {
+        +getPartyReference(): String
+        +getRole(): PartyRoleEnum
+        +toBuilder(): PartyRole.PartyRoleBuilder
+        {static} +builder(): PartyRole.PartyRoleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

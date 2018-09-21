@@ -1,0 +1,7 @@
+@startuml
+
+    class AccountValidator [[AccountValidator.html]] {
+        +validate(Account): ValidationResult<Account>
+    }
+
+@enduml

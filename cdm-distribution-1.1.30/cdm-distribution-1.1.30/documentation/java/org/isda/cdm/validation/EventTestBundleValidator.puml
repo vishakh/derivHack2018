@@ -1,0 +1,7 @@
+@startuml
+
+    class EventTestBundleValidator [[EventTestBundleValidator.html]] {
+        +validate(EventTestBundle): ValidationResult<EventTestBundle>
+    }
+
+@enduml

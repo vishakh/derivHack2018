@@ -1,0 +1,14 @@
+@startuml
+
+    class LegalEntity [[LegalEntity.html]] {
+        +getEntityId(): String
+        +getEntityIdScheme(): String
+        +getId(): String
+        +getName(): String
+        +getNameScheme(): String
+        +toBuilder(): LegalEntity.LegalEntityBuilder
+        {static} +builder(): LegalEntity.LegalEntityBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

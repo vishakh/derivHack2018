@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLCd44OpenUnitsDataRule [[FpMLCd44OpenUnitsDataRule.html]] {
+        +validate(ReferencePool): ValidationResult<ReferencePool>
+    }
+
+@enduml

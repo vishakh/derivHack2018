@@ -1,0 +1,7 @@
+@startuml
+
+    class CreditSupportAgreementValidator [[CreditSupportAgreementValidator.html]] {
+        +validate(CreditSupportAgreement): ValidationResult<CreditSupportAgreement>
+    }
+
+@enduml

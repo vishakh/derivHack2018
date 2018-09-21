@@ -1,0 +1,7 @@
+@startuml
+
+    class BrokerConfirmationOnlyExistsValidator [[BrokerConfirmationOnlyExistsValidator.html]] {
+        +validate(BrokerConfirmation, String): ValidationResult<BrokerConfirmation>
+    }
+
+@enduml

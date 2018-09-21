@@ -1,0 +1,11 @@
+@startuml
+
+    class OptionPhysicalSettlement [[OptionPhysicalSettlement.html]] {
+        +getClearedPhysicalSettlement(): Boolean
+        +getPredeterminedClearingOrganizationPartyReference(): String
+        +toBuilder(): OptionPhysicalSettlement.OptionPhysicalSettlementBuilder
+        {static} +builder(): OptionPhysicalSettlement.OptionPhysicalSettlementBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

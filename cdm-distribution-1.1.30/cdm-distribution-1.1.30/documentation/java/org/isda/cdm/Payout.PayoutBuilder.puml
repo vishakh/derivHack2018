@@ -1,0 +1,23 @@
+@startuml
+
+    class Payout.PayoutBuilder [[Payout.PayoutBuilder.html]] {
+        +getCashflow(): List<Cashflow.CashflowBuilder>
+        +getOrCreateCashflow(int): Cashflow.CashflowBuilder
+        +getCreditDefaultPayout(): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +getOrCreateCreditDefaultPayout(): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +getInterestRatePayout(): List<InterestRatePayout.InterestRatePayoutBuilder>
+        +getOrCreateInterestRatePayout(int): InterestRatePayout.InterestRatePayoutBuilder
+        +getOptionPayout(): List<OptionPayout.OptionPayoutBuilder>
+        +getOrCreateOptionPayout(int): OptionPayout.OptionPayoutBuilder
+        +addCashflow(Cashflow): Payout.PayoutBuilder
+        +addCashflowBuilder(Cashflow.CashflowBuilder): Payout.PayoutBuilder
+        +setCreditDefaultPayout(CreditDefaultPayout): Payout.PayoutBuilder
+        +setCreditDefaultPayoutBuilder(CreditDefaultPayout.CreditDefaultPayoutBuilder): Payout.PayoutBuilder
+        +addInterestRatePayout(InterestRatePayout): Payout.PayoutBuilder
+        +addInterestRatePayoutBuilder(InterestRatePayout.InterestRatePayoutBuilder): Payout.PayoutBuilder
+        +addOptionPayout(OptionPayout): Payout.PayoutBuilder
+        +addOptionPayoutBuilder(OptionPayout.OptionPayoutBuilder): Payout.PayoutBuilder
+        +build(): Payout
+    }
+
+@enduml

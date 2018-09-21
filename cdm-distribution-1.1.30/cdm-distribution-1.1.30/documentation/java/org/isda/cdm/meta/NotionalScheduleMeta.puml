@@ -1,0 +1,12 @@
+@startuml
+
+    class NotionalScheduleMeta [[NotionalScheduleMeta.html]] {
+        +dataRules(): List<Validator<NotionalSchedule>>
+        +choiceRuleValidators(): List<Validator<NotionalSchedule>>
+        +getOutMappings(): Multimap<String, OutMapping<NotionalSchedule, ?>>
+        +getQualifyFunctions(): List<Function<NotionalSchedule, QualifyResult>>
+        +validator(): Validator<NotionalSchedule>
+        +onlyExistsValidator(): ValidatorWithArg<NotionalSchedule, String>
+    }
+
+@enduml

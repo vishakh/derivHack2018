@@ -1,0 +1,43 @@
+@startuml
+
+    class Documentation.DocumentationBuilder [[Documentation.DocumentationBuilder.html]] {
+        +getAttachment(): List<Resource.ResourceBuilder>
+        +getOrCreateAttachment(int): Resource.ResourceBuilder
+        +getBrokerConfirmation(): BrokerConfirmation.BrokerConfirmationBuilder
+        +getOrCreateBrokerConfirmation(): BrokerConfirmation.BrokerConfirmationBuilder
+        +getContractualDefinitions(): List<ContractualDefinitionsEnum>
+        +getContractualDefinitionsScheme(): String
+        +getContractualMatrix(): List<ContractualMatrix.ContractualMatrixBuilder>
+        +getOrCreateContractualMatrix(int): ContractualMatrix.ContractualMatrixBuilder
+        +getContractualTermsSupplement(): List<ContractualTermsSupplement.ContractualTermsSupplementBuilder>
+        +getOrCreateContractualTermsSupplement(int): ContractualTermsSupplement.ContractualTermsSupplementBuilder
+        +getCreditSupportAgreement(): CreditSupportAgreement.CreditSupportAgreementBuilder
+        +getOrCreateCreditSupportAgreement(): CreditSupportAgreement.CreditSupportAgreementBuilder
+        +getMasterAgreement(): MasterAgreement.MasterAgreementBuilder
+        +getOrCreateMasterAgreement(): MasterAgreement.MasterAgreementBuilder
+        +getMasterConfirmation(): MasterConfirmation.MasterConfirmationBuilder
+        +getOrCreateMasterConfirmation(): MasterConfirmation.MasterConfirmationBuilder
+        +getOtherAgreement(): List<OtherAgreement.OtherAgreementBuilder>
+        +getOrCreateOtherAgreement(int): OtherAgreement.OtherAgreementBuilder
+        +addAttachment(Resource): Documentation.DocumentationBuilder
+        +addAttachmentBuilder(Resource.ResourceBuilder): Documentation.DocumentationBuilder
+        +setBrokerConfirmation(BrokerConfirmation): Documentation.DocumentationBuilder
+        +setBrokerConfirmationBuilder(BrokerConfirmation.BrokerConfirmationBuilder): Documentation.DocumentationBuilder
+        +addContractualDefinitions(ContractualDefinitionsEnum): Documentation.DocumentationBuilder
+        +setContractualDefinitionsScheme(String): Documentation.DocumentationBuilder
+        +addContractualMatrix(ContractualMatrix): Documentation.DocumentationBuilder
+        +addContractualMatrixBuilder(ContractualMatrix.ContractualMatrixBuilder): Documentation.DocumentationBuilder
+        +addContractualTermsSupplement(ContractualTermsSupplement): Documentation.DocumentationBuilder
+        +addContractualTermsSupplementBuilder(ContractualTermsSupplement.ContractualTermsSupplementBuilder): Documentation.DocumentationBuilder
+        +setCreditSupportAgreement(CreditSupportAgreement): Documentation.DocumentationBuilder
+        +setCreditSupportAgreementBuilder(CreditSupportAgreement.CreditSupportAgreementBuilder): Documentation.DocumentationBuilder
+        +setMasterAgreement(MasterAgreement): Documentation.DocumentationBuilder
+        +setMasterAgreementBuilder(MasterAgreement.MasterAgreementBuilder): Documentation.DocumentationBuilder
+        +setMasterConfirmation(MasterConfirmation): Documentation.DocumentationBuilder
+        +setMasterConfirmationBuilder(MasterConfirmation.MasterConfirmationBuilder): Documentation.DocumentationBuilder
+        +addOtherAgreement(OtherAgreement): Documentation.DocumentationBuilder
+        +addOtherAgreementBuilder(OtherAgreement.OtherAgreementBuilder): Documentation.DocumentationBuilder
+        +build(): Documentation
+    }
+
+@enduml

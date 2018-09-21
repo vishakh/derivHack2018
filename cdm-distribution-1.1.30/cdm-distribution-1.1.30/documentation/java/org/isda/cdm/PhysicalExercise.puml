@@ -1,0 +1,13 @@
+@startuml
+
+    class PhysicalExercise [[PhysicalExercise.html]] {
+        +getCashflow(): Cashflow
+        +getCommodity(): Commodity
+        +getListedProduct(): ListedProduct
+        +getQuantity(): Quantity
+        +toBuilder(): PhysicalExercise.PhysicalExerciseBuilder
+        {static} +builder(): PhysicalExercise.PhysicalExerciseBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

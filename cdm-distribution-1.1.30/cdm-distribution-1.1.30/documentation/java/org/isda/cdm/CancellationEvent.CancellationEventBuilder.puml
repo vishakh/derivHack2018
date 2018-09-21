@@ -1,0 +1,13 @@
+@startuml
+
+    class CancellationEvent.CancellationEventBuilder [[CancellationEvent.CancellationEventBuilder.html]] {
+        +getAdjustedEarlyTerminationDate(): LocalDate
+        +getAdjustedExerciseDate(): LocalDate
+        +getId(): String
+        +setAdjustedEarlyTerminationDate(LocalDate): CancellationEvent.CancellationEventBuilder
+        +setAdjustedExerciseDate(LocalDate): CancellationEvent.CancellationEventBuilder
+        +setId(String): CancellationEvent.CancellationEventBuilder
+        +build(): CancellationEvent
+    }
+
+@enduml

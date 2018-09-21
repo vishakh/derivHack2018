@@ -1,0 +1,7 @@
+@startuml
+
+    class EventOnlyExistsValidator [[EventOnlyExistsValidator.html]] {
+        +validate(Event, String): ValidationResult<Event>
+    }
+
+@enduml

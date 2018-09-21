@@ -1,0 +1,7 @@
+@startuml
+
+    class MultipleValuationDatesValidator [[MultipleValuationDatesValidator.html]] {
+        +validate(MultipleValuationDates): ValidationResult<MultipleValuationDates>
+    }
+
+@enduml

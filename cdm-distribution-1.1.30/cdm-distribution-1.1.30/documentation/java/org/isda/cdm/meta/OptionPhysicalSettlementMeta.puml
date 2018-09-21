@@ -1,0 +1,12 @@
+@startuml
+
+    class OptionPhysicalSettlementMeta [[OptionPhysicalSettlementMeta.html]] {
+        +dataRules(): List<Validator<OptionPhysicalSettlement>>
+        +choiceRuleValidators(): List<Validator<OptionPhysicalSettlement>>
+        +getOutMappings(): Multimap<String, OutMapping<OptionPhysicalSettlement, ?>>
+        +getQualifyFunctions(): List<Function<OptionPhysicalSettlement, QualifyResult>>
+        +validator(): Validator<OptionPhysicalSettlement>
+        +onlyExistsValidator(): ValidatorWithArg<OptionPhysicalSettlement, String>
+    }
+
+@enduml

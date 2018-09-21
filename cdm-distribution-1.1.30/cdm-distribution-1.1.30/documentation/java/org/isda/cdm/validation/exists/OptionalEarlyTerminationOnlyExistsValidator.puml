@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionalEarlyTerminationOnlyExistsValidator [[OptionalEarlyTerminationOnlyExistsValidator.html]] {
+        +validate(OptionalEarlyTermination, String): ValidationResult<OptionalEarlyTermination>
+    }
+
+@enduml

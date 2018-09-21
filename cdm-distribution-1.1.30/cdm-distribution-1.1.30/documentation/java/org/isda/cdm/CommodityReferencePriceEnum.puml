@@ -1,0 +1,7 @@
+@startuml
+
+    enum CommodityReferencePriceEnum [[CommodityReferencePriceEnum.html]] {
+        {static} +ALUMINIUM_ALLOY_LME_15_MONTH
+    }
+
+@enduml

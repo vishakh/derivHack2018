@@ -1,0 +1,7 @@
+@startuml
+
+    class FailureToPayValidator [[FailureToPayValidator.html]] {
+        +validate(FailureToPay): ValidationResult<FailureToPay>
+    }
+
+@enduml

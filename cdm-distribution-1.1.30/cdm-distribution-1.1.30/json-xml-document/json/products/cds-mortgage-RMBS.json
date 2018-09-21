@@ -1,0 +1,175 @@
+{
+  "calculationAgent" : {
+    "calculationAgentBusinessCenter" : "USNY",
+    "calculationAgentPartyReference" : [ "gf4t5" ]
+  },
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "56ERT7RHWE4",
+      "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+    },
+    "partyReference" : "yt67d"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "creditDefaultPayout" : {
+          "generalTerms" : {
+            "buyerSeller" : {
+              "buyerPartyReference" : "gf4t5",
+              "sellerPartyReference" : "yt67d"
+            },
+            "dateAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY" ]
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "referenceInformation" : {
+              "referenceEntity" : {
+                "name" : "New Century Home Equity Loan Trust 2005-4"
+              },
+              "referenceObligation" : [ {
+                "mortgage" : {
+                  "currency" : "USD",
+                  "productIdentifierScheme" : "http://www.fpml.org/spec/2002/instrument-id-Bloomberg-1-0",
+                  "maturity" : "2035-09-25",
+                  "originalPrincipalAmount" : 22900000,
+                  "pool" : {
+                    "initialFactor" : 1
+                  },
+                  "sector" : "RMBS",
+                  "tranche" : "M9"
+                }
+              } ]
+            }
+          },
+          "physicalSettlementTerms" : {
+            "escrow" : true,
+            "physicalSettlementPeriod" : {
+              "businessDays" : 5
+            }
+          },
+          "protectionTerms" : {
+            "creditEvents" : {
+              "distressedRatingsDowngrade" : true,
+              "failureToPayInterest" : true,
+              "failureToPayPrincipal" : true,
+              "impliedWritedown" : false,
+              "maturityExtension" : false,
+              "writedown" : true
+            },
+            "floatingAmountEvents" : {
+              "additionalFixedPayments" : {
+                "interestShortfallReimbursement" : true,
+                "principalShortfallReimbursement" : true,
+                "writedownReimbursement" : true
+              },
+              "failureToPayPrincipal" : true,
+              "floatingAmountProvisions" : {
+                "stepUpProvision" : true
+              },
+              "impliedWritedown" : true,
+              "interestShortfall" : {
+                "compounding" : false,
+                "interestShortfallCap" : "FIXED",
+                "rateSource" : "USD_LIBOR_BBA"
+              },
+              "writedown" : true
+            },
+            "notionalAmount" : {
+              "amount" : 15000000.00,
+              "currency" : "USD"
+            }
+          },
+          "rosettaKeyValue" : "f02ab3b0"
+        },
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodFrequency" : {
+              "rollConvention" : "_11"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessCenters" : {
+                    "businessCenter" : [ "GBLO", "USNY" ]
+                  },
+                  "businessDayConvention" : "FOLLOWING"
+                },
+                "unadjustedDate" : "2006-10-11"
+              }
+            },
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "GBLO", "USNY" ]
+                },
+                "businessDayConvention" : "FOLLOWING"
+              },
+              "unadjustedDate" : "2035-09-25"
+            }
+          },
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.050
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "gf4t5",
+            "receiverPartyReference" : "yt67d"
+          },
+          "paymentDates" : {
+            "firstPaymentDate" : "2006-11-01",
+            "lastRegularPaymentDate" : "2035-06-01",
+            "paymentDelay" : true,
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 1
+            }
+          },
+          "quantity" : {
+            "notionalAmount" : {
+              "amount" : 15000000,
+              "currency" : "USD"
+            }
+          },
+          "rosettaKeyValue" : "19c8353"
+        } ]
+      },
+      "rosettaKeyValue" : "c2406ebd"
+    }
+  },
+  "documentation" : {
+    "contractualDefinitions" : [ "ISDA_2003_CREDIT" ],
+    "contractualMatrix" : [ {
+      "matrixType" : "CREDIT_DERIVATIVES_PHYSICAL_SETTLEMENT_MATRIX"
+    } ],
+    "contractualTermsSupplement" : [ {
+      "type" : "ISDA_2003_CREDIT_MAY_2003"
+    } ],
+    "masterAgreement" : {
+      "masterAgreementType" : "ISDA",
+      "masterAgreementVersion" : "1992"
+    }
+  },
+  "party" : [ {
+    "id" : "gf4t5",
+    "legalEntity" : {
+      "name" : "XYZ Bank"
+    },
+    "partyId" : [ "XYZBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "yt67d",
+    "legalEntity" : {
+      "name" : "ABC Bank"
+    },
+    "partyId" : [ "ABCBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2006-10-05"
+  },
+  "rosettaKey" : "a40ee8ca"
+}

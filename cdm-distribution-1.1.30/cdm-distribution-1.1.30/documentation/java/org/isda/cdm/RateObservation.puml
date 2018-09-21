@@ -1,0 +1,18 @@
+@startuml
+
+    class RateObservation [[RateObservation.html]] {
+        +getAdjustedFixingDate(): LocalDate
+        +getForecastRate(): BigDecimal
+        +getId(): String
+        +getObservationWeight(): Integer
+        +getObservedRate(): BigDecimal
+        +getRateReference(): String
+        +getResetDate(): LocalDate
+        +getTreatedForecastRate(): BigDecimal
+        +getTreatedRate(): BigDecimal
+        +toBuilder(): RateObservation.RateObservationBuilder
+        {static} +builder(): RateObservation.RateObservationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLIrd1DataRule [[FpMLIrd1DataRule.html]] {
+        +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+    }
+
+@enduml

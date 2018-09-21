@@ -1,0 +1,21 @@
+@startuml
+
+    class ObservationPrimitive.ObservationPrimitiveBuilder [[ObservationPrimitive.ObservationPrimitiveBuilder.html]] {
+        +getDate(): LocalDate
+        +getObservation(): BigDecimal
+        +getSide(): QuotationSideEnum
+        +getSource(): ObservationSource.ObservationSourceBuilder
+        +getOrCreateSource(): ObservationSource.ObservationSourceBuilder
+        +getTime(): TimeZone.TimeZoneBuilder
+        +getOrCreateTime(): TimeZone.TimeZoneBuilder
+        +setDate(LocalDate): ObservationPrimitive.ObservationPrimitiveBuilder
+        +setObservation(BigDecimal): ObservationPrimitive.ObservationPrimitiveBuilder
+        +setSide(QuotationSideEnum): ObservationPrimitive.ObservationPrimitiveBuilder
+        +setSource(ObservationSource): ObservationPrimitive.ObservationPrimitiveBuilder
+        +setSourceBuilder(ObservationSource.ObservationSourceBuilder): ObservationPrimitive.ObservationPrimitiveBuilder
+        +setTime(TimeZone): ObservationPrimitive.ObservationPrimitiveBuilder
+        +setTimeBuilder(TimeZone.TimeZoneBuilder): ObservationPrimitive.ObservationPrimitiveBuilder
+        +build(): ObservationPrimitive
+    }
+
+@enduml

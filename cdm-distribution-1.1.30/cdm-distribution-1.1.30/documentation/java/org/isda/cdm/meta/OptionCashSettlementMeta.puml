@@ -1,0 +1,12 @@
+@startuml
+
+    class OptionCashSettlementMeta [[OptionCashSettlementMeta.html]] {
+        +dataRules(): List<Validator<OptionCashSettlement>>
+        +choiceRuleValidators(): List<Validator<OptionCashSettlement>>
+        +getOutMappings(): Multimap<String, OutMapping<OptionCashSettlement, ?>>
+        +getQualifyFunctions(): List<Function<OptionCashSettlement, QualifyResult>>
+        +validator(): Validator<OptionCashSettlement>
+        +onlyExistsValidator(): ValidatorWithArg<OptionCashSettlement, String>
+    }
+
+@enduml

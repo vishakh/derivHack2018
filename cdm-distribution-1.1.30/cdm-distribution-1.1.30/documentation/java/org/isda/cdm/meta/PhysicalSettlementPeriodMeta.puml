@@ -1,0 +1,12 @@
+@startuml
+
+    class PhysicalSettlementPeriodMeta [[PhysicalSettlementPeriodMeta.html]] {
+        +dataRules(): List<Validator<PhysicalSettlementPeriod>>
+        +choiceRuleValidators(): List<Validator<PhysicalSettlementPeriod>>
+        +getOutMappings(): Multimap<String, OutMapping<PhysicalSettlementPeriod, ?>>
+        +getQualifyFunctions(): List<Function<PhysicalSettlementPeriod, QualifyResult>>
+        +validator(): Validator<PhysicalSettlementPeriod>
+        +onlyExistsValidator(): ValidatorWithArg<PhysicalSettlementPeriod, String>
+    }
+
+@enduml

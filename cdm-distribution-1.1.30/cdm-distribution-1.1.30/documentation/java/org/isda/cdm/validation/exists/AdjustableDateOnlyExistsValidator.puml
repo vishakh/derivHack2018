@@ -1,0 +1,7 @@
+@startuml
+
+    class AdjustableDateOnlyExistsValidator [[AdjustableDateOnlyExistsValidator.html]] {
+        +validate(AdjustableDate, String): ValidationResult<AdjustableDate>
+    }
+
+@enduml

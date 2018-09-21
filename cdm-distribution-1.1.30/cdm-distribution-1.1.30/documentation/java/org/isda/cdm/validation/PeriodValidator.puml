@@ -1,0 +1,7 @@
+@startuml
+
+    class PeriodValidator [[PeriodValidator.html]] {
+        +validate(Period): ValidationResult<Period>
+    }
+
+@enduml

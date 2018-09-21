@@ -1,0 +1,12 @@
+@startuml
+
+    class OtherAgreementMeta [[OtherAgreementMeta.html]] {
+        +dataRules(): List<Validator<OtherAgreement>>
+        +choiceRuleValidators(): List<Validator<OtherAgreement>>
+        +getOutMappings(): Multimap<String, OutMapping<OtherAgreement, ?>>
+        +getQualifyFunctions(): List<Function<OtherAgreement, QualifyResult>>
+        +validator(): Validator<OtherAgreement>
+        +onlyExistsValidator(): ValidatorWithArg<OtherAgreement, String>
+    }
+
+@enduml

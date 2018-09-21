@@ -1,0 +1,10 @@
+@startuml
+
+    class DateTimeList [[DateTimeList.html]] {
+        +getDateTime(): List<LocalDateTime>
+        +toBuilder(): DateTimeList.DateTimeListBuilder
+        {static} +builder(): DateTimeList.DateTimeListBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

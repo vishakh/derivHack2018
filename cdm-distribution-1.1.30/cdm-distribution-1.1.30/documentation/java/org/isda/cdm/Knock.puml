@@ -1,0 +1,11 @@
+@startuml
+
+    class Knock [[Knock.html]] {
+        +getKnockIn(): TriggerEvent
+        +getKnockOut(): TriggerEvent
+        +toBuilder(): Knock.KnockBuilder
+        {static} +builder(): Knock.KnockBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

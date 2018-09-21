@@ -1,0 +1,12 @@
+@startuml
+
+    class StepMeta [[StepMeta.html]] {
+        +dataRules(): List<Validator<Step>>
+        +choiceRuleValidators(): List<Validator<Step>>
+        +getOutMappings(): Multimap<String, OutMapping<Step, ?>>
+        +getQualifyFunctions(): List<Function<Step, QualifyResult>>
+        +validator(): Validator<Step>
+        +onlyExistsValidator(): ValidatorWithArg<Step, String>
+    }
+
+@enduml

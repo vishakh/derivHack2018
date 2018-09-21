@@ -1,0 +1,19 @@
+@startuml
+
+    class RelativeDateOffset.RelativeDateOffsetBuilder [[RelativeDateOffset.RelativeDateOffsetBuilder.html]] {
+        +getAdjustedDate(): LocalDate
+        +getBusinessCenters(): BusinessCenters.BusinessCentersBuilder
+        +getOrCreateBusinessCenters(): BusinessCenters.BusinessCentersBuilder
+        +getBusinessCentersReference(): String
+        +getBusinessDayConvention(): BusinessDayConventionEnum
+        +getDateRelativeTo(): String
+        +setAdjustedDate(LocalDate): RelativeDateOffset.RelativeDateOffsetBuilder
+        +setBusinessCenters(BusinessCenters): RelativeDateOffset.RelativeDateOffsetBuilder
+        +setBusinessCentersBuilder(BusinessCenters.BusinessCentersBuilder): RelativeDateOffset.RelativeDateOffsetBuilder
+        +setBusinessCentersReference(String): RelativeDateOffset.RelativeDateOffsetBuilder
+        +setBusinessDayConvention(BusinessDayConventionEnum): RelativeDateOffset.RelativeDateOffsetBuilder
+        +setDateRelativeTo(String): RelativeDateOffset.RelativeDateOffsetBuilder
+        +build(): RelativeDateOffset
+    }
+
+@enduml

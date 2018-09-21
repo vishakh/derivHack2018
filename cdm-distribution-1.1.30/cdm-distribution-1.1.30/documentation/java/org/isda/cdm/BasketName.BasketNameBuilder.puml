@@ -1,0 +1,15 @@
+@startuml
+
+    class BasketName.BasketNameBuilder [[BasketName.BasketNameBuilder.html]] {
+        +getBasketId(): List<String>
+        +getBasketIdScheme(): String
+        +getBasketName(): String
+        +getBasketNameScheme(): String
+        +addBasketId(String): BasketName.BasketNameBuilder
+        +setBasketIdScheme(String): BasketName.BasketNameBuilder
+        +setBasketName(String): BasketName.BasketNameBuilder
+        +setBasketNameScheme(String): BasketName.BasketNameBuilder
+        +build(): BasketName
+    }
+
+@enduml

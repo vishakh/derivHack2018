@@ -1,0 +1,13 @@
+@startuml
+
+    class NonNegativeStep.NonNegativeStepBuilder [[NonNegativeStep.NonNegativeStepBuilder.html]] {
+        +getId(): String
+        +getStepDate(): LocalDate
+        +getStepValue(): BigDecimal
+        +setId(String): NonNegativeStep.NonNegativeStepBuilder
+        +setStepDate(LocalDate): NonNegativeStep.NonNegativeStepBuilder
+        +setStepValue(BigDecimal): NonNegativeStep.NonNegativeStepBuilder
+        +build(): NonNegativeStep
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class MinimumNumberOfOptionsMinimumNumberOfOptionsDataRule [[MinimumNumberOfOptionsMinimumNumberOfOptionsDataRule.html]] {
+        +validate(MultipleExercise): ValidationResult<MultipleExercise>
+    }
+
+@enduml

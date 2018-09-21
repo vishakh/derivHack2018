@@ -1,0 +1,22 @@
+@startuml
+
+    enum DeterminationMethodEnum [[DeterminationMethodEnum.html]] {
+        {static} +AGREED_INITIAL_PRICE
+        {static} +AS_SPECIFIED_IN_MASTER_CONFIRMATION
+        {static} +CALCULATION_AGENT
+        {static} +CLOSING_PRICE
+        {static} +DIVIDEND_CURRENCY
+        {static} +EXPIRING_CONTRACT_LEVEL
+        {static} +HEDGE_EXECUTION
+        {static} +ISSUER_PAYMENT_CURRENCY
+        {static} +NAV
+        {static} +OPEN_PRICE
+        {static} +OSP_PRICE
+        {static} +SETTLEMENT_CURRENCY
+        {static} +STRIKE_DATE_DETERMINATION
+        {static} +TWAP_PRICE
+        {static} +VALUATION_TIME
+        {static} +VWAP_PRICE
+    }
+
+@enduml

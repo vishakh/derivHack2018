@@ -1,0 +1,14 @@
+@startuml
+
+    class QuotedCurrencyPair [[QuotedCurrencyPair.html]] {
+        +getCurrency1(): String
+        +getCurrency1Scheme(): String
+        +getCurrency2(): String
+        +getCurrency2Scheme(): String
+        +getQuoteBasis(): QuoteBasisEnum
+        +toBuilder(): QuotedCurrencyPair.QuotedCurrencyPairBuilder
+        {static} +builder(): QuotedCurrencyPair.QuotedCurrencyPairBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

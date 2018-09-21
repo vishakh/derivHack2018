@@ -1,0 +1,11 @@
+@startuml
+
+    class MakeWholeAmount [[MakeWholeAmount.html]] {
+        +getEarlyCallDate(): LocalDate
+        +getInterpolationMethod(): InterpolationMethodEnum
+        +toBuilder(): MakeWholeAmount.MakeWholeAmountBuilder
+        {static} +builder(): MakeWholeAmount.MakeWholeAmountBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

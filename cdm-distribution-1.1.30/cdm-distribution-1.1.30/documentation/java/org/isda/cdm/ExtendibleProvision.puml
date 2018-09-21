@@ -1,0 +1,15 @@
+@startuml
+
+    class ExtendibleProvision [[ExtendibleProvision.html]] {
+        +getAmericanExercise(): AmericanExercise
+        +getBermudaExercise(): BermudaExercise
+        +getEuropeanExercise(): EuropeanExercise
+        +getExerciseNotice(): ExerciseNotice
+        +getExtendibleProvisionAdjustedDates(): ExtendibleProvisionAdjustedDates
+        +getFollowUpConfirmation(): Boolean
+        +toBuilder(): ExtendibleProvision.ExtendibleProvisionBuilder
+        {static} +builder(): ExtendibleProvision.ExtendibleProvisionBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

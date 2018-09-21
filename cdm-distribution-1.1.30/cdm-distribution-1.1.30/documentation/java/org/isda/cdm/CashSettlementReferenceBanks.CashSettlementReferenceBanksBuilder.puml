@@ -1,0 +1,11 @@
+@startuml
+
+    class CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder [[CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder.html]] {
+        +getReferenceBank(): List<ReferenceBank.ReferenceBankBuilder>
+        +getOrCreateReferenceBank(int): ReferenceBank.ReferenceBankBuilder
+        +addReferenceBank(ReferenceBank): CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder
+        +addReferenceBankBuilder(ReferenceBank.ReferenceBankBuilder): CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder
+        +build(): CashSettlementReferenceBanks
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class IsInterestRateCrossCurrencyFixedFloat [[IsInterestRateCrossCurrencyFixedFloat.html]] {
+        +apply(EconomicTerms): QualifyResult
+    }
+
+@enduml

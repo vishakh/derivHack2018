@@ -1,0 +1,7 @@
+@startuml
+
+    class TrancheAttachmentPointExhaustionPointDataRule [[TrancheAttachmentPointExhaustionPointDataRule.html]] {
+        +validate(Tranche): ValidationResult<Tranche>
+    }
+
+@enduml

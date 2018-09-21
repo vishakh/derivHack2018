@@ -1,0 +1,7 @@
+@startuml
+
+    class AccountOnlyExistsValidator [[AccountOnlyExistsValidator.html]] {
+        +validate(Account, String): ValidationResult<Account>
+    }
+
+@enduml

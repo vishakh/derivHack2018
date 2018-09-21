@@ -1,0 +1,11 @@
+@startuml
+
+    class NotifyingParty.NotifyingPartyBuilder [[NotifyingParty.NotifyingPartyBuilder.html]] {
+        +getBuyerPartyReference(): String
+        +getSellerPartyReference(): String
+        +setBuyerPartyReference(String): NotifyingParty.NotifyingPartyBuilder
+        +setSellerPartyReference(String): NotifyingParty.NotifyingPartyBuilder
+        +build(): NotifyingParty
+    }
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+
+    class ExercisePrimitive [[ExercisePrimitive.html]] {
+        +getAfter(): ExerciseOutcome
+        +getBefore(): ContractOrContractReference
+        +getExerciseDate(): LocalDate
+        +getExerciseTime(): LocalTime
+        +getFullExercise(): Boolean
+        +toBuilder(): ExercisePrimitive.ExercisePrimitiveBuilder
+        {static} +builder(): ExercisePrimitive.ExercisePrimitiveBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

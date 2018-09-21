@@ -1,0 +1,19 @@
+@startuml
+
+    class DateInstances.DateInstancesBuilder [[DateInstances.DateInstancesBuilder.html]] {
+        +getAdjustableDate(): AdjustableDate.AdjustableDateBuilder
+        +getOrCreateAdjustableDate(): AdjustableDate.AdjustableDateBuilder
+        +getDate(): LocalDate
+        +getId(): String
+        +getPriorDateInstance(): List<PriorDateInstance.PriorDateInstanceBuilder>
+        +getOrCreatePriorDateInstance(int): PriorDateInstance.PriorDateInstanceBuilder
+        +setAdjustableDate(AdjustableDate): DateInstances.DateInstancesBuilder
+        +setAdjustableDateBuilder(AdjustableDate.AdjustableDateBuilder): DateInstances.DateInstancesBuilder
+        +setDate(LocalDate): DateInstances.DateInstancesBuilder
+        +setId(String): DateInstances.DateInstancesBuilder
+        +addPriorDateInstance(PriorDateInstance): DateInstances.DateInstancesBuilder
+        +addPriorDateInstanceBuilder(PriorDateInstance.PriorDateInstanceBuilder): DateInstances.DateInstancesBuilder
+        +build(): DateInstances
+    }
+
+@enduml

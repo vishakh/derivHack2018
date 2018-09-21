@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionCashSettlementOnlyExistsValidator [[OptionCashSettlementOnlyExistsValidator.html]] {
+        +validate(OptionCashSettlement, String): ValidationResult<OptionCashSettlement>
+    }
+
+@enduml

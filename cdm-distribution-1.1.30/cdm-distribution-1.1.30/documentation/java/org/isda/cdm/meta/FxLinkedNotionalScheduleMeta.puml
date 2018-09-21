@@ -1,0 +1,12 @@
+@startuml
+
+    class FxLinkedNotionalScheduleMeta [[FxLinkedNotionalScheduleMeta.html]] {
+        +dataRules(): List<Validator<FxLinkedNotionalSchedule>>
+        +choiceRuleValidators(): List<Validator<FxLinkedNotionalSchedule>>
+        +getOutMappings(): Multimap<String, OutMapping<FxLinkedNotionalSchedule, ?>>
+        +getQualifyFunctions(): List<Function<FxLinkedNotionalSchedule, QualifyResult>>
+        +validator(): Validator<FxLinkedNotionalSchedule>
+        +onlyExistsValidator(): ValidatorWithArg<FxLinkedNotionalSchedule, String>
+    }
+
+@enduml

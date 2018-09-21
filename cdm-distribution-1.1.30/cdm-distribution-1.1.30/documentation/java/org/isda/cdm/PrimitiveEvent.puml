@@ -1,0 +1,19 @@
+@startuml
+
+    class PrimitiveEvent [[PrimitiveEvent.html]] {
+        +getAllocation(): List<AllocationPrimitive>
+        +getExercise(): ExercisePrimitive
+        +getInception(): List<Inception>
+        +getNewTrade(): List<NewTradePrimitive>
+        +getObservation(): List<ObservationPrimitive>
+        +getPayment(): List<Payment>
+        +getQuantityChange(): List<QuantityChangePrimitive>
+        +getReset(): List<ResetPrimitive>
+        +getTermsChange(): TermsChangePrimitive
+        +getTransfer(): List<Transfer>
+        +toBuilder(): PrimitiveEvent.PrimitiveEventBuilder
+        {static} +builder(): PrimitiveEvent.PrimitiveEventBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

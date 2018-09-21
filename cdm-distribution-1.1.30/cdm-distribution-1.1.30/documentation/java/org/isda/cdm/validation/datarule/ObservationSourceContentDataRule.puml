@@ -1,0 +1,7 @@
+@startuml
+
+    class ObservationSourceContentDataRule [[ObservationSourceContentDataRule.html]] {
+        +validate(ObservationSource): ValidationResult<ObservationSource>
+    }
+
+@enduml

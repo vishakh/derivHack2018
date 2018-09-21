@@ -1,0 +1,7 @@
+@startuml
+
+    class NonDeliverableSettlementOnlyExistsValidator [[NonDeliverableSettlementOnlyExistsValidator.html]] {
+        +validate(NonDeliverableSettlement, String): ValidationResult<NonDeliverableSettlement>
+    }
+
+@enduml

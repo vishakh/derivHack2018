@@ -1,0 +1,11 @@
+@startuml
+
+    class StrikeSpread [[StrikeSpread.html]] {
+        +getUpperStrike(): OptionStrike
+        +getUpperStrikeNumberOfOptions(): BigDecimal
+        +toBuilder(): StrikeSpread.StrikeSpreadBuilder
+        {static} +builder(): StrikeSpread.StrikeSpreadBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class BondReference [[BondReference.html]] {
+        +getBond(): Bond
+        +getConditionPrecedentBond(): Boolean
+        +getDiscrepancyClause(): Boolean
+        +toBuilder(): BondReference.BondReferenceBuilder
+        {static} +builder(): BondReference.BondReferenceBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

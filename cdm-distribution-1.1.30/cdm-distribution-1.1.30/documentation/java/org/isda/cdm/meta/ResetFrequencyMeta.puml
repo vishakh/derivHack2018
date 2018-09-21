@@ -1,0 +1,12 @@
+@startuml
+
+    class ResetFrequencyMeta [[ResetFrequencyMeta.html]] {
+        +dataRules(): List<Validator<ResetFrequency>>
+        +choiceRuleValidators(): List<Validator<ResetFrequency>>
+        +getOutMappings(): Multimap<String, OutMapping<ResetFrequency, ?>>
+        +getQualifyFunctions(): List<Function<ResetFrequency, QualifyResult>>
+        +validator(): Validator<ResetFrequency>
+        +onlyExistsValidator(): ValidatorWithArg<ResetFrequency, String>
+    }
+
+@enduml

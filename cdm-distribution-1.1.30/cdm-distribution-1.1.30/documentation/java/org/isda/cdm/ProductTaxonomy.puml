@@ -1,0 +1,11 @@
+@startuml
+
+    class ProductTaxonomy [[ProductTaxonomy.html]] {
+        +getTaxonomySource(): TaxonomySourceEnum
+        +getTaxonomyValue(): String
+        +toBuilder(): ProductTaxonomy.ProductTaxonomyBuilder
+        {static} +builder(): ProductTaxonomy.ProductTaxonomyBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

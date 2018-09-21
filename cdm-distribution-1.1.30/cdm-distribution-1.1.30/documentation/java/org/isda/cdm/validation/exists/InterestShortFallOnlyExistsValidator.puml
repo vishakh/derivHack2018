@@ -1,0 +1,7 @@
+@startuml
+
+    class InterestShortFallOnlyExistsValidator [[InterestShortFallOnlyExistsValidator.html]] {
+        +validate(InterestShortFall, String): ValidationResult<InterestShortFall>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class ExerciseFeeScheduleMeta [[ExerciseFeeScheduleMeta.html]] {
+        +dataRules(): List<Validator<ExerciseFeeSchedule>>
+        +choiceRuleValidators(): List<Validator<ExerciseFeeSchedule>>
+        +getOutMappings(): Multimap<String, OutMapping<ExerciseFeeSchedule, ?>>
+        +getQualifyFunctions(): List<Function<ExerciseFeeSchedule, QualifyResult>>
+        +validator(): Validator<ExerciseFeeSchedule>
+        +onlyExistsValidator(): ValidatorWithArg<ExerciseFeeSchedule, String>
+    }
+
+@enduml

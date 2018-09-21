@@ -1,0 +1,11 @@
+@startuml
+
+    class DateRange.DateRangeBuilder [[DateRange.DateRangeBuilder.html]] {
+        +getUnadjustedFirstDate(): LocalDate
+        +getUnadjustedLastDate(): LocalDate
+        +setUnadjustedFirstDate(LocalDate): DateRange.DateRangeBuilder
+        +setUnadjustedLastDate(LocalDate): DateRange.DateRangeBuilder
+        +build(): DateRange
+    }
+
+@enduml

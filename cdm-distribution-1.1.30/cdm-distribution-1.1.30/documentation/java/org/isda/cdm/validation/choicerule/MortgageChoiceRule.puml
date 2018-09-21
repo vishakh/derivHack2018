@@ -1,0 +1,7 @@
+@startuml
+
+    class MortgageChoiceRule [[MortgageChoiceRule.html]] {
+        +validate(Mortgage): ValidationResult<Mortgage>
+    }
+
+@enduml

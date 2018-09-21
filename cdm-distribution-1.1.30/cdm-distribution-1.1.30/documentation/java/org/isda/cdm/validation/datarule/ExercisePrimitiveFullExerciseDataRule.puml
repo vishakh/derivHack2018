@@ -1,0 +1,7 @@
+@startuml
+
+    class ExercisePrimitiveFullExerciseDataRule [[ExercisePrimitiveFullExerciseDataRule.html]] {
+        +validate(ExercisePrimitive): ValidationResult<ExercisePrimitive>
+    }
+
+@enduml

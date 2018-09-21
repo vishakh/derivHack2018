@@ -1,0 +1,7 @@
+@startuml
+
+    class ResourceChoiceRule [[ResourceChoiceRule.html]] {
+        +validate(Resource): ValidationResult<Resource>
+    }
+
+@enduml

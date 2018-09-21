@@ -1,0 +1,7 @@
+@startuml
+
+    class InterestRatePayoutActualQuantityDataRule [[InterestRatePayoutActualQuantityDataRule.html]] {
+        +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+    }
+
+@enduml

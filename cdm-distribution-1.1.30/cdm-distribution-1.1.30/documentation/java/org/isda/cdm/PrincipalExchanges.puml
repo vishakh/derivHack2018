@@ -1,0 +1,13 @@
+@startuml
+
+    class PrincipalExchanges [[PrincipalExchanges.html]] {
+        +getFinalExchange(): Boolean
+        +getId(): String
+        +getInitialExchange(): Boolean
+        +getIntermediateExchange(): Boolean
+        +toBuilder(): PrincipalExchanges.PrincipalExchangesBuilder
+        {static} +builder(): PrincipalExchanges.PrincipalExchangesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

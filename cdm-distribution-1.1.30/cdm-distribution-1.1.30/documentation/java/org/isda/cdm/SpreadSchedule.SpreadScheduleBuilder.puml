@@ -1,0 +1,11 @@
+@startuml
+
+    class SpreadSchedule.SpreadScheduleBuilder [[SpreadSchedule.SpreadScheduleBuilder.html]] {
+        +getType(): SpreadScheduleTypeEnum
+        +getTypeScheme(): String
+        +setType(SpreadScheduleTypeEnum): SpreadSchedule.SpreadScheduleBuilder
+        +setTypeScheme(String): SpreadSchedule.SpreadScheduleBuilder
+        +build(): SpreadSchedule
+    }
+
+@enduml

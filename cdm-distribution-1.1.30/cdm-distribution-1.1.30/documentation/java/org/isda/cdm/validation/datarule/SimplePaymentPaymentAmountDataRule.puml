@@ -1,0 +1,7 @@
+@startuml
+
+    class SimplePaymentPaymentAmountDataRule [[SimplePaymentPaymentAmountDataRule.html]] {
+        +validate(SimplePayment): ValidationResult<SimplePayment>
+    }
+
+@enduml

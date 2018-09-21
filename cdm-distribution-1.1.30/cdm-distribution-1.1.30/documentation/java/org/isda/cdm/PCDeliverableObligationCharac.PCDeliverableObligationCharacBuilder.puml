@@ -1,0 +1,11 @@
+@startuml
+
+    class PCDeliverableObligationCharac.PCDeliverableObligationCharacBuilder [[PCDeliverableObligationCharac.PCDeliverableObligationCharacBuilder.html]] {
+        +getApplicable(): Boolean
+        +getPartialCashSettlement(): Boolean
+        +setApplicable(Boolean): PCDeliverableObligationCharac.PCDeliverableObligationCharacBuilder
+        +setPartialCashSettlement(Boolean): PCDeliverableObligationCharac.PCDeliverableObligationCharacBuilder
+        +build(): PCDeliverableObligationCharac
+    }
+
+@enduml

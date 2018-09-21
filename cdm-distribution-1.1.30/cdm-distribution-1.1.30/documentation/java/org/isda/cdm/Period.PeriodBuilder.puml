@@ -1,0 +1,13 @@
+@startuml
+
+    class Period.PeriodBuilder [[Period.PeriodBuilder.html]] {
+        +getId(): String
+        +getPeriod(): PeriodEnum
+        +getPeriodMultiplier(): Integer
+        +setId(String): Period.PeriodBuilder
+        +setPeriod(PeriodEnum): Period.PeriodBuilder
+        +setPeriodMultiplier(Integer): Period.PeriodBuilder
+        +build(): Period
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class FxFeatureOnlyExistsValidator [[FxFeatureOnlyExistsValidator.html]] {
+        +validate(FxFeature, String): ValidationResult<FxFeature>
+    }
+
+@enduml

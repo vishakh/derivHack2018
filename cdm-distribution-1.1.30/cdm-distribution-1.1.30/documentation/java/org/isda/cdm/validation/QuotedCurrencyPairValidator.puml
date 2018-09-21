@@ -1,0 +1,7 @@
+@startuml
+
+    class QuotedCurrencyPairValidator [[QuotedCurrencyPairValidator.html]] {
+        +validate(QuotedCurrencyPair): ValidationResult<QuotedCurrencyPair>
+    }
+
+@enduml

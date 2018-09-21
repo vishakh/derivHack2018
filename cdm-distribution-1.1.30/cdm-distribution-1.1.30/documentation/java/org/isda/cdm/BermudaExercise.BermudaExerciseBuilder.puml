@@ -1,0 +1,37 @@
+@startuml
+
+    class BermudaExercise.BermudaExerciseBuilder [[BermudaExercise.BermudaExerciseBuilder.html]] {
+        +getBermudaExerciseDates(): AdjustableOrRelativeDates.AdjustableOrRelativeDatesBuilder
+        +getOrCreateBermudaExerciseDates(): AdjustableOrRelativeDates.AdjustableOrRelativeDatesBuilder
+        +getEarliestExerciseTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getOrCreateEarliestExerciseTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getExerciseFeeSchedule(): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        +getOrCreateExerciseFeeSchedule(): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        +getExpirationTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getOrCreateExpirationTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getId(): String
+        +getLatestExerciseTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getOrCreateLatestExerciseTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getMultipleExercise(): MultipleExercise.MultipleExerciseBuilder
+        +getOrCreateMultipleExercise(): MultipleExercise.MultipleExerciseBuilder
+        +getRelevantUnderlyingDate(): AdjustableOrRelativeDates.AdjustableOrRelativeDatesBuilder
+        +getOrCreateRelevantUnderlyingDate(): AdjustableOrRelativeDates.AdjustableOrRelativeDatesBuilder
+        +setBermudaExerciseDates(AdjustableOrRelativeDates): BermudaExercise.BermudaExerciseBuilder
+        +setBermudaExerciseDatesBuilder(AdjustableOrRelativeDates.AdjustableOrRelativeDatesBuilder): BermudaExercise.BermudaExerciseBuilder
+        +setEarliestExerciseTime(BusinessCenterTime): BermudaExercise.BermudaExerciseBuilder
+        +setEarliestExerciseTimeBuilder(BusinessCenterTime.BusinessCenterTimeBuilder): BermudaExercise.BermudaExerciseBuilder
+        +setExerciseFeeSchedule(ExerciseFeeSchedule): BermudaExercise.BermudaExerciseBuilder
+        +setExerciseFeeScheduleBuilder(ExerciseFeeSchedule.ExerciseFeeScheduleBuilder): BermudaExercise.BermudaExerciseBuilder
+        +setExpirationTime(BusinessCenterTime): BermudaExercise.BermudaExerciseBuilder
+        +setExpirationTimeBuilder(BusinessCenterTime.BusinessCenterTimeBuilder): BermudaExercise.BermudaExerciseBuilder
+        +setId(String): BermudaExercise.BermudaExerciseBuilder
+        +setLatestExerciseTime(BusinessCenterTime): BermudaExercise.BermudaExerciseBuilder
+        +setLatestExerciseTimeBuilder(BusinessCenterTime.BusinessCenterTimeBuilder): BermudaExercise.BermudaExerciseBuilder
+        +setMultipleExercise(MultipleExercise): BermudaExercise.BermudaExerciseBuilder
+        +setMultipleExerciseBuilder(MultipleExercise.MultipleExerciseBuilder): BermudaExercise.BermudaExerciseBuilder
+        +setRelevantUnderlyingDate(AdjustableOrRelativeDates): BermudaExercise.BermudaExerciseBuilder
+        +setRelevantUnderlyingDateBuilder(AdjustableOrRelativeDates.AdjustableOrRelativeDatesBuilder): BermudaExercise.BermudaExerciseBuilder
+        +build(): BermudaExercise
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class FloatingAmountEventsValidator [[FloatingAmountEventsValidator.html]] {
+        +validate(FloatingAmountEvents): ValidationResult<FloatingAmountEvents>
+    }
+
+@enduml

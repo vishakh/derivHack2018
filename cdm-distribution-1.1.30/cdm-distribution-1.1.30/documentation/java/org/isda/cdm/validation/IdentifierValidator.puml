@@ -1,0 +1,7 @@
+@startuml
+
+    class IdentifierValidator [[IdentifierValidator.html]] {
+        +validate(Identifier): ValidationResult<Identifier>
+    }
+
+@enduml

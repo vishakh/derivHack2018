@@ -1,0 +1,11 @@
+@startuml
+
+    class ReferenceSwapCurve [[ReferenceSwapCurve.html]] {
+        +getMakeWholeAmount(): MakeWholeAmount
+        +getSwapUnwindValue(): SwapCurveValuation
+        +toBuilder(): ReferenceSwapCurve.ReferenceSwapCurveBuilder
+        {static} +builder(): ReferenceSwapCurve.ReferenceSwapCurveBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

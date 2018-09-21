@@ -1,0 +1,12 @@
+@startuml
+
+    class MessageInformationMeta [[MessageInformationMeta.html]] {
+        +dataRules(): List<Validator<MessageInformation>>
+        +choiceRuleValidators(): List<Validator<MessageInformation>>
+        +getOutMappings(): Multimap<String, OutMapping<MessageInformation, ?>>
+        +getQualifyFunctions(): List<Function<MessageInformation, QualifyResult>>
+        +validator(): Validator<MessageInformation>
+        +onlyExistsValidator(): ValidatorWithArg<MessageInformation, String>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class PrincipalExchangesOnlyExistsValidator [[PrincipalExchangesOnlyExistsValidator.html]] {
+        +validate(PrincipalExchanges, String): ValidationResult<PrincipalExchanges>
+    }
+
+@enduml

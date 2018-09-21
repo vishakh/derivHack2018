@@ -1,0 +1,12 @@
+@startuml
+
+    class CrossCurrencyMethodMeta [[CrossCurrencyMethodMeta.html]] {
+        +dataRules(): List<Validator<CrossCurrencyMethod>>
+        +choiceRuleValidators(): List<Validator<CrossCurrencyMethod>>
+        +getOutMappings(): Multimap<String, OutMapping<CrossCurrencyMethod, ?>>
+        +getQualifyFunctions(): List<Function<CrossCurrencyMethod, QualifyResult>>
+        +validator(): Validator<CrossCurrencyMethod>
+        +onlyExistsValidator(): ValidatorWithArg<CrossCurrencyMethod, String>
+    }
+
+@enduml

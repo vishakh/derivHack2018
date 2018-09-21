@@ -1,0 +1,7 @@
+@startuml
+
+    class ExtendibleProvisionValidator [[ExtendibleProvisionValidator.html]] {
+        +validate(ExtendibleProvision): ValidationResult<ExtendibleProvision>
+    }
+
+@enduml

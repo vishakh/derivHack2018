@@ -1,0 +1,17 @@
+@startuml
+
+    class PayoutLineage.PayoutLineageBuilder [[PayoutLineage.PayoutLineageBuilder.html]] {
+        +getCashflow(): String
+        +getCreditDefaultPayout(): String
+        +getInterestRatePayout(): String
+        +getOptionPayout(): String
+        +getPayoutReference(): String
+        +setCashflow(String): PayoutLineage.PayoutLineageBuilder
+        +setCreditDefaultPayout(String): PayoutLineage.PayoutLineageBuilder
+        +setInterestRatePayout(String): PayoutLineage.PayoutLineageBuilder
+        +setOptionPayout(String): PayoutLineage.PayoutLineageBuilder
+        +setPayoutReference(String): PayoutLineage.PayoutLineageBuilder
+        +build(): PayoutLineage
+    }
+
+@enduml

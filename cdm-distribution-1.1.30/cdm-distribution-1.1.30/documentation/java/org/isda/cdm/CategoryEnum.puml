@@ -1,0 +1,7 @@
+@startuml
+
+    enum CategoryEnum [[CategoryEnum.html]] {
+        {static} +TBD
+    }
+
+@enduml

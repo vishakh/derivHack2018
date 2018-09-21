@@ -1,0 +1,7 @@
+@startuml
+
+    class DateListOnlyExistsValidator [[DateListOnlyExistsValidator.html]] {
+        +validate(DateList, String): ValidationResult<DateList>
+    }
+
+@enduml

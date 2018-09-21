@@ -1,0 +1,7 @@
+@startuml
+
+    class RestructuringOnlyExistsValidator [[RestructuringOnlyExistsValidator.html]] {
+        +validate(Restructuring, String): ValidationResult<Restructuring>
+    }
+
+@enduml

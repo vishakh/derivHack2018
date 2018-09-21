@@ -1,0 +1,13 @@
+@startuml
+
+    class PayerReceiver [[PayerReceiver.html]] {
+        +getPayerAccountReference(): String
+        +getPayerPartyReference(): String
+        +getReceiverAccountReference(): String
+        +getReceiverPartyReference(): String
+        +toBuilder(): PayerReceiver.PayerReceiverBuilder
+        {static} +builder(): PayerReceiver.PayerReceiverBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

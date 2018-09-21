@@ -1,0 +1,358 @@
+@startuml
+
+    namespace org.isda.cdm.validation.choicerule {
+
+        class NaturalPersonChoiceRule [[NaturalPersonChoiceRule.html]] {
+            +validate(NaturalPerson): ValidationResult<NaturalPerson>
+        }
+
+        class ResourceChoiceRule [[ResourceChoiceRule.html]] {
+            +validate(Resource): ValidationResult<Resource>
+        }
+
+        class PartialExerciseChoiceRule [[PartialExerciseChoiceRule.html]] {
+            +validate(PartialExercise): ValidationResult<PartialExercise>
+        }
+
+        class ExerciseProcedureChoiceRule [[ExerciseProcedureChoiceRule.html]] {
+            +validate(ExerciseProcedure): ValidationResult<ExerciseProcedure>
+        }
+
+        class ExerciseFeeScheduleChoiceRule [[ExerciseFeeScheduleChoiceRule.html]] {
+            +validate(ExerciseFeeSchedule): ValidationResult<ExerciseFeeSchedule>
+        }
+
+        class ExerciseFeeChoiceRule [[ExerciseFeeChoiceRule.html]] {
+            +validate(ExerciseFee): ValidationResult<ExerciseFee>
+        }
+
+        class DocumentationChoiceRule [[DocumentationChoiceRule.html]] {
+            +validate(Documentation): ValidationResult<Documentation>
+        }
+
+        class DateInstancesChoiceRule [[DateInstancesChoiceRule.html]] {
+            +validate(DateInstances): ValidationResult<DateInstances>
+        }
+
+        class CalculationAgentChoiceRule [[CalculationAgentChoiceRule.html]] {
+            +validate(CalculationAgent): ValidationResult<CalculationAgent>
+        }
+
+        class BusinessCentersChoiceRule [[BusinessCentersChoiceRule.html]] {
+            +validate(BusinessCenters): ValidationResult<BusinessCenters>
+        }
+
+        class AdjustableOrRelativeDatesChoiceRule [[AdjustableOrRelativeDatesChoiceRule.html]] {
+            +validate(AdjustableOrRelativeDates): ValidationResult<AdjustableOrRelativeDates>
+        }
+
+        class AdjustableOrRelativeDateChoiceRule [[AdjustableOrRelativeDateChoiceRule.html]] {
+            +validate(AdjustableOrRelativeDate): ValidationResult<AdjustableOrRelativeDate>
+        }
+
+        class AdjustableDateChoiceRule [[AdjustableDateChoiceRule.html]] {
+            +validate(AdjustableDate): ValidationResult<AdjustableDate>
+        }
+
+        class WeightedAveragingObservationChoiceRule [[WeightedAveragingObservationChoiceRule.html]] {
+            +validate(WeightedAveragingObservation): ValidationResult<WeightedAveragingObservation>
+        }
+
+        class TriggerChoice2ChoiceRule [[TriggerChoice2ChoiceRule.html]] {
+            +validate(Trigger): ValidationResult<Trigger>
+        }
+
+        class TriggerChoice1ChoiceRule [[TriggerChoice1ChoiceRule.html]] {
+            +validate(Trigger): ValidationResult<Trigger>
+        }
+
+        class PubliclyAvailableInformationChoiceRule [[PubliclyAvailableInformationChoiceRule.html]] {
+            +validate(PubliclyAvailableInformation): ValidationResult<PubliclyAvailableInformation>
+        }
+
+        class OptionSettlementChoice2ChoiceRule [[OptionSettlementChoice2ChoiceRule.html]] {
+            +validate(OptionSettlement): ValidationResult<OptionSettlement>
+        }
+
+        class OptionSettlementChoice1ChoiceRule [[OptionSettlementChoice1ChoiceRule.html]] {
+            +validate(OptionSettlement): ValidationResult<OptionSettlement>
+        }
+
+        class FxFeatureChoiceRule [[FxFeatureChoiceRule.html]] {
+            +validate(FxFeature): ValidationResult<FxFeature>
+        }
+
+        class FeaturePaymentChoiceRule [[FeaturePaymentChoiceRule.html]] {
+            +validate(FeaturePayment): ValidationResult<FeaturePayment>
+        }
+
+        class AveragingPeriodChoiceRule [[AveragingPeriodChoiceRule.html]] {
+            +validate(AveragingPeriod): ValidationResult<AveragingPeriod>
+        }
+
+        class PaymentCalculationPeriodChoiceRule [[PaymentCalculationPeriodChoiceRule.html]] {
+            +validate(PaymentCalculationPeriod): ValidationResult<PaymentCalculationPeriod>
+        }
+
+        class OptionalEarlyTerminationChoiceRule [[OptionalEarlyTerminationChoiceRule.html]] {
+            +validate(OptionalEarlyTermination): ValidationResult<OptionalEarlyTermination>
+        }
+
+        class NonDeliverableSettlementChoiceRule [[NonDeliverableSettlementChoiceRule.html]] {
+            +validate(NonDeliverableSettlement): ValidationResult<NonDeliverableSettlement>
+        }
+
+        class FxFixingDateChoice2ChoiceRule [[FxFixingDateChoice2ChoiceRule.html]] {
+            +validate(FxFixingDate): ValidationResult<FxFixingDate>
+        }
+
+        class FxFixingDateChoice1ChoiceRule [[FxFixingDateChoice1ChoiceRule.html]] {
+            +validate(FxFixingDate): ValidationResult<FxFixingDate>
+        }
+
+        class ExtendibleProvisionChoiceRule [[ExtendibleProvisionChoiceRule.html]] {
+            +validate(ExtendibleProvision): ValidationResult<ExtendibleProvision>
+        }
+
+        class CashSettlementPaymentDateChoiceRule [[CashSettlementPaymentDateChoiceRule.html]] {
+            +validate(CashSettlementPaymentDate): ValidationResult<CashSettlementPaymentDate>
+        }
+
+        class OptionCashSettlementChoiceRule [[OptionCashSettlementChoiceRule.html]] {
+            +validate(OptionCashSettlement): ValidationResult<OptionCashSettlement>
+        }
+
+        class CancelableProvisonChoiceRule [[CancelableProvisonChoiceRule.html]] {
+            +validate(CancelableProvision): ValidationResult<CancelableProvision>
+        }
+
+        class CalculationPeriodDatesChoice2ChoiceRule [[CalculationPeriodDatesChoice2ChoiceRule.html]] {
+            +validate(CalculationPeriodDates): ValidationResult<CalculationPeriodDates>
+        }
+
+        class CalculationPeriodDatesChoice1ChoiceRule [[CalculationPeriodDatesChoice1ChoiceRule.html]] {
+            +validate(CalculationPeriodDates): ValidationResult<CalculationPeriodDates>
+        }
+
+        class CalculationPeriodChoice4ChoiceRule [[CalculationPeriodChoice4ChoiceRule.html]] {
+            +validate(CalculationPeriod): ValidationResult<CalculationPeriod>
+        }
+
+        class CalculationPeriodChoice3ChoiceRule [[CalculationPeriodChoice3ChoiceRule.html]] {
+            +validate(CalculationPeriod): ValidationResult<CalculationPeriod>
+        }
+
+        class CalculationPeriodChoice2ChoiceRule [[CalculationPeriodChoice2ChoiceRule.html]] {
+            +validate(CalculationPeriod): ValidationResult<CalculationPeriod>
+        }
+
+        class CalculationPeriodChoice1ChoiceRule [[CalculationPeriodChoice1ChoiceRule.html]] {
+            +validate(CalculationPeriod): ValidationResult<CalculationPeriod>
+        }
+
+        class PartyContractIdentifierChoiceRule [[PartyContractIdentifierChoiceRule.html]] {
+            +validate(PartyContractIdentifier): ValidationResult<PartyContractIdentifier>
+        }
+
+        class ContractIdentifierChoiceRule [[ContractIdentifierChoiceRule.html]] {
+            +validate(ContractIdentifier): ValidationResult<ContractIdentifier>
+        }
+
+        class ReferencePairChoiceRule [[ReferencePairChoiceRule.html]] {
+            +validate(ReferencePair): ValidationResult<ReferencePair>
+        }
+
+        class ReferenceObligationChoice2ChoiceRule [[ReferenceObligationChoice2ChoiceRule.html]] {
+            +validate(ReferenceObligation): ValidationResult<ReferenceObligation>
+        }
+
+        class ReferenceObligationChoice1ChoiceRule [[ReferenceObligationChoice1ChoiceRule.html]] {
+            +validate(ReferenceObligation): ValidationResult<ReferenceObligation>
+        }
+
+        class ReferenceInformationChoiceRule [[ReferenceInformationChoiceRule.html]] {
+            +validate(ReferenceInformation): ValidationResult<ReferenceInformation>
+        }
+
+        class OptionStrikeExpressionChoiceRule [[OptionStrikeExpressionChoiceRule.html]] {
+            +validate(OptionStrike): ValidationResult<OptionStrike>
+        }
+
+        class ObligationsChoiceRule [[ObligationsChoiceRule.html]] {
+            +validate(Obligations): ValidationResult<Obligations>
+        }
+
+        class DeliverableObligationsChoiceRule [[DeliverableObligationsChoiceRule.html]] {
+            +validate(DeliverableObligations): ValidationResult<DeliverableObligations>
+        }
+
+        class CashSettlementTermsChoiceRule [[CashSettlementTermsChoiceRule.html]] {
+            +validate(CashSettlementTerms): ValidationResult<CashSettlementTerms>
+        }
+
+        class BasketReferenceInformationChoiceRule [[BasketReferenceInformationChoiceRule.html]] {
+            +validate(BasketReferenceInformation): ValidationResult<BasketReferenceInformation>
+        }
+
+        class MortgageChoiceRule [[MortgageChoiceRule.html]] {
+            +validate(Mortgage): ValidationResult<Mortgage>
+        }
+
+        class FixedIncomeSecurityChoiceRule [[FixedIncomeSecurityChoiceRule.html]] {
+            +validate(FixedIncomeSecurity): ValidationResult<FixedIncomeSecurity>
+        }
+
+        class PaymentDatesChoiceRule [[PaymentDatesChoiceRule.html]] {
+            +validate(PaymentDates): ValidationResult<PaymentDates>
+        }
+
+        class GeneralTermsChoiceRule [[GeneralTermsChoiceRule.html]] {
+            +validate(GeneralTerms): ValidationResult<GeneralTerms>
+        }
+
+        class CreditDefaultPayoutChoiceRule [[CreditDefaultPayoutChoiceRule.html]] {
+            +validate(CreditDefaultPayout): ValidationResult<CreditDefaultPayout>
+        }
+
+        class ContractualQuantityChoiceRule [[ContractualQuantityChoiceRule.html]] {
+            +validate(ContractualQuantity): ValidationResult<ContractualQuantity>
+        }
+
+        class TransferChoice2ChoiceRule [[TransferChoice2ChoiceRule.html]] {
+            +validate(Transfer): ValidationResult<Transfer>
+        }
+
+        class TransferChoice1ChoiceRule [[TransferChoice1ChoiceRule.html]] {
+            +validate(Transfer): ValidationResult<Transfer>
+        }
+
+        class PhysicalExerciseChoiceRule [[PhysicalExerciseChoiceRule.html]] {
+            +validate(PhysicalExercise): ValidationResult<PhysicalExercise>
+        }
+
+        class ExerciseOutcomeChoiceRule [[ExerciseOutcomeChoiceRule.html]] {
+            +validate(ExerciseOutcome): ValidationResult<ExerciseOutcome>
+        }
+
+        interface com.rosetta.model.lib.validation.Validator<T> {
+            {abstract} +validate(T): ValidationResult<T>
+        }
+        com.rosetta.model.lib.validation.Validator <|.. NaturalPersonChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ResourceChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PartialExerciseChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ExerciseProcedureChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ExerciseFeeScheduleChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ExerciseFeeChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. DocumentationChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. DateInstancesChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CalculationAgentChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. BusinessCentersChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. AdjustableOrRelativeDatesChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. AdjustableOrRelativeDateChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. AdjustableDateChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. WeightedAveragingObservationChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. TriggerChoice2ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. TriggerChoice1ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PubliclyAvailableInformationChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. OptionSettlementChoice2ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. OptionSettlementChoice1ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FxFeatureChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FeaturePaymentChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. AveragingPeriodChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PaymentCalculationPeriodChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. OptionalEarlyTerminationChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. NonDeliverableSettlementChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FxFixingDateChoice2ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FxFixingDateChoice1ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ExtendibleProvisionChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CashSettlementPaymentDateChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. OptionCashSettlementChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CancelableProvisonChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CalculationPeriodDatesChoice2ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CalculationPeriodDatesChoice1ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CalculationPeriodChoice4ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CalculationPeriodChoice3ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CalculationPeriodChoice2ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CalculationPeriodChoice1ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PartyContractIdentifierChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ContractIdentifierChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ReferencePairChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ReferenceObligationChoice2ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ReferenceObligationChoice1ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ReferenceInformationChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. OptionStrikeExpressionChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ObligationsChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. DeliverableObligationsChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CashSettlementTermsChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. BasketReferenceInformationChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. MortgageChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FixedIncomeSecurityChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PaymentDatesChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. GeneralTermsChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CreditDefaultPayoutChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ContractualQuantityChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. TransferChoice2ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. TransferChoice1ChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PhysicalExerciseChoiceRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ExerciseOutcomeChoiceRule
+
+    }
+
+@enduml

@@ -1,0 +1,67 @@
+@startuml
+
+    class DeliverableObligations.DeliverableObligationsBuilder [[DeliverableObligations.DeliverableObligationsBuilder.html]] {
+        +getAcceleratedOrMatured(): Boolean
+        +getAccruedInterest(): Boolean
+        +getAssignableLoan(): PCDeliverableObligationCharac.PCDeliverableObligationCharacBuilder
+        +getOrCreateAssignableLoan(): PCDeliverableObligationCharac.PCDeliverableObligationCharacBuilder
+        +getCategory(): ObligationCategoryEnum
+        +getConsentRequiredLoan(): PCDeliverableObligationCharac.PCDeliverableObligationCharacBuilder
+        +getOrCreateConsentRequiredLoan(): PCDeliverableObligationCharac.PCDeliverableObligationCharacBuilder
+        +getDirectLoanParticipation(): LoanParticipation.LoanParticipationBuilder
+        +getOrCreateDirectLoanParticipation(): LoanParticipation.LoanParticipationBuilder
+        +getExcluded(): String
+        +getFullFaithAndCreditObLiability(): Boolean
+        +getGeneralFundObligationLiability(): Boolean
+        +getIndirectLoanParticipation(): LoanParticipation.LoanParticipationBuilder
+        +getOrCreateIndirectLoanParticipation(): LoanParticipation.LoanParticipationBuilder
+        +getListed(): Boolean
+        +getMaximumMaturity(): Period.PeriodBuilder
+        +getOrCreateMaximumMaturity(): Period.PeriodBuilder
+        +getNotBearer(): Boolean
+        +getNotContingent(): Boolean
+        +getNotDomesticCurrency(): NotDomesticCurrency.NotDomesticCurrencyBuilder
+        +getOrCreateNotDomesticCurrency(): NotDomesticCurrency.NotDomesticCurrencyBuilder
+        +getNotDomesticIssuance(): Boolean
+        +getNotDomesticLaw(): Boolean
+        +getNotSovereignLender(): Boolean
+        +getNotSubordinated(): Boolean
+        +getOthReferenceEntityObligations(): String
+        +getRevenueObligationLiability(): Boolean
+        +getSpecifiedCurrency(): SpecifiedCurrency.SpecifiedCurrencyBuilder
+        +getOrCreateSpecifiedCurrency(): SpecifiedCurrency.SpecifiedCurrencyBuilder
+        +getTransferable(): Boolean
+        +setAcceleratedOrMatured(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +setAccruedInterest(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +setAssignableLoan(PCDeliverableObligationCharac): DeliverableObligations.DeliverableObligationsBuilder
+        +setAssignableLoanBuilder(PCDeliverableObligationCharac.PCDeliverableObligationCharacBuilder): DeliverableObligations.DeliverableObligationsBuilder
+        +setCategory(ObligationCategoryEnum): DeliverableObligations.DeliverableObligationsBuilder
+        +setConsentRequiredLoan(PCDeliverableObligationCharac): DeliverableObligations.DeliverableObligationsBuilder
+        +setConsentRequiredLoanBuilder(PCDeliverableObligationCharac.PCDeliverableObligationCharacBuilder): DeliverableObligations.DeliverableObligationsBuilder
+        +setDirectLoanParticipation(LoanParticipation): DeliverableObligations.DeliverableObligationsBuilder
+        +setDirectLoanParticipationBuilder(LoanParticipation.LoanParticipationBuilder): DeliverableObligations.DeliverableObligationsBuilder
+        +setExcluded(String): DeliverableObligations.DeliverableObligationsBuilder
+        +setFullFaithAndCreditObLiability(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +setGeneralFundObligationLiability(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +setIndirectLoanParticipation(LoanParticipation): DeliverableObligations.DeliverableObligationsBuilder
+        +setIndirectLoanParticipationBuilder(LoanParticipation.LoanParticipationBuilder): DeliverableObligations.DeliverableObligationsBuilder
+        +setListed(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +setMaximumMaturity(Period): DeliverableObligations.DeliverableObligationsBuilder
+        +setMaximumMaturityBuilder(Period.PeriodBuilder): DeliverableObligations.DeliverableObligationsBuilder
+        +setNotBearer(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +setNotContingent(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +setNotDomesticCurrency(NotDomesticCurrency): DeliverableObligations.DeliverableObligationsBuilder
+        +setNotDomesticCurrencyBuilder(NotDomesticCurrency.NotDomesticCurrencyBuilder): DeliverableObligations.DeliverableObligationsBuilder
+        +setNotDomesticIssuance(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +setNotDomesticLaw(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +setNotSovereignLender(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +setNotSubordinated(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +setOthReferenceEntityObligations(String): DeliverableObligations.DeliverableObligationsBuilder
+        +setRevenueObligationLiability(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +setSpecifiedCurrency(SpecifiedCurrency): DeliverableObligations.DeliverableObligationsBuilder
+        +setSpecifiedCurrencyBuilder(SpecifiedCurrency.SpecifiedCurrencyBuilder): DeliverableObligations.DeliverableObligationsBuilder
+        +setTransferable(Boolean): DeliverableObligations.DeliverableObligationsBuilder
+        +build(): DeliverableObligations
+    }
+
+@enduml

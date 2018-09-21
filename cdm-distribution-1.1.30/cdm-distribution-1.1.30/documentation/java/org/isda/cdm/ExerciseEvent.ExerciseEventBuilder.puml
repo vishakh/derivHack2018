@@ -1,0 +1,19 @@
+@startuml
+
+    class ExerciseEvent.ExerciseEventBuilder [[ExerciseEvent.ExerciseEventBuilder.html]] {
+        +getAdjustedCashSettlementPaymentDate(): LocalDate
+        +getAdjustedCashSettlementValuationDate(): LocalDate
+        +getAdjustedExerciseDate(): LocalDate
+        +getAdjustedExerciseFeePaymentDate(): LocalDate
+        +getAdjustedRelevantSwapEffectiveDate(): LocalDate
+        +getId(): String
+        +setAdjustedCashSettlementPaymentDate(LocalDate): ExerciseEvent.ExerciseEventBuilder
+        +setAdjustedCashSettlementValuationDate(LocalDate): ExerciseEvent.ExerciseEventBuilder
+        +setAdjustedExerciseDate(LocalDate): ExerciseEvent.ExerciseEventBuilder
+        +setAdjustedExerciseFeePaymentDate(LocalDate): ExerciseEvent.ExerciseEventBuilder
+        +setAdjustedRelevantSwapEffectiveDate(LocalDate): ExerciseEvent.ExerciseEventBuilder
+        +setId(String): ExerciseEvent.ExerciseEventBuilder
+        +build(): ExerciseEvent
+    }
+
+@enduml

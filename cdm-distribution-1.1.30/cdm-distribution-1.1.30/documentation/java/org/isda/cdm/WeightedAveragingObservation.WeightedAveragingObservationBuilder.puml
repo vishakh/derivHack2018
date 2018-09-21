@@ -1,0 +1,13 @@
+@startuml
+
+    class WeightedAveragingObservation.WeightedAveragingObservationBuilder [[WeightedAveragingObservation.WeightedAveragingObservationBuilder.html]] {
+        +getDateTime(): LocalDateTime
+        +getObservationNumber(): Integer
+        +getWeight(): BigDecimal
+        +setDateTime(LocalDateTime): WeightedAveragingObservation.WeightedAveragingObservationBuilder
+        +setObservationNumber(Integer): WeightedAveragingObservation.WeightedAveragingObservationBuilder
+        +setWeight(BigDecimal): WeightedAveragingObservation.WeightedAveragingObservationBuilder
+        +build(): WeightedAveragingObservation
+    }
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+
+    class EconomicTerms.EconomicTermsBuilder [[EconomicTerms.EconomicTermsBuilder.html]] {
+        +getCancelableProvision(): CancelableProvision.CancelableProvisionBuilder
+        +getOrCreateCancelableProvision(): CancelableProvision.CancelableProvisionBuilder
+        +getEarlyTerminationProvision(): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        +getOrCreateEarlyTerminationProvision(): EarlyTerminationProvision.EarlyTerminationProvisionBuilder
+        +getExtendibleProvision(): ExtendibleProvision.ExtendibleProvisionBuilder
+        +getOrCreateExtendibleProvision(): ExtendibleProvision.ExtendibleProvisionBuilder
+        +getPayout(): Payout.PayoutBuilder
+        +getOrCreatePayout(): Payout.PayoutBuilder
+        +setCancelableProvision(CancelableProvision): EconomicTerms.EconomicTermsBuilder
+        +setCancelableProvisionBuilder(CancelableProvision.CancelableProvisionBuilder): EconomicTerms.EconomicTermsBuilder
+        +setEarlyTerminationProvision(EarlyTerminationProvision): EconomicTerms.EconomicTermsBuilder
+        +setEarlyTerminationProvisionBuilder(EarlyTerminationProvision.EarlyTerminationProvisionBuilder): EconomicTerms.EconomicTermsBuilder
+        +setExtendibleProvision(ExtendibleProvision): EconomicTerms.EconomicTermsBuilder
+        +setExtendibleProvisionBuilder(ExtendibleProvision.ExtendibleProvisionBuilder): EconomicTerms.EconomicTermsBuilder
+        +setPayout(Payout): EconomicTerms.EconomicTermsBuilder
+        +setPayoutBuilder(Payout.PayoutBuilder): EconomicTerms.EconomicTermsBuilder
+        +build(): EconomicTerms
+    }
+
+@enduml

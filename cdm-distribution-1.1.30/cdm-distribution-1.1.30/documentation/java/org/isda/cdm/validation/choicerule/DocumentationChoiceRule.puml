@@ -1,0 +1,7 @@
+@startuml
+
+    class DocumentationChoiceRule [[DocumentationChoiceRule.html]] {
+        +validate(Documentation): ValidationResult<Documentation>
+    }
+
+@enduml

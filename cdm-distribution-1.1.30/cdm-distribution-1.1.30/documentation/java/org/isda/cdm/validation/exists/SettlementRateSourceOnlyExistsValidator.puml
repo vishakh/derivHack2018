@@ -1,0 +1,7 @@
+@startuml
+
+    class SettlementRateSourceOnlyExistsValidator [[SettlementRateSourceOnlyExistsValidator.html]] {
+        +validate(SettlementRateSource, String): ValidationResult<SettlementRateSource>
+    }
+
+@enduml

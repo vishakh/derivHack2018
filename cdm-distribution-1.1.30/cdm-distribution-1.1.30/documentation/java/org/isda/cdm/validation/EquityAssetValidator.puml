@@ -1,0 +1,7 @@
+@startuml
+
+    class EquityAssetValidator [[EquityAssetValidator.html]] {
+        +validate(EquityAsset): ValidationResult<EquityAsset>
+    }
+
+@enduml

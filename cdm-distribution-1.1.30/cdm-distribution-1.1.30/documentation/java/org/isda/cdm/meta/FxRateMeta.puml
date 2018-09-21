@@ -1,0 +1,12 @@
+@startuml
+
+    class FxRateMeta [[FxRateMeta.html]] {
+        +dataRules(): List<Validator<FxRate>>
+        +choiceRuleValidators(): List<Validator<FxRate>>
+        +getOutMappings(): Multimap<String, OutMapping<FxRate, ?>>
+        +getQualifyFunctions(): List<Function<FxRate, QualifyResult>>
+        +validator(): Validator<FxRate>
+        +onlyExistsValidator(): ValidatorWithArg<FxRate, String>
+    }
+
+@enduml

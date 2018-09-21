@@ -1,0 +1,12 @@
+@startuml
+
+    class ObligationsMeta [[ObligationsMeta.html]] {
+        +dataRules(): List<Validator<Obligations>>
+        +choiceRuleValidators(): List<Validator<Obligations>>
+        +getOutMappings(): Multimap<String, OutMapping<Obligations, ?>>
+        +getQualifyFunctions(): List<Function<Obligations, QualifyResult>>
+        +validator(): Validator<Obligations>
+        +onlyExistsValidator(): ValidatorWithArg<Obligations, String>
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class PriorDateInstance.PriorDateInstanceBuilder [[PriorDateInstance.PriorDateInstanceBuilder.html]] {
+        +getContractReference(): Identifier.IdentifierBuilder
+        +getOrCreateContractReference(): Identifier.IdentifierBuilder
+        +getDate(): LocalDate
+        +setContractReference(Identifier): PriorDateInstance.PriorDateInstanceBuilder
+        +setContractReferenceBuilder(Identifier.IdentifierBuilder): PriorDateInstance.PriorDateInstanceBuilder
+        +setDate(LocalDate): PriorDateInstance.PriorDateInstanceBuilder
+        +build(): PriorDateInstance
+    }
+
+@enduml

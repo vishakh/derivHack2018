@@ -1,0 +1,43 @@
+@startuml
+
+    class Transfer.TransferBuilder [[Transfer.TransferBuilder.html]] {
+        +getAmount(): Money.MoneyBuilder
+        +getOrCreateAmount(): Money.MoneyBuilder
+        +getAsset(): Asset.AssetBuilder
+        +getOrCreateAsset(): Asset.AssetBuilder
+        +getGrossCashflow(): List<GrossCashflow.GrossCashflowBuilder>
+        +getOrCreateGrossCashflow(int): GrossCashflow.GrossCashflowBuilder
+        +getPayerReceiver(): PayerReceiver.PayerReceiverBuilder
+        +getOrCreatePayerReceiver(): PayerReceiver.PayerReceiverBuilder
+        +getQuantity(): Quantity.QuantityBuilder
+        +getOrCreateQuantity(): Quantity.QuantityBuilder
+        +getSettlementReference(): String
+        +getTransferCalculation(): String
+        +getTransferDate(): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +getOrCreateTransferDate(): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +getTransferStatus(): TransferStatusEnum
+        +getTransferType(): TransferTypeEnum
+        +getTransferorTransferee(): TransferorTransferee.TransferorTransfereeBuilder
+        +getOrCreateTransferorTransferee(): TransferorTransferee.TransferorTransfereeBuilder
+        +setAmount(Money): Transfer.TransferBuilder
+        +setAmountBuilder(Money.MoneyBuilder): Transfer.TransferBuilder
+        +setAsset(Asset): Transfer.TransferBuilder
+        +setAssetBuilder(Asset.AssetBuilder): Transfer.TransferBuilder
+        +addGrossCashflow(GrossCashflow): Transfer.TransferBuilder
+        +addGrossCashflowBuilder(GrossCashflow.GrossCashflowBuilder): Transfer.TransferBuilder
+        +setPayerReceiver(PayerReceiver): Transfer.TransferBuilder
+        +setPayerReceiverBuilder(PayerReceiver.PayerReceiverBuilder): Transfer.TransferBuilder
+        +setQuantity(Quantity): Transfer.TransferBuilder
+        +setQuantityBuilder(Quantity.QuantityBuilder): Transfer.TransferBuilder
+        +setSettlementReference(String): Transfer.TransferBuilder
+        +setTransferCalculation(String): Transfer.TransferBuilder
+        +setTransferDate(AdjustableOrAdjustedOrRelativeDate): Transfer.TransferBuilder
+        +setTransferDateBuilder(AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder): Transfer.TransferBuilder
+        +setTransferStatus(TransferStatusEnum): Transfer.TransferBuilder
+        +setTransferType(TransferTypeEnum): Transfer.TransferBuilder
+        +setTransferorTransferee(TransferorTransferee): Transfer.TransferBuilder
+        +setTransferorTransfereeBuilder(TransferorTransferee.TransferorTransfereeBuilder): Transfer.TransferBuilder
+        +build(): Transfer
+    }
+
+@enduml

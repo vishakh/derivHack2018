@@ -1,0 +1,17 @@
+@startuml
+
+    class ReferenceInformation [[ReferenceInformation.html]] {
+        +getAllGuarantees(): Boolean
+        +getNoReferenceObligation(): Boolean
+        +getReferenceEntity(): LegalEntity
+        +getReferenceObligation(): List<ReferenceObligation>
+        +getReferencePolicy(): Boolean
+        +getReferencePrice(): BigDecimal
+        +getSecuredList(): Boolean
+        +getUnknownReferenceObligation(): Boolean
+        +toBuilder(): ReferenceInformation.ReferenceInformationBuilder
+        {static} +builder(): ReferenceInformation.ReferenceInformationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+
+    class FloatingAmountEvents.FloatingAmountEventsBuilder [[FloatingAmountEvents.FloatingAmountEventsBuilder.html]] {
+        +getAdditionalFixedPayments(): AdditionalFixedPayments.AdditionalFixedPaymentsBuilder
+        +getOrCreateAdditionalFixedPayments(): AdditionalFixedPayments.AdditionalFixedPaymentsBuilder
+        +getFailureToPayPrincipal(): Boolean
+        +getFloatingAmountProvisions(): FloatingAmountProvisions.FloatingAmountProvisionsBuilder
+        +getOrCreateFloatingAmountProvisions(): FloatingAmountProvisions.FloatingAmountProvisionsBuilder
+        +getImpliedWritedown(): Boolean
+        +getInterestShortfall(): InterestShortFall.InterestShortFallBuilder
+        +getOrCreateInterestShortfall(): InterestShortFall.InterestShortFallBuilder
+        +getWritedown(): Boolean
+        +setAdditionalFixedPayments(AdditionalFixedPayments): FloatingAmountEvents.FloatingAmountEventsBuilder
+        +setAdditionalFixedPaymentsBuilder(AdditionalFixedPayments.AdditionalFixedPaymentsBuilder): FloatingAmountEvents.FloatingAmountEventsBuilder
+        +setFailureToPayPrincipal(Boolean): FloatingAmountEvents.FloatingAmountEventsBuilder
+        +setFloatingAmountProvisions(FloatingAmountProvisions): FloatingAmountEvents.FloatingAmountEventsBuilder
+        +setFloatingAmountProvisionsBuilder(FloatingAmountProvisions.FloatingAmountProvisionsBuilder): FloatingAmountEvents.FloatingAmountEventsBuilder
+        +setImpliedWritedown(Boolean): FloatingAmountEvents.FloatingAmountEventsBuilder
+        +setInterestShortfall(InterestShortFall): FloatingAmountEvents.FloatingAmountEventsBuilder
+        +setInterestShortfallBuilder(InterestShortFall.InterestShortFallBuilder): FloatingAmountEvents.FloatingAmountEventsBuilder
+        +setWritedown(Boolean): FloatingAmountEvents.FloatingAmountEventsBuilder
+        +build(): FloatingAmountEvents
+    }
+
+@enduml

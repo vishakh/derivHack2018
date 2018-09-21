@@ -1,0 +1,11 @@
+@startuml
+
+    class ConvertibleBond [[ConvertibleBond.html]] {
+        +getRedemptionDate(): LocalDate
+        +getUnderlyingEquity(): EquityAsset
+        +toBuilder(): ConvertibleBond.ConvertibleBondBuilder
+        {static} +builder(): ConvertibleBond.ConvertibleBondBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+
+    class Offset.OffsetBuilder [[Offset.OffsetBuilder.html]] {
+        +getDayType(): DayTypeEnum
+        +setDayType(DayTypeEnum): Offset.OffsetBuilder
+        +build(): Offset
+    }
+
+@enduml

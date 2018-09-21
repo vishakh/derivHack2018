@@ -1,0 +1,7 @@
+@startuml
+
+    class MessageInformationOnlyExistsValidator [[MessageInformationOnlyExistsValidator.html]] {
+        +validate(MessageInformation, String): ValidationResult<MessageInformation>
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class ExerciseNotice [[ExerciseNotice.html]] {
+        +getBusinessCenter(): BusinessCenterEnum
+        +getBusinessCenterScheme(): String
+        +getExerciseNoticePartyReference(): String
+        +getPartyReference(): String
+        +toBuilder(): ExerciseNotice.ExerciseNoticeBuilder
+        {static} +builder(): ExerciseNotice.ExerciseNoticeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

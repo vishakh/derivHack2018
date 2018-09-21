@@ -1,0 +1,7 @@
+@startuml
+
+    class CommodityValidator [[CommodityValidator.html]] {
+        +validate(Commodity): ValidationResult<Commodity>
+    }
+
+@enduml

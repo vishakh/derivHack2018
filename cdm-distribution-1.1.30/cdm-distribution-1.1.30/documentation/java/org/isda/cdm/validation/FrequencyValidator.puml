@@ -1,0 +1,7 @@
+@startuml
+
+    class FrequencyValidator [[FrequencyValidator.html]] {
+        +validate(Frequency): ValidationResult<Frequency>
+    }
+
+@enduml

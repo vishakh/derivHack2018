@@ -1,0 +1,12 @@
+@startuml
+
+    class TransferorTransfereeMeta [[TransferorTransfereeMeta.html]] {
+        +dataRules(): List<Validator<TransferorTransferee>>
+        +choiceRuleValidators(): List<Validator<TransferorTransferee>>
+        +getOutMappings(): Multimap<String, OutMapping<TransferorTransferee, ?>>
+        +getQualifyFunctions(): List<Function<TransferorTransferee, QualifyResult>>
+        +validator(): Validator<TransferorTransferee>
+        +onlyExistsValidator(): ValidatorWithArg<TransferorTransferee, String>
+    }
+
+@enduml

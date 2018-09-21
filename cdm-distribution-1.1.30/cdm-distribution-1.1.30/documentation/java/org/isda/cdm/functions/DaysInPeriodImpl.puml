@@ -1,0 +1,8 @@
+@startuml
+
+    class DaysInPeriodImpl [[DaysInPeriodImpl.html]] {
+        +DaysInPeriodImpl(LocalDate)
+        +execute(CalculationPeriodDates): DaysInPeriod.CalculationResult
+    }
+
+@enduml

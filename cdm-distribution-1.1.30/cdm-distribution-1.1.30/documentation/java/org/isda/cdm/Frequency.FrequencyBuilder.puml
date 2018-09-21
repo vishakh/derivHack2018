@@ -1,0 +1,13 @@
+@startuml
+
+    class Frequency.FrequencyBuilder [[Frequency.FrequencyBuilder.html]] {
+        +getId(): String
+        +getPeriod(): PeriodExtendedEnum
+        +getPeriodMultiplier(): Integer
+        +setId(String): Frequency.FrequencyBuilder
+        +setPeriod(PeriodExtendedEnum): Frequency.FrequencyBuilder
+        +setPeriodMultiplier(Integer): Frequency.FrequencyBuilder
+        +build(): Frequency
+    }
+
+@enduml

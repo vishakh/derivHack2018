@@ -1,0 +1,12 @@
+@startuml
+
+    class MandatoryEarlyTerminationMeta [[MandatoryEarlyTerminationMeta.html]] {
+        +dataRules(): List<Validator<MandatoryEarlyTermination>>
+        +choiceRuleValidators(): List<Validator<MandatoryEarlyTermination>>
+        +getOutMappings(): Multimap<String, OutMapping<MandatoryEarlyTermination, ?>>
+        +getQualifyFunctions(): List<Function<MandatoryEarlyTermination, QualifyResult>>
+        +validator(): Validator<MandatoryEarlyTermination>
+        +onlyExistsValidator(): ValidatorWithArg<MandatoryEarlyTermination, String>
+    }
+
+@enduml

@@ -1,0 +1,145 @@
+{
+  "calculationAgent" : {
+    "calculationAgentPartyReference" : [ "yund3" ]
+  },
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "Trade234",
+      "identifierScheme" : "http://www.PartyA.com/coding-scheme/trade-id"
+    },
+    "partyReference" : "yund3"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "cashflow" : [ {
+          "payerReceiver" : {
+            "payerPartyReference" : "yund3",
+            "receiverPartyReference" : "jd765gf"
+          },
+          "premiumExpression" : {
+            "premiumType" : "FIXED"
+          },
+          "cashflowAmount" : {
+            "amount" : 25000000,
+            "currency" : "JPY"
+          },
+          "cashflowDate" : {
+            "dateAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "JPTO" ]
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "unadjustedDate" : "2006-05-15"
+          },
+          "rosettaKeyValue" : "fc478fb7"
+        } ],
+        "optionPayout" : [ {
+          "buyerSeller" : {
+            "buyerPartyReference" : "yund3",
+            "sellerPartyReference" : "jd765gf"
+          },
+          "denomination" : {
+            "entitlementCurrency" : "JPY",
+            "numberOfOptions" : 1,
+            "optionEntitlement" : 10000000000
+          },
+          "exerciseTerms" : {
+            "exerciseProcedure" : {
+              "followUpConfirmation" : true,
+              "limitedRightToConfirm" : false,
+              "manualExercise" : {
+                "exerciseNotice" : {
+                  "businessCenter" : "JPTO",
+                  "partyReference" : "yund3"
+                }
+              },
+              "splitTicket" : false
+            },
+            "optionStyle" : {
+              "europeanExercise" : {
+                "earliestExerciseTime" : {
+                  "businessCenter" : "JPTO",
+                  "hourMinuteTime" : "09:00:00"
+                },
+                "expirationDate" : {
+                  "adjustableDate" : {
+                    "dateAdjustments" : {
+                      "businessCenters" : {
+                        "businessCenter" : [ "JPTO" ]
+                      },
+                      "businessDayConvention" : "FOLLOWING"
+                    },
+                    "unadjustedDate" : "2006-06-19"
+                  }
+                },
+                "expirationTime" : {
+                  "businessCenter" : "JPTO",
+                  "hourMinuteTime" : "14:30:00"
+                }
+              }
+            },
+            "settlement" : {
+              "settlementDate" : {
+                "adjustableDate" : {
+                  "dateAdjustments" : {
+                    "businessCenters" : {
+                      "businessCenter" : [ "JPTO" ]
+                    },
+                    "businessDayConvention" : "FOLLOWING"
+                  },
+                  "unadjustedDate" : "2006-06-22"
+                }
+              },
+              "settlementType" : "PHYSICAL"
+            },
+            "strike" : {
+              "price" : 99.7
+            }
+          },
+          "optionType" : "CALL",
+          "quantity" : {
+            "notionalAmount" : {
+              "amount" : 10000000000,
+              "currency" : "JPY"
+            }
+          },
+          "underlyer" : {
+            "listedProduct" : {
+              "bond" : {
+                "clearanceSystem" : "Clearstream",
+                "currency" : "JPY",
+                "productIdentifierScheme" : "CUSIP",
+                "couponRate" : 0.014,
+                "maturity" : "2011-03-20",
+                "issuanceFaceAmount" : 10000000000,
+                "parValue" : 10000000000
+              },
+              "rosettaKey" : "94d8f891"
+            }
+          },
+          "rosettaKeyValue" : "9b70bfdf"
+        } ]
+      },
+      "rosettaKeyValue" : "a71e00c8"
+    },
+    "productIdentification" : {
+      "productQualifier" : "InterestRate_Option_DebtOption"
+    }
+  },
+  "party" : [ {
+    "id" : "yund3",
+    "partyId" : [ "Party A" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "jd765gf",
+    "partyId" : [ "Party B" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2006-05-10",
+    "id" : "TRADEDATE"
+  },
+  "rosettaKey" : "a4c926e"
+}

@@ -1,0 +1,11 @@
+@startuml
+
+    class PercentageRule [[PercentageRule.html]] {
+        +getNotionalAmountReference(): String
+        +getPaymentPercent(): BigDecimal
+        +toBuilder(): PercentageRule.PercentageRuleBuilder
+        {static} +builder(): PercentageRule.PercentageRuleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

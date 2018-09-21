@@ -1,0 +1,7 @@
+@startuml
+
+    class InflationRateCalculationOnlyExistsValidator [[InflationRateCalculationOnlyExistsValidator.html]] {
+        +validate(InflationRateCalculation, String): ValidationResult<InflationRateCalculation>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class ReferencePairChoiceRule [[ReferencePairChoiceRule.html]] {
+        +validate(ReferencePair): ValidationResult<ReferencePair>
+    }
+
+@enduml

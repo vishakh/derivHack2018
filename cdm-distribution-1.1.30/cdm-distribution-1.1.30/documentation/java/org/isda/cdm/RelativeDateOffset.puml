@@ -1,0 +1,14 @@
+@startuml
+
+    class RelativeDateOffset [[RelativeDateOffset.html]] {
+        +getAdjustedDate(): LocalDate
+        +getBusinessCenters(): BusinessCenters
+        +getBusinessCentersReference(): String
+        +getBusinessDayConvention(): BusinessDayConventionEnum
+        +getDateRelativeTo(): String
+        +toBuilder(): RelativeDateOffset.RelativeDateOffsetBuilder
+        {static} +builder(): RelativeDateOffset.RelativeDateOffsetBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class CalculationPeriod.CalculationResult [[CalculationPeriod.CalculationResult.html]] {
+        +getStartDate(): Date
+        +setStartDate(Date): CalculationPeriod.CalculationResult
+        +getEndDate(): Date
+        +setEndDate(Date): CalculationPeriod.CalculationResult
+        +getAttributes(): List<IResult.Attribute<?>>
+    }
+
+@enduml

@@ -1,0 +1,61 @@
+@startuml
+
+    class Contract.ContractBuilder [[Contract.ContractBuilder.html]] {
+        +getAccount(): List<Account.AccountBuilder>
+        +getOrCreateAccount(int): Account.AccountBuilder
+        +getCalculationAgent(): CalculationAgent.CalculationAgentBuilder
+        +getOrCreateCalculationAgent(): CalculationAgent.CalculationAgentBuilder
+        +getClearedDate(): LocalDate
+        +getCollateral(): Collateral.CollateralBuilder
+        +getOrCreateCollateral(): Collateral.CollateralBuilder
+        +getContractIdentifier(): List<PartyContractIdentifier.PartyContractIdentifierBuilder>
+        +getOrCreateContractIdentifier(int): PartyContractIdentifier.PartyContractIdentifierBuilder
+        +getContractualProduct(): ContractualProduct.ContractualProductBuilder
+        +getOrCreateContractualProduct(): ContractualProduct.ContractualProductBuilder
+        +getDocumentation(): Documentation.DocumentationBuilder
+        +getOrCreateDocumentation(): Documentation.DocumentationBuilder
+        +getGoverningLaw(): GoverningLawEnum
+        +getGoverningLawScheme(): String
+        +getId(): String
+        +getOtherPartyPayment(): List<Payment.PaymentBuilder>
+        +getOrCreateOtherPartyPayment(int): Payment.PaymentBuilder
+        +getParty(): List<Party.PartyBuilder>
+        +getOrCreateParty(int): Party.PartyBuilder
+        +getPartyContractInformation(): List<PartyContractInformation.PartyContractInformationBuilder>
+        +getOrCreatePartyContractInformation(int): PartyContractInformation.PartyContractInformationBuilder
+        +getPartyRole(): List<PartyRole.PartyRoleBuilder>
+        +getOrCreatePartyRole(int): PartyRole.PartyRoleBuilder
+        +getState(): StateEnum
+        +getTradeDate(): DateInstances.DateInstancesBuilder
+        +getOrCreateTradeDate(): DateInstances.DateInstancesBuilder
+        +addAccount(Account): Contract.ContractBuilder
+        +addAccountBuilder(Account.AccountBuilder): Contract.ContractBuilder
+        +setCalculationAgent(CalculationAgent): Contract.ContractBuilder
+        +setCalculationAgentBuilder(CalculationAgent.CalculationAgentBuilder): Contract.ContractBuilder
+        +setClearedDate(LocalDate): Contract.ContractBuilder
+        +setCollateral(Collateral): Contract.ContractBuilder
+        +setCollateralBuilder(Collateral.CollateralBuilder): Contract.ContractBuilder
+        +addContractIdentifier(PartyContractIdentifier): Contract.ContractBuilder
+        +addContractIdentifierBuilder(PartyContractIdentifier.PartyContractIdentifierBuilder): Contract.ContractBuilder
+        +setContractualProduct(ContractualProduct): Contract.ContractBuilder
+        +setContractualProductBuilder(ContractualProduct.ContractualProductBuilder): Contract.ContractBuilder
+        +setDocumentation(Documentation): Contract.ContractBuilder
+        +setDocumentationBuilder(Documentation.DocumentationBuilder): Contract.ContractBuilder
+        +setGoverningLaw(GoverningLawEnum): Contract.ContractBuilder
+        +setGoverningLawScheme(String): Contract.ContractBuilder
+        +setId(String): Contract.ContractBuilder
+        +addOtherPartyPayment(Payment): Contract.ContractBuilder
+        +addOtherPartyPaymentBuilder(Payment.PaymentBuilder): Contract.ContractBuilder
+        +addParty(Party): Contract.ContractBuilder
+        +addPartyBuilder(Party.PartyBuilder): Contract.ContractBuilder
+        +addPartyContractInformation(PartyContractInformation): Contract.ContractBuilder
+        +addPartyContractInformationBuilder(PartyContractInformation.PartyContractInformationBuilder): Contract.ContractBuilder
+        +addPartyRole(PartyRole): Contract.ContractBuilder
+        +addPartyRoleBuilder(PartyRole.PartyRoleBuilder): Contract.ContractBuilder
+        +setState(StateEnum): Contract.ContractBuilder
+        +setTradeDate(DateInstances): Contract.ContractBuilder
+        +setTradeDateBuilder(DateInstances.DateInstancesBuilder): Contract.ContractBuilder
+        +build(): Contract
+    }
+
+@enduml

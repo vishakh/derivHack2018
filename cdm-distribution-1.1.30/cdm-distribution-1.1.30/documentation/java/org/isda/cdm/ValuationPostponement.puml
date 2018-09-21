@@ -1,0 +1,10 @@
+@startuml
+
+    class ValuationPostponement [[ValuationPostponement.html]] {
+        +getMaximumDaysOfPostponement(): Integer
+        +toBuilder(): ValuationPostponement.ValuationPostponementBuilder
+        {static} +builder(): ValuationPostponement.ValuationPostponementBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

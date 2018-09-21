@@ -1,0 +1,7 @@
+@startuml
+
+    class InterestRatePayoutDayCountFractionDataRule [[InterestRatePayoutDayCountFractionDataRule.html]] {
+        +validate(Payout): ValidationResult<Payout>
+    }
+
+@enduml

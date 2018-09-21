@@ -1,0 +1,7 @@
+@startuml
+
+    class VersionedTradeIdVersionDataRule [[VersionedTradeIdVersionDataRule.html]] {
+        +validate(Identifier): ValidationResult<Identifier>
+    }
+
+@enduml

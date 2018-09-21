@@ -1,0 +1,9 @@
+@startuml
+
+    class ValuationPostponement.ValuationPostponementBuilder [[ValuationPostponement.ValuationPostponementBuilder.html]] {
+        +getMaximumDaysOfPostponement(): Integer
+        +setMaximumDaysOfPostponement(Integer): ValuationPostponement.ValuationPostponementBuilder
+        +build(): ValuationPostponement
+    }
+
+@enduml

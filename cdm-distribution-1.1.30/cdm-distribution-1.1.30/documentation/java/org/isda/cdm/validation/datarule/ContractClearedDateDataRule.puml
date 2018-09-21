@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractClearedDateDataRule [[ContractClearedDateDataRule.html]] {
+        +validate(Contract): ValidationResult<Contract>
+    }
+
+@enduml

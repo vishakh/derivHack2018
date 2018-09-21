@@ -1,0 +1,12 @@
+@startuml
+
+    class PriorDateInstanceMeta [[PriorDateInstanceMeta.html]] {
+        +dataRules(): List<Validator<PriorDateInstance>>
+        +choiceRuleValidators(): List<Validator<PriorDateInstance>>
+        +getOutMappings(): Multimap<String, OutMapping<PriorDateInstance, ?>>
+        +getQualifyFunctions(): List<Function<PriorDateInstance, QualifyResult>>
+        +validator(): Validator<PriorDateInstance>
+        +onlyExistsValidator(): ValidatorWithArg<PriorDateInstance, String>
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class LinkId.LinkIdBuilder [[LinkId.LinkIdBuilder.html]] {
+        +getId(): String
+        +getLinkId(): String
+        +getLinkIdScheme(): String
+        +setId(String): LinkId.LinkIdBuilder
+        +setLinkId(String): LinkId.LinkIdBuilder
+        +setLinkIdScheme(String): LinkId.LinkIdBuilder
+        +build(): LinkId
+    }
+
+@enduml

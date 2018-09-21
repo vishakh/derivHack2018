@@ -1,0 +1,7 @@
+@startuml
+
+    class StepValidator [[StepValidator.html]] {
+        +validate(Step): ValidationResult<Step>
+    }
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+
+    class CancelableProvision [[CancelableProvision.html]] {
+        +getAmericanExercise(): AmericanExercise
+        +getBermudaExercise(): BermudaExercise
+        +getCancelableProvisionAdjustedDates(): CancelableProvisionAdjustedDates
+        +getEuropeanExercise(): EuropeanExercise
+        +getExerciseNotice(): ExerciseNotice
+        +getFinalCalculationPeriodDateAdjustment(): List<FinalCalculationPeriodDateAdjustment>
+        +getFollowUpConfirmation(): Boolean
+        +getInitialFee(): SimplePayment
+        +toBuilder(): CancelableProvision.CancelableProvisionBuilder
+        {static} +builder(): CancelableProvision.CancelableProvisionBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

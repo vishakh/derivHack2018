@@ -1,0 +1,12 @@
+@startuml
+
+    class CashSettlementPaymentDateMeta [[CashSettlementPaymentDateMeta.html]] {
+        +dataRules(): List<Validator<CashSettlementPaymentDate>>
+        +choiceRuleValidators(): List<Validator<CashSettlementPaymentDate>>
+        +getOutMappings(): Multimap<String, OutMapping<CashSettlementPaymentDate, ?>>
+        +getQualifyFunctions(): List<Function<CashSettlementPaymentDate, QualifyResult>>
+        +validator(): Validator<CashSettlementPaymentDate>
+        +onlyExistsValidator(): ValidatorWithArg<CashSettlementPaymentDate, String>
+    }
+
+@enduml

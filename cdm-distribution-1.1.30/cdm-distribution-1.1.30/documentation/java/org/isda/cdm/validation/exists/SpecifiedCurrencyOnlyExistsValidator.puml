@@ -1,0 +1,7 @@
+@startuml
+
+    class SpecifiedCurrencyOnlyExistsValidator [[SpecifiedCurrencyOnlyExistsValidator.html]] {
+        +validate(SpecifiedCurrency, String): ValidationResult<SpecifiedCurrency>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class ReferencePoolValidator [[ReferencePoolValidator.html]] {
+        +validate(ReferencePool): ValidationResult<ReferencePool>
+    }
+
+@enduml

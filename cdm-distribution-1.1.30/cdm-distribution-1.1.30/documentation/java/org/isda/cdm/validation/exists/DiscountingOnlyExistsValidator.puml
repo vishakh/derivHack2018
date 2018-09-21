@@ -1,0 +1,7 @@
+@startuml
+
+    class DiscountingOnlyExistsValidator [[DiscountingOnlyExistsValidator.html]] {
+        +validate(Discounting, String): ValidationResult<Discounting>
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class FloatingRateCalculation [[FloatingRateCalculation.html]] {
+        +getAveragingMethod(): AveragingMethodEnum
+        +getFinalRateRounding(): Rounding
+        +getInitialRate(): BigDecimal
+        +getNegativeInterestRateTreatment(): NegativeInterestRateTreatmentEnum
+        +toBuilder(): FloatingRateCalculation.FloatingRateCalculationBuilder
+        {static} +builder(): FloatingRateCalculation.FloatingRateCalculationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

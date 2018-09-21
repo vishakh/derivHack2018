@@ -1,0 +1,7 @@
+@startuml
+
+    class DeliverableObligationsValidator [[DeliverableObligationsValidator.html]] {
+        +validate(DeliverableObligations): ValidationResult<DeliverableObligations>
+    }
+
+@enduml

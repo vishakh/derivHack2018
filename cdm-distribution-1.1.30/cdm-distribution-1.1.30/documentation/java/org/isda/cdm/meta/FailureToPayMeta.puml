@@ -1,0 +1,12 @@
+@startuml
+
+    class FailureToPayMeta [[FailureToPayMeta.html]] {
+        +dataRules(): List<Validator<FailureToPay>>
+        +choiceRuleValidators(): List<Validator<FailureToPay>>
+        +getOutMappings(): Multimap<String, OutMapping<FailureToPay, ?>>
+        +getQualifyFunctions(): List<Function<FailureToPay, QualifyResult>>
+        +validator(): Validator<FailureToPay>
+        +onlyExistsValidator(): ValidatorWithArg<FailureToPay, String>
+    }
+
+@enduml

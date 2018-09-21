@@ -1,0 +1,12 @@
+@startuml
+
+    class EquityAssetMeta [[EquityAssetMeta.html]] {
+        +dataRules(): List<Validator<EquityAsset>>
+        +choiceRuleValidators(): List<Validator<EquityAsset>>
+        +getOutMappings(): Multimap<String, OutMapping<EquityAsset, ?>>
+        +getQualifyFunctions(): List<Function<EquityAsset, QualifyResult>>
+        +validator(): Validator<EquityAsset>
+        +onlyExistsValidator(): ValidatorWithArg<EquityAsset, String>
+    }
+
+@enduml

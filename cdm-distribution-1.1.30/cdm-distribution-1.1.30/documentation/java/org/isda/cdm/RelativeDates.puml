@@ -1,0 +1,11 @@
+@startuml
+
+    class RelativeDates [[RelativeDates.html]] {
+        +getPeriodSkip(): Integer
+        +getScheduleBounds(): DateRange
+        +toBuilder(): RelativeDates.RelativeDatesBuilder
+        {static} +builder(): RelativeDates.RelativeDatesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

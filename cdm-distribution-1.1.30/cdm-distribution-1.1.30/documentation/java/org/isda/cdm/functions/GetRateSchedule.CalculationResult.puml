@@ -1,0 +1,9 @@
+@startuml
+
+    class GetRateSchedule.CalculationResult [[GetRateSchedule.CalculationResult.html]] {
+        +getSchedule(): SpreadSchedule
+        +setSchedule(SpreadSchedule): GetRateSchedule.CalculationResult
+        +getAttributes(): List<IResult.Attribute<?>>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    enum DayTypeEnum [[DayTypeEnum.html]] {
+        {static} +BUSINESS
+        {static} +CALENDAR
+        {static} +COMMODITY_BUSINESS
+        {static} +CURRENCY_BUSINESS
+        {static} +EXCHANGE_BUSINESS
+        {static} +SCHEDULED_TRADING_DAY
+    }
+
+@enduml

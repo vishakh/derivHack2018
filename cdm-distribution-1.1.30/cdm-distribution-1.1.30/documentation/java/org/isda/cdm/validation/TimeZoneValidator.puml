@@ -1,0 +1,7 @@
+@startuml
+
+    class TimeZoneValidator [[TimeZoneValidator.html]] {
+        +validate(TimeZone): ValidationResult<TimeZone>
+    }
+
+@enduml

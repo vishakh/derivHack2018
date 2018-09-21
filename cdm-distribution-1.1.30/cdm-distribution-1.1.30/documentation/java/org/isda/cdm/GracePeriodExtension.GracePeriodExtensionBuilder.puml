@@ -1,0 +1,13 @@
+@startuml
+
+    class GracePeriodExtension.GracePeriodExtensionBuilder [[GracePeriodExtension.GracePeriodExtensionBuilder.html]] {
+        +getApplicable(): Boolean
+        +getGracePeriod(): Offset.OffsetBuilder
+        +getOrCreateGracePeriod(): Offset.OffsetBuilder
+        +setApplicable(Boolean): GracePeriodExtension.GracePeriodExtensionBuilder
+        +setGracePeriod(Offset): GracePeriodExtension.GracePeriodExtensionBuilder
+        +setGracePeriodBuilder(Offset.OffsetBuilder): GracePeriodExtension.GracePeriodExtensionBuilder
+        +build(): GracePeriodExtension
+    }
+
+@enduml

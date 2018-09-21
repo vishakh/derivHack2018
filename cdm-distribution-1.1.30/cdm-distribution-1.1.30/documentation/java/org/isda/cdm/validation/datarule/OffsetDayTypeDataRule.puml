@@ -1,0 +1,7 @@
+@startuml
+
+    class OffsetDayTypeDataRule [[OffsetDayTypeDataRule.html]] {
+        +validate(Offset): ValidationResult<Offset>
+    }
+
+@enduml

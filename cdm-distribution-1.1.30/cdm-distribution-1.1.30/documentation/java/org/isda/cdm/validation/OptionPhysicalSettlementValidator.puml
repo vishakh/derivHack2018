@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionPhysicalSettlementValidator [[OptionPhysicalSettlementValidator.html]] {
+        +validate(OptionPhysicalSettlement): ValidationResult<OptionPhysicalSettlement>
+    }
+
+@enduml

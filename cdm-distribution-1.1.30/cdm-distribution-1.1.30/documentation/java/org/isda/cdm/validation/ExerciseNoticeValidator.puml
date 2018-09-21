@@ -1,0 +1,7 @@
+@startuml
+
+    class ExerciseNoticeValidator [[ExerciseNoticeValidator.html]] {
+        +validate(ExerciseNotice): ValidationResult<ExerciseNotice>
+    }
+
+@enduml

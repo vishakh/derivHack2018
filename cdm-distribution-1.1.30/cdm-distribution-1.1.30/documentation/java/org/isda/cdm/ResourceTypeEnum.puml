@@ -1,0 +1,9 @@
+@startuml
+
+    enum ResourceTypeEnum [[ResourceTypeEnum.html]] {
+        {static} +CONFIRMATION
+        {static} +SUPPLEMENTAL_MATERIAL_ECONOMIC_TERMS
+        {static} +TERM_SHEET
+    }
+
+@enduml

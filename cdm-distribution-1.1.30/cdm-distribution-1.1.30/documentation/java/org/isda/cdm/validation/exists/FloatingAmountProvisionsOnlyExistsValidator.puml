@@ -1,0 +1,7 @@
+@startuml
+
+    class FloatingAmountProvisionsOnlyExistsValidator [[FloatingAmountProvisionsOnlyExistsValidator.html]] {
+        +validate(FloatingAmountProvisions, String): ValidationResult<FloatingAmountProvisions>
+    }
+
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+
+    class CalculationPeriodImpl [[CalculationPeriodImpl.html]] {
+        +CalculationPeriodImpl(LocalDate)
+        +execute(CalculationPeriodDates): CalculationPeriod.CalculationResult
+    }
+
+@enduml

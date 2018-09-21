@@ -1,0 +1,19 @@
+@startuml
+
+    class ReferencePoolItem.ReferencePoolItemBuilder [[ReferencePoolItem.ReferencePoolItemBuilder.html]] {
+        +getConstituentWeight(): ConstituentWeight.ConstituentWeightBuilder
+        +getOrCreateConstituentWeight(): ConstituentWeight.ConstituentWeightBuilder
+        +getProtectionTermsReference(): String
+        +getReferencePair(): ReferencePair.ReferencePairBuilder
+        +getOrCreateReferencePair(): ReferencePair.ReferencePairBuilder
+        +getSettlementTermsReference(): String
+        +setConstituentWeight(ConstituentWeight): ReferencePoolItem.ReferencePoolItemBuilder
+        +setConstituentWeightBuilder(ConstituentWeight.ConstituentWeightBuilder): ReferencePoolItem.ReferencePoolItemBuilder
+        +setProtectionTermsReference(String): ReferencePoolItem.ReferencePoolItemBuilder
+        +setReferencePair(ReferencePair): ReferencePoolItem.ReferencePoolItemBuilder
+        +setReferencePairBuilder(ReferencePair.ReferencePairBuilder): ReferencePoolItem.ReferencePoolItemBuilder
+        +setSettlementTermsReference(String): ReferencePoolItem.ReferencePoolItemBuilder
+        +build(): ReferencePoolItem
+    }
+
+@enduml

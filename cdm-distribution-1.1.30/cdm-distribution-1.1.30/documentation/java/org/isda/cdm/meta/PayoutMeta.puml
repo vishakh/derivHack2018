@@ -1,0 +1,12 @@
+@startuml
+
+    class PayoutMeta [[PayoutMeta.html]] {
+        +dataRules(): List<Validator<Payout>>
+        +choiceRuleValidators(): List<Validator<Payout>>
+        +getOutMappings(): Multimap<String, OutMapping<Payout, ?>>
+        +getQualifyFunctions(): List<Function<Payout, QualifyResult>>
+        +validator(): Validator<Payout>
+        +onlyExistsValidator(): ValidatorWithArg<Payout, String>
+    }
+
+@enduml

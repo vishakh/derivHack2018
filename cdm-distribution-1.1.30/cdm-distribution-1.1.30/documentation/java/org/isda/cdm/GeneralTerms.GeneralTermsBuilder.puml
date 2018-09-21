@@ -1,0 +1,35 @@
+@startuml
+
+    class GeneralTerms.GeneralTermsBuilder [[GeneralTerms.GeneralTermsBuilder.html]] {
+        +getAdditionalTerm(): List<String>
+        +getAdditionalTermScheme(): String
+        +getBasketReferenceInformation(): BasketReferenceInformation.BasketReferenceInformationBuilder
+        +getOrCreateBasketReferenceInformation(): BasketReferenceInformation.BasketReferenceInformationBuilder
+        +getBuyerSeller(): BuyerSeller.BuyerSellerBuilder
+        +getOrCreateBuyerSeller(): BuyerSeller.BuyerSellerBuilder
+        +getDateAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getOrCreateDateAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getIndexReferenceInformation(): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +getOrCreateIndexReferenceInformation(): IndexReferenceInformation.IndexReferenceInformationBuilder
+        +getModifiedEquityDelivery(): Boolean
+        +getReferenceInformation(): ReferenceInformation.ReferenceInformationBuilder
+        +getOrCreateReferenceInformation(): ReferenceInformation.ReferenceInformationBuilder
+        +getSubstitution(): Boolean
+        +addAdditionalTerm(String): GeneralTerms.GeneralTermsBuilder
+        +setAdditionalTermScheme(String): GeneralTerms.GeneralTermsBuilder
+        +setBasketReferenceInformation(BasketReferenceInformation): GeneralTerms.GeneralTermsBuilder
+        +setBasketReferenceInformationBuilder(BasketReferenceInformation.BasketReferenceInformationBuilder): GeneralTerms.GeneralTermsBuilder
+        +setBuyerSeller(BuyerSeller): GeneralTerms.GeneralTermsBuilder
+        +setBuyerSellerBuilder(BuyerSeller.BuyerSellerBuilder): GeneralTerms.GeneralTermsBuilder
+        +setDateAdjustments(BusinessDayAdjustments): GeneralTerms.GeneralTermsBuilder
+        +setDateAdjustmentsBuilder(BusinessDayAdjustments.BusinessDayAdjustmentsBuilder): GeneralTerms.GeneralTermsBuilder
+        +setIndexReferenceInformation(IndexReferenceInformation): GeneralTerms.GeneralTermsBuilder
+        +setIndexReferenceInformationBuilder(IndexReferenceInformation.IndexReferenceInformationBuilder): GeneralTerms.GeneralTermsBuilder
+        +setModifiedEquityDelivery(Boolean): GeneralTerms.GeneralTermsBuilder
+        +setReferenceInformation(ReferenceInformation): GeneralTerms.GeneralTermsBuilder
+        +setReferenceInformationBuilder(ReferenceInformation.ReferenceInformationBuilder): GeneralTerms.GeneralTermsBuilder
+        +setSubstitution(Boolean): GeneralTerms.GeneralTermsBuilder
+        +build(): GeneralTerms
+    }
+
+@enduml

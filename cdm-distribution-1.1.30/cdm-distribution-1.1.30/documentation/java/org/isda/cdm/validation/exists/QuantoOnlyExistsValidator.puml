@@ -1,0 +1,7 @@
+@startuml
+
+    class QuantoOnlyExistsValidator [[QuantoOnlyExistsValidator.html]] {
+        +validate(Quanto, String): ValidationResult<Quanto>
+    }
+
+@enduml

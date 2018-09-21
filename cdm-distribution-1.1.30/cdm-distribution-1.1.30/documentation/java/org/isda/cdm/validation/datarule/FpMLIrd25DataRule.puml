@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLIrd25DataRule [[FpMLIrd25DataRule.html]] {
+        +validate(Schedule): ValidationResult<Schedule>
+    }
+
+@enduml

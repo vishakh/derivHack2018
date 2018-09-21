@@ -1,0 +1,12 @@
+@startuml
+
+    class PartyRoleMeta [[PartyRoleMeta.html]] {
+        +dataRules(): List<Validator<PartyRole>>
+        +choiceRuleValidators(): List<Validator<PartyRole>>
+        +getOutMappings(): Multimap<String, OutMapping<PartyRole, ?>>
+        +getQualifyFunctions(): List<Function<PartyRole, QualifyResult>>
+        +validator(): Validator<PartyRole>
+        +onlyExistsValidator(): ValidatorWithArg<PartyRole, String>
+    }
+
+@enduml

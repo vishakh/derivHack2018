@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionStrikeExpressionChoiceRule [[OptionStrikeExpressionChoiceRule.html]] {
+        +validate(OptionStrike): ValidationResult<OptionStrike>
+    }
+
+@enduml

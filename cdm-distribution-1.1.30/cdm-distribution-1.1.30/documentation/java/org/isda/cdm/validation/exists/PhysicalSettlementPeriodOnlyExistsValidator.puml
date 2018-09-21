@@ -1,0 +1,7 @@
+@startuml
+
+    class PhysicalSettlementPeriodOnlyExistsValidator [[PhysicalSettlementPeriodOnlyExistsValidator.html]] {
+        +validate(PhysicalSettlementPeriod, String): ValidationResult<PhysicalSettlementPeriod>
+    }
+
+@enduml

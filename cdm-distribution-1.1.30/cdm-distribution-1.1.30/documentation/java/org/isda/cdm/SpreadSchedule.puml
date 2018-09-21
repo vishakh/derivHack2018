@@ -1,0 +1,11 @@
+@startuml
+
+    class SpreadSchedule [[SpreadSchedule.html]] {
+        +getType(): SpreadScheduleTypeEnum
+        +getTypeScheme(): String
+        +toBuilder(): SpreadSchedule.SpreadScheduleBuilder
+        {static} +builder(): SpreadSchedule.SpreadScheduleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

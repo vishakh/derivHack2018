@@ -1,0 +1,12 @@
+@startuml
+
+    enum InformationProviderEnum [[InformationProviderEnum.html]] {
+        {static} +BANK_OF_JAPAN
+        {static} +BLOOMBERG
+        {static} +ISDA
+        {static} +REUTERS
+        {static} +TELERATE
+        {static} +OTHER
+    }
+
+@enduml

@@ -1,0 +1,39 @@
+@startuml
+
+    class CalculationPeriod.CalculationPeriodBuilder [[CalculationPeriod.CalculationPeriodBuilder.html]] {
+        +getAdjustedEndDate(): LocalDate
+        +getAdjustedStartDate(): LocalDate
+        +getCalculationPeriodNumberOfDays(): Integer
+        +getDayCountYearFraction(): BigDecimal
+        +getFixedRate(): BigDecimal
+        +getFloatingRateDefinition(): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        +getOrCreateFloatingRateDefinition(): FloatingRateDefinition.FloatingRateDefinitionBuilder
+        +getForecastAmount(): Money.MoneyBuilder
+        +getOrCreateForecastAmount(): Money.MoneyBuilder
+        +getForecastRate(): BigDecimal
+        +getFxLinkedNotionalAmount(): FxLinkedNotionalAmount.FxLinkedNotionalAmountBuilder
+        +getOrCreateFxLinkedNotionalAmount(): FxLinkedNotionalAmount.FxLinkedNotionalAmountBuilder
+        +getId(): String
+        +getNotionalAmount(): BigDecimal
+        +getUnadjustedEndDate(): LocalDate
+        +getUnadjustedStartDate(): LocalDate
+        +setAdjustedEndDate(LocalDate): CalculationPeriod.CalculationPeriodBuilder
+        +setAdjustedStartDate(LocalDate): CalculationPeriod.CalculationPeriodBuilder
+        +setCalculationPeriodNumberOfDays(Integer): CalculationPeriod.CalculationPeriodBuilder
+        +setDayCountYearFraction(BigDecimal): CalculationPeriod.CalculationPeriodBuilder
+        +setFixedRate(BigDecimal): CalculationPeriod.CalculationPeriodBuilder
+        +setFloatingRateDefinition(FloatingRateDefinition): CalculationPeriod.CalculationPeriodBuilder
+        +setFloatingRateDefinitionBuilder(FloatingRateDefinition.FloatingRateDefinitionBuilder): CalculationPeriod.CalculationPeriodBuilder
+        +setForecastAmount(Money): CalculationPeriod.CalculationPeriodBuilder
+        +setForecastAmountBuilder(Money.MoneyBuilder): CalculationPeriod.CalculationPeriodBuilder
+        +setForecastRate(BigDecimal): CalculationPeriod.CalculationPeriodBuilder
+        +setFxLinkedNotionalAmount(FxLinkedNotionalAmount): CalculationPeriod.CalculationPeriodBuilder
+        +setFxLinkedNotionalAmountBuilder(FxLinkedNotionalAmount.FxLinkedNotionalAmountBuilder): CalculationPeriod.CalculationPeriodBuilder
+        +setId(String): CalculationPeriod.CalculationPeriodBuilder
+        +setNotionalAmount(BigDecimal): CalculationPeriod.CalculationPeriodBuilder
+        +setUnadjustedEndDate(LocalDate): CalculationPeriod.CalculationPeriodBuilder
+        +setUnadjustedStartDate(LocalDate): CalculationPeriod.CalculationPeriodBuilder
+        +build(): CalculationPeriod
+    }
+
+@enduml

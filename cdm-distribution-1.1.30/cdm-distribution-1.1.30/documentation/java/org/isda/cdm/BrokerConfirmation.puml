@@ -1,0 +1,11 @@
+@startuml
+
+    class BrokerConfirmation [[BrokerConfirmation.html]] {
+        +getBrokerConfirmationType(): BrokerConfirmationTypeEnum
+        +getBrokerConfirmationTypeScheme(): String
+        +toBuilder(): BrokerConfirmation.BrokerConfirmationBuilder
+        {static} +builder(): BrokerConfirmation.BrokerConfirmationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

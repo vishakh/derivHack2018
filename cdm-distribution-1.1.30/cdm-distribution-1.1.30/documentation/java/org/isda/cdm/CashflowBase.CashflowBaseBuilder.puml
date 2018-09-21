@@ -1,0 +1,27 @@
+@startuml
+
+    class CashflowBase.CashflowBaseBuilder [[CashflowBase.CashflowBaseBuilder.html]] {
+        +getDiscountFactor(): BigDecimal
+        +getId(): String
+        +getPayerReceiver(): PayerReceiver.PayerReceiverBuilder
+        +getOrCreatePayerReceiver(): PayerReceiver.PayerReceiverBuilder
+        +getPaymentDiscounting(): PaymentDiscounting.PaymentDiscountingBuilder
+        +getOrCreatePaymentDiscounting(): PaymentDiscounting.PaymentDiscountingBuilder
+        +getPremiumExpression(): PremiumExpression.PremiumExpressionBuilder
+        +getOrCreatePremiumExpression(): PremiumExpression.PremiumExpressionBuilder
+        +getPresentValueAmount(): Money.MoneyBuilder
+        +getOrCreatePresentValueAmount(): Money.MoneyBuilder
+        +setDiscountFactor(BigDecimal): CashflowBase.CashflowBaseBuilder
+        +setId(String): CashflowBase.CashflowBaseBuilder
+        +setPayerReceiver(PayerReceiver): CashflowBase.CashflowBaseBuilder
+        +setPayerReceiverBuilder(PayerReceiver.PayerReceiverBuilder): CashflowBase.CashflowBaseBuilder
+        +setPaymentDiscounting(PaymentDiscounting): CashflowBase.CashflowBaseBuilder
+        +setPaymentDiscountingBuilder(PaymentDiscounting.PaymentDiscountingBuilder): CashflowBase.CashflowBaseBuilder
+        +setPremiumExpression(PremiumExpression): CashflowBase.CashflowBaseBuilder
+        +setPremiumExpressionBuilder(PremiumExpression.PremiumExpressionBuilder): CashflowBase.CashflowBaseBuilder
+        +setPresentValueAmount(Money): CashflowBase.CashflowBaseBuilder
+        +setPresentValueAmountBuilder(Money.MoneyBuilder): CashflowBase.CashflowBaseBuilder
+        +build(): CashflowBase
+    }
+
+@enduml

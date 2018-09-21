@@ -1,0 +1,7 @@
+@startuml
+
+    class FrequencyPeriodMultiplierDataRule [[FrequencyPeriodMultiplierDataRule.html]] {
+        +validate(Frequency): ValidationResult<Frequency>
+    }
+
+@enduml

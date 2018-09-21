@@ -1,0 +1,12 @@
+@startuml
+
+    class AveragingScheduleMeta [[AveragingScheduleMeta.html]] {
+        +dataRules(): List<Validator<AveragingSchedule>>
+        +choiceRuleValidators(): List<Validator<AveragingSchedule>>
+        +getOutMappings(): Multimap<String, OutMapping<AveragingSchedule, ?>>
+        +getQualifyFunctions(): List<Function<AveragingSchedule, QualifyResult>>
+        +validator(): Validator<AveragingSchedule>
+        +onlyExistsValidator(): ValidatorWithArg<AveragingSchedule, String>
+    }
+
+@enduml

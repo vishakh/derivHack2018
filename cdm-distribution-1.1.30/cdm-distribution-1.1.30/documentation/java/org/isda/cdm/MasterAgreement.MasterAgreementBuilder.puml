@@ -1,0 +1,21 @@
+@startuml
+
+    class MasterAgreement.MasterAgreementBuilder [[MasterAgreement.MasterAgreementBuilder.html]] {
+        +getMasterAgreementDate(): LocalDate
+        +getMasterAgreementId(): String
+        +getMasterAgreementIdScheme(): String
+        +getMasterAgreementType(): MasterAgreementTypeEnum
+        +getMasterAgreementTypeScheme(): String
+        +getMasterAgreementVersion(): String
+        +getMasterAgreementVersionScheme(): String
+        +setMasterAgreementDate(LocalDate): MasterAgreement.MasterAgreementBuilder
+        +setMasterAgreementId(String): MasterAgreement.MasterAgreementBuilder
+        +setMasterAgreementIdScheme(String): MasterAgreement.MasterAgreementBuilder
+        +setMasterAgreementType(MasterAgreementTypeEnum): MasterAgreement.MasterAgreementBuilder
+        +setMasterAgreementTypeScheme(String): MasterAgreement.MasterAgreementBuilder
+        +setMasterAgreementVersion(String): MasterAgreement.MasterAgreementBuilder
+        +setMasterAgreementVersionScheme(String): MasterAgreement.MasterAgreementBuilder
+        +build(): MasterAgreement
+    }
+
+@enduml

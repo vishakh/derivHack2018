@@ -1,0 +1,14 @@
+@startuml
+
+    class ObservationPrimitive [[ObservationPrimitive.html]] {
+        +getDate(): LocalDate
+        +getObservation(): BigDecimal
+        +getSide(): QuotationSideEnum
+        +getSource(): ObservationSource
+        +getTime(): TimeZone
+        +toBuilder(): ObservationPrimitive.ObservationPrimitiveBuilder
+        {static} +builder(): ObservationPrimitive.ObservationPrimitiveBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

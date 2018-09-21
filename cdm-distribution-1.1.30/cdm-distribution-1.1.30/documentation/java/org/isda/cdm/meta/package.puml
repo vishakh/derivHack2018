@@ -1,0 +1,3018 @@
+@startuml
+
+    namespace org.isda.cdm.meta {
+
+        class PartyRoleMeta [[PartyRoleMeta.html]] {
+            +dataRules(): List<Validator<PartyRole>>
+            +choiceRuleValidators(): List<Validator<PartyRole>>
+            +getOutMappings(): Multimap<String, OutMapping<PartyRole, ?>>
+            +getQualifyFunctions(): List<Function<PartyRole, QualifyResult>>
+            +validator(): Validator<PartyRole>
+            +onlyExistsValidator(): ValidatorWithArg<PartyRole, String>
+        }
+
+        class PartyAndAccountReferenceMeta [[PartyAndAccountReferenceMeta.html]] {
+            +dataRules(): List<Validator<PartyAndAccountReference>>
+            +choiceRuleValidators(): List<Validator<PartyAndAccountReference>>
+            +getOutMappings(): Multimap<String, OutMapping<PartyAndAccountReference, ?>>
+            +getQualifyFunctions(): List<Function<PartyAndAccountReference, QualifyResult>>
+            +validator(): Validator<PartyAndAccountReference>
+            +onlyExistsValidator(): ValidatorWithArg<PartyAndAccountReference, String>
+        }
+
+        class PartyMeta [[PartyMeta.html]] {
+            +dataRules(): List<Validator<Party>>
+            +choiceRuleValidators(): List<Validator<Party>>
+            +getOutMappings(): Multimap<String, OutMapping<Party, ?>>
+            +getQualifyFunctions(): List<Function<Party, QualifyResult>>
+            +validator(): Validator<Party>
+            +onlyExistsValidator(): ValidatorWithArg<Party, String>
+        }
+
+        class NaturalPersonRoleMeta [[NaturalPersonRoleMeta.html]] {
+            +dataRules(): List<Validator<NaturalPersonRole>>
+            +choiceRuleValidators(): List<Validator<NaturalPersonRole>>
+            +getOutMappings(): Multimap<String, OutMapping<NaturalPersonRole, ?>>
+            +getQualifyFunctions(): List<Function<NaturalPersonRole, QualifyResult>>
+            +validator(): Validator<NaturalPersonRole>
+            +onlyExistsValidator(): ValidatorWithArg<NaturalPersonRole, String>
+        }
+
+        class NaturalPersonMeta [[NaturalPersonMeta.html]] {
+            +dataRules(): List<Validator<NaturalPerson>>
+            +choiceRuleValidators(): List<Validator<NaturalPerson>>
+            +getOutMappings(): Multimap<String, OutMapping<NaturalPerson, ?>>
+            +getQualifyFunctions(): List<Function<NaturalPerson, QualifyResult>>
+            +validator(): Validator<NaturalPerson>
+            +onlyExistsValidator(): ValidatorWithArg<NaturalPerson, String>
+        }
+
+        class LegalEntityMeta [[LegalEntityMeta.html]] {
+            +dataRules(): List<Validator<LegalEntity>>
+            +choiceRuleValidators(): List<Validator<LegalEntity>>
+            +getOutMappings(): Multimap<String, OutMapping<LegalEntity, ?>>
+            +getQualifyFunctions(): List<Function<LegalEntity, QualifyResult>>
+            +validator(): Validator<LegalEntity>
+            +onlyExistsValidator(): ValidatorWithArg<LegalEntity, String>
+        }
+
+        class AccountMeta [[AccountMeta.html]] {
+            +dataRules(): List<Validator<Account>>
+            +choiceRuleValidators(): List<Validator<Account>>
+            +getOutMappings(): Multimap<String, OutMapping<Account, ?>>
+            +getQualifyFunctions(): List<Function<Account, QualifyResult>>
+            +validator(): Validator<Account>
+            +onlyExistsValidator(): ValidatorWithArg<Account, String>
+        }
+
+        class ProductTaxonomyMeta [[ProductTaxonomyMeta.html]] {
+            +dataRules(): List<Validator<ProductTaxonomy>>
+            +choiceRuleValidators(): List<Validator<ProductTaxonomy>>
+            +getOutMappings(): Multimap<String, OutMapping<ProductTaxonomy, ?>>
+            +getQualifyFunctions(): List<Function<ProductTaxonomy, QualifyResult>>
+            +validator(): Validator<ProductTaxonomy>
+            +onlyExistsValidator(): ValidatorWithArg<ProductTaxonomy, String>
+        }
+
+        class ProductIdentifierMeta [[ProductIdentifierMeta.html]] {
+            +dataRules(): List<Validator<ProductIdentifier>>
+            +choiceRuleValidators(): List<Validator<ProductIdentifier>>
+            +getOutMappings(): Multimap<String, OutMapping<ProductIdentifier, ?>>
+            +getQualifyFunctions(): List<Function<ProductIdentifier, QualifyResult>>
+            +validator(): Validator<ProductIdentifier>
+            +onlyExistsValidator(): ValidatorWithArg<ProductIdentifier, String>
+        }
+
+        class ListedProductMeta [[ListedProductMeta.html]] {
+            +dataRules(): List<Validator<ListedProduct>>
+            +choiceRuleValidators(): List<Validator<ListedProduct>>
+            +getOutMappings(): Multimap<String, OutMapping<ListedProduct, ?>>
+            +getQualifyFunctions(): List<Function<ListedProduct, QualifyResult>>
+            +validator(): Validator<ListedProduct>
+            +onlyExistsValidator(): ValidatorWithArg<ListedProduct, String>
+        }
+
+        class ListedHeaderMeta [[ListedHeaderMeta.html]] {
+            +dataRules(): List<Validator<ListedHeader>>
+            +choiceRuleValidators(): List<Validator<ListedHeader>>
+            +getOutMappings(): Multimap<String, OutMapping<ListedHeader, ?>>
+            +getQualifyFunctions(): List<Function<ListedHeader, QualifyResult>>
+            +validator(): Validator<ListedHeader>
+            +onlyExistsValidator(): ValidatorWithArg<ListedHeader, String>
+        }
+
+        class StubValueMeta [[StubValueMeta.html]] {
+            +dataRules(): List<Validator<StubValue>>
+            +choiceRuleValidators(): List<Validator<StubValue>>
+            +getOutMappings(): Multimap<String, OutMapping<StubValue, ?>>
+            +getQualifyFunctions(): List<Function<StubValue, QualifyResult>>
+            +validator(): Validator<StubValue>
+            +onlyExistsValidator(): ValidatorWithArg<StubValue, String>
+        }
+
+        class StubFloatingRateMeta [[StubFloatingRateMeta.html]] {
+            +dataRules(): List<Validator<StubFloatingRate>>
+            +choiceRuleValidators(): List<Validator<StubFloatingRate>>
+            +getOutMappings(): Multimap<String, OutMapping<StubFloatingRate, ?>>
+            +getQualifyFunctions(): List<Function<StubFloatingRate, QualifyResult>>
+            +validator(): Validator<StubFloatingRate>
+            +onlyExistsValidator(): ValidatorWithArg<StubFloatingRate, String>
+        }
+
+        class StrikeScheduleMeta [[StrikeScheduleMeta.html]] {
+            +dataRules(): List<Validator<StrikeSchedule>>
+            +choiceRuleValidators(): List<Validator<StrikeSchedule>>
+            +getOutMappings(): Multimap<String, OutMapping<StrikeSchedule, ?>>
+            +getQualifyFunctions(): List<Function<StrikeSchedule, QualifyResult>>
+            +validator(): Validator<StrikeSchedule>
+            +onlyExistsValidator(): ValidatorWithArg<StrikeSchedule, String>
+        }
+
+        class StrikeMeta [[StrikeMeta.html]] {
+            +dataRules(): List<Validator<Strike>>
+            +choiceRuleValidators(): List<Validator<Strike>>
+            +getOutMappings(): Multimap<String, OutMapping<Strike, ?>>
+            +getQualifyFunctions(): List<Function<Strike, QualifyResult>>
+            +validator(): Validator<Strike>
+            +onlyExistsValidator(): ValidatorWithArg<Strike, String>
+        }
+
+        class StepMeta [[StepMeta.html]] {
+            +dataRules(): List<Validator<Step>>
+            +choiceRuleValidators(): List<Validator<Step>>
+            +getOutMappings(): Multimap<String, OutMapping<Step, ?>>
+            +getQualifyFunctions(): List<Function<Step, QualifyResult>>
+            +validator(): Validator<Step>
+            +onlyExistsValidator(): ValidatorWithArg<Step, String>
+        }
+
+        class SpreadScheduleMeta [[SpreadScheduleMeta.html]] {
+            +dataRules(): List<Validator<SpreadSchedule>>
+            +choiceRuleValidators(): List<Validator<SpreadSchedule>>
+            +getOutMappings(): Multimap<String, OutMapping<SpreadSchedule, ?>>
+            +getQualifyFunctions(): List<Function<SpreadSchedule, QualifyResult>>
+            +validator(): Validator<SpreadSchedule>
+            +onlyExistsValidator(): ValidatorWithArg<SpreadSchedule, String>
+        }
+
+        class SimplePaymentMeta [[SimplePaymentMeta.html]] {
+            +dataRules(): List<Validator<SimplePayment>>
+            +choiceRuleValidators(): List<Validator<SimplePayment>>
+            +getOutMappings(): Multimap<String, OutMapping<SimplePayment, ?>>
+            +getQualifyFunctions(): List<Function<SimplePayment, QualifyResult>>
+            +validator(): Validator<SimplePayment>
+            +onlyExistsValidator(): ValidatorWithArg<SimplePayment, String>
+        }
+
+        class SettlementRateSourceMeta [[SettlementRateSourceMeta.html]] {
+            +dataRules(): List<Validator<SettlementRateSource>>
+            +choiceRuleValidators(): List<Validator<SettlementRateSource>>
+            +getOutMappings(): Multimap<String, OutMapping<SettlementRateSource, ?>>
+            +getQualifyFunctions(): List<Function<SettlementRateSource, QualifyResult>>
+            +validator(): Validator<SettlementRateSource>
+            +onlyExistsValidator(): ValidatorWithArg<SettlementRateSource, String>
+        }
+
+        class ScheduleMeta [[ScheduleMeta.html]] {
+            +dataRules(): List<Validator<Schedule>>
+            +choiceRuleValidators(): List<Validator<Schedule>>
+            +getOutMappings(): Multimap<String, OutMapping<Schedule, ?>>
+            +getQualifyFunctions(): List<Function<Schedule, QualifyResult>>
+            +validator(): Validator<Schedule>
+            +onlyExistsValidator(): ValidatorWithArg<Schedule, String>
+        }
+
+        class RoundingMeta [[RoundingMeta.html]] {
+            +dataRules(): List<Validator<Rounding>>
+            +choiceRuleValidators(): List<Validator<Rounding>>
+            +getOutMappings(): Multimap<String, OutMapping<Rounding, ?>>
+            +getQualifyFunctions(): List<Function<Rounding, QualifyResult>>
+            +validator(): Validator<Rounding>
+            +onlyExistsValidator(): ValidatorWithArg<Rounding, String>
+        }
+
+        class ResourceLengthMeta [[ResourceLengthMeta.html]] {
+            +dataRules(): List<Validator<ResourceLength>>
+            +choiceRuleValidators(): List<Validator<ResourceLength>>
+            +getOutMappings(): Multimap<String, OutMapping<ResourceLength, ?>>
+            +getQualifyFunctions(): List<Function<ResourceLength, QualifyResult>>
+            +validator(): Validator<ResourceLength>
+            +onlyExistsValidator(): ValidatorWithArg<ResourceLength, String>
+        }
+
+        class ResourceMeta [[ResourceMeta.html]] {
+            +dataRules(): List<Validator<Resource>>
+            +choiceRuleValidators(): List<Validator<Resource>>
+            +getOutMappings(): Multimap<String, OutMapping<Resource, ?>>
+            +getQualifyFunctions(): List<Function<Resource, QualifyResult>>
+            +validator(): Validator<Resource>
+            +onlyExistsValidator(): ValidatorWithArg<Resource, String>
+        }
+
+        class ResetFrequencyMeta [[ResetFrequencyMeta.html]] {
+            +dataRules(): List<Validator<ResetFrequency>>
+            +choiceRuleValidators(): List<Validator<ResetFrequency>>
+            +getOutMappings(): Multimap<String, OutMapping<ResetFrequency, ?>>
+            +getQualifyFunctions(): List<Function<ResetFrequency, QualifyResult>>
+            +validator(): Validator<ResetFrequency>
+            +onlyExistsValidator(): ValidatorWithArg<ResetFrequency, String>
+        }
+
+        class RelativeDateOffsetMeta [[RelativeDateOffsetMeta.html]] {
+            +dataRules(): List<Validator<RelativeDateOffset>>
+            +choiceRuleValidators(): List<Validator<RelativeDateOffset>>
+            +getOutMappings(): Multimap<String, OutMapping<RelativeDateOffset, ?>>
+            +getQualifyFunctions(): List<Function<RelativeDateOffset, QualifyResult>>
+            +validator(): Validator<RelativeDateOffset>
+            +onlyExistsValidator(): ValidatorWithArg<RelativeDateOffset, String>
+        }
+
+        class RelativeDatesMeta [[RelativeDatesMeta.html]] {
+            +dataRules(): List<Validator<RelativeDates>>
+            +choiceRuleValidators(): List<Validator<RelativeDates>>
+            +getOutMappings(): Multimap<String, OutMapping<RelativeDates, ?>>
+            +getQualifyFunctions(): List<Function<RelativeDates, QualifyResult>>
+            +validator(): Validator<RelativeDates>
+            +onlyExistsValidator(): ValidatorWithArg<RelativeDates, String>
+        }
+
+        class RelatedPartyMeta [[RelatedPartyMeta.html]] {
+            +dataRules(): List<Validator<RelatedParty>>
+            +choiceRuleValidators(): List<Validator<RelatedParty>>
+            +getOutMappings(): Multimap<String, OutMapping<RelatedParty, ?>>
+            +getQualifyFunctions(): List<Function<RelatedParty, QualifyResult>>
+            +validator(): Validator<RelatedParty>
+            +onlyExistsValidator(): ValidatorWithArg<RelatedParty, String>
+        }
+
+        class ReferenceBankMeta [[ReferenceBankMeta.html]] {
+            +dataRules(): List<Validator<ReferenceBank>>
+            +choiceRuleValidators(): List<Validator<ReferenceBank>>
+            +getOutMappings(): Multimap<String, OutMapping<ReferenceBank, ?>>
+            +getQualifyFunctions(): List<Function<ReferenceBank, QualifyResult>>
+            +validator(): Validator<ReferenceBank>
+            +onlyExistsValidator(): ValidatorWithArg<ReferenceBank, String>
+        }
+
+        class RateObservationMeta [[RateObservationMeta.html]] {
+            +dataRules(): List<Validator<RateObservation>>
+            +choiceRuleValidators(): List<Validator<RateObservation>>
+            +getOutMappings(): Multimap<String, OutMapping<RateObservation, ?>>
+            +getQualifyFunctions(): List<Function<RateObservation, QualifyResult>>
+            +validator(): Validator<RateObservation>
+            +onlyExistsValidator(): ValidatorWithArg<RateObservation, String>
+        }
+
+        class QuotedCurrencyPairMeta [[QuotedCurrencyPairMeta.html]] {
+            +dataRules(): List<Validator<QuotedCurrencyPair>>
+            +choiceRuleValidators(): List<Validator<QuotedCurrencyPair>>
+            +getOutMappings(): Multimap<String, OutMapping<QuotedCurrencyPair, ?>>
+            +getQualifyFunctions(): List<Function<QuotedCurrencyPair, QualifyResult>>
+            +validator(): Validator<QuotedCurrencyPair>
+            +onlyExistsValidator(): ValidatorWithArg<QuotedCurrencyPair, String>
+        }
+
+        class PriorDateInstanceMeta [[PriorDateInstanceMeta.html]] {
+            +dataRules(): List<Validator<PriorDateInstance>>
+            +choiceRuleValidators(): List<Validator<PriorDateInstance>>
+            +getOutMappings(): Multimap<String, OutMapping<PriorDateInstance, ?>>
+            +getQualifyFunctions(): List<Function<PriorDateInstance, QualifyResult>>
+            +validator(): Validator<PriorDateInstance>
+            +onlyExistsValidator(): ValidatorWithArg<PriorDateInstance, String>
+        }
+
+        class PrincipalExchangesMeta [[PrincipalExchangesMeta.html]] {
+            +dataRules(): List<Validator<PrincipalExchanges>>
+            +choiceRuleValidators(): List<Validator<PrincipalExchanges>>
+            +getOutMappings(): Multimap<String, OutMapping<PrincipalExchanges, ?>>
+            +getQualifyFunctions(): List<Function<PrincipalExchanges, QualifyResult>>
+            +validator(): Validator<PrincipalExchanges>
+            +onlyExistsValidator(): ValidatorWithArg<PrincipalExchanges, String>
+        }
+
+        class PremiumExpressionMeta [[PremiumExpressionMeta.html]] {
+            +dataRules(): List<Validator<PremiumExpression>>
+            +choiceRuleValidators(): List<Validator<PremiumExpression>>
+            +getOutMappings(): Multimap<String, OutMapping<PremiumExpression, ?>>
+            +getQualifyFunctions(): List<Function<PremiumExpression, QualifyResult>>
+            +validator(): Validator<PremiumExpression>
+            +onlyExistsValidator(): ValidatorWithArg<PremiumExpression, String>
+        }
+
+        class PeriodMeta [[PeriodMeta.html]] {
+            +dataRules(): List<Validator<Period>>
+            +choiceRuleValidators(): List<Validator<Period>>
+            +getOutMappings(): Multimap<String, OutMapping<Period, ?>>
+            +getQualifyFunctions(): List<Function<Period, QualifyResult>>
+            +validator(): Validator<Period>
+            +onlyExistsValidator(): ValidatorWithArg<Period, String>
+        }
+
+        class PaymentRuleMeta [[PaymentRuleMeta.html]] {
+            +dataRules(): List<Validator<PaymentRule>>
+            +choiceRuleValidators(): List<Validator<PaymentRule>>
+            +getOutMappings(): Multimap<String, OutMapping<PaymentRule, ?>>
+            +getQualifyFunctions(): List<Function<PaymentRule, QualifyResult>>
+            +validator(): Validator<PaymentRule>
+            +onlyExistsValidator(): ValidatorWithArg<PaymentRule, String>
+        }
+
+        class PaymentDiscountingMeta [[PaymentDiscountingMeta.html]] {
+            +dataRules(): List<Validator<PaymentDiscounting>>
+            +choiceRuleValidators(): List<Validator<PaymentDiscounting>>
+            +getOutMappings(): Multimap<String, OutMapping<PaymentDiscounting, ?>>
+            +getQualifyFunctions(): List<Function<PaymentDiscounting, QualifyResult>>
+            +validator(): Validator<PaymentDiscounting>
+            +onlyExistsValidator(): ValidatorWithArg<PaymentDiscounting, String>
+        }
+
+        class PaymentDetailMeta [[PaymentDetailMeta.html]] {
+            +dataRules(): List<Validator<PaymentDetail>>
+            +choiceRuleValidators(): List<Validator<PaymentDetail>>
+            +getOutMappings(): Multimap<String, OutMapping<PaymentDetail, ?>>
+            +getQualifyFunctions(): List<Function<PaymentDetail, QualifyResult>>
+            +validator(): Validator<PaymentDetail>
+            +onlyExistsValidator(): ValidatorWithArg<PaymentDetail, String>
+        }
+
+        class PaymentMeta [[PaymentMeta.html]] {
+            +dataRules(): List<Validator<Payment>>
+            +choiceRuleValidators(): List<Validator<Payment>>
+            +getOutMappings(): Multimap<String, OutMapping<Payment, ?>>
+            +getQualifyFunctions(): List<Function<Payment, QualifyResult>>
+            +validator(): Validator<Payment>
+            +onlyExistsValidator(): ValidatorWithArg<Payment, String>
+        }
+
+        class PayerReceiverMeta [[PayerReceiverMeta.html]] {
+            +dataRules(): List<Validator<PayerReceiver>>
+            +choiceRuleValidators(): List<Validator<PayerReceiver>>
+            +getOutMappings(): Multimap<String, OutMapping<PayerReceiver, ?>>
+            +getQualifyFunctions(): List<Function<PayerReceiver, QualifyResult>>
+            +validator(): Validator<PayerReceiver>
+            +onlyExistsValidator(): ValidatorWithArg<PayerReceiver, String>
+        }
+
+        class PartialExerciseMeta [[PartialExerciseMeta.html]] {
+            +dataRules(): List<Validator<PartialExercise>>
+            +choiceRuleValidators(): List<Validator<PartialExercise>>
+            +getOutMappings(): Multimap<String, OutMapping<PartialExercise, ?>>
+            +getQualifyFunctions(): List<Function<PartialExercise, QualifyResult>>
+            +validator(): Validator<PartialExercise>
+            +onlyExistsValidator(): ValidatorWithArg<PartialExercise, String>
+        }
+
+        class OtherAgreementMeta [[OtherAgreementMeta.html]] {
+            +dataRules(): List<Validator<OtherAgreement>>
+            +choiceRuleValidators(): List<Validator<OtherAgreement>>
+            +getOutMappings(): Multimap<String, OutMapping<OtherAgreement, ?>>
+            +getQualifyFunctions(): List<Function<OtherAgreement, QualifyResult>>
+            +validator(): Validator<OtherAgreement>
+            +onlyExistsValidator(): ValidatorWithArg<OtherAgreement, String>
+        }
+
+        class OptionPhysicalSettlementMeta [[OptionPhysicalSettlementMeta.html]] {
+            +dataRules(): List<Validator<OptionPhysicalSettlement>>
+            +choiceRuleValidators(): List<Validator<OptionPhysicalSettlement>>
+            +getOutMappings(): Multimap<String, OutMapping<OptionPhysicalSettlement, ?>>
+            +getQualifyFunctions(): List<Function<OptionPhysicalSettlement, QualifyResult>>
+            +validator(): Validator<OptionPhysicalSettlement>
+            +onlyExistsValidator(): ValidatorWithArg<OptionPhysicalSettlement, String>
+        }
+
+        class OffsetMeta [[OffsetMeta.html]] {
+            +dataRules(): List<Validator<Offset>>
+            +choiceRuleValidators(): List<Validator<Offset>>
+            +getOutMappings(): Multimap<String, OutMapping<Offset, ?>>
+            +getQualifyFunctions(): List<Function<Offset, QualifyResult>>
+            +validator(): Validator<Offset>
+            +onlyExistsValidator(): ValidatorWithArg<Offset, String>
+        }
+
+        class NonNegativeStepMeta [[NonNegativeStepMeta.html]] {
+            +dataRules(): List<Validator<NonNegativeStep>>
+            +choiceRuleValidators(): List<Validator<NonNegativeStep>>
+            +getOutMappings(): Multimap<String, OutMapping<NonNegativeStep, ?>>
+            +getQualifyFunctions(): List<Function<NonNegativeStep, QualifyResult>>
+            +validator(): Validator<NonNegativeStep>
+            +onlyExistsValidator(): ValidatorWithArg<NonNegativeStep, String>
+        }
+
+        class NonNegativeScheduleMeta [[NonNegativeScheduleMeta.html]] {
+            +dataRules(): List<Validator<NonNegativeSchedule>>
+            +choiceRuleValidators(): List<Validator<NonNegativeSchedule>>
+            +getOutMappings(): Multimap<String, OutMapping<NonNegativeSchedule, ?>>
+            +getQualifyFunctions(): List<Function<NonNegativeSchedule, QualifyResult>>
+            +validator(): Validator<NonNegativeSchedule>
+            +onlyExistsValidator(): ValidatorWithArg<NonNegativeSchedule, String>
+        }
+
+        class NonNegativeAmountScheduleMeta [[NonNegativeAmountScheduleMeta.html]] {
+            +dataRules(): List<Validator<NonNegativeAmountSchedule>>
+            +choiceRuleValidators(): List<Validator<NonNegativeAmountSchedule>>
+            +getOutMappings(): Multimap<String, OutMapping<NonNegativeAmountSchedule, ?>>
+            +getQualifyFunctions(): List<Function<NonNegativeAmountSchedule, QualifyResult>>
+            +validator(): Validator<NonNegativeAmountSchedule>
+            +onlyExistsValidator(): ValidatorWithArg<NonNegativeAmountSchedule, String>
+        }
+
+        class MultipleExerciseMeta [[MultipleExerciseMeta.html]] {
+            +dataRules(): List<Validator<MultipleExercise>>
+            +choiceRuleValidators(): List<Validator<MultipleExercise>>
+            +getOutMappings(): Multimap<String, OutMapping<MultipleExercise, ?>>
+            +getQualifyFunctions(): List<Function<MultipleExercise, QualifyResult>>
+            +validator(): Validator<MultipleExercise>
+            +onlyExistsValidator(): ValidatorWithArg<MultipleExercise, String>
+        }
+
+        class MoneyMeta [[MoneyMeta.html]] {
+            +dataRules(): List<Validator<Money>>
+            +choiceRuleValidators(): List<Validator<Money>>
+            +getOutMappings(): Multimap<String, OutMapping<Money, ?>>
+            +getQualifyFunctions(): List<Function<Money, QualifyResult>>
+            +validator(): Validator<Money>
+            +onlyExistsValidator(): ValidatorWithArg<Money, String>
+        }
+
+        class MasterConfirmationMeta [[MasterConfirmationMeta.html]] {
+            +dataRules(): List<Validator<MasterConfirmation>>
+            +choiceRuleValidators(): List<Validator<MasterConfirmation>>
+            +getOutMappings(): Multimap<String, OutMapping<MasterConfirmation, ?>>
+            +getQualifyFunctions(): List<Function<MasterConfirmation, QualifyResult>>
+            +validator(): Validator<MasterConfirmation>
+            +onlyExistsValidator(): ValidatorWithArg<MasterConfirmation, String>
+        }
+
+        class MasterAgreementMeta [[MasterAgreementMeta.html]] {
+            +dataRules(): List<Validator<MasterAgreement>>
+            +choiceRuleValidators(): List<Validator<MasterAgreement>>
+            +getOutMappings(): Multimap<String, OutMapping<MasterAgreement, ?>>
+            +getQualifyFunctions(): List<Function<MasterAgreement, QualifyResult>>
+            +validator(): Validator<MasterAgreement>
+            +onlyExistsValidator(): ValidatorWithArg<MasterAgreement, String>
+        }
+
+        class ManualExerciseMeta [[ManualExerciseMeta.html]] {
+            +dataRules(): List<Validator<ManualExercise>>
+            +choiceRuleValidators(): List<Validator<ManualExercise>>
+            +getOutMappings(): Multimap<String, OutMapping<ManualExercise, ?>>
+            +getQualifyFunctions(): List<Function<ManualExercise, QualifyResult>>
+            +validator(): Validator<ManualExercise>
+            +onlyExistsValidator(): ValidatorWithArg<ManualExercise, String>
+        }
+
+        class IssuerTradeIdMeta [[IssuerTradeIdMeta.html]] {
+            +dataRules(): List<Validator<IssuerTradeId>>
+            +choiceRuleValidators(): List<Validator<IssuerTradeId>>
+            +getOutMappings(): Multimap<String, OutMapping<IssuerTradeId, ?>>
+            +getQualifyFunctions(): List<Function<IssuerTradeId, QualifyResult>>
+            +validator(): Validator<IssuerTradeId>
+            +onlyExistsValidator(): ValidatorWithArg<IssuerTradeId, String>
+        }
+
+        class InitialFixingDateMeta [[InitialFixingDateMeta.html]] {
+            +dataRules(): List<Validator<InitialFixingDate>>
+            +choiceRuleValidators(): List<Validator<InitialFixingDate>>
+            +getOutMappings(): Multimap<String, OutMapping<InitialFixingDate, ?>>
+            +getQualifyFunctions(): List<Function<InitialFixingDate, QualifyResult>>
+            +validator(): Validator<InitialFixingDate>
+            +onlyExistsValidator(): ValidatorWithArg<InitialFixingDate, String>
+        }
+
+        class InformationSourceMeta [[InformationSourceMeta.html]] {
+            +dataRules(): List<Validator<InformationSource>>
+            +choiceRuleValidators(): List<Validator<InformationSource>>
+            +getOutMappings(): Multimap<String, OutMapping<InformationSource, ?>>
+            +getQualifyFunctions(): List<Function<InformationSource, QualifyResult>>
+            +validator(): Validator<InformationSource>
+            +onlyExistsValidator(): ValidatorWithArg<InformationSource, String>
+        }
+
+        class IndependentAmountMeta [[IndependentAmountMeta.html]] {
+            +dataRules(): List<Validator<IndependentAmount>>
+            +choiceRuleValidators(): List<Validator<IndependentAmount>>
+            +getOutMappings(): Multimap<String, OutMapping<IndependentAmount, ?>>
+            +getQualifyFunctions(): List<Function<IndependentAmount, QualifyResult>>
+            +validator(): Validator<IndependentAmount>
+            +onlyExistsValidator(): ValidatorWithArg<IndependentAmount, String>
+        }
+
+        class FxSpotRateSourceMeta [[FxSpotRateSourceMeta.html]] {
+            +dataRules(): List<Validator<FxSpotRateSource>>
+            +choiceRuleValidators(): List<Validator<FxSpotRateSource>>
+            +getOutMappings(): Multimap<String, OutMapping<FxSpotRateSource, ?>>
+            +getQualifyFunctions(): List<Function<FxSpotRateSource, QualifyResult>>
+            +validator(): Validator<FxSpotRateSource>
+            +onlyExistsValidator(): ValidatorWithArg<FxSpotRateSource, String>
+        }
+
+        class FxRateMeta [[FxRateMeta.html]] {
+            +dataRules(): List<Validator<FxRate>>
+            +choiceRuleValidators(): List<Validator<FxRate>>
+            +getOutMappings(): Multimap<String, OutMapping<FxRate, ?>>
+            +getQualifyFunctions(): List<Function<FxRate, QualifyResult>>
+            +validator(): Validator<FxRate>
+            +onlyExistsValidator(): ValidatorWithArg<FxRate, String>
+        }
+
+        class FutureValueAmountMeta [[FutureValueAmountMeta.html]] {
+            +dataRules(): List<Validator<FutureValueAmount>>
+            +choiceRuleValidators(): List<Validator<FutureValueAmount>>
+            +getOutMappings(): Multimap<String, OutMapping<FutureValueAmount, ?>>
+            +getQualifyFunctions(): List<Function<FutureValueAmount, QualifyResult>>
+            +validator(): Validator<FutureValueAmount>
+            +onlyExistsValidator(): ValidatorWithArg<FutureValueAmount, String>
+        }
+
+        class FrequencyMeta [[FrequencyMeta.html]] {
+            +dataRules(): List<Validator<Frequency>>
+            +choiceRuleValidators(): List<Validator<Frequency>>
+            +getOutMappings(): Multimap<String, OutMapping<Frequency, ?>>
+            +getQualifyFunctions(): List<Function<Frequency, QualifyResult>>
+            +validator(): Validator<Frequency>
+            +onlyExistsValidator(): ValidatorWithArg<Frequency, String>
+        }
+
+        class FloatingRateCalculationMeta [[FloatingRateCalculationMeta.html]] {
+            +dataRules(): List<Validator<FloatingRateCalculation>>
+            +choiceRuleValidators(): List<Validator<FloatingRateCalculation>>
+            +getOutMappings(): Multimap<String, OutMapping<FloatingRateCalculation, ?>>
+            +getQualifyFunctions(): List<Function<FloatingRateCalculation, QualifyResult>>
+            +validator(): Validator<FloatingRateCalculation>
+            +onlyExistsValidator(): ValidatorWithArg<FloatingRateCalculation, String>
+        }
+
+        class FloatingRateMeta [[FloatingRateMeta.html]] {
+            +dataRules(): List<Validator<FloatingRate>>
+            +choiceRuleValidators(): List<Validator<FloatingRate>>
+            +getOutMappings(): Multimap<String, OutMapping<FloatingRate, ?>>
+            +getQualifyFunctions(): List<Function<FloatingRate, QualifyResult>>
+            +validator(): Validator<FloatingRate>
+            +onlyExistsValidator(): ValidatorWithArg<FloatingRate, String>
+        }
+
+        class ExerciseProcedureMeta [[ExerciseProcedureMeta.html]] {
+            +dataRules(): List<Validator<ExerciseProcedure>>
+            +choiceRuleValidators(): List<Validator<ExerciseProcedure>>
+            +getOutMappings(): Multimap<String, OutMapping<ExerciseProcedure, ?>>
+            +getQualifyFunctions(): List<Function<ExerciseProcedure, QualifyResult>>
+            +validator(): Validator<ExerciseProcedure>
+            +onlyExistsValidator(): ValidatorWithArg<ExerciseProcedure, String>
+        }
+
+        class ExerciseNoticeMeta [[ExerciseNoticeMeta.html]] {
+            +dataRules(): List<Validator<ExerciseNotice>>
+            +choiceRuleValidators(): List<Validator<ExerciseNotice>>
+            +getOutMappings(): Multimap<String, OutMapping<ExerciseNotice, ?>>
+            +getQualifyFunctions(): List<Function<ExerciseNotice, QualifyResult>>
+            +validator(): Validator<ExerciseNotice>
+            +onlyExistsValidator(): ValidatorWithArg<ExerciseNotice, String>
+        }
+
+        class ExerciseFeeScheduleMeta [[ExerciseFeeScheduleMeta.html]] {
+            +dataRules(): List<Validator<ExerciseFeeSchedule>>
+            +choiceRuleValidators(): List<Validator<ExerciseFeeSchedule>>
+            +getOutMappings(): Multimap<String, OutMapping<ExerciseFeeSchedule, ?>>
+            +getQualifyFunctions(): List<Function<ExerciseFeeSchedule, QualifyResult>>
+            +validator(): Validator<ExerciseFeeSchedule>
+            +onlyExistsValidator(): ValidatorWithArg<ExerciseFeeSchedule, String>
+        }
+
+        class ExerciseFeeMeta [[ExerciseFeeMeta.html]] {
+            +dataRules(): List<Validator<ExerciseFee>>
+            +choiceRuleValidators(): List<Validator<ExerciseFee>>
+            +getOutMappings(): Multimap<String, OutMapping<ExerciseFee, ?>>
+            +getQualifyFunctions(): List<Function<ExerciseFee, QualifyResult>>
+            +validator(): Validator<ExerciseFee>
+            +onlyExistsValidator(): ValidatorWithArg<ExerciseFee, String>
+        }
+
+        class EuropeanExerciseMeta [[EuropeanExerciseMeta.html]] {
+            +dataRules(): List<Validator<EuropeanExercise>>
+            +choiceRuleValidators(): List<Validator<EuropeanExercise>>
+            +getOutMappings(): Multimap<String, OutMapping<EuropeanExercise, ?>>
+            +getQualifyFunctions(): List<Function<EuropeanExercise, QualifyResult>>
+            +validator(): Validator<EuropeanExercise>
+            +onlyExistsValidator(): ValidatorWithArg<EuropeanExercise, String>
+        }
+
+        class DocumentationMeta [[DocumentationMeta.html]] {
+            +dataRules(): List<Validator<Documentation>>
+            +choiceRuleValidators(): List<Validator<Documentation>>
+            +getOutMappings(): Multimap<String, OutMapping<Documentation, ?>>
+            +getQualifyFunctions(): List<Function<Documentation, QualifyResult>>
+            +validator(): Validator<Documentation>
+            +onlyExistsValidator(): ValidatorWithArg<Documentation, String>
+        }
+
+        class DateTimeListMeta [[DateTimeListMeta.html]] {
+            +dataRules(): List<Validator<DateTimeList>>
+            +choiceRuleValidators(): List<Validator<DateTimeList>>
+            +getOutMappings(): Multimap<String, OutMapping<DateTimeList, ?>>
+            +getQualifyFunctions(): List<Function<DateTimeList, QualifyResult>>
+            +validator(): Validator<DateTimeList>
+            +onlyExistsValidator(): ValidatorWithArg<DateTimeList, String>
+        }
+
+        class DateListMeta [[DateListMeta.html]] {
+            +dataRules(): List<Validator<DateList>>
+            +choiceRuleValidators(): List<Validator<DateList>>
+            +getOutMappings(): Multimap<String, OutMapping<DateList, ?>>
+            +getQualifyFunctions(): List<Function<DateList, QualifyResult>>
+            +validator(): Validator<DateList>
+            +onlyExistsValidator(): ValidatorWithArg<DateList, String>
+        }
+
+        class DateInstancesMeta [[DateInstancesMeta.html]] {
+            +dataRules(): List<Validator<DateInstances>>
+            +choiceRuleValidators(): List<Validator<DateInstances>>
+            +getOutMappings(): Multimap<String, OutMapping<DateInstances, ?>>
+            +getQualifyFunctions(): List<Function<DateInstances, QualifyResult>>
+            +validator(): Validator<DateInstances>
+            +onlyExistsValidator(): ValidatorWithArg<DateInstances, String>
+        }
+
+        class DateRangeMeta [[DateRangeMeta.html]] {
+            +dataRules(): List<Validator<DateRange>>
+            +choiceRuleValidators(): List<Validator<DateRange>>
+            +getOutMappings(): Multimap<String, OutMapping<DateRange, ?>>
+            +getQualifyFunctions(): List<Function<DateRange, QualifyResult>>
+            +validator(): Validator<DateRange>
+            +onlyExistsValidator(): ValidatorWithArg<DateRange, String>
+        }
+
+        class CreditSupportAgreementMeta [[CreditSupportAgreementMeta.html]] {
+            +dataRules(): List<Validator<CreditSupportAgreement>>
+            +choiceRuleValidators(): List<Validator<CreditSupportAgreement>>
+            +getOutMappings(): Multimap<String, OutMapping<CreditSupportAgreement, ?>>
+            +getQualifyFunctions(): List<Function<CreditSupportAgreement, QualifyResult>>
+            +validator(): Validator<CreditSupportAgreement>
+            +onlyExistsValidator(): ValidatorWithArg<CreditSupportAgreement, String>
+        }
+
+        class ContractualTermsSupplementMeta [[ContractualTermsSupplementMeta.html]] {
+            +dataRules(): List<Validator<ContractualTermsSupplement>>
+            +choiceRuleValidators(): List<Validator<ContractualTermsSupplement>>
+            +getOutMappings(): Multimap<String, OutMapping<ContractualTermsSupplement, ?>>
+            +getQualifyFunctions(): List<Function<ContractualTermsSupplement, QualifyResult>>
+            +validator(): Validator<ContractualTermsSupplement>
+            +onlyExistsValidator(): ValidatorWithArg<ContractualTermsSupplement, String>
+        }
+
+        class ContractualMatrixMeta [[ContractualMatrixMeta.html]] {
+            +dataRules(): List<Validator<ContractualMatrix>>
+            +choiceRuleValidators(): List<Validator<ContractualMatrix>>
+            +getOutMappings(): Multimap<String, OutMapping<ContractualMatrix, ?>>
+            +getQualifyFunctions(): List<Function<ContractualMatrix, QualifyResult>>
+            +validator(): Validator<ContractualMatrix>
+            +onlyExistsValidator(): ValidatorWithArg<ContractualMatrix, String>
+        }
+
+        class CollateralMeta [[CollateralMeta.html]] {
+            +dataRules(): List<Validator<Collateral>>
+            +choiceRuleValidators(): List<Validator<Collateral>>
+            +getOutMappings(): Multimap<String, OutMapping<Collateral, ?>>
+            +getQualifyFunctions(): List<Function<Collateral, QualifyResult>>
+            +validator(): Validator<Collateral>
+            +onlyExistsValidator(): ValidatorWithArg<Collateral, String>
+        }
+
+        class CashSettlementReferenceBanksMeta [[CashSettlementReferenceBanksMeta.html]] {
+            +dataRules(): List<Validator<CashSettlementReferenceBanks>>
+            +choiceRuleValidators(): List<Validator<CashSettlementReferenceBanks>>
+            +getOutMappings(): Multimap<String, OutMapping<CashSettlementReferenceBanks, ?>>
+            +getQualifyFunctions(): List<Function<CashSettlementReferenceBanks, QualifyResult>>
+            +validator(): Validator<CashSettlementReferenceBanks>
+            +onlyExistsValidator(): ValidatorWithArg<CashSettlementReferenceBanks, String>
+        }
+
+        class CalculationPeriodFrequencyMeta [[CalculationPeriodFrequencyMeta.html]] {
+            +dataRules(): List<Validator<CalculationPeriodFrequency>>
+            +choiceRuleValidators(): List<Validator<CalculationPeriodFrequency>>
+            +getOutMappings(): Multimap<String, OutMapping<CalculationPeriodFrequency, ?>>
+            +getQualifyFunctions(): List<Function<CalculationPeriodFrequency, QualifyResult>>
+            +validator(): Validator<CalculationPeriodFrequency>
+            +onlyExistsValidator(): ValidatorWithArg<CalculationPeriodFrequency, String>
+        }
+
+        class CalculationAgentMeta [[CalculationAgentMeta.html]] {
+            +dataRules(): List<Validator<CalculationAgent>>
+            +choiceRuleValidators(): List<Validator<CalculationAgent>>
+            +getOutMappings(): Multimap<String, OutMapping<CalculationAgent, ?>>
+            +getQualifyFunctions(): List<Function<CalculationAgent, QualifyResult>>
+            +validator(): Validator<CalculationAgent>
+            +onlyExistsValidator(): ValidatorWithArg<CalculationAgent, String>
+        }
+
+        class BuyerSellerMeta [[BuyerSellerMeta.html]] {
+            +dataRules(): List<Validator<BuyerSeller>>
+            +choiceRuleValidators(): List<Validator<BuyerSeller>>
+            +getOutMappings(): Multimap<String, OutMapping<BuyerSeller, ?>>
+            +getQualifyFunctions(): List<Function<BuyerSeller, QualifyResult>>
+            +validator(): Validator<BuyerSeller>
+            +onlyExistsValidator(): ValidatorWithArg<BuyerSeller, String>
+        }
+
+        class BusinessDayAdjustmentsMeta [[BusinessDayAdjustmentsMeta.html]] {
+            +dataRules(): List<Validator<BusinessDayAdjustments>>
+            +choiceRuleValidators(): List<Validator<BusinessDayAdjustments>>
+            +getOutMappings(): Multimap<String, OutMapping<BusinessDayAdjustments, ?>>
+            +getQualifyFunctions(): List<Function<BusinessDayAdjustments, QualifyResult>>
+            +validator(): Validator<BusinessDayAdjustments>
+            +onlyExistsValidator(): ValidatorWithArg<BusinessDayAdjustments, String>
+        }
+
+        class BusinessDateRangeMeta [[BusinessDateRangeMeta.html]] {
+            +dataRules(): List<Validator<BusinessDateRange>>
+            +choiceRuleValidators(): List<Validator<BusinessDateRange>>
+            +getOutMappings(): Multimap<String, OutMapping<BusinessDateRange, ?>>
+            +getQualifyFunctions(): List<Function<BusinessDateRange, QualifyResult>>
+            +validator(): Validator<BusinessDateRange>
+            +onlyExistsValidator(): ValidatorWithArg<BusinessDateRange, String>
+        }
+
+        class BusinessCenterTimeMeta [[BusinessCenterTimeMeta.html]] {
+            +dataRules(): List<Validator<BusinessCenterTime>>
+            +choiceRuleValidators(): List<Validator<BusinessCenterTime>>
+            +getOutMappings(): Multimap<String, OutMapping<BusinessCenterTime, ?>>
+            +getQualifyFunctions(): List<Function<BusinessCenterTime, QualifyResult>>
+            +validator(): Validator<BusinessCenterTime>
+            +onlyExistsValidator(): ValidatorWithArg<BusinessCenterTime, String>
+        }
+
+        class BusinessCentersMeta [[BusinessCentersMeta.html]] {
+            +dataRules(): List<Validator<BusinessCenters>>
+            +choiceRuleValidators(): List<Validator<BusinessCenters>>
+            +getOutMappings(): Multimap<String, OutMapping<BusinessCenters, ?>>
+            +getQualifyFunctions(): List<Function<BusinessCenters, QualifyResult>>
+            +validator(): Validator<BusinessCenters>
+            +onlyExistsValidator(): ValidatorWithArg<BusinessCenters, String>
+        }
+
+        class BrokerConfirmationMeta [[BrokerConfirmationMeta.html]] {
+            +dataRules(): List<Validator<BrokerConfirmation>>
+            +choiceRuleValidators(): List<Validator<BrokerConfirmation>>
+            +getOutMappings(): Multimap<String, OutMapping<BrokerConfirmation, ?>>
+            +getQualifyFunctions(): List<Function<BrokerConfirmation, QualifyResult>>
+            +validator(): Validator<BrokerConfirmation>
+            +onlyExistsValidator(): ValidatorWithArg<BrokerConfirmation, String>
+        }
+
+        class BermudaExerciseMeta [[BermudaExerciseMeta.html]] {
+            +dataRules(): List<Validator<BermudaExercise>>
+            +choiceRuleValidators(): List<Validator<BermudaExercise>>
+            +getOutMappings(): Multimap<String, OutMapping<BermudaExercise, ?>>
+            +getQualifyFunctions(): List<Function<BermudaExercise, QualifyResult>>
+            +validator(): Validator<BermudaExercise>
+            +onlyExistsValidator(): ValidatorWithArg<BermudaExercise, String>
+        }
+
+        class AutomaticExerciseMeta [[AutomaticExerciseMeta.html]] {
+            +dataRules(): List<Validator<AutomaticExercise>>
+            +choiceRuleValidators(): List<Validator<AutomaticExercise>>
+            +getOutMappings(): Multimap<String, OutMapping<AutomaticExercise, ?>>
+            +getQualifyFunctions(): List<Function<AutomaticExercise, QualifyResult>>
+            +validator(): Validator<AutomaticExercise>
+            +onlyExistsValidator(): ValidatorWithArg<AutomaticExercise, String>
+        }
+
+        class AmountScheduleMeta [[AmountScheduleMeta.html]] {
+            +dataRules(): List<Validator<AmountSchedule>>
+            +choiceRuleValidators(): List<Validator<AmountSchedule>>
+            +getOutMappings(): Multimap<String, OutMapping<AmountSchedule, ?>>
+            +getQualifyFunctions(): List<Function<AmountSchedule, QualifyResult>>
+            +validator(): Validator<AmountSchedule>
+            +onlyExistsValidator(): ValidatorWithArg<AmountSchedule, String>
+        }
+
+        class AmericanExerciseMeta [[AmericanExerciseMeta.html]] {
+            +dataRules(): List<Validator<AmericanExercise>>
+            +choiceRuleValidators(): List<Validator<AmericanExercise>>
+            +getOutMappings(): Multimap<String, OutMapping<AmericanExercise, ?>>
+            +getQualifyFunctions(): List<Function<AmericanExercise, QualifyResult>>
+            +validator(): Validator<AmericanExercise>
+            +onlyExistsValidator(): ValidatorWithArg<AmericanExercise, String>
+        }
+
+        class AdjustedRelativeDateOffsetMeta [[AdjustedRelativeDateOffsetMeta.html]] {
+            +dataRules(): List<Validator<AdjustedRelativeDateOffset>>
+            +choiceRuleValidators(): List<Validator<AdjustedRelativeDateOffset>>
+            +getOutMappings(): Multimap<String, OutMapping<AdjustedRelativeDateOffset, ?>>
+            +getQualifyFunctions(): List<Function<AdjustedRelativeDateOffset, QualifyResult>>
+            +validator(): Validator<AdjustedRelativeDateOffset>
+            +onlyExistsValidator(): ValidatorWithArg<AdjustedRelativeDateOffset, String>
+        }
+
+        class AdjustableOrRelativeDatesMeta [[AdjustableOrRelativeDatesMeta.html]] {
+            +dataRules(): List<Validator<AdjustableOrRelativeDates>>
+            +choiceRuleValidators(): List<Validator<AdjustableOrRelativeDates>>
+            +getOutMappings(): Multimap<String, OutMapping<AdjustableOrRelativeDates, ?>>
+            +getQualifyFunctions(): List<Function<AdjustableOrRelativeDates, QualifyResult>>
+            +validator(): Validator<AdjustableOrRelativeDates>
+            +onlyExistsValidator(): ValidatorWithArg<AdjustableOrRelativeDates, String>
+        }
+
+        class AdjustableOrRelativeDateMeta [[AdjustableOrRelativeDateMeta.html]] {
+            +dataRules(): List<Validator<AdjustableOrRelativeDate>>
+            +choiceRuleValidators(): List<Validator<AdjustableOrRelativeDate>>
+            +getOutMappings(): Multimap<String, OutMapping<AdjustableOrRelativeDate, ?>>
+            +getQualifyFunctions(): List<Function<AdjustableOrRelativeDate, QualifyResult>>
+            +validator(): Validator<AdjustableOrRelativeDate>
+            +onlyExistsValidator(): ValidatorWithArg<AdjustableOrRelativeDate, String>
+        }
+
+        class AdjustableOrAdjustedOrRelativeDateMeta [[AdjustableOrAdjustedOrRelativeDateMeta.html]] {
+            +dataRules(): List<Validator<AdjustableOrAdjustedOrRelativeDate>>
+            +choiceRuleValidators(): List<Validator<AdjustableOrAdjustedOrRelativeDate>>
+            +getOutMappings(): Multimap<String, OutMapping<AdjustableOrAdjustedOrRelativeDate, ?>>
+            +getQualifyFunctions(): List<Function<AdjustableOrAdjustedOrRelativeDate, QualifyResult>>
+            +validator(): Validator<AdjustableOrAdjustedOrRelativeDate>
+            +onlyExistsValidator(): ValidatorWithArg<AdjustableOrAdjustedOrRelativeDate, String>
+        }
+
+        class AdjustableOrAdjustedDateMeta [[AdjustableOrAdjustedDateMeta.html]] {
+            +dataRules(): List<Validator<AdjustableOrAdjustedDate>>
+            +choiceRuleValidators(): List<Validator<AdjustableOrAdjustedDate>>
+            +getOutMappings(): Multimap<String, OutMapping<AdjustableOrAdjustedDate, ?>>
+            +getQualifyFunctions(): List<Function<AdjustableOrAdjustedDate, QualifyResult>>
+            +validator(): Validator<AdjustableOrAdjustedDate>
+            +onlyExistsValidator(): ValidatorWithArg<AdjustableOrAdjustedDate, String>
+        }
+
+        class AdjustableDatesMeta [[AdjustableDatesMeta.html]] {
+            +dataRules(): List<Validator<AdjustableDates>>
+            +choiceRuleValidators(): List<Validator<AdjustableDates>>
+            +getOutMappings(): Multimap<String, OutMapping<AdjustableDates, ?>>
+            +getQualifyFunctions(): List<Function<AdjustableDates, QualifyResult>>
+            +validator(): Validator<AdjustableDates>
+            +onlyExistsValidator(): ValidatorWithArg<AdjustableDates, String>
+        }
+
+        class AdjustableDateMeta [[AdjustableDateMeta.html]] {
+            +dataRules(): List<Validator<AdjustableDate>>
+            +choiceRuleValidators(): List<Validator<AdjustableDate>>
+            +getOutMappings(): Multimap<String, OutMapping<AdjustableDate, ?>>
+            +getQualifyFunctions(): List<Function<AdjustableDate, QualifyResult>>
+            +validator(): Validator<AdjustableDate>
+            +onlyExistsValidator(): ValidatorWithArg<AdjustableDate, String>
+        }
+
+        class WeightedAveragingObservationMeta [[WeightedAveragingObservationMeta.html]] {
+            +dataRules(): List<Validator<WeightedAveragingObservation>>
+            +choiceRuleValidators(): List<Validator<WeightedAveragingObservation>>
+            +getOutMappings(): Multimap<String, OutMapping<WeightedAveragingObservation, ?>>
+            +getQualifyFunctions(): List<Function<WeightedAveragingObservation, QualifyResult>>
+            +validator(): Validator<WeightedAveragingObservation>
+            +onlyExistsValidator(): ValidatorWithArg<WeightedAveragingObservation, String>
+        }
+
+        class TriggerEventMeta [[TriggerEventMeta.html]] {
+            +dataRules(): List<Validator<TriggerEvent>>
+            +choiceRuleValidators(): List<Validator<TriggerEvent>>
+            +getOutMappings(): Multimap<String, OutMapping<TriggerEvent, ?>>
+            +getQualifyFunctions(): List<Function<TriggerEvent, QualifyResult>>
+            +validator(): Validator<TriggerEvent>
+            +onlyExistsValidator(): ValidatorWithArg<TriggerEvent, String>
+        }
+
+        class TriggerMeta [[TriggerMeta.html]] {
+            +dataRules(): List<Validator<Trigger>>
+            +choiceRuleValidators(): List<Validator<Trigger>>
+            +getOutMappings(): Multimap<String, OutMapping<Trigger, ?>>
+            +getQualifyFunctions(): List<Function<Trigger, QualifyResult>>
+            +validator(): Validator<Trigger>
+            +onlyExistsValidator(): ValidatorWithArg<Trigger, String>
+        }
+
+        class StrikeSpreadMeta [[StrikeSpreadMeta.html]] {
+            +dataRules(): List<Validator<StrikeSpread>>
+            +choiceRuleValidators(): List<Validator<StrikeSpread>>
+            +getOutMappings(): Multimap<String, OutMapping<StrikeSpread, ?>>
+            +getQualifyFunctions(): List<Function<StrikeSpread, QualifyResult>>
+            +validator(): Validator<StrikeSpread>
+            +onlyExistsValidator(): ValidatorWithArg<StrikeSpread, String>
+        }
+
+        class StrategyFeatureMeta [[StrategyFeatureMeta.html]] {
+            +dataRules(): List<Validator<StrategyFeature>>
+            +choiceRuleValidators(): List<Validator<StrategyFeature>>
+            +getOutMappings(): Multimap<String, OutMapping<StrategyFeature, ?>>
+            +getQualifyFunctions(): List<Function<StrategyFeature, QualifyResult>>
+            +validator(): Validator<StrategyFeature>
+            +onlyExistsValidator(): ValidatorWithArg<StrategyFeature, String>
+        }
+
+        class RestructuringMeta [[RestructuringMeta.html]] {
+            +dataRules(): List<Validator<Restructuring>>
+            +choiceRuleValidators(): List<Validator<Restructuring>>
+            +getOutMappings(): Multimap<String, OutMapping<Restructuring, ?>>
+            +getQualifyFunctions(): List<Function<Restructuring, QualifyResult>>
+            +validator(): Validator<Restructuring>
+            +onlyExistsValidator(): ValidatorWithArg<Restructuring, String>
+        }
+
+        class QuantoMeta [[QuantoMeta.html]] {
+            +dataRules(): List<Validator<Quanto>>
+            +choiceRuleValidators(): List<Validator<Quanto>>
+            +getOutMappings(): Multimap<String, OutMapping<Quanto, ?>>
+            +getQualifyFunctions(): List<Function<Quanto, QualifyResult>>
+            +validator(): Validator<Quanto>
+            +onlyExistsValidator(): ValidatorWithArg<Quanto, String>
+        }
+
+        class PubliclyAvailableInformationMeta [[PubliclyAvailableInformationMeta.html]] {
+            +dataRules(): List<Validator<PubliclyAvailableInformation>>
+            +choiceRuleValidators(): List<Validator<PubliclyAvailableInformation>>
+            +getOutMappings(): Multimap<String, OutMapping<PubliclyAvailableInformation, ?>>
+            +getQualifyFunctions(): List<Function<PubliclyAvailableInformation, QualifyResult>>
+            +validator(): Validator<PubliclyAvailableInformation>
+            +onlyExistsValidator(): ValidatorWithArg<PubliclyAvailableInformation, String>
+        }
+
+        class PassThroughItemMeta [[PassThroughItemMeta.html]] {
+            +dataRules(): List<Validator<PassThroughItem>>
+            +choiceRuleValidators(): List<Validator<PassThroughItem>>
+            +getOutMappings(): Multimap<String, OutMapping<PassThroughItem, ?>>
+            +getQualifyFunctions(): List<Function<PassThroughItem, QualifyResult>>
+            +validator(): Validator<PassThroughItem>
+            +onlyExistsValidator(): ValidatorWithArg<PassThroughItem, String>
+        }
+
+        class PassThroughMeta [[PassThroughMeta.html]] {
+            +dataRules(): List<Validator<PassThrough>>
+            +choiceRuleValidators(): List<Validator<PassThrough>>
+            +getOutMappings(): Multimap<String, OutMapping<PassThrough, ?>>
+            +getQualifyFunctions(): List<Function<PassThrough, QualifyResult>>
+            +validator(): Validator<PassThrough>
+            +onlyExistsValidator(): ValidatorWithArg<PassThrough, String>
+        }
+
+        class OptionStyleMeta [[OptionStyleMeta.html]] {
+            +dataRules(): List<Validator<OptionStyle>>
+            +choiceRuleValidators(): List<Validator<OptionStyle>>
+            +getOutMappings(): Multimap<String, OutMapping<OptionStyle, ?>>
+            +getQualifyFunctions(): List<Function<OptionStyle, QualifyResult>>
+            +validator(): Validator<OptionStyle>
+            +onlyExistsValidator(): ValidatorWithArg<OptionStyle, String>
+        }
+
+        class OptionSettlementMeta [[OptionSettlementMeta.html]] {
+            +dataRules(): List<Validator<OptionSettlement>>
+            +choiceRuleValidators(): List<Validator<OptionSettlement>>
+            +getOutMappings(): Multimap<String, OutMapping<OptionSettlement, ?>>
+            +getQualifyFunctions(): List<Function<OptionSettlement, QualifyResult>>
+            +validator(): Validator<OptionSettlement>
+            +onlyExistsValidator(): ValidatorWithArg<OptionSettlement, String>
+        }
+
+        class OptionFeatureMeta [[OptionFeatureMeta.html]] {
+            +dataRules(): List<Validator<OptionFeature>>
+            +choiceRuleValidators(): List<Validator<OptionFeature>>
+            +getOutMappings(): Multimap<String, OutMapping<OptionFeature, ?>>
+            +getQualifyFunctions(): List<Function<OptionFeature, QualifyResult>>
+            +validator(): Validator<OptionFeature>
+            +onlyExistsValidator(): ValidatorWithArg<OptionFeature, String>
+        }
+
+        class OptionDenominationMeta [[OptionDenominationMeta.html]] {
+            +dataRules(): List<Validator<OptionDenomination>>
+            +choiceRuleValidators(): List<Validator<OptionDenomination>>
+            +getOutMappings(): Multimap<String, OutMapping<OptionDenomination, ?>>
+            +getQualifyFunctions(): List<Function<OptionDenomination, QualifyResult>>
+            +validator(): Validator<OptionDenomination>
+            +onlyExistsValidator(): ValidatorWithArg<OptionDenomination, String>
+        }
+
+        class NotifyingPartyMeta [[NotifyingPartyMeta.html]] {
+            +dataRules(): List<Validator<NotifyingParty>>
+            +choiceRuleValidators(): List<Validator<NotifyingParty>>
+            +getOutMappings(): Multimap<String, OutMapping<NotifyingParty, ?>>
+            +getQualifyFunctions(): List<Function<NotifyingParty, QualifyResult>>
+            +validator(): Validator<NotifyingParty>
+            +onlyExistsValidator(): ValidatorWithArg<NotifyingParty, String>
+        }
+
+        class KnockMeta [[KnockMeta.html]] {
+            +dataRules(): List<Validator<Knock>>
+            +choiceRuleValidators(): List<Validator<Knock>>
+            +getOutMappings(): Multimap<String, OutMapping<Knock, ?>>
+            +getQualifyFunctions(): List<Function<Knock, QualifyResult>>
+            +validator(): Validator<Knock>
+            +onlyExistsValidator(): ValidatorWithArg<Knock, String>
+        }
+
+        class GracePeriodExtensionMeta [[GracePeriodExtensionMeta.html]] {
+            +dataRules(): List<Validator<GracePeriodExtension>>
+            +choiceRuleValidators(): List<Validator<GracePeriodExtension>>
+            +getOutMappings(): Multimap<String, OutMapping<GracePeriodExtension, ?>>
+            +getQualifyFunctions(): List<Function<GracePeriodExtension, QualifyResult>>
+            +validator(): Validator<GracePeriodExtension>
+            +onlyExistsValidator(): ValidatorWithArg<GracePeriodExtension, String>
+        }
+
+        class FxFeatureMeta [[FxFeatureMeta.html]] {
+            +dataRules(): List<Validator<FxFeature>>
+            +choiceRuleValidators(): List<Validator<FxFeature>>
+            +getOutMappings(): Multimap<String, OutMapping<FxFeature, ?>>
+            +getQualifyFunctions(): List<Function<FxFeature, QualifyResult>>
+            +validator(): Validator<FxFeature>
+            +onlyExistsValidator(): ValidatorWithArg<FxFeature, String>
+        }
+
+        class FeaturePaymentMeta [[FeaturePaymentMeta.html]] {
+            +dataRules(): List<Validator<FeaturePayment>>
+            +choiceRuleValidators(): List<Validator<FeaturePayment>>
+            +getOutMappings(): Multimap<String, OutMapping<FeaturePayment, ?>>
+            +getQualifyFunctions(): List<Function<FeaturePayment, QualifyResult>>
+            +validator(): Validator<FeaturePayment>
+            +onlyExistsValidator(): ValidatorWithArg<FeaturePayment, String>
+        }
+
+        class FailureToPayMeta [[FailureToPayMeta.html]] {
+            +dataRules(): List<Validator<FailureToPay>>
+            +choiceRuleValidators(): List<Validator<FailureToPay>>
+            +getOutMappings(): Multimap<String, OutMapping<FailureToPay, ?>>
+            +getQualifyFunctions(): List<Function<FailureToPay, QualifyResult>>
+            +validator(): Validator<FailureToPay>
+            +onlyExistsValidator(): ValidatorWithArg<FailureToPay, String>
+        }
+
+        class CreditEventNoticeMeta [[CreditEventNoticeMeta.html]] {
+            +dataRules(): List<Validator<CreditEventNotice>>
+            +choiceRuleValidators(): List<Validator<CreditEventNotice>>
+            +getOutMappings(): Multimap<String, OutMapping<CreditEventNotice, ?>>
+            +getQualifyFunctions(): List<Function<CreditEventNotice, QualifyResult>>
+            +validator(): Validator<CreditEventNotice>
+            +onlyExistsValidator(): ValidatorWithArg<CreditEventNotice, String>
+        }
+
+        class CreditEventsMeta [[CreditEventsMeta.html]] {
+            +dataRules(): List<Validator<CreditEvents>>
+            +choiceRuleValidators(): List<Validator<CreditEvents>>
+            +getOutMappings(): Multimap<String, OutMapping<CreditEvents, ?>>
+            +getQualifyFunctions(): List<Function<CreditEvents, QualifyResult>>
+            +validator(): Validator<CreditEvents>
+            +onlyExistsValidator(): ValidatorWithArg<CreditEvents, String>
+        }
+
+        class CompositeMeta [[CompositeMeta.html]] {
+            +dataRules(): List<Validator<Composite>>
+            +choiceRuleValidators(): List<Validator<Composite>>
+            +getOutMappings(): Multimap<String, OutMapping<Composite, ?>>
+            +getQualifyFunctions(): List<Function<Composite, QualifyResult>>
+            +validator(): Validator<Composite>
+            +onlyExistsValidator(): ValidatorWithArg<Composite, String>
+        }
+
+        class CalendarSpreadMeta [[CalendarSpreadMeta.html]] {
+            +dataRules(): List<Validator<CalendarSpread>>
+            +choiceRuleValidators(): List<Validator<CalendarSpread>>
+            +getOutMappings(): Multimap<String, OutMapping<CalendarSpread, ?>>
+            +getQualifyFunctions(): List<Function<CalendarSpread, QualifyResult>>
+            +validator(): Validator<CalendarSpread>
+            +onlyExistsValidator(): ValidatorWithArg<CalendarSpread, String>
+        }
+
+        class BarrierMeta [[BarrierMeta.html]] {
+            +dataRules(): List<Validator<Barrier>>
+            +choiceRuleValidators(): List<Validator<Barrier>>
+            +getOutMappings(): Multimap<String, OutMapping<Barrier, ?>>
+            +getQualifyFunctions(): List<Function<Barrier, QualifyResult>>
+            +validator(): Validator<Barrier>
+            +onlyExistsValidator(): ValidatorWithArg<Barrier, String>
+        }
+
+        class AveragingScheduleMeta [[AveragingScheduleMeta.html]] {
+            +dataRules(): List<Validator<AveragingSchedule>>
+            +choiceRuleValidators(): List<Validator<AveragingSchedule>>
+            +getOutMappings(): Multimap<String, OutMapping<AveragingSchedule, ?>>
+            +getQualifyFunctions(): List<Function<AveragingSchedule, QualifyResult>>
+            +validator(): Validator<AveragingSchedule>
+            +onlyExistsValidator(): ValidatorWithArg<AveragingSchedule, String>
+        }
+
+        class AveragingPeriodMeta [[AveragingPeriodMeta.html]] {
+            +dataRules(): List<Validator<AveragingPeriod>>
+            +choiceRuleValidators(): List<Validator<AveragingPeriod>>
+            +getOutMappings(): Multimap<String, OutMapping<AveragingPeriod, ?>>
+            +getQualifyFunctions(): List<Function<AveragingPeriod, QualifyResult>>
+            +validator(): Validator<AveragingPeriod>
+            +onlyExistsValidator(): ValidatorWithArg<AveragingPeriod, String>
+        }
+
+        class AveragingObservationListMeta [[AveragingObservationListMeta.html]] {
+            +dataRules(): List<Validator<AveragingObservationList>>
+            +choiceRuleValidators(): List<Validator<AveragingObservationList>>
+            +getOutMappings(): Multimap<String, OutMapping<AveragingObservationList, ?>>
+            +getQualifyFunctions(): List<Function<AveragingObservationList, QualifyResult>>
+            +validator(): Validator<AveragingObservationList>
+            +onlyExistsValidator(): ValidatorWithArg<AveragingObservationList, String>
+        }
+
+        class AsianMeta [[AsianMeta.html]] {
+            +dataRules(): List<Validator<Asian>>
+            +choiceRuleValidators(): List<Validator<Asian>>
+            +getOutMappings(): Multimap<String, OutMapping<Asian, ?>>
+            +getQualifyFunctions(): List<Function<Asian, QualifyResult>>
+            +validator(): Validator<Asian>
+            +onlyExistsValidator(): ValidatorWithArg<Asian, String>
+        }
+
+        class YieldCurveMethodMeta [[YieldCurveMethodMeta.html]] {
+            +dataRules(): List<Validator<YieldCurveMethod>>
+            +choiceRuleValidators(): List<Validator<YieldCurveMethod>>
+            +getOutMappings(): Multimap<String, OutMapping<YieldCurveMethod, ?>>
+            +getQualifyFunctions(): List<Function<YieldCurveMethod, QualifyResult>>
+            +validator(): Validator<YieldCurveMethod>
+            +onlyExistsValidator(): ValidatorWithArg<YieldCurveMethod, String>
+        }
+
+        class ValuationPostponementMeta [[ValuationPostponementMeta.html]] {
+            +dataRules(): List<Validator<ValuationPostponement>>
+            +choiceRuleValidators(): List<Validator<ValuationPostponement>>
+            +getOutMappings(): Multimap<String, OutMapping<ValuationPostponement, ?>>
+            +getQualifyFunctions(): List<Function<ValuationPostponement, QualifyResult>>
+            +validator(): Validator<ValuationPostponement>
+            +onlyExistsValidator(): ValidatorWithArg<ValuationPostponement, String>
+        }
+
+        class StubCalculationPeriodAmountMeta [[StubCalculationPeriodAmountMeta.html]] {
+            +dataRules(): List<Validator<StubCalculationPeriodAmount>>
+            +choiceRuleValidators(): List<Validator<StubCalculationPeriodAmount>>
+            +getOutMappings(): Multimap<String, OutMapping<StubCalculationPeriodAmount, ?>>
+            +getQualifyFunctions(): List<Function<StubCalculationPeriodAmount, QualifyResult>>
+            +validator(): Validator<StubCalculationPeriodAmount>
+            +onlyExistsValidator(): ValidatorWithArg<StubCalculationPeriodAmount, String>
+        }
+
+        class SettlementProvisionMeta [[SettlementProvisionMeta.html]] {
+            +dataRules(): List<Validator<SettlementProvision>>
+            +choiceRuleValidators(): List<Validator<SettlementProvision>>
+            +getOutMappings(): Multimap<String, OutMapping<SettlementProvision, ?>>
+            +getQualifyFunctions(): List<Function<SettlementProvision, QualifyResult>>
+            +validator(): Validator<SettlementProvision>
+            +onlyExistsValidator(): ValidatorWithArg<SettlementProvision, String>
+        }
+
+        class ResetDatesMeta [[ResetDatesMeta.html]] {
+            +dataRules(): List<Validator<ResetDates>>
+            +choiceRuleValidators(): List<Validator<ResetDates>>
+            +getOutMappings(): Multimap<String, OutMapping<ResetDates, ?>>
+            +getQualifyFunctions(): List<Function<ResetDates, QualifyResult>>
+            +validator(): Validator<ResetDates>
+            +onlyExistsValidator(): ValidatorWithArg<ResetDates, String>
+        }
+
+        class PrincipalExchangeMeta [[PrincipalExchangeMeta.html]] {
+            +dataRules(): List<Validator<PrincipalExchange>>
+            +choiceRuleValidators(): List<Validator<PrincipalExchange>>
+            +getOutMappings(): Multimap<String, OutMapping<PrincipalExchange, ?>>
+            +getQualifyFunctions(): List<Function<PrincipalExchange, QualifyResult>>
+            +validator(): Validator<PrincipalExchange>
+            +onlyExistsValidator(): ValidatorWithArg<PrincipalExchange, String>
+        }
+
+        class PriceSourceDisruptionMeta [[PriceSourceDisruptionMeta.html]] {
+            +dataRules(): List<Validator<PriceSourceDisruption>>
+            +choiceRuleValidators(): List<Validator<PriceSourceDisruption>>
+            +getOutMappings(): Multimap<String, OutMapping<PriceSourceDisruption, ?>>
+            +getQualifyFunctions(): List<Function<PriceSourceDisruption, QualifyResult>>
+            +validator(): Validator<PriceSourceDisruption>
+            +onlyExistsValidator(): ValidatorWithArg<PriceSourceDisruption, String>
+        }
+
+        class PaymentCalculationPeriodMeta [[PaymentCalculationPeriodMeta.html]] {
+            +dataRules(): List<Validator<PaymentCalculationPeriod>>
+            +choiceRuleValidators(): List<Validator<PaymentCalculationPeriod>>
+            +getOutMappings(): Multimap<String, OutMapping<PaymentCalculationPeriod, ?>>
+            +getQualifyFunctions(): List<Function<PaymentCalculationPeriod, QualifyResult>>
+            +validator(): Validator<PaymentCalculationPeriod>
+            +onlyExistsValidator(): ValidatorWithArg<PaymentCalculationPeriod, String>
+        }
+
+        class OptionCashSettlementMeta [[OptionCashSettlementMeta.html]] {
+            +dataRules(): List<Validator<OptionCashSettlement>>
+            +choiceRuleValidators(): List<Validator<OptionCashSettlement>>
+            +getOutMappings(): Multimap<String, OutMapping<OptionCashSettlement, ?>>
+            +getQualifyFunctions(): List<Function<OptionCashSettlement, QualifyResult>>
+            +validator(): Validator<OptionCashSettlement>
+            +onlyExistsValidator(): ValidatorWithArg<OptionCashSettlement, String>
+        }
+
+        class OptionalEarlyTerminationAdjustedDatesMeta [[OptionalEarlyTerminationAdjustedDatesMeta.html]] {
+            +dataRules(): List<Validator<OptionalEarlyTerminationAdjustedDates>>
+            +choiceRuleValidators(): List<Validator<OptionalEarlyTerminationAdjustedDates>>
+            +getOutMappings(): Multimap<String, OutMapping<OptionalEarlyTerminationAdjustedDates, ?>>
+            +getQualifyFunctions(): List<Function<OptionalEarlyTerminationAdjustedDates, QualifyResult>>
+            +validator(): Validator<OptionalEarlyTerminationAdjustedDates>
+            +onlyExistsValidator(): ValidatorWithArg<OptionalEarlyTerminationAdjustedDates, String>
+        }
+
+        class OptionalEarlyTerminationMeta [[OptionalEarlyTerminationMeta.html]] {
+            +dataRules(): List<Validator<OptionalEarlyTermination>>
+            +choiceRuleValidators(): List<Validator<OptionalEarlyTermination>>
+            +getOutMappings(): Multimap<String, OutMapping<OptionalEarlyTermination, ?>>
+            +getQualifyFunctions(): List<Function<OptionalEarlyTermination, QualifyResult>>
+            +validator(): Validator<OptionalEarlyTermination>
+            +onlyExistsValidator(): ValidatorWithArg<OptionalEarlyTermination, String>
+        }
+
+        class NotionalStepRuleMeta [[NotionalStepRuleMeta.html]] {
+            +dataRules(): List<Validator<NotionalStepRule>>
+            +choiceRuleValidators(): List<Validator<NotionalStepRule>>
+            +getOutMappings(): Multimap<String, OutMapping<NotionalStepRule, ?>>
+            +getQualifyFunctions(): List<Function<NotionalStepRule, QualifyResult>>
+            +validator(): Validator<NotionalStepRule>
+            +onlyExistsValidator(): ValidatorWithArg<NotionalStepRule, String>
+        }
+
+        class NonDeliverableSettlementMeta [[NonDeliverableSettlementMeta.html]] {
+            +dataRules(): List<Validator<NonDeliverableSettlement>>
+            +choiceRuleValidators(): List<Validator<NonDeliverableSettlement>>
+            +getOutMappings(): Multimap<String, OutMapping<NonDeliverableSettlement, ?>>
+            +getQualifyFunctions(): List<Function<NonDeliverableSettlement, QualifyResult>>
+            +validator(): Validator<NonDeliverableSettlement>
+            +onlyExistsValidator(): ValidatorWithArg<NonDeliverableSettlement, String>
+        }
+
+        class MandatoryEarlyTerminationAdjustedDatesMeta [[MandatoryEarlyTerminationAdjustedDatesMeta.html]] {
+            +dataRules(): List<Validator<MandatoryEarlyTerminationAdjustedDates>>
+            +choiceRuleValidators(): List<Validator<MandatoryEarlyTerminationAdjustedDates>>
+            +getOutMappings(): Multimap<String, OutMapping<MandatoryEarlyTerminationAdjustedDates, ?>>
+            +getQualifyFunctions(): List<Function<MandatoryEarlyTerminationAdjustedDates, QualifyResult>>
+            +validator(): Validator<MandatoryEarlyTerminationAdjustedDates>
+            +onlyExistsValidator(): ValidatorWithArg<MandatoryEarlyTerminationAdjustedDates, String>
+        }
+
+        class MandatoryEarlyTerminationMeta [[MandatoryEarlyTerminationMeta.html]] {
+            +dataRules(): List<Validator<MandatoryEarlyTermination>>
+            +choiceRuleValidators(): List<Validator<MandatoryEarlyTermination>>
+            +getOutMappings(): Multimap<String, OutMapping<MandatoryEarlyTermination, ?>>
+            +getQualifyFunctions(): List<Function<MandatoryEarlyTermination, QualifyResult>>
+            +validator(): Validator<MandatoryEarlyTermination>
+            +onlyExistsValidator(): ValidatorWithArg<MandatoryEarlyTermination, String>
+        }
+
+        class InflationRateCalculationMeta [[InflationRateCalculationMeta.html]] {
+            +dataRules(): List<Validator<InflationRateCalculation>>
+            +choiceRuleValidators(): List<Validator<InflationRateCalculation>>
+            +getOutMappings(): Multimap<String, OutMapping<InflationRateCalculation, ?>>
+            +getQualifyFunctions(): List<Function<InflationRateCalculation, QualifyResult>>
+            +validator(): Validator<InflationRateCalculation>
+            +onlyExistsValidator(): ValidatorWithArg<InflationRateCalculation, String>
+        }
+
+        class FxLinkedNotionalScheduleMeta [[FxLinkedNotionalScheduleMeta.html]] {
+            +dataRules(): List<Validator<FxLinkedNotionalSchedule>>
+            +choiceRuleValidators(): List<Validator<FxLinkedNotionalSchedule>>
+            +getOutMappings(): Multimap<String, OutMapping<FxLinkedNotionalSchedule, ?>>
+            +getQualifyFunctions(): List<Function<FxLinkedNotionalSchedule, QualifyResult>>
+            +validator(): Validator<FxLinkedNotionalSchedule>
+            +onlyExistsValidator(): ValidatorWithArg<FxLinkedNotionalSchedule, String>
+        }
+
+        class FxLinkedNotionalAmountMeta [[FxLinkedNotionalAmountMeta.html]] {
+            +dataRules(): List<Validator<FxLinkedNotionalAmount>>
+            +choiceRuleValidators(): List<Validator<FxLinkedNotionalAmount>>
+            +getOutMappings(): Multimap<String, OutMapping<FxLinkedNotionalAmount, ?>>
+            +getQualifyFunctions(): List<Function<FxLinkedNotionalAmount, QualifyResult>>
+            +validator(): Validator<FxLinkedNotionalAmount>
+            +onlyExistsValidator(): ValidatorWithArg<FxLinkedNotionalAmount, String>
+        }
+
+        class FxFixingDateMeta [[FxFixingDateMeta.html]] {
+            +dataRules(): List<Validator<FxFixingDate>>
+            +choiceRuleValidators(): List<Validator<FxFixingDate>>
+            +getOutMappings(): Multimap<String, OutMapping<FxFixingDate, ?>>
+            +getQualifyFunctions(): List<Function<FxFixingDate, QualifyResult>>
+            +validator(): Validator<FxFixingDate>
+            +onlyExistsValidator(): ValidatorWithArg<FxFixingDate, String>
+        }
+
+        class FloatingRateDefinitionMeta [[FloatingRateDefinitionMeta.html]] {
+            +dataRules(): List<Validator<FloatingRateDefinition>>
+            +choiceRuleValidators(): List<Validator<FloatingRateDefinition>>
+            +getOutMappings(): Multimap<String, OutMapping<FloatingRateDefinition, ?>>
+            +getQualifyFunctions(): List<Function<FloatingRateDefinition, QualifyResult>>
+            +validator(): Validator<FloatingRateDefinition>
+            +onlyExistsValidator(): ValidatorWithArg<FloatingRateDefinition, String>
+        }
+
+        class FinalCalculationPeriodDateAdjustmentMeta [[FinalCalculationPeriodDateAdjustmentMeta.html]] {
+            +dataRules(): List<Validator<FinalCalculationPeriodDateAdjustment>>
+            +choiceRuleValidators(): List<Validator<FinalCalculationPeriodDateAdjustment>>
+            +getOutMappings(): Multimap<String, OutMapping<FinalCalculationPeriodDateAdjustment, ?>>
+            +getQualifyFunctions(): List<Function<FinalCalculationPeriodDateAdjustment, QualifyResult>>
+            +validator(): Validator<FinalCalculationPeriodDateAdjustment>
+            +onlyExistsValidator(): ValidatorWithArg<FinalCalculationPeriodDateAdjustment, String>
+        }
+
+        class FallbackReferencePriceMeta [[FallbackReferencePriceMeta.html]] {
+            +dataRules(): List<Validator<FallbackReferencePrice>>
+            +choiceRuleValidators(): List<Validator<FallbackReferencePrice>>
+            +getOutMappings(): Multimap<String, OutMapping<FallbackReferencePrice, ?>>
+            +getQualifyFunctions(): List<Function<FallbackReferencePrice, QualifyResult>>
+            +validator(): Validator<FallbackReferencePrice>
+            +onlyExistsValidator(): ValidatorWithArg<FallbackReferencePrice, String>
+        }
+
+        class ExtensionEventMeta [[ExtensionEventMeta.html]] {
+            +dataRules(): List<Validator<ExtensionEvent>>
+            +choiceRuleValidators(): List<Validator<ExtensionEvent>>
+            +getOutMappings(): Multimap<String, OutMapping<ExtensionEvent, ?>>
+            +getQualifyFunctions(): List<Function<ExtensionEvent, QualifyResult>>
+            +validator(): Validator<ExtensionEvent>
+            +onlyExistsValidator(): ValidatorWithArg<ExtensionEvent, String>
+        }
+
+        class ExtendibleProvisionAdjustedDatesMeta [[ExtendibleProvisionAdjustedDatesMeta.html]] {
+            +dataRules(): List<Validator<ExtendibleProvisionAdjustedDates>>
+            +choiceRuleValidators(): List<Validator<ExtendibleProvisionAdjustedDates>>
+            +getOutMappings(): Multimap<String, OutMapping<ExtendibleProvisionAdjustedDates, ?>>
+            +getQualifyFunctions(): List<Function<ExtendibleProvisionAdjustedDates, QualifyResult>>
+            +validator(): Validator<ExtendibleProvisionAdjustedDates>
+            +onlyExistsValidator(): ValidatorWithArg<ExtendibleProvisionAdjustedDates, String>
+        }
+
+        class ExtendibleProvisionMeta [[ExtendibleProvisionMeta.html]] {
+            +dataRules(): List<Validator<ExtendibleProvision>>
+            +choiceRuleValidators(): List<Validator<ExtendibleProvision>>
+            +getOutMappings(): Multimap<String, OutMapping<ExtendibleProvision, ?>>
+            +getQualifyFunctions(): List<Function<ExtendibleProvision, QualifyResult>>
+            +validator(): Validator<ExtendibleProvision>
+            +onlyExistsValidator(): ValidatorWithArg<ExtendibleProvision, String>
+        }
+
+        class ExercisePeriodMeta [[ExercisePeriodMeta.html]] {
+            +dataRules(): List<Validator<ExercisePeriod>>
+            +choiceRuleValidators(): List<Validator<ExercisePeriod>>
+            +getOutMappings(): Multimap<String, OutMapping<ExercisePeriod, ?>>
+            +getQualifyFunctions(): List<Function<ExercisePeriod, QualifyResult>>
+            +validator(): Validator<ExercisePeriod>
+            +onlyExistsValidator(): ValidatorWithArg<ExercisePeriod, String>
+        }
+
+        class ExerciseEventMeta [[ExerciseEventMeta.html]] {
+            +dataRules(): List<Validator<ExerciseEvent>>
+            +choiceRuleValidators(): List<Validator<ExerciseEvent>>
+            +getOutMappings(): Multimap<String, OutMapping<ExerciseEvent, ?>>
+            +getQualifyFunctions(): List<Function<ExerciseEvent, QualifyResult>>
+            +validator(): Validator<ExerciseEvent>
+            +onlyExistsValidator(): ValidatorWithArg<ExerciseEvent, String>
+        }
+
+        class EarlyTerminationProvisionMeta [[EarlyTerminationProvisionMeta.html]] {
+            +dataRules(): List<Validator<EarlyTerminationProvision>>
+            +choiceRuleValidators(): List<Validator<EarlyTerminationProvision>>
+            +getOutMappings(): Multimap<String, OutMapping<EarlyTerminationProvision, ?>>
+            +getQualifyFunctions(): List<Function<EarlyTerminationProvision, QualifyResult>>
+            +validator(): Validator<EarlyTerminationProvision>
+            +onlyExistsValidator(): ValidatorWithArg<EarlyTerminationProvision, String>
+        }
+
+        class EarlyTerminationEventMeta [[EarlyTerminationEventMeta.html]] {
+            +dataRules(): List<Validator<EarlyTerminationEvent>>
+            +choiceRuleValidators(): List<Validator<EarlyTerminationEvent>>
+            +getOutMappings(): Multimap<String, OutMapping<EarlyTerminationEvent, ?>>
+            +getQualifyFunctions(): List<Function<EarlyTerminationEvent, QualifyResult>>
+            +validator(): Validator<EarlyTerminationEvent>
+            +onlyExistsValidator(): ValidatorWithArg<EarlyTerminationEvent, String>
+        }
+
+        class DiscountingMeta [[DiscountingMeta.html]] {
+            +dataRules(): List<Validator<Discounting>>
+            +choiceRuleValidators(): List<Validator<Discounting>>
+            +getOutMappings(): Multimap<String, OutMapping<Discounting, ?>>
+            +getQualifyFunctions(): List<Function<Discounting, QualifyResult>>
+            +validator(): Validator<Discounting>
+            +onlyExistsValidator(): ValidatorWithArg<Discounting, String>
+        }
+
+        class DateRelativeToPaymentDatesMeta [[DateRelativeToPaymentDatesMeta.html]] {
+            +dataRules(): List<Validator<DateRelativeToPaymentDates>>
+            +choiceRuleValidators(): List<Validator<DateRelativeToPaymentDates>>
+            +getOutMappings(): Multimap<String, OutMapping<DateRelativeToPaymentDates, ?>>
+            +getQualifyFunctions(): List<Function<DateRelativeToPaymentDates, QualifyResult>>
+            +validator(): Validator<DateRelativeToPaymentDates>
+            +onlyExistsValidator(): ValidatorWithArg<DateRelativeToPaymentDates, String>
+        }
+
+        class DateRelativeToCalculationPeriodDatesMeta [[DateRelativeToCalculationPeriodDatesMeta.html]] {
+            +dataRules(): List<Validator<DateRelativeToCalculationPeriodDates>>
+            +choiceRuleValidators(): List<Validator<DateRelativeToCalculationPeriodDates>>
+            +getOutMappings(): Multimap<String, OutMapping<DateRelativeToCalculationPeriodDates, ?>>
+            +getQualifyFunctions(): List<Function<DateRelativeToCalculationPeriodDates, QualifyResult>>
+            +validator(): Validator<DateRelativeToCalculationPeriodDates>
+            +onlyExistsValidator(): ValidatorWithArg<DateRelativeToCalculationPeriodDates, String>
+        }
+
+        class CrossCurrencyMethodMeta [[CrossCurrencyMethodMeta.html]] {
+            +dataRules(): List<Validator<CrossCurrencyMethod>>
+            +choiceRuleValidators(): List<Validator<CrossCurrencyMethod>>
+            +getOutMappings(): Multimap<String, OutMapping<CrossCurrencyMethod, ?>>
+            +getQualifyFunctions(): List<Function<CrossCurrencyMethod, QualifyResult>>
+            +validator(): Validator<CrossCurrencyMethod>
+            +onlyExistsValidator(): ValidatorWithArg<CrossCurrencyMethod, String>
+        }
+
+        class CashSettlementPaymentDateMeta [[CashSettlementPaymentDateMeta.html]] {
+            +dataRules(): List<Validator<CashSettlementPaymentDate>>
+            +choiceRuleValidators(): List<Validator<CashSettlementPaymentDate>>
+            +getOutMappings(): Multimap<String, OutMapping<CashSettlementPaymentDate, ?>>
+            +getQualifyFunctions(): List<Function<CashSettlementPaymentDate, QualifyResult>>
+            +validator(): Validator<CashSettlementPaymentDate>
+            +onlyExistsValidator(): ValidatorWithArg<CashSettlementPaymentDate, String>
+        }
+
+        class CashPriceMethodMeta [[CashPriceMethodMeta.html]] {
+            +dataRules(): List<Validator<CashPriceMethod>>
+            +choiceRuleValidators(): List<Validator<CashPriceMethod>>
+            +getOutMappings(): Multimap<String, OutMapping<CashPriceMethod, ?>>
+            +getQualifyFunctions(): List<Function<CashPriceMethod, QualifyResult>>
+            +validator(): Validator<CashPriceMethod>
+            +onlyExistsValidator(): ValidatorWithArg<CashPriceMethod, String>
+        }
+
+        class CashflowRepresentationMeta [[CashflowRepresentationMeta.html]] {
+            +dataRules(): List<Validator<CashflowRepresentation>>
+            +choiceRuleValidators(): List<Validator<CashflowRepresentation>>
+            +getOutMappings(): Multimap<String, OutMapping<CashflowRepresentation, ?>>
+            +getQualifyFunctions(): List<Function<CashflowRepresentation, QualifyResult>>
+            +validator(): Validator<CashflowRepresentation>
+            +onlyExistsValidator(): ValidatorWithArg<CashflowRepresentation, String>
+        }
+
+        class CancellationEventMeta [[CancellationEventMeta.html]] {
+            +dataRules(): List<Validator<CancellationEvent>>
+            +choiceRuleValidators(): List<Validator<CancellationEvent>>
+            +getOutMappings(): Multimap<String, OutMapping<CancellationEvent, ?>>
+            +getQualifyFunctions(): List<Function<CancellationEvent, QualifyResult>>
+            +validator(): Validator<CancellationEvent>
+            +onlyExistsValidator(): ValidatorWithArg<CancellationEvent, String>
+        }
+
+        class CancelableProvisionAdjustedDatesMeta [[CancelableProvisionAdjustedDatesMeta.html]] {
+            +dataRules(): List<Validator<CancelableProvisionAdjustedDates>>
+            +choiceRuleValidators(): List<Validator<CancelableProvisionAdjustedDates>>
+            +getOutMappings(): Multimap<String, OutMapping<CancelableProvisionAdjustedDates, ?>>
+            +getQualifyFunctions(): List<Function<CancelableProvisionAdjustedDates, QualifyResult>>
+            +validator(): Validator<CancelableProvisionAdjustedDates>
+            +onlyExistsValidator(): ValidatorWithArg<CancelableProvisionAdjustedDates, String>
+        }
+
+        class CancelableProvisionMeta [[CancelableProvisionMeta.html]] {
+            +dataRules(): List<Validator<CancelableProvision>>
+            +choiceRuleValidators(): List<Validator<CancelableProvision>>
+            +getOutMappings(): Multimap<String, OutMapping<CancelableProvision, ?>>
+            +getQualifyFunctions(): List<Function<CancelableProvision, QualifyResult>>
+            +validator(): Validator<CancelableProvision>
+            +onlyExistsValidator(): ValidatorWithArg<CancelableProvision, String>
+        }
+
+        class CalculationPeriodDatesMeta [[CalculationPeriodDatesMeta.html]] {
+            +dataRules(): List<Validator<CalculationPeriodDates>>
+            +choiceRuleValidators(): List<Validator<CalculationPeriodDates>>
+            +getOutMappings(): Multimap<String, OutMapping<CalculationPeriodDates, ?>>
+            +getQualifyFunctions(): List<Function<CalculationPeriodDates, QualifyResult>>
+            +validator(): Validator<CalculationPeriodDates>
+            +onlyExistsValidator(): ValidatorWithArg<CalculationPeriodDates, String>
+        }
+
+        class CalculationPeriodMeta [[CalculationPeriodMeta.html]] {
+            +dataRules(): List<Validator<CalculationPeriod>>
+            +choiceRuleValidators(): List<Validator<CalculationPeriod>>
+            +getOutMappings(): Multimap<String, OutMapping<CalculationPeriod, ?>>
+            +getQualifyFunctions(): List<Function<CalculationPeriod, QualifyResult>>
+            +validator(): Validator<CalculationPeriod>
+            +onlyExistsValidator(): ValidatorWithArg<CalculationPeriod, String>
+        }
+
+        class BondReferenceMeta [[BondReferenceMeta.html]] {
+            +dataRules(): List<Validator<BondReference>>
+            +choiceRuleValidators(): List<Validator<BondReference>>
+            +getOutMappings(): Multimap<String, OutMapping<BondReference, ?>>
+            +getQualifyFunctions(): List<Function<BondReference, QualifyResult>>
+            +validator(): Validator<BondReference>
+            +onlyExistsValidator(): ValidatorWithArg<BondReference, String>
+        }
+
+        class PercentageRuleMeta [[PercentageRuleMeta.html]] {
+            +dataRules(): List<Validator<PercentageRule>>
+            +choiceRuleValidators(): List<Validator<PercentageRule>>
+            +getOutMappings(): Multimap<String, OutMapping<PercentageRule, ?>>
+            +getQualifyFunctions(): List<Function<PercentageRule, QualifyResult>>
+            +validator(): Validator<PercentageRule>
+            +onlyExistsValidator(): ValidatorWithArg<PercentageRule, String>
+        }
+
+        class PartyContractInformationMeta [[PartyContractInformationMeta.html]] {
+            +dataRules(): List<Validator<PartyContractInformation>>
+            +choiceRuleValidators(): List<Validator<PartyContractInformation>>
+            +getOutMappings(): Multimap<String, OutMapping<PartyContractInformation, ?>>
+            +getQualifyFunctions(): List<Function<PartyContractInformation, QualifyResult>>
+            +validator(): Validator<PartyContractInformation>
+            +onlyExistsValidator(): ValidatorWithArg<PartyContractInformation, String>
+        }
+
+        class PartyContractIdentifierMeta [[PartyContractIdentifierMeta.html]] {
+            +dataRules(): List<Validator<PartyContractIdentifier>>
+            +choiceRuleValidators(): List<Validator<PartyContractIdentifier>>
+            +getOutMappings(): Multimap<String, OutMapping<PartyContractIdentifier, ?>>
+            +getQualifyFunctions(): List<Function<PartyContractIdentifier, QualifyResult>>
+            +validator(): Validator<PartyContractIdentifier>
+            +onlyExistsValidator(): ValidatorWithArg<PartyContractIdentifier, String>
+        }
+
+        class PackageInformationMeta [[PackageInformationMeta.html]] {
+            +dataRules(): List<Validator<PackageInformation>>
+            +choiceRuleValidators(): List<Validator<PackageInformation>>
+            +getOutMappings(): Multimap<String, OutMapping<PackageInformation, ?>>
+            +getQualifyFunctions(): List<Function<PackageInformation, QualifyResult>>
+            +validator(): Validator<PackageInformation>
+            +onlyExistsValidator(): ValidatorWithArg<PackageInformation, String>
+        }
+
+        class LinkIdMeta [[LinkIdMeta.html]] {
+            +dataRules(): List<Validator<LinkId>>
+            +choiceRuleValidators(): List<Validator<LinkId>>
+            +getOutMappings(): Multimap<String, OutMapping<LinkId, ?>>
+            +getQualifyFunctions(): List<Function<LinkId, QualifyResult>>
+            +validator(): Validator<LinkId>
+            +onlyExistsValidator(): ValidatorWithArg<LinkId, String>
+        }
+
+        class IdentifierValueMeta [[IdentifierValueMeta.html]] {
+            +dataRules(): List<Validator<IdentifierValue>>
+            +choiceRuleValidators(): List<Validator<IdentifierValue>>
+            +getOutMappings(): Multimap<String, OutMapping<IdentifierValue, ?>>
+            +getQualifyFunctions(): List<Function<IdentifierValue, QualifyResult>>
+            +validator(): Validator<IdentifierValue>
+            +onlyExistsValidator(): ValidatorWithArg<IdentifierValue, String>
+        }
+
+        class IdentifierMeta [[IdentifierMeta.html]] {
+            +dataRules(): List<Validator<Identifier>>
+            +choiceRuleValidators(): List<Validator<Identifier>>
+            +getOutMappings(): Multimap<String, OutMapping<Identifier, ?>>
+            +getQualifyFunctions(): List<Function<Identifier, QualifyResult>>
+            +validator(): Validator<Identifier>
+            +onlyExistsValidator(): ValidatorWithArg<Identifier, String>
+        }
+
+        class ContractIdentifierExtendedMeta [[ContractIdentifierExtendedMeta.html]] {
+            +dataRules(): List<Validator<ContractIdentifierExtended>>
+            +choiceRuleValidators(): List<Validator<ContractIdentifierExtended>>
+            +getOutMappings(): Multimap<String, OutMapping<ContractIdentifierExtended, ?>>
+            +getQualifyFunctions(): List<Function<ContractIdentifierExtended, QualifyResult>>
+            +validator(): Validator<ContractIdentifierExtended>
+            +onlyExistsValidator(): ValidatorWithArg<ContractIdentifierExtended, String>
+        }
+
+        class ContractIdentifierMeta [[ContractIdentifierMeta.html]] {
+            +dataRules(): List<Validator<ContractIdentifier>>
+            +choiceRuleValidators(): List<Validator<ContractIdentifier>>
+            +getOutMappings(): Multimap<String, OutMapping<ContractIdentifier, ?>>
+            +getQualifyFunctions(): List<Function<ContractIdentifier, QualifyResult>>
+            +validator(): Validator<ContractIdentifier>
+            +onlyExistsValidator(): ValidatorWithArg<ContractIdentifier, String>
+        }
+
+        class CalculationAgentModelMeta [[CalculationAgentModelMeta.html]] {
+            +dataRules(): List<Validator<CalculationAgentModel>>
+            +choiceRuleValidators(): List<Validator<CalculationAgentModel>>
+            +getOutMappings(): Multimap<String, OutMapping<CalculationAgentModel, ?>>
+            +getQualifyFunctions(): List<Function<CalculationAgentModel, QualifyResult>>
+            +validator(): Validator<CalculationAgentModel>
+            +onlyExistsValidator(): ValidatorWithArg<CalculationAgentModel, String>
+        }
+
+        class ValuationDateMeta [[ValuationDateMeta.html]] {
+            +dataRules(): List<Validator<ValuationDate>>
+            +choiceRuleValidators(): List<Validator<ValuationDate>>
+            +getOutMappings(): Multimap<String, OutMapping<ValuationDate, ?>>
+            +getQualifyFunctions(): List<Function<ValuationDate, QualifyResult>>
+            +validator(): Validator<ValuationDate>
+            +onlyExistsValidator(): ValidatorWithArg<ValuationDate, String>
+        }
+
+        class TrancheMeta [[TrancheMeta.html]] {
+            +dataRules(): List<Validator<Tranche>>
+            +choiceRuleValidators(): List<Validator<Tranche>>
+            +getOutMappings(): Multimap<String, OutMapping<Tranche, ?>>
+            +getQualifyFunctions(): List<Function<Tranche, QualifyResult>>
+            +validator(): Validator<Tranche>
+            +onlyExistsValidator(): ValidatorWithArg<Tranche, String>
+        }
+
+        class SpecifiedCurrencyMeta [[SpecifiedCurrencyMeta.html]] {
+            +dataRules(): List<Validator<SpecifiedCurrency>>
+            +choiceRuleValidators(): List<Validator<SpecifiedCurrency>>
+            +getOutMappings(): Multimap<String, OutMapping<SpecifiedCurrency, ?>>
+            +getQualifyFunctions(): List<Function<SpecifiedCurrency, QualifyResult>>
+            +validator(): Validator<SpecifiedCurrency>
+            +onlyExistsValidator(): ValidatorWithArg<SpecifiedCurrency, String>
+        }
+
+        class SingleValuationDateMeta [[SingleValuationDateMeta.html]] {
+            +dataRules(): List<Validator<SingleValuationDate>>
+            +choiceRuleValidators(): List<Validator<SingleValuationDate>>
+            +getOutMappings(): Multimap<String, OutMapping<SingleValuationDate, ?>>
+            +getQualifyFunctions(): List<Function<SingleValuationDate, QualifyResult>>
+            +validator(): Validator<SingleValuationDate>
+            +onlyExistsValidator(): ValidatorWithArg<SingleValuationDate, String>
+        }
+
+        class SettledEntityMatrixMeta [[SettledEntityMatrixMeta.html]] {
+            +dataRules(): List<Validator<SettledEntityMatrix>>
+            +choiceRuleValidators(): List<Validator<SettledEntityMatrix>>
+            +getOutMappings(): Multimap<String, OutMapping<SettledEntityMatrix, ?>>
+            +getQualifyFunctions(): List<Function<SettledEntityMatrix, QualifyResult>>
+            +validator(): Validator<SettledEntityMatrix>
+            +onlyExistsValidator(): ValidatorWithArg<SettledEntityMatrix, String>
+        }
+
+        class ReferencePoolItemMeta [[ReferencePoolItemMeta.html]] {
+            +dataRules(): List<Validator<ReferencePoolItem>>
+            +choiceRuleValidators(): List<Validator<ReferencePoolItem>>
+            +getOutMappings(): Multimap<String, OutMapping<ReferencePoolItem, ?>>
+            +getQualifyFunctions(): List<Function<ReferencePoolItem, QualifyResult>>
+            +validator(): Validator<ReferencePoolItem>
+            +onlyExistsValidator(): ValidatorWithArg<ReferencePoolItem, String>
+        }
+
+        class ReferencePoolMeta [[ReferencePoolMeta.html]] {
+            +dataRules(): List<Validator<ReferencePool>>
+            +choiceRuleValidators(): List<Validator<ReferencePool>>
+            +getOutMappings(): Multimap<String, OutMapping<ReferencePool, ?>>
+            +getQualifyFunctions(): List<Function<ReferencePool, QualifyResult>>
+            +validator(): Validator<ReferencePool>
+            +onlyExistsValidator(): ValidatorWithArg<ReferencePool, String>
+        }
+
+        class ReferencePairMeta [[ReferencePairMeta.html]] {
+            +dataRules(): List<Validator<ReferencePair>>
+            +choiceRuleValidators(): List<Validator<ReferencePair>>
+            +getOutMappings(): Multimap<String, OutMapping<ReferencePair, ?>>
+            +getQualifyFunctions(): List<Function<ReferencePair, QualifyResult>>
+            +validator(): Validator<ReferencePair>
+            +onlyExistsValidator(): ValidatorWithArg<ReferencePair, String>
+        }
+
+        class ReferenceObligationMeta [[ReferenceObligationMeta.html]] {
+            +dataRules(): List<Validator<ReferenceObligation>>
+            +choiceRuleValidators(): List<Validator<ReferenceObligation>>
+            +getOutMappings(): Multimap<String, OutMapping<ReferenceObligation, ?>>
+            +getQualifyFunctions(): List<Function<ReferenceObligation, QualifyResult>>
+            +validator(): Validator<ReferenceObligation>
+            +onlyExistsValidator(): ValidatorWithArg<ReferenceObligation, String>
+        }
+
+        class ReferenceInformationMeta [[ReferenceInformationMeta.html]] {
+            +dataRules(): List<Validator<ReferenceInformation>>
+            +choiceRuleValidators(): List<Validator<ReferenceInformation>>
+            +getOutMappings(): Multimap<String, OutMapping<ReferenceInformation, ?>>
+            +getQualifyFunctions(): List<Function<ReferenceInformation, QualifyResult>>
+            +validator(): Validator<ReferenceInformation>
+            +onlyExistsValidator(): ValidatorWithArg<ReferenceInformation, String>
+        }
+
+        class ProtectionTermsMeta [[ProtectionTermsMeta.html]] {
+            +dataRules(): List<Validator<ProtectionTerms>>
+            +choiceRuleValidators(): List<Validator<ProtectionTerms>>
+            +getOutMappings(): Multimap<String, OutMapping<ProtectionTerms, ?>>
+            +getQualifyFunctions(): List<Function<ProtectionTerms, QualifyResult>>
+            +validator(): Validator<ProtectionTerms>
+            +onlyExistsValidator(): ValidatorWithArg<ProtectionTerms, String>
+        }
+
+        class PhysicalSettlementTermsMeta [[PhysicalSettlementTermsMeta.html]] {
+            +dataRules(): List<Validator<PhysicalSettlementTerms>>
+            +choiceRuleValidators(): List<Validator<PhysicalSettlementTerms>>
+            +getOutMappings(): Multimap<String, OutMapping<PhysicalSettlementTerms, ?>>
+            +getQualifyFunctions(): List<Function<PhysicalSettlementTerms, QualifyResult>>
+            +validator(): Validator<PhysicalSettlementTerms>
+            +onlyExistsValidator(): ValidatorWithArg<PhysicalSettlementTerms, String>
+        }
+
+        class PhysicalSettlementPeriodMeta [[PhysicalSettlementPeriodMeta.html]] {
+            +dataRules(): List<Validator<PhysicalSettlementPeriod>>
+            +choiceRuleValidators(): List<Validator<PhysicalSettlementPeriod>>
+            +getOutMappings(): Multimap<String, OutMapping<PhysicalSettlementPeriod, ?>>
+            +getQualifyFunctions(): List<Function<PhysicalSettlementPeriod, QualifyResult>>
+            +validator(): Validator<PhysicalSettlementPeriod>
+            +onlyExistsValidator(): ValidatorWithArg<PhysicalSettlementPeriod, String>
+        }
+
+        class PCDeliverableObligationCharacMeta [[PCDeliverableObligationCharacMeta.html]] {
+            +dataRules(): List<Validator<PCDeliverableObligationCharac>>
+            +choiceRuleValidators(): List<Validator<PCDeliverableObligationCharac>>
+            +getOutMappings(): Multimap<String, OutMapping<PCDeliverableObligationCharac, ?>>
+            +getQualifyFunctions(): List<Function<PCDeliverableObligationCharac, QualifyResult>>
+            +validator(): Validator<PCDeliverableObligationCharac>
+            +onlyExistsValidator(): ValidatorWithArg<PCDeliverableObligationCharac, String>
+        }
+
+        class OptionStrikeMeta [[OptionStrikeMeta.html]] {
+            +dataRules(): List<Validator<OptionStrike>>
+            +choiceRuleValidators(): List<Validator<OptionStrike>>
+            +getOutMappings(): Multimap<String, OutMapping<OptionStrike, ?>>
+            +getQualifyFunctions(): List<Function<OptionStrike, QualifyResult>>
+            +validator(): Validator<OptionStrike>
+            +onlyExistsValidator(): ValidatorWithArg<OptionStrike, String>
+        }
+
+        class ObligationsMeta [[ObligationsMeta.html]] {
+            +dataRules(): List<Validator<Obligations>>
+            +choiceRuleValidators(): List<Validator<Obligations>>
+            +getOutMappings(): Multimap<String, OutMapping<Obligations, ?>>
+            +getQualifyFunctions(): List<Function<Obligations, QualifyResult>>
+            +validator(): Validator<Obligations>
+            +onlyExistsValidator(): ValidatorWithArg<Obligations, String>
+        }
+
+        class NotDomesticCurrencyMeta [[NotDomesticCurrencyMeta.html]] {
+            +dataRules(): List<Validator<NotDomesticCurrency>>
+            +choiceRuleValidators(): List<Validator<NotDomesticCurrency>>
+            +getOutMappings(): Multimap<String, OutMapping<NotDomesticCurrency, ?>>
+            +getQualifyFunctions(): List<Function<NotDomesticCurrency, QualifyResult>>
+            +validator(): Validator<NotDomesticCurrency>
+            +onlyExistsValidator(): ValidatorWithArg<NotDomesticCurrency, String>
+        }
+
+        class MultipleValuationDatesMeta [[MultipleValuationDatesMeta.html]] {
+            +dataRules(): List<Validator<MultipleValuationDates>>
+            +choiceRuleValidators(): List<Validator<MultipleValuationDates>>
+            +getOutMappings(): Multimap<String, OutMapping<MultipleValuationDates, ?>>
+            +getQualifyFunctions(): List<Function<MultipleValuationDates, QualifyResult>>
+            +validator(): Validator<MultipleValuationDates>
+            +onlyExistsValidator(): ValidatorWithArg<MultipleValuationDates, String>
+        }
+
+        class LoanParticipationMeta [[LoanParticipationMeta.html]] {
+            +dataRules(): List<Validator<LoanParticipation>>
+            +choiceRuleValidators(): List<Validator<LoanParticipation>>
+            +getOutMappings(): Multimap<String, OutMapping<LoanParticipation, ?>>
+            +getQualifyFunctions(): List<Function<LoanParticipation, QualifyResult>>
+            +validator(): Validator<LoanParticipation>
+            +onlyExistsValidator(): ValidatorWithArg<LoanParticipation, String>
+        }
+
+        class InterestShortFallMeta [[InterestShortFallMeta.html]] {
+            +dataRules(): List<Validator<InterestShortFall>>
+            +choiceRuleValidators(): List<Validator<InterestShortFall>>
+            +getOutMappings(): Multimap<String, OutMapping<InterestShortFall, ?>>
+            +getQualifyFunctions(): List<Function<InterestShortFall, QualifyResult>>
+            +validator(): Validator<InterestShortFall>
+            +onlyExistsValidator(): ValidatorWithArg<InterestShortFall, String>
+        }
+
+        class IndexReferenceInformationMeta [[IndexReferenceInformationMeta.html]] {
+            +dataRules(): List<Validator<IndexReferenceInformation>>
+            +choiceRuleValidators(): List<Validator<IndexReferenceInformation>>
+            +getOutMappings(): Multimap<String, OutMapping<IndexReferenceInformation, ?>>
+            +getQualifyFunctions(): List<Function<IndexReferenceInformation, QualifyResult>>
+            +validator(): Validator<IndexReferenceInformation>
+            +onlyExistsValidator(): ValidatorWithArg<IndexReferenceInformation, String>
+        }
+
+        class FloatingAmountProvisionsMeta [[FloatingAmountProvisionsMeta.html]] {
+            +dataRules(): List<Validator<FloatingAmountProvisions>>
+            +choiceRuleValidators(): List<Validator<FloatingAmountProvisions>>
+            +getOutMappings(): Multimap<String, OutMapping<FloatingAmountProvisions, ?>>
+            +getQualifyFunctions(): List<Function<FloatingAmountProvisions, QualifyResult>>
+            +validator(): Validator<FloatingAmountProvisions>
+            +onlyExistsValidator(): ValidatorWithArg<FloatingAmountProvisions, String>
+        }
+
+        class FloatingAmountEventsMeta [[FloatingAmountEventsMeta.html]] {
+            +dataRules(): List<Validator<FloatingAmountEvents>>
+            +choiceRuleValidators(): List<Validator<FloatingAmountEvents>>
+            +getOutMappings(): Multimap<String, OutMapping<FloatingAmountEvents, ?>>
+            +getQualifyFunctions(): List<Function<FloatingAmountEvents, QualifyResult>>
+            +validator(): Validator<FloatingAmountEvents>
+            +onlyExistsValidator(): ValidatorWithArg<FloatingAmountEvents, String>
+        }
+
+        class DeliverableObligationsMeta [[DeliverableObligationsMeta.html]] {
+            +dataRules(): List<Validator<DeliverableObligations>>
+            +choiceRuleValidators(): List<Validator<DeliverableObligations>>
+            +getOutMappings(): Multimap<String, OutMapping<DeliverableObligations, ?>>
+            +getQualifyFunctions(): List<Function<DeliverableObligations, QualifyResult>>
+            +validator(): Validator<DeliverableObligations>
+            +onlyExistsValidator(): ValidatorWithArg<DeliverableObligations, String>
+        }
+
+        class CashSettlementTermsMeta [[CashSettlementTermsMeta.html]] {
+            +dataRules(): List<Validator<CashSettlementTerms>>
+            +choiceRuleValidators(): List<Validator<CashSettlementTerms>>
+            +getOutMappings(): Multimap<String, OutMapping<CashSettlementTerms, ?>>
+            +getQualifyFunctions(): List<Function<CashSettlementTerms, QualifyResult>>
+            +validator(): Validator<CashSettlementTerms>
+            +onlyExistsValidator(): ValidatorWithArg<CashSettlementTerms, String>
+        }
+
+        class CalculationAmountMeta [[CalculationAmountMeta.html]] {
+            +dataRules(): List<Validator<CalculationAmount>>
+            +choiceRuleValidators(): List<Validator<CalculationAmount>>
+            +getOutMappings(): Multimap<String, OutMapping<CalculationAmount, ?>>
+            +getQualifyFunctions(): List<Function<CalculationAmount, QualifyResult>>
+            +validator(): Validator<CalculationAmount>
+            +onlyExistsValidator(): ValidatorWithArg<CalculationAmount, String>
+        }
+
+        class BasketReferenceInformationMeta [[BasketReferenceInformationMeta.html]] {
+            +dataRules(): List<Validator<BasketReferenceInformation>>
+            +choiceRuleValidators(): List<Validator<BasketReferenceInformation>>
+            +getOutMappings(): Multimap<String, OutMapping<BasketReferenceInformation, ?>>
+            +getQualifyFunctions(): List<Function<BasketReferenceInformation, QualifyResult>>
+            +validator(): Validator<BasketReferenceInformation>
+            +onlyExistsValidator(): ValidatorWithArg<BasketReferenceInformation, String>
+        }
+
+        class BasketNameMeta [[BasketNameMeta.html]] {
+            +dataRules(): List<Validator<BasketName>>
+            +choiceRuleValidators(): List<Validator<BasketName>>
+            +getOutMappings(): Multimap<String, OutMapping<BasketName, ?>>
+            +getQualifyFunctions(): List<Function<BasketName, QualifyResult>>
+            +validator(): Validator<BasketName>
+            +onlyExistsValidator(): ValidatorWithArg<BasketName, String>
+        }
+
+        class AdditionalFixedPaymentsMeta [[AdditionalFixedPaymentsMeta.html]] {
+            +dataRules(): List<Validator<AdditionalFixedPayments>>
+            +choiceRuleValidators(): List<Validator<AdditionalFixedPayments>>
+            +getOutMappings(): Multimap<String, OutMapping<AdditionalFixedPayments, ?>>
+            +getQualifyFunctions(): List<Function<AdditionalFixedPayments, QualifyResult>>
+            +validator(): Validator<AdditionalFixedPayments>
+            +onlyExistsValidator(): ValidatorWithArg<AdditionalFixedPayments, String>
+        }
+
+        class SwapCurveValuationMeta [[SwapCurveValuationMeta.html]] {
+            +dataRules(): List<Validator<SwapCurveValuation>>
+            +choiceRuleValidators(): List<Validator<SwapCurveValuation>>
+            +getOutMappings(): Multimap<String, OutMapping<SwapCurveValuation, ?>>
+            +getQualifyFunctions(): List<Function<SwapCurveValuation, QualifyResult>>
+            +validator(): Validator<SwapCurveValuation>
+            +onlyExistsValidator(): ValidatorWithArg<SwapCurveValuation, String>
+        }
+
+        class ReferenceSwapCurveMeta [[ReferenceSwapCurveMeta.html]] {
+            +dataRules(): List<Validator<ReferenceSwapCurve>>
+            +choiceRuleValidators(): List<Validator<ReferenceSwapCurve>>
+            +getOutMappings(): Multimap<String, OutMapping<ReferenceSwapCurve, ?>>
+            +getQualifyFunctions(): List<Function<ReferenceSwapCurve, QualifyResult>>
+            +validator(): Validator<ReferenceSwapCurve>
+            +onlyExistsValidator(): ValidatorWithArg<ReferenceSwapCurve, String>
+        }
+
+        class MakeWholeAmountMeta [[MakeWholeAmountMeta.html]] {
+            +dataRules(): List<Validator<MakeWholeAmount>>
+            +choiceRuleValidators(): List<Validator<MakeWholeAmount>>
+            +getOutMappings(): Multimap<String, OutMapping<MakeWholeAmount, ?>>
+            +getQualifyFunctions(): List<Function<MakeWholeAmount, QualifyResult>>
+            +validator(): Validator<MakeWholeAmount>
+            +onlyExistsValidator(): ValidatorWithArg<MakeWholeAmount, String>
+        }
+
+        class BondOptionStrikeMeta [[BondOptionStrikeMeta.html]] {
+            +dataRules(): List<Validator<BondOptionStrike>>
+            +choiceRuleValidators(): List<Validator<BondOptionStrike>>
+            +getOutMappings(): Multimap<String, OutMapping<BondOptionStrike, ?>>
+            +getQualifyFunctions(): List<Function<BondOptionStrike, QualifyResult>>
+            +validator(): Validator<BondOptionStrike>
+            +onlyExistsValidator(): ValidatorWithArg<BondOptionStrike, String>
+        }
+
+        class MortgageMeta [[MortgageMeta.html]] {
+            +dataRules(): List<Validator<Mortgage>>
+            +choiceRuleValidators(): List<Validator<Mortgage>>
+            +getOutMappings(): Multimap<String, OutMapping<Mortgage, ?>>
+            +getQualifyFunctions(): List<Function<Mortgage, QualifyResult>>
+            +validator(): Validator<Mortgage>
+            +onlyExistsValidator(): ValidatorWithArg<Mortgage, String>
+        }
+
+        class LoanMeta [[LoanMeta.html]] {
+            +dataRules(): List<Validator<Loan>>
+            +choiceRuleValidators(): List<Validator<Loan>>
+            +getOutMappings(): Multimap<String, OutMapping<Loan, ?>>
+            +getQualifyFunctions(): List<Function<Loan, QualifyResult>>
+            +validator(): Validator<Loan>
+            +onlyExistsValidator(): ValidatorWithArg<Loan, String>
+        }
+
+        class IdentifiedAssetMeta [[IdentifiedAssetMeta.html]] {
+            +dataRules(): List<Validator<IdentifiedAsset>>
+            +choiceRuleValidators(): List<Validator<IdentifiedAsset>>
+            +getOutMappings(): Multimap<String, OutMapping<IdentifiedAsset, ?>>
+            +getQualifyFunctions(): List<Function<IdentifiedAsset, QualifyResult>>
+            +validator(): Validator<IdentifiedAsset>
+            +onlyExistsValidator(): ValidatorWithArg<IdentifiedAsset, String>
+        }
+
+        class FixedIncomeSecurityMeta [[FixedIncomeSecurityMeta.html]] {
+            +dataRules(): List<Validator<FixedIncomeSecurity>>
+            +choiceRuleValidators(): List<Validator<FixedIncomeSecurity>>
+            +getOutMappings(): Multimap<String, OutMapping<FixedIncomeSecurity, ?>>
+            +getQualifyFunctions(): List<Function<FixedIncomeSecurity, QualifyResult>>
+            +validator(): Validator<FixedIncomeSecurity>
+            +onlyExistsValidator(): ValidatorWithArg<FixedIncomeSecurity, String>
+        }
+
+        class EquityAssetMeta [[EquityAssetMeta.html]] {
+            +dataRules(): List<Validator<EquityAsset>>
+            +choiceRuleValidators(): List<Validator<EquityAsset>>
+            +getOutMappings(): Multimap<String, OutMapping<EquityAsset, ?>>
+            +getQualifyFunctions(): List<Function<EquityAsset, QualifyResult>>
+            +validator(): Validator<EquityAsset>
+            +onlyExistsValidator(): ValidatorWithArg<EquityAsset, String>
+        }
+
+        class ConvertibleBondMeta [[ConvertibleBondMeta.html]] {
+            +dataRules(): List<Validator<ConvertibleBond>>
+            +choiceRuleValidators(): List<Validator<ConvertibleBond>>
+            +getOutMappings(): Multimap<String, OutMapping<ConvertibleBond, ?>>
+            +getQualifyFunctions(): List<Function<ConvertibleBond, QualifyResult>>
+            +validator(): Validator<ConvertibleBond>
+            +onlyExistsValidator(): ValidatorWithArg<ConvertibleBond, String>
+        }
+
+        class ConstituentWeightMeta [[ConstituentWeightMeta.html]] {
+            +dataRules(): List<Validator<ConstituentWeight>>
+            +choiceRuleValidators(): List<Validator<ConstituentWeight>>
+            +getOutMappings(): Multimap<String, OutMapping<ConstituentWeight, ?>>
+            +getQualifyFunctions(): List<Function<ConstituentWeight, QualifyResult>>
+            +validator(): Validator<ConstituentWeight>
+            +onlyExistsValidator(): ValidatorWithArg<ConstituentWeight, String>
+        }
+
+        class CommodityMeta [[CommodityMeta.html]] {
+            +dataRules(): List<Validator<Commodity>>
+            +choiceRuleValidators(): List<Validator<Commodity>>
+            +getOutMappings(): Multimap<String, OutMapping<Commodity, ?>>
+            +getQualifyFunctions(): List<Function<Commodity, QualifyResult>>
+            +validator(): Validator<Commodity>
+            +onlyExistsValidator(): ValidatorWithArg<Commodity, String>
+        }
+
+        class BondMeta [[BondMeta.html]] {
+            +dataRules(): List<Validator<Bond>>
+            +choiceRuleValidators(): List<Validator<Bond>>
+            +getOutMappings(): Multimap<String, OutMapping<Bond, ?>>
+            +getQualifyFunctions(): List<Function<Bond, QualifyResult>>
+            +validator(): Validator<Bond>
+            +onlyExistsValidator(): ValidatorWithArg<Bond, String>
+        }
+
+        class AssetPoolMeta [[AssetPoolMeta.html]] {
+            +dataRules(): List<Validator<AssetPool>>
+            +choiceRuleValidators(): List<Validator<AssetPool>>
+            +getOutMappings(): Multimap<String, OutMapping<AssetPool, ?>>
+            +getQualifyFunctions(): List<Function<AssetPool, QualifyResult>>
+            +validator(): Validator<AssetPool>
+            +onlyExistsValidator(): ValidatorWithArg<AssetPool, String>
+        }
+
+        class AssetMeta [[AssetMeta.html]] {
+            +dataRules(): List<Validator<Asset>>
+            +choiceRuleValidators(): List<Validator<Asset>>
+            +getOutMappings(): Multimap<String, OutMapping<Asset, ?>>
+            +getQualifyFunctions(): List<Function<Asset, QualifyResult>>
+            +validator(): Validator<Asset>
+            +onlyExistsValidator(): ValidatorWithArg<Asset, String>
+        }
+
+        class TransactedPriceMeta [[TransactedPriceMeta.html]] {
+            +dataRules(): List<Validator<TransactedPrice>>
+            +choiceRuleValidators(): List<Validator<TransactedPrice>>
+            +getOutMappings(): Multimap<String, OutMapping<TransactedPrice, ?>>
+            +getQualifyFunctions(): List<Function<TransactedPrice, QualifyResult>>
+            +validator(): Validator<TransactedPrice>
+            +onlyExistsValidator(): ValidatorWithArg<TransactedPrice, String>
+        }
+
+        class StubPeriodMeta [[StubPeriodMeta.html]] {
+            +dataRules(): List<Validator<StubPeriod>>
+            +choiceRuleValidators(): List<Validator<StubPeriod>>
+            +getOutMappings(): Multimap<String, OutMapping<StubPeriod, ?>>
+            +getQualifyFunctions(): List<Function<StubPeriod, QualifyResult>>
+            +validator(): Validator<StubPeriod>
+            +onlyExistsValidator(): ValidatorWithArg<StubPeriod, String>
+        }
+
+        class QuantityMeta [[QuantityMeta.html]] {
+            +dataRules(): List<Validator<Quantity>>
+            +choiceRuleValidators(): List<Validator<Quantity>>
+            +getOutMappings(): Multimap<String, OutMapping<Quantity, ?>>
+            +getQualifyFunctions(): List<Function<Quantity, QualifyResult>>
+            +validator(): Validator<Quantity>
+            +onlyExistsValidator(): ValidatorWithArg<Quantity, String>
+        }
+
+        class ProductIdentificationMeta [[ProductIdentificationMeta.html]] {
+            +dataRules(): List<Validator<ProductIdentification>>
+            +choiceRuleValidators(): List<Validator<ProductIdentification>>
+            +getOutMappings(): Multimap<String, OutMapping<ProductIdentification, ?>>
+            +getQualifyFunctions(): List<Function<ProductIdentification, QualifyResult>>
+            +validator(): Validator<ProductIdentification>
+            +onlyExistsValidator(): ValidatorWithArg<ProductIdentification, String>
+        }
+
+        class ProductMeta [[ProductMeta.html]] {
+            +dataRules(): List<Validator<Product>>
+            +choiceRuleValidators(): List<Validator<Product>>
+            +getOutMappings(): Multimap<String, OutMapping<Product, ?>>
+            +getQualifyFunctions(): List<Function<Product, QualifyResult>>
+            +validator(): Validator<Product>
+            +onlyExistsValidator(): ValidatorWithArg<Product, String>
+        }
+
+        class PayoutMeta [[PayoutMeta.html]] {
+            +dataRules(): List<Validator<Payout>>
+            +choiceRuleValidators(): List<Validator<Payout>>
+            +getOutMappings(): Multimap<String, OutMapping<Payout, ?>>
+            +getQualifyFunctions(): List<Function<Payout, QualifyResult>>
+            +validator(): Validator<Payout>
+            +onlyExistsValidator(): ValidatorWithArg<Payout, String>
+        }
+
+        class PaymentDatesMeta [[PaymentDatesMeta.html]] {
+            +dataRules(): List<Validator<PaymentDates>>
+            +choiceRuleValidators(): List<Validator<PaymentDates>>
+            +getOutMappings(): Multimap<String, OutMapping<PaymentDates, ?>>
+            +getQualifyFunctions(): List<Function<PaymentDates, QualifyResult>>
+            +validator(): Validator<PaymentDates>
+            +onlyExistsValidator(): ValidatorWithArg<PaymentDates, String>
+        }
+
+        class OptionPayoutMeta [[OptionPayoutMeta.html]] {
+            +dataRules(): List<Validator<OptionPayout>>
+            +choiceRuleValidators(): List<Validator<OptionPayout>>
+            +getOutMappings(): Multimap<String, OutMapping<OptionPayout, ?>>
+            +getQualifyFunctions(): List<Function<OptionPayout, QualifyResult>>
+            +validator(): Validator<OptionPayout>
+            +onlyExistsValidator(): ValidatorWithArg<OptionPayout, String>
+        }
+
+        class OptionExerciseMeta [[OptionExerciseMeta.html]] {
+            +dataRules(): List<Validator<OptionExercise>>
+            +choiceRuleValidators(): List<Validator<OptionExercise>>
+            +getOutMappings(): Multimap<String, OutMapping<OptionExercise, ?>>
+            +getQualifyFunctions(): List<Function<OptionExercise, QualifyResult>>
+            +validator(): Validator<OptionExercise>
+            +onlyExistsValidator(): ValidatorWithArg<OptionExercise, String>
+        }
+
+        class NotionalScheduleMeta [[NotionalScheduleMeta.html]] {
+            +dataRules(): List<Validator<NotionalSchedule>>
+            +choiceRuleValidators(): List<Validator<NotionalSchedule>>
+            +getOutMappings(): Multimap<String, OutMapping<NotionalSchedule, ?>>
+            +getQualifyFunctions(): List<Function<NotionalSchedule, QualifyResult>>
+            +validator(): Validator<NotionalSchedule>
+            +onlyExistsValidator(): ValidatorWithArg<NotionalSchedule, String>
+        }
+
+        class InterestRatePayoutMeta [[InterestRatePayoutMeta.html]] {
+            +dataRules(): List<Validator<InterestRatePayout>>
+            +choiceRuleValidators(): List<Validator<InterestRatePayout>>
+            +getOutMappings(): Multimap<String, OutMapping<InterestRatePayout, ?>>
+            +getQualifyFunctions(): List<Function<InterestRatePayout, QualifyResult>>
+            +validator(): Validator<InterestRatePayout>
+            +onlyExistsValidator(): ValidatorWithArg<InterestRatePayout, String>
+        }
+
+        class InterestRateMeta [[InterestRateMeta.html]] {
+            +dataRules(): List<Validator<InterestRate>>
+            +choiceRuleValidators(): List<Validator<InterestRate>>
+            +getOutMappings(): Multimap<String, OutMapping<InterestRate, ?>>
+            +getQualifyFunctions(): List<Function<InterestRate, QualifyResult>>
+            +validator(): Validator<InterestRate>
+            +onlyExistsValidator(): ValidatorWithArg<InterestRate, String>
+        }
+
+        class GeneralTermsMeta [[GeneralTermsMeta.html]] {
+            +dataRules(): List<Validator<GeneralTerms>>
+            +choiceRuleValidators(): List<Validator<GeneralTerms>>
+            +getOutMappings(): Multimap<String, OutMapping<GeneralTerms, ?>>
+            +getQualifyFunctions(): List<Function<GeneralTerms, QualifyResult>>
+            +validator(): Validator<GeneralTerms>
+            +onlyExistsValidator(): ValidatorWithArg<GeneralTerms, String>
+        }
+
+        class EconomicTermsMeta [[EconomicTermsMeta.html]] {
+            +dataRules(): List<Validator<EconomicTerms>>
+            +choiceRuleValidators(): List<Validator<EconomicTerms>>
+            +getOutMappings(): Multimap<String, OutMapping<EconomicTerms, ?>>
+            +getQualifyFunctions(): List<Function<EconomicTerms, QualifyResult>>
+            +validator(): Validator<EconomicTerms>
+            +onlyExistsValidator(): ValidatorWithArg<EconomicTerms, String>
+        }
+
+        class CreditDefaultPayoutMeta [[CreditDefaultPayoutMeta.html]] {
+            +dataRules(): List<Validator<CreditDefaultPayout>>
+            +choiceRuleValidators(): List<Validator<CreditDefaultPayout>>
+            +getOutMappings(): Multimap<String, OutMapping<CreditDefaultPayout, ?>>
+            +getQualifyFunctions(): List<Function<CreditDefaultPayout, QualifyResult>>
+            +validator(): Validator<CreditDefaultPayout>
+            +onlyExistsValidator(): ValidatorWithArg<CreditDefaultPayout, String>
+        }
+
+        class CrossCurrencyTermsMeta [[CrossCurrencyTermsMeta.html]] {
+            +dataRules(): List<Validator<CrossCurrencyTerms>>
+            +choiceRuleValidators(): List<Validator<CrossCurrencyTerms>>
+            +getOutMappings(): Multimap<String, OutMapping<CrossCurrencyTerms, ?>>
+            +getQualifyFunctions(): List<Function<CrossCurrencyTerms, QualifyResult>>
+            +validator(): Validator<CrossCurrencyTerms>
+            +onlyExistsValidator(): ValidatorWithArg<CrossCurrencyTerms, String>
+        }
+
+        class ContractualQuantityMeta [[ContractualQuantityMeta.html]] {
+            +dataRules(): List<Validator<ContractualQuantity>>
+            +choiceRuleValidators(): List<Validator<ContractualQuantity>>
+            +getOutMappings(): Multimap<String, OutMapping<ContractualQuantity, ?>>
+            +getQualifyFunctions(): List<Function<ContractualQuantity, QualifyResult>>
+            +validator(): Validator<ContractualQuantity>
+            +onlyExistsValidator(): ValidatorWithArg<ContractualQuantity, String>
+        }
+
+        class ContractualProductMeta [[ContractualProductMeta.html]] {
+            +dataRules(): List<Validator<ContractualProduct>>
+            +choiceRuleValidators(): List<Validator<ContractualProduct>>
+            +getOutMappings(): Multimap<String, OutMapping<ContractualProduct, ?>>
+            +getQualifyFunctions(): List<Function<ContractualProduct, QualifyResult>>
+            +validator(): Validator<ContractualProduct>
+            +onlyExistsValidator(): ValidatorWithArg<ContractualProduct, String>
+        }
+
+        class ContractMeta [[ContractMeta.html]] {
+            +dataRules(): List<Validator<Contract>>
+            +choiceRuleValidators(): List<Validator<Contract>>
+            +getOutMappings(): Multimap<String, OutMapping<Contract, ?>>
+            +getQualifyFunctions(): List<Function<Contract, QualifyResult>>
+            +validator(): Validator<Contract>
+            +onlyExistsValidator(): ValidatorWithArg<Contract, String>
+        }
+
+        class CashflowBaseMeta [[CashflowBaseMeta.html]] {
+            +dataRules(): List<Validator<CashflowBase>>
+            +choiceRuleValidators(): List<Validator<CashflowBase>>
+            +getOutMappings(): Multimap<String, OutMapping<CashflowBase, ?>>
+            +getQualifyFunctions(): List<Function<CashflowBase, QualifyResult>>
+            +validator(): Validator<CashflowBase>
+            +onlyExistsValidator(): ValidatorWithArg<CashflowBase, String>
+        }
+
+        class CashflowMeta [[CashflowMeta.html]] {
+            +dataRules(): List<Validator<Cashflow>>
+            +choiceRuleValidators(): List<Validator<Cashflow>>
+            +getOutMappings(): Multimap<String, OutMapping<Cashflow, ?>>
+            +getQualifyFunctions(): List<Function<Cashflow, QualifyResult>>
+            +validator(): Validator<Cashflow>
+            +onlyExistsValidator(): ValidatorWithArg<Cashflow, String>
+        }
+
+        class TransferorTransfereeMeta [[TransferorTransfereeMeta.html]] {
+            +dataRules(): List<Validator<TransferorTransferee>>
+            +choiceRuleValidators(): List<Validator<TransferorTransferee>>
+            +getOutMappings(): Multimap<String, OutMapping<TransferorTransferee, ?>>
+            +getQualifyFunctions(): List<Function<TransferorTransferee, QualifyResult>>
+            +validator(): Validator<TransferorTransferee>
+            +onlyExistsValidator(): ValidatorWithArg<TransferorTransferee, String>
+        }
+
+        class TransferMeta [[TransferMeta.html]] {
+            +dataRules(): List<Validator<Transfer>>
+            +choiceRuleValidators(): List<Validator<Transfer>>
+            +getOutMappings(): Multimap<String, OutMapping<Transfer, ?>>
+            +getQualifyFunctions(): List<Function<Transfer, QualifyResult>>
+            +validator(): Validator<Transfer>
+            +onlyExistsValidator(): ValidatorWithArg<Transfer, String>
+        }
+
+        class TradeHeaderMeta [[TradeHeaderMeta.html]] {
+            +dataRules(): List<Validator<TradeHeader>>
+            +choiceRuleValidators(): List<Validator<TradeHeader>>
+            +getOutMappings(): Multimap<String, OutMapping<TradeHeader, ?>>
+            +getQualifyFunctions(): List<Function<TradeHeader, QualifyResult>>
+            +validator(): Validator<TradeHeader>
+            +onlyExistsValidator(): ValidatorWithArg<TradeHeader, String>
+        }
+
+        class TimeZoneMeta [[TimeZoneMeta.html]] {
+            +dataRules(): List<Validator<TimeZone>>
+            +choiceRuleValidators(): List<Validator<TimeZone>>
+            +getOutMappings(): Multimap<String, OutMapping<TimeZone, ?>>
+            +getQualifyFunctions(): List<Function<TimeZone, QualifyResult>>
+            +validator(): Validator<TimeZone>
+            +onlyExistsValidator(): ValidatorWithArg<TimeZone, String>
+        }
+
+        class TermsChangePrimitiveMeta [[TermsChangePrimitiveMeta.html]] {
+            +dataRules(): List<Validator<TermsChangePrimitive>>
+            +choiceRuleValidators(): List<Validator<TermsChangePrimitive>>
+            +getOutMappings(): Multimap<String, OutMapping<TermsChangePrimitive, ?>>
+            +getQualifyFunctions(): List<Function<TermsChangePrimitive, QualifyResult>>
+            +validator(): Validator<TermsChangePrimitive>
+            +onlyExistsValidator(): ValidatorWithArg<TermsChangePrimitive, String>
+        }
+
+        class ResetPrimitiveMeta [[ResetPrimitiveMeta.html]] {
+            +dataRules(): List<Validator<ResetPrimitive>>
+            +choiceRuleValidators(): List<Validator<ResetPrimitive>>
+            +getOutMappings(): Multimap<String, OutMapping<ResetPrimitive, ?>>
+            +getQualifyFunctions(): List<Function<ResetPrimitive, QualifyResult>>
+            +validator(): Validator<ResetPrimitive>
+            +onlyExistsValidator(): ValidatorWithArg<ResetPrimitive, String>
+        }
+
+        class QuantityChangePrimitiveMeta [[QuantityChangePrimitiveMeta.html]] {
+            +dataRules(): List<Validator<QuantityChangePrimitive>>
+            +choiceRuleValidators(): List<Validator<QuantityChangePrimitive>>
+            +getOutMappings(): Multimap<String, OutMapping<QuantityChangePrimitive, ?>>
+            +getQualifyFunctions(): List<Function<QuantityChangePrimitive, QualifyResult>>
+            +validator(): Validator<QuantityChangePrimitive>
+            +onlyExistsValidator(): ValidatorWithArg<QuantityChangePrimitive, String>
+        }
+
+        class PrimitiveEventMeta [[PrimitiveEventMeta.html]] {
+            +dataRules(): List<Validator<PrimitiveEvent>>
+            +choiceRuleValidators(): List<Validator<PrimitiveEvent>>
+            +getOutMappings(): Multimap<String, OutMapping<PrimitiveEvent, ?>>
+            +getQualifyFunctions(): List<Function<PrimitiveEvent, QualifyResult>>
+            +validator(): Validator<PrimitiveEvent>
+            +onlyExistsValidator(): ValidatorWithArg<PrimitiveEvent, String>
+        }
+
+        class PhysicalExerciseMeta [[PhysicalExerciseMeta.html]] {
+            +dataRules(): List<Validator<PhysicalExercise>>
+            +choiceRuleValidators(): List<Validator<PhysicalExercise>>
+            +getOutMappings(): Multimap<String, OutMapping<PhysicalExercise, ?>>
+            +getQualifyFunctions(): List<Function<PhysicalExercise, QualifyResult>>
+            +validator(): Validator<PhysicalExercise>
+            +onlyExistsValidator(): ValidatorWithArg<PhysicalExercise, String>
+        }
+
+        class PayoutLineageMeta [[PayoutLineageMeta.html]] {
+            +dataRules(): List<Validator<PayoutLineage>>
+            +choiceRuleValidators(): List<Validator<PayoutLineage>>
+            +getOutMappings(): Multimap<String, OutMapping<PayoutLineage, ?>>
+            +getQualifyFunctions(): List<Function<PayoutLineage, QualifyResult>>
+            +validator(): Validator<PayoutLineage>
+            +onlyExistsValidator(): ValidatorWithArg<PayoutLineage, String>
+        }
+
+        class ObservationSourceMeta [[ObservationSourceMeta.html]] {
+            +dataRules(): List<Validator<ObservationSource>>
+            +choiceRuleValidators(): List<Validator<ObservationSource>>
+            +getOutMappings(): Multimap<String, OutMapping<ObservationSource, ?>>
+            +getQualifyFunctions(): List<Function<ObservationSource, QualifyResult>>
+            +validator(): Validator<ObservationSource>
+            +onlyExistsValidator(): ValidatorWithArg<ObservationSource, String>
+        }
+
+        class ObservationPrimitiveMeta [[ObservationPrimitiveMeta.html]] {
+            +dataRules(): List<Validator<ObservationPrimitive>>
+            +choiceRuleValidators(): List<Validator<ObservationPrimitive>>
+            +getOutMappings(): Multimap<String, OutMapping<ObservationPrimitive, ?>>
+            +getQualifyFunctions(): List<Function<ObservationPrimitive, QualifyResult>>
+            +validator(): Validator<ObservationPrimitive>
+            +onlyExistsValidator(): ValidatorWithArg<ObservationPrimitive, String>
+        }
+
+        class NewTradePrimitiveMeta [[NewTradePrimitiveMeta.html]] {
+            +dataRules(): List<Validator<NewTradePrimitive>>
+            +choiceRuleValidators(): List<Validator<NewTradePrimitive>>
+            +getOutMappings(): Multimap<String, OutMapping<NewTradePrimitive, ?>>
+            +getQualifyFunctions(): List<Function<NewTradePrimitive, QualifyResult>>
+            +validator(): Validator<NewTradePrimitive>
+            +onlyExistsValidator(): ValidatorWithArg<NewTradePrimitive, String>
+        }
+
+        class MessageInformationMeta [[MessageInformationMeta.html]] {
+            +dataRules(): List<Validator<MessageInformation>>
+            +choiceRuleValidators(): List<Validator<MessageInformation>>
+            +getOutMappings(): Multimap<String, OutMapping<MessageInformation, ?>>
+            +getQualifyFunctions(): List<Function<MessageInformation, QualifyResult>>
+            +validator(): Validator<MessageInformation>
+            +onlyExistsValidator(): ValidatorWithArg<MessageInformation, String>
+        }
+
+        class LineageMeta [[LineageMeta.html]] {
+            +dataRules(): List<Validator<Lineage>>
+            +choiceRuleValidators(): List<Validator<Lineage>>
+            +getOutMappings(): Multimap<String, OutMapping<Lineage, ?>>
+            +getQualifyFunctions(): List<Function<Lineage, QualifyResult>>
+            +validator(): Validator<Lineage>
+            +onlyExistsValidator(): ValidatorWithArg<Lineage, String>
+        }
+
+        class InterestRateCurveMeta [[InterestRateCurveMeta.html]] {
+            +dataRules(): List<Validator<InterestRateCurve>>
+            +choiceRuleValidators(): List<Validator<InterestRateCurve>>
+            +getOutMappings(): Multimap<String, OutMapping<InterestRateCurve, ?>>
+            +getQualifyFunctions(): List<Function<InterestRateCurve, QualifyResult>>
+            +validator(): Validator<InterestRateCurve>
+            +onlyExistsValidator(): ValidatorWithArg<InterestRateCurve, String>
+        }
+
+        class InceptionMeta [[InceptionMeta.html]] {
+            +dataRules(): List<Validator<Inception>>
+            +choiceRuleValidators(): List<Validator<Inception>>
+            +getOutMappings(): Multimap<String, OutMapping<Inception, ?>>
+            +getQualifyFunctions(): List<Function<Inception, QualifyResult>>
+            +validator(): Validator<Inception>
+            +onlyExistsValidator(): ValidatorWithArg<Inception, String>
+        }
+
+        class GrossCashflowMeta [[GrossCashflowMeta.html]] {
+            +dataRules(): List<Validator<GrossCashflow>>
+            +choiceRuleValidators(): List<Validator<GrossCashflow>>
+            +getOutMappings(): Multimap<String, OutMapping<GrossCashflow, ?>>
+            +getQualifyFunctions(): List<Function<GrossCashflow, QualifyResult>>
+            +validator(): Validator<GrossCashflow>
+            +onlyExistsValidator(): ValidatorWithArg<GrossCashflow, String>
+        }
+
+        class ExecutionMeta [[ExecutionMeta.html]] {
+            +dataRules(): List<Validator<Execution>>
+            +choiceRuleValidators(): List<Validator<Execution>>
+            +getOutMappings(): Multimap<String, OutMapping<Execution, ?>>
+            +getQualifyFunctions(): List<Function<Execution, QualifyResult>>
+            +validator(): Validator<Execution>
+            +onlyExistsValidator(): ValidatorWithArg<Execution, String>
+        }
+
+        class ExercisePrimitiveMeta [[ExercisePrimitiveMeta.html]] {
+            +dataRules(): List<Validator<ExercisePrimitive>>
+            +choiceRuleValidators(): List<Validator<ExercisePrimitive>>
+            +getOutMappings(): Multimap<String, OutMapping<ExercisePrimitive, ?>>
+            +getQualifyFunctions(): List<Function<ExercisePrimitive, QualifyResult>>
+            +validator(): Validator<ExercisePrimitive>
+            +onlyExistsValidator(): ValidatorWithArg<ExercisePrimitive, String>
+        }
+
+        class ExerciseOutcomeMeta [[ExerciseOutcomeMeta.html]] {
+            +dataRules(): List<Validator<ExerciseOutcome>>
+            +choiceRuleValidators(): List<Validator<ExerciseOutcome>>
+            +getOutMappings(): Multimap<String, OutMapping<ExerciseOutcome, ?>>
+            +getQualifyFunctions(): List<Function<ExerciseOutcome, QualifyResult>>
+            +validator(): Validator<ExerciseOutcome>
+            +onlyExistsValidator(): ValidatorWithArg<ExerciseOutcome, String>
+        }
+
+        class ExecutionReferenceMeta [[ExecutionReferenceMeta.html]] {
+            +dataRules(): List<Validator<ExecutionReference>>
+            +choiceRuleValidators(): List<Validator<ExecutionReference>>
+            +getOutMappings(): Multimap<String, OutMapping<ExecutionReference, ?>>
+            +getQualifyFunctions(): List<Function<ExecutionReference, QualifyResult>>
+            +validator(): Validator<ExecutionReference>
+            +onlyExistsValidator(): ValidatorWithArg<ExecutionReference, String>
+        }
+
+        class EventTimestampMeta [[EventTimestampMeta.html]] {
+            +dataRules(): List<Validator<EventTimestamp>>
+            +choiceRuleValidators(): List<Validator<EventTimestamp>>
+            +getOutMappings(): Multimap<String, OutMapping<EventTimestamp, ?>>
+            +getQualifyFunctions(): List<Function<EventTimestamp, QualifyResult>>
+            +validator(): Validator<EventTimestamp>
+            +onlyExistsValidator(): ValidatorWithArg<EventTimestamp, String>
+        }
+
+        class EventTestBundleMeta [[EventTestBundleMeta.html]] {
+            +dataRules(): List<Validator<EventTestBundle>>
+            +choiceRuleValidators(): List<Validator<EventTestBundle>>
+            +getOutMappings(): Multimap<String, OutMapping<EventTestBundle, ?>>
+            +getQualifyFunctions(): List<Function<EventTestBundle, QualifyResult>>
+            +validator(): Validator<EventTestBundle>
+            +onlyExistsValidator(): ValidatorWithArg<EventTestBundle, String>
+        }
+
+        class EventEffectMeta [[EventEffectMeta.html]] {
+            +dataRules(): List<Validator<EventEffect>>
+            +choiceRuleValidators(): List<Validator<EventEffect>>
+            +getOutMappings(): Multimap<String, OutMapping<EventEffect, ?>>
+            +getQualifyFunctions(): List<Function<EventEffect, QualifyResult>>
+            +validator(): Validator<EventEffect>
+            +onlyExistsValidator(): ValidatorWithArg<EventEffect, String>
+        }
+
+        class EventMeta [[EventMeta.html]] {
+            +dataRules(): List<Validator<Event>>
+            +choiceRuleValidators(): List<Validator<Event>>
+            +getOutMappings(): Multimap<String, OutMapping<Event, ?>>
+            +getQualifyFunctions(): List<Function<Event, QualifyResult>>
+            +validator(): Validator<Event>
+            +onlyExistsValidator(): ValidatorWithArg<Event, String>
+        }
+
+        class CurveMeta [[CurveMeta.html]] {
+            +dataRules(): List<Validator<Curve>>
+            +choiceRuleValidators(): List<Validator<Curve>>
+            +getOutMappings(): Multimap<String, OutMapping<Curve, ?>>
+            +getQualifyFunctions(): List<Function<Curve, QualifyResult>>
+            +validator(): Validator<Curve>
+            +onlyExistsValidator(): ValidatorWithArg<Curve, String>
+        }
+
+        class ContractReferenceMeta [[ContractReferenceMeta.html]] {
+            +dataRules(): List<Validator<ContractReference>>
+            +choiceRuleValidators(): List<Validator<ContractReference>>
+            +getOutMappings(): Multimap<String, OutMapping<ContractReference, ?>>
+            +getQualifyFunctions(): List<Function<ContractReference, QualifyResult>>
+            +validator(): Validator<ContractReference>
+            +onlyExistsValidator(): ValidatorWithArg<ContractReference, String>
+        }
+
+        class ContractOrContractReferenceMeta [[ContractOrContractReferenceMeta.html]] {
+            +dataRules(): List<Validator<ContractOrContractReference>>
+            +choiceRuleValidators(): List<Validator<ContractOrContractReference>>
+            +getOutMappings(): Multimap<String, OutMapping<ContractOrContractReference, ?>>
+            +getQualifyFunctions(): List<Function<ContractOrContractReference, QualifyResult>>
+            +validator(): Validator<ContractOrContractReference>
+            +onlyExistsValidator(): ValidatorWithArg<ContractOrContractReference, String>
+        }
+
+        class ComputedAmountMeta [[ComputedAmountMeta.html]] {
+            +dataRules(): List<Validator<ComputedAmount>>
+            +choiceRuleValidators(): List<Validator<ComputedAmount>>
+            +getOutMappings(): Multimap<String, OutMapping<ComputedAmount, ?>>
+            +getQualifyFunctions(): List<Function<ComputedAmount, QualifyResult>>
+            +validator(): Validator<ComputedAmount>
+            +onlyExistsValidator(): ValidatorWithArg<ComputedAmount, String>
+        }
+
+        class AllocationPrimitiveMeta [[AllocationPrimitiveMeta.html]] {
+            +dataRules(): List<Validator<AllocationPrimitive>>
+            +choiceRuleValidators(): List<Validator<AllocationPrimitive>>
+            +getOutMappings(): Multimap<String, OutMapping<AllocationPrimitive, ?>>
+            +getQualifyFunctions(): List<Function<AllocationPrimitive, QualifyResult>>
+            +validator(): Validator<AllocationPrimitive>
+            +onlyExistsValidator(): ValidatorWithArg<AllocationPrimitive, String>
+        }
+
+        class AllocationOutcomeMeta [[AllocationOutcomeMeta.html]] {
+            +dataRules(): List<Validator<AllocationOutcome>>
+            +choiceRuleValidators(): List<Validator<AllocationOutcome>>
+            +getOutMappings(): Multimap<String, OutMapping<AllocationOutcome, ?>>
+            +getQualifyFunctions(): List<Function<AllocationOutcome, QualifyResult>>
+            +validator(): Validator<AllocationOutcome>
+            +onlyExistsValidator(): ValidatorWithArg<AllocationOutcome, String>
+        }
+
+        interface com.rosetta.model.lib.meta.RosettaMetaData<T> {
+            {abstract} +dataRules(): List<Validator<T>>
+            {abstract} +choiceRuleValidators(): List<Validator<T>>
+            {abstract} +getOutMappings(): Multimap<String, OutMapping<T, ?>>
+            {abstract} +getQualifyFunctions(): List<Function<T, QualifyResult>>
+            {abstract} +validator(): Validator<T>
+            {abstract} +onlyExistsValidator(): ValidatorWithArg<T, String>
+        }
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PartyRoleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PartyAndAccountReferenceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PartyMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. NaturalPersonRoleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. NaturalPersonMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. LegalEntityMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AccountMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ProductTaxonomyMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ProductIdentifierMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ListedProductMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ListedHeaderMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. StubValueMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. StubFloatingRateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. StrikeScheduleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. StrikeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. StepMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. SpreadScheduleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. SimplePaymentMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. SettlementRateSourceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ScheduleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. RoundingMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ResourceLengthMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ResourceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ResetFrequencyMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. RelativeDateOffsetMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. RelativeDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. RelatedPartyMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ReferenceBankMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. RateObservationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. QuotedCurrencyPairMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PriorDateInstanceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PrincipalExchangesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PremiumExpressionMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PeriodMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PaymentRuleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PaymentDiscountingMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PaymentDetailMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PaymentMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PayerReceiverMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PartialExerciseMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OtherAgreementMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OptionPhysicalSettlementMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OffsetMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. NonNegativeStepMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. NonNegativeScheduleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. NonNegativeAmountScheduleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. MultipleExerciseMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. MoneyMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. MasterConfirmationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. MasterAgreementMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ManualExerciseMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. IssuerTradeIdMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. InitialFixingDateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. InformationSourceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. IndependentAmountMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FxSpotRateSourceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FxRateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FutureValueAmountMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FrequencyMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FloatingRateCalculationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FloatingRateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExerciseProcedureMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExerciseNoticeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExerciseFeeScheduleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExerciseFeeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. EuropeanExerciseMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. DocumentationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. DateTimeListMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. DateListMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. DateInstancesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. DateRangeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CreditSupportAgreementMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ContractualTermsSupplementMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ContractualMatrixMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CollateralMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CashSettlementReferenceBanksMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CalculationPeriodFrequencyMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CalculationAgentMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BuyerSellerMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BusinessDayAdjustmentsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BusinessDateRangeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BusinessCenterTimeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BusinessCentersMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BrokerConfirmationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BermudaExerciseMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AutomaticExerciseMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AmountScheduleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AmericanExerciseMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AdjustedRelativeDateOffsetMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AdjustableOrRelativeDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AdjustableOrRelativeDateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AdjustableOrAdjustedOrRelativeDateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AdjustableOrAdjustedDateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AdjustableDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AdjustableDateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. WeightedAveragingObservationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. TriggerEventMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. TriggerMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. StrikeSpreadMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. StrategyFeatureMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. RestructuringMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. QuantoMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PubliclyAvailableInformationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PassThroughItemMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PassThroughMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OptionStyleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OptionSettlementMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OptionFeatureMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OptionDenominationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. NotifyingPartyMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. KnockMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. GracePeriodExtensionMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FxFeatureMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FeaturePaymentMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FailureToPayMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CreditEventNoticeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CreditEventsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CompositeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CalendarSpreadMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BarrierMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AveragingScheduleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AveragingPeriodMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AveragingObservationListMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AsianMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. YieldCurveMethodMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ValuationPostponementMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. StubCalculationPeriodAmountMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. SettlementProvisionMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ResetDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PrincipalExchangeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PriceSourceDisruptionMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PaymentCalculationPeriodMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OptionCashSettlementMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OptionalEarlyTerminationAdjustedDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OptionalEarlyTerminationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. NotionalStepRuleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. NonDeliverableSettlementMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. MandatoryEarlyTerminationAdjustedDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. MandatoryEarlyTerminationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. InflationRateCalculationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FxLinkedNotionalScheduleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FxLinkedNotionalAmountMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FxFixingDateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FloatingRateDefinitionMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FinalCalculationPeriodDateAdjustmentMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FallbackReferencePriceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExtensionEventMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExtendibleProvisionAdjustedDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExtendibleProvisionMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExercisePeriodMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExerciseEventMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. EarlyTerminationProvisionMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. EarlyTerminationEventMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. DiscountingMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. DateRelativeToPaymentDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. DateRelativeToCalculationPeriodDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CrossCurrencyMethodMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CashSettlementPaymentDateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CashPriceMethodMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CashflowRepresentationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CancellationEventMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CancelableProvisionAdjustedDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CancelableProvisionMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CalculationPeriodDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CalculationPeriodMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BondReferenceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PercentageRuleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PartyContractInformationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PartyContractIdentifierMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PackageInformationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. LinkIdMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. IdentifierValueMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. IdentifierMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ContractIdentifierExtendedMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ContractIdentifierMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CalculationAgentModelMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ValuationDateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. TrancheMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. SpecifiedCurrencyMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. SingleValuationDateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. SettledEntityMatrixMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ReferencePoolItemMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ReferencePoolMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ReferencePairMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ReferenceObligationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ReferenceInformationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ProtectionTermsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PhysicalSettlementTermsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PhysicalSettlementPeriodMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PCDeliverableObligationCharacMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OptionStrikeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ObligationsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. NotDomesticCurrencyMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. MultipleValuationDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. LoanParticipationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. InterestShortFallMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. IndexReferenceInformationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FloatingAmountProvisionsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FloatingAmountEventsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. DeliverableObligationsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CashSettlementTermsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CalculationAmountMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BasketReferenceInformationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BasketNameMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AdditionalFixedPaymentsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. SwapCurveValuationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ReferenceSwapCurveMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. MakeWholeAmountMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BondOptionStrikeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. MortgageMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. LoanMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. IdentifiedAssetMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. FixedIncomeSecurityMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. EquityAssetMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ConvertibleBondMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ConstituentWeightMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CommodityMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. BondMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AssetPoolMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AssetMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. TransactedPriceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. StubPeriodMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. QuantityMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ProductIdentificationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ProductMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PayoutMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PaymentDatesMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OptionPayoutMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. OptionExerciseMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. NotionalScheduleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. InterestRatePayoutMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. InterestRateMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. GeneralTermsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. EconomicTermsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CreditDefaultPayoutMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CrossCurrencyTermsMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ContractualQuantityMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ContractualProductMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ContractMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CashflowBaseMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CashflowMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. TransferorTransfereeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. TransferMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. TradeHeaderMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. TimeZoneMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. TermsChangePrimitiveMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ResetPrimitiveMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. QuantityChangePrimitiveMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PrimitiveEventMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PhysicalExerciseMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. PayoutLineageMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ObservationSourceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ObservationPrimitiveMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. NewTradePrimitiveMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. MessageInformationMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. LineageMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. InterestRateCurveMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. InceptionMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. GrossCashflowMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExecutionMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExercisePrimitiveMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExerciseOutcomeMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ExecutionReferenceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. EventTimestampMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. EventTestBundleMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. EventEffectMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. EventMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. CurveMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ContractReferenceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ContractOrContractReferenceMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. ComputedAmountMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AllocationPrimitiveMeta
+
+        com.rosetta.model.lib.meta.RosettaMetaData <|.. AllocationOutcomeMeta
+
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class Execution [[Execution.html]] {
+        +getContractualProduct(): ContractualProduct
+        +getParty(): List<Party>
+        +getTradeHeader(): TradeHeader
+        +toBuilder(): Execution.ExecutionBuilder
+        {static} +builder(): Execution.ExecutionBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

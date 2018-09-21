@@ -1,0 +1,11 @@
+@startuml
+
+    class FloatingAmountProvisions.FloatingAmountProvisionsBuilder [[FloatingAmountProvisions.FloatingAmountProvisionsBuilder.html]] {
+        +getStepUpProvision(): Boolean
+        +getWacCapInterestProvision(): Boolean
+        +setStepUpProvision(Boolean): FloatingAmountProvisions.FloatingAmountProvisionsBuilder
+        +setWacCapInterestProvision(Boolean): FloatingAmountProvisions.FloatingAmountProvisionsBuilder
+        +build(): FloatingAmountProvisions
+    }
+
+@enduml

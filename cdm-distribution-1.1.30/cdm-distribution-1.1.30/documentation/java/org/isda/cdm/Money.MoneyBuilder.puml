@@ -1,0 +1,15 @@
+@startuml
+
+    class Money.MoneyBuilder [[Money.MoneyBuilder.html]] {
+        +getAmount(): BigDecimal
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +getId(): String
+        +setAmount(BigDecimal): Money.MoneyBuilder
+        +setCurrency(String): Money.MoneyBuilder
+        +setCurrencyScheme(String): Money.MoneyBuilder
+        +setId(String): Money.MoneyBuilder
+        +build(): Money
+    }
+
+@enduml

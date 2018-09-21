@@ -1,0 +1,7 @@
+@startuml
+
+    class AssetOnlyExistsValidator [[AssetOnlyExistsValidator.html]] {
+        +validate(Asset, String): ValidationResult<Asset>
+    }
+
+@enduml

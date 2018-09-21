@@ -1,0 +1,7 @@
+@startuml
+
+    class PartyAndAccountReferenceOnlyExistsValidator [[PartyAndAccountReferenceOnlyExistsValidator.html]] {
+        +validate(PartyAndAccountReference, String): ValidationResult<PartyAndAccountReference>
+    }
+
+@enduml

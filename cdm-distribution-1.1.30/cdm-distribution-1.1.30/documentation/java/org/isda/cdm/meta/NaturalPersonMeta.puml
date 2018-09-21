@@ -1,0 +1,12 @@
+@startuml
+
+    class NaturalPersonMeta [[NaturalPersonMeta.html]] {
+        +dataRules(): List<Validator<NaturalPerson>>
+        +choiceRuleValidators(): List<Validator<NaturalPerson>>
+        +getOutMappings(): Multimap<String, OutMapping<NaturalPerson, ?>>
+        +getQualifyFunctions(): List<Function<NaturalPerson, QualifyResult>>
+        +validator(): Validator<NaturalPerson>
+        +onlyExistsValidator(): ValidatorWithArg<NaturalPerson, String>
+    }
+
+@enduml

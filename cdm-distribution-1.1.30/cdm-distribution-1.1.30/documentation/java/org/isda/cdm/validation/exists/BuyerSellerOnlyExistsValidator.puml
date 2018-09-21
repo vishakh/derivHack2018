@@ -1,0 +1,7 @@
+@startuml
+
+    class BuyerSellerOnlyExistsValidator [[BuyerSellerOnlyExistsValidator.html]] {
+        +validate(BuyerSeller, String): ValidationResult<BuyerSeller>
+    }
+
+@enduml

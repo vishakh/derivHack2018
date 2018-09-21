@@ -1,0 +1,7 @@
+@startuml
+
+    class FxSpotRateSourceOnlyExistsValidator [[FxSpotRateSourceOnlyExistsValidator.html]] {
+        +validate(FxSpotRateSource, String): ValidationResult<FxSpotRateSource>
+    }
+
+@enduml

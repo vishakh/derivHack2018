@@ -1,0 +1,14 @@
+@startuml
+
+    class AdjustableDate [[AdjustableDate.html]] {
+        +getAdjustedDate(): LocalDate
+        +getDateAdjustments(): BusinessDayAdjustments
+        +getDateAdjustmentsReference(): String
+        +getId(): String
+        +getUnadjustedDate(): LocalDate
+        +toBuilder(): AdjustableDate.AdjustableDateBuilder
+        {static} +builder(): AdjustableDate.AdjustableDateBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

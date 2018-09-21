@@ -1,0 +1,12 @@
+@startuml
+
+    class PubliclyAvailableInformationMeta [[PubliclyAvailableInformationMeta.html]] {
+        +dataRules(): List<Validator<PubliclyAvailableInformation>>
+        +choiceRuleValidators(): List<Validator<PubliclyAvailableInformation>>
+        +getOutMappings(): Multimap<String, OutMapping<PubliclyAvailableInformation, ?>>
+        +getQualifyFunctions(): List<Function<PubliclyAvailableInformation, QualifyResult>>
+        +validator(): Validator<PubliclyAvailableInformation>
+        +onlyExistsValidator(): ValidatorWithArg<PubliclyAvailableInformation, String>
+    }
+
+@enduml

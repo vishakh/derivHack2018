@@ -1,0 +1,11 @@
+@startuml
+
+    class Inception [[Inception.html]] {
+        +getAfter(): ContractOrContractReference
+        +getBefore(): List<ContractOrContractReference>
+        +toBuilder(): Inception.InceptionBuilder
+        {static} +builder(): Inception.InceptionBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

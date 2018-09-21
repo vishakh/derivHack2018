@@ -1,0 +1,27 @@
+@startuml
+
+    class PartyContractIdentifier.PartyContractIdentifierBuilder [[PartyContractIdentifier.PartyContractIdentifierBuilder.html]] {
+        +getAllocationTradeId(): List<ContractIdentifier.ContractIdentifierBuilder>
+        +getOrCreateAllocationTradeId(int): ContractIdentifier.ContractIdentifierBuilder
+        +getBlockTradeId(): ContractIdentifier.ContractIdentifierBuilder
+        +getOrCreateBlockTradeId(): ContractIdentifier.ContractIdentifierBuilder
+        +getLinkId(): List<LinkId.LinkIdBuilder>
+        +getOrCreateLinkId(int): LinkId.LinkIdBuilder
+        +getOriginatingTradeId(): List<ContractIdentifier.ContractIdentifierBuilder>
+        +getOrCreateOriginatingTradeId(int): ContractIdentifier.ContractIdentifierBuilder
+        +getResultingTradeId(): List<ContractIdentifierExtended.ContractIdentifierExtendedBuilder>
+        +getOrCreateResultingTradeId(int): ContractIdentifierExtended.ContractIdentifierExtendedBuilder
+        +addAllocationTradeId(ContractIdentifier): PartyContractIdentifier.PartyContractIdentifierBuilder
+        +addAllocationTradeIdBuilder(ContractIdentifier.ContractIdentifierBuilder): PartyContractIdentifier.PartyContractIdentifierBuilder
+        +setBlockTradeId(ContractIdentifier): PartyContractIdentifier.PartyContractIdentifierBuilder
+        +setBlockTradeIdBuilder(ContractIdentifier.ContractIdentifierBuilder): PartyContractIdentifier.PartyContractIdentifierBuilder
+        +addLinkId(LinkId): PartyContractIdentifier.PartyContractIdentifierBuilder
+        +addLinkIdBuilder(LinkId.LinkIdBuilder): PartyContractIdentifier.PartyContractIdentifierBuilder
+        +addOriginatingTradeId(ContractIdentifier): PartyContractIdentifier.PartyContractIdentifierBuilder
+        +addOriginatingTradeIdBuilder(ContractIdentifier.ContractIdentifierBuilder): PartyContractIdentifier.PartyContractIdentifierBuilder
+        +addResultingTradeId(ContractIdentifierExtended): PartyContractIdentifier.PartyContractIdentifierBuilder
+        +addResultingTradeIdBuilder(ContractIdentifierExtended.ContractIdentifierExtendedBuilder): PartyContractIdentifier.PartyContractIdentifierBuilder
+        +build(): PartyContractIdentifier
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class StepOnlyExistsValidator [[StepOnlyExistsValidator.html]] {
+        +validate(Step, String): ValidationResult<Step>
+    }
+
+@enduml

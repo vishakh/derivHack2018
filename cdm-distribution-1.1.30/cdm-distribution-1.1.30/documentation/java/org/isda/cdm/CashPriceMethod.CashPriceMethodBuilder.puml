@@ -1,0 +1,17 @@
+@startuml
+
+    class CashPriceMethod.CashPriceMethodBuilder [[CashPriceMethod.CashPriceMethodBuilder.html]] {
+        +getCashSettlementCurrency(): String
+        +getCashSettlementCurrencyScheme(): String
+        +getCashSettlementReferenceBanks(): CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder
+        +getOrCreateCashSettlementReferenceBanks(): CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder
+        +getQuotationRateType(): QuotationRateTypeEnum
+        +setCashSettlementCurrency(String): CashPriceMethod.CashPriceMethodBuilder
+        +setCashSettlementCurrencyScheme(String): CashPriceMethod.CashPriceMethodBuilder
+        +setCashSettlementReferenceBanks(CashSettlementReferenceBanks): CashPriceMethod.CashPriceMethodBuilder
+        +setCashSettlementReferenceBanksBuilder(CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder): CashPriceMethod.CashPriceMethodBuilder
+        +setQuotationRateType(QuotationRateTypeEnum): CashPriceMethod.CashPriceMethodBuilder
+        +build(): CashPriceMethod
+    }
+
+@enduml

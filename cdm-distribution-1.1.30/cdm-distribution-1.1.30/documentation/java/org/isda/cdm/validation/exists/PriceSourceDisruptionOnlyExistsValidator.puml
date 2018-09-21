@@ -1,0 +1,7 @@
+@startuml
+
+    class PriceSourceDisruptionOnlyExistsValidator [[PriceSourceDisruptionOnlyExistsValidator.html]] {
+        +validate(PriceSourceDisruption, String): ValidationResult<PriceSourceDisruption>
+    }
+
+@enduml

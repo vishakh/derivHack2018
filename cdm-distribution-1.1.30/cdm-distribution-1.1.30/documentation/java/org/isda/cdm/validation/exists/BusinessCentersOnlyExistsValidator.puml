@@ -1,0 +1,7 @@
+@startuml
+
+    class BusinessCentersOnlyExistsValidator [[BusinessCentersOnlyExistsValidator.html]] {
+        +validate(BusinessCenters, String): ValidationResult<BusinessCenters>
+    }
+
+@enduml

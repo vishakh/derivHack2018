@@ -1,0 +1,21 @@
+@startuml
+
+    enum BusinessCenterEnum [[BusinessCenterEnum.html]] {
+        {static} +AEAD
+        {static} +AEDU
+        {static} +AMYE
+        {static} +BEBR
+        {static} +BRBD
+        {static} +CATO
+        {static} +CHZU
+        {static} +CNBE
+        {static} +DEFR
+        {static} +EUTA
+        {static} +GBLO
+        {static} +INMU
+        {static} +JPTO
+        {static} +KRSE
+        {static} +USNY
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class FutureValueAmount [[FutureValueAmount.html]] {
+        +getCalculationPeriodNumberOfDays(): Integer
+        +getValueDate(): LocalDate
+        +toBuilder(): FutureValueAmount.FutureValueAmountBuilder
+        {static} +builder(): FutureValueAmount.FutureValueAmountBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

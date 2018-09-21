@@ -1,0 +1,21 @@
+@startuml
+
+    class PrincipalExchange.PrincipalExchangeBuilder [[PrincipalExchange.PrincipalExchangeBuilder.html]] {
+        +getAdjustedPrincipalExchangeDate(): LocalDate
+        +getDiscountFactor(): BigDecimal
+        +getId(): String
+        +getPresentValuePrincipalExchangeAmount(): Money.MoneyBuilder
+        +getOrCreatePresentValuePrincipalExchangeAmount(): Money.MoneyBuilder
+        +getPrincipalExchangeAmount(): BigDecimal
+        +getUnadjustedPrincipalExchangeDate(): LocalDate
+        +setAdjustedPrincipalExchangeDate(LocalDate): PrincipalExchange.PrincipalExchangeBuilder
+        +setDiscountFactor(BigDecimal): PrincipalExchange.PrincipalExchangeBuilder
+        +setId(String): PrincipalExchange.PrincipalExchangeBuilder
+        +setPresentValuePrincipalExchangeAmount(Money): PrincipalExchange.PrincipalExchangeBuilder
+        +setPresentValuePrincipalExchangeAmountBuilder(Money.MoneyBuilder): PrincipalExchange.PrincipalExchangeBuilder
+        +setPrincipalExchangeAmount(BigDecimal): PrincipalExchange.PrincipalExchangeBuilder
+        +setUnadjustedPrincipalExchangeDate(LocalDate): PrincipalExchange.PrincipalExchangeBuilder
+        +build(): PrincipalExchange
+    }
+
+@enduml

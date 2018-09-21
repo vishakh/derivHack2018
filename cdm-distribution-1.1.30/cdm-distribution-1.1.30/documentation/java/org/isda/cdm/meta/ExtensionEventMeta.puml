@@ -1,0 +1,12 @@
+@startuml
+
+    class ExtensionEventMeta [[ExtensionEventMeta.html]] {
+        +dataRules(): List<Validator<ExtensionEvent>>
+        +choiceRuleValidators(): List<Validator<ExtensionEvent>>
+        +getOutMappings(): Multimap<String, OutMapping<ExtensionEvent, ?>>
+        +getQualifyFunctions(): List<Function<ExtensionEvent, QualifyResult>>
+        +validator(): Validator<ExtensionEvent>
+        +onlyExistsValidator(): ValidatorWithArg<ExtensionEvent, String>
+    }
+
+@enduml

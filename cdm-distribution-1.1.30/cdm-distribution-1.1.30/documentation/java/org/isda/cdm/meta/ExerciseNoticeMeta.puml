@@ -1,0 +1,12 @@
+@startuml
+
+    class ExerciseNoticeMeta [[ExerciseNoticeMeta.html]] {
+        +dataRules(): List<Validator<ExerciseNotice>>
+        +choiceRuleValidators(): List<Validator<ExerciseNotice>>
+        +getOutMappings(): Multimap<String, OutMapping<ExerciseNotice, ?>>
+        +getQualifyFunctions(): List<Function<ExerciseNotice, QualifyResult>>
+        +validator(): Validator<ExerciseNotice>
+        +onlyExistsValidator(): ValidatorWithArg<ExerciseNotice, String>
+    }
+
+@enduml

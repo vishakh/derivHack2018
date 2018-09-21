@@ -1,0 +1,7 @@
+@startuml
+
+    class DateRangeValidator [[DateRangeValidator.html]] {
+        +validate(DateRange): ValidationResult<DateRange>
+    }
+
+@enduml

@@ -1,0 +1,37 @@
+@startuml
+
+    class ResetDates.ResetDatesBuilder [[ResetDates.ResetDatesBuilder.html]] {
+        +getCalculationPeriodDatesReference(): String
+        +getFinalFixingDate(): AdjustableDate.AdjustableDateBuilder
+        +getOrCreateFinalFixingDate(): AdjustableDate.AdjustableDateBuilder
+        +getFixingDates(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getOrCreateFixingDates(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getId(): String
+        +getInitialFixingDate(): InitialFixingDate.InitialFixingDateBuilder
+        +getOrCreateInitialFixingDate(): InitialFixingDate.InitialFixingDateBuilder
+        +getRateCutOffDaysOffset(): Offset.OffsetBuilder
+        +getOrCreateRateCutOffDaysOffset(): Offset.OffsetBuilder
+        +getResetDatesAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getOrCreateResetDatesAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getResetFrequency(): ResetFrequency.ResetFrequencyBuilder
+        +getOrCreateResetFrequency(): ResetFrequency.ResetFrequencyBuilder
+        +getResetRelativeTo(): ResetRelativeToEnum
+        +setCalculationPeriodDatesReference(String): ResetDates.ResetDatesBuilder
+        +setFinalFixingDate(AdjustableDate): ResetDates.ResetDatesBuilder
+        +setFinalFixingDateBuilder(AdjustableDate.AdjustableDateBuilder): ResetDates.ResetDatesBuilder
+        +setFixingDates(RelativeDateOffset): ResetDates.ResetDatesBuilder
+        +setFixingDatesBuilder(RelativeDateOffset.RelativeDateOffsetBuilder): ResetDates.ResetDatesBuilder
+        +setId(String): ResetDates.ResetDatesBuilder
+        +setInitialFixingDate(InitialFixingDate): ResetDates.ResetDatesBuilder
+        +setInitialFixingDateBuilder(InitialFixingDate.InitialFixingDateBuilder): ResetDates.ResetDatesBuilder
+        +setRateCutOffDaysOffset(Offset): ResetDates.ResetDatesBuilder
+        +setRateCutOffDaysOffsetBuilder(Offset.OffsetBuilder): ResetDates.ResetDatesBuilder
+        +setResetDatesAdjustments(BusinessDayAdjustments): ResetDates.ResetDatesBuilder
+        +setResetDatesAdjustmentsBuilder(BusinessDayAdjustments.BusinessDayAdjustmentsBuilder): ResetDates.ResetDatesBuilder
+        +setResetFrequency(ResetFrequency): ResetDates.ResetDatesBuilder
+        +setResetFrequencyBuilder(ResetFrequency.ResetFrequencyBuilder): ResetDates.ResetDatesBuilder
+        +setResetRelativeTo(ResetRelativeToEnum): ResetDates.ResetDatesBuilder
+        +build(): ResetDates
+    }
+
+@enduml

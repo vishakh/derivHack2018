@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionalEarlyTerminationAdjustedDatesOnlyExistsValidator [[OptionalEarlyTerminationAdjustedDatesOnlyExistsValidator.html]] {
+        +validate(OptionalEarlyTerminationAdjustedDates, String): ValidationResult<OptionalEarlyTerminationAdjustedDates>
+    }
+
+@enduml

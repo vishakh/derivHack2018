@@ -1,0 +1,11 @@
+@startuml
+
+    class Rounding.RoundingBuilder [[Rounding.RoundingBuilder.html]] {
+        +getPrecision(): Integer
+        +getRoundingDirection(): RoundingDirectionEnum
+        +setPrecision(Integer): Rounding.RoundingBuilder
+        +setRoundingDirection(RoundingDirectionEnum): Rounding.RoundingBuilder
+        +build(): Rounding
+    }
+
+@enduml

@@ -1,0 +1,225 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "UNKNOWN",
+      "identifierScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/trade-id"
+    },
+    "partyReference" : "party1"
+  }, {
+    "identifierValue" : {
+      "identifier" : "LCH00023444650",
+      "identifierScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/trade-id"
+    },
+    "partyReference" : "party2"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1,
+              "rollConvention" : "_7"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2018-03-12"
+              }
+            },
+            "firstRegularPeriodStartDate" : "2018-10-07",
+            "id" : "fixedCalcPeriodDates1",
+            "stubPeriodType" : "SHORT_INITIAL",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "EUTA" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2022-10-07"
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "id" : "fixedLeg1",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.0004568
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party1",
+            "receiverPartyReference" : "party2"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "fixedCalcPeriodDates1",
+            "id" : "paymentDates1",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentDaysOffset" : {
+              "period" : "D",
+              "periodMultiplier" : 1,
+              "dayType" : "BUSINESS"
+            },
+            "paymentFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 34900000,
+                "currency" : "EUR"
+              }
+            }
+          },
+          "rosettaKeyValue" : "f4214c15"
+        }, {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1,
+              "rollConvention" : "_7"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2018-03-12"
+              }
+            },
+            "firstRegularPeriodStartDate" : "2018-10-07",
+            "id" : "floatingCalcPeriodDates2",
+            "stubPeriodType" : "SHORT_INITIAL",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "EUTA" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2022-10-07"
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "id" : "floatingLeg2",
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "EUR_EONIA_OIS_COMPOUND"
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party2",
+            "receiverPartyReference" : "party1"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates2",
+            "id" : "paymentDates2",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentDaysOffset" : {
+              "period" : "D",
+              "periodMultiplier" : 1,
+              "dayType" : "BUSINESS"
+            },
+            "paymentFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 34900000,
+                "currency" : "EUR"
+              }
+            }
+          },
+          "resetDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates2",
+            "fixingDates" : {
+              "period" : "D",
+              "periodMultiplier" : 0,
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "PRECEDING",
+              "dateRelativeTo" : "resetDates2"
+            },
+            "id" : "resetDates2",
+            "resetDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "EUTA" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "resetFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1
+            },
+            "resetRelativeTo" : "CALCULATION_PERIOD_END_DATE"
+          },
+          "rosettaKeyValue" : "2b7eae38"
+        } ]
+      },
+      "rosettaKeyValue" : "d45f4f53"
+    },
+    "productIdentification" : {
+      "primaryAssetClass" : "INTEREST_RATE",
+      "productId" : [ "InterestRate:IRSwap:OIS" ],
+      "productIdScheme" : "http://www.fpml.org/coding-scheme/product-taxonomy",
+      "productQualifier" : "InterestRate_IRSwap_FixedFloat",
+      "productType" : [ "InterestRate:IRSwap:OIS" ],
+      "productTypeScheme" : "http://www.fpml.org/coding-scheme/product-taxonomy",
+      "secondaryAssetClassScheme" : "http://www.fpml.org/coding-scheme/asset-class-simple"
+    }
+  },
+  "documentation" : {
+    "contractualDefinitions" : [ "ISDA2006" ],
+    "contractualDefinitionsScheme" : "http://www.fpml.org/coding-scheme/contractual-definitions",
+    "masterAgreement" : {
+      "masterAgreementType" : "ISDA",
+      "masterAgreementTypeScheme" : "http://www.fpml.org/coding-scheme/master-agreement-type"
+    }
+  },
+  "party" : [ {
+    "id" : "party1",
+    "partyId" : [ "COUNTERPARTY" ],
+    "partyIdScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/party-id"
+  }, {
+    "id" : "party2",
+    "partyId" : [ "LCHLGB22XXX" ],
+    "partyIdScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/party-id"
+  } ],
+  "tradeDate" : {
+    "date" : "2018-01-26"
+  },
+  "rosettaKey" : "48f32ac3"
+}

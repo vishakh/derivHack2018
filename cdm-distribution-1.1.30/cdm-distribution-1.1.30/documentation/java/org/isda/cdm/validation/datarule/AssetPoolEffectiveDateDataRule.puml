@@ -1,0 +1,7 @@
+@startuml
+
+    class AssetPoolEffectiveDateDataRule [[AssetPoolEffectiveDateDataRule.html]] {
+        +validate(AssetPool): ValidationResult<AssetPool>
+    }
+
+@enduml

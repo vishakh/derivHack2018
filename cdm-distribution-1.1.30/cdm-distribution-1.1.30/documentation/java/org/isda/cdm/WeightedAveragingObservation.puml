@@ -1,0 +1,12 @@
+@startuml
+
+    class WeightedAveragingObservation [[WeightedAveragingObservation.html]] {
+        +getDateTime(): LocalDateTime
+        +getObservationNumber(): Integer
+        +getWeight(): BigDecimal
+        +toBuilder(): WeightedAveragingObservation.WeightedAveragingObservationBuilder
+        {static} +builder(): WeightedAveragingObservation.WeightedAveragingObservationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

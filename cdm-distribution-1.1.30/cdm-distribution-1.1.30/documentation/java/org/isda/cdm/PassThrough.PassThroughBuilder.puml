@@ -1,0 +1,11 @@
+@startuml
+
+    class PassThrough.PassThroughBuilder [[PassThrough.PassThroughBuilder.html]] {
+        +getPassThroughItem(): List<PassThroughItem.PassThroughItemBuilder>
+        +getOrCreatePassThroughItem(int): PassThroughItem.PassThroughItemBuilder
+        +addPassThroughItem(PassThroughItem): PassThrough.PassThroughBuilder
+        +addPassThroughItemBuilder(PassThroughItem.PassThroughItemBuilder): PassThrough.PassThroughBuilder
+        +build(): PassThrough
+    }
+
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+
+    enum BrokerConfirmationTypeEnum [[BrokerConfirmationTypeEnum.html]] {
+        {static} +ABX
+        {static} +CD_SON_MBS
+    }
+
+@enduml

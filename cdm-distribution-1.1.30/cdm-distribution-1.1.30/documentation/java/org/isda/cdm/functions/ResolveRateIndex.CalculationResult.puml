@@ -1,0 +1,9 @@
+@startuml
+
+    class ResolveRateIndex.CalculationResult [[ResolveRateIndex.CalculationResult.html]] {
+        +getRate(): BigDecimal
+        +setRate(BigDecimal): ResolveRateIndex.CalculationResult
+        +getAttributes(): List<IResult.Attribute<?>>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class ExtensionEvent [[ExtensionEvent.html]] {
+        +getAdjustedExerciseDate(): LocalDate
+        +getAdjustedExtendedTerminationDate(): LocalDate
+        +getId(): String
+        +toBuilder(): ExtensionEvent.ExtensionEventBuilder
+        {static} +builder(): ExtensionEvent.ExtensionEventBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class Knock.KnockBuilder [[Knock.KnockBuilder.html]] {
+        +getKnockIn(): TriggerEvent.TriggerEventBuilder
+        +getOrCreateKnockIn(): TriggerEvent.TriggerEventBuilder
+        +getKnockOut(): TriggerEvent.TriggerEventBuilder
+        +getOrCreateKnockOut(): TriggerEvent.TriggerEventBuilder
+        +setKnockIn(TriggerEvent): Knock.KnockBuilder
+        +setKnockInBuilder(TriggerEvent.TriggerEventBuilder): Knock.KnockBuilder
+        +setKnockOut(TriggerEvent): Knock.KnockBuilder
+        +setKnockOutBuilder(TriggerEvent.TriggerEventBuilder): Knock.KnockBuilder
+        +build(): Knock
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class GracePeriodExtensionMeta [[GracePeriodExtensionMeta.html]] {
+        +dataRules(): List<Validator<GracePeriodExtension>>
+        +choiceRuleValidators(): List<Validator<GracePeriodExtension>>
+        +getOutMappings(): Multimap<String, OutMapping<GracePeriodExtension, ?>>
+        +getQualifyFunctions(): List<Function<GracePeriodExtension, QualifyResult>>
+        +validator(): Validator<GracePeriodExtension>
+        +onlyExistsValidator(): ValidatorWithArg<GracePeriodExtension, String>
+    }
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+
+    class Payment [[Payment.html]] {
+        +getGrossCashflow(): List<GrossCashflow>
+        +getPaymentAmount(): Money
+        +getPaymentDate(): AdjustableOrAdjustedOrRelativeDate
+        +getPaymentStatus(): PaymentStatusEnum
+        +getPaymentType(): PaymentTypeEnum
+        +getSettlementReference(): String
+        +toBuilder(): Payment.PaymentBuilder
+        {static} +builder(): Payment.PaymentBuilder
+        +getRosettaKey(): String
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

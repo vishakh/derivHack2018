@@ -1,0 +1,18 @@
+@startuml
+
+    class FixedIncomeSecurity [[FixedIncomeSecurity.html]] {
+        +getCouponRate(): BigDecimal
+        +getCouponType(): CouponTypeEnum
+        +getCouponTypeScheme(): String
+        +getIssueDate(): LocalDate
+        +getIssuerName(): String
+        +getIssuerReference(): String
+        +getMaturity(): LocalDate
+        +getSeniority(): CreditSeniorityEnum
+        +getSeniorityScheme(): String
+        +toBuilder(): FixedIncomeSecurity.FixedIncomeSecurityBuilder
+        {static} +builder(): FixedIncomeSecurity.FixedIncomeSecurityBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

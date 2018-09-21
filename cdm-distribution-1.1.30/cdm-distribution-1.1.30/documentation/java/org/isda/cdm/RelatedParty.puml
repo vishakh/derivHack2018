@@ -1,0 +1,12 @@
+@startuml
+
+    class RelatedParty [[RelatedParty.html]] {
+        +getAccountReference(): String
+        +getPartyReference(): String
+        +getRole(): PartyRoleEnum
+        +toBuilder(): RelatedParty.RelatedPartyBuilder
+        {static} +builder(): RelatedParty.RelatedPartyBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class IsAllocation [[IsAllocation.html]] {
+        +apply(Event): QualifyResult
+    }
+
+@enduml

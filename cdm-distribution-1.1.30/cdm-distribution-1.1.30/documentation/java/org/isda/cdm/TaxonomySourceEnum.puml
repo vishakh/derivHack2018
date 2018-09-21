@@ -1,0 +1,8 @@
+@startuml
+
+    enum TaxonomySourceEnum [[TaxonomySourceEnum.html]] {
+        {static} +CFI
+        {static} +ISDA
+    }
+
+@enduml

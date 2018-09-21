@@ -1,0 +1,7 @@
+@startuml
+
+    class ReferenceBankOnlyExistsValidator [[ReferenceBankOnlyExistsValidator.html]] {
+        +validate(ReferenceBank, String): ValidationResult<ReferenceBank>
+    }
+
+@enduml

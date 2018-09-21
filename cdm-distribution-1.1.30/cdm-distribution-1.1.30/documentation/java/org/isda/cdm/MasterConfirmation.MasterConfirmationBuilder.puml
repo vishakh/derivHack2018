@@ -1,0 +1,19 @@
+@startuml
+
+    class MasterConfirmation.MasterConfirmationBuilder [[MasterConfirmation.MasterConfirmationBuilder.html]] {
+        +getMasterConfirmationAnnexDate(): LocalDate
+        +getMasterConfirmationAnnexType(): MasterConfirmationAnnexTypeEnum
+        +getMasterConfirmationAnnexTypeScheme(): String
+        +getMasterConfirmationDate(): LocalDate
+        +getMasterConfirmationType(): MasterConfirmationTypeEnum
+        +getMasterConfirmationTypeScheme(): String
+        +setMasterConfirmationAnnexDate(LocalDate): MasterConfirmation.MasterConfirmationBuilder
+        +setMasterConfirmationAnnexType(MasterConfirmationAnnexTypeEnum): MasterConfirmation.MasterConfirmationBuilder
+        +setMasterConfirmationAnnexTypeScheme(String): MasterConfirmation.MasterConfirmationBuilder
+        +setMasterConfirmationDate(LocalDate): MasterConfirmation.MasterConfirmationBuilder
+        +setMasterConfirmationType(MasterConfirmationTypeEnum): MasterConfirmation.MasterConfirmationBuilder
+        +setMasterConfirmationTypeScheme(String): MasterConfirmation.MasterConfirmationBuilder
+        +build(): MasterConfirmation
+    }
+
+@enduml

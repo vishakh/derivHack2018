@@ -1,0 +1,12 @@
+@startuml
+
+    class PrimitiveEventMeta [[PrimitiveEventMeta.html]] {
+        +dataRules(): List<Validator<PrimitiveEvent>>
+        +choiceRuleValidators(): List<Validator<PrimitiveEvent>>
+        +getOutMappings(): Multimap<String, OutMapping<PrimitiveEvent, ?>>
+        +getQualifyFunctions(): List<Function<PrimitiveEvent, QualifyResult>>
+        +validator(): Validator<PrimitiveEvent>
+        +onlyExistsValidator(): ValidatorWithArg<PrimitiveEvent, String>
+    }
+
+@enduml

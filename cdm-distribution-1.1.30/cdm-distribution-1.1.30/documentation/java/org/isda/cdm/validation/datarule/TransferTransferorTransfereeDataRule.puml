@@ -1,0 +1,7 @@
+@startuml
+
+    class TransferTransferorTransfereeDataRule [[TransferTransferorTransfereeDataRule.html]] {
+        +validate(Transfer): ValidationResult<Transfer>
+    }
+
+@enduml

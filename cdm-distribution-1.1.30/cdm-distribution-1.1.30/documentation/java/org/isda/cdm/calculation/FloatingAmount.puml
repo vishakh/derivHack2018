@@ -1,0 +1,8 @@
+@startuml
+
+    class FloatingAmount [[FloatingAmount.html]] {
+        +FloatingAmount(ResolveRateIndex, GetRateSchedule, DaysInPeriod, CalculationPeriod)
+        +calculate(InterestRatePayout): FloatingAmount.CalculationResult
+    }
+
+@enduml

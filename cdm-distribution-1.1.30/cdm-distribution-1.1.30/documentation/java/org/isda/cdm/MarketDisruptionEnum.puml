@@ -1,0 +1,9 @@
+@startuml
+
+    enum MarketDisruptionEnum [[MarketDisruptionEnum.html]] {
+        {static} +MODIFIED_POSTPONEMENT
+        {static} +OMISSION
+        {static} +POSTPONEMENT
+    }
+
+@enduml

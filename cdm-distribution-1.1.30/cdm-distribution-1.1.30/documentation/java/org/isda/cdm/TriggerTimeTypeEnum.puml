@@ -1,0 +1,8 @@
+@startuml
+
+    enum TriggerTimeTypeEnum [[TriggerTimeTypeEnum.html]] {
+        {static} +CLOSING
+        {static} +ANYTIME
+    }
+
+@enduml

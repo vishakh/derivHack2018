@@ -1,0 +1,14 @@
+@startuml
+
+    class Party [[Party.html]] {
+        +getId(): String
+        +getLegalEntity(): LegalEntity
+        +getNaturalPerson(): List<NaturalPerson>
+        +getPartyId(): List<String>
+        +getPartyIdScheme(): String
+        +toBuilder(): Party.PartyBuilder
+        {static} +builder(): Party.PartyBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

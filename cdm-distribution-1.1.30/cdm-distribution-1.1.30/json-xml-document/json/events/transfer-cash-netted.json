@@ -1,0 +1,86 @@
+{
+  "eventDate" : "2020-02-22",
+  "eventEffect" : {
+    "effectedEvent" : "ec5caab",
+    "transfer" : [ "d47a1222" ]
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "trs-456123"
+    },
+    "version" : 1
+  },
+  "eventQualifier" : "PaymentBusinessEvent",
+  "lineage" : {
+    "contractReference" : [ {
+      "identifierValue" : {
+        "identifier" : "IRS858TH30"
+      },
+      "issuer" : "party1"
+    } ],
+    "eventReference" : [ {
+      "identifierValue" : {
+        "identifier" : "res-789456"
+      },
+      "version" : 1
+    } ]
+  },
+  "party" : [ {
+    "id" : "party1",
+    "partyId" : [ "Party 1" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "party2",
+    "partyId" : [ "Party 2" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "transfer" : [ {
+      "amount" : {
+        "amount" : 568.75,
+        "currency" : "GBP"
+      },
+      "grossCashflow" : [ {
+        "payerReceiver" : {
+          "payerPartyReference" : "party1",
+          "receiverPartyReference" : "party2"
+        },
+        "cashflowAmount" : {
+          "amount" : 6000.00,
+          "currency" : "GBP"
+        },
+        "cashflowCalculation" : "FixedAmount"
+      }, {
+        "payerReceiver" : {
+          "payerPartyReference" : "party2",
+          "receiverPartyReference" : "party1"
+        },
+        "cashflowAmount" : {
+          "amount" : 5431.25,
+          "currency" : "GBP"
+        },
+        "cashflowCalculation" : "FloatingAmount"
+      } ],
+      "payerReceiver" : {
+        "payerPartyReference" : "party1",
+        "receiverPartyReference" : "party1"
+      },
+      "transferDate" : {
+        "dateAdjustments" : {
+          "businessCenters" : {
+            "businessCenter" : [ "GBLO" ]
+          },
+          "businessDayConvention" : "MODFOLLOWING"
+        },
+        "unadjustedDate" : "2020-02-24"
+      },
+      "transferStatus" : "INSTRUCTED",
+      "transferType" : "NET_INTEREST",
+      "rosettaKey" : "d47a1222"
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2020-02-22T14:26:00"
+  },
+  "rosettaKey" : "ec5caab"
+}

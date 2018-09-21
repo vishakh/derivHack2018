@@ -1,0 +1,12 @@
+@startuml
+
+    class LegalEntityMeta [[LegalEntityMeta.html]] {
+        +dataRules(): List<Validator<LegalEntity>>
+        +choiceRuleValidators(): List<Validator<LegalEntity>>
+        +getOutMappings(): Multimap<String, OutMapping<LegalEntity, ?>>
+        +getQualifyFunctions(): List<Function<LegalEntity, QualifyResult>>
+        +validator(): Validator<LegalEntity>
+        +onlyExistsValidator(): ValidatorWithArg<LegalEntity, String>
+    }
+
+@enduml

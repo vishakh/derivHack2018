@@ -1,0 +1,19 @@
+@startuml
+
+    class OptionStyle.OptionStyleBuilder [[OptionStyle.OptionStyleBuilder.html]] {
+        +getAmericanExercise(): AmericanExercise.AmericanExerciseBuilder
+        +getOrCreateAmericanExercise(): AmericanExercise.AmericanExerciseBuilder
+        +getBermudaExercise(): BermudaExercise.BermudaExerciseBuilder
+        +getOrCreateBermudaExercise(): BermudaExercise.BermudaExerciseBuilder
+        +getEuropeanExercise(): EuropeanExercise.EuropeanExerciseBuilder
+        +getOrCreateEuropeanExercise(): EuropeanExercise.EuropeanExerciseBuilder
+        +setAmericanExercise(AmericanExercise): OptionStyle.OptionStyleBuilder
+        +setAmericanExerciseBuilder(AmericanExercise.AmericanExerciseBuilder): OptionStyle.OptionStyleBuilder
+        +setBermudaExercise(BermudaExercise): OptionStyle.OptionStyleBuilder
+        +setBermudaExerciseBuilder(BermudaExercise.BermudaExerciseBuilder): OptionStyle.OptionStyleBuilder
+        +setEuropeanExercise(EuropeanExercise): OptionStyle.OptionStyleBuilder
+        +setEuropeanExerciseBuilder(EuropeanExercise.EuropeanExerciseBuilder): OptionStyle.OptionStyleBuilder
+        +build(): OptionStyle
+    }
+
+@enduml

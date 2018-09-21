@@ -1,0 +1,12 @@
+@startuml
+
+    class FinalCalculationPeriodDateAdjustmentMeta [[FinalCalculationPeriodDateAdjustmentMeta.html]] {
+        +dataRules(): List<Validator<FinalCalculationPeriodDateAdjustment>>
+        +choiceRuleValidators(): List<Validator<FinalCalculationPeriodDateAdjustment>>
+        +getOutMappings(): Multimap<String, OutMapping<FinalCalculationPeriodDateAdjustment, ?>>
+        +getQualifyFunctions(): List<Function<FinalCalculationPeriodDateAdjustment, QualifyResult>>
+        +validator(): Validator<FinalCalculationPeriodDateAdjustment>
+        +onlyExistsValidator(): ValidatorWithArg<FinalCalculationPeriodDateAdjustment, String>
+    }
+
+@enduml

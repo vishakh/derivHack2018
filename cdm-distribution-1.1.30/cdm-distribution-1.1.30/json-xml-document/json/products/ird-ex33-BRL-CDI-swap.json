@@ -1,0 +1,260 @@
+{
+  "calculationAgent" : {
+    "calculationAgentBusinessCenter" : "USNY",
+    "calculationAgentPartyReference" : [ "partyA" ]
+  },
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "987654321-0",
+      "identifierScheme" : "http://www.partyA.com/swaps/trade-id"
+    },
+    "partyReference" : "partyA"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessDayConvention" : "NONE"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "T",
+              "periodMultiplier" : 1,
+              "rollConvention" : "NONE"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2012-09-26"
+              }
+            },
+            "id" : "fixedLegCalcPeriodDates",
+            "terminationDate" : {
+              "adjustedDate" : "2013-03-26",
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "BRBD" ]
+                },
+                "businessDayConvention" : "FOLLOWING"
+              },
+              "id" : "fixedLegTerminationDate",
+              "unadjustedDate" : "2013-03-26"
+            }
+          },
+          "crossCurrencyTerms" : {
+            "settlementProvision" : {
+              "nonDeliverableSettlement" : {
+                "fxFixingDate" : {
+                  "id" : "fixedLegFxFixingDates",
+                  "period" : "D",
+                  "periodMultiplier" : -2,
+                  "dayType" : "BUSINESS",
+                  "businessCenters" : {
+                    "businessCenter" : [ "BRBD", "USNY" ]
+                  },
+                  "businessDayConvention" : "NONE",
+                  "dateRelativeToCalculationPeriodDates" : {
+                    "calculationPeriodDatesReference" : [ "fixedLegTerminationDate" ]
+                  }
+                },
+                "referenceCurrency" : "BRL",
+                "settlementRateOption" : "BRL_PTAX_BRL09"
+              },
+              "settlementCurrency" : "USD"
+            }
+          },
+          "dayCountFraction" : "BUS_252",
+          "id" : "fixedLeg",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.0876
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "partyA",
+            "receiverPartyReference" : "partyB"
+          },
+          "paymentDates" : {
+            "payRelativeTo" : "VALUATION_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "USNY" ]
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "paymentDaysOffset" : {
+              "period" : "D",
+              "periodMultiplier" : 1,
+              "dayType" : "BUSINESS"
+            },
+            "paymentFrequency" : {
+              "period" : "T",
+              "periodMultiplier" : 1
+            },
+            "valuationDatesReference" : "fixedLegFxFixingDates"
+          },
+          "quantity" : {
+            "futureValueNotional" : {
+              "amount" : 104149148.42,
+              "currency" : "BRL",
+              "calculationPeriodNumberOfDays" : 122,
+              "valueDate" : "2013-03-26"
+            },
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 100000000.0,
+                "currency" : "BRL"
+              }
+            }
+          },
+          "rosettaKeyValue" : "2f17a773"
+        }, {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "BRBD" ]
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "T",
+              "periodMultiplier" : 1,
+              "rollConvention" : "NONE"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2012-09-26"
+              }
+            },
+            "id" : "floatingLegCalcPeriodDates",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "BRBD" ]
+                },
+                "businessDayConvention" : "FOLLOWING"
+              },
+              "id" : "floatingLegTerminationDate",
+              "unadjustedDate" : "2013-03-26"
+            }
+          },
+          "crossCurrencyTerms" : {
+            "settlementProvision" : {
+              "nonDeliverableSettlement" : {
+                "fxFixingDate" : {
+                  "id" : "floatingLegFxFixingDates",
+                  "period" : "D",
+                  "periodMultiplier" : -2,
+                  "dayType" : "BUSINESS",
+                  "businessCenters" : {
+                    "businessCenter" : [ "BRBD", "USNY" ]
+                  },
+                  "businessDayConvention" : "NONE",
+                  "dateRelativeToCalculationPeriodDates" : {
+                    "calculationPeriodDatesReference" : [ "floatingLegTerminationDate" ]
+                  }
+                },
+                "referenceCurrency" : "BRL",
+                "settlementRateOption" : "BRL_PTAX_BRL09"
+              },
+              "settlementCurrency" : "USD"
+            }
+          },
+          "dayCountFraction" : "BUS_252",
+          "id" : "floatingLeg",
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "BRL_CDI",
+              "initialRate" : 0.10432
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "partyB",
+            "receiverPartyReference" : "partyA"
+          },
+          "paymentDates" : {
+            "payRelativeTo" : "VALUATION_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "USNY" ]
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "paymentDaysOffset" : {
+              "period" : "D",
+              "periodMultiplier" : 1,
+              "dayType" : "BUSINESS"
+            },
+            "paymentFrequency" : {
+              "period" : "T",
+              "periodMultiplier" : 1
+            },
+            "valuationDatesReference" : "floatingLegFxFixingDates"
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 100000000.0,
+                "currency" : "BRL"
+              }
+            }
+          },
+          "resetDates" : {
+            "calculationPeriodDatesReference" : "floatingLegCalcPeriodDates",
+            "fixingDates" : {
+              "period" : "D",
+              "periodMultiplier" : -1,
+              "dayType" : "BUSINESS",
+              "businessCenters" : {
+                "businessCenter" : [ "BRBD" ]
+              },
+              "businessDayConvention" : "NONE",
+              "dateRelativeTo" : "floatingLegResetDates"
+            },
+            "id" : "floatingLegResetDates",
+            "resetDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "BRBD" ]
+              },
+              "businessDayConvention" : "FOLLOWING"
+            },
+            "resetFrequency" : {
+              "period" : "T",
+              "periodMultiplier" : 1
+            }
+          },
+          "rosettaKeyValue" : "53f640ca"
+        } ]
+      },
+      "rosettaKeyValue" : "deaf1f63"
+    },
+    "productIdentification" : {
+      "productQualifier" : "InterestRate_IRSwap_FixedFloat"
+    }
+  },
+  "party" : [ {
+    "id" : "partyA",
+    "legalEntity" : {
+      "name" : "Delta Bank Ltd"
+    },
+    "partyId" : [ "DELTA123" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "partyB",
+    "legalEntity" : {
+      "name" : "Metro Bank Ltd"
+    },
+    "partyId" : [ "METRO123" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2012-06-29"
+  },
+  "rosettaKey" : "1df14980"
+}

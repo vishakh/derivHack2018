@@ -1,0 +1,7 @@
+@startuml
+
+    class BasketReferenceInformationValidator [[BasketReferenceInformationValidator.html]] {
+        +validate(BasketReferenceInformation): ValidationResult<BasketReferenceInformation>
+    }
+
+@enduml

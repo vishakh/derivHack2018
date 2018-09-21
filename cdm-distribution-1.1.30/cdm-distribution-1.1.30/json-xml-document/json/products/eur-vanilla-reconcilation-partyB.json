@@ -1,0 +1,204 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "TW9235",
+      "identifierScheme" : "http://www.partyA.com/swaps/trade-id"
+    },
+    "partyReference" : "party3"
+  }, {
+    "identifierValue" : {
+      "identifier" : "SW2000",
+      "identifierScheme" : "http://www.barclays.com/swaps/trade-id"
+    },
+    "partyReference" : "party4"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "fooBusinessCenters"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6,
+              "rollConvention" : "_14"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "1994-12-14"
+              }
+            },
+            "id" : "fooFloatingCalcPeriodDates",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "DEFR" ],
+                  "id" : "fooBusinessCenters"
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "1999-12-14"
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "EUR_LIBOR_BBA",
+              "indexTenor" : {
+                "period" : "M",
+                "periodMultiplier" : 6
+              }
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party3",
+            "receiverPartyReference" : "party4"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "fooFloatingCalcPeriodDates",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "fooBusinessCenters"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 20000000.00,
+                "currency" : "EUR",
+                "currencyScheme" : "fooCurrencyScheme"
+              }
+            }
+          },
+          "resetDates" : {
+            "calculationPeriodDatesReference" : "fooFloatingCalcPeriodDates",
+            "fixingDates" : {
+              "period" : "D",
+              "periodMultiplier" : -2,
+              "dayType" : "BUSINESS",
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO" ]
+              },
+              "businessDayConvention" : "NONE",
+              "dateRelativeTo" : "fooResetDates"
+            },
+            "id" : "fooResetDates",
+            "resetDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "fooBusinessCenters"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "resetFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            },
+            "resetRelativeTo" : "CALCULATION_PERIOD_START_DATE"
+          },
+          "rosettaKeyValue" : "2949873c"
+        }, {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "fooBusinessCenters"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1,
+              "rollConvention" : "_14"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "1994-12-14"
+              }
+            },
+            "id" : "fooFixedCalcPeriodDates",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCentersReference" : "fooBusinessCenters"
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "1999-12-14"
+            }
+          },
+          "dayCountFraction" : "_30E_360",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.06
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party4",
+            "receiverPartyReference" : "party3"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "fooFixedCalcPeriodDates",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCentersReference" : "fooBusinessCenters"
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 20000000.00,
+                "currency" : "EUR",
+                "currencyScheme" : "fooCurrencyScheme"
+              }
+            }
+          },
+          "rosettaKeyValue" : "5618c694"
+        } ]
+      },
+      "rosettaKeyValue" : "6ce76c30"
+    },
+    "productIdentification" : {
+      "productQualifier" : "InterestRate_IRSwap_FixedFloat_PlainVanilla"
+    }
+  },
+  "party" : [ {
+    "id" : "party3",
+    "legalEntity" : {
+      "name" : "Party A"
+    },
+    "partyId" : [ "PARTYAUS33" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "party4",
+    "partyId" : [ "BARCGB2L" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "1994-12-12"
+  },
+  "rosettaKey" : "54aff133"
+}

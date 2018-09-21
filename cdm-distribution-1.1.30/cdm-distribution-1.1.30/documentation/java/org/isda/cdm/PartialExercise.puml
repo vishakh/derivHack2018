@@ -1,0 +1,13 @@
+@startuml
+
+    class PartialExercise [[PartialExercise.html]] {
+        +getIntegralMultipleAmount(): BigDecimal
+        +getMinimumNotionalAmount(): BigDecimal
+        +getMinimumNumberOfOptions(): Integer
+        +getNotionaReference(): String
+        +toBuilder(): PartialExercise.PartialExerciseBuilder
+        {static} +builder(): PartialExercise.PartialExerciseBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

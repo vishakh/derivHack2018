@@ -1,0 +1,19 @@
+@startuml
+
+    class Execution.ExecutionBuilder [[Execution.ExecutionBuilder.html]] {
+        +getContractualProduct(): ContractualProduct.ContractualProductBuilder
+        +getOrCreateContractualProduct(): ContractualProduct.ContractualProductBuilder
+        +getParty(): List<Party.PartyBuilder>
+        +getOrCreateParty(int): Party.PartyBuilder
+        +getTradeHeader(): TradeHeader.TradeHeaderBuilder
+        +getOrCreateTradeHeader(): TradeHeader.TradeHeaderBuilder
+        +setContractualProduct(ContractualProduct): Execution.ExecutionBuilder
+        +setContractualProductBuilder(ContractualProduct.ContractualProductBuilder): Execution.ExecutionBuilder
+        +addParty(Party): Execution.ExecutionBuilder
+        +addPartyBuilder(Party.PartyBuilder): Execution.ExecutionBuilder
+        +setTradeHeader(TradeHeader): Execution.ExecutionBuilder
+        +setTradeHeaderBuilder(TradeHeader.TradeHeaderBuilder): Execution.ExecutionBuilder
+        +build(): Execution
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class CrossCurrencyTerms.CrossCurrencyTermsBuilder [[CrossCurrencyTerms.CrossCurrencyTermsBuilder.html]] {
+        +getPrincipalExchanges(): PrincipalExchanges.PrincipalExchangesBuilder
+        +getOrCreatePrincipalExchanges(): PrincipalExchanges.PrincipalExchangesBuilder
+        +getSettlementProvision(): SettlementProvision.SettlementProvisionBuilder
+        +getOrCreateSettlementProvision(): SettlementProvision.SettlementProvisionBuilder
+        +setPrincipalExchanges(PrincipalExchanges): CrossCurrencyTerms.CrossCurrencyTermsBuilder
+        +setPrincipalExchangesBuilder(PrincipalExchanges.PrincipalExchangesBuilder): CrossCurrencyTerms.CrossCurrencyTermsBuilder
+        +setSettlementProvision(SettlementProvision): CrossCurrencyTerms.CrossCurrencyTermsBuilder
+        +setSettlementProvisionBuilder(SettlementProvision.SettlementProvisionBuilder): CrossCurrencyTerms.CrossCurrencyTermsBuilder
+        +build(): CrossCurrencyTerms
+    }
+
+@enduml

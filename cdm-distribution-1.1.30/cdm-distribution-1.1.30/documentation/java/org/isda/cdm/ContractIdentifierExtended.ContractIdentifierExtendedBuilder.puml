@@ -1,0 +1,9 @@
+@startuml
+
+    class ContractIdentifierExtended.ContractIdentifierExtendedBuilder [[ContractIdentifierExtended.ContractIdentifierExtendedBuilder.html]] {
+        +getAssociatedParty(): String
+        +setAssociatedParty(String): ContractIdentifierExtended.ContractIdentifierExtendedBuilder
+        +build(): ContractIdentifierExtended
+    }
+
+@enduml

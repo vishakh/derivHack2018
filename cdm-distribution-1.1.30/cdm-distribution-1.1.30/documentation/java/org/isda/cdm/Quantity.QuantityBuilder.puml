@@ -1,0 +1,11 @@
+@startuml
+
+    class Quantity.QuantityBuilder [[Quantity.QuantityBuilder.html]] {
+        +getAmount(): BigDecimal
+        +getUnit(): UnitEnum
+        +setAmount(BigDecimal): Quantity.QuantityBuilder
+        +setUnit(UnitEnum): Quantity.QuantityBuilder
+        +build(): Quantity
+    }
+
+@enduml

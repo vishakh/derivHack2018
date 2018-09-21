@@ -1,0 +1,11 @@
+@startuml
+
+    class OptionalEarlyTerminationAdjustedDates.OptionalEarlyTerminationAdjustedDatesBuilder [[OptionalEarlyTerminationAdjustedDates.OptionalEarlyTerminationAdjustedDatesBuilder.html]] {
+        +getEarlyTerminationEvent(): List<EarlyTerminationEvent.EarlyTerminationEventBuilder>
+        +getOrCreateEarlyTerminationEvent(int): EarlyTerminationEvent.EarlyTerminationEventBuilder
+        +addEarlyTerminationEvent(EarlyTerminationEvent): OptionalEarlyTerminationAdjustedDates.OptionalEarlyTerminationAdjustedDatesBuilder
+        +addEarlyTerminationEventBuilder(EarlyTerminationEvent.EarlyTerminationEventBuilder): OptionalEarlyTerminationAdjustedDates.OptionalEarlyTerminationAdjustedDatesBuilder
+        +build(): OptionalEarlyTerminationAdjustedDates
+    }
+
+@enduml

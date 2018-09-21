@@ -1,0 +1,7 @@
+@startuml
+
+    class MortgageValidator [[MortgageValidator.html]] {
+        +validate(Mortgage): ValidationResult<Mortgage>
+    }
+
+@enduml

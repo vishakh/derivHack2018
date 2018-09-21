@@ -1,0 +1,11 @@
+@startuml
+
+    class Collateral.CollateralBuilder [[Collateral.CollateralBuilder.html]] {
+        +getIndependentAmount(): IndependentAmount.IndependentAmountBuilder
+        +getOrCreateIndependentAmount(): IndependentAmount.IndependentAmountBuilder
+        +setIndependentAmount(IndependentAmount): Collateral.CollateralBuilder
+        +setIndependentAmountBuilder(IndependentAmount.IndependentAmountBuilder): Collateral.CollateralBuilder
+        +build(): Collateral
+    }
+
+@enduml

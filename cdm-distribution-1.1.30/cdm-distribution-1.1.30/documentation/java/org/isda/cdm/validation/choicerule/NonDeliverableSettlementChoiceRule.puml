@@ -1,0 +1,7 @@
+@startuml
+
+    class NonDeliverableSettlementChoiceRule [[NonDeliverableSettlementChoiceRule.html]] {
+        +validate(NonDeliverableSettlement): ValidationResult<NonDeliverableSettlement>
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class CreditSupportAgreement [[CreditSupportAgreement.html]] {
+        +getDate(): LocalDate
+        +getIdentifierValue(): String
+        +getType(): CreditSupportAgreementTypeEnum
+        +getTypeScheme(): String
+        +toBuilder(): CreditSupportAgreement.CreditSupportAgreementBuilder
+        {static} +builder(): CreditSupportAgreement.CreditSupportAgreementBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

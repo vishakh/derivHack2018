@@ -1,0 +1,7 @@
+@startuml
+
+    class IsObservation [[IsObservation.html]] {
+        +apply(Event): QualifyResult
+    }
+
+@enduml

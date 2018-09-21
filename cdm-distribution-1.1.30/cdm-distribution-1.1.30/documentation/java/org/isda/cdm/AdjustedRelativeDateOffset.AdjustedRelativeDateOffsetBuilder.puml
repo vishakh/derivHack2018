@@ -1,0 +1,11 @@
+@startuml
+
+    class AdjustedRelativeDateOffset.AdjustedRelativeDateOffsetBuilder [[AdjustedRelativeDateOffset.AdjustedRelativeDateOffsetBuilder.html]] {
+        +getRelativeDateAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getOrCreateRelativeDateAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +setRelativeDateAdjustments(BusinessDayAdjustments): AdjustedRelativeDateOffset.AdjustedRelativeDateOffsetBuilder
+        +setRelativeDateAdjustmentsBuilder(BusinessDayAdjustments.BusinessDayAdjustmentsBuilder): AdjustedRelativeDateOffset.AdjustedRelativeDateOffsetBuilder
+        +build(): AdjustedRelativeDateOffset
+    }
+
+@enduml

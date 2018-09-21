@@ -1,0 +1,10 @@
+@startuml
+
+    class Commodity [[Commodity.html]] {
+        +Commodity(Commodity.CommodityBuilder)
+        +toBuilder(): Commodity.CommodityBuilder
+        {static} +builder(): Commodity.CommodityBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

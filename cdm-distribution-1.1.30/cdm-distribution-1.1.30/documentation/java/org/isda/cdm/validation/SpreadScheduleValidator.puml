@@ -1,0 +1,7 @@
+@startuml
+
+    class SpreadScheduleValidator [[SpreadScheduleValidator.html]] {
+        +validate(SpreadSchedule): ValidationResult<SpreadSchedule>
+    }
+
+@enduml

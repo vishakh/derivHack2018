@@ -1,0 +1,7 @@
+@startuml
+
+    class AveragingPeriodOnlyExistsValidator [[AveragingPeriodOnlyExistsValidator.html]] {
+        +validate(AveragingPeriod, String): ValidationResult<AveragingPeriod>
+    }
+
+@enduml

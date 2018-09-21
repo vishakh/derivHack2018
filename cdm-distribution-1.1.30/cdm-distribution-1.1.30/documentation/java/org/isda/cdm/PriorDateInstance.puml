@@ -1,0 +1,11 @@
+@startuml
+
+    class PriorDateInstance [[PriorDateInstance.html]] {
+        +getContractReference(): Identifier
+        +getDate(): LocalDate
+        +toBuilder(): PriorDateInstance.PriorDateInstanceBuilder
+        {static} +builder(): PriorDateInstance.PriorDateInstanceBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

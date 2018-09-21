@@ -1,0 +1,7 @@
+@startuml
+
+    class PercentageRuleValidator [[PercentageRuleValidator.html]] {
+        +validate(PercentageRule): ValidationResult<PercentageRule>
+    }
+
+@enduml

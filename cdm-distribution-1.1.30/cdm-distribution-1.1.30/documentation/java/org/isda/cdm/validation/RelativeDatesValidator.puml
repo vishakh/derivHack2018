@@ -1,0 +1,7 @@
+@startuml
+
+    class RelativeDatesValidator [[RelativeDatesValidator.html]] {
+        +validate(RelativeDates): ValidationResult<RelativeDates>
+    }
+
+@enduml

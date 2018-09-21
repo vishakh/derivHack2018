@@ -1,0 +1,15 @@
+@startuml
+
+    class IssuerTradeId.IssuerTradeIdBuilder [[IssuerTradeId.IssuerTradeIdBuilder.html]] {
+        +getIdentifier(): String
+        +getIdentifierScheme(): String
+        +getIssuer(): String
+        +getIssuerScheme(): String
+        +setIdentifier(String): IssuerTradeId.IssuerTradeIdBuilder
+        +setIdentifierScheme(String): IssuerTradeId.IssuerTradeIdBuilder
+        +setIssuer(String): IssuerTradeId.IssuerTradeIdBuilder
+        +setIssuerScheme(String): IssuerTradeId.IssuerTradeIdBuilder
+        +build(): IssuerTradeId
+    }
+
+@enduml

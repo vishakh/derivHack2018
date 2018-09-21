@@ -1,0 +1,7 @@
+@startuml
+
+    class ResetDatesRateCutOffDaysOffsetDataRule [[ResetDatesRateCutOffDaysOffsetDataRule.html]] {
+        +validate(ResetDates): ValidationResult<ResetDates>
+    }
+
+@enduml

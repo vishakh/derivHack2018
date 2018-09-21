@@ -1,0 +1,12 @@
+@startuml
+
+    class FrequencyMeta [[FrequencyMeta.html]] {
+        +dataRules(): List<Validator<Frequency>>
+        +choiceRuleValidators(): List<Validator<Frequency>>
+        +getOutMappings(): Multimap<String, OutMapping<Frequency, ?>>
+        +getQualifyFunctions(): List<Function<Frequency, QualifyResult>>
+        +validator(): Validator<Frequency>
+        +onlyExistsValidator(): ValidatorWithArg<Frequency, String>
+    }
+
+@enduml

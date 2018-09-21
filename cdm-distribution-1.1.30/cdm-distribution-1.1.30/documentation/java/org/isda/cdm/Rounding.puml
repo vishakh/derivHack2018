@@ -1,0 +1,11 @@
+@startuml
+
+    class Rounding [[Rounding.html]] {
+        +getPrecision(): Integer
+        +getRoundingDirection(): RoundingDirectionEnum
+        +toBuilder(): Rounding.RoundingBuilder
+        {static} +builder(): Rounding.RoundingBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

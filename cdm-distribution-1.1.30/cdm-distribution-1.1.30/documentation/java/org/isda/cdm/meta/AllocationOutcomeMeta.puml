@@ -1,0 +1,12 @@
+@startuml
+
+    class AllocationOutcomeMeta [[AllocationOutcomeMeta.html]] {
+        +dataRules(): List<Validator<AllocationOutcome>>
+        +choiceRuleValidators(): List<Validator<AllocationOutcome>>
+        +getOutMappings(): Multimap<String, OutMapping<AllocationOutcome, ?>>
+        +getQualifyFunctions(): List<Function<AllocationOutcome, QualifyResult>>
+        +validator(): Validator<AllocationOutcome>
+        +onlyExistsValidator(): ValidatorWithArg<AllocationOutcome, String>
+    }
+
+@enduml

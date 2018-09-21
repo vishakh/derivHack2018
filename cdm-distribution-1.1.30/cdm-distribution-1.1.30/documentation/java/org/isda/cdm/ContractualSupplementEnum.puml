@@ -1,0 +1,13 @@
+@startuml
+
+    enum ContractualSupplementEnum [[ContractualSupplementEnum.html]] {
+        {static} +ABX
+        {static} +CD_SON_MBS
+        {static} +ISDA_1999_CREDIT_CONVERTIBLE_EXCHANGEABLE_ACCRETING_OBLIGATIONS
+        {static} +ISDA_1999_CREDIT_SUCCESSOR_AND_CREDIT_EVENTS
+        {static} +ISDA_2003_CREDIT_MAY_2003
+        {static} +I_TRAXX_EUROPE_DEALER
+        {static} +STANDARD_LCDS
+    }
+
+@enduml

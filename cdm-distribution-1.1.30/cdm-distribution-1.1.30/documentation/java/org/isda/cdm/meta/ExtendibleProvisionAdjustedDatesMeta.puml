@@ -1,0 +1,12 @@
+@startuml
+
+    class ExtendibleProvisionAdjustedDatesMeta [[ExtendibleProvisionAdjustedDatesMeta.html]] {
+        +dataRules(): List<Validator<ExtendibleProvisionAdjustedDates>>
+        +choiceRuleValidators(): List<Validator<ExtendibleProvisionAdjustedDates>>
+        +getOutMappings(): Multimap<String, OutMapping<ExtendibleProvisionAdjustedDates, ?>>
+        +getQualifyFunctions(): List<Function<ExtendibleProvisionAdjustedDates, QualifyResult>>
+        +validator(): Validator<ExtendibleProvisionAdjustedDates>
+        +onlyExistsValidator(): ValidatorWithArg<ExtendibleProvisionAdjustedDates, String>
+    }
+
+@enduml

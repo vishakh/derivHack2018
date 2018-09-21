@@ -1,0 +1,8 @@
+@startuml
+
+    enum StepRelativeToEnum [[StepRelativeToEnum.html]] {
+        {static} +INITIAL
+        {static} +PREVIOUS
+    }
+
+@enduml

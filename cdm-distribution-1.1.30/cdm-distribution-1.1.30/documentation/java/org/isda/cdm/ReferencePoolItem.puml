@@ -1,0 +1,13 @@
+@startuml
+
+    class ReferencePoolItem [[ReferencePoolItem.html]] {
+        +getConstituentWeight(): ConstituentWeight
+        +getProtectionTermsReference(): String
+        +getReferencePair(): ReferencePair
+        +getSettlementTermsReference(): String
+        +toBuilder(): ReferencePoolItem.ReferencePoolItemBuilder
+        {static} +builder(): ReferencePoolItem.ReferencePoolItemBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

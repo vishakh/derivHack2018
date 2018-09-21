@@ -1,0 +1,7 @@
+@startuml
+
+    class ResetPrimitiveOnlyExistsValidator [[ResetPrimitiveOnlyExistsValidator.html]] {
+        +validate(ResetPrimitive, String): ValidationResult<ResetPrimitive>
+    }
+
+@enduml

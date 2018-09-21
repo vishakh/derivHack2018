@@ -1,0 +1,16 @@
+@startuml
+
+    class OtherAgreement [[OtherAgreement.html]] {
+        +getDate(): LocalDate
+        +getIdentifier(): String
+        +getIdentifierScheme(): String
+        +getType(): String
+        +getTypeScheme(): String
+        +getVersion(): String
+        +getVersionScheme(): String
+        +toBuilder(): OtherAgreement.OtherAgreementBuilder
+        {static} +builder(): OtherAgreement.OtherAgreementBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

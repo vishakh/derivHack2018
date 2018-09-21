@@ -1,0 +1,12 @@
+@startuml
+
+    class BasketReferenceInformationMeta [[BasketReferenceInformationMeta.html]] {
+        +dataRules(): List<Validator<BasketReferenceInformation>>
+        +choiceRuleValidators(): List<Validator<BasketReferenceInformation>>
+        +getOutMappings(): Multimap<String, OutMapping<BasketReferenceInformation, ?>>
+        +getQualifyFunctions(): List<Function<BasketReferenceInformation, QualifyResult>>
+        +validator(): Validator<BasketReferenceInformation>
+        +onlyExistsValidator(): ValidatorWithArg<BasketReferenceInformation, String>
+    }
+
+@enduml

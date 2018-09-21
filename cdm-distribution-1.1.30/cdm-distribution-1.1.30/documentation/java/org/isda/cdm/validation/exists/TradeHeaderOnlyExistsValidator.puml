@@ -1,0 +1,7 @@
+@startuml
+
+    class TradeHeaderOnlyExistsValidator [[TradeHeaderOnlyExistsValidator.html]] {
+        +validate(TradeHeader, String): ValidationResult<TradeHeader>
+    }
+
+@enduml

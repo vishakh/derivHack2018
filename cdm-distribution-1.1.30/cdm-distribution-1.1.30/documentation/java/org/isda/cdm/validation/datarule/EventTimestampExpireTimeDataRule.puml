@@ -1,0 +1,7 @@
+@startuml
+
+    class EventTimestampExpireTimeDataRule [[EventTimestampExpireTimeDataRule.html]] {
+        +validate(EventTimestamp): ValidationResult<EventTimestamp>
+    }
+
+@enduml

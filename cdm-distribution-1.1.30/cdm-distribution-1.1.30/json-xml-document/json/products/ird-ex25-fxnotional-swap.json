@@ -1,0 +1,237 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "123",
+      "identifierScheme" : "http://www.partyA.com/trade-id"
+    },
+    "partyReference" : "party1"
+  }, {
+    "identifierValue" : {
+      "identifier" : "123",
+      "identifierScheme" : "http://www.partyB.com/trade-id"
+    },
+    "partyReference" : "party2"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY", "JPTO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6,
+              "rollConvention" : "_11"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2006-01-11"
+              }
+            },
+            "id" : "fixedCalcPeriodDates",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "GBLO", "USNY", "JPTO" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2011-01-11"
+            }
+          },
+          "crossCurrencyTerms" : {
+            "principalExchanges" : {
+              "finalExchange" : true,
+              "initialExchange" : true,
+              "intermediateExchange" : true
+            }
+          },
+          "dayCountFraction" : "ACT_365_FIXED",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.01
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party2",
+            "receiverPartyReference" : "party1"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "fixedCalcPeriodDates",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY", "JPTO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "id" : "notionalScheduleJPY",
+              "notionalStepSchedule" : {
+                "initialValue" : 1000000000,
+                "currency" : "JPY"
+              }
+            }
+          },
+          "rosettaKeyValue" : "3644c4d8"
+        }, {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY", "JPTO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3,
+              "rollConvention" : "_11"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2006-01-11"
+              }
+            },
+            "id" : "floatingCalcPeriodDates",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "GBLO", "USNY", "JPTO" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2011-01-11"
+            }
+          },
+          "crossCurrencyTerms" : {
+            "principalExchanges" : {
+              "finalExchange" : true,
+              "initialExchange" : true,
+              "intermediateExchange" : true
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "USD_LIBOR_BBA",
+              "indexTenor" : {
+                "period" : "M",
+                "periodMultiplier" : 3
+              }
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party1",
+            "receiverPartyReference" : "party2"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates",
+            "id" : "floatingPaymentDates",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY", "JPTO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            }
+          },
+          "quantity" : {
+            "fxLinkedNotional" : {
+              "constantNotionalScheduleReference" : "notionalScheduleJPY",
+              "fxSpotRateSource" : {
+                "fixingTime" : {
+                  "businessCenter" : "JPTO",
+                  "hourMinuteTime" : "17:00:00"
+                },
+                "primaryRateSource" : {
+                  "sourceProvider" : "BANK_OF_JAPAN"
+                }
+              },
+              "varyingNotionalCurrency" : "USD",
+              "varyingNotionalFixingDates" : {
+                "period" : "D",
+                "periodMultiplier" : -2,
+                "dayType" : "BUSINESS",
+                "businessCenters" : {
+                  "businessCenter" : [ "USNY", "JPTO" ]
+                },
+                "businessDayConvention" : "NONE",
+                "dateRelativeTo" : "floatingResetDates"
+              },
+              "varyingNotionalInterimExchangePaymentDates" : {
+                "period" : "D",
+                "periodMultiplier" : 0,
+                "businessDayConvention" : "NONE",
+                "dateRelativeTo" : "floatingPaymentDates"
+              }
+            }
+          },
+          "resetDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates",
+            "fixingDates" : {
+              "period" : "D",
+              "periodMultiplier" : -2,
+              "dayType" : "BUSINESS",
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO" ]
+              },
+              "businessDayConvention" : "NONE",
+              "dateRelativeTo" : "floatingResetDates"
+            },
+            "id" : "floatingResetDates",
+            "resetDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY", "JPTO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "resetFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            },
+            "resetRelativeTo" : "CALCULATION_PERIOD_START_DATE"
+          },
+          "rosettaKeyValue" : "78c0e373"
+        } ]
+      },
+      "rosettaKeyValue" : "31af6115"
+    },
+    "productIdentification" : {
+      "productQualifier" : "InterestRate_CrossCurrency_FixedFloat"
+    }
+  },
+  "party" : [ {
+    "id" : "party1",
+    "partyId" : [ "party A" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "party2",
+    "partyId" : [ "party B" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2001-01-09"
+  },
+  "rosettaKey" : "3bec37bd"
+}

@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractHedgingPartyDataRule [[ContractHedgingPartyDataRule.html]] {
+        +validate(Contract): ValidationResult<Contract>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class PhysicalSettlementTermsOnlyExistsValidator [[PhysicalSettlementTermsOnlyExistsValidator.html]] {
+        +validate(PhysicalSettlementTerms, String): ValidationResult<PhysicalSettlementTerms>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class ObservationPrimitiveMeta [[ObservationPrimitiveMeta.html]] {
+        +dataRules(): List<Validator<ObservationPrimitive>>
+        +choiceRuleValidators(): List<Validator<ObservationPrimitive>>
+        +getOutMappings(): Multimap<String, OutMapping<ObservationPrimitive, ?>>
+        +getQualifyFunctions(): List<Function<ObservationPrimitive, QualifyResult>>
+        +validator(): Validator<ObservationPrimitive>
+        +onlyExistsValidator(): ValidatorWithArg<ObservationPrimitive, String>
+    }
+
+@enduml

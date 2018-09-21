@@ -1,0 +1,7 @@
+@startuml
+
+    class ExecutionReferenceValidator [[ExecutionReferenceValidator.html]] {
+        +validate(ExecutionReference): ValidationResult<ExecutionReference>
+    }
+
+@enduml

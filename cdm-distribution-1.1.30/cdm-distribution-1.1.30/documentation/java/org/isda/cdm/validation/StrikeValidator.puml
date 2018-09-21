@@ -1,0 +1,7 @@
+@startuml
+
+    class StrikeValidator [[StrikeValidator.html]] {
+        +validate(Strike): ValidationResult<Strike>
+    }
+
+@enduml

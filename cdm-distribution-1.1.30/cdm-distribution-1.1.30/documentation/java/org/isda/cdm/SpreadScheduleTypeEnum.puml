@@ -1,0 +1,8 @@
+@startuml
+
+    enum SpreadScheduleTypeEnum [[SpreadScheduleTypeEnum.html]] {
+        {static} +LONG
+        {static} +SHORT
+    }
+
+@enduml

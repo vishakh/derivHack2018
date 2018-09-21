@@ -1,0 +1,7 @@
+@startuml
+
+    class StrikeSpreadOnlyExistsValidator [[StrikeSpreadOnlyExistsValidator.html]] {
+        +validate(StrikeSpread, String): ValidationResult<StrikeSpread>
+    }
+
+@enduml

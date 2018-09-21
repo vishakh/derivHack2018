@@ -1,0 +1,11 @@
+@startuml
+
+    class Barrier [[Barrier.html]] {
+        +getBarrierCap(): TriggerEvent
+        +getBarrierFloor(): TriggerEvent
+        +toBuilder(): Barrier.BarrierBuilder
+        {static} +builder(): Barrier.BarrierBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

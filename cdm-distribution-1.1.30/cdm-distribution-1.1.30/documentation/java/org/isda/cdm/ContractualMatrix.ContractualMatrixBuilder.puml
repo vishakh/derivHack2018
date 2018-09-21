@@ -1,0 +1,17 @@
+@startuml
+
+    class ContractualMatrix.ContractualMatrixBuilder [[ContractualMatrix.ContractualMatrixBuilder.html]] {
+        +getMatrixTerm(): MatrixTermEnum
+        +getMatrixTermScheme(): String
+        +getMatrixType(): MatrixTypeEnum
+        +getMatrixTypeScheme(): String
+        +getPublicationDate(): LocalDate
+        +setMatrixTerm(MatrixTermEnum): ContractualMatrix.ContractualMatrixBuilder
+        +setMatrixTermScheme(String): ContractualMatrix.ContractualMatrixBuilder
+        +setMatrixType(MatrixTypeEnum): ContractualMatrix.ContractualMatrixBuilder
+        +setMatrixTypeScheme(String): ContractualMatrix.ContractualMatrixBuilder
+        +setPublicationDate(LocalDate): ContractualMatrix.ContractualMatrixBuilder
+        +build(): ContractualMatrix
+    }
+
+@enduml

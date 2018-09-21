@@ -1,0 +1,7 @@
+@startuml
+
+    class CashSettlementTermsCashSettlementBusinessDaysDataRule [[CashSettlementTermsCashSettlementBusinessDaysDataRule.html]] {
+        +validate(CashSettlementTerms): ValidationResult<CashSettlementTerms>
+    }
+
+@enduml

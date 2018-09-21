@@ -1,0 +1,7 @@
+@startuml
+
+    class PhysicalExerciseQuantityDataRule [[PhysicalExerciseQuantityDataRule.html]] {
+        +validate(PhysicalExercise): ValidationResult<PhysicalExercise>
+    }
+
+@enduml

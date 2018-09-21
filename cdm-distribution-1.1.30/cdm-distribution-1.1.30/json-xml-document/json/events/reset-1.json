@@ -1,0 +1,68 @@
+{
+  "eventDate" : "2018-03-20",
+  "eventEffect" : {
+    "effectedEvent" : "651eab30"
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "reset-1"
+    }
+  },
+  "eventQualifier" : "Reset",
+  "lineage" : {
+    "contractReference" : [ {
+      "identifierValue" : {
+        "identifier" : "TW9235"
+      },
+      "issuer" : "hgyt56"
+    }, {
+      "identifierValue" : {
+        "identifier" : "SW2000"
+      },
+      "issuer" : "rt57684"
+    } ],
+    "eventReference" : [ {
+      "identifierValue" : {
+        "identifier" : "obs-1"
+      }
+    } ]
+  },
+  "messageInformation" : {
+    "messageId" : "1486297",
+    "messageIdScheme" : "http://www.party1.com/message-id",
+    "sentBy" : "894500DM8LVOSCMP9T34",
+    "sentTo" : "49300JZDC6K840D7F79"
+  },
+  "party" : [ {
+    "id" : "hgyt56",
+    "partyId" : [ "894500DM8LVOSCMP9T34" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "rt57684",
+    "partyId" : [ "549300JZDC6K840D7F79" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "reset" : [ {
+      "cashflow" : {
+        "payerReceiver" : {
+          "payerPartyReference" : "hgyt56",
+          "receiverPartyReference" : "rt57684"
+        },
+        "cashflowAmount" : {
+          "amount" : 245680.00,
+          "currency" : "USD"
+        },
+        "cashflowCalculation" : "FloatingAmount",
+        "rosettaKeyValue" : "ba6df164"
+      },
+      "date" : "2018-03-20",
+      "resetValue" : 0.875,
+      "rosettaKey" : "2e884775"
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2018-03-20T18:13:51"
+  },
+  "rosettaKey" : "651eab30"
+}

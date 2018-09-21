@@ -1,0 +1,15 @@
+@startuml
+
+    class CreditSupportAgreement.CreditSupportAgreementBuilder [[CreditSupportAgreement.CreditSupportAgreementBuilder.html]] {
+        +getDate(): LocalDate
+        +getIdentifierValue(): String
+        +getType(): CreditSupportAgreementTypeEnum
+        +getTypeScheme(): String
+        +setDate(LocalDate): CreditSupportAgreement.CreditSupportAgreementBuilder
+        +setIdentifierValue(String): CreditSupportAgreement.CreditSupportAgreementBuilder
+        +setType(CreditSupportAgreementTypeEnum): CreditSupportAgreement.CreditSupportAgreementBuilder
+        +setTypeScheme(String): CreditSupportAgreement.CreditSupportAgreementBuilder
+        +build(): CreditSupportAgreement
+    }
+
+@enduml

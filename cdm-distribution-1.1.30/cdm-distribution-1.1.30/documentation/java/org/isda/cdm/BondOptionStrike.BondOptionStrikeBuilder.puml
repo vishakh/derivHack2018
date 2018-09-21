@@ -1,0 +1,15 @@
+@startuml
+
+    class BondOptionStrike.BondOptionStrikeBuilder [[BondOptionStrike.BondOptionStrikeBuilder.html]] {
+        +getPrice(): OptionStrike.OptionStrikeBuilder
+        +getOrCreatePrice(): OptionStrike.OptionStrikeBuilder
+        +getReferenceSwapCurve(): ReferenceSwapCurve.ReferenceSwapCurveBuilder
+        +getOrCreateReferenceSwapCurve(): ReferenceSwapCurve.ReferenceSwapCurveBuilder
+        +setPrice(OptionStrike): BondOptionStrike.BondOptionStrikeBuilder
+        +setPriceBuilder(OptionStrike.OptionStrikeBuilder): BondOptionStrike.BondOptionStrikeBuilder
+        +setReferenceSwapCurve(ReferenceSwapCurve): BondOptionStrike.BondOptionStrikeBuilder
+        +setReferenceSwapCurveBuilder(ReferenceSwapCurve.ReferenceSwapCurveBuilder): BondOptionStrike.BondOptionStrikeBuilder
+        +build(): BondOptionStrike
+    }
+
+@enduml

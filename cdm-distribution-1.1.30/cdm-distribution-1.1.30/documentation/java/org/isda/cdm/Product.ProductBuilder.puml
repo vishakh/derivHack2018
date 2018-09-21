@@ -1,0 +1,15 @@
+@startuml
+
+    class Product.ProductBuilder [[Product.ProductBuilder.html]] {
+        +getContractualProduct(): ContractualProduct.ContractualProductBuilder
+        +getOrCreateContractualProduct(): ContractualProduct.ContractualProductBuilder
+        +getListedProduct(): ListedProduct.ListedProductBuilder
+        +getOrCreateListedProduct(): ListedProduct.ListedProductBuilder
+        +setContractualProduct(ContractualProduct): Product.ProductBuilder
+        +setContractualProductBuilder(ContractualProduct.ContractualProductBuilder): Product.ProductBuilder
+        +setListedProduct(ListedProduct): Product.ProductBuilder
+        +setListedProductBuilder(ListedProduct.ListedProductBuilder): Product.ProductBuilder
+        +build(): Product
+    }
+
+@enduml

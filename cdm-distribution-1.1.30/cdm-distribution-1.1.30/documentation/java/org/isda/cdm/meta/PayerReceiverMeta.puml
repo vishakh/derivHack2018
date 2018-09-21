@@ -1,0 +1,12 @@
+@startuml
+
+    class PayerReceiverMeta [[PayerReceiverMeta.html]] {
+        +dataRules(): List<Validator<PayerReceiver>>
+        +choiceRuleValidators(): List<Validator<PayerReceiver>>
+        +getOutMappings(): Multimap<String, OutMapping<PayerReceiver, ?>>
+        +getQualifyFunctions(): List<Function<PayerReceiver, QualifyResult>>
+        +validator(): Validator<PayerReceiver>
+        +onlyExistsValidator(): ValidatorWithArg<PayerReceiver, String>
+    }
+
+@enduml

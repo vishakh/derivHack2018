@@ -1,0 +1,17 @@
+@startuml
+
+    class Identifier.IdentifierBuilder [[Identifier.IdentifierBuilder.html]] {
+        +getIdentifierValue(): IdentifierValue.IdentifierValueBuilder
+        +getOrCreateIdentifierValue(): IdentifierValue.IdentifierValueBuilder
+        +getIssuer(): String
+        +getIssuerScheme(): String
+        +getVersion(): Integer
+        +setIdentifierValue(IdentifierValue): Identifier.IdentifierBuilder
+        +setIdentifierValueBuilder(IdentifierValue.IdentifierValueBuilder): Identifier.IdentifierBuilder
+        +setIssuer(String): Identifier.IdentifierBuilder
+        +setIssuerScheme(String): Identifier.IdentifierBuilder
+        +setVersion(Integer): Identifier.IdentifierBuilder
+        +build(): Identifier
+    }
+
+@enduml

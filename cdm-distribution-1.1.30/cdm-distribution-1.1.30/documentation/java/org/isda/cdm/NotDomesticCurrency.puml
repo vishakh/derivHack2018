@@ -1,0 +1,12 @@
+@startuml
+
+    class NotDomesticCurrency [[NotDomesticCurrency.html]] {
+        +getApplicable(): Boolean
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +toBuilder(): NotDomesticCurrency.NotDomesticCurrencyBuilder
+        {static} +builder(): NotDomesticCurrency.NotDomesticCurrencyBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

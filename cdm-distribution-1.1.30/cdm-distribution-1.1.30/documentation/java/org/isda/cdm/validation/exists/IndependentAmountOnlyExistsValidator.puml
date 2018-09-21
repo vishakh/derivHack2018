@@ -1,0 +1,7 @@
+@startuml
+
+    class IndependentAmountOnlyExistsValidator [[IndependentAmountOnlyExistsValidator.html]] {
+        +validate(IndependentAmount, String): ValidationResult<IndependentAmount>
+    }
+
+@enduml

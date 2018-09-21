@@ -1,0 +1,17 @@
+@startuml
+
+    class QuotedCurrencyPair.QuotedCurrencyPairBuilder [[QuotedCurrencyPair.QuotedCurrencyPairBuilder.html]] {
+        +getCurrency1(): String
+        +getCurrency1Scheme(): String
+        +getCurrency2(): String
+        +getCurrency2Scheme(): String
+        +getQuoteBasis(): QuoteBasisEnum
+        +setCurrency1(String): QuotedCurrencyPair.QuotedCurrencyPairBuilder
+        +setCurrency1Scheme(String): QuotedCurrencyPair.QuotedCurrencyPairBuilder
+        +setCurrency2(String): QuotedCurrencyPair.QuotedCurrencyPairBuilder
+        +setCurrency2Scheme(String): QuotedCurrencyPair.QuotedCurrencyPairBuilder
+        +setQuoteBasis(QuoteBasisEnum): QuotedCurrencyPair.QuotedCurrencyPairBuilder
+        +build(): QuotedCurrencyPair
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class FloatingAmount._Input [[FloatingAmount._Input.html]] {
+        +create(InterestRatePayout, ResolveRateIndex, GetRateSchedule, DaysInPeriod, CalculationPeriod): FloatingAmount._Input
+    }
+
+@enduml

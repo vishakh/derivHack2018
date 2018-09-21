@@ -1,0 +1,14 @@
+@startuml
+
+    class ReferencePair [[ReferencePair.html]] {
+        +getEntityType(): EntityTypeEnum
+        +getEntityTypeScheme(): String
+        +getNoReferenceObligation(): Boolean
+        +getReferenceEntity(): LegalEntity
+        +getReferenceObligation(): ReferenceObligation
+        +toBuilder(): ReferencePair.ReferencePairBuilder
+        {static} +builder(): ReferencePair.ReferencePairBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

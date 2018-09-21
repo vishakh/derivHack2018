@@ -1,0 +1,8 @@
+@startuml
+
+    enum IndexAnnexSourceEnum [[IndexAnnexSourceEnum.html]] {
+        {static} +MASTER_CONFIRMATION
+        {static} +PUBLISHER
+    }
+
+@enduml

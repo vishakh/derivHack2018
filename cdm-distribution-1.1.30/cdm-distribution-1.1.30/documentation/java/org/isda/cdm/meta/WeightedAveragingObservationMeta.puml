@@ -1,0 +1,12 @@
+@startuml
+
+    class WeightedAveragingObservationMeta [[WeightedAveragingObservationMeta.html]] {
+        +dataRules(): List<Validator<WeightedAveragingObservation>>
+        +choiceRuleValidators(): List<Validator<WeightedAveragingObservation>>
+        +getOutMappings(): Multimap<String, OutMapping<WeightedAveragingObservation, ?>>
+        +getQualifyFunctions(): List<Function<WeightedAveragingObservation, QualifyResult>>
+        +validator(): Validator<WeightedAveragingObservation>
+        +onlyExistsValidator(): ValidatorWithArg<WeightedAveragingObservation, String>
+    }
+
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+
+    class FallbackReferencePrice.FallbackReferencePriceBuilder [[FallbackReferencePrice.FallbackReferencePriceBuilder.html]] {
+        +getCalculationAgenDetermination(): CalculationAgent.CalculationAgentBuilder
+        +getOrCreateCalculationAgenDetermination(): CalculationAgent.CalculationAgentBuilder
+        +getFallBackSettlementRateOption(): List<SettlementRateOptionEnum>
+        +getFallBackSettlementRateOptionScheme(): String
+        +getFallbackSurveyValuationPostponement(): Boolean
+        +getValuationPostponement(): ValuationPostponement.ValuationPostponementBuilder
+        +getOrCreateValuationPostponement(): ValuationPostponement.ValuationPostponementBuilder
+        +setCalculationAgenDetermination(CalculationAgent): FallbackReferencePrice.FallbackReferencePriceBuilder
+        +setCalculationAgenDeterminationBuilder(CalculationAgent.CalculationAgentBuilder): FallbackReferencePrice.FallbackReferencePriceBuilder
+        +addFallBackSettlementRateOption(SettlementRateOptionEnum): FallbackReferencePrice.FallbackReferencePriceBuilder
+        +setFallBackSettlementRateOptionScheme(String): FallbackReferencePrice.FallbackReferencePriceBuilder
+        +setFallbackSurveyValuationPostponement(Boolean): FallbackReferencePrice.FallbackReferencePriceBuilder
+        +setValuationPostponement(ValuationPostponement): FallbackReferencePrice.FallbackReferencePriceBuilder
+        +setValuationPostponementBuilder(ValuationPostponement.ValuationPostponementBuilder): FallbackReferencePrice.FallbackReferencePriceBuilder
+        +build(): FallbackReferencePrice
+    }
+
+@enduml

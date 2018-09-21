@@ -1,0 +1,7 @@
+@startuml
+
+    class ConstituentWeightBasketPercentageDataRule [[ConstituentWeightBasketPercentageDataRule.html]] {
+        +validate(ConstituentWeight): ValidationResult<ConstituentWeight>
+    }
+
+@enduml

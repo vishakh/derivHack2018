@@ -1,0 +1,11 @@
+@startuml
+
+    class MultipleValuationDates [[MultipleValuationDates.html]] {
+        +getBusinessDaysThereafter(): Integer
+        +getNumberValuationDates(): Integer
+        +toBuilder(): MultipleValuationDates.MultipleValuationDatesBuilder
+        {static} +builder(): MultipleValuationDates.MultipleValuationDatesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

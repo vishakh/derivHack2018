@@ -1,0 +1,7 @@
+@startuml
+
+    class CashSettlementPaymentDateValidator [[CashSettlementPaymentDateValidator.html]] {
+        +validate(CashSettlementPaymentDate): ValidationResult<CashSettlementPaymentDate>
+    }
+
+@enduml

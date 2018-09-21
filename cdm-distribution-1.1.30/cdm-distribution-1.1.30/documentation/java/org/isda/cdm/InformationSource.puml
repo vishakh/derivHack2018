@@ -1,0 +1,14 @@
+@startuml
+
+    class InformationSource [[InformationSource.html]] {
+        +getSourcePage(): String
+        +getSourcePageHeading(): String
+        +getSourcePageScheme(): String
+        +getSourceProvider(): InformationProviderEnum
+        +getSourceProviderScheme(): String
+        +toBuilder(): InformationSource.InformationSourceBuilder
+        {static} +builder(): InformationSource.InformationSourceBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

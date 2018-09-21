@@ -1,0 +1,7 @@
+@startuml
+
+    class VanillaAnnualPaymentDifferentResetFrequencyDataRule [[VanillaAnnualPaymentDifferentResetFrequencyDataRule.html]] {
+        +validate(EconomicTerms): ValidationResult<EconomicTerms>
+    }
+
+@enduml

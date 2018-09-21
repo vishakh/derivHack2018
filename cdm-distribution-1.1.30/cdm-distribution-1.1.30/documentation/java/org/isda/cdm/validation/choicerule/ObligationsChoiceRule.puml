@@ -1,0 +1,7 @@
+@startuml
+
+    class ObligationsChoiceRule [[ObligationsChoiceRule.html]] {
+        +validate(Obligations): ValidationResult<Obligations>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class PubliclyAvailableInformationValidator [[PubliclyAvailableInformationValidator.html]] {
+        +validate(PubliclyAvailableInformation): ValidationResult<PubliclyAvailableInformation>
+    }
+
+@enduml

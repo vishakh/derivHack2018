@@ -1,0 +1,19 @@
+@startuml
+
+    enum IntentEnum [[IntentEnum.html]] {
+        {static} +ALLOCATION
+        {static} +COMPRESSION
+        {static} +CORRECTION
+        {static} +EARLY_TERMINATION
+        {static} +EXERCISE
+        {static} +INCREASE
+        {static} +NEW_TRADE
+        {static} +NOVATION
+        {static} +PARTIAL_NOVATION
+        {static} +PARTIAL_TERMINATION
+        {static} +PORTFOLIO_COMPRESSION
+        {static} +RENEGOTIATION
+        {static} +TERMINATION
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class PartialExercise.PartialExerciseBuilder [[PartialExercise.PartialExerciseBuilder.html]] {
+        +getIntegralMultipleAmount(): BigDecimal
+        +getMinimumNotionalAmount(): BigDecimal
+        +getMinimumNumberOfOptions(): Integer
+        +getNotionaReference(): String
+        +setIntegralMultipleAmount(BigDecimal): PartialExercise.PartialExerciseBuilder
+        +setMinimumNotionalAmount(BigDecimal): PartialExercise.PartialExerciseBuilder
+        +setMinimumNumberOfOptions(Integer): PartialExercise.PartialExerciseBuilder
+        +setNotionaReference(String): PartialExercise.PartialExerciseBuilder
+        +build(): PartialExercise
+    }
+
+@enduml

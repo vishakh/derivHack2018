@@ -1,0 +1,15 @@
+@startuml
+
+    class BondReference.BondReferenceBuilder [[BondReference.BondReferenceBuilder.html]] {
+        +getBond(): Bond.BondBuilder
+        +getOrCreateBond(): Bond.BondBuilder
+        +getConditionPrecedentBond(): Boolean
+        +getDiscrepancyClause(): Boolean
+        +setBond(Bond): BondReference.BondReferenceBuilder
+        +setBondBuilder(Bond.BondBuilder): BondReference.BondReferenceBuilder
+        +setConditionPrecedentBond(Boolean): BondReference.BondReferenceBuilder
+        +setDiscrepancyClause(Boolean): BondReference.BondReferenceBuilder
+        +build(): BondReference
+    }
+
+@enduml

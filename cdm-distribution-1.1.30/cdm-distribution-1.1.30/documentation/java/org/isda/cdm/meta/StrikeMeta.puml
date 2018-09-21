@@ -1,0 +1,12 @@
+@startuml
+
+    class StrikeMeta [[StrikeMeta.html]] {
+        +dataRules(): List<Validator<Strike>>
+        +choiceRuleValidators(): List<Validator<Strike>>
+        +getOutMappings(): Multimap<String, OutMapping<Strike, ?>>
+        +getQualifyFunctions(): List<Function<Strike, QualifyResult>>
+        +validator(): Validator<Strike>
+        +onlyExistsValidator(): ValidatorWithArg<Strike, String>
+    }
+
+@enduml

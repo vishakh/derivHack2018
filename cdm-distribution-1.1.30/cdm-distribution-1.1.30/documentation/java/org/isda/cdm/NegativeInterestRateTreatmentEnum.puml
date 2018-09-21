@@ -1,0 +1,8 @@
+@startuml
+
+    enum NegativeInterestRateTreatmentEnum [[NegativeInterestRateTreatmentEnum.html]] {
+        {static} +NEGATIVE_INTEREST_RATE_METHOD
+        {static} +ZERO_INTEREST_RATE_METHOD
+    }
+
+@enduml

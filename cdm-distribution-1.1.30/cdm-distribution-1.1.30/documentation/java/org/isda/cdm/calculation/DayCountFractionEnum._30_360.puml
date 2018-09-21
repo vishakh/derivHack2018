@@ -1,0 +1,8 @@
+@startuml
+
+    class DayCountFractionEnum._30_360 [[DayCountFractionEnum._30_360.html]] {
+        +_30_360(CalculationPeriod)
+        +calculate(InterestRatePayout): DayCountFractionEnum.CalculationResult
+    }
+
+@enduml

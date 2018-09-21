@@ -1,0 +1,7 @@
+@startuml
+
+    class AsianValidator [[AsianValidator.html]] {
+        +validate(Asian): ValidationResult<Asian>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class FutureValueAmountOnlyExistsValidator [[FutureValueAmountOnlyExistsValidator.html]] {
+        +validate(FutureValueAmount, String): ValidationResult<FutureValueAmount>
+    }
+
+@enduml

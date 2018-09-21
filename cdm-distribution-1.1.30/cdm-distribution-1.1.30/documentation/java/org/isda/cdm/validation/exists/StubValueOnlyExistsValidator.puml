@@ -1,0 +1,7 @@
+@startuml
+
+    class StubValueOnlyExistsValidator [[StubValueOnlyExistsValidator.html]] {
+        +validate(StubValue, String): ValidationResult<StubValue>
+    }
+
+@enduml

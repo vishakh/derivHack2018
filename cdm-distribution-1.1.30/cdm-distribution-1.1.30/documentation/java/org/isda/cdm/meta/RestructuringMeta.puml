@@ -1,0 +1,12 @@
+@startuml
+
+    class RestructuringMeta [[RestructuringMeta.html]] {
+        +dataRules(): List<Validator<Restructuring>>
+        +choiceRuleValidators(): List<Validator<Restructuring>>
+        +getOutMappings(): Multimap<String, OutMapping<Restructuring, ?>>
+        +getQualifyFunctions(): List<Function<Restructuring, QualifyResult>>
+        +validator(): Validator<Restructuring>
+        +onlyExistsValidator(): ValidatorWithArg<Restructuring, String>
+    }
+
+@enduml

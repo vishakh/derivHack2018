@@ -1,0 +1,10 @@
+@startuml
+
+    class AdjustedRelativeDateOffset [[AdjustedRelativeDateOffset.html]] {
+        +getRelativeDateAdjustments(): BusinessDayAdjustments
+        +toBuilder(): AdjustedRelativeDateOffset.AdjustedRelativeDateOffsetBuilder
+        {static} +builder(): AdjustedRelativeDateOffset.AdjustedRelativeDateOffsetBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

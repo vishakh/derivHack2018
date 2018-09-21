@@ -1,0 +1,7 @@
+@startuml
+
+    interface GetRateSchedule [[GetRateSchedule.html]] {
+        {abstract} +execute(FloatingRateCalculation): GetRateSchedule.CalculationResult
+    }
+
+@enduml

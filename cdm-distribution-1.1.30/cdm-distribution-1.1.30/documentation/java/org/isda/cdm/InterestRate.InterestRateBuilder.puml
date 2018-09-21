@@ -1,0 +1,19 @@
+@startuml
+
+    class InterestRate.InterestRateBuilder [[InterestRate.InterestRateBuilder.html]] {
+        +getFixedRate(): Schedule.ScheduleBuilder
+        +getOrCreateFixedRate(): Schedule.ScheduleBuilder
+        +getFloatingRate(): FloatingRateCalculation.FloatingRateCalculationBuilder
+        +getOrCreateFloatingRate(): FloatingRateCalculation.FloatingRateCalculationBuilder
+        +getInflationRate(): InflationRateCalculation.InflationRateCalculationBuilder
+        +getOrCreateInflationRate(): InflationRateCalculation.InflationRateCalculationBuilder
+        +setFixedRate(Schedule): InterestRate.InterestRateBuilder
+        +setFixedRateBuilder(Schedule.ScheduleBuilder): InterestRate.InterestRateBuilder
+        +setFloatingRate(FloatingRateCalculation): InterestRate.InterestRateBuilder
+        +setFloatingRateBuilder(FloatingRateCalculation.FloatingRateCalculationBuilder): InterestRate.InterestRateBuilder
+        +setInflationRate(InflationRateCalculation): InterestRate.InterestRateBuilder
+        +setInflationRateBuilder(InflationRateCalculation.InflationRateCalculationBuilder): InterestRate.InterestRateBuilder
+        +build(): InterestRate
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class SimplePayment [[SimplePayment.html]] {
+        +getId(): String
+        +getPaymentAmount(): Money
+        +getPaymentDate(): AdjustableOrRelativeDate
+        +toBuilder(): SimplePayment.SimplePaymentBuilder
+        {static} +builder(): SimplePayment.SimplePaymentBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

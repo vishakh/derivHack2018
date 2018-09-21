@@ -1,0 +1,21 @@
+@startuml
+
+    class ReferencePair.ReferencePairBuilder [[ReferencePair.ReferencePairBuilder.html]] {
+        +getEntityType(): EntityTypeEnum
+        +getEntityTypeScheme(): String
+        +getNoReferenceObligation(): Boolean
+        +getReferenceEntity(): LegalEntity.LegalEntityBuilder
+        +getOrCreateReferenceEntity(): LegalEntity.LegalEntityBuilder
+        +getReferenceObligation(): ReferenceObligation.ReferenceObligationBuilder
+        +getOrCreateReferenceObligation(): ReferenceObligation.ReferenceObligationBuilder
+        +setEntityType(EntityTypeEnum): ReferencePair.ReferencePairBuilder
+        +setEntityTypeScheme(String): ReferencePair.ReferencePairBuilder
+        +setNoReferenceObligation(Boolean): ReferencePair.ReferencePairBuilder
+        +setReferenceEntity(LegalEntity): ReferencePair.ReferencePairBuilder
+        +setReferenceEntityBuilder(LegalEntity.LegalEntityBuilder): ReferencePair.ReferencePairBuilder
+        +setReferenceObligation(ReferenceObligation): ReferencePair.ReferencePairBuilder
+        +setReferenceObligationBuilder(ReferenceObligation.ReferenceObligationBuilder): ReferencePair.ReferencePairBuilder
+        +build(): ReferencePair
+    }
+
+@enduml

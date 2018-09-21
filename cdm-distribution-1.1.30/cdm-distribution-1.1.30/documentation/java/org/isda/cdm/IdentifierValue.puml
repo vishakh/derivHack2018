@@ -1,0 +1,12 @@
+@startuml
+
+    class IdentifierValue [[IdentifierValue.html]] {
+        +getId(): String
+        +getIdentifier(): String
+        +getIdentifierScheme(): String
+        +toBuilder(): IdentifierValue.IdentifierValueBuilder
+        {static} +builder(): IdentifierValue.IdentifierValueBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

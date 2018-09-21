@@ -1,0 +1,11 @@
+@startuml
+
+    class SettlementRateSource [[SettlementRateSource.html]] {
+        +getCashSettlementReferenceBanks(): CashSettlementReferenceBanks
+        +getInformationSource(): InformationSource
+        +toBuilder(): SettlementRateSource.SettlementRateSourceBuilder
+        {static} +builder(): SettlementRateSource.SettlementRateSourceBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

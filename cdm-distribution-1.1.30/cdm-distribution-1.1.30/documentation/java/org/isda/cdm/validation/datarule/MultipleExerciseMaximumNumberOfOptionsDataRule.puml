@@ -1,0 +1,7 @@
+@startuml
+
+    class MultipleExerciseMaximumNumberOfOptionsDataRule [[MultipleExerciseMaximumNumberOfOptionsDataRule.html]] {
+        +validate(MultipleExercise): ValidationResult<MultipleExercise>
+    }
+
+@enduml

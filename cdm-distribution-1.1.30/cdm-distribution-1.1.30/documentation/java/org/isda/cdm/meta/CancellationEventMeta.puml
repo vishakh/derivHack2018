@@ -1,0 +1,12 @@
+@startuml
+
+    class CancellationEventMeta [[CancellationEventMeta.html]] {
+        +dataRules(): List<Validator<CancellationEvent>>
+        +choiceRuleValidators(): List<Validator<CancellationEvent>>
+        +getOutMappings(): Multimap<String, OutMapping<CancellationEvent, ?>>
+        +getQualifyFunctions(): List<Function<CancellationEvent, QualifyResult>>
+        +validator(): Validator<CancellationEvent>
+        +onlyExistsValidator(): ValidatorWithArg<CancellationEvent, String>
+    }
+
+@enduml

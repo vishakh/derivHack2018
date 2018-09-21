@@ -1,0 +1,9 @@
+@startuml
+
+    enum QuotationSideEnum [[QuotationSideEnum.html]] {
+        {static} +BID
+        {static} +ASK
+        {static} +MID
+    }
+
+@enduml

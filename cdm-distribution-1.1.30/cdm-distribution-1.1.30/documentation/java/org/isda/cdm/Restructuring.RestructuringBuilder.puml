@@ -1,0 +1,17 @@
+@startuml
+
+    class Restructuring.RestructuringBuilder [[Restructuring.RestructuringBuilder.html]] {
+        +getApplicable(): Boolean
+        +getMultipleCreditEventNotices(): Boolean
+        +getMultipleHolderObligation(): Boolean
+        +getRestructuringType(): RestructuringEnum
+        +getRestructuringTypeScheme(): String
+        +setApplicable(Boolean): Restructuring.RestructuringBuilder
+        +setMultipleCreditEventNotices(Boolean): Restructuring.RestructuringBuilder
+        +setMultipleHolderObligation(Boolean): Restructuring.RestructuringBuilder
+        +setRestructuringType(RestructuringEnum): Restructuring.RestructuringBuilder
+        +setRestructuringTypeScheme(String): Restructuring.RestructuringBuilder
+        +build(): Restructuring
+    }
+
+@enduml

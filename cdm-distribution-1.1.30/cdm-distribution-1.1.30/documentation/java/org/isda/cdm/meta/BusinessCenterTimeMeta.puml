@@ -1,0 +1,12 @@
+@startuml
+
+    class BusinessCenterTimeMeta [[BusinessCenterTimeMeta.html]] {
+        +dataRules(): List<Validator<BusinessCenterTime>>
+        +choiceRuleValidators(): List<Validator<BusinessCenterTime>>
+        +getOutMappings(): Multimap<String, OutMapping<BusinessCenterTime, ?>>
+        +getQualifyFunctions(): List<Function<BusinessCenterTime, QualifyResult>>
+        +validator(): Validator<BusinessCenterTime>
+        +onlyExistsValidator(): ValidatorWithArg<BusinessCenterTime, String>
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class ProductIdentifier.ProductIdentifierBuilder [[ProductIdentifier.ProductIdentifierBuilder.html]] {
+        +getProductId(): String
+        +getProductIdScheme(): String
+        +getProductIdSource(): ProductIdSourceEnum
+        +setProductId(String): ProductIdentifier.ProductIdentifierBuilder
+        +setProductIdScheme(String): ProductIdentifier.ProductIdentifierBuilder
+        +setProductIdSource(ProductIdSourceEnum): ProductIdentifier.ProductIdentifierBuilder
+        +build(): ProductIdentifier
+    }
+
+@enduml

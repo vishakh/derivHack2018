@@ -1,0 +1,15 @@
+@startuml
+
+    class PrincipalExchanges.PrincipalExchangesBuilder [[PrincipalExchanges.PrincipalExchangesBuilder.html]] {
+        +getFinalExchange(): Boolean
+        +getId(): String
+        +getInitialExchange(): Boolean
+        +getIntermediateExchange(): Boolean
+        +setFinalExchange(Boolean): PrincipalExchanges.PrincipalExchangesBuilder
+        +setId(String): PrincipalExchanges.PrincipalExchangesBuilder
+        +setInitialExchange(Boolean): PrincipalExchanges.PrincipalExchangesBuilder
+        +setIntermediateExchange(Boolean): PrincipalExchanges.PrincipalExchangesBuilder
+        +build(): PrincipalExchanges
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class FutureValueAmountCalculationPeriodNumberOfDaysDataRule [[FutureValueAmountCalculationPeriodNumberOfDaysDataRule.html]] {
+        +validate(FutureValueAmount): ValidationResult<FutureValueAmount>
+    }
+
+@enduml

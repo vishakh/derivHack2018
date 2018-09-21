@@ -1,0 +1,7 @@
+@startuml
+
+    class IsInterestRateInflationSwapFixedFloatYearOnYear [[IsInterestRateInflationSwapFixedFloatYearOnYear.html]] {
+        +apply(EconomicTerms): QualifyResult
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class CreditEventsMeta [[CreditEventsMeta.html]] {
+        +dataRules(): List<Validator<CreditEvents>>
+        +choiceRuleValidators(): List<Validator<CreditEvents>>
+        +getOutMappings(): Multimap<String, OutMapping<CreditEvents, ?>>
+        +getQualifyFunctions(): List<Function<CreditEvents, QualifyResult>>
+        +validator(): Validator<CreditEvents>
+        +onlyExistsValidator(): ValidatorWithArg<CreditEvents, String>
+    }
+
+@enduml

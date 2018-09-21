@@ -1,0 +1,17 @@
+@startuml
+
+    class Composite.CompositeBuilder [[Composite.CompositeBuilder.html]] {
+        +getDeterminationMethod(): DeterminationMethodEnum
+        +getFxSpotRateSource(): FxSpotRateSource.FxSpotRateSourceBuilder
+        +getOrCreateFxSpotRateSource(): FxSpotRateSource.FxSpotRateSourceBuilder
+        +getRelativeDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getOrCreateRelativeDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +setDeterminationMethod(DeterminationMethodEnum): Composite.CompositeBuilder
+        +setFxSpotRateSource(FxSpotRateSource): Composite.CompositeBuilder
+        +setFxSpotRateSourceBuilder(FxSpotRateSource.FxSpotRateSourceBuilder): Composite.CompositeBuilder
+        +setRelativeDate(RelativeDateOffset): Composite.CompositeBuilder
+        +setRelativeDateBuilder(RelativeDateOffset.RelativeDateOffsetBuilder): Composite.CompositeBuilder
+        +build(): Composite
+    }
+
+@enduml

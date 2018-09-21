@@ -1,0 +1,13 @@
+@startuml
+
+    class PubliclyAvailableInformation.PubliclyAvailableInformationBuilder [[PubliclyAvailableInformation.PubliclyAvailableInformationBuilder.html]] {
+        +getPublicSource(): List<String>
+        +getSpecifiedNumber(): Integer
+        +getStandardPublicSources(): Boolean
+        +addPublicSource(String): PubliclyAvailableInformation.PubliclyAvailableInformationBuilder
+        +setSpecifiedNumber(Integer): PubliclyAvailableInformation.PubliclyAvailableInformationBuilder
+        +setStandardPublicSources(Boolean): PubliclyAvailableInformation.PubliclyAvailableInformationBuilder
+        +build(): PubliclyAvailableInformation
+    }
+
+@enduml

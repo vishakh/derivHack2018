@@ -1,0 +1,12 @@
+@startuml
+
+    class TrancheMeta [[TrancheMeta.html]] {
+        +dataRules(): List<Validator<Tranche>>
+        +choiceRuleValidators(): List<Validator<Tranche>>
+        +getOutMappings(): Multimap<String, OutMapping<Tranche, ?>>
+        +getQualifyFunctions(): List<Function<Tranche, QualifyResult>>
+        +validator(): Validator<Tranche>
+        +onlyExistsValidator(): ValidatorWithArg<Tranche, String>
+    }
+
+@enduml

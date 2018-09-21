@@ -1,0 +1,12 @@
+@startuml
+
+    class ExercisePeriod [[ExercisePeriod.html]] {
+        +getEarliestExerciseDateTenor(): Period
+        +getExerciseFrequency(): Period
+        +getId(): String
+        +toBuilder(): ExercisePeriod.ExercisePeriodBuilder
+        {static} +builder(): ExercisePeriod.ExercisePeriodBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

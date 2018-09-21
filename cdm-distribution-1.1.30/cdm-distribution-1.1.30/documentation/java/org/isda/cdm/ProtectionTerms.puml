@@ -1,0 +1,14 @@
+@startuml
+
+    class ProtectionTerms [[ProtectionTerms.html]] {
+        +getCreditEvents(): CreditEvents
+        +getFloatingAmountEvents(): FloatingAmountEvents
+        +getId(): String
+        +getNotionalAmount(): Money
+        +getObligations(): Obligations
+        +toBuilder(): ProtectionTerms.ProtectionTermsBuilder
+        {static} +builder(): ProtectionTerms.ProtectionTermsBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class Commodity.CommodityBuilder [[Commodity.CommodityBuilder.html]] {
+        +build(): Commodity
+    }
+
+@enduml

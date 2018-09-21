@@ -1,0 +1,13 @@
+@startuml
+
+    class CashPriceMethod [[CashPriceMethod.html]] {
+        +getCashSettlementCurrency(): String
+        +getCashSettlementCurrencyScheme(): String
+        +getCashSettlementReferenceBanks(): CashSettlementReferenceBanks
+        +getQuotationRateType(): QuotationRateTypeEnum
+        +toBuilder(): CashPriceMethod.CashPriceMethodBuilder
+        {static} +builder(): CashPriceMethod.CashPriceMethodBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

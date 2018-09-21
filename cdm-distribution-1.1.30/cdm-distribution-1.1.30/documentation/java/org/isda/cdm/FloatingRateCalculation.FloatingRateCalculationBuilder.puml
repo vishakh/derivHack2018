@@ -1,0 +1,17 @@
+@startuml
+
+    class FloatingRateCalculation.FloatingRateCalculationBuilder [[FloatingRateCalculation.FloatingRateCalculationBuilder.html]] {
+        +getAveragingMethod(): AveragingMethodEnum
+        +getFinalRateRounding(): Rounding.RoundingBuilder
+        +getOrCreateFinalRateRounding(): Rounding.RoundingBuilder
+        +getInitialRate(): BigDecimal
+        +getNegativeInterestRateTreatment(): NegativeInterestRateTreatmentEnum
+        +setAveragingMethod(AveragingMethodEnum): FloatingRateCalculation.FloatingRateCalculationBuilder
+        +setFinalRateRounding(Rounding): FloatingRateCalculation.FloatingRateCalculationBuilder
+        +setFinalRateRoundingBuilder(Rounding.RoundingBuilder): FloatingRateCalculation.FloatingRateCalculationBuilder
+        +setInitialRate(BigDecimal): FloatingRateCalculation.FloatingRateCalculationBuilder
+        +setNegativeInterestRateTreatment(NegativeInterestRateTreatmentEnum): FloatingRateCalculation.FloatingRateCalculationBuilder
+        +build(): FloatingRateCalculation
+    }
+
+@enduml

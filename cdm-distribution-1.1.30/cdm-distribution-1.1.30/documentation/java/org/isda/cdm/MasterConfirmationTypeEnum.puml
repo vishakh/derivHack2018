@@ -1,0 +1,12 @@
+@startuml
+
+    enum MasterConfirmationTypeEnum [[MasterConfirmationTypeEnum.html]] {
+        {static} +CREDIT_INDEX_2003
+        {static} +DJ_CDX_NA
+        {static} +DJ_I_TRAXX_EUROPE
+        {static} +ISDA_1999_CREDIT
+        {static} +ISDA_2003_CREDIT_JAPAN
+        {static} +ISDA_2003_CREDIT_NORTH_AMERICAN
+    }
+
+@enduml

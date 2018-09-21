@@ -1,0 +1,11 @@
+@startuml
+
+    class CalculationAmount.CalculationAmountBuilder [[CalculationAmount.CalculationAmountBuilder.html]] {
+        +getStep(): List<Step.StepBuilder>
+        +getOrCreateStep(int): Step.StepBuilder
+        +addStep(Step): CalculationAmount.CalculationAmountBuilder
+        +addStepBuilder(Step.StepBuilder): CalculationAmount.CalculationAmountBuilder
+        +build(): CalculationAmount
+    }
+
+@enduml

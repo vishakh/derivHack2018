@@ -1,0 +1,7 @@
+@startuml
+
+    class CalculationPeriodCalculationPeriodNumberOfDaysDataRule [[CalculationPeriodCalculationPeriodNumberOfDaysDataRule.html]] {
+        +validate(PaymentCalculationPeriod): ValidationResult<PaymentCalculationPeriod>
+    }
+
+@enduml

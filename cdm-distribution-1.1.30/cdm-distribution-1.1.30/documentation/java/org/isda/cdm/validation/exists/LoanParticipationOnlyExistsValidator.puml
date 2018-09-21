@@ -1,0 +1,7 @@
+@startuml
+
+    class LoanParticipationOnlyExistsValidator [[LoanParticipationOnlyExistsValidator.html]] {
+        +validate(LoanParticipation, String): ValidationResult<LoanParticipation>
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class ExerciseEvent [[ExerciseEvent.html]] {
+        +getAdjustedCashSettlementPaymentDate(): LocalDate
+        +getAdjustedCashSettlementValuationDate(): LocalDate
+        +getAdjustedExerciseDate(): LocalDate
+        +getAdjustedExerciseFeePaymentDate(): LocalDate
+        +getAdjustedRelevantSwapEffectiveDate(): LocalDate
+        +getId(): String
+        +toBuilder(): ExerciseEvent.ExerciseEventBuilder
+        {static} +builder(): ExerciseEvent.ExerciseEventBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

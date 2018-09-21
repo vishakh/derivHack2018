@@ -1,0 +1,13 @@
+@startuml
+
+    class FinalCalculationPeriodDateAdjustment.FinalCalculationPeriodDateAdjustmentBuilder [[FinalCalculationPeriodDateAdjustment.FinalCalculationPeriodDateAdjustmentBuilder.html]] {
+        +getBusinessDayConvention(): BusinessDayConventionEnum
+        +getRelevantUnderlyingDateReference(): String
+        +getSwapStreamReference(): String
+        +setBusinessDayConvention(BusinessDayConventionEnum): FinalCalculationPeriodDateAdjustment.FinalCalculationPeriodDateAdjustmentBuilder
+        +setRelevantUnderlyingDateReference(String): FinalCalculationPeriodDateAdjustment.FinalCalculationPeriodDateAdjustmentBuilder
+        +setSwapStreamReference(String): FinalCalculationPeriodDateAdjustment.FinalCalculationPeriodDateAdjustmentBuilder
+        +build(): FinalCalculationPeriodDateAdjustment
+    }
+
+@enduml

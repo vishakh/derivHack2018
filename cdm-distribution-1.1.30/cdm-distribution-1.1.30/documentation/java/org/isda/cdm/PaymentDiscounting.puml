@@ -1,0 +1,11 @@
+@startuml
+
+    class PaymentDiscounting [[PaymentDiscounting.html]] {
+        +getDiscountFactor(): BigDecimal
+        +getPresentValueAmount(): Money
+        +toBuilder(): PaymentDiscounting.PaymentDiscountingBuilder
+        {static} +builder(): PaymentDiscounting.PaymentDiscountingBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

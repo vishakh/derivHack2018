@@ -1,0 +1,12 @@
+@startuml
+
+    class NonNegativeStep [[NonNegativeStep.html]] {
+        +getId(): String
+        +getStepDate(): LocalDate
+        +getStepValue(): BigDecimal
+        +toBuilder(): NonNegativeStep.NonNegativeStepBuilder
+        {static} +builder(): NonNegativeStep.NonNegativeStepBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

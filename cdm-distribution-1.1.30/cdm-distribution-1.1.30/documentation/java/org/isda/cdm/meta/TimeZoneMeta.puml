@@ -1,0 +1,12 @@
+@startuml
+
+    class TimeZoneMeta [[TimeZoneMeta.html]] {
+        +dataRules(): List<Validator<TimeZone>>
+        +choiceRuleValidators(): List<Validator<TimeZone>>
+        +getOutMappings(): Multimap<String, OutMapping<TimeZone, ?>>
+        +getQualifyFunctions(): List<Function<TimeZone, QualifyResult>>
+        +validator(): Validator<TimeZone>
+        +onlyExistsValidator(): ValidatorWithArg<TimeZone, String>
+    }
+
+@enduml

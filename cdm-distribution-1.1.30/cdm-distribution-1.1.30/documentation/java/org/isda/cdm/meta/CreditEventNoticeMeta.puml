@@ -1,0 +1,12 @@
+@startuml
+
+    class CreditEventNoticeMeta [[CreditEventNoticeMeta.html]] {
+        +dataRules(): List<Validator<CreditEventNotice>>
+        +choiceRuleValidators(): List<Validator<CreditEventNotice>>
+        +getOutMappings(): Multimap<String, OutMapping<CreditEventNotice, ?>>
+        +getQualifyFunctions(): List<Function<CreditEventNotice, QualifyResult>>
+        +validator(): Validator<CreditEventNotice>
+        +onlyExistsValidator(): ValidatorWithArg<CreditEventNotice, String>
+    }
+
+@enduml

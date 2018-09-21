@@ -1,0 +1,10 @@
+@startuml
+
+    class ResetFrequency [[ResetFrequency.html]] {
+        +getWeeklyRollConvention(): WeeklyRollConventionEnum
+        +toBuilder(): ResetFrequency.ResetFrequencyBuilder
+        {static} +builder(): ResetFrequency.ResetFrequencyBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

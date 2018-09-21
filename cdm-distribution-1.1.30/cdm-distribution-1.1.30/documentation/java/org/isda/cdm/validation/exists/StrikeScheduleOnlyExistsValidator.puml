@@ -1,0 +1,7 @@
+@startuml
+
+    class StrikeScheduleOnlyExistsValidator [[StrikeScheduleOnlyExistsValidator.html]] {
+        +validate(StrikeSchedule, String): ValidationResult<StrikeSchedule>
+    }
+
+@enduml

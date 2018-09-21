@@ -1,0 +1,12 @@
+@startuml
+
+    class TriggerEventMeta [[TriggerEventMeta.html]] {
+        +dataRules(): List<Validator<TriggerEvent>>
+        +choiceRuleValidators(): List<Validator<TriggerEvent>>
+        +getOutMappings(): Multimap<String, OutMapping<TriggerEvent, ?>>
+        +getQualifyFunctions(): List<Function<TriggerEvent, QualifyResult>>
+        +validator(): Validator<TriggerEvent>
+        +onlyExistsValidator(): ValidatorWithArg<TriggerEvent, String>
+    }
+
+@enduml

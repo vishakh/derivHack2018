@@ -1,0 +1,12 @@
+@startuml
+
+    class PartialExerciseMeta [[PartialExerciseMeta.html]] {
+        +dataRules(): List<Validator<PartialExercise>>
+        +choiceRuleValidators(): List<Validator<PartialExercise>>
+        +getOutMappings(): Multimap<String, OutMapping<PartialExercise, ?>>
+        +getQualifyFunctions(): List<Function<PartialExercise, QualifyResult>>
+        +validator(): Validator<PartialExercise>
+        +onlyExistsValidator(): ValidatorWithArg<PartialExercise, String>
+    }
+
+@enduml

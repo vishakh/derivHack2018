@@ -1,0 +1,7 @@
+@startuml
+
+    class IsSecuritySettlement [[IsSecuritySettlement.html]] {
+        +apply(Event): QualifyResult
+    }
+
+@enduml

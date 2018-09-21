@@ -1,0 +1,14 @@
+@startuml
+
+    enum ValuationMethodEnum [[ValuationMethodEnum.html]] {
+        {static} +MARKET
+        {static} +HIGHEST
+        {static} +AVERAGE_MARKET
+        {static} +AVERAGE_HIGHEST
+        {static} +BLENDED_MARKET
+        {static} +BLENDED_HIGHEST
+        {static} +AVERAGE_BLENDED_MARKET
+        {static} +AVERAGE_BLENDED_HIGHEST
+    }
+
+@enduml

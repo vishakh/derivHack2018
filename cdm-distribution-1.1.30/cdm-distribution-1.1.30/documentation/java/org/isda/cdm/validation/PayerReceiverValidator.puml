@@ -1,0 +1,7 @@
+@startuml
+
+    class PayerReceiverValidator [[PayerReceiverValidator.html]] {
+        +validate(PayerReceiver): ValidationResult<PayerReceiver>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class CollateralValidator [[CollateralValidator.html]] {
+        +validate(Collateral): ValidationResult<Collateral>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class TermsChangePrimitiveOnlyExistsValidator [[TermsChangePrimitiveOnlyExistsValidator.html]] {
+        +validate(TermsChangePrimitive, String): ValidationResult<TermsChangePrimitive>
+    }
+
+@enduml

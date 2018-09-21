@@ -1,0 +1,7 @@
+@startuml
+
+    class EconomicTermsOnlyExistsValidator [[EconomicTermsOnlyExistsValidator.html]] {
+        +validate(EconomicTerms, String): ValidationResult<EconomicTerms>
+    }
+
+@enduml

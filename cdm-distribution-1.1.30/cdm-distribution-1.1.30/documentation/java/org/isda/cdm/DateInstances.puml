@@ -1,0 +1,13 @@
+@startuml
+
+    class DateInstances [[DateInstances.html]] {
+        +getAdjustableDate(): AdjustableDate
+        +getDate(): LocalDate
+        +getId(): String
+        +getPriorDateInstance(): List<PriorDateInstance>
+        +toBuilder(): DateInstances.DateInstancesBuilder
+        {static} +builder(): DateInstances.DateInstancesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

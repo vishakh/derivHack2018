@@ -1,0 +1,7 @@
+@startuml
+
+    class MultipleValuationDatesNumberValuationDatesDataRule [[MultipleValuationDatesNumberValuationDatesDataRule.html]] {
+        +validate(MultipleValuationDates): ValidationResult<MultipleValuationDates>
+    }
+
+@enduml

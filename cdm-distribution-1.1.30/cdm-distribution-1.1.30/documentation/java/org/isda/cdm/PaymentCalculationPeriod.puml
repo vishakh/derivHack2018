@@ -1,0 +1,17 @@
+@startuml
+
+    class PaymentCalculationPeriod [[PaymentCalculationPeriod.html]] {
+        +getAdjustedPaymentDate(): LocalDate
+        +getCalculationPeriod(): List<CalculationPeriod>
+        +getDiscountFactor(): BigDecimal
+        +getFixedPaymentAmount(): BigDecimal
+        +getForecastPaymentAmount(): Money
+        +getId(): String
+        +getPresentValueAmount(): Money
+        +getUnadjustedPaymentDate(): LocalDate
+        +toBuilder(): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        {static} +builder(): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

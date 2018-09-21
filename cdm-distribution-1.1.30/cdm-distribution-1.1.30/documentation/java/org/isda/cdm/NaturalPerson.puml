@@ -1,0 +1,17 @@
+@startuml
+
+    class NaturalPerson [[NaturalPerson.html]] {
+        +getDateOfBirth(): LocalDate
+        +getFirstName(): String
+        +getHonorific(): String
+        +getId(): String
+        +getInitial(): List<String>
+        +getMiddleName(): List<String>
+        +getSuffix(): String
+        +getSurname(): String
+        +toBuilder(): NaturalPerson.NaturalPersonBuilder
+        {static} +builder(): NaturalPerson.NaturalPersonBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

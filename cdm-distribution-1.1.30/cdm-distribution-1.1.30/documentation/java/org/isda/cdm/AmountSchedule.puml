@@ -1,0 +1,11 @@
+@startuml
+
+    class AmountSchedule [[AmountSchedule.html]] {
+        +getCurrency(): List<String>
+        +getCurrencyScheme(): String
+        +toBuilder(): AmountSchedule.AmountScheduleBuilder
+        {static} +builder(): AmountSchedule.AmountScheduleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

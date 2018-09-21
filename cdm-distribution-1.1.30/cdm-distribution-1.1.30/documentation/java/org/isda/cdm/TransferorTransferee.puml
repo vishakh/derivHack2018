@@ -1,0 +1,13 @@
+@startuml
+
+    class TransferorTransferee [[TransferorTransferee.html]] {
+        +getTransfereeAccountReference(): String
+        +getTransfereePartyReference(): String
+        +getTransferorAccountReference(): String
+        +getTransferorPartyReference(): String
+        +toBuilder(): TransferorTransferee.TransferorTransfereeBuilder
+        {static} +builder(): TransferorTransferee.TransferorTransfereeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

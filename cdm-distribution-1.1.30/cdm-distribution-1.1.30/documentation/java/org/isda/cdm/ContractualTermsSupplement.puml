@@ -1,0 +1,12 @@
+@startuml
+
+    class ContractualTermsSupplement [[ContractualTermsSupplement.html]] {
+        +getPublicationDate(): LocalDate
+        +getType(): ContractualSupplementEnum
+        +getTypeScheme(): String
+        +toBuilder(): ContractualTermsSupplement.ContractualTermsSupplementBuilder
+        {static} +builder(): ContractualTermsSupplement.ContractualTermsSupplementBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

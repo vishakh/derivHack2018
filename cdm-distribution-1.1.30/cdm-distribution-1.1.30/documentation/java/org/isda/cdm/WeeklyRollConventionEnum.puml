@@ -1,0 +1,14 @@
+@startuml
+
+    enum WeeklyRollConventionEnum [[WeeklyRollConventionEnum.html]] {
+        {static} +TBILL
+        {static} +MON
+        {static} +TUE
+        {static} +WED
+        {static} +THU
+        {static} +FRI
+        {static} +SAT
+        {static} +SUN
+    }
+
+@enduml

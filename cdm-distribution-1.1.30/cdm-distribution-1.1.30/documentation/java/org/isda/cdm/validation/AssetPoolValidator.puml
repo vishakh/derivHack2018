@@ -1,0 +1,7 @@
+@startuml
+
+    class AssetPoolValidator [[AssetPoolValidator.html]] {
+        +validate(AssetPool): ValidationResult<AssetPool>
+    }
+
+@enduml

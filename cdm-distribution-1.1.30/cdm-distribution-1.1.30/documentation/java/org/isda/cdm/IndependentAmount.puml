@@ -1,0 +1,10 @@
+@startuml
+
+    class IndependentAmount [[IndependentAmount.html]] {
+        +getPaymentDetail(): List<PaymentDetail>
+        +toBuilder(): IndependentAmount.IndependentAmountBuilder
+        {static} +builder(): IndependentAmount.IndependentAmountBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

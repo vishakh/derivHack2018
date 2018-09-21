@@ -1,0 +1,13 @@
+@startuml
+
+    class SettledEntityMatrix.SettledEntityMatrixBuilder [[SettledEntityMatrix.SettledEntityMatrixBuilder.html]] {
+        +getMatrixSource(): SettledEntityMatrixSourceEnum
+        +getMatrixSourceScheme(): String
+        +getPublicationDate(): LocalDate
+        +setMatrixSource(SettledEntityMatrixSourceEnum): SettledEntityMatrix.SettledEntityMatrixBuilder
+        +setMatrixSourceScheme(String): SettledEntityMatrix.SettledEntityMatrixBuilder
+        +setPublicationDate(LocalDate): SettledEntityMatrix.SettledEntityMatrixBuilder
+        +build(): SettledEntityMatrix
+    }
+
+@enduml

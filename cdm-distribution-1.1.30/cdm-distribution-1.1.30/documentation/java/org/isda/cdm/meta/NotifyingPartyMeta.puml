@@ -1,0 +1,12 @@
+@startuml
+
+    class NotifyingPartyMeta [[NotifyingPartyMeta.html]] {
+        +dataRules(): List<Validator<NotifyingParty>>
+        +choiceRuleValidators(): List<Validator<NotifyingParty>>
+        +getOutMappings(): Multimap<String, OutMapping<NotifyingParty, ?>>
+        +getQualifyFunctions(): List<Function<NotifyingParty, QualifyResult>>
+        +validator(): Validator<NotifyingParty>
+        +onlyExistsValidator(): ValidatorWithArg<NotifyingParty, String>
+    }
+
+@enduml

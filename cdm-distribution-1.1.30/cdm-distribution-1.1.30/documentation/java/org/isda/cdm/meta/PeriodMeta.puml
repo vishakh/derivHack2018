@@ -1,0 +1,12 @@
+@startuml
+
+    class PeriodMeta [[PeriodMeta.html]] {
+        +dataRules(): List<Validator<Period>>
+        +choiceRuleValidators(): List<Validator<Period>>
+        +getOutMappings(): Multimap<String, OutMapping<Period, ?>>
+        +getQualifyFunctions(): List<Function<Period, QualifyResult>>
+        +validator(): Validator<Period>
+        +onlyExistsValidator(): ValidatorWithArg<Period, String>
+    }
+
+@enduml

@@ -1,0 +1,27 @@
+@startuml
+
+    class NonDeliverableSettlement.NonDeliverableSettlementBuilder [[NonDeliverableSettlement.NonDeliverableSettlementBuilder.html]] {
+        +getFxFixingDate(): FxFixingDate.FxFixingDateBuilder
+        +getOrCreateFxFixingDate(): FxFixingDate.FxFixingDateBuilder
+        +getFxFixingSchedule(): AdjustableDates.AdjustableDatesBuilder
+        +getOrCreateFxFixingSchedule(): AdjustableDates.AdjustableDatesBuilder
+        +getPriceSourceDisruption(): PriceSourceDisruption.PriceSourceDisruptionBuilder
+        +getOrCreatePriceSourceDisruption(): PriceSourceDisruption.PriceSourceDisruptionBuilder
+        +getReferenceCurrency(): String
+        +getReferenceCurrencyScheme(): String
+        +getSettlementRateOption(): SettlementRateOptionEnum
+        +getSettlementRateOptionScheme(): String
+        +setFxFixingDate(FxFixingDate): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        +setFxFixingDateBuilder(FxFixingDate.FxFixingDateBuilder): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        +setFxFixingSchedule(AdjustableDates): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        +setFxFixingScheduleBuilder(AdjustableDates.AdjustableDatesBuilder): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        +setPriceSourceDisruption(PriceSourceDisruption): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        +setPriceSourceDisruptionBuilder(PriceSourceDisruption.PriceSourceDisruptionBuilder): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        +setReferenceCurrency(String): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        +setReferenceCurrencyScheme(String): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        +setSettlementRateOption(SettlementRateOptionEnum): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        +setSettlementRateOptionScheme(String): NonDeliverableSettlement.NonDeliverableSettlementBuilder
+        +build(): NonDeliverableSettlement
+    }
+
+@enduml

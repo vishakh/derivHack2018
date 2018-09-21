@@ -1,0 +1,7 @@
+@startuml
+
+    class TransactedPriceOnlyExistsValidator [[TransactedPriceOnlyExistsValidator.html]] {
+        +validate(TransactedPrice, String): ValidationResult<TransactedPrice>
+    }
+
+@enduml

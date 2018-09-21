@@ -1,0 +1,18 @@
+@startuml
+
+    class ResetDates [[ResetDates.html]] {
+        +getCalculationPeriodDatesReference(): String
+        +getFinalFixingDate(): AdjustableDate
+        +getFixingDates(): RelativeDateOffset
+        +getId(): String
+        +getInitialFixingDate(): InitialFixingDate
+        +getRateCutOffDaysOffset(): Offset
+        +getResetDatesAdjustments(): BusinessDayAdjustments
+        +getResetFrequency(): ResetFrequency
+        +getResetRelativeTo(): ResetRelativeToEnum
+        +toBuilder(): ResetDates.ResetDatesBuilder
+        {static} +builder(): ResetDates.ResetDatesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

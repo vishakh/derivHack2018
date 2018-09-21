@@ -1,0 +1,7 @@
+@startuml
+
+    class FixedIncomeSecurityOnlyExistsValidator [[FixedIncomeSecurityOnlyExistsValidator.html]] {
+        +validate(FixedIncomeSecurity, String): ValidationResult<FixedIncomeSecurity>
+    }
+
+@enduml

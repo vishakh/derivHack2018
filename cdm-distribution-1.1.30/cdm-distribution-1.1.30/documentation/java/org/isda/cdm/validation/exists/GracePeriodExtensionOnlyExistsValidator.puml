@@ -1,0 +1,7 @@
+@startuml
+
+    class GracePeriodExtensionOnlyExistsValidator [[GracePeriodExtensionOnlyExistsValidator.html]] {
+        +validate(GracePeriodExtension, String): ValidationResult<GracePeriodExtension>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class AutomaticExerciseValidator [[AutomaticExerciseValidator.html]] {
+        +validate(AutomaticExercise): ValidationResult<AutomaticExercise>
+    }
+
+@enduml

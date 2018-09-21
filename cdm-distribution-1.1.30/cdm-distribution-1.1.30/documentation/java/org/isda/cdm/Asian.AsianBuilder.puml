@@ -1,0 +1,19 @@
+@startuml
+
+    class Asian.AsianBuilder [[Asian.AsianBuilder.html]] {
+        +getAveragingInOut(): AveragingInOutEnum
+        +getAveragingPeriodIn(): AveragingPeriod.AveragingPeriodBuilder
+        +getOrCreateAveragingPeriodIn(): AveragingPeriod.AveragingPeriodBuilder
+        +getAveragingPeriodOut(): AveragingPeriod.AveragingPeriodBuilder
+        +getOrCreateAveragingPeriodOut(): AveragingPeriod.AveragingPeriodBuilder
+        +getStrikeFactor(): BigDecimal
+        +setAveragingInOut(AveragingInOutEnum): Asian.AsianBuilder
+        +setAveragingPeriodIn(AveragingPeriod): Asian.AsianBuilder
+        +setAveragingPeriodInBuilder(AveragingPeriod.AveragingPeriodBuilder): Asian.AsianBuilder
+        +setAveragingPeriodOut(AveragingPeriod): Asian.AsianBuilder
+        +setAveragingPeriodOutBuilder(AveragingPeriod.AveragingPeriodBuilder): Asian.AsianBuilder
+        +setStrikeFactor(BigDecimal): Asian.AsianBuilder
+        +build(): Asian
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class EventTimestamp.EventTimestampBuilder [[EventTimestamp.EventTimestampBuilder.html]] {
+        +getCreationTimestamp(): LocalDateTime
+        +getExpiryTimestamp(): LocalDateTime
+        +setCreationTimestamp(LocalDateTime): EventTimestamp.EventTimestampBuilder
+        +setExpiryTimestamp(LocalDateTime): EventTimestamp.EventTimestampBuilder
+        +build(): EventTimestamp
+    }
+
+@enduml

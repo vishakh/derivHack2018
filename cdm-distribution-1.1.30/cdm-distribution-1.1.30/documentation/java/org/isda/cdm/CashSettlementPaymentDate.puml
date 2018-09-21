@@ -1,0 +1,13 @@
+@startuml
+
+    class CashSettlementPaymentDate [[CashSettlementPaymentDate.html]] {
+        +getAdjustableDates(): AdjustableDates
+        +getBusinessDateRange(): BusinessDateRange
+        +getId(): String
+        +getRelativeDate(): RelativeDateOffset
+        +toBuilder(): CashSettlementPaymentDate.CashSettlementPaymentDateBuilder
+        {static} +builder(): CashSettlementPaymentDate.CashSettlementPaymentDateBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

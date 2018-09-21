@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLCd25DataRule [[FpMLCd25DataRule.html]] {
+        +validate(Contract): ValidationResult<Contract>
+    }
+
+@enduml

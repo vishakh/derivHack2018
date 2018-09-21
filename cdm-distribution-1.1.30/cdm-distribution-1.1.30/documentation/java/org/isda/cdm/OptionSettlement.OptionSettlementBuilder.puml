@@ -1,0 +1,29 @@
+@startuml
+
+    class OptionSettlement.OptionSettlementBuilder [[OptionSettlement.OptionSettlementBuilder.html]] {
+        +getCashSettlementTerms(): OptionCashSettlement.OptionCashSettlementBuilder
+        +getOrCreateCashSettlementTerms(): OptionCashSettlement.OptionCashSettlementBuilder
+        +getPhysicalSettlementTerms(): OptionPhysicalSettlement.OptionPhysicalSettlementBuilder
+        +getOrCreatePhysicalSettlementTerms(): OptionPhysicalSettlement.OptionPhysicalSettlementBuilder
+        +getSettlementAmount(): Money.MoneyBuilder
+        +getOrCreateSettlementAmount(): Money.MoneyBuilder
+        +getSettlementCurrency(): String
+        +getSettlementCurrencyScheme(): String
+        +getSettlementDate(): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +getOrCreateSettlementDate(): AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder
+        +getSettlementType(): SettlementTypeEnum
+        +setCashSettlementTerms(OptionCashSettlement): OptionSettlement.OptionSettlementBuilder
+        +setCashSettlementTermsBuilder(OptionCashSettlement.OptionCashSettlementBuilder): OptionSettlement.OptionSettlementBuilder
+        +setPhysicalSettlementTerms(OptionPhysicalSettlement): OptionSettlement.OptionSettlementBuilder
+        +setPhysicalSettlementTermsBuilder(OptionPhysicalSettlement.OptionPhysicalSettlementBuilder): OptionSettlement.OptionSettlementBuilder
+        +setSettlementAmount(Money): OptionSettlement.OptionSettlementBuilder
+        +setSettlementAmountBuilder(Money.MoneyBuilder): OptionSettlement.OptionSettlementBuilder
+        +setSettlementCurrency(String): OptionSettlement.OptionSettlementBuilder
+        +setSettlementCurrencyScheme(String): OptionSettlement.OptionSettlementBuilder
+        +setSettlementDate(AdjustableOrRelativeDate): OptionSettlement.OptionSettlementBuilder
+        +setSettlementDateBuilder(AdjustableOrRelativeDate.AdjustableOrRelativeDateBuilder): OptionSettlement.OptionSettlementBuilder
+        +setSettlementType(SettlementTypeEnum): OptionSettlement.OptionSettlementBuilder
+        +build(): OptionSettlement
+    }
+
+@enduml

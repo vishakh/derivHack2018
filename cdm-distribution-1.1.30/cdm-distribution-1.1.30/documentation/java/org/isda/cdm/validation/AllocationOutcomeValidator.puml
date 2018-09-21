@@ -1,0 +1,7 @@
+@startuml
+
+    class AllocationOutcomeValidator [[AllocationOutcomeValidator.html]] {
+        +validate(AllocationOutcome): ValidationResult<AllocationOutcome>
+    }
+
+@enduml

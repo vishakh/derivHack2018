@@ -1,0 +1,9 @@
+@startuml
+
+    class ResetFrequency.ResetFrequencyBuilder [[ResetFrequency.ResetFrequencyBuilder.html]] {
+        +getWeeklyRollConvention(): WeeklyRollConventionEnum
+        +setWeeklyRollConvention(WeeklyRollConventionEnum): ResetFrequency.ResetFrequencyBuilder
+        +build(): ResetFrequency
+    }
+
+@enduml

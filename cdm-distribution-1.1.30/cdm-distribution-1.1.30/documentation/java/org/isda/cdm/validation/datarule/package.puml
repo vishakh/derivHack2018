@@ -1,0 +1,880 @@
+@startuml
+
+    namespace org.isda.cdm.validation.datarule {
+
+        class SimplePaymentPaymentAmountDataRule [[SimplePaymentPaymentAmountDataRule.html]] {
+            +validate(SimplePayment): ValidationResult<SimplePayment>
+        }
+
+        class FpMLIrd25DataRule [[FpMLIrd25DataRule.html]] {
+            +validate(Schedule): ValidationResult<Schedule>
+        }
+
+        class FpMLIrd49DataRule [[FpMLIrd49DataRule.html]] {
+            +validate(ResetFrequency): ValidationResult<ResetFrequency>
+        }
+
+        class RelativeDatesPeriodSkipDataRule [[RelativeDatesPeriodSkipDataRule.html]] {
+            +validate(RelativeDates): ValidationResult<RelativeDates>
+        }
+
+        class RateObservationObservationWeightDataRule [[RateObservationObservationWeightDataRule.html]] {
+            +validate(RateObservation): ValidationResult<RateObservation>
+        }
+
+        class PeriodPeriodDataRule [[PeriodPeriodDataRule.html]] {
+            +validate(Period): ValidationResult<Period>
+        }
+
+        class PaymentPaymentflowAmountDataRule [[PaymentPaymentflowAmountDataRule.html]] {
+            +validate(Payment): ValidationResult<Payment>
+        }
+
+        class MinimumNumberOfOptionsMinimumNumberOfOptionsDataRule [[MinimumNumberOfOptionsMinimumNumberOfOptionsDataRule.html]] {
+            +validate(MultipleExercise): ValidationResult<MultipleExercise>
+        }
+
+        class OffsetDayTypeDataRule [[OffsetDayTypeDataRule.html]] {
+            +validate(Offset): ValidationResult<Offset>
+        }
+
+        class NonNegativeStepStepValueDataRule [[NonNegativeStepStepValueDataRule.html]] {
+            +validate(NonNegativeStep): ValidationResult<NonNegativeStep>
+        }
+
+        class NonNegativeScheduleInitialValueDataRule [[NonNegativeScheduleInitialValueDataRule.html]] {
+            +validate(NonNegativeSchedule): ValidationResult<NonNegativeSchedule>
+        }
+
+        class MultipleExerciseMaximumNumberOfOptionsDataRule [[MultipleExerciseMaximumNumberOfOptionsDataRule.html]] {
+            +validate(MultipleExercise): ValidationResult<MultipleExercise>
+        }
+
+        class FutureValueAmountCalculationPeriodNumberOfDaysDataRule [[FutureValueAmountCalculationPeriodNumberOfDaysDataRule.html]] {
+            +validate(FutureValueAmount): ValidationResult<FutureValueAmount>
+        }
+
+        class FutureValueAmountNonNegativeAmountDataRule [[FutureValueAmountNonNegativeAmountDataRule.html]] {
+            +validate(FutureValueAmount): ValidationResult<FutureValueAmount>
+        }
+
+        class FrequencyPeriodMultiplierDataRule [[FrequencyPeriodMultiplierDataRule.html]] {
+            +validate(Frequency): ValidationResult<Frequency>
+        }
+
+        class FrequencyPeriodDataRule [[FrequencyPeriodDataRule.html]] {
+            +validate(Frequency): ValidationResult<Frequency>
+        }
+
+        class FloatingRateFloatingRateMultiplierScheduleDataRule [[FloatingRateFloatingRateMultiplierScheduleDataRule.html]] {
+            +validate(FloatingRate): ValidationResult<FloatingRate>
+        }
+
+        class FpMLIrd60DataRule [[FpMLIrd60DataRule.html]] {
+            +validate(CalculationPeriodFrequency): ValidationResult<CalculationPeriodFrequency>
+        }
+
+        class FpMLIrd58DataRule [[FpMLIrd58DataRule.html]] {
+            +validate(CalculationPeriodFrequency): ValidationResult<CalculationPeriodFrequency>
+        }
+
+        class FpMLIrd57DataRule [[FpMLIrd57DataRule.html]] {
+            +validate(CalculationPeriodFrequency): ValidationResult<CalculationPeriodFrequency>
+        }
+
+        class AdjustableOrAdjustedOrRelativeDateAdjustedDateDataRule [[AdjustableOrAdjustedOrRelativeDateAdjustedDateDataRule.html]] {
+            +validate(AdjustableOrAdjustedOrRelativeDate): ValidationResult<AdjustableOrAdjustedOrRelativeDate>
+        }
+
+        class AdjustableOrAdjustedDateAdjustedDateDataRule [[AdjustableOrAdjustedDateAdjustedDateDataRule.html]] {
+            +validate(AdjustableOrAdjustedDate): ValidationResult<AdjustableOrAdjustedDate>
+        }
+
+        class WeightedAveragingObservationWeightDataRule [[WeightedAveragingObservationWeightDataRule.html]] {
+            +validate(WeightedAveragingObservation): ValidationResult<WeightedAveragingObservation>
+        }
+
+        class WeightedAveragingObservationObservationNumberDataRule [[WeightedAveragingObservationObservationNumberDataRule.html]] {
+            +validate(WeightedAveragingObservation): ValidationResult<WeightedAveragingObservation>
+        }
+
+        class PubliclyAvailableInformationSpecifiedNumberDataRule [[PubliclyAvailableInformationSpecifiedNumberDataRule.html]] {
+            +validate(PubliclyAvailableInformation): ValidationResult<PubliclyAvailableInformation>
+        }
+
+        class OptionSettlementPhysicalSettlementTermsDataRule [[OptionSettlementPhysicalSettlementTermsDataRule.html]] {
+            +validate(OptionSettlement): ValidationResult<OptionSettlement>
+        }
+
+        class OptionSettlementCashSettlementTermsDataRule [[OptionSettlementCashSettlementTermsDataRule.html]] {
+            +validate(OptionSettlement): ValidationResult<OptionSettlement>
+        }
+
+        class OptionDenominationNumberOfOptionsDataRule [[OptionDenominationNumberOfOptionsDataRule.html]] {
+            +validate(OptionDenomination): ValidationResult<OptionDenomination>
+        }
+
+        class OptionDenominationOptionEntitlementDataRule [[OptionDenominationOptionEntitlementDataRule.html]] {
+            +validate(OptionDenomination): ValidationResult<OptionDenomination>
+        }
+
+        class FeaturePaymentAmountDataRule [[FeaturePaymentAmountDataRule.html]] {
+            +validate(FeaturePayment): ValidationResult<FeaturePayment>
+        }
+
+        class ValuationPostponementMaximumDaysOfPostponementDataRule [[ValuationPostponementMaximumDaysOfPostponementDataRule.html]] {
+            +validate(FallbackReferencePrice): ValidationResult<FallbackReferencePrice>
+        }
+
+        class ResetFrequencyNotWeeklyDataRule [[ResetFrequencyNotWeeklyDataRule.html]] {
+            +validate(ResetDates): ValidationResult<ResetDates>
+        }
+
+        class ResetFrequencyWeeklyDataRule [[ResetFrequencyWeeklyDataRule.html]] {
+            +validate(ResetDates): ValidationResult<ResetDates>
+        }
+
+        class ResetDatesRateCutOffDaysOffsetDataRule [[ResetDatesRateCutOffDaysOffsetDataRule.html]] {
+            +validate(ResetDates): ValidationResult<ResetDates>
+        }
+
+        class FpMLIrd34DataRule [[FpMLIrd34DataRule.html]] {
+            +validate(PaymentCalculationPeriod): ValidationResult<PaymentCalculationPeriod>
+        }
+
+        class NotionalStepRuleNotionalStepRateDataRule [[NotionalStepRuleNotionalStepRateDataRule.html]] {
+            +validate(NotionalStepRule): ValidationResult<NotionalStepRule>
+        }
+
+        class NotionalStepRuleNotionalStepAmountDataRule [[NotionalStepRuleNotionalStepAmountDataRule.html]] {
+            +validate(NotionalStepRule): ValidationResult<NotionalStepRule>
+        }
+
+        class FpMLIrd44DataRule [[FpMLIrd44DataRule.html]] {
+            +validate(MandatoryEarlyTerminationAdjustedDates): ValidationResult<MandatoryEarlyTerminationAdjustedDates>
+        }
+
+        class FpMLIrd27DataRule [[FpMLIrd27DataRule.html]] {
+            +validate(MandatoryEarlyTermination): ValidationResult<MandatoryEarlyTermination>
+        }
+
+        class FloatingRateDefinitionFloatingRateMultiplierDataRule [[FloatingRateDefinitionFloatingRateMultiplierDataRule.html]] {
+            +validate(FloatingRateDefinition): ValidationResult<FloatingRateDefinition>
+        }
+
+        class FpMLIrd42DataRule [[FpMLIrd42DataRule.html]] {
+            +validate(ExtensionEvent): ValidationResult<ExtensionEvent>
+        }
+
+        class EarlyTerminationProvisionMandatoryEarlyTerminationDataRule [[EarlyTerminationProvisionMandatoryEarlyTerminationDataRule.html]] {
+            +validate(EarlyTerminationProvision): ValidationResult<EarlyTerminationProvision>
+        }
+
+        class FpMLIrd41DataRule [[FpMLIrd41DataRule.html]] {
+            +validate(EarlyTerminationEvent): ValidationResult<EarlyTerminationEvent>
+        }
+
+        class FpMLIrd40DataRule [[FpMLIrd40DataRule.html]] {
+            +validate(EarlyTerminationEvent): ValidationResult<EarlyTerminationEvent>
+        }
+
+        class FpMLIrd39DataRule [[FpMLIrd39DataRule.html]] {
+            +validate(EarlyTerminationEvent): ValidationResult<EarlyTerminationEvent>
+        }
+
+        class DiscountingDiscountRateDataRule [[DiscountingDiscountRateDataRule.html]] {
+            +validate(Discounting): ValidationResult<Discounting>
+        }
+
+        class FpMLIrd22DataRule [[FpMLIrd22DataRule.html]] {
+            +validate(CalculationPeriodDates): ValidationResult<CalculationPeriodDates>
+        }
+
+        class FpMLIrd21DataRule [[FpMLIrd21DataRule.html]] {
+            +validate(CalculationPeriodDates): ValidationResult<CalculationPeriodDates>
+        }
+
+        class FpMLIrd20DataRule [[FpMLIrd20DataRule.html]] {
+            +validate(CalculationPeriodDates): ValidationResult<CalculationPeriodDates>
+        }
+
+        class FpMLIrd18DataRule [[FpMLIrd18DataRule.html]] {
+            +validate(CalculationPeriodDates): ValidationResult<CalculationPeriodDates>
+        }
+
+        class FpMLIrd17DataRule [[FpMLIrd17DataRule.html]] {
+            +validate(CalculationPeriodDates): ValidationResult<CalculationPeriodDates>
+        }
+
+        class FpMLIrd16DataRule [[FpMLIrd16DataRule.html]] {
+            +validate(CalculationPeriodDates): ValidationResult<CalculationPeriodDates>
+        }
+
+        class FpMLIrd14DataRule [[FpMLIrd14DataRule.html]] {
+            +validate(CalculationPeriodDates): ValidationResult<CalculationPeriodDates>
+        }
+
+        class CalculationPeriodCalculationPeriodNumberOfDaysDataRule [[CalculationPeriodCalculationPeriodNumberOfDaysDataRule.html]] {
+            +validate(PaymentCalculationPeriod): ValidationResult<PaymentCalculationPeriod>
+        }
+
+        class VersionedTradeIdVersionDataRule [[VersionedTradeIdVersionDataRule.html]] {
+            +validate(Identifier): ValidationResult<Identifier>
+        }
+
+        class TradeIdentifierAccountDataRule [[TradeIdentifierAccountDataRule.html]] {
+            +validate(ContractIdentifier): ValidationResult<ContractIdentifier>
+        }
+
+        class TrancheAttachmentPointExhaustionPointDataRule [[TrancheAttachmentPointExhaustionPointDataRule.html]] {
+            +validate(Tranche): ValidationResult<Tranche>
+        }
+
+        class TrancheExhaustionPointDataRule [[TrancheExhaustionPointDataRule.html]] {
+            +validate(Tranche): ValidationResult<Tranche>
+        }
+
+        class TrancheAttachmentPointDataRule [[TrancheAttachmentPointDataRule.html]] {
+            +validate(Tranche): ValidationResult<Tranche>
+        }
+
+        class SingleValuationDateBusinessDaysDataRule [[SingleValuationDateBusinessDaysDataRule.html]] {
+            +validate(SingleValuationDate): ValidationResult<SingleValuationDate>
+        }
+
+        class PhysicalSettlementPeriodMaximumBusinessDaysDataRule [[PhysicalSettlementPeriodMaximumBusinessDaysDataRule.html]] {
+            +validate(PhysicalSettlementPeriod): ValidationResult<PhysicalSettlementPeriod>
+        }
+
+        class PhysicalSettlementPeriodBusinessDaysDataRule [[PhysicalSettlementPeriodBusinessDaysDataRule.html]] {
+            +validate(PhysicalSettlementPeriod): ValidationResult<PhysicalSettlementPeriod>
+        }
+
+        class MultipleValuationDatesNumberValuationDatesDataRule [[MultipleValuationDatesNumberValuationDatesDataRule.html]] {
+            +validate(MultipleValuationDates): ValidationResult<MultipleValuationDates>
+        }
+
+        class MultipleValuationDatesBusinessDaysThereafterDataRule [[MultipleValuationDatesBusinessDaysThereafterDataRule.html]] {
+            +validate(MultipleValuationDates): ValidationResult<MultipleValuationDates>
+        }
+
+        class IndexReferenceInformationIndexAnnexVersionDataRule [[IndexReferenceInformationIndexAnnexVersionDataRule.html]] {
+            +validate(IndexReferenceInformation): ValidationResult<IndexReferenceInformation>
+        }
+
+        class IndexReferenceInformationIndexSeriesDataRule [[IndexReferenceInformationIndexSeriesDataRule.html]] {
+            +validate(IndexReferenceInformation): ValidationResult<IndexReferenceInformation>
+        }
+
+        class FpMLCd34DataRule [[FpMLCd34DataRule.html]] {
+            +validate(DeliverableObligations): ValidationResult<DeliverableObligations>
+        }
+
+        class FpMLCd37DataRule [[FpMLCd37DataRule.html]] {
+            +validate(CashSettlementTerms): ValidationResult<CashSettlementTerms>
+        }
+
+        class CashSettlementTermsRecoveryFactorDataRule [[CashSettlementTermsRecoveryFactorDataRule.html]] {
+            +validate(CashSettlementTerms): ValidationResult<CashSettlementTerms>
+        }
+
+        class CashSettlementTermsCashSettlementBusinessDaysDataRule [[CashSettlementTermsCashSettlementBusinessDaysDataRule.html]] {
+            +validate(CashSettlementTerms): ValidationResult<CashSettlementTerms>
+        }
+
+        class BasketReferenceInformationNthToDefaultMthToDefaultDataRule [[BasketReferenceInformationNthToDefaultMthToDefaultDataRule.html]] {
+            +validate(BasketReferenceInformation): ValidationResult<BasketReferenceInformation>
+        }
+
+        class BasketReferenceInformationNthToDefaultDataRule [[BasketReferenceInformationNthToDefaultDataRule.html]] {
+            +validate(BasketReferenceInformation): ValidationResult<BasketReferenceInformation>
+        }
+
+        class FpMLCd44BasketPercentageDataRule [[FpMLCd44BasketPercentageDataRule.html]] {
+            +validate(ReferencePool): ValidationResult<ReferencePool>
+        }
+
+        class FpMLCd44OpenUnitsDataRule [[FpMLCd44OpenUnitsDataRule.html]] {
+            +validate(ReferencePool): ValidationResult<ReferencePool>
+        }
+
+        class ConstituentWeightBasketPercentageDataRule [[ConstituentWeightBasketPercentageDataRule.html]] {
+            +validate(ConstituentWeight): ValidationResult<ConstituentWeight>
+        }
+
+        class AssetPoolEffectiveDateDataRule [[AssetPoolEffectiveDateDataRule.html]] {
+            +validate(AssetPool): ValidationResult<AssetPool>
+        }
+
+        class VanillaQuarterlyPaymentMonthlyResetDataRule [[VanillaQuarterlyPaymentMonthlyResetDataRule.html]] {
+            +validate(EconomicTerms): ValidationResult<EconomicTerms>
+        }
+
+        class VanillaSemiAnnualPaymentQuarterlyResetDataRule [[VanillaSemiAnnualPaymentQuarterlyResetDataRule.html]] {
+            +validate(EconomicTerms): ValidationResult<EconomicTerms>
+        }
+
+        class VanillaAnnualPaymentDifferentResetFrequencyDataRule [[VanillaAnnualPaymentDifferentResetFrequencyDataRule.html]] {
+            +validate(EconomicTerms): ValidationResult<EconomicTerms>
+        }
+
+        class TransactedPriceMarketPriceDataRule [[TransactedPriceMarketPriceDataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class ResetDatesInterestRateSwapDataRule [[ResetDatesInterestRateSwapDataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class CalculationPeriodDatesCalculationPeriodFrequencyDataRule [[CalculationPeriodDatesCalculationPeriodFrequencyDataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class CalculationPeriodDatesCalculationPeriodDatesAdjustmentsDataRule [[CalculationPeriodDatesCalculationPeriodDatesAdjustmentsDataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class FpMLCd30DataRule [[FpMLCd30DataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class FpMLCd27DataRule [[FpMLCd27DataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class FpMLCd2628DataRule [[FpMLCd2628DataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class PaymentDatesPaymentFrequencyDataRule [[PaymentDatesPaymentFrequencyDataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class PaymentDatesPaymentDatesAdjustmentsDataRule [[PaymentDatesPaymentDatesAdjustmentsDataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class PaymentDatesPayRelativeToDataRule [[PaymentDatesPayRelativeToDataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class PaymentDatesPaymentDaysOffsetDataRule [[PaymentDatesPaymentDaysOffsetDataRule.html]] {
+            +validate(PaymentDates): ValidationResult<PaymentDates>
+        }
+
+        class FpMLIrd35Cd31DataRule [[FpMLIrd35Cd31DataRule.html]] {
+            +validate(PaymentDates): ValidationResult<PaymentDates>
+        }
+
+        class FpMLIrd61DataRule [[FpMLIrd61DataRule.html]] {
+            +validate(NotionalSchedule): ValidationResult<NotionalSchedule>
+        }
+
+        class LastRegularPeriodEndDateFinalStubDataRule [[LastRegularPeriodEndDateFinalStubDataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class FirstRegularPeriodStartDateInitialStubDataRule [[FirstRegularPeriodStartDateInitialStubDataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class CalculationPeriodDatesFirstCompoundingPeriodEndDateDataRule [[CalculationPeriodDatesFirstCompoundingPeriodEndDateDataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class FpMLIrd29DataRule [[FpMLIrd29DataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class FpMLIrd9DataRule [[FpMLIrd9DataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class FpMLIrd71DataRule [[FpMLIrd71DataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class SettlementProvisionSettlementCurrencyDataRule [[SettlementProvisionSettlementCurrencyDataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class FinalStubLastRegularPaymentDateDataRule [[FinalStubLastRegularPaymentDateDataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class InitialStubFinalStubDataRule [[InitialStubFinalStubDataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class FpMLIrd24DataRule [[FpMLIrd24DataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class FpMLIrd23DataRule [[FpMLIrd23DataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class FpMLIrd8DataRule [[FpMLIrd8DataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class FpMLIrd6DataRule [[FpMLIrd6DataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class FpMLIrd1DataRule [[FpMLIrd1DataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class InterestRatePayoutPaymentDatesDataRule [[InterestRatePayoutPaymentDatesDataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class InterestRatePayoutDayCountFractionDataRule [[InterestRatePayoutDayCountFractionDataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class InterestRatePayoutActualQuantityDataRule [[InterestRatePayoutActualQuantityDataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class InterestRatePayoutQuantityDataRule [[InterestRatePayoutQuantityDataRule.html]] {
+            +validate(Payout): ValidationResult<Payout>
+        }
+
+        class FpMLCd42DataRule [[FpMLCd42DataRule.html]] {
+            +validate(GeneralTerms): ValidationResult<GeneralTerms>
+        }
+
+        class FpMLCd41DataRule [[FpMLCd41DataRule.html]] {
+            +validate(GeneralTerms): ValidationResult<GeneralTerms>
+        }
+
+        class FpMLCd14DataRule [[FpMLCd14DataRule.html]] {
+            +validate(CreditDefaultPayout): ValidationResult<CreditDefaultPayout>
+        }
+
+        class FpMLCd13DataRule [[FpMLCd13DataRule.html]] {
+            +validate(CreditDefaultPayout): ValidationResult<CreditDefaultPayout>
+        }
+
+        class FpMLCd12DataRule [[FpMLCd12DataRule.html]] {
+            +validate(CreditDefaultPayout): ValidationResult<CreditDefaultPayout>
+        }
+
+        class FutureValueNotionalTerminationDateDataRule [[FutureValueNotionalTerminationDateDataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class InterestRatePayoutFutureValueNotionalDataRule [[InterestRatePayoutFutureValueNotionalDataRule.html]] {
+            +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+        }
+
+        class FpMLCd32DataRule [[FpMLCd32DataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class FpMLCd25DataRule [[FpMLCd25DataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class FpMLCd24DataRule [[FpMLCd24DataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class FpMLCd23DataRule [[FpMLCd23DataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class FpMLCd20DataRule [[FpMLCd20DataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class FpMLCd19DataRule [[FpMLCd19DataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class FpMLCd11DataRule [[FpMLCd11DataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class FpMLCd8DataRule [[FpMLCd8DataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class FpMLCd7DataRule [[FpMLCd7DataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class FpMLCd1DataRule [[FpMLCd1DataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class ContractClearedDateDataRule [[ContractClearedDateDataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class ContractBarrierDerterminationAgentDataRule [[ContractBarrierDerterminationAgentDataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class ContractDeterminingPartyDataRule [[ContractDeterminingPartyDataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class ContractHedgingPartyDataRule [[ContractHedgingPartyDataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class CreditEventsMortgagesDataRule [[CreditEventsMortgagesDataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class FloatingAmountEventsMortgagesDataRule [[FloatingAmountEventsMortgagesDataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class AdditionalFixedPaymentsMortgagesDataRule [[AdditionalFixedPaymentsMortgagesDataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class RestructuringPhysicalSettlementMatrixDataRule [[RestructuringPhysicalSettlementMatrixDataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class CreditEventsPhysicalSettlementMatrixDataRule [[CreditEventsPhysicalSettlementMatrixDataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class ObligationsPhysicalSettlementMatrixDataRule [[ObligationsPhysicalSettlementMatrixDataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class DeliverableObligationsPhysicalSettlementMatrixDataRule [[DeliverableObligationsPhysicalSettlementMatrixDataRule.html]] {
+            +validate(Contract): ValidationResult<Contract>
+        }
+
+        class CashflowCashflowAmountDataRule [[CashflowCashflowAmountDataRule.html]] {
+            +validate(Cashflow): ValidationResult<Cashflow>
+        }
+
+        class NovationFeeDataRule [[NovationFeeDataRule.html]] {
+            +validate(Event): ValidationResult<Event>
+        }
+
+        class TransferTransferorTransfereeDataRule [[TransferTransferorTransfereeDataRule.html]] {
+            +validate(Transfer): ValidationResult<Transfer>
+        }
+
+        class PhysicalExerciseQuantityDataRule [[PhysicalExerciseQuantityDataRule.html]] {
+            +validate(PhysicalExercise): ValidationResult<PhysicalExercise>
+        }
+
+        class ObservationSourceContentDataRule [[ObservationSourceContentDataRule.html]] {
+            +validate(ObservationSource): ValidationResult<ObservationSource>
+        }
+
+        class EventTimestampExpireTimeDataRule [[EventTimestampExpireTimeDataRule.html]] {
+            +validate(EventTimestamp): ValidationResult<EventTimestamp>
+        }
+
+        class ExercisePrimitiveFullExerciseDataRule [[ExercisePrimitiveFullExerciseDataRule.html]] {
+            +validate(ExercisePrimitive): ValidationResult<ExercisePrimitive>
+        }
+
+        interface com.rosetta.model.lib.validation.Validator<T> {
+            {abstract} +validate(T): ValidationResult<T>
+        }
+        com.rosetta.model.lib.validation.Validator <|.. SimplePaymentPaymentAmountDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd25DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd49DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. RelativeDatesPeriodSkipDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. RateObservationObservationWeightDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PeriodPeriodDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PaymentPaymentflowAmountDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. MinimumNumberOfOptionsMinimumNumberOfOptionsDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. OffsetDayTypeDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. NonNegativeStepStepValueDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. NonNegativeScheduleInitialValueDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. MultipleExerciseMaximumNumberOfOptionsDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FutureValueAmountCalculationPeriodNumberOfDaysDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FutureValueAmountNonNegativeAmountDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FrequencyPeriodMultiplierDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FrequencyPeriodDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FloatingRateFloatingRateMultiplierScheduleDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd60DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd58DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd57DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. AdjustableOrAdjustedOrRelativeDateAdjustedDateDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. AdjustableOrAdjustedDateAdjustedDateDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. WeightedAveragingObservationWeightDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. WeightedAveragingObservationObservationNumberDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PubliclyAvailableInformationSpecifiedNumberDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. OptionSettlementPhysicalSettlementTermsDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. OptionSettlementCashSettlementTermsDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. OptionDenominationNumberOfOptionsDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. OptionDenominationOptionEntitlementDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FeaturePaymentAmountDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ValuationPostponementMaximumDaysOfPostponementDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ResetFrequencyNotWeeklyDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ResetFrequencyWeeklyDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ResetDatesRateCutOffDaysOffsetDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd34DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. NotionalStepRuleNotionalStepRateDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. NotionalStepRuleNotionalStepAmountDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd44DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd27DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FloatingRateDefinitionFloatingRateMultiplierDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd42DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. EarlyTerminationProvisionMandatoryEarlyTerminationDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd41DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd40DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd39DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. DiscountingDiscountRateDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd22DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd21DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd20DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd18DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd17DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd16DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd14DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CalculationPeriodCalculationPeriodNumberOfDaysDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. VersionedTradeIdVersionDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. TradeIdentifierAccountDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. TrancheAttachmentPointExhaustionPointDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. TrancheExhaustionPointDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. TrancheAttachmentPointDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. SingleValuationDateBusinessDaysDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PhysicalSettlementPeriodMaximumBusinessDaysDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PhysicalSettlementPeriodBusinessDaysDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. MultipleValuationDatesNumberValuationDatesDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. MultipleValuationDatesBusinessDaysThereafterDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. IndexReferenceInformationIndexAnnexVersionDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. IndexReferenceInformationIndexSeriesDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd34DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd37DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CashSettlementTermsRecoveryFactorDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CashSettlementTermsCashSettlementBusinessDaysDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. BasketReferenceInformationNthToDefaultMthToDefaultDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. BasketReferenceInformationNthToDefaultDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd44BasketPercentageDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd44OpenUnitsDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ConstituentWeightBasketPercentageDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. AssetPoolEffectiveDateDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. VanillaQuarterlyPaymentMonthlyResetDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. VanillaSemiAnnualPaymentQuarterlyResetDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. VanillaAnnualPaymentDifferentResetFrequencyDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. TransactedPriceMarketPriceDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ResetDatesInterestRateSwapDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CalculationPeriodDatesCalculationPeriodFrequencyDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CalculationPeriodDatesCalculationPeriodDatesAdjustmentsDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd30DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd27DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd2628DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PaymentDatesPaymentFrequencyDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PaymentDatesPaymentDatesAdjustmentsDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PaymentDatesPayRelativeToDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PaymentDatesPaymentDaysOffsetDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd35Cd31DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd61DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. LastRegularPeriodEndDateFinalStubDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FirstRegularPeriodStartDateInitialStubDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CalculationPeriodDatesFirstCompoundingPeriodEndDateDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd29DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd9DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd71DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. SettlementProvisionSettlementCurrencyDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FinalStubLastRegularPaymentDateDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. InitialStubFinalStubDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd24DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd23DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd8DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd6DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLIrd1DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. InterestRatePayoutPaymentDatesDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. InterestRatePayoutDayCountFractionDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. InterestRatePayoutActualQuantityDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. InterestRatePayoutQuantityDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd42DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd41DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd14DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd13DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd12DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FutureValueNotionalTerminationDateDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. InterestRatePayoutFutureValueNotionalDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd32DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd25DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd24DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd23DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd20DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd19DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd11DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd8DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd7DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FpMLCd1DataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ContractClearedDateDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ContractBarrierDerterminationAgentDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ContractDeterminingPartyDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ContractHedgingPartyDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CreditEventsMortgagesDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. FloatingAmountEventsMortgagesDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. AdditionalFixedPaymentsMortgagesDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. RestructuringPhysicalSettlementMatrixDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CreditEventsPhysicalSettlementMatrixDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ObligationsPhysicalSettlementMatrixDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. DeliverableObligationsPhysicalSettlementMatrixDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. CashflowCashflowAmountDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. NovationFeeDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. TransferTransferorTransfereeDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. PhysicalExerciseQuantityDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ObservationSourceContentDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. EventTimestampExpireTimeDataRule
+
+        com.rosetta.model.lib.validation.Validator <|.. ExercisePrimitiveFullExerciseDataRule
+
+    }
+
+@enduml

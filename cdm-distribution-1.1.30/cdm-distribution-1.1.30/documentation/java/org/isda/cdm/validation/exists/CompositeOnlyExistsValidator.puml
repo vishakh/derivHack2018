@@ -1,0 +1,7 @@
+@startuml
+
+    class CompositeOnlyExistsValidator [[CompositeOnlyExistsValidator.html]] {
+        +validate(Composite, String): ValidationResult<Composite>
+    }
+
+@enduml

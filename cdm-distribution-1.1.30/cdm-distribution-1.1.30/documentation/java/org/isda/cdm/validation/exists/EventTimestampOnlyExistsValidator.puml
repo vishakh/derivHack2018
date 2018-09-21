@@ -1,0 +1,7 @@
+@startuml
+
+    class EventTimestampOnlyExistsValidator [[EventTimestampOnlyExistsValidator.html]] {
+        +validate(EventTimestamp, String): ValidationResult<EventTimestamp>
+    }
+
+@enduml

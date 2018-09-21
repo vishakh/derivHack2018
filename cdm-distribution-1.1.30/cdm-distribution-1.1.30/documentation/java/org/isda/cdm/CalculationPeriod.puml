@@ -1,0 +1,22 @@
+@startuml
+
+    class CalculationPeriod [[CalculationPeriod.html]] {
+        +getAdjustedEndDate(): LocalDate
+        +getAdjustedStartDate(): LocalDate
+        +getCalculationPeriodNumberOfDays(): Integer
+        +getDayCountYearFraction(): BigDecimal
+        +getFixedRate(): BigDecimal
+        +getFloatingRateDefinition(): FloatingRateDefinition
+        +getForecastAmount(): Money
+        +getForecastRate(): BigDecimal
+        +getFxLinkedNotionalAmount(): FxLinkedNotionalAmount
+        +getId(): String
+        +getNotionalAmount(): BigDecimal
+        +getUnadjustedEndDate(): LocalDate
+        +getUnadjustedStartDate(): LocalDate
+        +toBuilder(): CalculationPeriod.CalculationPeriodBuilder
+        {static} +builder(): CalculationPeriod.CalculationPeriodBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

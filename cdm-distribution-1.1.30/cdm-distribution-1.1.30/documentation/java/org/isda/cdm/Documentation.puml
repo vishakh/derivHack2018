@@ -1,0 +1,19 @@
+@startuml
+
+    class Documentation [[Documentation.html]] {
+        +getAttachment(): List<Resource>
+        +getBrokerConfirmation(): BrokerConfirmation
+        +getContractualDefinitions(): List<ContractualDefinitionsEnum>
+        +getContractualDefinitionsScheme(): String
+        +getContractualMatrix(): List<ContractualMatrix>
+        +getContractualTermsSupplement(): List<ContractualTermsSupplement>
+        +getCreditSupportAgreement(): CreditSupportAgreement
+        +getMasterAgreement(): MasterAgreement
+        +getMasterConfirmation(): MasterConfirmation
+        +getOtherAgreement(): List<OtherAgreement>
+        +toBuilder(): Documentation.DocumentationBuilder
+        {static} +builder(): Documentation.DocumentationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

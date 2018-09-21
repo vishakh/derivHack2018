@@ -1,0 +1,12 @@
+@startuml
+
+    class ListedHeaderMeta [[ListedHeaderMeta.html]] {
+        +dataRules(): List<Validator<ListedHeader>>
+        +choiceRuleValidators(): List<Validator<ListedHeader>>
+        +getOutMappings(): Multimap<String, OutMapping<ListedHeader, ?>>
+        +getQualifyFunctions(): List<Function<ListedHeader, QualifyResult>>
+        +validator(): Validator<ListedHeader>
+        +onlyExistsValidator(): ValidatorWithArg<ListedHeader, String>
+    }
+
+@enduml

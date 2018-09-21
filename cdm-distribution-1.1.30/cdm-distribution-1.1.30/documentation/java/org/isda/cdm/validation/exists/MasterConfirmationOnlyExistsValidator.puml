@@ -1,0 +1,7 @@
+@startuml
+
+    class MasterConfirmationOnlyExistsValidator [[MasterConfirmationOnlyExistsValidator.html]] {
+        +validate(MasterConfirmation, String): ValidationResult<MasterConfirmation>
+    }
+
+@enduml

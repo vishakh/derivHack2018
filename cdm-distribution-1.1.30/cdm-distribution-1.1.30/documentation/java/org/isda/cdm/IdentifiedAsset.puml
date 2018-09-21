@@ -1,0 +1,13 @@
+@startuml
+
+    class IdentifiedAsset [[IdentifiedAsset.html]] {
+        +getDescription(): String
+        +getId(): String
+        +getInstrumentIdentifier(): List<String>
+        +getInstrumentIdentifierScheme(): String
+        +toBuilder(): IdentifiedAsset.IdentifiedAssetBuilder
+        {static} +builder(): IdentifiedAsset.IdentifiedAssetBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

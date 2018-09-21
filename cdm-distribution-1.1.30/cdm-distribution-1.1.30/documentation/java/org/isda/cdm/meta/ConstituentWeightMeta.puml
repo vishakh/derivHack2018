@@ -1,0 +1,12 @@
+@startuml
+
+    class ConstituentWeightMeta [[ConstituentWeightMeta.html]] {
+        +dataRules(): List<Validator<ConstituentWeight>>
+        +choiceRuleValidators(): List<Validator<ConstituentWeight>>
+        +getOutMappings(): Multimap<String, OutMapping<ConstituentWeight, ?>>
+        +getQualifyFunctions(): List<Function<ConstituentWeight, QualifyResult>>
+        +validator(): Validator<ConstituentWeight>
+        +onlyExistsValidator(): ValidatorWithArg<ConstituentWeight, String>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class InterestRateCurve [[InterestRateCurve.html]] {
+        +getFloatingRateIndex(): FloatingRateIndexEnum
+        +getFloatingRateIndexScheme(): String
+        +getTenor(): Period
+        +toBuilder(): InterestRateCurve.InterestRateCurveBuilder
+        {static} +builder(): InterestRateCurve.InterestRateCurveBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

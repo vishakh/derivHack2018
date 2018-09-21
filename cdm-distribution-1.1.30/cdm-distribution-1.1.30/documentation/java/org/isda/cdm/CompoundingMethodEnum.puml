@@ -1,0 +1,10 @@
+@startuml
+
+    enum CompoundingMethodEnum [[CompoundingMethodEnum.html]] {
+        {static} +FLAT
+        {static} +NONE
+        {static} +STRAIGHT
+        {static} +SPREAD_EXCLUSIVE
+    }
+
+@enduml

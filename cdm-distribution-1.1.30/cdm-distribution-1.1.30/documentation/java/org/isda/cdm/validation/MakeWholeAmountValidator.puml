@@ -1,0 +1,7 @@
+@startuml
+
+    class MakeWholeAmountValidator [[MakeWholeAmountValidator.html]] {
+        +validate(MakeWholeAmount): ValidationResult<MakeWholeAmount>
+    }
+
+@enduml

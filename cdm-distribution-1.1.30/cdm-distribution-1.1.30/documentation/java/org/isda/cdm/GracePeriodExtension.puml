@@ -1,0 +1,11 @@
+@startuml
+
+    class GracePeriodExtension [[GracePeriodExtension.html]] {
+        +getApplicable(): Boolean
+        +getGracePeriod(): Offset
+        +toBuilder(): GracePeriodExtension.GracePeriodExtensionBuilder
+        {static} +builder(): GracePeriodExtension.GracePeriodExtensionBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

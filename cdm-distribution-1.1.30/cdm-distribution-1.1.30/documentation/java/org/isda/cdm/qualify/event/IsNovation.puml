@@ -1,0 +1,7 @@
+@startuml
+
+    class IsNovation [[IsNovation.html]] {
+        +apply(Event): QualifyResult
+    }
+
+@enduml

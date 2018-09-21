@@ -1,0 +1,7 @@
+@startuml
+
+    class ReferencePairOnlyExistsValidator [[ReferencePairOnlyExistsValidator.html]] {
+        +validate(ReferencePair, String): ValidationResult<ReferencePair>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class StrikeSpreadMeta [[StrikeSpreadMeta.html]] {
+        +dataRules(): List<Validator<StrikeSpread>>
+        +choiceRuleValidators(): List<Validator<StrikeSpread>>
+        +getOutMappings(): Multimap<String, OutMapping<StrikeSpread, ?>>
+        +getQualifyFunctions(): List<Function<StrikeSpread, QualifyResult>>
+        +validator(): Validator<StrikeSpread>
+        +onlyExistsValidator(): ValidatorWithArg<StrikeSpread, String>
+    }
+
+@enduml

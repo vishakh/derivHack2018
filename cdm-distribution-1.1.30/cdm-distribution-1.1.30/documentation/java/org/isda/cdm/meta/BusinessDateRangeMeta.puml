@@ -1,0 +1,12 @@
+@startuml
+
+    class BusinessDateRangeMeta [[BusinessDateRangeMeta.html]] {
+        +dataRules(): List<Validator<BusinessDateRange>>
+        +choiceRuleValidators(): List<Validator<BusinessDateRange>>
+        +getOutMappings(): Multimap<String, OutMapping<BusinessDateRange, ?>>
+        +getQualifyFunctions(): List<Function<BusinessDateRange, QualifyResult>>
+        +validator(): Validator<BusinessDateRange>
+        +onlyExistsValidator(): ValidatorWithArg<BusinessDateRange, String>
+    }
+
+@enduml

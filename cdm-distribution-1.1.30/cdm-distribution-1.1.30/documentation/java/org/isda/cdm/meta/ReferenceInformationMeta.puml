@@ -1,0 +1,12 @@
+@startuml
+
+    class ReferenceInformationMeta [[ReferenceInformationMeta.html]] {
+        +dataRules(): List<Validator<ReferenceInformation>>
+        +choiceRuleValidators(): List<Validator<ReferenceInformation>>
+        +getOutMappings(): Multimap<String, OutMapping<ReferenceInformation, ?>>
+        +getQualifyFunctions(): List<Function<ReferenceInformation, QualifyResult>>
+        +validator(): Validator<ReferenceInformation>
+        +onlyExistsValidator(): ValidatorWithArg<ReferenceInformation, String>
+    }
+
+@enduml

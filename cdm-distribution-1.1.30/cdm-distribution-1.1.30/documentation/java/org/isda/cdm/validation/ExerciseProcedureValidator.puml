@@ -1,0 +1,7 @@
+@startuml
+
+    class ExerciseProcedureValidator [[ExerciseProcedureValidator.html]] {
+        +validate(ExerciseProcedure): ValidationResult<ExerciseProcedure>
+    }
+
+@enduml

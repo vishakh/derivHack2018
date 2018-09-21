@@ -1,0 +1,11 @@
+@startuml
+
+    class NonNegativeAmountSchedule [[NonNegativeAmountSchedule.html]] {
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +toBuilder(): NonNegativeAmountSchedule.NonNegativeAmountScheduleBuilder
+        {static} +builder(): NonNegativeAmountSchedule.NonNegativeAmountScheduleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

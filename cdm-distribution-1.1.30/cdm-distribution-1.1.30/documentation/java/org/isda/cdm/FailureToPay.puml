@@ -1,0 +1,12 @@
+@startuml
+
+    class FailureToPay [[FailureToPay.html]] {
+        +getApplicable(): Boolean
+        +getGracePeriodExtension(): GracePeriodExtension
+        +getPaymentRequirement(): Money
+        +toBuilder(): FailureToPay.FailureToPayBuilder
+        {static} +builder(): FailureToPay.FailureToPayBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

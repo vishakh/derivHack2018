@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionStyleValidator [[OptionStyleValidator.html]] {
+        +validate(OptionStyle): ValidationResult<OptionStyle>
+    }
+
+@enduml

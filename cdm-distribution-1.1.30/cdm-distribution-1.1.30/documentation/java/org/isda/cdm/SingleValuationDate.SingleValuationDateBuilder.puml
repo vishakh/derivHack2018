@@ -1,0 +1,9 @@
+@startuml
+
+    class SingleValuationDate.SingleValuationDateBuilder [[SingleValuationDate.SingleValuationDateBuilder.html]] {
+        +getBusinessDays(): Integer
+        +setBusinessDays(Integer): SingleValuationDate.SingleValuationDateBuilder
+        +build(): SingleValuationDate
+    }
+
+@enduml

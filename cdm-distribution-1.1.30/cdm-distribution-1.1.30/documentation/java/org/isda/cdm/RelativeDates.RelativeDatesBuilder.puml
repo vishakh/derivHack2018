@@ -1,0 +1,13 @@
+@startuml
+
+    class RelativeDates.RelativeDatesBuilder [[RelativeDates.RelativeDatesBuilder.html]] {
+        +getPeriodSkip(): Integer
+        +getScheduleBounds(): DateRange.DateRangeBuilder
+        +getOrCreateScheduleBounds(): DateRange.DateRangeBuilder
+        +setPeriodSkip(Integer): RelativeDates.RelativeDatesBuilder
+        +setScheduleBounds(DateRange): RelativeDates.RelativeDatesBuilder
+        +setScheduleBoundsBuilder(DateRange.DateRangeBuilder): RelativeDates.RelativeDatesBuilder
+        +build(): RelativeDates
+    }
+
+@enduml

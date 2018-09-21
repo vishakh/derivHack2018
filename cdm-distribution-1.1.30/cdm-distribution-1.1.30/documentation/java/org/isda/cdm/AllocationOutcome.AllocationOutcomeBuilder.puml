@@ -1,0 +1,11 @@
+@startuml
+
+    class AllocationOutcome.AllocationOutcomeBuilder [[AllocationOutcome.AllocationOutcomeBuilder.html]] {
+        +getExecution(): ExecutionReference.ExecutionReferenceBuilder
+        +getOrCreateExecution(): ExecutionReference.ExecutionReferenceBuilder
+        +setExecution(ExecutionReference): AllocationOutcome.AllocationOutcomeBuilder
+        +setExecutionBuilder(ExecutionReference.ExecutionReferenceBuilder): AllocationOutcome.AllocationOutcomeBuilder
+        +build(): AllocationOutcome
+    }
+
+@enduml

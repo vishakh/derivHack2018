@@ -1,0 +1,23 @@
+@startuml
+
+    class OptionStrike.OptionStrikeBuilder [[OptionStrike.OptionStrikeBuilder.html]] {
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +getPercentage(): BigDecimal
+        +getPrice(): BigDecimal
+        +getReferenceSwapCurve(): ReferenceSwapCurve.ReferenceSwapCurveBuilder
+        +getOrCreateReferenceSwapCurve(): ReferenceSwapCurve.ReferenceSwapCurveBuilder
+        +getSpread(): BigDecimal
+        +getStrikeReference(): String
+        +setCurrency(String): OptionStrike.OptionStrikeBuilder
+        +setCurrencyScheme(String): OptionStrike.OptionStrikeBuilder
+        +setPercentage(BigDecimal): OptionStrike.OptionStrikeBuilder
+        +setPrice(BigDecimal): OptionStrike.OptionStrikeBuilder
+        +setReferenceSwapCurve(ReferenceSwapCurve): OptionStrike.OptionStrikeBuilder
+        +setReferenceSwapCurveBuilder(ReferenceSwapCurve.ReferenceSwapCurveBuilder): OptionStrike.OptionStrikeBuilder
+        +setSpread(BigDecimal): OptionStrike.OptionStrikeBuilder
+        +setStrikeReference(String): OptionStrike.OptionStrikeBuilder
+        +build(): OptionStrike
+    }
+
+@enduml

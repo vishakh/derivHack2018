@@ -1,0 +1,12 @@
+@startuml
+
+    class PercentageRuleMeta [[PercentageRuleMeta.html]] {
+        +dataRules(): List<Validator<PercentageRule>>
+        +choiceRuleValidators(): List<Validator<PercentageRule>>
+        +getOutMappings(): Multimap<String, OutMapping<PercentageRule, ?>>
+        +getQualifyFunctions(): List<Function<PercentageRule, QualifyResult>>
+        +validator(): Validator<PercentageRule>
+        +onlyExistsValidator(): ValidatorWithArg<PercentageRule, String>
+    }
+
+@enduml

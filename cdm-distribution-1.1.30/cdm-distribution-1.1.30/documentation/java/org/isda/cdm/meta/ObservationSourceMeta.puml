@@ -1,0 +1,12 @@
+@startuml
+
+    class ObservationSourceMeta [[ObservationSourceMeta.html]] {
+        +dataRules(): List<Validator<ObservationSource>>
+        +choiceRuleValidators(): List<Validator<ObservationSource>>
+        +getOutMappings(): Multimap<String, OutMapping<ObservationSource, ?>>
+        +getQualifyFunctions(): List<Function<ObservationSource, QualifyResult>>
+        +validator(): Validator<ObservationSource>
+        +onlyExistsValidator(): ValidatorWithArg<ObservationSource, String>
+    }
+
+@enduml

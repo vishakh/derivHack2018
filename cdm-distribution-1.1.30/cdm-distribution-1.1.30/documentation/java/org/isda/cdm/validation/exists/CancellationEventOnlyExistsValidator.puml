@@ -1,0 +1,7 @@
+@startuml
+
+    class CancellationEventOnlyExistsValidator [[CancellationEventOnlyExistsValidator.html]] {
+        +validate(CancellationEvent, String): ValidationResult<CancellationEvent>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class PaymentDiscountingMeta [[PaymentDiscountingMeta.html]] {
+        +dataRules(): List<Validator<PaymentDiscounting>>
+        +choiceRuleValidators(): List<Validator<PaymentDiscounting>>
+        +getOutMappings(): Multimap<String, OutMapping<PaymentDiscounting, ?>>
+        +getQualifyFunctions(): List<Function<PaymentDiscounting, QualifyResult>>
+        +validator(): Validator<PaymentDiscounting>
+        +onlyExistsValidator(): ValidatorWithArg<PaymentDiscounting, String>
+    }
+
+@enduml

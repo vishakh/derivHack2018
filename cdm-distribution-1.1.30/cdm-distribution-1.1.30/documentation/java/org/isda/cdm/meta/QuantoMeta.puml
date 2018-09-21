@@ -1,0 +1,12 @@
+@startuml
+
+    class QuantoMeta [[QuantoMeta.html]] {
+        +dataRules(): List<Validator<Quanto>>
+        +choiceRuleValidators(): List<Validator<Quanto>>
+        +getOutMappings(): Multimap<String, OutMapping<Quanto, ?>>
+        +getQualifyFunctions(): List<Function<Quanto, QualifyResult>>
+        +validator(): Validator<Quanto>
+        +onlyExistsValidator(): ValidatorWithArg<Quanto, String>
+    }
+
+@enduml

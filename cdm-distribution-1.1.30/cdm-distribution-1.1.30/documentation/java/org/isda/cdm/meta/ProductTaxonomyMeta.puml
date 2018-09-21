@@ -1,0 +1,12 @@
+@startuml
+
+    class ProductTaxonomyMeta [[ProductTaxonomyMeta.html]] {
+        +dataRules(): List<Validator<ProductTaxonomy>>
+        +choiceRuleValidators(): List<Validator<ProductTaxonomy>>
+        +getOutMappings(): Multimap<String, OutMapping<ProductTaxonomy, ?>>
+        +getQualifyFunctions(): List<Function<ProductTaxonomy, QualifyResult>>
+        +validator(): Validator<ProductTaxonomy>
+        +onlyExistsValidator(): ValidatorWithArg<ProductTaxonomy, String>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class FxLinkedNotionalAmountMeta [[FxLinkedNotionalAmountMeta.html]] {
+        +dataRules(): List<Validator<FxLinkedNotionalAmount>>
+        +choiceRuleValidators(): List<Validator<FxLinkedNotionalAmount>>
+        +getOutMappings(): Multimap<String, OutMapping<FxLinkedNotionalAmount, ?>>
+        +getQualifyFunctions(): List<Function<FxLinkedNotionalAmount, QualifyResult>>
+        +validator(): Validator<FxLinkedNotionalAmount>
+        +onlyExistsValidator(): ValidatorWithArg<FxLinkedNotionalAmount, String>
+    }
+
+@enduml

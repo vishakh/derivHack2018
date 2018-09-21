@@ -1,0 +1,11 @@
+org.isda.cdm
+org.isda.cdm.calculation
+org.isda.cdm.filter
+org.isda.cdm.functions
+org.isda.cdm.meta
+org.isda.cdm.qualify.event
+org.isda.cdm.qualify.product
+org.isda.cdm.validation
+org.isda.cdm.validation.choicerule
+org.isda.cdm.validation.datarule
+org.isda.cdm.validation.exists

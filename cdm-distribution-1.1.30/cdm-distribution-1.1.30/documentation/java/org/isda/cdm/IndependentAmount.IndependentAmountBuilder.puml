@@ -1,0 +1,11 @@
+@startuml
+
+    class IndependentAmount.IndependentAmountBuilder [[IndependentAmount.IndependentAmountBuilder.html]] {
+        +getPaymentDetail(): List<PaymentDetail.PaymentDetailBuilder>
+        +getOrCreatePaymentDetail(int): PaymentDetail.PaymentDetailBuilder
+        +addPaymentDetail(PaymentDetail): IndependentAmount.IndependentAmountBuilder
+        +addPaymentDetailBuilder(PaymentDetail.PaymentDetailBuilder): IndependentAmount.IndependentAmountBuilder
+        +build(): IndependentAmount
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class ObservationSource [[ObservationSource.html]] {
+        +getCurve(): Curve
+        +getInformationSource(): InformationSource
+        +toBuilder(): ObservationSource.ObservationSourceBuilder
+        {static} +builder(): ObservationSource.ObservationSourceBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

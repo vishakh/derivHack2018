@@ -1,0 +1,11 @@
+@startuml
+
+    class ExtendibleProvisionAdjustedDates.ExtendibleProvisionAdjustedDatesBuilder [[ExtendibleProvisionAdjustedDates.ExtendibleProvisionAdjustedDatesBuilder.html]] {
+        +getExtensionEvent(): List<ExtensionEvent.ExtensionEventBuilder>
+        +getOrCreateExtensionEvent(int): ExtensionEvent.ExtensionEventBuilder
+        +addExtensionEvent(ExtensionEvent): ExtendibleProvisionAdjustedDates.ExtendibleProvisionAdjustedDatesBuilder
+        +addExtensionEventBuilder(ExtensionEvent.ExtensionEventBuilder): ExtendibleProvisionAdjustedDates.ExtendibleProvisionAdjustedDatesBuilder
+        +build(): ExtendibleProvisionAdjustedDates
+    }
+
+@enduml

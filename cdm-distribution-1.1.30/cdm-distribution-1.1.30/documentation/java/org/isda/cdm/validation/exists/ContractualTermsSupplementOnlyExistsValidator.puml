@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractualTermsSupplementOnlyExistsValidator [[ContractualTermsSupplementOnlyExistsValidator.html]] {
+        +validate(ContractualTermsSupplement, String): ValidationResult<ContractualTermsSupplement>
+    }
+
+@enduml

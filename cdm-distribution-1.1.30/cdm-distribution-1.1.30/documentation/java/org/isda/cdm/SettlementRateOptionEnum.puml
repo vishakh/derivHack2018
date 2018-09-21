@@ -1,0 +1,12 @@
+@startuml
+
+    enum SettlementRateOptionEnum [[SettlementRateOptionEnum.html]] {
+        {static} +ARS_BNAR_ARS01
+        {static} +ARS_EMTA_INDICATIVE_SURVEY_RATE_ARS04
+        {static} +BRL_PTAX_BRL09
+        {static} +CNY_SAEC_CNY01
+        {static} +KRW_KFTC18_KRW02
+        {static} +INR_RBIB_INR01
+    }
+
+@enduml

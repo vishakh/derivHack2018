@@ -1,0 +1,25 @@
+@startuml
+
+    class MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder [[MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder.html]] {
+        +getCalculationAgent(): CalculationAgent.CalculationAgentBuilder
+        +getOrCreateCalculationAgent(): CalculationAgent.CalculationAgentBuilder
+        +getCashSettlement(): OptionCashSettlement.OptionCashSettlementBuilder
+        +getOrCreateCashSettlement(): OptionCashSettlement.OptionCashSettlementBuilder
+        +getId(): String
+        +getMandatoryEarlyTerminationAdjustedDates(): MandatoryEarlyTerminationAdjustedDates.MandatoryEarlyTerminationAdjustedDatesBuilder
+        +getOrCreateMandatoryEarlyTerminationAdjustedDates(): MandatoryEarlyTerminationAdjustedDates.MandatoryEarlyTerminationAdjustedDatesBuilder
+        +getMandatoryEarlyTerminationDate(): AdjustableDate.AdjustableDateBuilder
+        +getOrCreateMandatoryEarlyTerminationDate(): AdjustableDate.AdjustableDateBuilder
+        +setCalculationAgent(CalculationAgent): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        +setCalculationAgentBuilder(CalculationAgent.CalculationAgentBuilder): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        +setCashSettlement(OptionCashSettlement): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        +setCashSettlementBuilder(OptionCashSettlement.OptionCashSettlementBuilder): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        +setId(String): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        +setMandatoryEarlyTerminationAdjustedDates(MandatoryEarlyTerminationAdjustedDates): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        +setMandatoryEarlyTerminationAdjustedDatesBuilder(MandatoryEarlyTerminationAdjustedDates.MandatoryEarlyTerminationAdjustedDatesBuilder): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        +setMandatoryEarlyTerminationDate(AdjustableDate): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        +setMandatoryEarlyTerminationDateBuilder(AdjustableDate.AdjustableDateBuilder): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        +build(): MandatoryEarlyTermination
+    }
+
+@enduml

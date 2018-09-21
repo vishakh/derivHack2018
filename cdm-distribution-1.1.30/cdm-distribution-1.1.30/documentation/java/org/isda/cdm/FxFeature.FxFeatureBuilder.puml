@@ -1,0 +1,23 @@
+@startuml
+
+    class FxFeature.FxFeatureBuilder [[FxFeature.FxFeatureBuilder.html]] {
+        +getComposite(): Composite.CompositeBuilder
+        +getOrCreateComposite(): Composite.CompositeBuilder
+        +getCrossCurrency(): Composite.CompositeBuilder
+        +getOrCreateCrossCurrency(): Composite.CompositeBuilder
+        +getQuanto(): Quanto.QuantoBuilder
+        +getOrCreateQuanto(): Quanto.QuantoBuilder
+        +getReferenceCurrency(): String
+        +getReferenceCurrencyScheme(): String
+        +setComposite(Composite): FxFeature.FxFeatureBuilder
+        +setCompositeBuilder(Composite.CompositeBuilder): FxFeature.FxFeatureBuilder
+        +setCrossCurrency(Composite): FxFeature.FxFeatureBuilder
+        +setCrossCurrencyBuilder(Composite.CompositeBuilder): FxFeature.FxFeatureBuilder
+        +setQuanto(Quanto): FxFeature.FxFeatureBuilder
+        +setQuantoBuilder(Quanto.QuantoBuilder): FxFeature.FxFeatureBuilder
+        +setReferenceCurrency(String): FxFeature.FxFeatureBuilder
+        +setReferenceCurrencyScheme(String): FxFeature.FxFeatureBuilder
+        +build(): FxFeature
+    }
+
+@enduml

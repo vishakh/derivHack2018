@@ -1,0 +1,12 @@
+@startuml
+
+    class AdditionalFixedPayments [[AdditionalFixedPayments.html]] {
+        +getInterestShortfallReimbursement(): Boolean
+        +getPrincipalShortfallReimbursement(): Boolean
+        +getWritedownReimbursement(): Boolean
+        +toBuilder(): AdditionalFixedPayments.AdditionalFixedPaymentsBuilder
+        {static} +builder(): AdditionalFixedPayments.AdditionalFixedPaymentsBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

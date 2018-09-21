@@ -1,0 +1,15 @@
+@startuml
+
+    class PrincipalExchange [[PrincipalExchange.html]] {
+        +getAdjustedPrincipalExchangeDate(): LocalDate
+        +getDiscountFactor(): BigDecimal
+        +getId(): String
+        +getPresentValuePrincipalExchangeAmount(): Money
+        +getPrincipalExchangeAmount(): BigDecimal
+        +getUnadjustedPrincipalExchangeDate(): LocalDate
+        +toBuilder(): PrincipalExchange.PrincipalExchangeBuilder
+        {static} +builder(): PrincipalExchange.PrincipalExchangeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

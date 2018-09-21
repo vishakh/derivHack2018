@@ -1,0 +1,23 @@
+@startuml
+
+    class PhysicalExercise.PhysicalExerciseBuilder [[PhysicalExercise.PhysicalExerciseBuilder.html]] {
+        +getCashflow(): Cashflow.CashflowBuilder
+        +getOrCreateCashflow(): Cashflow.CashflowBuilder
+        +getCommodity(): Commodity.CommodityBuilder
+        +getOrCreateCommodity(): Commodity.CommodityBuilder
+        +getListedProduct(): ListedProduct.ListedProductBuilder
+        +getOrCreateListedProduct(): ListedProduct.ListedProductBuilder
+        +getQuantity(): Quantity.QuantityBuilder
+        +getOrCreateQuantity(): Quantity.QuantityBuilder
+        +setCashflow(Cashflow): PhysicalExercise.PhysicalExerciseBuilder
+        +setCashflowBuilder(Cashflow.CashflowBuilder): PhysicalExercise.PhysicalExerciseBuilder
+        +setCommodity(Commodity): PhysicalExercise.PhysicalExerciseBuilder
+        +setCommodityBuilder(Commodity.CommodityBuilder): PhysicalExercise.PhysicalExerciseBuilder
+        +setListedProduct(ListedProduct): PhysicalExercise.PhysicalExerciseBuilder
+        +setListedProductBuilder(ListedProduct.ListedProductBuilder): PhysicalExercise.PhysicalExerciseBuilder
+        +setQuantity(Quantity): PhysicalExercise.PhysicalExerciseBuilder
+        +setQuantityBuilder(Quantity.QuantityBuilder): PhysicalExercise.PhysicalExerciseBuilder
+        +build(): PhysicalExercise
+    }
+
+@enduml

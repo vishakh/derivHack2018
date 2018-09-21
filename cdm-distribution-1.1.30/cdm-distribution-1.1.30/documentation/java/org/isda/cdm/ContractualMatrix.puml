@@ -1,0 +1,14 @@
+@startuml
+
+    class ContractualMatrix [[ContractualMatrix.html]] {
+        +getMatrixTerm(): MatrixTermEnum
+        +getMatrixTermScheme(): String
+        +getMatrixType(): MatrixTypeEnum
+        +getMatrixTypeScheme(): String
+        +getPublicationDate(): LocalDate
+        +toBuilder(): ContractualMatrix.ContractualMatrixBuilder
+        {static} +builder(): ContractualMatrix.ContractualMatrixBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

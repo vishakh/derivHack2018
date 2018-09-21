@@ -1,0 +1,9 @@
+@startuml
+
+    class DateTimeList.DateTimeListBuilder [[DateTimeList.DateTimeListBuilder.html]] {
+        +getDateTime(): List<LocalDateTime>
+        +addDateTime(LocalDateTime): DateTimeList.DateTimeListBuilder
+        +build(): DateTimeList
+    }
+
+@enduml

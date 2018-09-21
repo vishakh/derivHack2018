@@ -1,0 +1,12 @@
+@startuml
+
+    class BarrierMeta [[BarrierMeta.html]] {
+        +dataRules(): List<Validator<Barrier>>
+        +choiceRuleValidators(): List<Validator<Barrier>>
+        +getOutMappings(): Multimap<String, OutMapping<Barrier, ?>>
+        +getQualifyFunctions(): List<Function<Barrier, QualifyResult>>
+        +validator(): Validator<Barrier>
+        +onlyExistsValidator(): ValidatorWithArg<Barrier, String>
+    }
+
+@enduml

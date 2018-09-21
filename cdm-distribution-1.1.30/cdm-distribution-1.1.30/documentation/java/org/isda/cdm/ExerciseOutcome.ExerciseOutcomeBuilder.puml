@@ -1,0 +1,15 @@
+@startuml
+
+    class ExerciseOutcome.ExerciseOutcomeBuilder [[ExerciseOutcome.ExerciseOutcomeBuilder.html]] {
+        +getCashExercise(): Cashflow.CashflowBuilder
+        +getOrCreateCashExercise(): Cashflow.CashflowBuilder
+        +getPhysicalExercise(): PhysicalExercise.PhysicalExerciseBuilder
+        +getOrCreatePhysicalExercise(): PhysicalExercise.PhysicalExerciseBuilder
+        +setCashExercise(Cashflow): ExerciseOutcome.ExerciseOutcomeBuilder
+        +setCashExerciseBuilder(Cashflow.CashflowBuilder): ExerciseOutcome.ExerciseOutcomeBuilder
+        +setPhysicalExercise(PhysicalExercise): ExerciseOutcome.ExerciseOutcomeBuilder
+        +setPhysicalExerciseBuilder(PhysicalExercise.PhysicalExerciseBuilder): ExerciseOutcome.ExerciseOutcomeBuilder
+        +build(): ExerciseOutcome
+    }
+
+@enduml

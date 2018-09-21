@@ -1,0 +1,12 @@
+@startuml
+
+    class Composite [[Composite.html]] {
+        +getDeterminationMethod(): DeterminationMethodEnum
+        +getFxSpotRateSource(): FxSpotRateSource
+        +getRelativeDate(): RelativeDateOffset
+        +toBuilder(): Composite.CompositeBuilder
+        {static} +builder(): Composite.CompositeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

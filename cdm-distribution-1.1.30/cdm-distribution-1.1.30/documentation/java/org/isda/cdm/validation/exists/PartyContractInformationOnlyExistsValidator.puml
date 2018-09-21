@@ -1,0 +1,7 @@
+@startuml
+
+    class PartyContractInformationOnlyExistsValidator [[PartyContractInformationOnlyExistsValidator.html]] {
+        +validate(PartyContractInformation, String): ValidationResult<PartyContractInformation>
+    }
+
+@enduml

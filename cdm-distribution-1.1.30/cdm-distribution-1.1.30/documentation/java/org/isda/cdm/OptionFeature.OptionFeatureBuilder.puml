@@ -1,0 +1,31 @@
+@startuml
+
+    class OptionFeature.OptionFeatureBuilder [[OptionFeature.OptionFeatureBuilder.html]] {
+        +getAsian(): Asian.AsianBuilder
+        +getOrCreateAsian(): Asian.AsianBuilder
+        +getBarrier(): Barrier.BarrierBuilder
+        +getOrCreateBarrier(): Barrier.BarrierBuilder
+        +getFxFeature(): FxFeature.FxFeatureBuilder
+        +getOrCreateFxFeature(): FxFeature.FxFeatureBuilder
+        +getKnock(): Knock.KnockBuilder
+        +getOrCreateKnock(): Knock.KnockBuilder
+        +getPassThrough(): PassThrough.PassThroughBuilder
+        +getOrCreatePassThrough(): PassThrough.PassThroughBuilder
+        +getStrategyFeature(): StrategyFeature.StrategyFeatureBuilder
+        +getOrCreateStrategyFeature(): StrategyFeature.StrategyFeatureBuilder
+        +setAsian(Asian): OptionFeature.OptionFeatureBuilder
+        +setAsianBuilder(Asian.AsianBuilder): OptionFeature.OptionFeatureBuilder
+        +setBarrier(Barrier): OptionFeature.OptionFeatureBuilder
+        +setBarrierBuilder(Barrier.BarrierBuilder): OptionFeature.OptionFeatureBuilder
+        +setFxFeature(FxFeature): OptionFeature.OptionFeatureBuilder
+        +setFxFeatureBuilder(FxFeature.FxFeatureBuilder): OptionFeature.OptionFeatureBuilder
+        +setKnock(Knock): OptionFeature.OptionFeatureBuilder
+        +setKnockBuilder(Knock.KnockBuilder): OptionFeature.OptionFeatureBuilder
+        +setPassThrough(PassThrough): OptionFeature.OptionFeatureBuilder
+        +setPassThroughBuilder(PassThrough.PassThroughBuilder): OptionFeature.OptionFeatureBuilder
+        +setStrategyFeature(StrategyFeature): OptionFeature.OptionFeatureBuilder
+        +setStrategyFeatureBuilder(StrategyFeature.StrategyFeatureBuilder): OptionFeature.OptionFeatureBuilder
+        +build(): OptionFeature
+    }
+
+@enduml

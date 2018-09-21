@@ -1,0 +1,7 @@
+@startuml
+
+    class FloatingRateValidator [[FloatingRateValidator.html]] {
+        +validate(FloatingRate): ValidationResult<FloatingRate>
+    }
+
+@enduml

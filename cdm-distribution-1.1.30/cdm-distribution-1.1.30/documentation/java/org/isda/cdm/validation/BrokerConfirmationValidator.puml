@@ -1,0 +1,7 @@
+@startuml
+
+    class BrokerConfirmationValidator [[BrokerConfirmationValidator.html]] {
+        +validate(BrokerConfirmation): ValidationResult<BrokerConfirmation>
+    }
+
+@enduml

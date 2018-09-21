@@ -1,0 +1,7 @@
+@startuml
+
+    class IsInterestRateInflationSwapBasisYearOnYear [[IsInterestRateInflationSwapBasisYearOnYear.html]] {
+        +apply(EconomicTerms): QualifyResult
+    }
+
+@enduml

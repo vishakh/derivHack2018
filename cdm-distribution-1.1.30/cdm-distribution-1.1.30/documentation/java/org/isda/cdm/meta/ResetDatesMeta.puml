@@ -1,0 +1,12 @@
+@startuml
+
+    class ResetDatesMeta [[ResetDatesMeta.html]] {
+        +dataRules(): List<Validator<ResetDates>>
+        +choiceRuleValidators(): List<Validator<ResetDates>>
+        +getOutMappings(): Multimap<String, OutMapping<ResetDates, ?>>
+        +getQualifyFunctions(): List<Function<ResetDates, QualifyResult>>
+        +validator(): Validator<ResetDates>
+        +onlyExistsValidator(): ValidatorWithArg<ResetDates, String>
+    }
+
+@enduml

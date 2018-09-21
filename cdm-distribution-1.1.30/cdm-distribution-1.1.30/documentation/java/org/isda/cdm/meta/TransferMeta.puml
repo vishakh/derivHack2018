@@ -1,0 +1,12 @@
+@startuml
+
+    class TransferMeta [[TransferMeta.html]] {
+        +dataRules(): List<Validator<Transfer>>
+        +choiceRuleValidators(): List<Validator<Transfer>>
+        +getOutMappings(): Multimap<String, OutMapping<Transfer, ?>>
+        +getQualifyFunctions(): List<Function<Transfer, QualifyResult>>
+        +validator(): Validator<Transfer>
+        +onlyExistsValidator(): ValidatorWithArg<Transfer, String>
+    }
+
+@enduml

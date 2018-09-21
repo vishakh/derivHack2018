@@ -1,0 +1,27 @@
+@startuml
+
+    class FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder [[FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder.html]] {
+        +getConstantNotionalScheduleReference(): String
+        +getFxSpotRateSource(): FxSpotRateSource.FxSpotRateSourceBuilder
+        +getOrCreateFxSpotRateSource(): FxSpotRateSource.FxSpotRateSourceBuilder
+        +getInitialValue(): BigDecimal
+        +getVaryingNotionalCurrency(): String
+        +getVaryingNotionalCurrencyScheme(): String
+        +getVaryingNotionalFixingDates(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getOrCreateVaryingNotionalFixingDates(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getVaryingNotionalInterimExchangePaymentDates(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getOrCreateVaryingNotionalInterimExchangePaymentDates(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +setConstantNotionalScheduleReference(String): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        +setFxSpotRateSource(FxSpotRateSource): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        +setFxSpotRateSourceBuilder(FxSpotRateSource.FxSpotRateSourceBuilder): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        +setInitialValue(BigDecimal): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        +setVaryingNotionalCurrency(String): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        +setVaryingNotionalCurrencyScheme(String): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        +setVaryingNotionalFixingDates(RelativeDateOffset): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        +setVaryingNotionalFixingDatesBuilder(RelativeDateOffset.RelativeDateOffsetBuilder): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        +setVaryingNotionalInterimExchangePaymentDates(RelativeDateOffset): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        +setVaryingNotionalInterimExchangePaymentDatesBuilder(RelativeDateOffset.RelativeDateOffsetBuilder): FxLinkedNotionalSchedule.FxLinkedNotionalScheduleBuilder
+        +build(): FxLinkedNotionalSchedule
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class ReferencePoolItemOnlyExistsValidator [[ReferencePoolItemOnlyExistsValidator.html]] {
+        +validate(ReferencePoolItem, String): ValidationResult<ReferencePoolItem>
+    }
+
+@enduml

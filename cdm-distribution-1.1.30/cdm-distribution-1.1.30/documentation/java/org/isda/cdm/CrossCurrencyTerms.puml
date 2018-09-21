@@ -1,0 +1,11 @@
+@startuml
+
+    class CrossCurrencyTerms [[CrossCurrencyTerms.html]] {
+        +getPrincipalExchanges(): PrincipalExchanges
+        +getSettlementProvision(): SettlementProvision
+        +toBuilder(): CrossCurrencyTerms.CrossCurrencyTermsBuilder
+        {static} +builder(): CrossCurrencyTerms.CrossCurrencyTermsBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class IdentifiedAssetMeta [[IdentifiedAssetMeta.html]] {
+        +dataRules(): List<Validator<IdentifiedAsset>>
+        +choiceRuleValidators(): List<Validator<IdentifiedAsset>>
+        +getOutMappings(): Multimap<String, OutMapping<IdentifiedAsset, ?>>
+        +getQualifyFunctions(): List<Function<IdentifiedAsset, QualifyResult>>
+        +validator(): Validator<IdentifiedAsset>
+        +onlyExistsValidator(): ValidatorWithArg<IdentifiedAsset, String>
+    }
+
+@enduml

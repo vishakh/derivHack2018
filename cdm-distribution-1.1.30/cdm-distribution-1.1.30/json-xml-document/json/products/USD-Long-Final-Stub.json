@@ -1,0 +1,218 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "UNKNOWN",
+      "identifierScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/trade-id"
+    },
+    "partyReference" : "party1"
+  }, {
+    "identifierValue" : {
+      "identifier" : "LCH00023438598",
+      "identifierScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/trade-id"
+    },
+    "partyReference" : "party2"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6,
+              "rollConvention" : "_14"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2016-12-14"
+              }
+            },
+            "id" : "fixedCalcPeriodDates1",
+            "lastRegularPeriodEndDate" : "2019-06-14",
+            "stubPeriodType" : "LONG_FINAL",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "GBLO", "USNY" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2019-12-16"
+            }
+          },
+          "dayCountFraction" : "_30_360",
+          "id" : "fixedLeg1",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.015
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party2",
+            "receiverPartyReference" : "party1"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "fixedCalcPeriodDates1",
+            "id" : "paymentDates1",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 6
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 900000000,
+                "currency" : "USD"
+              }
+            }
+          },
+          "rosettaKeyValue" : "54c4c2af"
+        }, {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3,
+              "rollConvention" : "_14"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2016-12-14"
+              }
+            },
+            "id" : "floatingCalcPeriodDates2",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "GBLO", "USNY" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2019-12-16"
+            }
+          },
+          "dayCountFraction" : "ACT_360",
+          "id" : "floatingLeg2",
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "USD_LIBOR_BBA",
+              "indexTenor" : {
+                "period" : "M",
+                "periodMultiplier" : 3
+              }
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party1",
+            "receiverPartyReference" : "party2"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates2",
+            "id" : "paymentDates2",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 900000000,
+                "currency" : "USD"
+              }
+            }
+          },
+          "resetDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates2",
+            "fixingDates" : {
+              "period" : "D",
+              "periodMultiplier" : -2,
+              "dayType" : "BUSINESS",
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO" ]
+              },
+              "businessDayConvention" : "NONE",
+              "dateRelativeTo" : "resetDates2"
+            },
+            "id" : "resetDates2",
+            "resetDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO", "USNY" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "resetFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            },
+            "resetRelativeTo" : "CALCULATION_PERIOD_START_DATE"
+          },
+          "rosettaKeyValue" : "781aaad3"
+        } ]
+      },
+      "rosettaKeyValue" : "cf0e42be"
+    },
+    "productIdentification" : {
+      "primaryAssetClass" : "INTEREST_RATE",
+      "productId" : [ "InterestRate:IRSwap:FixedFloat" ],
+      "productIdScheme" : "http://www.fpml.org/coding-scheme/product-taxonomy",
+      "productQualifier" : "InterestRate_IRSwap_FixedFloat",
+      "productType" : [ "InterestRate:IRSwap:FixedFloat" ],
+      "productTypeScheme" : "http://www.fpml.org/coding-scheme/product-taxonomy",
+      "secondaryAssetClassScheme" : "http://www.fpml.org/coding-scheme/asset-class-simple"
+    }
+  },
+  "documentation" : {
+    "contractualDefinitions" : [ "ISDA2006" ],
+    "contractualDefinitionsScheme" : "http://www.fpml.org/coding-scheme/contractual-definitions",
+    "masterAgreement" : {
+      "masterAgreementType" : "ISDA",
+      "masterAgreementTypeScheme" : "http://www.fpml.org/coding-scheme/master-agreement-type"
+    }
+  },
+  "party" : [ {
+    "id" : "party1",
+    "partyId" : [ "COUNTERPARTY" ],
+    "partyIdScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/party-id"
+  }, {
+    "id" : "party2",
+    "partyId" : [ "LCHLGB22XXX" ],
+    "partyIdScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/party-id"
+  } ],
+  "tradeDate" : {
+    "date" : "2018-01-26"
+  },
+  "rosettaKey" : "452b76f2"
+}

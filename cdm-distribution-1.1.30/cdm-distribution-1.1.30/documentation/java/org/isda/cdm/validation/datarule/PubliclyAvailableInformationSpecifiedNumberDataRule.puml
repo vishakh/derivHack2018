@@ -1,0 +1,7 @@
+@startuml
+
+    class PubliclyAvailableInformationSpecifiedNumberDataRule [[PubliclyAvailableInformationSpecifiedNumberDataRule.html]] {
+        +validate(PubliclyAvailableInformation): ValidationResult<PubliclyAvailableInformation>
+    }
+
+@enduml

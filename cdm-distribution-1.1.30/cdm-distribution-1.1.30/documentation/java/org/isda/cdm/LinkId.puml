@@ -1,0 +1,12 @@
+@startuml
+
+    class LinkId [[LinkId.html]] {
+        +getId(): String
+        +getLinkId(): String
+        +getLinkIdScheme(): String
+        +toBuilder(): LinkId.LinkIdBuilder
+        {static} +builder(): LinkId.LinkIdBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

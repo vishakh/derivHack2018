@@ -1,0 +1,8 @@
+@startuml
+
+    class FixedAmount [[FixedAmount.html]] {
+        +FixedAmount(DaysInPeriod, CalculationPeriod)
+        +calculate(InterestRatePayout): FixedAmount.CalculationResult
+    }
+
+@enduml

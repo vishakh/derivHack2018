@@ -1,0 +1,12 @@
+@startuml
+
+    class ReferenceObligationMeta [[ReferenceObligationMeta.html]] {
+        +dataRules(): List<Validator<ReferenceObligation>>
+        +choiceRuleValidators(): List<Validator<ReferenceObligation>>
+        +getOutMappings(): Multimap<String, OutMapping<ReferenceObligation, ?>>
+        +getQualifyFunctions(): List<Function<ReferenceObligation, QualifyResult>>
+        +validator(): Validator<ReferenceObligation>
+        +onlyExistsValidator(): ValidatorWithArg<ReferenceObligation, String>
+    }
+
+@enduml

@@ -1,0 +1,577 @@
+namespace "org.isda.cdm"
+
+class AllocationOutcome extends ContractOrContractReference <"Class to specify the allocated contracts or contract references, alongside the state qualification of the execution.">
+{
+	execution ExecutionReference (1..1);
+}
+
+class AllocationPrimitive <"The primitive event to represent a split/allocation of a contractual product or a contract.">
+{
+	before Execution (1..1);
+		[synonym Rosetta_Workbench value before]
+	after AllocationOutcome (1..1);
+		[synonym Rosetta_Workbench value after]
+}
+
+class ComputedAmount <"A class to specify the outcome of a computed amount, for testing purposes.">
+{
+	callFunction calculation (1..1);
+	amount number (1..1);
+	currency string (0..1) scheme "currencyScheme";
+}
+
+class ContractOrContractReference one of
+{
+	contract Contract (0..*);
+		[synonym Rosetta_Workbench value contract]
+	contractReference ContractReference (0..*);
+		[synonym Rosetta_Workbench value contractReference]
+}
+
+class ContractReference extends ContractIdentifier rosettaKey
+{
+	state StateEnum (0..1) <"The state qualification of a contractual product.">;
+		[synonym Rosetta_Workbench value state]
+}
+
+class Curve one of
+{
+	interestRateCurve InterestRateCurve (0..1);
+		[synonym Rosetta_Workbench value interestRateCurve]
+	commodityCurve CommodityReferencePriceEnum (0..1) scheme "commodityReferencePriceScheme"; // This is just an illustrative alternative curve instance, which implementation needs to be refined and confirmed
+}
+
+class Event rosettaKey
+{
+	messageInformation MessageInformation (0..1);
+	timestamp EventTimestamp (1..1);
+		[synonym Rosetta_Workbench value timestamp]
+	eventIdentifier Identifier (1..1);
+		[synonym Rosetta_Workbench value eventIdentifier]
+	eventQualifier eventType (0..1) <"The CDM event qualifier, which corresponds to the outcome of the isEvent qualification logic. This value is derived by the CDM from the event features.">;
+	eventDate date (1..1);
+		[synonym Rosetta_Workbench value eventDate]
+	effectiveDate date (0..1);
+		[synonym Rosetta_Workbench value effectiveDate]
+	action ActionEnum (1..1) <"Specifies whether the event is a new, a correction or a cancellation.">;
+		[synonym FpML value isCorrection
+			set action to ActionEnum.New when False,
+			set action to ActionEnum.Correct when True]
+	intent IntentEnum (0..1);
+		[synonym Rosetta_Workbench value intent]
+	party Party (0..*) <"The specification of the event parties. This attribute is optional, as not applicable to certain events (e.g. most of the observations).">;
+		[synonym FpML value party]
+	lineage Lineage (0..1);
+		[synonym Rosetta_Workbench value lineage]
+	primitive PrimitiveEvent (1..1);
+		[synonym Rosetta_Workbench value primitive]
+	functionCall string (0..1) <"This is placeholder concept for a function call into a calculation that will return an outcome. This concept needs to be further firmed out.">;
+		[synonym Rosetta_Workbench value functionCall]
+	eventEffect EventEffect (0..1) <"The set of effects associated with the lifecycle event, i.e. generated cashflows, contracts (from, say, novation events), listed products (from, say, a bond option exercise event)  values and more.  Those are represented through a set of rosettaKey references.">;
+}
+
+class EventEffect <"The set of operational and positional effects associated with a lifecycle event, alongside the reference to the event (the effectedEvent) and the contract(s) or contract reference(s) that is subject to the event (and is positioned in the before state of the event primitive).">
+{
+	effectedContract Contract (0..*) rosettaKey <"A pointer to the contract(s) to which the event effect(s) apply, i.e. in the before event state.">;
+	effectedContractReference ContractReference (0..*) rosettaKey <"A pointer to the reference contract(s) to which the event effect(s) apply, i.e. in the before event state.">;
+    effectedEvent Event (1..1) rosettaKey <"A pointer to the event to which the event effect(s) apply.">;
+	contract Contract (0..*) rosettaKey <"A pointer to the contract effect(s), an example of such being the outcome of a new trade, swaption exercise or novation event.">;
+	contractReference ContractReference (0..*) rosettaKey <"A pointer to the contract reference effect(s), an example of such being the outcome of a novation or compression event.">;
+    listedProduct ListedProduct (0..*) rosettaKey <"A pointer to the listed product effect(s), an example of such being the outcome of the physical exercise of a bond option.">;
+	payment Payment (0..*) rosettaKey <"A pointer to the payment effect(s), an example of such being the outcome of an option cash exercise.">;
+	transfer Transfer (0..*) rosettaKey <"A pointer to the transfer effect(s), either a cash, security or other asset.">;
+}
+
+class EventTestBundle <"A class which combines several events for testing purposes.">
+{
+	event Event (2..*);
+		[synonym Rosetta_Workbench value event]
+	computedAmount ComputedAmount (0..*);
+		[synonym Rosetta_Workbench value computedAmount]
+}
+
+class EventTimestamp <"This class corresponds to the timestamp components of the FpML MessageHeader.model. These would be applicable even if the event is communicated through a mean other than messaging (e.g. blockchain).">
+{
+	creationTimestamp dateTime (1..1) <"The date and time (on the source system) when this event was created.">;
+		[synonym FpML value creationTimestamp pathExpression "header"]
+		[synonym Rosetta_Workbench value creationTimestamp]
+	expiryTimestamp dateTime (0..1) <"The date and time (on the source system) when this event will be considered expired.">;
+		[synonym FpML value expiryTimestamp]
+}
+
+class ExecutionReference
+{
+	executionReference Identifier (1..1);
+		[synonym Rosetta_Workbench value executionReference]
+	state StateEnum (1..1);
+		[synonym Rosetta_Workbench value state]
+}
+
+class ExerciseOutcome extends ContractOrContractReference <"The exercise outcome could combine a contract and a physical or cash exercise.">
+{
+	physicalExercise PhysicalExercise (0..1);
+		[synonym Rosetta_Workbench value physicalExercise]
+	cashExercise Cashflow (0..1);
+		[synonym Rosetta_Workbench value cashExercise]
+}
+
+choice rule ExerciseOutcome_choice <"A option exercise results in either a physical or a cash exercise.">
+	for ExerciseOutcome required choice between
+	physicalExercise and cashExercise
+
+/*
+ * TODO - Add data rules in relation to the fullExercise attribute
+ */
+
+class ExercisePrimitive <"This primitive leverages the FpML OptionExercise construct, except for the exerciseTiming which is deemed as associated to a request for exercise that is meant to take place, as opposed to the actual exercise event.">
+{
+	exerciseDate date (0..1);
+		[synonym Rosetta_Workbench value exerciseDate]
+	exerciseTime time (0..1);
+		[synonym Rosetta_Workbench value exerciseTime]
+	fullExercise boolean (1..1);
+		[synonym Rosetta_Workbench value fullExercise]
+	before ContractOrContractReference (1..1);
+		[synonym Rosetta_Workbench value before]
+	after ExerciseOutcome (1..1);
+		[synonym Rosetta_Workbench value after]
+}
+
+data rule ExercisePrimitive_fullExercise <"A full exercise should not result in ">
+	when ExercisePrimitive -> fullExercise = True
+	then ExercisePrimitive -> after -> contract -> state = StateEnum.Exercised
+/*
+ * TODO - Having the tradeHeader attribute as part of the execution is a work-around the fact that 
+ * the tradeDate and the identifier are mapped through the FpML synonym while the tradeHeader is part of the Wosetta_Workbench.
+ * It appears that to make it work we would need to have the ability to qualify the path expression to be in a distinct namespace.
+ * The syntax could be [synonym FpML value partyTradeIdentifier pathExpression synonym Rosetta_Workbench "tradeHeader"], with absence of
+ * further synonym meaning that there is no distinct namespace for the path expression.  (Should we be thinking about the case where
+ * severeal nodes are part of the pathExpression, which cross distinct namespaces?)
+ */
+class Execution
+{
+	tradeHeader TradeHeader (1..1);
+		[synonym Rosetta_Workbench value tradeHeader]
+	contractualProduct ContractualProduct (1..1);
+		[synonym Rosetta_Workbench value contractualProduct]
+	party Party (0..*) <"The party reference is optional because positioned as part of the Event class when the execution is specified as part of such context.">;
+}
+
+class GrossCashflow extends CashflowBase
+{
+	payoutLineage PayoutLineage (0..1) <"The lineage into the Payout components that might be associated with each of the gross cashflow elements.">;
+	cashflowAmount Money (1..1) <"The currency amount of the payment.">;
+		[synonym Rosetta_Workbench value cashflowAmount]
+	cashflowType CashflowTypeEnum (0..1) <"The qualification of the type of cashflow, when not inferred from a derived through lineage e.g. brokerage fee, premium, upfront fee etc.">;
+		[synonym Rosetta_Workbench value cashflowType] // set cashflowType.premium when synonym premium exists]
+	cashflowCalculation calculation (0..1) <"The calculation used to compute the gross cashflow, when applicable.">;
+		[synonym Rosetta_Workbench value cashflowCalculation] 
+}
+
+data rule EventTimestamp_ExpireTime <"The expire time should be greater than the creation time.">
+	when EventTimestamp -> expiryTimestamp exists
+	then EventTimestamp -> expiryTimestamp > EventTimestamp -> creationTimestamp
+
+class Inception <"The primitive event for the inception of a new contract between parties. It is expected that this primitive will be adjusted or deprecated once the CDM scope is extended to the pre-execution space.">
+{
+	before ContractOrContractReference (0..0) <"The (0..0) cardinality reflects the fact that that is no contract in the before state of an inception primitive.">;
+		[synonym Rosetta_Workbench value before]
+	after ContractOrContractReference (1..1);
+		[synonym Rosetta_Workbench value after]
+}
+
+class InterestRateCurve
+{
+	floatingRateIndex FloatingRateIndexEnum (1..1) scheme "floatingRateIndexScheme";
+		[synonym Rosetta_Workbench value floatingRateIndex]
+	tenor Period (1..1);
+		[synonym Rosetta_Workbench value tenor]
+}
+
+class Lineage <"The class to provide lineage information across transactions.">
+{
+	contractReference Identifier (0..*) scheme "correlationIdScheme";
+		[synonym Rosetta_Workbench value contractReference]
+	eventReference Identifier (0..*);
+		[synonym Rosetta_Workbench value eventReference]
+}
+
+class MessageInformation <"This class corresponds to the messaging components of the FpML MessageHeader.model.">
+{
+	messageId string (1..1) scheme "messageIdScheme" <"A unique identifier assigned to the message.">;
+		[synonym Rosetta_Workbench value messageId pathExpression "messageInformation"]
+	sentBy string (0..1) scheme "messageAddressScheme" <"The identifier for the originator of a message instance.">;
+		[synonym Rosetta_Workbench value sentBy pathExpression "messageInformation"]
+	sentTo string (0..1) scheme "messageAddressScheme" <"The identifier for the recipient of a message instance.">;
+		[synonym Rosetta_Workbench value sentTo pathExpression "messageInformation"]
+	copyTo string (0..*) scheme "messageAddressScheme" <"A unique identifier (within the specified coding scheme) giving the details of some party to whom a copy of this message will be sent for reference.">;
+}
+
+class NewTradePrimitive one of <"The primitive event to represent a new trade.">
+{
+	contract Contract (0..1);
+		[synonym Rosetta_Workbench value contract]
+	contractReference ContractIdentifier (0..1);
+		[synonym Rosetta_Workbench value contractReference]
+}
+
+class ObservationPrimitive <"The primitive event to represent an observation.">
+{
+	source ObservationSource (1..1) <"The observation source.">;
+		[synonym Rosetta_Workbench value source]
+	observation number (1..1) <"The observation value.">;
+		[synonym Rosetta_Workbench value observation]
+	date date (1..1) <"The observation date.">;
+		[synonym Rosetta_Workbench value date]
+	time TimeZone (0..1) <"The observation time, with a possible indication of the timezone dimension.">;
+		[synonym Rosetta_Workbench value time]
+	side QuotationSideEnum (0..1) <"The side (bid/mid/ask) of the observation, when applicable.">;
+		[synonym Rosetta_Workbench value side]
+}
+
+class ObservationSource <"The observation source can be composed of an curve and/or and information source.">
+{
+	curve Curve (0..1);
+		[synonym Rosetta_Workbench value curve]
+	informationSource InformationSource (0..1);
+		[synonym Rosetta_Workbench value informationSource]
+}
+
+data rule ObservationSource_content <"ObservationSource should not be empty, although the attribute cardinality would allow that.">
+	when ObservationSource exists
+	then ( ObservationSource -> curve and ObservationSource -> informationSource ) exists
+		or ObservationSource -> curve exists
+		or ObservationSource -> informationSource exists
+
+class PayoutLineage one of <"A class to provide lineage into the Payout components through one of two ways: either by making use of references existing in the originating document, or by making use of the rosettaKeyValue associated with the relevant CDM payout class. The former has the benefit of not necessitating an associated implementation, but implies that the identifying value associated with the payout components are either generated in a repeatable manner across instance documents (when the payment and trade reference information exist across distinct documents) or that all information exists within one single instance document. The latter approach has the benefit of being agnostic to how the originating document(s) is constructed, but requires an associated implementation to assign the rosettaKey values to the relevant attributes.">
+{
+	payoutReference string (0..1) reference <"The reference to the payout component from which the gross cashflow is derived, to be used in the case where this reference information is contained in the same instance document or is generated in a repeatable manner (e.g. hash function that doesn't make use of transient data points) when associated with a distinct instance document.">;
+		[synonym Rosetta_Workbench value payoutReference]
+	interestRatePayout InterestRatePayout (0..1) rosettaKey;
+	creditDefaultPayout CreditDefaultPayout (0..1) rosettaKey;
+	cashflow Cashflow (0..1) rosettaKey;
+	optionPayout OptionPayout (0..1) rosettaKey;
+}
+
+class PhysicalExercise extends ContractOrContractReference <"The physical exercise could combine several contracts (partial exercise of a swaption) or a contract and a listed product (partial exercise of a bond option).">
+{
+	listedProduct ListedProduct (0..1);
+		[synonym Rosetta_Workbench value listedProduct]
+	commodity Commodity (0..1);
+	quantity Quantity (0..1) <"The quantity amount associated the asset that is physically settled.">;
+		[synonym Rosetta_Workbench value quantity]
+	cashflow Cashflow (0..1) <"The cashflow component of the physical exercise.">;
+		[synonym Rosetta_Workbench value cashflow]
+}
+
+choice rule PhysicalExercise_choice <"This choice rule will be adjusted as a function of the further types of assets that are be associated with options.">
+	for PhysicalExercise required choice between
+	listedProduct and commodity
+
+data rule PhysicalExercise_quantity <"The quantity attribute must be associated with the ohysical exercise of a listed product or commodity.">
+	when ( PhysicalExercise -> commodity or PhysicalExercise -> listedProduct ) exists
+	then PhysicalExercise -> quantity exists
+
+class PrimitiveEvent <"The set of primitive events. The purpose of this class it to provide clarity with respect to the event qualification logic.">
+{
+	newTrade NewTradePrimitive (0..*) <"The new trade primitive is unbounded to address the case of events such as portfolio compressions, which could result in multiple new trades.">;
+		[synonym Rosetta_Workbench value newTrade]
+	inception Inception (0..*);
+		[synonym Rosetta_Workbench value inception]
+	quantityChange QuantityChangePrimitive (0..*);
+		[synonym Rosetta_Workbench value quantityChange]
+	allocation AllocationPrimitive (0..*);
+		[synonym Rosetta_Workbench value allocation]
+	termsChange TermsChangePrimitive (0..1);
+		[synonym Rosetta_Workbench value otherTermsChange]
+	exercise ExercisePrimitive (0..1);
+		[synonym Rosetta_Workbench value exercise]
+	observation ObservationPrimitive (0..*);
+		[synonym Rosetta_Workbench value observation]
+	reset ResetPrimitive (0..*);
+		[synonym Rosetta_Workbench value reset]
+	payment Payment (0..*);
+		[synonym Rosetta_Workbench value payment]
+	transfer Transfer (0..*);
+		[synonym Rosetta_Workbench value transfer]
+}
+
+class QuantityChangePrimitive <"The primitive event to represent a change in quantity or notional.">
+{
+	before ContractOrContractReference (1..1);
+		[synonym Rosetta_Workbench value before]
+	after ContractOrContractReference (1..1);
+		[synonym Rosetta_Workbench value after]
+	change ContractualQuantity (1..*);
+		[synonym Rosetta_Workbench value change]
+}
+
+class ResetPrimitive rosettaKey <"The primitive event to represent a reset.">
+{
+	date date (1..1) <"The reset date">;
+		[synonym Rosetta_Workbench value date]
+	resetValue number (1..1) <"The reset value">;
+		[synonym Rosetta_Workbench value resetValue]
+	/*
+	 * Question to the CDM Group - Should the reset primitive have an associated cashflow, or just have the rate reset value?
+	 * The latter seems more appropriate, but needs to be confirmed by current operational workflows.
+	 * If it has the cashflow, it should also have the associated calculation.
+	 */
+	cashflow Cashflow (0..1) <"The cashflow resulting from the reset event.">; // The cardinality has been relaxed until the above question is settled
+		[synonym Rosetta_Workbench value cashflow]
+}
+
+class TermsChangePrimitive <"The primitive event to represent change(s) to the contractual terms.">
+{
+	before ContractOrContractReference (1..1);
+		[synonym Rosetta_Workbench value before]
+	after ContractOrContractReference (1..1);
+		[synonym Rosetta_Workbench value after]
+}
+
+class TimeZone <"The time alongside with the timezone location information. This class makes use of the FpML TimezoneLocation construct.">
+{
+	time time (1..1) <"The observation time.">;
+		[synonym Rosetta_Workbench value time]
+	location string (0..1) scheme "timezoneLocationScheme" <"FpML specifies the timezoneLocationScheme by reference to the Time Zone Database (a.k.a. tz database) maintained by IANA, the Internet Assigned Numbers Authority.">;
+		[synonym Rosetta_Workbench value location]
+}
+
+class TradeHeader
+{
+	identifier PartyContractIdentifier (1..*) <"The identifier(s) associated with the execution.">;
+		[synonym FpML value partyTradeIdentifier]
+	tradeDate date (1..1) anchor <"The trade/execution date.">;
+		[synonym FpML value tradeDate]
+}
+
+class Transfer rosettaKey <"The primitive event for the transfer of cash, securities or physical asset between parties.">
+{
+	payerReceiver PayerReceiver (0..1) <"The payer and receiver party information, to be associated with the transfer of cash.">;
+	transferorTransferee TransferorTransferee (0..1) <"The transferor and transferee party information, to be associated with the transfer of securities or physical assets.">;
+	transferDate AdjustableOrAdjustedOrRelativeDate (0..1) <"The transfer date is optional as it might not be known at the point in time when the transfer is initially specified.">;
+		[synonym Rosetta_Workbench value transferDate]
+	amount Money (0..1) <"The currency amount, applicable to a cash transfer.">;
+		[synonym Rosetta_Workbench value amount]
+	quantity Quantity (0..1) <"The quantity amount, applicable to a transfer of securities or physical asset.">;
+		[synonym Rosetta_Workbench value quantity]
+	asset Asset (0..1) <"The asset that is being transfered, when applicable.">;
+		[synonym Rosetta_Workbench value asset]
+	grossCashflow GrossCashflow (0..*) <"The gross cashflow components from which the payment is derived when corresponding to a transfer originating from multiple cashflow components, such as the netting of multiple payout components when in the same currency and on the same date.">;
+		[synonym Rosetta_Workbench value grossCashflow]
+	transferCalculation calculation (0..1) <"The calculation used to compute the transfer, when applicable.">;	
+		[synonym Rosetta_Workbench value transferCalculation]
+	transferType TransferTypeEnum (0..1) <"The qualification of the type of transfer. It extends the CashflowTypeEnum because a transfer can involve cashflows.">;
+		[synonym Rosetta_Workbench value transferType]
+	transferStatus TransferStatusEnum (0..1) <"The transfer status, e.g. Instructed, Settled.">;
+		[synonym Rosetta_Workbench value transferStatus]
+	settlementReference string (0..1) <"The settlement reference, when applicable.">;
+		[synonym Rosetta_Workbench value settlementReference]
+}
+
+choice rule Transfer_choice1 <"The transfer party information is represented by either the payer/receiver or the transferor/transferee CDM representation.">
+	for Transfer required choice between
+	payerReceiver and transferorTransferee
+
+choice rule Transfer_choice2 <"The transfer applies to either a cash amount or a quantity of securities or physical asset.">
+	for Transfer required choice between
+	amount and quantity
+
+data rule Transfer_transferorTransferee <"The transfered quantity must be associated with an asset qualification.">
+	when Transfer -> transferorTransferee exists
+	then Transfer -> quantity exists
+	and Transfer -> asset exists
+
+class TransferorTransferee <"A class mimicking the PayerReceiver, which is itself derived from the FpML PayerReceiver.model, to represent the transferee and transferor party information in relation to the transfer of securities or other non-cash assets.">
+{
+	transferorPartyReference string (1..1) reference <"A reference to the party responsible for making the payments defined by this structure.">;
+		[synonym Rosetta_Workbench value transferorPartyReference]
+	transferorAccountReference string (0..1) reference <"A reference to the account responsible for making the payments defined by this structure.">;
+		[synonym Rosetta_Workbench value transferorAccountReference]
+	transfereePartyReference string (1..1) reference <"A reference to the party that receives the payments corresponding to this structure.">;
+		[synonym Rosetta_Workbench value transfereePartyReference]
+	transfereeAccountReference string (0..1) reference <"A reference to the account that receives the payments corresponding to this structure.">;
+		[synonym Rosetta_Workbench value transfereeAccountReference]
+}
+
+isEvent Allocation <"The qualification of allocation event from the fact that (i) the intent is Allocation when specified, (ii) the only primitive is the allocation, (iii) the sum of quantities/notional before = after, and (iv) there is a single contractualProduct before (ensured through cardinality). Note: it is accepted that an allocation can result in a single contract.">
+	Event -> intent when present = IntentEnum.Allocation
+	and Event -> primitive -> allocation only exists
+	/*
+	 * TODO - The below syntax needs to be expanded to specify a summation
+	 * This could be specify as  quantityBeforeAllocation = sum(quantityAfterAllocation)
+	 */
+//	and quantityBeforeAllocation = quantityAfterAllocation
+
+alias quantityBeforeAllocation <"The alias to represent the quantity or notional amount associated to a pre-allocation contractual product in terms of number of units (i.e. ignoring the currency or units denomination).">
+	Event -> primitive -> allocation -> before -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> quantity -> amount
+	or Event -> primitive -> allocation -> before -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalAmount -> amount
+	or Event -> primitive -> allocation -> before -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalSchedule -> notionalStepSchedule -> initialValue
+	or Event -> primitive -> allocation -> before -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalSchedule -> notionalStepSchedule -> step -> stepValue
+	or Event -> primitive -> allocation -> before -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalSchedule -> notionalStepParameters -> notionalStepAmount
+	or Event -> primitive -> allocation -> before -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> fxLinkedNotional -> initialValue
+	or Event -> primitive -> allocation -> before -> contractualProduct -> economicTerms -> payout -> creditDefaultPayout -> protectionTerms -> notionalAmount -> amount
+	or Event -> primitive -> allocation -> before -> contractualProduct -> economicTerms -> payout -> optionPayout -> quantity -> notionalAmount -> amount
+
+alias quantityAfterAllocation <"The alias to represent the quantity or notional amount associated to allocated contract(s) in terms of number of units (i.e. ignoring the currency or units denomination).">
+	Event -> primitive -> allocation -> after -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> quantity -> amount
+	or Event -> primitive -> allocation -> after -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalAmount -> amount
+	or Event -> primitive -> allocation -> after -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalSchedule -> notionalStepSchedule -> initialValue
+	or Event -> primitive -> allocation -> after -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalSchedule -> notionalStepSchedule -> step -> stepValue
+	or Event -> primitive -> allocation -> after -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalSchedule -> notionalStepParameters -> notionalStepAmount
+	or Event -> primitive -> allocation -> after -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> fxLinkedNotional -> initialValue
+	or Event -> primitive -> allocation -> after -> contract -> contractualProduct -> economicTerms -> payout -> creditDefaultPayout -> protectionTerms -> notionalAmount -> amount
+	or Event -> primitive -> allocation -> after -> contract -> contractualProduct -> economicTerms -> payout -> optionPayout -> quantity -> notionalAmount -> amount
+
+isEvent Compression <"The qualification of a compression event from the fact that (i) the intent is Compression when specified, (ii) the quantity change primitive exists, (iii) and there are multiple contracts (or contract references) specified in the before state.">
+	Event -> intent when present = IntentEnum.Compression
+	and Event -> primitive -> quantityChange exists
+	and contractBeforeQuantityChange multiple exists
+
+alias contractBeforeQuantityChange
+	Event -> primitive -> quantityChange -> before -> contract
+	or Event -> primitive -> quantityChange -> before -> contractReference
+
+alias contractAfterQuantityChange
+	Event -> primitive -> quantityChange -> after -> contract
+
+isEvent DerivedObservation <"The qualification of a derived observation event from the fact that (i) the only primitive is the observation, (ii) there are multiple instances of such observations, and (iii) there is an associated call function to compute, say, an interpolation.">
+	Event -> primitive -> observation only multiple exists
+	and Event -> functionCall exists
+
+isEvent Exercise <"The qualification of a full termination event from the fact that (i) the intent is Exercise when specified, (ii) the only primitive is the quantityChange.">
+	Event -> intent when present = IntentEnum.Exercise
+	and Event -> primitive -> exercise only exists
+
+/*
+ * TODO - Need to firm out the naming of the business event associated with the inception primitive
+ */
+isEvent NewTradeBusinessEvent
+	Event -> intent when present = IntentEnum.NewTrade
+	and Event -> primitive -> inception only exists
+
+isEvent NewTradeEvent <"The qualification of a new trade event from the fact that (i) the intent is NewTrade when specified, and (ii) the only primitive is the newTrade.">
+	Event -> intent when present = IntentEnum.NewTrade
+	and Event -> primitive -> newTrade only exists
+
+isEvent Novation <"The qualification of a novation event from the fact that (i) the intent is PartialNovation when specified, (ii) the primitives quantityChange and newTrade exist, (iii) the contract in the quantityChange/after node has a Novated state, (iv) the stepped-in contract has a different contract identifier than the novated contract, (v) the stepped-in contract has the novation event date and the novation event effective date, and (vi) the contract counterparties have changed.">
+	Event -> intent when present = IntentEnum.Novation
+	and Event -> primitive -> quantityChange exists
+	and Event -> primitive -> newTrade exists
+	and quantityAfterQuantityChange = 0.0
+	and Event -> primitive -> quantityChange -> after -> contract -> state = StateEnum.Novated
+		or Event -> primitive -> quantityChange -> after -> contractReference -> state = StateEnum.Novated
+	and Event -> primitive -> newTrade -> contract -> contractIdentifier <> Event -> primitive -> quantityChange -> before -> contract -> contractIdentifier
+	and Event -> eventDate = Event -> primitive -> newTrade -> contract -> tradeDate -> date
+	and Event -> effectiveDate = novatedContractEffectiveDate
+//	and originalContractParties <> newContractParties
+
+alias novatedContractEffectiveDate
+	Event -> primitive -> newTrade -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> calculationPeriodDates -> effectiveDate -> date
+	or Event -> primitive -> newTrade -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> calculationPeriodDates -> effectiveDate -> adjustableDate -> adjustedDate
+	or Event -> primitive -> newTrade -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> calculationPeriodDates -> effectiveDate -> adjustableDate -> unadjustedDate
+
+alias originalContractParties
+	( Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> creditDefaultPayout -> generalTerms -> buyerSeller -> buyerPartyReference
+		and 	Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> creditDefaultPayout -> generalTerms -> buyerSeller -> sellerPartyReference )
+	or ( Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> payerReceiver -> payerPartyReference
+		and Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> payerReceiver -> receiverPartyReference )
+	or ( Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> optionPayout -> buyerSeller -> buyerPartyReference
+		and Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> optionPayout -> buyerSeller -> sellerPartyReference	)
+
+alias newContractParties
+	( Event -> primitive -> newTrade -> contract -> contractualProduct -> economicTerms -> payout -> creditDefaultPayout -> generalTerms -> buyerSeller -> buyerPartyReference
+		and 	Event -> primitive -> newTrade -> contract -> contractualProduct -> economicTerms -> payout -> creditDefaultPayout -> generalTerms -> buyerSeller -> sellerPartyReference )
+	or ( Event -> primitive -> newTrade -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> payerReceiver -> payerPartyReference
+		and Event -> primitive -> newTrade -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> payerReceiver -> receiverPartyReference )
+	or ( Event -> primitive -> newTrade -> contract -> contractualProduct -> economicTerms -> payout -> optionPayout -> buyerSeller -> buyerPartyReference
+		and Event -> primitive -> newTrade -> contract -> contractualProduct -> economicTerms -> payout -> optionPayout -> buyerSeller -> sellerPartyReference	)
+
+isEvent PartialNovation <"The qualification of a novation event from the fact that (i) the intent is Novation when specified, (ii) the primitives quantityChange and newTrade exist, (iii) the contract quantity/notional has decreased as part of the quantityChange primitive, while (iv) there is a remaining quantity/notional, (v) the stepped-in contract has a different contract identifier than the original contract, (vi) the stepped-in contract has the novation event date and the novation event effective date, and (vii) the contract counterparties have changed.">
+	Event -> intent when present = IntentEnum.PartialNovation
+	and Event -> primitive -> quantityChange exists
+	and Event -> primitive -> newTrade exists
+	and Event -> primitive -> newTrade -> contract -> contractIdentifier <> Event -> primitive -> quantityChange -> before -> contract -> contractIdentifier
+	and Event -> eventDate = Event -> primitive -> newTrade -> contract -> tradeDate -> date
+	and Event -> effectiveDate = novatedContractEffectiveDate
+	and quantityBeforeQuantityChange > quantityAfterQuantityChange
+	and quantityAfterQuantityChange > 0.0
+//	and originalContractParties <> newContractParties
+
+data rule Novation_fee <"Logic to specify that if a payment is qualified as a novation fee, it must have lineage into multiple contracts and one single event (the novation event).">
+	when Event -> primitive -> payment -> paymentType = PaymentTypeEnum.NovationFee
+	then Event -> lineage -> contractReference multiple exists
+		and Event -> lineage -> eventReference single exists
+
+isEvent Observation <"The qualification of an observation event from the fact that (i) the only primitive is the observation, and (ii) that there is only a single instance of such observation.">
+	Event -> primitive -> observation only single exists
+
+isEvent PartialTermination <"The qualification of a partial termination event from the fact that (i) the intent is Partial Termination when specified, (ii) the only primitive is the quantityChange and there is only one such primitive involved, the (iii) the quantity associated with the contract decreases, and (iv) there is an actual remaining quantity.">
+	Event -> intent when present = IntentEnum.PartialTermination
+	and Event -> primitive -> quantityChange only exists
+	or ( Event -> primitive -> quantityChange and Event -> primitive -> payment ) exists
+		and Event -> primitive -> newTrade is absent
+	/*
+	 * TODO - Need to decide with the CDM Group if the event representation should provide the ability to reference a contract
+	 * If this is the case, we should adjust the logic across events so that if the contract reference is used instead of the contract terms, then the intent should be specified
+	 * If used as such, the below logic create an ambiguity with the partial novation.
+	 */	
+//	or ( quantityBeforeQuantityChange > quantityAfterQuantityChange
+//		and quantityAfterQuantityChange > 0.0 )
+
+alias quantityBeforeQuantityChange <"The alias to represent the quantity or notional amount in terms of number of units (i.e. ignoring the currency or units denomination) before a quantity change primitive.">
+	Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> quantity -> amount
+	or Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalAmount -> amount
+	or Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalSchedule -> notionalStepSchedule -> initialValue
+	or Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalSchedule -> notionalStepSchedule -> step -> stepValue
+	or Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalSchedule -> notionalStepParameters -> notionalStepAmount
+	or Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> fxLinkedNotional -> initialValue
+	or Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> creditDefaultPayout -> protectionTerms -> notionalAmount -> amount
+	or Event -> primitive -> quantityChange -> before -> contract -> contractualProduct -> economicTerms -> payout -> optionPayout -> quantity -> notionalAmount -> amount
+
+alias quantityAfterQuantityChange <"The alias to represent the quantity or notional amount in terms of number of units (i.e. ignoring the currency or units denomination) after a quantity change primitive.">
+	Event -> primitive -> quantityChange -> after -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> quantity -> amount
+	or Event -> primitive -> quantityChange -> after -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalAmount -> amount
+	or Event -> primitive -> quantityChange -> after -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalSchedule -> notionalStepSchedule -> initialValue
+	or Event -> primitive -> quantityChange -> after -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalSchedule -> notionalStepSchedule -> step -> stepValue
+	or Event -> primitive -> quantityChange -> after -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> notionalSchedule -> notionalStepParameters -> notionalStepAmount
+	or Event -> primitive -> quantityChange -> after -> contract -> contractualProduct -> economicTerms -> payout -> interestRatePayout -> quantity -> fxLinkedNotional -> initialValue
+	or Event -> primitive -> quantityChange -> after -> contract -> contractualProduct -> economicTerms -> payout -> creditDefaultPayout -> protectionTerms -> notionalAmount -> amount
+	or Event -> primitive -> quantityChange -> after -> contract -> contractualProduct -> economicTerms -> payout -> optionPayout -> quantity -> notionalAmount -> amount
+
+/*
+ * TODO - Need to firm out the naming of the business events associated with the transfer primitive
+ */
+ 
+isEvent PaymentBusinessEvent // Or do we call this business event cash transfer, for consistency with security transfer?
+	Event -> primitive -> transfer only exists
+	and Event -> primitive -> transfer -> amount exists
+	and Event -> primitive -> transfer -> quantity is absent
+
+isEvent SecurityTransfer
+	Event -> primitive -> transfer only exists
+	and Event -> primitive -> transfer -> asset -> listedProduct exists
+	and Event -> primitive -> transfer -> amount is absent
+
+isEvent SecuritySettlement
+	Event -> primitive -> transfer only exists
+	and Event -> primitive -> transfer -> asset -> listedProduct exists
+	and Event -> primitive -> transfer -> amount exists
+	and  Event -> primitive -> transfer -> quantity exists
+
+isEvent CommodityTransfer
+	Event -> primitive -> transfer only exists
+	and Event -> primitive -> transfer -> asset -> commodity exists
+
+isEvent Payment <"The qualification of a payment event from the fact that the only primitive is the payment.">
+	Event -> primitive -> payment only exists
+
+isEvent Reset <"The qualification of a reset event from the fact that the only primitive is the reset.">
+	Event -> primitive -> reset only exists
+
+isEvent Termination <"The qualification of a termination event from the fact that (i) the intent is Termination when specified, (ii) the only primitive is the quantityChange and there is only one such primitive involved, the (iii) the remaining quantity is null, and (iv) the contract state has the value 'terminated'.">
+	Event -> intent when present = IntentEnum.Termination
+	and Event -> primitive -> quantityChange single exists
+	or quantityAfterQuantityChange = 0.0
+	and ( Event -> primitive -> quantityChange -> after -> contract -> state = StateEnum.Terminated
+		or Event -> primitive -> quantityChange -> after -> contractReference -> state = StateEnum.Terminated )

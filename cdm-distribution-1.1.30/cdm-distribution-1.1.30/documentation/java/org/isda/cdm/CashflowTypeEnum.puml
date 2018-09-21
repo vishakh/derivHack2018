@@ -1,0 +1,13 @@
+@startuml
+
+    enum CashflowTypeEnum [[CashflowTypeEnum.html]] {
+        {static} +BROKERAGE_COMMISSION
+        {static} +FEE
+        {static} +INTEREST
+        {static} +NET_INTEREST
+        {static} +NOVATION_FEE
+        {static} +PREMIUM
+        {static} +TERMINATION_FEE
+    }
+
+@enduml

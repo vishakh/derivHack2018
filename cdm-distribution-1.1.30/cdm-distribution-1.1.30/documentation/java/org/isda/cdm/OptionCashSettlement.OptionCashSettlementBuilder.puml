@@ -1,0 +1,49 @@
+@startuml
+
+    class OptionCashSettlement.OptionCashSettlementBuilder [[OptionCashSettlement.OptionCashSettlementBuilder.html]] {
+        +getCashPriceAlternateMethod(): CashPriceMethod.CashPriceMethodBuilder
+        +getOrCreateCashPriceAlternateMethod(): CashPriceMethod.CashPriceMethodBuilder
+        +getCashPriceMethod(): CashPriceMethod.CashPriceMethodBuilder
+        +getOrCreateCashPriceMethod(): CashPriceMethod.CashPriceMethodBuilder
+        +getCashSettlementPaymentDate(): CashSettlementPaymentDate.CashSettlementPaymentDateBuilder
+        +getOrCreateCashSettlementPaymentDate(): CashSettlementPaymentDate.CashSettlementPaymentDateBuilder
+        +getCashSettlementValuationDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getOrCreateCashSettlementValuationDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getCashSettlementValuationTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getOrCreateCashSettlementValuationTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getCollateralizedCashPriceMethod(): YieldCurveMethod.YieldCurveMethodBuilder
+        +getOrCreateCollateralizedCashPriceMethod(): YieldCurveMethod.YieldCurveMethodBuilder
+        +getCrossCurrencyMethod(): CrossCurrencyMethod.CrossCurrencyMethodBuilder
+        +getOrCreateCrossCurrencyMethod(): CrossCurrencyMethod.CrossCurrencyMethodBuilder
+        +getId(): String
+        +getParYieldCurveAdjustedMethod(): YieldCurveMethod.YieldCurveMethodBuilder
+        +getOrCreateParYieldCurveAdjustedMethod(): YieldCurveMethod.YieldCurveMethodBuilder
+        +getParYieldCurveUnadjustedMethod(): YieldCurveMethod.YieldCurveMethodBuilder
+        +getOrCreateParYieldCurveUnadjustedMethod(): YieldCurveMethod.YieldCurveMethodBuilder
+        +getZeroCouponYieldAdjustedMethod(): YieldCurveMethod.YieldCurveMethodBuilder
+        +getOrCreateZeroCouponYieldAdjustedMethod(): YieldCurveMethod.YieldCurveMethodBuilder
+        +setCashPriceAlternateMethod(CashPriceMethod): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCashPriceAlternateMethodBuilder(CashPriceMethod.CashPriceMethodBuilder): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCashPriceMethod(CashPriceMethod): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCashPriceMethodBuilder(CashPriceMethod.CashPriceMethodBuilder): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCashSettlementPaymentDate(CashSettlementPaymentDate): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCashSettlementPaymentDateBuilder(CashSettlementPaymentDate.CashSettlementPaymentDateBuilder): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCashSettlementValuationDate(RelativeDateOffset): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCashSettlementValuationDateBuilder(RelativeDateOffset.RelativeDateOffsetBuilder): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCashSettlementValuationTime(BusinessCenterTime): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCashSettlementValuationTimeBuilder(BusinessCenterTime.BusinessCenterTimeBuilder): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCollateralizedCashPriceMethod(YieldCurveMethod): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCollateralizedCashPriceMethodBuilder(YieldCurveMethod.YieldCurveMethodBuilder): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCrossCurrencyMethod(CrossCurrencyMethod): OptionCashSettlement.OptionCashSettlementBuilder
+        +setCrossCurrencyMethodBuilder(CrossCurrencyMethod.CrossCurrencyMethodBuilder): OptionCashSettlement.OptionCashSettlementBuilder
+        +setId(String): OptionCashSettlement.OptionCashSettlementBuilder
+        +setParYieldCurveAdjustedMethod(YieldCurveMethod): OptionCashSettlement.OptionCashSettlementBuilder
+        +setParYieldCurveAdjustedMethodBuilder(YieldCurveMethod.YieldCurveMethodBuilder): OptionCashSettlement.OptionCashSettlementBuilder
+        +setParYieldCurveUnadjustedMethod(YieldCurveMethod): OptionCashSettlement.OptionCashSettlementBuilder
+        +setParYieldCurveUnadjustedMethodBuilder(YieldCurveMethod.YieldCurveMethodBuilder): OptionCashSettlement.OptionCashSettlementBuilder
+        +setZeroCouponYieldAdjustedMethod(YieldCurveMethod): OptionCashSettlement.OptionCashSettlementBuilder
+        +setZeroCouponYieldAdjustedMethodBuilder(YieldCurveMethod.YieldCurveMethodBuilder): OptionCashSettlement.OptionCashSettlementBuilder
+        +build(): OptionCashSettlement
+    }
+
+@enduml

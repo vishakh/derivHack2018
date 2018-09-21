@@ -1,0 +1,7 @@
+@startuml
+
+    class RestructuringValidator [[RestructuringValidator.html]] {
+        +validate(Restructuring): ValidationResult<Restructuring>
+    }
+
+@enduml

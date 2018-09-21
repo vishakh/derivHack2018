@@ -1,0 +1,7 @@
+@startuml
+
+    class SimplePaymentOnlyExistsValidator [[SimplePaymentOnlyExistsValidator.html]] {
+        +validate(SimplePayment, String): ValidationResult<SimplePayment>
+    }
+
+@enduml

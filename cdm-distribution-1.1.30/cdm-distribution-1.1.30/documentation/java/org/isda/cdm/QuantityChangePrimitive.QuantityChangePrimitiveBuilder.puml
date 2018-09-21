@@ -1,0 +1,19 @@
+@startuml
+
+    class QuantityChangePrimitive.QuantityChangePrimitiveBuilder [[QuantityChangePrimitive.QuantityChangePrimitiveBuilder.html]] {
+        +getAfter(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +getOrCreateAfter(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +getBefore(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +getOrCreateBefore(): ContractOrContractReference.ContractOrContractReferenceBuilder
+        +getChange(): List<ContractualQuantity.ContractualQuantityBuilder>
+        +getOrCreateChange(int): ContractualQuantity.ContractualQuantityBuilder
+        +setAfter(ContractOrContractReference): QuantityChangePrimitive.QuantityChangePrimitiveBuilder
+        +setAfterBuilder(ContractOrContractReference.ContractOrContractReferenceBuilder): QuantityChangePrimitive.QuantityChangePrimitiveBuilder
+        +setBefore(ContractOrContractReference): QuantityChangePrimitive.QuantityChangePrimitiveBuilder
+        +setBeforeBuilder(ContractOrContractReference.ContractOrContractReferenceBuilder): QuantityChangePrimitive.QuantityChangePrimitiveBuilder
+        +addChange(ContractualQuantity): QuantityChangePrimitive.QuantityChangePrimitiveBuilder
+        +addChangeBuilder(ContractualQuantity.ContractualQuantityBuilder): QuantityChangePrimitive.QuantityChangePrimitiveBuilder
+        +build(): QuantityChangePrimitive
+    }
+
+@enduml

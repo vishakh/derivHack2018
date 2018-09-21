@@ -1,0 +1,7 @@
+@startuml
+
+    class IdentifiedAssetValidator [[IdentifiedAssetValidator.html]] {
+        +validate(IdentifiedAsset): ValidationResult<IdentifiedAsset>
+    }
+
+@enduml

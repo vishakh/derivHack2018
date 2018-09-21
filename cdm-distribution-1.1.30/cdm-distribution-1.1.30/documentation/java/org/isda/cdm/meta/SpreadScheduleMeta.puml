@@ -1,0 +1,12 @@
+@startuml
+
+    class SpreadScheduleMeta [[SpreadScheduleMeta.html]] {
+        +dataRules(): List<Validator<SpreadSchedule>>
+        +choiceRuleValidators(): List<Validator<SpreadSchedule>>
+        +getOutMappings(): Multimap<String, OutMapping<SpreadSchedule, ?>>
+        +getQualifyFunctions(): List<Function<SpreadSchedule, QualifyResult>>
+        +validator(): Validator<SpreadSchedule>
+        +onlyExistsValidator(): ValidatorWithArg<SpreadSchedule, String>
+    }
+
+@enduml

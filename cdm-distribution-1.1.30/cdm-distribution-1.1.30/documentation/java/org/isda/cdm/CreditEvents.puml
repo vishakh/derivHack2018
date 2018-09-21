@@ -1,0 +1,25 @@
+@startuml
+
+    class CreditEvents [[CreditEvents.html]] {
+        +getBankruptcy(): Boolean
+        +getCreditEventNotice(): CreditEventNotice
+        +getDefaultRequirement(): Money
+        +getDistressedRatingsDowngrade(): Boolean
+        +getFailureToPay(): FailureToPay
+        +getFailureToPayInterest(): Boolean
+        +getFailureToPayPrincipal(): Boolean
+        +getGovernmentalIntervention(): Boolean
+        +getId(): String
+        +getImpliedWritedown(): Boolean
+        +getMaturityExtension(): Boolean
+        +getObligationAcceleration(): Boolean
+        +getObligationDefault(): Boolean
+        +getRepudiationMoratorium(): Boolean
+        +getRestructuring(): Restructuring
+        +getWritedown(): Boolean
+        +toBuilder(): CreditEvents.CreditEventsBuilder
+        {static} +builder(): CreditEvents.CreditEventsBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

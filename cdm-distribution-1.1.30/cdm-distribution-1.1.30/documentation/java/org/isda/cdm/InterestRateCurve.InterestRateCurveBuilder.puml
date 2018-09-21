@@ -1,0 +1,15 @@
+@startuml
+
+    class InterestRateCurve.InterestRateCurveBuilder [[InterestRateCurve.InterestRateCurveBuilder.html]] {
+        +getFloatingRateIndex(): FloatingRateIndexEnum
+        +getFloatingRateIndexScheme(): String
+        +getTenor(): Period.PeriodBuilder
+        +getOrCreateTenor(): Period.PeriodBuilder
+        +setFloatingRateIndex(FloatingRateIndexEnum): InterestRateCurve.InterestRateCurveBuilder
+        +setFloatingRateIndexScheme(String): InterestRateCurve.InterestRateCurveBuilder
+        +setTenor(Period): InterestRateCurve.InterestRateCurveBuilder
+        +setTenorBuilder(Period.PeriodBuilder): InterestRateCurve.InterestRateCurveBuilder
+        +build(): InterestRateCurve
+    }
+
+@enduml

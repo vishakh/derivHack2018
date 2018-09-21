@@ -1,0 +1,10 @@
+@startuml
+
+    class CashSettlementReferenceBanks [[CashSettlementReferenceBanks.html]] {
+        +getReferenceBank(): List<ReferenceBank>
+        +toBuilder(): CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder
+        {static} +builder(): CashSettlementReferenceBanks.CashSettlementReferenceBanksBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

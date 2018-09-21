@@ -1,0 +1,7 @@
+@startuml
+
+    class CreditEventsPhysicalSettlementMatrixDataRule [[CreditEventsPhysicalSettlementMatrixDataRule.html]] {
+        +validate(Contract): ValidationResult<Contract>
+    }
+
+@enduml

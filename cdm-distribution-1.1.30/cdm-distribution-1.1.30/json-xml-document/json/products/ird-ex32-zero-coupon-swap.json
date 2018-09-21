@@ -1,0 +1,230 @@
+{
+  "account" : [ {
+    "accountBeneficiary" : "party1",
+    "accountName" : "PRIMARY_ACCOUNT",
+    "accountNumber" : "PRIM_450",
+    "id" : "primaryAct1"
+  }, {
+    "accountBeneficiary" : "party2",
+    "accountName" : "CROSS_ACCOUNT",
+    "accountNumber" : "CROSS_560",
+    "id" : "crossAct1"
+  } ],
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "E2000098N10184",
+      "identifierScheme" : "http://www.partyA.com/swaps/trade-id"
+    },
+    "partyReference" : "party1"
+  }, {
+    "identifierValue" : {
+      "identifier" : "1234",
+      "identifierScheme" : "http://www.barclays.com/swaps/trade-id"
+    },
+    "partyReference" : "party2"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "Y",
+              "periodMultiplier" : 1,
+              "rollConvention" : "NONE"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessCenters" : {
+                    "businessCenter" : [ "GBLO" ]
+                  },
+                  "businessDayConvention" : "MODFOLLOWING"
+                },
+                "unadjustedDate" : "2005-02-22"
+              }
+            },
+            "firstPeriodStartDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "GBLO" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2005-02-20"
+            },
+            "id" : "N10434",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "GBLO" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2035-02-22"
+            }
+          },
+          "dayCountFraction" : "_30E_360",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.03
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party1",
+            "receiverPartyReference" : "party2"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "N10434",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "T",
+              "periodMultiplier" : 1
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 100000,
+                "currency" : "GBP"
+              }
+            }
+          },
+          "rosettaKeyValue" : "5d91a332"
+        }, {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessDayConvention" : "NONE"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3,
+              "rollConvention" : "_22"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessCenters" : {
+                    "businessCenter" : [ "GBLO" ]
+                  },
+                  "businessDayConvention" : "MODFOLLOWING"
+                },
+                "unadjustedDate" : "2005-02-22"
+              }
+            },
+            "firstPeriodStartDate" : {
+              "dateAdjustments" : {
+                "businessDayConvention" : "NONE"
+              },
+              "unadjustedDate" : "2005-02-20"
+            },
+            "id" : "N10277",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "GBLO" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2035-02-22"
+            }
+          },
+          "compoundingMethod" : "FLAT",
+          "dayCountFraction" : "ACT_360",
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "GBP_LIBOR_ISDA",
+              "indexTenor" : {
+                "period" : "M",
+                "periodMultiplier" : 6
+              }
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party2",
+            "receiverPartyReference" : "party1"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "N10277",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "T",
+              "periodMultiplier" : 1
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 100000,
+                "currency" : "GBP"
+              }
+            }
+          },
+          "resetDates" : {
+            "calculationPeriodDatesReference" : "N10277",
+            "fixingDates" : {
+              "period" : "D",
+              "periodMultiplier" : -2,
+              "dayType" : "BUSINESS",
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO" ]
+              },
+              "businessDayConvention" : "NONE",
+              "dateRelativeTo" : "resetDates"
+            },
+            "id" : "resetDates",
+            "resetDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "GBLO" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "resetFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            }
+          },
+          "rosettaKeyValue" : "26787f4a"
+        } ]
+      },
+      "rosettaKeyValue" : "fd3a2d04"
+    },
+    "productIdentification" : {
+      "productQualifier" : "InterestRate_IRSwap_FixedFloat"
+    }
+  },
+  "party" : [ {
+    "id" : "party1",
+    "legalEntity" : {
+      "name" : "Party A"
+    },
+    "partyId" : [ "12345" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/dummy-party-id"
+  }, {
+    "id" : "party2",
+    "partyId" : [ "67890" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/dummy-party-id"
+  } ],
+  "tradeDate" : {
+    "date" : "2005-02-20"
+  },
+  "rosettaKey" : "953b340"
+}

@@ -1,0 +1,7 @@
+@startuml
+
+    class ProductValidator [[ProductValidator.html]] {
+        +validate(Product): ValidationResult<Product>
+    }
+
+@enduml

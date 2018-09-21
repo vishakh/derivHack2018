@@ -1,0 +1,13 @@
+@startuml
+
+    class BusinessDateRange.BusinessDateRangeBuilder [[BusinessDateRange.BusinessDateRangeBuilder.html]] {
+        +getBusinessCenters(): BusinessCenters.BusinessCentersBuilder
+        +getOrCreateBusinessCenters(): BusinessCenters.BusinessCentersBuilder
+        +getBusinessDayConvention(): BusinessDayConventionEnum
+        +setBusinessCenters(BusinessCenters): BusinessDateRange.BusinessDateRangeBuilder
+        +setBusinessCentersBuilder(BusinessCenters.BusinessCentersBuilder): BusinessDateRange.BusinessDateRangeBuilder
+        +setBusinessDayConvention(BusinessDayConventionEnum): BusinessDateRange.BusinessDateRangeBuilder
+        +build(): BusinessDateRange
+    }
+
+@enduml

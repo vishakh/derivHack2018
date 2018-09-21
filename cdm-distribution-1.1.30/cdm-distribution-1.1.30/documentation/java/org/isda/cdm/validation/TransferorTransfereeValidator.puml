@@ -1,0 +1,7 @@
+@startuml
+
+    class TransferorTransfereeValidator [[TransferorTransfereeValidator.html]] {
+        +validate(TransferorTransferee): ValidationResult<TransferorTransferee>
+    }
+
+@enduml

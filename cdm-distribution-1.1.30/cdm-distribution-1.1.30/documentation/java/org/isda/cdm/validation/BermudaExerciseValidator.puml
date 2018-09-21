@@ -1,0 +1,7 @@
+@startuml
+
+    class BermudaExerciseValidator [[BermudaExerciseValidator.html]] {
+        +validate(BermudaExercise): ValidationResult<BermudaExercise>
+    }
+
+@enduml

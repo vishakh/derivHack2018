@@ -1,0 +1,12 @@
+@startuml
+
+    class CollateralMeta [[CollateralMeta.html]] {
+        +dataRules(): List<Validator<Collateral>>
+        +choiceRuleValidators(): List<Validator<Collateral>>
+        +getOutMappings(): Multimap<String, OutMapping<Collateral, ?>>
+        +getQualifyFunctions(): List<Function<Collateral, QualifyResult>>
+        +validator(): Validator<Collateral>
+        +onlyExistsValidator(): ValidatorWithArg<Collateral, String>
+    }
+
+@enduml

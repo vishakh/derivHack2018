@@ -1,0 +1,7 @@
+@startuml
+
+    class ExtendibleProvisionAdjustedDatesOnlyExistsValidator [[ExtendibleProvisionAdjustedDatesOnlyExistsValidator.html]] {
+        +validate(ExtendibleProvisionAdjustedDates, String): ValidationResult<ExtendibleProvisionAdjustedDates>
+    }
+
+@enduml

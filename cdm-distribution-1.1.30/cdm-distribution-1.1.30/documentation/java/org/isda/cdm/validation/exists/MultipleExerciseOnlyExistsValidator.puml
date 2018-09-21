@@ -1,0 +1,7 @@
+@startuml
+
+    class MultipleExerciseOnlyExistsValidator [[MultipleExerciseOnlyExistsValidator.html]] {
+        +validate(MultipleExercise, String): ValidationResult<MultipleExercise>
+    }
+
+@enduml

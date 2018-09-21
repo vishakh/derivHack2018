@@ -1,0 +1,12 @@
+@startuml
+
+    class PhysicalSettlementTermsMeta [[PhysicalSettlementTermsMeta.html]] {
+        +dataRules(): List<Validator<PhysicalSettlementTerms>>
+        +choiceRuleValidators(): List<Validator<PhysicalSettlementTerms>>
+        +getOutMappings(): Multimap<String, OutMapping<PhysicalSettlementTerms, ?>>
+        +getQualifyFunctions(): List<Function<PhysicalSettlementTerms, QualifyResult>>
+        +validator(): Validator<PhysicalSettlementTerms>
+        +onlyExistsValidator(): ValidatorWithArg<PhysicalSettlementTerms, String>
+    }
+
+@enduml

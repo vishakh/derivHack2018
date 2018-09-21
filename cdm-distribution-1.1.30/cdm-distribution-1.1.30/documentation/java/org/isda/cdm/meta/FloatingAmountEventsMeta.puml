@@ -1,0 +1,12 @@
+@startuml
+
+    class FloatingAmountEventsMeta [[FloatingAmountEventsMeta.html]] {
+        +dataRules(): List<Validator<FloatingAmountEvents>>
+        +choiceRuleValidators(): List<Validator<FloatingAmountEvents>>
+        +getOutMappings(): Multimap<String, OutMapping<FloatingAmountEvents, ?>>
+        +getQualifyFunctions(): List<Function<FloatingAmountEvents, QualifyResult>>
+        +validator(): Validator<FloatingAmountEvents>
+        +onlyExistsValidator(): ValidatorWithArg<FloatingAmountEvents, String>
+    }
+
+@enduml

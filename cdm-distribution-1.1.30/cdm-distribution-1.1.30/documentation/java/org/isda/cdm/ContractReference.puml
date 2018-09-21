@@ -1,0 +1,11 @@
+@startuml
+
+    class ContractReference [[ContractReference.html]] {
+        +getState(): StateEnum
+        +toBuilder(): ContractReference.ContractReferenceBuilder
+        {static} +builder(): ContractReference.ContractReferenceBuilder
+        +getRosettaKey(): String
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

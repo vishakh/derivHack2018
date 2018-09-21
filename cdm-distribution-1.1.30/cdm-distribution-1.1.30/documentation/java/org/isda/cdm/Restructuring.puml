@@ -1,0 +1,14 @@
+@startuml
+
+    class Restructuring [[Restructuring.html]] {
+        +getApplicable(): Boolean
+        +getMultipleCreditEventNotices(): Boolean
+        +getMultipleHolderObligation(): Boolean
+        +getRestructuringType(): RestructuringEnum
+        +getRestructuringTypeScheme(): String
+        +toBuilder(): Restructuring.RestructuringBuilder
+        {static} +builder(): Restructuring.RestructuringBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class ValuationDate.ValuationDateBuilder [[ValuationDate.ValuationDateBuilder.html]] {
+        +getMultipleValuationDates(): MultipleValuationDates.MultipleValuationDatesBuilder
+        +getOrCreateMultipleValuationDates(): MultipleValuationDates.MultipleValuationDatesBuilder
+        +getSingleValuationDate(): SingleValuationDate.SingleValuationDateBuilder
+        +getOrCreateSingleValuationDate(): SingleValuationDate.SingleValuationDateBuilder
+        +setMultipleValuationDates(MultipleValuationDates): ValuationDate.ValuationDateBuilder
+        +setMultipleValuationDatesBuilder(MultipleValuationDates.MultipleValuationDatesBuilder): ValuationDate.ValuationDateBuilder
+        +setSingleValuationDate(SingleValuationDate): ValuationDate.ValuationDateBuilder
+        +setSingleValuationDateBuilder(SingleValuationDate.SingleValuationDateBuilder): ValuationDate.ValuationDateBuilder
+        +build(): ValuationDate
+    }
+
+@enduml

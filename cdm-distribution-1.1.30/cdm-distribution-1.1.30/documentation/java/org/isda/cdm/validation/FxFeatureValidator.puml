@@ -1,0 +1,7 @@
+@startuml
+
+    class FxFeatureValidator [[FxFeatureValidator.html]] {
+        +validate(FxFeature): ValidationResult<FxFeature>
+    }
+
+@enduml

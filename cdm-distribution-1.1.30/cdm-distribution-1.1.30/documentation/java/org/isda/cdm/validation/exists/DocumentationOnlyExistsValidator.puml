@@ -1,0 +1,7 @@
+@startuml
+
+    class DocumentationOnlyExistsValidator [[DocumentationOnlyExistsValidator.html]] {
+        +validate(Documentation, String): ValidationResult<Documentation>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class IssuerTradeIdMeta [[IssuerTradeIdMeta.html]] {
+        +dataRules(): List<Validator<IssuerTradeId>>
+        +choiceRuleValidators(): List<Validator<IssuerTradeId>>
+        +getOutMappings(): Multimap<String, OutMapping<IssuerTradeId, ?>>
+        +getQualifyFunctions(): List<Function<IssuerTradeId, QualifyResult>>
+        +validator(): Validator<IssuerTradeId>
+        +onlyExistsValidator(): ValidatorWithArg<IssuerTradeId, String>
+    }
+
+@enduml

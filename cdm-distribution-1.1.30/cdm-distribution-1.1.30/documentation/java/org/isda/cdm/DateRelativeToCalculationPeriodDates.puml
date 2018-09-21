@@ -1,0 +1,10 @@
+@startuml
+
+    class DateRelativeToCalculationPeriodDates [[DateRelativeToCalculationPeriodDates.html]] {
+        +getCalculationPeriodDatesReference(): List<String>
+        +toBuilder(): DateRelativeToCalculationPeriodDates.DateRelativeToCalculationPeriodDatesBuilder
+        {static} +builder(): DateRelativeToCalculationPeriodDates.DateRelativeToCalculationPeriodDatesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class NotDomesticCurrency.NotDomesticCurrencyBuilder [[NotDomesticCurrency.NotDomesticCurrencyBuilder.html]] {
+        +getApplicable(): Boolean
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +setApplicable(Boolean): NotDomesticCurrency.NotDomesticCurrencyBuilder
+        +setCurrency(String): NotDomesticCurrency.NotDomesticCurrencyBuilder
+        +setCurrencyScheme(String): NotDomesticCurrency.NotDomesticCurrencyBuilder
+        +build(): NotDomesticCurrency
+    }
+
+@enduml

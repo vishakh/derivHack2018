@@ -1,0 +1,18 @@
+@startuml
+
+    class InflationRateCalculation [[InflationRateCalculation.html]] {
+        +getFallbackBondApplicable(): Boolean
+        +getIndexSource(): String
+        +getIndexSourceScheme(): String
+        +getInflationLag(): Offset
+        +getInitialIndexLevel(): BigDecimal
+        +getInterpolationMethod(): InterpolationMethodEnum
+        +getInterpolationMethodScheme(): String
+        +getMainPublication(): String
+        +getMainPublicationScheme(): String
+        +toBuilder(): InflationRateCalculation.InflationRateCalculationBuilder
+        {static} +builder(): InflationRateCalculation.InflationRateCalculationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

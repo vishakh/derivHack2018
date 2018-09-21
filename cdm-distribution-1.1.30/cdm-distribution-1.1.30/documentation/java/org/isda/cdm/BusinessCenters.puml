@@ -1,0 +1,13 @@
+@startuml
+
+    class BusinessCenters [[BusinessCenters.html]] {
+        +getBusinessCenter(): List<BusinessCenterEnum>
+        +getBusinessCenterScheme(): String
+        +getBusinessCentersReference(): String
+        +getId(): String
+        +toBuilder(): BusinessCenters.BusinessCentersBuilder
+        {static} +builder(): BusinessCenters.BusinessCentersBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

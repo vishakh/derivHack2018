@@ -1,0 +1,11 @@
+@startuml
+
+    class NonNegativeAmountSchedule.NonNegativeAmountScheduleBuilder [[NonNegativeAmountSchedule.NonNegativeAmountScheduleBuilder.html]] {
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +setCurrency(String): NonNegativeAmountSchedule.NonNegativeAmountScheduleBuilder
+        +setCurrencyScheme(String): NonNegativeAmountSchedule.NonNegativeAmountScheduleBuilder
+        +build(): NonNegativeAmountSchedule
+    }
+
+@enduml

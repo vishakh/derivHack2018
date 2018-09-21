@@ -1,0 +1,7 @@
+@startuml
+
+    class EventTimestampValidator [[EventTimestampValidator.html]] {
+        +validate(EventTimestamp): ValidationResult<EventTimestamp>
+    }
+
+@enduml

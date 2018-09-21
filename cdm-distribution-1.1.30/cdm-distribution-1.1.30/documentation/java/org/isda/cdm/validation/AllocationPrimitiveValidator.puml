@@ -1,0 +1,7 @@
+@startuml
+
+    class AllocationPrimitiveValidator [[AllocationPrimitiveValidator.html]] {
+        +validate(AllocationPrimitive): ValidationResult<AllocationPrimitive>
+    }
+
+@enduml

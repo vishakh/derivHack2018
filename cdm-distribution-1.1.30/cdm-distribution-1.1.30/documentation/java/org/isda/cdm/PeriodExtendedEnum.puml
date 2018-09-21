@@ -1,0 +1,11 @@
+@startuml
+
+    enum PeriodExtendedEnum [[PeriodExtendedEnum.html]] {
+        {static} +T
+        {static} +D
+        {static} +W
+        {static} +M
+        {static} +Y
+    }
+
+@enduml

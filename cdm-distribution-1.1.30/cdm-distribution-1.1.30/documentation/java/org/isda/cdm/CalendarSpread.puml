@@ -1,0 +1,10 @@
+@startuml
+
+    class CalendarSpread [[CalendarSpread.html]] {
+        +getExpirationDateTwo(): AdjustableOrRelativeDate
+        +toBuilder(): CalendarSpread.CalendarSpreadBuilder
+        {static} +builder(): CalendarSpread.CalendarSpreadBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

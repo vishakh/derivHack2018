@@ -1,0 +1,12 @@
+@startuml
+
+    class MoneyMeta [[MoneyMeta.html]] {
+        +dataRules(): List<Validator<Money>>
+        +choiceRuleValidators(): List<Validator<Money>>
+        +getOutMappings(): Multimap<String, OutMapping<Money, ?>>
+        +getQualifyFunctions(): List<Function<Money, QualifyResult>>
+        +validator(): Validator<Money>
+        +onlyExistsValidator(): ValidatorWithArg<Money, String>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class Tranche [[Tranche.html]] {
+        +getAttachmentPoint(): BigDecimal
+        +getExhaustionPoint(): BigDecimal
+        +getIncurredRecoveryApplicable(): Boolean
+        +toBuilder(): Tranche.TrancheBuilder
+        {static} +builder(): Tranche.TrancheBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

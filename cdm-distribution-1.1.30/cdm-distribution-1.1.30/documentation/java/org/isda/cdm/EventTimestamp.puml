@@ -1,0 +1,11 @@
+@startuml
+
+    class EventTimestamp [[EventTimestamp.html]] {
+        +getCreationTimestamp(): LocalDateTime
+        +getExpiryTimestamp(): LocalDateTime
+        +toBuilder(): EventTimestamp.EventTimestampBuilder
+        {static} +builder(): EventTimestamp.EventTimestampBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

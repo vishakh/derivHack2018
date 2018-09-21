@@ -1,0 +1,23 @@
+@startuml
+
+    class NotionalStepRule.NotionalStepRuleBuilder [[NotionalStepRule.NotionalStepRuleBuilder.html]] {
+        +getCalculationPeriodDatesReference(): String
+        +getFirstNotionalStepDate(): LocalDate
+        +getLastNotionalStepDate(): LocalDate
+        +getNotionalStepAmount(): BigDecimal
+        +getNotionalStepRate(): BigDecimal
+        +getStepFrequency(): Frequency.FrequencyBuilder
+        +getOrCreateStepFrequency(): Frequency.FrequencyBuilder
+        +getStepRelativeTo(): StepRelativeToEnum
+        +setCalculationPeriodDatesReference(String): NotionalStepRule.NotionalStepRuleBuilder
+        +setFirstNotionalStepDate(LocalDate): NotionalStepRule.NotionalStepRuleBuilder
+        +setLastNotionalStepDate(LocalDate): NotionalStepRule.NotionalStepRuleBuilder
+        +setNotionalStepAmount(BigDecimal): NotionalStepRule.NotionalStepRuleBuilder
+        +setNotionalStepRate(BigDecimal): NotionalStepRule.NotionalStepRuleBuilder
+        +setStepFrequency(Frequency): NotionalStepRule.NotionalStepRuleBuilder
+        +setStepFrequencyBuilder(Frequency.FrequencyBuilder): NotionalStepRule.NotionalStepRuleBuilder
+        +setStepRelativeTo(StepRelativeToEnum): NotionalStepRule.NotionalStepRuleBuilder
+        +build(): NotionalStepRule
+    }
+
+@enduml

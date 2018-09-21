@@ -1,0 +1,7 @@
+@startuml
+
+    class BasketNameOnlyExistsValidator [[BasketNameOnlyExistsValidator.html]] {
+        +validate(BasketName, String): ValidationResult<BasketName>
+    }
+
+@enduml

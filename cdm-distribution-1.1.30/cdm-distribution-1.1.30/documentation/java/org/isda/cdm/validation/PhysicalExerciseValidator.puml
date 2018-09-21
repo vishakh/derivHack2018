@@ -1,0 +1,7 @@
+@startuml
+
+    class PhysicalExerciseValidator [[PhysicalExerciseValidator.html]] {
+        +validate(PhysicalExercise): ValidationResult<PhysicalExercise>
+    }
+
+@enduml

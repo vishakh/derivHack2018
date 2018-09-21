@@ -1,0 +1,9 @@
+@startuml
+
+    class LoanParticipation.LoanParticipationBuilder [[LoanParticipation.LoanParticipationBuilder.html]] {
+        +getQualifyingParticipationSeller(): String
+        +setQualifyingParticipationSeller(String): LoanParticipation.LoanParticipationBuilder
+        +build(): LoanParticipation
+    }
+
+@enduml

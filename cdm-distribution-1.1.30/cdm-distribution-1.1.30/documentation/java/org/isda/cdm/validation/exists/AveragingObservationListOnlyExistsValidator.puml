@@ -1,0 +1,7 @@
+@startuml
+
+    class AveragingObservationListOnlyExistsValidator [[AveragingObservationListOnlyExistsValidator.html]] {
+        +validate(AveragingObservationList, String): ValidationResult<AveragingObservationList>
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class ExecutionReference [[ExecutionReference.html]] {
+        +getExecutionReference(): Identifier
+        +getState(): StateEnum
+        +toBuilder(): ExecutionReference.ExecutionReferenceBuilder
+        {static} +builder(): ExecutionReference.ExecutionReferenceBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

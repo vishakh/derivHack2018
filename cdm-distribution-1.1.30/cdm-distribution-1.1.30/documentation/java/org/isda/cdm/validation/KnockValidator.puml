@@ -1,0 +1,7 @@
+@startuml
+
+    class KnockValidator [[KnockValidator.html]] {
+        +validate(Knock): ValidationResult<Knock>
+    }
+
+@enduml

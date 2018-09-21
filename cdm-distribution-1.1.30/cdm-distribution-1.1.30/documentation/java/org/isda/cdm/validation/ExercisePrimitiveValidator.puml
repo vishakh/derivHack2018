@@ -1,0 +1,7 @@
+@startuml
+
+    class ExercisePrimitiveValidator [[ExercisePrimitiveValidator.html]] {
+        +validate(ExercisePrimitive): ValidationResult<ExercisePrimitive>
+    }
+
+@enduml

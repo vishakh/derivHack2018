@@ -1,0 +1,7 @@
+@startuml
+
+    class CancellationEventValidator [[CancellationEventValidator.html]] {
+        +validate(CancellationEvent): ValidationResult<CancellationEvent>
+    }
+
+@enduml

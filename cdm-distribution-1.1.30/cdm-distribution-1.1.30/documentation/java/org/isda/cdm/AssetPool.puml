@@ -1,0 +1,13 @@
+@startuml
+
+    class AssetPool [[AssetPool.html]] {
+        +getCurrentFactor(): BigDecimal
+        +getEffectiveDate(): LocalDate
+        +getInitialFactor(): BigDecimal
+        +getVersion(): String
+        +toBuilder(): AssetPool.AssetPoolBuilder
+        {static} +builder(): AssetPool.AssetPoolBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

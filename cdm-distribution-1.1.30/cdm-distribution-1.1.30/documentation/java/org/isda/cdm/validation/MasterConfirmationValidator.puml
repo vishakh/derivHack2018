@@ -1,0 +1,7 @@
+@startuml
+
+    class MasterConfirmationValidator [[MasterConfirmationValidator.html]] {
+        +validate(MasterConfirmation): ValidationResult<MasterConfirmation>
+    }
+
+@enduml

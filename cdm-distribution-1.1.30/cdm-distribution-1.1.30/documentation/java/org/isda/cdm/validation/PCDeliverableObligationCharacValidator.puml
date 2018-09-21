@@ -1,0 +1,7 @@
+@startuml
+
+    class PCDeliverableObligationCharacValidator [[PCDeliverableObligationCharacValidator.html]] {
+        +validate(PCDeliverableObligationCharac): ValidationResult<PCDeliverableObligationCharac>
+    }
+
+@enduml

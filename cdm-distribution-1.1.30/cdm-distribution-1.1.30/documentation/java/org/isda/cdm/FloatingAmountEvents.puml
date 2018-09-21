@@ -1,0 +1,15 @@
+@startuml
+
+    class FloatingAmountEvents [[FloatingAmountEvents.html]] {
+        +getAdditionalFixedPayments(): AdditionalFixedPayments
+        +getFailureToPayPrincipal(): Boolean
+        +getFloatingAmountProvisions(): FloatingAmountProvisions
+        +getImpliedWritedown(): Boolean
+        +getInterestShortfall(): InterestShortFall
+        +getWritedown(): Boolean
+        +toBuilder(): FloatingAmountEvents.FloatingAmountEventsBuilder
+        {static} +builder(): FloatingAmountEvents.FloatingAmountEventsBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

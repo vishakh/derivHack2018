@@ -1,0 +1,7 @@
+@startuml
+
+    class TriggerChoice2ChoiceRule [[TriggerChoice2ChoiceRule.html]] {
+        +validate(Trigger): ValidationResult<Trigger>
+    }
+
+@enduml

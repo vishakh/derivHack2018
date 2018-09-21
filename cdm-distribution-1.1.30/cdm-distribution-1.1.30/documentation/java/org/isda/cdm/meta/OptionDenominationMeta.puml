@@ -1,0 +1,12 @@
+@startuml
+
+    class OptionDenominationMeta [[OptionDenominationMeta.html]] {
+        +dataRules(): List<Validator<OptionDenomination>>
+        +choiceRuleValidators(): List<Validator<OptionDenomination>>
+        +getOutMappings(): Multimap<String, OutMapping<OptionDenomination, ?>>
+        +getQualifyFunctions(): List<Function<OptionDenomination, QualifyResult>>
+        +validator(): Validator<OptionDenomination>
+        +onlyExistsValidator(): ValidatorWithArg<OptionDenomination, String>
+    }
+
+@enduml

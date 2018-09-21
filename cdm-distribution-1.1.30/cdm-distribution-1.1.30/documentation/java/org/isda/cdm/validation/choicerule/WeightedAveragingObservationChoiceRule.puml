@@ -1,0 +1,7 @@
+@startuml
+
+    class WeightedAveragingObservationChoiceRule [[WeightedAveragingObservationChoiceRule.html]] {
+        +validate(WeightedAveragingObservation): ValidationResult<WeightedAveragingObservation>
+    }
+
+@enduml

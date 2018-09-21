@@ -1,0 +1,172 @@
+{
+  "effectiveDate" : "2018-03-15",
+  "eventDate" : "2018-03-14",
+  "eventEffect" : {
+    "contractReference" : [ "4ce133c6" ],
+    "effectedContract" : [ "ae412c5e" ],
+    "effectedEvent" : "a3117d04",
+    "payment" : [ "d06453ab" ]
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "00426D8TH894"
+    },
+    "version" : 1
+  },
+  "eventQualifier" : "PartialTermination",
+  "messageInformation" : {
+    "messageId" : "1486297",
+    "messageIdScheme" : "http://www.party1.com/message-id",
+    "sentBy" : "894500DM8LVOSCMP9T34",
+    "sentTo" : "49300JZDC6K840D7F79"
+  },
+  "party" : [ {
+    "id" : "gfr5683d",
+    "partyId" : [ "894500DM8LVOSCMP9T34" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "t65jdgwu",
+    "partyId" : [ "549300JZDC6K840D7F79" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "payment" : [ {
+      "payerReceiver" : {
+        "payerPartyReference" : "gfr5683d",
+        "receiverPartyReference" : "t65jdgwu"
+      },
+      "paymentAmount" : {
+        "amount" : 45860.23,
+        "currency" : "JPY"
+      },
+      "rosettaKey" : "d06453ab"
+    } ],
+    "quantityChange" : [ {
+      "after" : {
+        "contractReference" : [ {
+          "identifierValue" : {
+            "identifier" : "56ERT7RHWE4",
+            "identifierScheme" : "http://www.party1.com/swaps/trade-id"
+          },
+          "version" : 1,
+          "partyReference" : "gfr5683d",
+          "rosettaKey" : "4ce133c6"
+        } ]
+      },
+      "before" : {
+        "contract" : [ {
+          "calculationAgent" : {
+            "calculationAgentBusinessCenter" : "JPTO"
+          },
+          "contractIdentifier" : [ {
+            "identifierValue" : {
+              "identifier" : "56ERT7RHWE4",
+              "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+            },
+            "partyReference" : "gfr5683d"
+          } ],
+          "contractualProduct" : {
+            "economicTerms" : {
+              "payout" : {
+                "creditDefaultPayout" : {
+                  "generalTerms" : {
+                    "buyerSeller" : {
+                      "buyerPartyReference" : "gfr5683d",
+                      "sellerPartyReference" : "t65jdgwu"
+                    },
+                    "referenceInformation" : {
+                      "referenceEntity" : {
+                        "entityId" : "008FAQ",
+                        "id" : "uy6758",
+                        "name" : "Aiful Corporation"
+                      },
+                      "referenceObligation" : [ {
+                        "bond" : {
+                          "productIdentifierScheme" : "http://www.fpml.org/spec/2002/instrument-id-ISIN-1-0",
+                          "couponRate" : 0.02,
+                          "maturity" : "2004-01-26"
+                        },
+                        "primaryObligorReference" : "uy6758"
+                      } ]
+                    }
+                  },
+                  "protectionTerms" : {
+                    "creditEvents" : {
+                      "bankruptcy" : false,
+                      "governmentalIntervention" : false,
+                      "obligationAcceleration" : false,
+                      "obligationDefault" : false,
+                      "repudiationMoratorium" : false,
+                      "restructuring" : {
+                        "applicable" : true,
+                        "multipleHolderObligation" : false
+                      }
+                    },
+                    "notionalAmount" : {
+                      "amount" : 500000000,
+                      "currency" : "JPY"
+                    }
+                  },
+                  "rosettaKeyValue" : "a6d48835"
+                },
+                "interestRatePayout" : [ {
+                  "calculationPeriodDates" : {
+                    "calculationPeriodFrequency" : {
+                      "rollConvention" : "_5"
+                    },
+                    "effectiveDate" : {
+                      "adjustableDate" : {
+                        "unadjustedDate" : "2002-12-05"
+                      }
+                    },
+                    "terminationDate" : {
+                      "unadjustedDate" : "2007-12-05"
+                    }
+                  },
+                  "interestRate" : {
+                    "fixedRate" : {
+                      "initialValue" : 0.007
+                    }
+                  },
+                  "payerReceiver" : {
+                    "payerPartyReference" : "gfr5683d",
+                    "receiverPartyReference" : "t65jdgwu"
+                  },
+                  "paymentDates" : {
+                    "firstPaymentDate" : "2003-03-05",
+                    "paymentFrequency" : {
+                      "period" : "M",
+                      "periodMultiplier" : 3
+                    }
+                  },
+                  "rosettaKeyValue" : "282dac72"
+                } ]
+              },
+              "rosettaKeyValue" : "215b30c3"
+            }
+          },
+          "documentation" : {
+            "masterConfirmation" : {
+              "masterConfirmationDate" : "2003-06-06",
+              "masterConfirmationType" : "ISDA_2003_CREDIT_JAPAN"
+            }
+          },
+          "tradeDate" : {
+            "date" : "2002-12-04"
+          },
+          "rosettaKey" : "ae412c5e"
+        } ]
+      },
+      "change" : [ {
+        "notionalAmount" : {
+          "amount" : -10000000,
+          "currency" : "JPY"
+        }
+      } ]
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2018-03-14T18:13:51"
+  },
+  "rosettaKey" : "a3117d04"
+}

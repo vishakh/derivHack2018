@@ -1,0 +1,11 @@
+@startuml
+
+    class PassThroughItem [[PassThroughItem.html]] {
+        +getPassThroughPercentage(): BigDecimal
+        +getPayerReceiver(): PayerReceiver
+        +toBuilder(): PassThroughItem.PassThroughItemBuilder
+        {static} +builder(): PassThroughItem.PassThroughItemBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

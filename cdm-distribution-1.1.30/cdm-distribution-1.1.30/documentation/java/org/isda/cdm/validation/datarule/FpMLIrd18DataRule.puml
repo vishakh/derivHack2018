@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLIrd18DataRule [[FpMLIrd18DataRule.html]] {
+        +validate(CalculationPeriodDates): ValidationResult<CalculationPeriodDates>
+    }
+
+@enduml

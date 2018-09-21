@@ -1,0 +1,17 @@
+@startuml
+
+    class CashflowRepresentation.CashflowRepresentationBuilder [[CashflowRepresentation.CashflowRepresentationBuilder.html]] {
+        +getCashflowsMatchParameters(): Boolean
+        +getPaymentCalculationPeriod(): List<PaymentCalculationPeriod.PaymentCalculationPeriodBuilder>
+        +getOrCreatePaymentCalculationPeriod(int): PaymentCalculationPeriod.PaymentCalculationPeriodBuilder
+        +getPrincipalExchange(): List<PrincipalExchange.PrincipalExchangeBuilder>
+        +getOrCreatePrincipalExchange(int): PrincipalExchange.PrincipalExchangeBuilder
+        +setCashflowsMatchParameters(Boolean): CashflowRepresentation.CashflowRepresentationBuilder
+        +addPaymentCalculationPeriod(PaymentCalculationPeriod): CashflowRepresentation.CashflowRepresentationBuilder
+        +addPaymentCalculationPeriodBuilder(PaymentCalculationPeriod.PaymentCalculationPeriodBuilder): CashflowRepresentation.CashflowRepresentationBuilder
+        +addPrincipalExchange(PrincipalExchange): CashflowRepresentation.CashflowRepresentationBuilder
+        +addPrincipalExchangeBuilder(PrincipalExchange.PrincipalExchangeBuilder): CashflowRepresentation.CashflowRepresentationBuilder
+        +build(): CashflowRepresentation
+    }
+
+@enduml

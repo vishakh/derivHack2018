@@ -1,0 +1,11 @@
+@startuml
+
+    class PartyAndAccountReference.PartyAndAccountReferenceBuilder [[PartyAndAccountReference.PartyAndAccountReferenceBuilder.html]] {
+        +getAccountReference(): String
+        +getPartyReference(): String
+        +setAccountReference(String): PartyAndAccountReference.PartyAndAccountReferenceBuilder
+        +setPartyReference(String): PartyAndAccountReference.PartyAndAccountReferenceBuilder
+        +build(): PartyAndAccountReference
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class BondOptionStrikeValidator [[BondOptionStrikeValidator.html]] {
+        +validate(BondOptionStrike): ValidationResult<BondOptionStrike>
+    }
+
+@enduml

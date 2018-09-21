@@ -1,0 +1,7 @@
+@startuml
+
+    interface CalculationPeriod [[CalculationPeriod.html]] {
+        {abstract} +execute(CalculationPeriodDates): CalculationPeriod.CalculationResult
+    }
+
+@enduml

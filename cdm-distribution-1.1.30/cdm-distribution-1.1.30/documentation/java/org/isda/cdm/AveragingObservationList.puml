@@ -1,0 +1,10 @@
+@startuml
+
+    class AveragingObservationList [[AveragingObservationList.html]] {
+        +getAveragingObservation(): List<WeightedAveragingObservation>
+        +toBuilder(): AveragingObservationList.AveragingObservationListBuilder
+        {static} +builder(): AveragingObservationList.AveragingObservationListBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class CalculationPeriodFrequencyMeta [[CalculationPeriodFrequencyMeta.html]] {
+        +dataRules(): List<Validator<CalculationPeriodFrequency>>
+        +choiceRuleValidators(): List<Validator<CalculationPeriodFrequency>>
+        +getOutMappings(): Multimap<String, OutMapping<CalculationPeriodFrequency, ?>>
+        +getQualifyFunctions(): List<Function<CalculationPeriodFrequency, QualifyResult>>
+        +validator(): Validator<CalculationPeriodFrequency>
+        +onlyExistsValidator(): ValidatorWithArg<CalculationPeriodFrequency, String>
+    }
+
+@enduml

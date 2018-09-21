@@ -1,0 +1,7 @@
+@startuml
+
+    class InitialFixingDateValidator [[InitialFixingDateValidator.html]] {
+        +validate(InitialFixingDate): ValidationResult<InitialFixingDate>
+    }
+
+@enduml

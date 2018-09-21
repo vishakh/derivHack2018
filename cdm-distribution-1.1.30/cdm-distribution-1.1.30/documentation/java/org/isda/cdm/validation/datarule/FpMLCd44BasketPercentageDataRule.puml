@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLCd44BasketPercentageDataRule [[FpMLCd44BasketPercentageDataRule.html]] {
+        +validate(ReferencePool): ValidationResult<ReferencePool>
+    }
+
+@enduml

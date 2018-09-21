@@ -1,0 +1,13 @@
+@startuml
+
+    class CalculationAgentModel.CalculationAgentModelBuilder [[CalculationAgentModel.CalculationAgentModelBuilder.html]] {
+        +getCalculationAgent(): CalculationAgent.CalculationAgentBuilder
+        +getOrCreateCalculationAgent(): CalculationAgent.CalculationAgentBuilder
+        +getCalculationAgentBusinessCenter(): BusinessCenterEnum
+        +setCalculationAgent(CalculationAgent): CalculationAgentModel.CalculationAgentModelBuilder
+        +setCalculationAgentBuilder(CalculationAgent.CalculationAgentBuilder): CalculationAgentModel.CalculationAgentModelBuilder
+        +setCalculationAgentBusinessCenter(BusinessCenterEnum): CalculationAgentModel.CalculationAgentModelBuilder
+        +build(): CalculationAgentModel
+    }
+
+@enduml

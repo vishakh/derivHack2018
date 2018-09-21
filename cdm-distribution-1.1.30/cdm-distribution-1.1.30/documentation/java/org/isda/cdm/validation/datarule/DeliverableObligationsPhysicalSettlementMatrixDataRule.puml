@@ -1,0 +1,7 @@
+@startuml
+
+    class DeliverableObligationsPhysicalSettlementMatrixDataRule [[DeliverableObligationsPhysicalSettlementMatrixDataRule.html]] {
+        +validate(Contract): ValidationResult<Contract>
+    }
+
+@enduml

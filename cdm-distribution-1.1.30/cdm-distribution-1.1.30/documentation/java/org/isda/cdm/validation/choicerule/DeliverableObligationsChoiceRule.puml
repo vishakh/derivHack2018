@@ -1,0 +1,7 @@
+@startuml
+
+    class DeliverableObligationsChoiceRule [[DeliverableObligationsChoiceRule.html]] {
+        +validate(DeliverableObligations): ValidationResult<DeliverableObligations>
+    }
+
+@enduml

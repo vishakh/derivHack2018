@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionExerciseOnlyExistsValidator [[OptionExerciseOnlyExistsValidator.html]] {
+        +validate(OptionExercise, String): ValidationResult<OptionExercise>
+    }
+
+@enduml

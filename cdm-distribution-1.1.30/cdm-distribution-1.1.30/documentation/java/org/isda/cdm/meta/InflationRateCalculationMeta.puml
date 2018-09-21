@@ -1,0 +1,12 @@
+@startuml
+
+    class InflationRateCalculationMeta [[InflationRateCalculationMeta.html]] {
+        +dataRules(): List<Validator<InflationRateCalculation>>
+        +choiceRuleValidators(): List<Validator<InflationRateCalculation>>
+        +getOutMappings(): Multimap<String, OutMapping<InflationRateCalculation, ?>>
+        +getQualifyFunctions(): List<Function<InflationRateCalculation, QualifyResult>>
+        +validator(): Validator<InflationRateCalculation>
+        +onlyExistsValidator(): ValidatorWithArg<InflationRateCalculation, String>
+    }
+
+@enduml

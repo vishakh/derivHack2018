@@ -1,0 +1,7 @@
+@startuml
+
+    class CancelableProvisionValidator [[CancelableProvisionValidator.html]] {
+        +validate(CancelableProvision): ValidationResult<CancelableProvision>
+    }
+
+@enduml

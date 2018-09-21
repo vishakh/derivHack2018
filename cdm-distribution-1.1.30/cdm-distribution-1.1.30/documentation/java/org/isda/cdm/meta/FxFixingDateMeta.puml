@@ -1,0 +1,12 @@
+@startuml
+
+    class FxFixingDateMeta [[FxFixingDateMeta.html]] {
+        +dataRules(): List<Validator<FxFixingDate>>
+        +choiceRuleValidators(): List<Validator<FxFixingDate>>
+        +getOutMappings(): Multimap<String, OutMapping<FxFixingDate, ?>>
+        +getQualifyFunctions(): List<Function<FxFixingDate, QualifyResult>>
+        +validator(): Validator<FxFixingDate>
+        +onlyExistsValidator(): ValidatorWithArg<FxFixingDate, String>
+    }
+
+@enduml

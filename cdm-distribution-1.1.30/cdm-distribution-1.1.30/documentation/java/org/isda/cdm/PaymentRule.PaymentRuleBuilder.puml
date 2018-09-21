@@ -1,0 +1,11 @@
+@startuml
+
+    class PaymentRule.PaymentRuleBuilder [[PaymentRule.PaymentRuleBuilder.html]] {
+        +getPercentageRule(): PercentageRule.PercentageRuleBuilder
+        +getOrCreatePercentageRule(): PercentageRule.PercentageRuleBuilder
+        +setPercentageRule(PercentageRule): PaymentRule.PaymentRuleBuilder
+        +setPercentageRuleBuilder(PercentageRule.PercentageRuleBuilder): PaymentRule.PaymentRuleBuilder
+        +build(): PaymentRule
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class BusinessDayAdjustmentsValidator [[BusinessDayAdjustmentsValidator.html]] {
+        +validate(BusinessDayAdjustments): ValidationResult<BusinessDayAdjustments>
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class ScheduleMeta [[ScheduleMeta.html]] {
+        +dataRules(): List<Validator<Schedule>>
+        +choiceRuleValidators(): List<Validator<Schedule>>
+        +getOutMappings(): Multimap<String, OutMapping<Schedule, ?>>
+        +getQualifyFunctions(): List<Function<Schedule, QualifyResult>>
+        +validator(): Validator<Schedule>
+        +onlyExistsValidator(): ValidatorWithArg<Schedule, String>
+    }
+
+@enduml

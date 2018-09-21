@@ -1,0 +1,7 @@
+@startuml
+
+    class LegalEntityValidator [[LegalEntityValidator.html]] {
+        +validate(LegalEntity): ValidationResult<LegalEntity>
+    }
+
+@enduml

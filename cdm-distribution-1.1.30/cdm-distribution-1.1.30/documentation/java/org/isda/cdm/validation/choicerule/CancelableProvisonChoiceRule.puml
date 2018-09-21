@@ -1,0 +1,7 @@
+@startuml
+
+    class CancelableProvisonChoiceRule [[CancelableProvisonChoiceRule.html]] {
+        +validate(CancelableProvision): ValidationResult<CancelableProvision>
+    }
+
+@enduml

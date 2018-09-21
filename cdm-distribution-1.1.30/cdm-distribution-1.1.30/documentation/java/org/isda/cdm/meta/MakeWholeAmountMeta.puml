@@ -1,0 +1,12 @@
+@startuml
+
+    class MakeWholeAmountMeta [[MakeWholeAmountMeta.html]] {
+        +dataRules(): List<Validator<MakeWholeAmount>>
+        +choiceRuleValidators(): List<Validator<MakeWholeAmount>>
+        +getOutMappings(): Multimap<String, OutMapping<MakeWholeAmount, ?>>
+        +getQualifyFunctions(): List<Function<MakeWholeAmount, QualifyResult>>
+        +validator(): Validator<MakeWholeAmount>
+        +onlyExistsValidator(): ValidatorWithArg<MakeWholeAmount, String>
+    }
+
+@enduml

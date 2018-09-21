@@ -1,0 +1,14 @@
+@startuml
+
+    class MandatoryEarlyTermination [[MandatoryEarlyTermination.html]] {
+        +getCalculationAgent(): CalculationAgent
+        +getCashSettlement(): OptionCashSettlement
+        +getId(): String
+        +getMandatoryEarlyTerminationAdjustedDates(): MandatoryEarlyTerminationAdjustedDates
+        +getMandatoryEarlyTerminationDate(): AdjustableDate
+        +toBuilder(): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        {static} +builder(): MandatoryEarlyTermination.MandatoryEarlyTerminationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

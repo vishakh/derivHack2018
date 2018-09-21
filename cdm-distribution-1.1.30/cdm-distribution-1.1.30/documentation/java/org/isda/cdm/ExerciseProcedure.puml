@@ -1,0 +1,14 @@
+@startuml
+
+    class ExerciseProcedure [[ExerciseProcedure.html]] {
+        +getAutomaticExercise(): AutomaticExercise
+        +getFollowUpConfirmation(): Boolean
+        +getLimitedRightToConfirm(): Boolean
+        +getManualExercise(): ManualExercise
+        +getSplitTicket(): Boolean
+        +toBuilder(): ExerciseProcedure.ExerciseProcedureBuilder
+        {static} +builder(): ExerciseProcedure.ExerciseProcedureBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

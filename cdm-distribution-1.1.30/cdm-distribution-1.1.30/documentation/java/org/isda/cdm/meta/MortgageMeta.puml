@@ -1,0 +1,12 @@
+@startuml
+
+    class MortgageMeta [[MortgageMeta.html]] {
+        +dataRules(): List<Validator<Mortgage>>
+        +choiceRuleValidators(): List<Validator<Mortgage>>
+        +getOutMappings(): Multimap<String, OutMapping<Mortgage, ?>>
+        +getQualifyFunctions(): List<Function<Mortgage, QualifyResult>>
+        +validator(): Validator<Mortgage>
+        +onlyExistsValidator(): ValidatorWithArg<Mortgage, String>
+    }
+
+@enduml

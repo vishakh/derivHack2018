@@ -1,0 +1,17 @@
+@startuml
+
+    class AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder [[AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder.html]] {
+        +getAdjustedDate(): LocalDate
+        +getDateAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getOrCreateDateAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getId(): String
+        +getUnadjustedDate(): LocalDate
+        +setAdjustedDate(LocalDate): AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder
+        +setDateAdjustments(BusinessDayAdjustments): AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder
+        +setDateAdjustmentsBuilder(BusinessDayAdjustments.BusinessDayAdjustmentsBuilder): AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder
+        +setId(String): AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder
+        +setUnadjustedDate(LocalDate): AdjustableOrAdjustedDate.AdjustableOrAdjustedDateBuilder
+        +build(): AdjustableOrAdjustedDate
+    }
+
+@enduml

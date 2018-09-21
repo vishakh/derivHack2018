@@ -1,0 +1,7 @@
+@startuml
+
+    class RestructuringPhysicalSettlementMatrixDataRule [[RestructuringPhysicalSettlementMatrixDataRule.html]] {
+        +validate(Contract): ValidationResult<Contract>
+    }
+
+@enduml

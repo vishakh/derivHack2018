@@ -1,0 +1,7 @@
+@startuml
+
+    class FallbackReferencePriceValidator [[FallbackReferencePriceValidator.html]] {
+        +validate(FallbackReferencePrice): ValidationResult<FallbackReferencePrice>
+    }
+
+@enduml

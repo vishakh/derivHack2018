@@ -1,0 +1,16 @@
+@startuml
+
+    class NotionalStepRule [[NotionalStepRule.html]] {
+        +getCalculationPeriodDatesReference(): String
+        +getFirstNotionalStepDate(): LocalDate
+        +getLastNotionalStepDate(): LocalDate
+        +getNotionalStepAmount(): BigDecimal
+        +getNotionalStepRate(): BigDecimal
+        +getStepFrequency(): Frequency
+        +getStepRelativeTo(): StepRelativeToEnum
+        +toBuilder(): NotionalStepRule.NotionalStepRuleBuilder
+        {static} +builder(): NotionalStepRule.NotionalStepRuleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

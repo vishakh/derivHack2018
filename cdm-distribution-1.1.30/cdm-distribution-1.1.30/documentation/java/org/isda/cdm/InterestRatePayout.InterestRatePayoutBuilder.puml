@@ -1,0 +1,59 @@
+@startuml
+
+    class InterestRatePayout.InterestRatePayoutBuilder [[InterestRatePayout.InterestRatePayoutBuilder.html]] {
+        +getBondReference(): BondReference.BondReferenceBuilder
+        +getOrCreateBondReference(): BondReference.BondReferenceBuilder
+        +getCalculationPeriodDates(): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +getOrCreateCalculationPeriodDates(): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +getCashflowRepresentation(): CashflowRepresentation.CashflowRepresentationBuilder
+        +getOrCreateCashflowRepresentation(): CashflowRepresentation.CashflowRepresentationBuilder
+        +getCompoundingMethod(): CompoundingMethodEnum
+        +getCrossCurrencyTerms(): CrossCurrencyTerms.CrossCurrencyTermsBuilder
+        +getOrCreateCrossCurrencyTerms(): CrossCurrencyTerms.CrossCurrencyTermsBuilder
+        +getDayCountFraction(): DayCountFractionEnum
+        +getDayCountFractionScheme(): String
+        +getDiscounting(): Discounting.DiscountingBuilder
+        +getOrCreateDiscounting(): Discounting.DiscountingBuilder
+        +getId(): String
+        +getInterestRate(): InterestRate.InterestRateBuilder
+        +getOrCreateInterestRate(): InterestRate.InterestRateBuilder
+        +getPayerReceiver(): PayerReceiver.PayerReceiverBuilder
+        +getOrCreatePayerReceiver(): PayerReceiver.PayerReceiverBuilder
+        +getPaymentDates(): PaymentDates.PaymentDatesBuilder
+        +getOrCreatePaymentDates(): PaymentDates.PaymentDatesBuilder
+        +getQuantity(): ContractualQuantity.ContractualQuantityBuilder
+        +getOrCreateQuantity(): ContractualQuantity.ContractualQuantityBuilder
+        +getResetDates(): ResetDates.ResetDatesBuilder
+        +getOrCreateResetDates(): ResetDates.ResetDatesBuilder
+        +getStubPeriod(): StubPeriod.StubPeriodBuilder
+        +getOrCreateStubPeriod(): StubPeriod.StubPeriodBuilder
+        +setBondReference(BondReference): InterestRatePayout.InterestRatePayoutBuilder
+        +setBondReferenceBuilder(BondReference.BondReferenceBuilder): InterestRatePayout.InterestRatePayoutBuilder
+        +setCalculationPeriodDates(CalculationPeriodDates): InterestRatePayout.InterestRatePayoutBuilder
+        +setCalculationPeriodDatesBuilder(CalculationPeriodDates.CalculationPeriodDatesBuilder): InterestRatePayout.InterestRatePayoutBuilder
+        +setCashflowRepresentation(CashflowRepresentation): InterestRatePayout.InterestRatePayoutBuilder
+        +setCashflowRepresentationBuilder(CashflowRepresentation.CashflowRepresentationBuilder): InterestRatePayout.InterestRatePayoutBuilder
+        +setCompoundingMethod(CompoundingMethodEnum): InterestRatePayout.InterestRatePayoutBuilder
+        +setCrossCurrencyTerms(CrossCurrencyTerms): InterestRatePayout.InterestRatePayoutBuilder
+        +setCrossCurrencyTermsBuilder(CrossCurrencyTerms.CrossCurrencyTermsBuilder): InterestRatePayout.InterestRatePayoutBuilder
+        +setDayCountFraction(DayCountFractionEnum): InterestRatePayout.InterestRatePayoutBuilder
+        +setDayCountFractionScheme(String): InterestRatePayout.InterestRatePayoutBuilder
+        +setDiscounting(Discounting): InterestRatePayout.InterestRatePayoutBuilder
+        +setDiscountingBuilder(Discounting.DiscountingBuilder): InterestRatePayout.InterestRatePayoutBuilder
+        +setId(String): InterestRatePayout.InterestRatePayoutBuilder
+        +setInterestRate(InterestRate): InterestRatePayout.InterestRatePayoutBuilder
+        +setInterestRateBuilder(InterestRate.InterestRateBuilder): InterestRatePayout.InterestRatePayoutBuilder
+        +setPayerReceiver(PayerReceiver): InterestRatePayout.InterestRatePayoutBuilder
+        +setPayerReceiverBuilder(PayerReceiver.PayerReceiverBuilder): InterestRatePayout.InterestRatePayoutBuilder
+        +setPaymentDates(PaymentDates): InterestRatePayout.InterestRatePayoutBuilder
+        +setPaymentDatesBuilder(PaymentDates.PaymentDatesBuilder): InterestRatePayout.InterestRatePayoutBuilder
+        +setQuantity(ContractualQuantity): InterestRatePayout.InterestRatePayoutBuilder
+        +setQuantityBuilder(ContractualQuantity.ContractualQuantityBuilder): InterestRatePayout.InterestRatePayoutBuilder
+        +setResetDates(ResetDates): InterestRatePayout.InterestRatePayoutBuilder
+        +setResetDatesBuilder(ResetDates.ResetDatesBuilder): InterestRatePayout.InterestRatePayoutBuilder
+        +setStubPeriod(StubPeriod): InterestRatePayout.InterestRatePayoutBuilder
+        +setStubPeriodBuilder(StubPeriod.StubPeriodBuilder): InterestRatePayout.InterestRatePayoutBuilder
+        +build(): InterestRatePayout
+    }
+
+@enduml

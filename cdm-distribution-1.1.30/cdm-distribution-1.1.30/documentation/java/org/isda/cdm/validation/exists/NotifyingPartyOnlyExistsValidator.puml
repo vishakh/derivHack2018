@@ -1,0 +1,7 @@
+@startuml
+
+    class NotifyingPartyOnlyExistsValidator [[NotifyingPartyOnlyExistsValidator.html]] {
+        +validate(NotifyingParty, String): ValidationResult<NotifyingParty>
+    }
+
+@enduml

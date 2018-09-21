@@ -1,0 +1,9 @@
+@startuml
+
+    enum AccountTypeEnum [[AccountTypeEnum.html]] {
+        {static} +AGGREGATE_CLIENT
+        {static} +CLIENT
+        {static} +HOUSE
+    }
+
+@enduml

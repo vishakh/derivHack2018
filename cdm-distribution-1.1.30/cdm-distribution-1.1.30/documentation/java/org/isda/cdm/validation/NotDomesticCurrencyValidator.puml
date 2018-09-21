@@ -1,0 +1,7 @@
+@startuml
+
+    class NotDomesticCurrencyValidator [[NotDomesticCurrencyValidator.html]] {
+        +validate(NotDomesticCurrency): ValidationResult<NotDomesticCurrency>
+    }
+
+@enduml

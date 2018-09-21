@@ -1,0 +1,13 @@
+@startuml
+
+    class Payout [[Payout.html]] {
+        +getCashflow(): List<Cashflow>
+        +getCreditDefaultPayout(): CreditDefaultPayout
+        +getInterestRatePayout(): List<InterestRatePayout>
+        +getOptionPayout(): List<OptionPayout>
+        +toBuilder(): Payout.PayoutBuilder
+        {static} +builder(): Payout.PayoutBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class NonNegativeScheduleInitialValueDataRule [[NonNegativeScheduleInitialValueDataRule.html]] {
+        +validate(NonNegativeSchedule): ValidationResult<NonNegativeSchedule>
+    }
+
+@enduml

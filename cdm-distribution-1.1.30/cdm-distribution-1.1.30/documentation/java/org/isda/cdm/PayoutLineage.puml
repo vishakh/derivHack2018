@@ -1,0 +1,14 @@
+@startuml
+
+    class PayoutLineage [[PayoutLineage.html]] {
+        +getCashflow(): String
+        +getCreditDefaultPayout(): String
+        +getInterestRatePayout(): String
+        +getOptionPayout(): String
+        +getPayoutReference(): String
+        +toBuilder(): PayoutLineage.PayoutLineageBuilder
+        {static} +builder(): PayoutLineage.PayoutLineageBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class OptionDenomination.OptionDenominationBuilder [[OptionDenomination.OptionDenominationBuilder.html]] {
+        +getEntitlementCurrency(): String
+        +getEntitlementCurrencyScheme(): String
+        +getNumberOfOptions(): BigDecimal
+        +getOptionEntitlement(): BigDecimal
+        +setEntitlementCurrency(String): OptionDenomination.OptionDenominationBuilder
+        +setEntitlementCurrencyScheme(String): OptionDenomination.OptionDenominationBuilder
+        +setNumberOfOptions(BigDecimal): OptionDenomination.OptionDenominationBuilder
+        +setOptionEntitlement(BigDecimal): OptionDenomination.OptionDenominationBuilder
+        +build(): OptionDenomination
+    }
+
+@enduml

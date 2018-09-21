@@ -1,0 +1,15 @@
+@startuml
+
+    class TransactedPrice.TransactedPriceBuilder [[TransactedPrice.TransactedPriceBuilder.html]] {
+        +getInitialPoints(): BigDecimal
+        +getMarketFixedRate(): BigDecimal
+        +getMarketPrice(): BigDecimal
+        +getQuotationStyle(): QuotationStyleEnum
+        +setInitialPoints(BigDecimal): TransactedPrice.TransactedPriceBuilder
+        +setMarketFixedRate(BigDecimal): TransactedPrice.TransactedPriceBuilder
+        +setMarketPrice(BigDecimal): TransactedPrice.TransactedPriceBuilder
+        +setQuotationStyle(QuotationStyleEnum): TransactedPrice.TransactedPriceBuilder
+        +build(): TransactedPrice
+    }
+
+@enduml

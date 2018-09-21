@@ -1,0 +1,21 @@
+@startuml
+
+    class Transfer [[Transfer.html]] {
+        +getAmount(): Money
+        +getAsset(): Asset
+        +getGrossCashflow(): List<GrossCashflow>
+        +getPayerReceiver(): PayerReceiver
+        +getQuantity(): Quantity
+        +getSettlementReference(): String
+        +getTransferCalculation(): String
+        +getTransferDate(): AdjustableOrAdjustedOrRelativeDate
+        +getTransferStatus(): TransferStatusEnum
+        +getTransferType(): TransferTypeEnum
+        +getTransferorTransferee(): TransferorTransferee
+        +toBuilder(): Transfer.TransferBuilder
+        {static} +builder(): Transfer.TransferBuilder
+        +getRosettaKey(): String
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

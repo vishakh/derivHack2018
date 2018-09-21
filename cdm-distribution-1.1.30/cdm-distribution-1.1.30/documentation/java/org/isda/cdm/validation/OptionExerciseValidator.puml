@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionExerciseValidator [[OptionExerciseValidator.html]] {
+        +validate(OptionExercise): ValidationResult<OptionExercise>
+    }
+
+@enduml

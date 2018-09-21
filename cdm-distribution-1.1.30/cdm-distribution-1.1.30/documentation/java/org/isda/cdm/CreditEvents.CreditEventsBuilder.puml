@@ -1,0 +1,47 @@
+@startuml
+
+    class CreditEvents.CreditEventsBuilder [[CreditEvents.CreditEventsBuilder.html]] {
+        +getBankruptcy(): Boolean
+        +getCreditEventNotice(): CreditEventNotice.CreditEventNoticeBuilder
+        +getOrCreateCreditEventNotice(): CreditEventNotice.CreditEventNoticeBuilder
+        +getDefaultRequirement(): Money.MoneyBuilder
+        +getOrCreateDefaultRequirement(): Money.MoneyBuilder
+        +getDistressedRatingsDowngrade(): Boolean
+        +getFailureToPay(): FailureToPay.FailureToPayBuilder
+        +getOrCreateFailureToPay(): FailureToPay.FailureToPayBuilder
+        +getFailureToPayInterest(): Boolean
+        +getFailureToPayPrincipal(): Boolean
+        +getGovernmentalIntervention(): Boolean
+        +getId(): String
+        +getImpliedWritedown(): Boolean
+        +getMaturityExtension(): Boolean
+        +getObligationAcceleration(): Boolean
+        +getObligationDefault(): Boolean
+        +getRepudiationMoratorium(): Boolean
+        +getRestructuring(): Restructuring.RestructuringBuilder
+        +getOrCreateRestructuring(): Restructuring.RestructuringBuilder
+        +getWritedown(): Boolean
+        +setBankruptcy(Boolean): CreditEvents.CreditEventsBuilder
+        +setCreditEventNotice(CreditEventNotice): CreditEvents.CreditEventsBuilder
+        +setCreditEventNoticeBuilder(CreditEventNotice.CreditEventNoticeBuilder): CreditEvents.CreditEventsBuilder
+        +setDefaultRequirement(Money): CreditEvents.CreditEventsBuilder
+        +setDefaultRequirementBuilder(Money.MoneyBuilder): CreditEvents.CreditEventsBuilder
+        +setDistressedRatingsDowngrade(Boolean): CreditEvents.CreditEventsBuilder
+        +setFailureToPay(FailureToPay): CreditEvents.CreditEventsBuilder
+        +setFailureToPayBuilder(FailureToPay.FailureToPayBuilder): CreditEvents.CreditEventsBuilder
+        +setFailureToPayInterest(Boolean): CreditEvents.CreditEventsBuilder
+        +setFailureToPayPrincipal(Boolean): CreditEvents.CreditEventsBuilder
+        +setGovernmentalIntervention(Boolean): CreditEvents.CreditEventsBuilder
+        +setId(String): CreditEvents.CreditEventsBuilder
+        +setImpliedWritedown(Boolean): CreditEvents.CreditEventsBuilder
+        +setMaturityExtension(Boolean): CreditEvents.CreditEventsBuilder
+        +setObligationAcceleration(Boolean): CreditEvents.CreditEventsBuilder
+        +setObligationDefault(Boolean): CreditEvents.CreditEventsBuilder
+        +setRepudiationMoratorium(Boolean): CreditEvents.CreditEventsBuilder
+        +setRestructuring(Restructuring): CreditEvents.CreditEventsBuilder
+        +setRestructuringBuilder(Restructuring.RestructuringBuilder): CreditEvents.CreditEventsBuilder
+        +setWritedown(Boolean): CreditEvents.CreditEventsBuilder
+        +build(): CreditEvents
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class CreditEventsValidator [[CreditEventsValidator.html]] {
+        +validate(CreditEvents): ValidationResult<CreditEvents>
+    }
+
+@enduml

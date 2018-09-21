@@ -1,0 +1,11 @@
+@startuml
+
+    class MakeWholeAmount.MakeWholeAmountBuilder [[MakeWholeAmount.MakeWholeAmountBuilder.html]] {
+        +getEarlyCallDate(): LocalDate
+        +getInterpolationMethod(): InterpolationMethodEnum
+        +setEarlyCallDate(LocalDate): MakeWholeAmount.MakeWholeAmountBuilder
+        +setInterpolationMethod(InterpolationMethodEnum): MakeWholeAmount.MakeWholeAmountBuilder
+        +build(): MakeWholeAmount
+    }
+
+@enduml

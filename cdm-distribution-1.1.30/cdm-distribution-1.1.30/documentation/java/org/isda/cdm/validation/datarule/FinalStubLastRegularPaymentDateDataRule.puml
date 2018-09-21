@@ -1,0 +1,7 @@
+@startuml
+
+    class FinalStubLastRegularPaymentDateDataRule [[FinalStubLastRegularPaymentDateDataRule.html]] {
+        +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+    }
+
+@enduml

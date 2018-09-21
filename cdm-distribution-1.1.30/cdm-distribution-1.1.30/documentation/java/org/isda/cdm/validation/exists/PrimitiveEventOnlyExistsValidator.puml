@@ -1,0 +1,7 @@
+@startuml
+
+    class PrimitiveEventOnlyExistsValidator [[PrimitiveEventOnlyExistsValidator.html]] {
+        +validate(PrimitiveEvent, String): ValidationResult<PrimitiveEvent>
+    }
+
+@enduml

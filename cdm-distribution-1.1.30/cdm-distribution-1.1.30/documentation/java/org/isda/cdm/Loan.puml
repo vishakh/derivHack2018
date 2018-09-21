@@ -1,0 +1,19 @@
+@startuml
+
+    class Loan [[Loan.html]] {
+        +getBorrower(): List<LegalEntity>
+        +getBorrowerReference(): List<String>
+        +getCreditAgreementDate(): LocalDate
+        +getFacilityType(): String
+        +getFacilityTypeScheme(): String
+        +getLien(): String
+        +getLienScheme(): String
+        +getMaturity(): LocalDate
+        +getTranche(): String
+        +getTrancheScheme(): String
+        +toBuilder(): Loan.LoanBuilder
+        {static} +builder(): Loan.LoanBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

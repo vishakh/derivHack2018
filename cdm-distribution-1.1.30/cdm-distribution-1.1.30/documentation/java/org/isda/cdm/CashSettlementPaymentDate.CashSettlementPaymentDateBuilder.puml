@@ -1,0 +1,21 @@
+@startuml
+
+    class CashSettlementPaymentDate.CashSettlementPaymentDateBuilder [[CashSettlementPaymentDate.CashSettlementPaymentDateBuilder.html]] {
+        +getAdjustableDates(): AdjustableDates.AdjustableDatesBuilder
+        +getOrCreateAdjustableDates(): AdjustableDates.AdjustableDatesBuilder
+        +getBusinessDateRange(): BusinessDateRange.BusinessDateRangeBuilder
+        +getOrCreateBusinessDateRange(): BusinessDateRange.BusinessDateRangeBuilder
+        +getId(): String
+        +getRelativeDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getOrCreateRelativeDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +setAdjustableDates(AdjustableDates): CashSettlementPaymentDate.CashSettlementPaymentDateBuilder
+        +setAdjustableDatesBuilder(AdjustableDates.AdjustableDatesBuilder): CashSettlementPaymentDate.CashSettlementPaymentDateBuilder
+        +setBusinessDateRange(BusinessDateRange): CashSettlementPaymentDate.CashSettlementPaymentDateBuilder
+        +setBusinessDateRangeBuilder(BusinessDateRange.BusinessDateRangeBuilder): CashSettlementPaymentDate.CashSettlementPaymentDateBuilder
+        +setId(String): CashSettlementPaymentDate.CashSettlementPaymentDateBuilder
+        +setRelativeDate(RelativeDateOffset): CashSettlementPaymentDate.CashSettlementPaymentDateBuilder
+        +setRelativeDateBuilder(RelativeDateOffset.RelativeDateOffsetBuilder): CashSettlementPaymentDate.CashSettlementPaymentDateBuilder
+        +build(): CashSettlementPaymentDate
+    }
+
+@enduml

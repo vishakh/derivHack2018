@@ -1,0 +1,7 @@
+@startuml
+
+    class AsianOnlyExistsValidator [[AsianOnlyExistsValidator.html]] {
+        +validate(Asian, String): ValidationResult<Asian>
+    }
+
+@enduml

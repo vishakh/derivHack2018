@@ -1,0 +1,15 @@
+@startuml
+
+    class OptionFeature [[OptionFeature.html]] {
+        +getAsian(): Asian
+        +getBarrier(): Barrier
+        +getFxFeature(): FxFeature
+        +getKnock(): Knock
+        +getPassThrough(): PassThrough
+        +getStrategyFeature(): StrategyFeature
+        +toBuilder(): OptionFeature.OptionFeatureBuilder
+        {static} +builder(): OptionFeature.OptionFeatureBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class DateRangeMeta [[DateRangeMeta.html]] {
+        +dataRules(): List<Validator<DateRange>>
+        +choiceRuleValidators(): List<Validator<DateRange>>
+        +getOutMappings(): Multimap<String, OutMapping<DateRange, ?>>
+        +getQualifyFunctions(): List<Function<DateRange, QualifyResult>>
+        +validator(): Validator<DateRange>
+        +onlyExistsValidator(): ValidatorWithArg<DateRange, String>
+    }
+
+@enduml

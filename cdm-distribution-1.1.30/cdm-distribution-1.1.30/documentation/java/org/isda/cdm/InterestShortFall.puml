@@ -1,0 +1,12 @@
+@startuml
+
+    class InterestShortFall [[InterestShortFall.html]] {
+        +getCompounding(): Boolean
+        +getInterestShortfallCap(): InterestShortfallCapEnum
+        +getRateSource(): FloatingRateIndexEnum
+        +toBuilder(): InterestShortFall.InterestShortFallBuilder
+        {static} +builder(): InterestShortFall.InterestShortFallBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

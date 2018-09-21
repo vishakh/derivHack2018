@@ -1,0 +1,7 @@
+@startuml
+
+    class ExerciseEventValidator [[ExerciseEventValidator.html]] {
+        +validate(ExerciseEvent): ValidationResult<ExerciseEvent>
+    }
+
+@enduml

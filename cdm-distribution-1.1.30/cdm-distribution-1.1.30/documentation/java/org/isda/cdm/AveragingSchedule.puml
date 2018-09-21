@@ -1,0 +1,12 @@
+@startuml
+
+    class AveragingSchedule [[AveragingSchedule.html]] {
+        +getAveragingPeriodFrequency(): CalculationPeriodFrequency
+        +getEndDate(): LocalDate
+        +getStartDate(): LocalDate
+        +toBuilder(): AveragingSchedule.AveragingScheduleBuilder
+        {static} +builder(): AveragingSchedule.AveragingScheduleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class RateObservationObservationWeightDataRule [[RateObservationObservationWeightDataRule.html]] {
+        +validate(RateObservation): ValidationResult<RateObservation>
+    }
+
+@enduml

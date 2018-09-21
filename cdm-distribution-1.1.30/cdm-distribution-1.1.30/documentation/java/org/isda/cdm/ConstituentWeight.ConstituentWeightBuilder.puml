@@ -1,0 +1,11 @@
+@startuml
+
+    class ConstituentWeight.ConstituentWeightBuilder [[ConstituentWeight.ConstituentWeightBuilder.html]] {
+        +getBasketPercentage(): BigDecimal
+        +getOpenUnits(): BigDecimal
+        +setBasketPercentage(BigDecimal): ConstituentWeight.ConstituentWeightBuilder
+        +setOpenUnits(BigDecimal): ConstituentWeight.ConstituentWeightBuilder
+        +build(): ConstituentWeight
+    }
+
+@enduml

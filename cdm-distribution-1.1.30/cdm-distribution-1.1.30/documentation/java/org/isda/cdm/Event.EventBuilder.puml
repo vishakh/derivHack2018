@@ -1,0 +1,47 @@
+@startuml
+
+    class Event.EventBuilder [[Event.EventBuilder.html]] {
+        +getAction(): ActionEnum
+        +getEffectiveDate(): LocalDate
+        +getEventDate(): LocalDate
+        +getEventEffect(): EventEffect.EventEffectBuilder
+        +getOrCreateEventEffect(): EventEffect.EventEffectBuilder
+        +getEventIdentifier(): Identifier.IdentifierBuilder
+        +getOrCreateEventIdentifier(): Identifier.IdentifierBuilder
+        +getEventQualifier(): String
+        +getFunctionCall(): String
+        +getIntent(): IntentEnum
+        +getLineage(): Lineage.LineageBuilder
+        +getOrCreateLineage(): Lineage.LineageBuilder
+        +getMessageInformation(): MessageInformation.MessageInformationBuilder
+        +getOrCreateMessageInformation(): MessageInformation.MessageInformationBuilder
+        +getParty(): List<Party.PartyBuilder>
+        +getOrCreateParty(int): Party.PartyBuilder
+        +getPrimitive(): PrimitiveEvent.PrimitiveEventBuilder
+        +getOrCreatePrimitive(): PrimitiveEvent.PrimitiveEventBuilder
+        +getTimestamp(): EventTimestamp.EventTimestampBuilder
+        +getOrCreateTimestamp(): EventTimestamp.EventTimestampBuilder
+        +setAction(ActionEnum): Event.EventBuilder
+        +setEffectiveDate(LocalDate): Event.EventBuilder
+        +setEventDate(LocalDate): Event.EventBuilder
+        +setEventEffect(EventEffect): Event.EventBuilder
+        +setEventEffectBuilder(EventEffect.EventEffectBuilder): Event.EventBuilder
+        +setEventIdentifier(Identifier): Event.EventBuilder
+        +setEventIdentifierBuilder(Identifier.IdentifierBuilder): Event.EventBuilder
+        +setEventQualifier(String): Event.EventBuilder
+        +setFunctionCall(String): Event.EventBuilder
+        +setIntent(IntentEnum): Event.EventBuilder
+        +setLineage(Lineage): Event.EventBuilder
+        +setLineageBuilder(Lineage.LineageBuilder): Event.EventBuilder
+        +setMessageInformation(MessageInformation): Event.EventBuilder
+        +setMessageInformationBuilder(MessageInformation.MessageInformationBuilder): Event.EventBuilder
+        +addParty(Party): Event.EventBuilder
+        +addPartyBuilder(Party.PartyBuilder): Event.EventBuilder
+        +setPrimitive(PrimitiveEvent): Event.EventBuilder
+        +setPrimitiveBuilder(PrimitiveEvent.PrimitiveEventBuilder): Event.EventBuilder
+        +setTimestamp(EventTimestamp): Event.EventBuilder
+        +setTimestampBuilder(EventTimestamp.EventTimestampBuilder): Event.EventBuilder
+        +build(): Event
+    }
+
+@enduml

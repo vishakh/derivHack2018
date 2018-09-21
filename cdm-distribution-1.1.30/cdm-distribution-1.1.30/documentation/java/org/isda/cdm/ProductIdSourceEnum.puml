@@ -1,0 +1,13 @@
+@startuml
+
+    enum ProductIdSourceEnum [[ProductIdSourceEnum.html]] {
+        {static} +CUSIP
+        {static} +SEDOL
+        {static} +ISIN
+        {static} +RIC
+        {static} +FIGI
+        {static} +WERTPAPIER
+        {static} +SICOVAM
+    }
+
+@enduml

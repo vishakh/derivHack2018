@@ -1,0 +1,20 @@
+@startuml
+
+    class PaymentDates [[PaymentDates.html]] {
+        +getCalculationPeriodDatesReference(): String
+        +getFirstPaymentDate(): LocalDate
+        +getId(): String
+        +getLastRegularPaymentDate(): LocalDate
+        +getPayRelativeTo(): PayRelativeToEnum
+        +getPaymentDatesAdjustments(): BusinessDayAdjustments
+        +getPaymentDaysOffset(): Offset
+        +getPaymentDelay(): Boolean
+        +getPaymentFrequency(): Frequency
+        +getResetDatesReference(): String
+        +getValuationDatesReference(): String
+        +toBuilder(): PaymentDates.PaymentDatesBuilder
+        {static} +builder(): PaymentDates.PaymentDatesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

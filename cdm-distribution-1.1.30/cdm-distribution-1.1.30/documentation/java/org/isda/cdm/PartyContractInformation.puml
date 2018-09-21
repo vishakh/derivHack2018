@@ -1,0 +1,11 @@
+@startuml
+
+    class PartyContractInformation [[PartyContractInformation.html]] {
+        +getNaturalPersonRole(): List<NaturalPersonRole>
+        +getPartyReference(): String
+        +toBuilder(): PartyContractInformation.PartyContractInformationBuilder
+        {static} +builder(): PartyContractInformation.PartyContractInformationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

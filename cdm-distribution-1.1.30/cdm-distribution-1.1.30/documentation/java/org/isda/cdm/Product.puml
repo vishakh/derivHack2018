@@ -1,0 +1,11 @@
+@startuml
+
+    class Product [[Product.html]] {
+        +getContractualProduct(): ContractualProduct
+        +getListedProduct(): ListedProduct
+        +toBuilder(): Product.ProductBuilder
+        {static} +builder(): Product.ProductBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

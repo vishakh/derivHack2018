@@ -1,0 +1,7 @@
+@startuml
+
+    class InformationSourceOnlyExistsValidator [[InformationSourceOnlyExistsValidator.html]] {
+        +validate(InformationSource, String): ValidationResult<InformationSource>
+    }
+
+@enduml

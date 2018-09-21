@@ -1,0 +1,7 @@
+@startuml
+
+    class ComputedAmountValidator [[ComputedAmountValidator.html]] {
+        +validate(ComputedAmount): ValidationResult<ComputedAmount>
+    }
+
+@enduml

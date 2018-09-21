@@ -1,0 +1,7 @@
+@startuml
+
+    class SingleValuationDateBusinessDaysDataRule [[SingleValuationDateBusinessDaysDataRule.html]] {
+        +validate(SingleValuationDate): ValidationResult<SingleValuationDate>
+    }
+
+@enduml

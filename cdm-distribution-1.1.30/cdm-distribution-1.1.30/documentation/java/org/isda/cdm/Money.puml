@@ -1,0 +1,13 @@
+@startuml
+
+    class Money [[Money.html]] {
+        +getAmount(): BigDecimal
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +getId(): String
+        +toBuilder(): Money.MoneyBuilder
+        {static} +builder(): Money.MoneyBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

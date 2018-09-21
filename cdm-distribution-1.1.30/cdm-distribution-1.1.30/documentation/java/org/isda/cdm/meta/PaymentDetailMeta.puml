@@ -1,0 +1,12 @@
+@startuml
+
+    class PaymentDetailMeta [[PaymentDetailMeta.html]] {
+        +dataRules(): List<Validator<PaymentDetail>>
+        +choiceRuleValidators(): List<Validator<PaymentDetail>>
+        +getOutMappings(): Multimap<String, OutMapping<PaymentDetail, ?>>
+        +getQualifyFunctions(): List<Function<PaymentDetail, QualifyResult>>
+        +validator(): Validator<PaymentDetail>
+        +onlyExistsValidator(): ValidatorWithArg<PaymentDetail, String>
+    }
+
+@enduml

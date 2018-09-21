@@ -1,0 +1,12 @@
+@startuml
+
+    class ExecutionMeta [[ExecutionMeta.html]] {
+        +dataRules(): List<Validator<Execution>>
+        +choiceRuleValidators(): List<Validator<Execution>>
+        +getOutMappings(): Multimap<String, OutMapping<Execution, ?>>
+        +getQualifyFunctions(): List<Function<Execution, QualifyResult>>
+        +validator(): Validator<Execution>
+        +onlyExistsValidator(): ValidatorWithArg<Execution, String>
+    }
+
+@enduml

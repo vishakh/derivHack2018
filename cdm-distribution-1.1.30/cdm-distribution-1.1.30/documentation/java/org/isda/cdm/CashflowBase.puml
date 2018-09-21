@@ -1,0 +1,15 @@
+@startuml
+
+    class CashflowBase [[CashflowBase.html]] {
+        +getDiscountFactor(): BigDecimal
+        +getId(): String
+        +getPayerReceiver(): PayerReceiver
+        +getPaymentDiscounting(): PaymentDiscounting
+        +getPremiumExpression(): PremiumExpression
+        +getPresentValueAmount(): Money
+        +toBuilder(): CashflowBase.CashflowBaseBuilder
+        {static} +builder(): CashflowBase.CashflowBaseBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

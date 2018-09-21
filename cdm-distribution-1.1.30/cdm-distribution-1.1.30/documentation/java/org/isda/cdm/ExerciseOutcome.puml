@@ -1,0 +1,11 @@
+@startuml
+
+    class ExerciseOutcome [[ExerciseOutcome.html]] {
+        +getCashExercise(): Cashflow
+        +getPhysicalExercise(): PhysicalExercise
+        +toBuilder(): ExerciseOutcome.ExerciseOutcomeBuilder
+        {static} +builder(): ExerciseOutcome.ExerciseOutcomeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class AmountSchedule.AmountScheduleBuilder [[AmountSchedule.AmountScheduleBuilder.html]] {
+        +getCurrency(): List<String>
+        +getCurrencyScheme(): String
+        +addCurrency(String): AmountSchedule.AmountScheduleBuilder
+        +setCurrencyScheme(String): AmountSchedule.AmountScheduleBuilder
+        +build(): AmountSchedule
+    }
+
+@enduml

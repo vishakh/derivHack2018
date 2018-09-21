@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractualTermsSupplementValidator [[ContractualTermsSupplementValidator.html]] {
+        +validate(ContractualTermsSupplement): ValidationResult<ContractualTermsSupplement>
+    }
+
+@enduml

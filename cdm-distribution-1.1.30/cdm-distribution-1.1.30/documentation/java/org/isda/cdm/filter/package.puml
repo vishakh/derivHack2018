@@ -1,0 +1,11 @@
+@startuml
+
+    namespace org.isda.cdm.filter {
+
+        class EventEffectPathFilter [[EventEffectPathFilter.html]] {
+            {static} +test(HierarchicalPath, Class<?>, HierarchicalPath): boolean
+        }
+
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class IssuerTradeIdValidator [[IssuerTradeIdValidator.html]] {
+        +validate(IssuerTradeId): ValidationResult<IssuerTradeId>
+    }
+
+@enduml

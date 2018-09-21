@@ -1,0 +1,7 @@
+@startuml
+
+    class BusinessCentersValidator [[BusinessCentersValidator.html]] {
+        +validate(BusinessCenters): ValidationResult<BusinessCenters>
+    }
+
+@enduml

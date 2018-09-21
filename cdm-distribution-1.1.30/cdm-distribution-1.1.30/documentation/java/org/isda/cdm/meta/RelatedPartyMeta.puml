@@ -1,0 +1,12 @@
+@startuml
+
+    class RelatedPartyMeta [[RelatedPartyMeta.html]] {
+        +dataRules(): List<Validator<RelatedParty>>
+        +choiceRuleValidators(): List<Validator<RelatedParty>>
+        +getOutMappings(): Multimap<String, OutMapping<RelatedParty, ?>>
+        +getQualifyFunctions(): List<Function<RelatedParty, QualifyResult>>
+        +validator(): Validator<RelatedParty>
+        +onlyExistsValidator(): ValidatorWithArg<RelatedParty, String>
+    }
+
+@enduml

@@ -1,0 +1,33 @@
+@startuml
+
+    class StubFloatingRate.StubFloatingRateBuilder [[StubFloatingRate.StubFloatingRateBuilder.html]] {
+        +getCapRateSchedule(): List<StrikeSchedule.StrikeScheduleBuilder>
+        +getOrCreateCapRateSchedule(int): StrikeSchedule.StrikeScheduleBuilder
+        +getFloatingRateIndex(): FloatingRateIndexEnum
+        +getFloatingRateMultiplierSchedule(): Schedule.ScheduleBuilder
+        +getOrCreateFloatingRateMultiplierSchedule(): Schedule.ScheduleBuilder
+        +getFloorRateSchedule(): List<StrikeSchedule.StrikeScheduleBuilder>
+        +getOrCreateFloorRateSchedule(int): StrikeSchedule.StrikeScheduleBuilder
+        +getId(): String
+        +getIndexTenor(): Period.PeriodBuilder
+        +getOrCreateIndexTenor(): Period.PeriodBuilder
+        +getRateTreatment(): RateTreatmentEnum
+        +getSpreadSchedule(): List<SpreadSchedule.SpreadScheduleBuilder>
+        +getOrCreateSpreadSchedule(int): SpreadSchedule.SpreadScheduleBuilder
+        +addCapRateSchedule(StrikeSchedule): StubFloatingRate.StubFloatingRateBuilder
+        +addCapRateScheduleBuilder(StrikeSchedule.StrikeScheduleBuilder): StubFloatingRate.StubFloatingRateBuilder
+        +setFloatingRateIndex(FloatingRateIndexEnum): StubFloatingRate.StubFloatingRateBuilder
+        +setFloatingRateMultiplierSchedule(Schedule): StubFloatingRate.StubFloatingRateBuilder
+        +setFloatingRateMultiplierScheduleBuilder(Schedule.ScheduleBuilder): StubFloatingRate.StubFloatingRateBuilder
+        +addFloorRateSchedule(StrikeSchedule): StubFloatingRate.StubFloatingRateBuilder
+        +addFloorRateScheduleBuilder(StrikeSchedule.StrikeScheduleBuilder): StubFloatingRate.StubFloatingRateBuilder
+        +setId(String): StubFloatingRate.StubFloatingRateBuilder
+        +setIndexTenor(Period): StubFloatingRate.StubFloatingRateBuilder
+        +setIndexTenorBuilder(Period.PeriodBuilder): StubFloatingRate.StubFloatingRateBuilder
+        +setRateTreatment(RateTreatmentEnum): StubFloatingRate.StubFloatingRateBuilder
+        +addSpreadSchedule(SpreadSchedule): StubFloatingRate.StubFloatingRateBuilder
+        +addSpreadScheduleBuilder(SpreadSchedule.SpreadScheduleBuilder): StubFloatingRate.StubFloatingRateBuilder
+        +build(): StubFloatingRate
+    }
+
+@enduml

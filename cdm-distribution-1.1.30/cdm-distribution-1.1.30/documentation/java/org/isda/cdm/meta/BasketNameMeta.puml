@@ -1,0 +1,12 @@
+@startuml
+
+    class BasketNameMeta [[BasketNameMeta.html]] {
+        +dataRules(): List<Validator<BasketName>>
+        +choiceRuleValidators(): List<Validator<BasketName>>
+        +getOutMappings(): Multimap<String, OutMapping<BasketName, ?>>
+        +getQualifyFunctions(): List<Function<BasketName, QualifyResult>>
+        +validator(): Validator<BasketName>
+        +onlyExistsValidator(): ValidatorWithArg<BasketName, String>
+    }
+
+@enduml

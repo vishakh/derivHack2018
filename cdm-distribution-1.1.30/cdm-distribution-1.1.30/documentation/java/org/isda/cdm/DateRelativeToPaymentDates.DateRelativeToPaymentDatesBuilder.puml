@@ -1,0 +1,9 @@
+@startuml
+
+    class DateRelativeToPaymentDates.DateRelativeToPaymentDatesBuilder [[DateRelativeToPaymentDates.DateRelativeToPaymentDatesBuilder.html]] {
+        +getPaymentDatesReference(): List<String>
+        +addPaymentDatesReference(String): DateRelativeToPaymentDates.DateRelativeToPaymentDatesBuilder
+        +build(): DateRelativeToPaymentDates
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class PremiumExpressionMeta [[PremiumExpressionMeta.html]] {
+        +dataRules(): List<Validator<PremiumExpression>>
+        +choiceRuleValidators(): List<Validator<PremiumExpression>>
+        +getOutMappings(): Multimap<String, OutMapping<PremiumExpression, ?>>
+        +getQualifyFunctions(): List<Function<PremiumExpression, QualifyResult>>
+        +validator(): Validator<PremiumExpression>
+        +onlyExistsValidator(): ValidatorWithArg<PremiumExpression, String>
+    }
+
+@enduml

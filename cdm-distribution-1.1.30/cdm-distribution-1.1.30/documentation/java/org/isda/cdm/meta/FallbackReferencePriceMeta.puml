@@ -1,0 +1,12 @@
+@startuml
+
+    class FallbackReferencePriceMeta [[FallbackReferencePriceMeta.html]] {
+        +dataRules(): List<Validator<FallbackReferencePrice>>
+        +choiceRuleValidators(): List<Validator<FallbackReferencePrice>>
+        +getOutMappings(): Multimap<String, OutMapping<FallbackReferencePrice, ?>>
+        +getQualifyFunctions(): List<Function<FallbackReferencePrice, QualifyResult>>
+        +validator(): Validator<FallbackReferencePrice>
+        +onlyExistsValidator(): ValidatorWithArg<FallbackReferencePrice, String>
+    }
+
+@enduml

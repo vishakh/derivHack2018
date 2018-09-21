@@ -1,0 +1,45 @@
+@startuml
+
+    class CalculationPeriodDates.CalculationPeriodDatesBuilder [[CalculationPeriodDates.CalculationPeriodDatesBuilder.html]] {
+        +getCalculationPeriodDatesAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getOrCreateCalculationPeriodDatesAdjustments(): BusinessDayAdjustments.BusinessDayAdjustmentsBuilder
+        +getCalculationPeriodFrequency(): CalculationPeriodFrequency.CalculationPeriodFrequencyBuilder
+        +getOrCreateCalculationPeriodFrequency(): CalculationPeriodFrequency.CalculationPeriodFrequencyBuilder
+        +getEffectiveDate(): DateInstances.DateInstancesBuilder
+        +getOrCreateEffectiveDate(): DateInstances.DateInstancesBuilder
+        +getFirstCompoundingPeriodEndDate(): LocalDate
+        +getFirstPeriodStartDate(): AdjustableDate.AdjustableDateBuilder
+        +getOrCreateFirstPeriodStartDate(): AdjustableDate.AdjustableDateBuilder
+        +getFirstRegularPeriodStartDate(): LocalDate
+        +getId(): String
+        +getLastRegularPeriodEndDate(): LocalDate
+        +getRelativeEffectiveDate(): AdjustedRelativeDateOffset.AdjustedRelativeDateOffsetBuilder
+        +getOrCreateRelativeEffectiveDate(): AdjustedRelativeDateOffset.AdjustedRelativeDateOffsetBuilder
+        +getRelativeTerminationDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getOrCreateRelativeTerminationDate(): RelativeDateOffset.RelativeDateOffsetBuilder
+        +getStubPeriodType(): StubPeriodTypeEnum
+        +getTerminationDate(): AdjustableDate.AdjustableDateBuilder
+        +getOrCreateTerminationDate(): AdjustableDate.AdjustableDateBuilder
+        +setCalculationPeriodDatesAdjustments(BusinessDayAdjustments): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setCalculationPeriodDatesAdjustmentsBuilder(BusinessDayAdjustments.BusinessDayAdjustmentsBuilder): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setCalculationPeriodFrequency(CalculationPeriodFrequency): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setCalculationPeriodFrequencyBuilder(CalculationPeriodFrequency.CalculationPeriodFrequencyBuilder): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setEffectiveDate(DateInstances): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setEffectiveDateBuilder(DateInstances.DateInstancesBuilder): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setFirstCompoundingPeriodEndDate(LocalDate): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setFirstPeriodStartDate(AdjustableDate): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setFirstPeriodStartDateBuilder(AdjustableDate.AdjustableDateBuilder): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setFirstRegularPeriodStartDate(LocalDate): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setId(String): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setLastRegularPeriodEndDate(LocalDate): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setRelativeEffectiveDate(AdjustedRelativeDateOffset): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setRelativeEffectiveDateBuilder(AdjustedRelativeDateOffset.AdjustedRelativeDateOffsetBuilder): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setRelativeTerminationDate(RelativeDateOffset): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setRelativeTerminationDateBuilder(RelativeDateOffset.RelativeDateOffsetBuilder): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setStubPeriodType(StubPeriodTypeEnum): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setTerminationDate(AdjustableDate): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +setTerminationDateBuilder(AdjustableDate.AdjustableDateBuilder): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        +build(): CalculationPeriodDates
+    }
+
+@enduml

@@ -1,0 +1,149 @@
+{
+  "calculationAgent" : {
+    "calculationAgentPartyReference" : [ "e54t5" ]
+  },
+  "collateral" : {
+    "independentAmount" : {
+      "payerPartyReference" : "fhgtd3",
+      "receiverPartyReference" : "e54t5",
+      "paymentDetail" : [ {
+        "paymentRule" : {
+          "percentageRule" : {
+            "notionalAmountReference" : "gu5gh",
+            "paymentPercent" : 0.02
+          }
+        }
+      } ]
+    }
+  },
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "TW9236",
+      "identifierScheme" : "TradeRefNbr"
+    },
+    "partyReference" : "e54t5"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "creditDefaultPayout" : {
+          "cashSettlementTerms" : {
+            "settlementCurrency" : "USD"
+          },
+          "generalTerms" : {
+            "buyerSeller" : {
+              "buyerPartyReference" : "fhgtd3",
+              "sellerPartyReference" : "e54t5"
+            },
+            "referenceInformation" : {
+              "referenceEntity" : {
+                "entityId" : "BLMBERGID",
+                "entityIdScheme" : "http://www.fpml.org/spec/2003/entity-id-Bloomberg",
+                "name" : "CompanyDEF"
+              },
+              "referenceObligation" : [ {
+                "loan" : {
+                  "instrumentIdentifier" : [ "64352VNC1", "ISIN00000000", "BLMBERGID" ],
+                  "instrumentIdentifierScheme" : "http://www.fpml.org/spec/2002/instrument-id-Bloomberg",
+                  "borrower" : [ {
+                    "name" : "BorrowerName1"
+                  }, {
+                    "name" : "BorrowerName2"
+                  } ],
+                  "creditAgreementDate" : "2005-11-04",
+                  "facilityType" : "RevolvingLoan",
+                  "facilityTypeScheme" : "http://www.fpml.org/coding-scheme/facility-type"
+                }
+              } ],
+              "securedList" : false
+            }
+          },
+          "protectionTerms" : {
+            "notionalAmount" : {
+              "amount" : 10000000,
+              "currency" : "USD",
+              "currencyScheme" : "http://www.fpml.org/coding-scheme/external/iso4217",
+              "id" : "gu5gh"
+            },
+            "obligations" : {
+              "cashSettlementOnly" : true,
+              "category" : "LOAN",
+              "continuity" : true,
+              "deliveryOfCommitments" : true,
+              "designatedPriority" : "FirstLienLoan",
+              "designatedPriorityScheme" : "http://www.fpml.org/coding-scheme/lien",
+              "fullFaithAndCreditObLiability" : true
+            }
+          },
+          "rosettaKeyValue" : "93e3c2e4"
+        },
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodFrequency" : {
+              "rollConvention" : "_25"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NOT_APPLICABLE"
+                },
+                "unadjustedDate" : "2007-11-01"
+              }
+            },
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessDayConvention" : "NOT_APPLICABLE"
+              },
+              "unadjustedDate" : "2010-06-17"
+            }
+          },
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.013
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "fhgtd3",
+            "receiverPartyReference" : "e54t5"
+          },
+          "paymentDates" : {
+            "firstPaymentDate" : "2007-12-20",
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            }
+          },
+          "rosettaKeyValue" : "ba431253"
+        } ]
+      },
+      "rosettaKeyValue" : "b81dd1f1"
+    }
+  },
+  "documentation" : {
+    "contractualMatrix" : [ {
+      "matrixType" : "CREDIT_DERIVATIVES_PHYSICAL_SETTLEMENT_MATRIX"
+    } ],
+    "contractualTermsSupplement" : [ {
+      "publicationDate" : "2007-12-12",
+      "type" : "STANDARD_LCDS"
+    } ],
+    "masterAgreement" : {
+      "masterAgreementDate" : "2007-12-12",
+      "masterAgreementType" : "ISDA",
+      "masterAgreementVersion" : "1992"
+    }
+  },
+  "party" : [ {
+    "id" : "e54t5",
+    "partyId" : [ "Party1" ],
+    "partyIdScheme" : "DTCC"
+  }, {
+    "id" : "fhgtd3",
+    "partyId" : [ "Party2" ],
+    "partyIdScheme" : "DTCC"
+  } ],
+  "tradeDate" : {
+    "date" : "2007-10-31"
+  },
+  "rosettaKey" : "e2e57cf"
+}

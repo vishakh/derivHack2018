@@ -1,0 +1,13 @@
+@startuml
+
+    class TransactedPrice [[TransactedPrice.html]] {
+        +getInitialPoints(): BigDecimal
+        +getMarketFixedRate(): BigDecimal
+        +getMarketPrice(): BigDecimal
+        +getQuotationStyle(): QuotationStyleEnum
+        +toBuilder(): TransactedPrice.TransactedPriceBuilder
+        {static} +builder(): TransactedPrice.TransactedPriceBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

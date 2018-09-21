@@ -1,0 +1,13 @@
+@startuml
+
+    class ExecutionReference.ExecutionReferenceBuilder [[ExecutionReference.ExecutionReferenceBuilder.html]] {
+        +getExecutionReference(): Identifier.IdentifierBuilder
+        +getOrCreateExecutionReference(): Identifier.IdentifierBuilder
+        +getState(): StateEnum
+        +setExecutionReference(Identifier): ExecutionReference.ExecutionReferenceBuilder
+        +setExecutionReferenceBuilder(Identifier.IdentifierBuilder): ExecutionReference.ExecutionReferenceBuilder
+        +setState(StateEnum): ExecutionReference.ExecutionReferenceBuilder
+        +build(): ExecutionReference
+    }
+
+@enduml

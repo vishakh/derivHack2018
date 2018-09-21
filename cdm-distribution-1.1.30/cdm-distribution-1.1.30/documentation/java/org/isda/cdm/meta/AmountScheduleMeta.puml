@@ -1,0 +1,12 @@
+@startuml
+
+    class AmountScheduleMeta [[AmountScheduleMeta.html]] {
+        +dataRules(): List<Validator<AmountSchedule>>
+        +choiceRuleValidators(): List<Validator<AmountSchedule>>
+        +getOutMappings(): Multimap<String, OutMapping<AmountSchedule, ?>>
+        +getQualifyFunctions(): List<Function<AmountSchedule, QualifyResult>>
+        +validator(): Validator<AmountSchedule>
+        +onlyExistsValidator(): ValidatorWithArg<AmountSchedule, String>
+    }
+
+@enduml

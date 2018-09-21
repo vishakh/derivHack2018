@@ -1,0 +1,11 @@
+@startuml
+
+    class ContractIdentifier.ContractIdentifierBuilder [[ContractIdentifier.ContractIdentifierBuilder.html]] {
+        +getAccountReference(): String
+        +getPartyReference(): String
+        +setAccountReference(String): ContractIdentifier.ContractIdentifierBuilder
+        +setPartyReference(String): ContractIdentifier.ContractIdentifierBuilder
+        +build(): ContractIdentifier
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class AveragingScheduleOnlyExistsValidator [[AveragingScheduleOnlyExistsValidator.html]] {
+        +validate(AveragingSchedule, String): ValidationResult<AveragingSchedule>
+    }
+
+@enduml

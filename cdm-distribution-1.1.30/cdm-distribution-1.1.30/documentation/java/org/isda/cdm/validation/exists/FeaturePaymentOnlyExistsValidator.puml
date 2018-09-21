@@ -1,0 +1,7 @@
+@startuml
+
+    class FeaturePaymentOnlyExistsValidator [[FeaturePaymentOnlyExistsValidator.html]] {
+        +validate(FeaturePayment, String): ValidationResult<FeaturePayment>
+    }
+
+@enduml

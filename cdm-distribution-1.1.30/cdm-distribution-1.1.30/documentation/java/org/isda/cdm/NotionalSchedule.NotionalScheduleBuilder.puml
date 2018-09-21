@@ -1,0 +1,17 @@
+@startuml
+
+    class NotionalSchedule.NotionalScheduleBuilder [[NotionalSchedule.NotionalScheduleBuilder.html]] {
+        +getId(): String
+        +getNotionalStepParameters(): NotionalStepRule.NotionalStepRuleBuilder
+        +getOrCreateNotionalStepParameters(): NotionalStepRule.NotionalStepRuleBuilder
+        +getNotionalStepSchedule(): NonNegativeAmountSchedule.NonNegativeAmountScheduleBuilder
+        +getOrCreateNotionalStepSchedule(): NonNegativeAmountSchedule.NonNegativeAmountScheduleBuilder
+        +setId(String): NotionalSchedule.NotionalScheduleBuilder
+        +setNotionalStepParameters(NotionalStepRule): NotionalSchedule.NotionalScheduleBuilder
+        +setNotionalStepParametersBuilder(NotionalStepRule.NotionalStepRuleBuilder): NotionalSchedule.NotionalScheduleBuilder
+        +setNotionalStepSchedule(NonNegativeAmountSchedule): NotionalSchedule.NotionalScheduleBuilder
+        +setNotionalStepScheduleBuilder(NonNegativeAmountSchedule.NonNegativeAmountScheduleBuilder): NotionalSchedule.NotionalScheduleBuilder
+        +build(): NotionalSchedule
+    }
+
+@enduml

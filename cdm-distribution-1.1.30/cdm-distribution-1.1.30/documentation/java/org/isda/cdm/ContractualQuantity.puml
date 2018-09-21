@@ -1,0 +1,15 @@
+@startuml
+
+    class ContractualQuantity [[ContractualQuantity.html]] {
+        +getFutureValueNotional(): FutureValueAmount
+        +getFxLinkedNotional(): FxLinkedNotionalSchedule
+        +getNotionalAmount(): Money
+        +getNotionalReference(): String
+        +getNotionalSchedule(): NotionalSchedule
+        +getQuantity(): Quantity
+        +toBuilder(): ContractualQuantity.ContractualQuantityBuilder
+        {static} +builder(): ContractualQuantity.ContractualQuantityBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

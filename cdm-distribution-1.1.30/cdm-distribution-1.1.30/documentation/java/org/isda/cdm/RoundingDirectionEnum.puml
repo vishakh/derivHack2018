@@ -1,0 +1,9 @@
+@startuml
+
+    enum RoundingDirectionEnum [[RoundingDirectionEnum.html]] {
+        {static} +UP
+        {static} +DOWN
+        {static} +NEAREST
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class Strike [[Strike.html]] {
+        +getBuyer(): PayerReceiverEnum
+        +getId(): String
+        +getSeller(): PayerReceiverEnum
+        +getStrikeRate(): BigDecimal
+        +toBuilder(): Strike.StrikeBuilder
+        {static} +builder(): Strike.StrikeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

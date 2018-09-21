@@ -1,0 +1,9 @@
+@startuml
+
+    class DateRelativeToCalculationPeriodDates.DateRelativeToCalculationPeriodDatesBuilder [[DateRelativeToCalculationPeriodDates.DateRelativeToCalculationPeriodDatesBuilder.html]] {
+        +getCalculationPeriodDatesReference(): List<String>
+        +addCalculationPeriodDatesReference(String): DateRelativeToCalculationPeriodDates.DateRelativeToCalculationPeriodDatesBuilder
+        +build(): DateRelativeToCalculationPeriodDates
+    }
+
+@enduml

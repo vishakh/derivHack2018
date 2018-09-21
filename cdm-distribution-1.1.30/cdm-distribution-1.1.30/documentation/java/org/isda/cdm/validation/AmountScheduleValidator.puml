@@ -1,0 +1,7 @@
+@startuml
+
+    class AmountScheduleValidator [[AmountScheduleValidator.html]] {
+        +validate(AmountSchedule): ValidationResult<AmountSchedule>
+    }
+
+@enduml

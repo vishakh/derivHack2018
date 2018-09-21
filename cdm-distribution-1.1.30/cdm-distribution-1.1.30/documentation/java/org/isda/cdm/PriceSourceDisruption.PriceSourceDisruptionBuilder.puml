@@ -1,0 +1,11 @@
+@startuml
+
+    class PriceSourceDisruption.PriceSourceDisruptionBuilder [[PriceSourceDisruption.PriceSourceDisruptionBuilder.html]] {
+        +getFallbackReferencePrice(): FallbackReferencePrice.FallbackReferencePriceBuilder
+        +getOrCreateFallbackReferencePrice(): FallbackReferencePrice.FallbackReferencePriceBuilder
+        +setFallbackReferencePrice(FallbackReferencePrice): PriceSourceDisruption.PriceSourceDisruptionBuilder
+        +setFallbackReferencePriceBuilder(FallbackReferencePrice.FallbackReferencePriceBuilder): PriceSourceDisruption.PriceSourceDisruptionBuilder
+        +build(): PriceSourceDisruption
+    }
+
+@enduml

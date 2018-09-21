@@ -1,0 +1,112 @@
+@startuml
+
+    namespace org.isda.cdm.qualify.event {
+
+        class IsTermination [[IsTermination.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsReset [[IsReset.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsPayment [[IsPayment.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsCommodityTransfer [[IsCommodityTransfer.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsSecuritySettlement [[IsSecuritySettlement.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsSecurityTransfer [[IsSecurityTransfer.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsPaymentBusinessEvent [[IsPaymentBusinessEvent.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsPartialTermination [[IsPartialTermination.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsObservation [[IsObservation.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsPartialNovation [[IsPartialNovation.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsNovation [[IsNovation.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsNewTradeEvent [[IsNewTradeEvent.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsNewTradeBusinessEvent [[IsNewTradeBusinessEvent.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsExercise [[IsExercise.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsDerivedObservation [[IsDerivedObservation.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsCompression [[IsCompression.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        class IsAllocation [[IsAllocation.html]] {
+            +apply(Event): QualifyResult
+        }
+
+        interface java.util.function.Function<T, R> {
+            {abstract} +apply(T): R
+        }
+        java.util.function.Function <|.. IsTermination
+
+        java.util.function.Function <|.. IsReset
+
+        java.util.function.Function <|.. IsPayment
+
+        java.util.function.Function <|.. IsCommodityTransfer
+
+        java.util.function.Function <|.. IsSecuritySettlement
+
+        java.util.function.Function <|.. IsSecurityTransfer
+
+        java.util.function.Function <|.. IsPaymentBusinessEvent
+
+        java.util.function.Function <|.. IsPartialTermination
+
+        java.util.function.Function <|.. IsObservation
+
+        java.util.function.Function <|.. IsPartialNovation
+
+        java.util.function.Function <|.. IsNovation
+
+        java.util.function.Function <|.. IsNewTradeEvent
+
+        java.util.function.Function <|.. IsNewTradeBusinessEvent
+
+        java.util.function.Function <|.. IsExercise
+
+        java.util.function.Function <|.. IsDerivedObservation
+
+        java.util.function.Function <|.. IsCompression
+
+        java.util.function.Function <|.. IsAllocation
+
+    }
+
+@enduml

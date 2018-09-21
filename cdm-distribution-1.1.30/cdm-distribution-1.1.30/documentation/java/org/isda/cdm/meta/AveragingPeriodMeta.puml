@@ -1,0 +1,12 @@
+@startuml
+
+    class AveragingPeriodMeta [[AveragingPeriodMeta.html]] {
+        +dataRules(): List<Validator<AveragingPeriod>>
+        +choiceRuleValidators(): List<Validator<AveragingPeriod>>
+        +getOutMappings(): Multimap<String, OutMapping<AveragingPeriod, ?>>
+        +getQualifyFunctions(): List<Function<AveragingPeriod, QualifyResult>>
+        +validator(): Validator<AveragingPeriod>
+        +onlyExistsValidator(): ValidatorWithArg<AveragingPeriod, String>
+    }
+
+@enduml

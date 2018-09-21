@@ -1,0 +1,12 @@
+@startuml
+
+    class Step [[Step.html]] {
+        +getId(): String
+        +getStepDate(): LocalDate
+        +getStepValue(): BigDecimal
+        +toBuilder(): Step.StepBuilder
+        {static} +builder(): Step.StepBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

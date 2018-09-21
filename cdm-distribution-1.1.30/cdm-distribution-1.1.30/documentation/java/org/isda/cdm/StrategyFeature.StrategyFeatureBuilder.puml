@@ -1,0 +1,15 @@
+@startuml
+
+    class StrategyFeature.StrategyFeatureBuilder [[StrategyFeature.StrategyFeatureBuilder.html]] {
+        +getCalendarSpread(): CalendarSpread.CalendarSpreadBuilder
+        +getOrCreateCalendarSpread(): CalendarSpread.CalendarSpreadBuilder
+        +getStrikeSpread(): StrikeSpread.StrikeSpreadBuilder
+        +getOrCreateStrikeSpread(): StrikeSpread.StrikeSpreadBuilder
+        +setCalendarSpread(CalendarSpread): StrategyFeature.StrategyFeatureBuilder
+        +setCalendarSpreadBuilder(CalendarSpread.CalendarSpreadBuilder): StrategyFeature.StrategyFeatureBuilder
+        +setStrikeSpread(StrikeSpread): StrategyFeature.StrategyFeatureBuilder
+        +setStrikeSpreadBuilder(StrikeSpread.StrikeSpreadBuilder): StrategyFeature.StrategyFeatureBuilder
+        +build(): StrategyFeature
+    }
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+
+    class ExerciseEventMeta [[ExerciseEventMeta.html]] {
+        +dataRules(): List<Validator<ExerciseEvent>>
+        +choiceRuleValidators(): List<Validator<ExerciseEvent>>
+        +getOutMappings(): Multimap<String, OutMapping<ExerciseEvent, ?>>
+        +getQualifyFunctions(): List<Function<ExerciseEvent, QualifyResult>>
+        +validator(): Validator<ExerciseEvent>
+        +onlyExistsValidator(): ValidatorWithArg<ExerciseEvent, String>
+    }
+
+@enduml

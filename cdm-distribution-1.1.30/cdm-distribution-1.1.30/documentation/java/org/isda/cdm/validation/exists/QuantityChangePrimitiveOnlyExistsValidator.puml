@@ -1,0 +1,7 @@
+@startuml
+
+    class QuantityChangePrimitiveOnlyExistsValidator [[QuantityChangePrimitiveOnlyExistsValidator.html]] {
+        +validate(QuantityChangePrimitive, String): ValidationResult<QuantityChangePrimitive>
+    }
+
+@enduml

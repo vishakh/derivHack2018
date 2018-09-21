@@ -1,0 +1,29 @@
+@startuml
+
+    class Loan.LoanBuilder [[Loan.LoanBuilder.html]] {
+        +getBorrower(): List<LegalEntity.LegalEntityBuilder>
+        +getOrCreateBorrower(int): LegalEntity.LegalEntityBuilder
+        +getBorrowerReference(): List<String>
+        +getCreditAgreementDate(): LocalDate
+        +getFacilityType(): String
+        +getFacilityTypeScheme(): String
+        +getLien(): String
+        +getLienScheme(): String
+        +getMaturity(): LocalDate
+        +getTranche(): String
+        +getTrancheScheme(): String
+        +addBorrower(LegalEntity): Loan.LoanBuilder
+        +addBorrowerBuilder(LegalEntity.LegalEntityBuilder): Loan.LoanBuilder
+        +addBorrowerReference(String): Loan.LoanBuilder
+        +setCreditAgreementDate(LocalDate): Loan.LoanBuilder
+        +setFacilityType(String): Loan.LoanBuilder
+        +setFacilityTypeScheme(String): Loan.LoanBuilder
+        +setLien(String): Loan.LoanBuilder
+        +setLienScheme(String): Loan.LoanBuilder
+        +setMaturity(LocalDate): Loan.LoanBuilder
+        +setTranche(String): Loan.LoanBuilder
+        +setTrancheScheme(String): Loan.LoanBuilder
+        +build(): Loan
+    }
+
+@enduml

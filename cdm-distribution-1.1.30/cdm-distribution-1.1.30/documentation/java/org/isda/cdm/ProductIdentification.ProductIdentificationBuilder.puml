@@ -1,0 +1,25 @@
+@startuml
+
+    class ProductIdentification.ProductIdentificationBuilder [[ProductIdentification.ProductIdentificationBuilder.html]] {
+        +getPrimaryAssetClass(): AssetClassEnum
+        +getPrimaryAssetClassScheme(): String
+        +getProductId(): List<String>
+        +getProductIdScheme(): String
+        +getProductQualifier(): String
+        +getProductType(): List<String>
+        +getProductTypeScheme(): String
+        +getSecondaryAssetClass(): List<AssetClassEnum>
+        +getSecondaryAssetClassScheme(): String
+        +setPrimaryAssetClass(AssetClassEnum): ProductIdentification.ProductIdentificationBuilder
+        +setPrimaryAssetClassScheme(String): ProductIdentification.ProductIdentificationBuilder
+        +addProductId(String): ProductIdentification.ProductIdentificationBuilder
+        +setProductIdScheme(String): ProductIdentification.ProductIdentificationBuilder
+        +setProductQualifier(String): ProductIdentification.ProductIdentificationBuilder
+        +addProductType(String): ProductIdentification.ProductIdentificationBuilder
+        +setProductTypeScheme(String): ProductIdentification.ProductIdentificationBuilder
+        +addSecondaryAssetClass(AssetClassEnum): ProductIdentification.ProductIdentificationBuilder
+        +setSecondaryAssetClassScheme(String): ProductIdentification.ProductIdentificationBuilder
+        +build(): ProductIdentification
+    }
+
+@enduml

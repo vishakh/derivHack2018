@@ -1,0 +1,14 @@
+@startuml
+
+    class EconomicTerms [[EconomicTerms.html]] {
+        +getCancelableProvision(): CancelableProvision
+        +getEarlyTerminationProvision(): EarlyTerminationProvision
+        +getExtendibleProvision(): ExtendibleProvision
+        +getPayout(): Payout
+        +toBuilder(): EconomicTerms.EconomicTermsBuilder
+        {static} +builder(): EconomicTerms.EconomicTermsBuilder
+        +getRosettaKeyValue(): String
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

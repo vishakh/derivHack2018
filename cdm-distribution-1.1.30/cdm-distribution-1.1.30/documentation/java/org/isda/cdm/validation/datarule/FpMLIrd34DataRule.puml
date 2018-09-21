@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLIrd34DataRule [[FpMLIrd34DataRule.html]] {
+        +validate(PaymentCalculationPeriod): ValidationResult<PaymentCalculationPeriod>
+    }
+
+@enduml

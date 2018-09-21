@@ -1,0 +1,7 @@
+@startuml
+
+    class PhysicalExerciseChoiceRule [[PhysicalExerciseChoiceRule.html]] {
+        +validate(PhysicalExercise): ValidationResult<PhysicalExercise>
+    }
+
+@enduml

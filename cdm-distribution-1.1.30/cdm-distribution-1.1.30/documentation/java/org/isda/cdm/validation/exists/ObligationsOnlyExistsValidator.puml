@@ -1,0 +1,7 @@
+@startuml
+
+    class ObligationsOnlyExistsValidator [[ObligationsOnlyExistsValidator.html]] {
+        +validate(Obligations, String): ValidationResult<Obligations>
+    }
+
+@enduml

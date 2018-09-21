@@ -1,0 +1,260 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "UNKNOWN",
+      "identifierScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/trade-id"
+    },
+    "partyReference" : "party1"
+  }, {
+    "identifierValue" : {
+      "identifier" : "LCH00024183063",
+      "identifierScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/trade-id"
+    },
+    "partyReference" : "party2"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "CNBE", "USNY" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3,
+              "rollConvention" : "_15"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2018-05-15"
+              }
+            },
+            "id" : "fixedCalcPeriodDates1",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "CNBE", "USNY" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2019-05-15"
+            }
+          },
+          "crossCurrencyTerms" : {
+            "settlementProvision" : {
+              "nonDeliverableSettlement" : {
+                "fxFixingDate" : {
+                  "period" : "D",
+                  "periodMultiplier" : -2,
+                  "dayType" : "BUSINESS",
+                  "businessCenters" : {
+                    "businessCenter" : [ "CNBE", "USNY" ]
+                  },
+                  "businessDayConvention" : "NONE",
+                  "dateRelativeToPaymentDates" : {
+                    "paymentDatesReference" : [ "paymentDates1" ]
+                  }
+                },
+                "referenceCurrency" : "CNY",
+                "settlementRateOption" : "CNY_SAEC_CNY01"
+              },
+              "settlementCurrency" : "USD"
+            }
+          },
+          "dayCountFraction" : "ACT_365_FIXED",
+          "id" : "fixedLeg1",
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.0339
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party1",
+            "receiverPartyReference" : "party2"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "fixedCalcPeriodDates1",
+            "id" : "paymentDates1",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "CNBE", "USNY" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 28000000.00,
+                "currency" : "CNY"
+              }
+            }
+          },
+          "rosettaKeyValue" : "38eae2e3"
+        }, {
+          "calculationPeriodDates" : {
+            "calculationPeriodDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "CNBE", "USNY" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "calculationPeriodFrequency" : {
+              "period" : "D",
+              "periodMultiplier" : 7,
+              "rollConvention" : "_15"
+            },
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "dateAdjustments" : {
+                  "businessDayConvention" : "NONE"
+                },
+                "unadjustedDate" : "2018-05-15"
+              }
+            },
+            "id" : "floatingCalcPeriodDates2",
+            "terminationDate" : {
+              "dateAdjustments" : {
+                "businessCenters" : {
+                  "businessCenter" : [ "CNBE", "USNY" ]
+                },
+                "businessDayConvention" : "MODFOLLOWING"
+              },
+              "unadjustedDate" : "2019-05-15"
+            }
+          },
+          "compoundingMethod" : "FLAT",
+          "crossCurrencyTerms" : {
+            "settlementProvision" : {
+              "nonDeliverableSettlement" : {
+                "fxFixingDate" : {
+                  "period" : "D",
+                  "periodMultiplier" : -2,
+                  "dayType" : "BUSINESS",
+                  "businessCenters" : {
+                    "businessCenter" : [ "CNBE", "USNY" ]
+                  },
+                  "businessDayConvention" : "NONE",
+                  "dateRelativeToPaymentDates" : {
+                    "paymentDatesReference" : [ "paymentDates2" ]
+                  }
+                },
+                "referenceCurrency" : "CNY",
+                "settlementRateOption" : "CNY_SAEC_CNY01"
+              },
+              "settlementCurrency" : "USD"
+            }
+          },
+          "dayCountFraction" : "ACT_365_FIXED",
+          "id" : "floatingLeg2",
+          "interestRate" : {
+            "floatingRate" : {
+              "floatingRateIndex" : "CNY_CNREPOFIX_CFXS_REUTERS",
+              "indexTenor" : {
+                "period" : "W",
+                "periodMultiplier" : 1
+              }
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "party2",
+            "receiverPartyReference" : "party1"
+          },
+          "paymentDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates2",
+            "firstPaymentDate" : "2018-08-15",
+            "id" : "paymentDates2",
+            "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+            "paymentDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "CNBE", "USNY" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "paymentFrequency" : {
+              "period" : "M",
+              "periodMultiplier" : 3
+            }
+          },
+          "quantity" : {
+            "notionalSchedule" : {
+              "notionalStepSchedule" : {
+                "initialValue" : 28000000.00,
+                "currency" : "CNY"
+              }
+            }
+          },
+          "resetDates" : {
+            "calculationPeriodDatesReference" : "floatingCalcPeriodDates2",
+            "fixingDates" : {
+              "period" : "D",
+              "periodMultiplier" : -1,
+              "dayType" : "BUSINESS",
+              "businessCenters" : {
+                "businessCenter" : [ "CNBE" ]
+              },
+              "businessDayConvention" : "NONE",
+              "dateRelativeTo" : "resetDates2"
+            },
+            "id" : "resetDates2",
+            "resetDatesAdjustments" : {
+              "businessCenters" : {
+                "businessCenter" : [ "CNBE", "USNY" ]
+              },
+              "businessDayConvention" : "MODFOLLOWING"
+            },
+            "resetFrequency" : {
+              "period" : "D",
+              "periodMultiplier" : 7
+            },
+            "resetRelativeTo" : "CALCULATION_PERIOD_START_DATE"
+          },
+          "rosettaKeyValue" : "2b86c3ed"
+        } ]
+      },
+      "rosettaKeyValue" : "29c33330"
+    },
+    "productIdentification" : {
+      "primaryAssetClass" : "INTEREST_RATE",
+      "productId" : [ "InterestRate:IRSwap:FixedFloat" ],
+      "productIdScheme" : "http://www.fpml.org/coding-scheme/product-taxonomy",
+      "productQualifier" : "InterestRate_IRSwap_FixedFloat",
+      "productType" : [ "InterestRate:IRSwap:FixedFloat" ],
+      "productTypeScheme" : "http://www.fpml.org/coding-scheme/product-taxonomy",
+      "secondaryAssetClassScheme" : "http://www.fpml.org/coding-scheme/asset-class-simple"
+    }
+  },
+  "documentation" : {
+    "contractualDefinitions" : [ "ISDA2006" ],
+    "contractualDefinitionsScheme" : "http://www.fpml.org/coding-scheme/contractual-definitions",
+    "masterAgreement" : {
+      "masterAgreementType" : "ISDA",
+      "masterAgreementTypeScheme" : "http://www.fpml.org/coding-scheme/master-agreement-type"
+    }
+  },
+  "party" : [ {
+    "id" : "party1",
+    "partyId" : [ "COUNTERPARTY" ],
+    "partyIdScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/party-id"
+  }, {
+    "id" : "party2",
+    "partyId" : [ "LCHLGB22XXX" ],
+    "partyIdScheme" : "http://www.lchclearnet.com/clearlink/coding-scheme/party-id"
+  } ],
+  "tradeDate" : {
+    "date" : "2018-03-27"
+  },
+  "rosettaKey" : "55e837e9"
+}

@@ -1,0 +1,12 @@
+@startuml
+
+    class StrategyFeatureMeta [[StrategyFeatureMeta.html]] {
+        +dataRules(): List<Validator<StrategyFeature>>
+        +choiceRuleValidators(): List<Validator<StrategyFeature>>
+        +getOutMappings(): Multimap<String, OutMapping<StrategyFeature, ?>>
+        +getQualifyFunctions(): List<Function<StrategyFeature, QualifyResult>>
+        +validator(): Validator<StrategyFeature>
+        +onlyExistsValidator(): ValidatorWithArg<StrategyFeature, String>
+    }
+
+@enduml

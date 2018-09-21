@@ -1,0 +1,7 @@
+@startuml
+
+    class PhysicalSettlementPeriodBusinessDaysDataRule [[PhysicalSettlementPeriodBusinessDaysDataRule.html]] {
+        +validate(PhysicalSettlementPeriod): ValidationResult<PhysicalSettlementPeriod>
+    }
+
+@enduml

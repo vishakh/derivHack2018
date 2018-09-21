@@ -1,0 +1,13 @@
+@startuml
+
+    class InterestShortFall.InterestShortFallBuilder [[InterestShortFall.InterestShortFallBuilder.html]] {
+        +getCompounding(): Boolean
+        +getInterestShortfallCap(): InterestShortfallCapEnum
+        +getRateSource(): FloatingRateIndexEnum
+        +setCompounding(Boolean): InterestShortFall.InterestShortFallBuilder
+        +setInterestShortfallCap(InterestShortfallCapEnum): InterestShortFall.InterestShortFallBuilder
+        +setRateSource(FloatingRateIndexEnum): InterestShortFall.InterestShortFallBuilder
+        +build(): InterestShortFall
+    }
+
+@enduml

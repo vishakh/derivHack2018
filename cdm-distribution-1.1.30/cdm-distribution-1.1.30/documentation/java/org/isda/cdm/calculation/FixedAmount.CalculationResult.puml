@@ -1,0 +1,11 @@
+@startuml
+
+    class FixedAmount.CalculationResult [[FixedAmount.CalculationResult.html]] {
+        +getFixedAmount(): BigDecimal
+        +setFixedAmount(BigDecimal): FixedAmount.CalculationResult
+        +getCurrencyAmount(): String
+        +setCurrencyAmount(String): FixedAmount.CalculationResult
+        +getAttributes(): List<IResult.Attribute<?>>
+    }
+
+@enduml

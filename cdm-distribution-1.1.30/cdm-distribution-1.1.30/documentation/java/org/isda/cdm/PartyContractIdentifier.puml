@@ -1,0 +1,14 @@
+@startuml
+
+    class PartyContractIdentifier [[PartyContractIdentifier.html]] {
+        +getAllocationTradeId(): List<ContractIdentifier>
+        +getBlockTradeId(): ContractIdentifier
+        +getLinkId(): List<LinkId>
+        +getOriginatingTradeId(): List<ContractIdentifier>
+        +getResultingTradeId(): List<ContractIdentifierExtended>
+        +toBuilder(): PartyContractIdentifier.PartyContractIdentifierBuilder
+        {static} +builder(): PartyContractIdentifier.PartyContractIdentifierBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

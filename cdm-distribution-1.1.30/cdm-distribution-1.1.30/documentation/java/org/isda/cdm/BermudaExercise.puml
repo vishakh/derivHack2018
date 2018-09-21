@@ -1,0 +1,17 @@
+@startuml
+
+    class BermudaExercise [[BermudaExercise.html]] {
+        +getBermudaExerciseDates(): AdjustableOrRelativeDates
+        +getEarliestExerciseTime(): BusinessCenterTime
+        +getExerciseFeeSchedule(): ExerciseFeeSchedule
+        +getExpirationTime(): BusinessCenterTime
+        +getId(): String
+        +getLatestExerciseTime(): BusinessCenterTime
+        +getMultipleExercise(): MultipleExercise
+        +getRelevantUnderlyingDate(): AdjustableOrRelativeDates
+        +toBuilder(): BermudaExercise.BermudaExerciseBuilder
+        {static} +builder(): BermudaExercise.BermudaExerciseBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

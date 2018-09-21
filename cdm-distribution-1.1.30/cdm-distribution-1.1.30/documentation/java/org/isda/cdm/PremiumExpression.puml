@@ -1,0 +1,12 @@
+@startuml
+
+    class PremiumExpression [[PremiumExpression.html]] {
+        +getPercentageOfNotional(): BigDecimal
+        +getPremiumType(): PremiumTypeEnum
+        +getPricePerOption(): Money
+        +toBuilder(): PremiumExpression.PremiumExpressionBuilder
+        {static} +builder(): PremiumExpression.PremiumExpressionBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

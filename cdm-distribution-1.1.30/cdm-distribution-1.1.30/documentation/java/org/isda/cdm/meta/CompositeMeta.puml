@@ -1,0 +1,12 @@
+@startuml
+
+    class CompositeMeta [[CompositeMeta.html]] {
+        +dataRules(): List<Validator<Composite>>
+        +choiceRuleValidators(): List<Validator<Composite>>
+        +getOutMappings(): Multimap<String, OutMapping<Composite, ?>>
+        +getQualifyFunctions(): List<Function<Composite, QualifyResult>>
+        +validator(): Validator<Composite>
+        +onlyExistsValidator(): ValidatorWithArg<Composite, String>
+    }
+
+@enduml

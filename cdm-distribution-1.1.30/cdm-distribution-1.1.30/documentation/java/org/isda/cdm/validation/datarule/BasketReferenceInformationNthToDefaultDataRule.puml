@@ -1,0 +1,7 @@
+@startuml
+
+    class BasketReferenceInformationNthToDefaultDataRule [[BasketReferenceInformationNthToDefaultDataRule.html]] {
+        +validate(BasketReferenceInformation): ValidationResult<BasketReferenceInformation>
+    }
+
+@enduml

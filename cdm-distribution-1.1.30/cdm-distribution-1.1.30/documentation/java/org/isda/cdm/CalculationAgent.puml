@@ -1,0 +1,13 @@
+@startuml
+
+    class CalculationAgent [[CalculationAgent.html]] {
+        +getCalculationAgentBusinessCenter(): BusinessCenterEnum
+        +getCalculationAgentBusinessCenterScheme(): String
+        +getCalculationAgentParty(): CalculationAgentPartyEnum
+        +getCalculationAgentPartyReference(): List<String>
+        +toBuilder(): CalculationAgent.CalculationAgentBuilder
+        {static} +builder(): CalculationAgent.CalculationAgentBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

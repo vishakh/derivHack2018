@@ -1,0 +1,25 @@
+@startuml
+
+    class Payment.PaymentBuilder [[Payment.PaymentBuilder.html]] {
+        +getGrossCashflow(): List<GrossCashflow.GrossCashflowBuilder>
+        +getOrCreateGrossCashflow(int): GrossCashflow.GrossCashflowBuilder
+        +getPaymentAmount(): Money.MoneyBuilder
+        +getOrCreatePaymentAmount(): Money.MoneyBuilder
+        +getPaymentDate(): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +getOrCreatePaymentDate(): AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder
+        +getPaymentStatus(): PaymentStatusEnum
+        +getPaymentType(): PaymentTypeEnum
+        +getSettlementReference(): String
+        +addGrossCashflow(GrossCashflow): Payment.PaymentBuilder
+        +addGrossCashflowBuilder(GrossCashflow.GrossCashflowBuilder): Payment.PaymentBuilder
+        +setPaymentAmount(Money): Payment.PaymentBuilder
+        +setPaymentAmountBuilder(Money.MoneyBuilder): Payment.PaymentBuilder
+        +setPaymentDate(AdjustableOrAdjustedOrRelativeDate): Payment.PaymentBuilder
+        +setPaymentDateBuilder(AdjustableOrAdjustedOrRelativeDate.AdjustableOrAdjustedOrRelativeDateBuilder): Payment.PaymentBuilder
+        +setPaymentStatus(PaymentStatusEnum): Payment.PaymentBuilder
+        +setPaymentType(PaymentTypeEnum): Payment.PaymentBuilder
+        +setSettlementReference(String): Payment.PaymentBuilder
+        +build(): Payment
+    }
+
+@enduml

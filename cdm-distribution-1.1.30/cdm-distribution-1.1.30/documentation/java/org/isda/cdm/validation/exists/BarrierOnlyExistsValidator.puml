@@ -1,0 +1,7 @@
+@startuml
+
+    class BarrierOnlyExistsValidator [[BarrierOnlyExistsValidator.html]] {
+        +validate(Barrier, String): ValidationResult<Barrier>
+    }
+
+@enduml

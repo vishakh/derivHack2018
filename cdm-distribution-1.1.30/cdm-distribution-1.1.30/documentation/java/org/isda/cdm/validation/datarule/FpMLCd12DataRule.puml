@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLCd12DataRule [[FpMLCd12DataRule.html]] {
+        +validate(CreditDefaultPayout): ValidationResult<CreditDefaultPayout>
+    }
+
+@enduml

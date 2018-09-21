@@ -1,0 +1,7 @@
+@startuml
+
+    class GeneralTermsOnlyExistsValidator [[GeneralTermsOnlyExistsValidator.html]] {
+        +validate(GeneralTerms, String): ValidationResult<GeneralTerms>
+    }
+
+@enduml

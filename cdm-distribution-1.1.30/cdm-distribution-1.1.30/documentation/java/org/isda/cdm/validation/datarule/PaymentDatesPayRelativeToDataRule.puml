@@ -1,0 +1,7 @@
+@startuml
+
+    class PaymentDatesPayRelativeToDataRule [[PaymentDatesPayRelativeToDataRule.html]] {
+        +validate(Payout): ValidationResult<Payout>
+    }
+
+@enduml

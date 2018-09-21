@@ -1,0 +1,13 @@
+@startuml
+
+    class ExerciseFeeSchedule [[ExerciseFeeSchedule.html]] {
+        +getFeeAmountSchedule(): AmountSchedule
+        +getFeePaymentDate(): RelativeDateOffset
+        +getFeeRateSchedule(): Schedule
+        +getNotionalReference(): String
+        +toBuilder(): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        {static} +builder(): ExerciseFeeSchedule.ExerciseFeeScheduleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

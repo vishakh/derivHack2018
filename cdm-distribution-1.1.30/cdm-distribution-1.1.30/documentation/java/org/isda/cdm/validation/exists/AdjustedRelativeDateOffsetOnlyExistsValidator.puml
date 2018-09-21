@@ -1,0 +1,7 @@
+@startuml
+
+    class AdjustedRelativeDateOffsetOnlyExistsValidator [[AdjustedRelativeDateOffsetOnlyExistsValidator.html]] {
+        +validate(AdjustedRelativeDateOffset, String): ValidationResult<AdjustedRelativeDateOffset>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class FxFixingDateOnlyExistsValidator [[FxFixingDateOnlyExistsValidator.html]] {
+        +validate(FxFixingDate, String): ValidationResult<FxFixingDate>
+    }
+
+@enduml

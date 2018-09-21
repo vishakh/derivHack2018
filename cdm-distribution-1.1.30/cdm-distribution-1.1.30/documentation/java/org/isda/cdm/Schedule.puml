@@ -1,0 +1,12 @@
+@startuml
+
+    class Schedule [[Schedule.html]] {
+        +getId(): String
+        +getInitialValue(): BigDecimal
+        +getStep(): List<Step>
+        +toBuilder(): Schedule.ScheduleBuilder
+        {static} +builder(): Schedule.ScheduleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

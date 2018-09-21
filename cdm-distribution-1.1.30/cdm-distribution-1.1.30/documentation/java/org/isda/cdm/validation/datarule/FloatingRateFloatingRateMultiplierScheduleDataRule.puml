@@ -1,0 +1,7 @@
+@startuml
+
+    class FloatingRateFloatingRateMultiplierScheduleDataRule [[FloatingRateFloatingRateMultiplierScheduleDataRule.html]] {
+        +validate(FloatingRate): ValidationResult<FloatingRate>
+    }
+
+@enduml

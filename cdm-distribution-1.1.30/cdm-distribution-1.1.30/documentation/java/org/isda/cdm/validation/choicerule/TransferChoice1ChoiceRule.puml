@@ -1,0 +1,7 @@
+@startuml
+
+    class TransferChoice1ChoiceRule [[TransferChoice1ChoiceRule.html]] {
+        +validate(Transfer): ValidationResult<Transfer>
+    }
+
+@enduml

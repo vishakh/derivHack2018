@@ -1,0 +1,15 @@
+@startuml
+
+    class EarlyTerminationEvent [[EarlyTerminationEvent.html]] {
+        +getAdjustedCashSettlementPaymentDate(): LocalDate
+        +getAdjustedCashSettlementValuationDate(): LocalDate
+        +getAdjustedEarlyTerminationDate(): LocalDate
+        +getAdjustedExerciseDate(): LocalDate
+        +getAdjustedExerciseFeePaymentDate(): LocalDate
+        +getId(): String
+        +toBuilder(): EarlyTerminationEvent.EarlyTerminationEventBuilder
+        {static} +builder(): EarlyTerminationEvent.EarlyTerminationEventBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

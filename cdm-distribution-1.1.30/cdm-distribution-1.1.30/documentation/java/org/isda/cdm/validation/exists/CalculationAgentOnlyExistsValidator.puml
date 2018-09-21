@@ -1,0 +1,7 @@
+@startuml
+
+    class CalculationAgentOnlyExistsValidator [[CalculationAgentOnlyExistsValidator.html]] {
+        +validate(CalculationAgent, String): ValidationResult<CalculationAgent>
+    }
+
+@enduml

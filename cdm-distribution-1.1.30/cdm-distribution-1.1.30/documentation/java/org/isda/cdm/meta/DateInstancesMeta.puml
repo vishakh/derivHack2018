@@ -1,0 +1,12 @@
+@startuml
+
+    class DateInstancesMeta [[DateInstancesMeta.html]] {
+        +dataRules(): List<Validator<DateInstances>>
+        +choiceRuleValidators(): List<Validator<DateInstances>>
+        +getOutMappings(): Multimap<String, OutMapping<DateInstances, ?>>
+        +getQualifyFunctions(): List<Function<DateInstances, QualifyResult>>
+        +validator(): Validator<DateInstances>
+        +onlyExistsValidator(): ValidatorWithArg<DateInstances, String>
+    }
+
+@enduml

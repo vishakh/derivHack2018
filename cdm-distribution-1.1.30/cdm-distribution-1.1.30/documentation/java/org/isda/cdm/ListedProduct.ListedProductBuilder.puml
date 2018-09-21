@@ -1,0 +1,15 @@
+@startuml
+
+    class ListedProduct.ListedProductBuilder [[ListedProduct.ListedProductBuilder.html]] {
+        +getBond(): Bond.BondBuilder
+        +getOrCreateBond(): Bond.BondBuilder
+        +getConvertibleBond(): ConvertibleBond.ConvertibleBondBuilder
+        +getOrCreateConvertibleBond(): ConvertibleBond.ConvertibleBondBuilder
+        +setBond(Bond): ListedProduct.ListedProductBuilder
+        +setBondBuilder(Bond.BondBuilder): ListedProduct.ListedProductBuilder
+        +setConvertibleBond(ConvertibleBond): ListedProduct.ListedProductBuilder
+        +setConvertibleBondBuilder(ConvertibleBond.ConvertibleBondBuilder): ListedProduct.ListedProductBuilder
+        +build(): ListedProduct
+    }
+
+@enduml

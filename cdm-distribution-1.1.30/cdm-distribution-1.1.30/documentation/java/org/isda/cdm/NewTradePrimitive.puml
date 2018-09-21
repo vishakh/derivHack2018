@@ -1,0 +1,11 @@
+@startuml
+
+    class NewTradePrimitive [[NewTradePrimitive.html]] {
+        +getContract(): Contract
+        +getContractReference(): ContractIdentifier
+        +toBuilder(): NewTradePrimitive.NewTradePrimitiveBuilder
+        {static} +builder(): NewTradePrimitive.NewTradePrimitiveBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

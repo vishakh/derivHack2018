@@ -1,0 +1,12 @@
+@startuml
+
+    class PartyAndAccountReferenceMeta [[PartyAndAccountReferenceMeta.html]] {
+        +dataRules(): List<Validator<PartyAndAccountReference>>
+        +choiceRuleValidators(): List<Validator<PartyAndAccountReference>>
+        +getOutMappings(): Multimap<String, OutMapping<PartyAndAccountReference, ?>>
+        +getQualifyFunctions(): List<Function<PartyAndAccountReference, QualifyResult>>
+        +validator(): Validator<PartyAndAccountReference>
+        +onlyExistsValidator(): ValidatorWithArg<PartyAndAccountReference, String>
+    }
+
+@enduml

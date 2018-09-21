@@ -1,0 +1,7 @@
+@startuml
+
+    class CashPriceMethodValidator [[CashPriceMethodValidator.html]] {
+        +validate(CashPriceMethod): ValidationResult<CashPriceMethod>
+    }
+
+@enduml

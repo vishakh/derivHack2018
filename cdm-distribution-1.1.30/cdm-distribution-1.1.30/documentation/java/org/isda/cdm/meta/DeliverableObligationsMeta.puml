@@ -1,0 +1,12 @@
+@startuml
+
+    class DeliverableObligationsMeta [[DeliverableObligationsMeta.html]] {
+        +dataRules(): List<Validator<DeliverableObligations>>
+        +choiceRuleValidators(): List<Validator<DeliverableObligations>>
+        +getOutMappings(): Multimap<String, OutMapping<DeliverableObligations, ?>>
+        +getQualifyFunctions(): List<Function<DeliverableObligations, QualifyResult>>
+        +validator(): Validator<DeliverableObligations>
+        +onlyExistsValidator(): ValidatorWithArg<DeliverableObligations, String>
+    }
+
+@enduml

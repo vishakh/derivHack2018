@@ -1,0 +1,7 @@
+@startuml
+
+    class CurveValidator [[CurveValidator.html]] {
+        +validate(Curve): ValidationResult<Curve>
+    }
+
+@enduml

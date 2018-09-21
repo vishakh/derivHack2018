@@ -1,0 +1,12 @@
+@startuml
+
+    class OptionStyle [[OptionStyle.html]] {
+        +getAmericanExercise(): AmericanExercise
+        +getBermudaExercise(): BermudaExercise
+        +getEuropeanExercise(): EuropeanExercise
+        +toBuilder(): OptionStyle.OptionStyleBuilder
+        {static} +builder(): OptionStyle.OptionStyleBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

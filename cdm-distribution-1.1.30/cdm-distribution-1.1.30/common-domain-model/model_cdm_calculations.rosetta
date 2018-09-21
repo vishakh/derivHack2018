@@ -1,0 +1,133 @@
+namespace "org.isda.cdm"
+
+calculation FixedAmount <"2006 ISDA Definition Article 5 Section 5.1. Calculation of a Fixed Amount: The Fixed Amount payable by a party on a Payment Date will be: (a) if an amount is specified for the Swap Transaction as the Fixed Amount payable by that party for that Payment Date or for the related Calculation Period, that amount; or (b) if an amount is not specified for the Swap Transaction as the Fixed Amount payable by that party for that Payment Date or for the related Calculation Period, an amount calculated on a formula basis for that Payment Date or for the related Calculation Period as follows: Fixed Amount = Calculation Amount × Fixed Rate × Day Count Fraction.">
+{
+	fixedAmount number: calculationAmount * rate * dayCountFraction
+	currencyAmount string: currencyAmount
+}
+
+arguments FixedAmount <"The set of arguments to calculate the FixedAmount.">
+{
+	calculationAmount: is InterestRatePayout -> quantity -> notionalSchedule -> notionalStepSchedule -> initialValue
+	currencyAmount: is InterestRatePayout -> quantity -> notionalSchedule -> notionalStepSchedule -> currency
+	rate: is InterestRatePayout -> interestRate -> fixedRate -> initialValue
+    dayCountFraction: is InterestRatePayout -> dayCountFraction
+}
+
+calculation FloatingAmount <"2006 ISDA Definition Article 6 Section 6.1. Calculation of a Floating Amount: Subject to the provisions of Section 6.4 (Negative Interest Rates), the Floating Amount payable by a party on a Payment Date will be: (a) if Compounding is not specified for the Swap Transaction or that party, an amount calculated on a formula basis for that Payment Date or for the related Calculation Period as follows: Floating Amount = Calculation Amount × Floating Rate + Spread × Floating Rate Day Count Fraction (b) if “Compounding” is specified to be applicable to the Swap Transaction or that party and 'Flat Compounding' is not specified, an amount equal to the sum of the Compounding Period Amounts for each of the Compounding Periods in the related Calculation Period; or (c) if 'Flat Compounding' is specified to be applicable to the Swap Transaction or that party, an amount equal to the sum of the Basic Compounding Period Amounts for each of the Compounding Periods in the related Calculation Period plus the sum of the Additional Compounding Period Amounts for each such Compounding Period.">
+{
+	/*
+	 * TODO - The below calculation needs to be refined for the case of negative interest rate and compounding
+	 */
+	 /*
+	  * TODO - The ISDA 2006 doesn't make reference to the FpML floatingRateMultiplierSchedule.  
+	  * Discussed resolution path with Jonathan & Harry is for Jonathan to ask the Rates Committee if the rate multiplier is actually used.
+	  */
+	floatingAmount number: calculationAmount * ( floatingRate + spread ) * dayCountFraction
+	currencyAmount string: currencyAmount
+}
+
+arguments FloatingAmount <"The set of arguments to calculate the FloatingAmount.">
+{
+	calculationAmount: is InterestRatePayout -> quantity -> notionalSchedule -> notionalStepSchedule -> initialValue
+	currencyAmount: is InterestRatePayout -> quantity -> notionalSchedule -> notionalStepSchedule -> currency
+	floatingRate: is ResolveRateIndex( InterestRatePayout -> interestRate -> floatingRate -> floatingRateIndex ) -> rate
+
+	/*
+	 * TODO: question to group: why can a float rate calculation node in FpML contain multiple rate schedules?
+	 */
+	spread: is GetRateSchedule( InterestRatePayout -> interestRate -> floatingRate ) -> schedule -> initialValue
+	dayCountFraction: is InterestRatePayout -> dayCountFraction
+}
+
+
+/*************************************
+ * DayCountFraction Actual/365 (Fixed)
+ */
+
+calculation DayCountFractionEnum.ACT_365_FIXED <"'2006 ISDA Definition Article 4 section 4.16(d): If'Actual/365 (Fixed)', 'Act/365 (Fixed)', 'A/365 (Fixed)' or 'A/365F' is specified, the actual number of days in the Calculation Period or Compounding Period in respect of which payment is being made divided by 365.">
+{
+	number:  daysInPeriod / 365
+}
+
+arguments DayCountFractionEnum.ACT_365_FIXED <"The arguments to calculate the Actual/365 (Fixed) day count fraction.">
+{
+	daysInPeriod : is DaysInPeriod( InterestRatePayout -> calculationPeriodDates ) -> days
+}
+
+/*****************************
+ * DayCountFraction Actual/360
+ */
+
+calculation DayCountFractionEnum.ACT_360 <"'2006 ISDA Definition Article 4 section 4.16(e): if “Actual/360”, “Act/360” or “A/360” is specified, the actual number of days in the Calculation Period or Compounding Period in respect of which payment is being made divided by 360.">
+{
+	number:  daysInPeriod / 360
+}
+
+arguments DayCountFractionEnum.ACT_360 <"The arguments to calculate the Actual/360 day count fraction.">
+{
+	daysInPeriod : is DaysInPeriod( InterestRatePayout -> calculationPeriodDates ) -> days
+}
+
+/*************************
+ * DayCountFraction 30/360
+ */
+
+calculation DayCountFractionEnum._30_360 <"2006 ISDA Definition Article 4 section 4.16(f): if “30/360”, “360/360” or “Bond Basis” is specified, the number of days in the Calculation Period or Compounding Period in respect of which payment is being made divided by 360, calculated on a formula basis as follows:[[360 x (Y2 - Y1)] + [30 x (M2 - M1)] + (D2 - D1)]/360.">
+{
+	number: (360 * (endYear - startYear) + 30 * (endMonth - startMonth) + (endDay - startDay)) / 360
+}
+
+arguments DayCountFractionEnum._30_360 <"The arguments to calculate the 30E/360 day count fraction. 2006 ISDA Definition Article 4 section 4.16(g). 'Y1' is the year, expressed as a number, in which the first day of the Calculation Period or Compounding Period falls; 'Y2' is the year, expressed as a number, in which the day immediately following the last day included in the Calculation Period or Compounding Period falls; 'M1' is the calendar month, expressed as a number, in which the first day of the Calculation Period or Compounding Period falls; 'M2' is the calendar month, expressed as a number, in which the day immediately following the last day included in the Calculation Period or Compounding Period falls; 'D1' is the first calendar day, expressed as a number, of the Calculation Period or Compounding Period, unless such number would be 31, in which case D1 will be 30; and 'D2' is the calendar day, expressed as a number, immediately following the last day included in the Calculation Period or Compounding Period, unless such number would be 31 and D1 is greater than 29, in which case D2 will be 30.">
+{
+	alias period CalculationPeriod( InterestRatePayout -> calculationPeriodDates )
+
+	endYear : is period -> endDate -> year
+	startYear : is period -> startDate -> year
+	endMonth : is period -> endDate -> month
+	startMonth : is period -> startDate -> month
+	startDay : is Min( period -> startDate -> day, 30 )
+	endDay : is if period -> startDate -> day > 29 then Min( period -> endDate -> day, 30 ) else period -> endDate -> day
+}
+
+/**************************
+ * DayCountFraction 30E/360
+ */
+
+calculation DayCountFractionEnum._30E_360 <"2006 ISDA Definition Article 4 section 4.16(g): If '30E/360' or 'Eurobond Basis' is specified, the number of days in the Calculation Period or Compounding Period in respect of which payment is being made divided by 360, calculated on a formula basis as follows:[[360 x (Y2 - Y1)] + [30 x (M2 - M1)] + (D2 - D1)]/360.">
+{
+	number: (360 * (endYear - startYear) + 30 * (endMonth - startMonth) + (endDay - startDay)) / 360
+}
+
+arguments DayCountFractionEnum._30E_360 <"The arguments to calculate the 30E/360 day count fraction. 2006 ISDA Definition Article 4 section 4.16(g). 'Y1' is the year, expressed as a number, in which the first day of the Calculation Period or Compounding Period falls; 'Y2' is the year, expressed as a number, in which the day immediately following the last day included in the Calculation Period or Compounding Period falls; 'M1' is the calendar month, expressed as a number, in which the first day of the Calculation Period or Compounding Period falls; 'M2' is the calendar month, expressed as a number, in which the day immediately following the last day included in the Calculation Period or Compounding Period falls; 'D1' is the first calendar day, expressed as a number, of the Calculation Period or Compounding Period, unless such number would be 31, in which case D1 will be 30; and 'D2' is the calendar day, expressed as a number, immediately following the last day included in the Calculation Period or Compounding Period, unless such number would be 31, in which case D2 will be 30.">
+{
+	alias period CalculationPeriod( InterestRatePayout -> calculationPeriodDates )
+
+	endYear : is period -> endDate -> year
+	startYear : is period -> startDate -> year
+	endMonth : is period -> endDate -> month
+	startMonth : is period -> startDate -> month
+	startDay : is Min( period -> startDate -> day, 30 )
+	endDay : is Min( period -> endDate -> day, 30 )
+}
+
+function CalculationPeriod( calculationPeriodDates CalculationPeriodDates ) <"2006 ISDA Definition Section 4.13. 'Calculation Period' means, in respect of a Swap Transaction and a party, each period from, and including, one Period End Date of that party to, but excluding, the next following applicable Period End Date during the Term of the Swap Transaction, except that (a) the initial Calculation Period for the party will commence on, and include, the Effective Date and (b) the final Calculation Period for the party will end on, but exclude, the Termination Date.">
+{
+	startDate date;
+	endDate date;
+}
+
+function GetRateSchedule( floatingRateCalculation FloatingRateCalculation )
+{
+	schedule SpreadSchedule;
+}
+
+function ResolveRateIndex( index FloatingRateIndexEnum ) <"The function to specify that the floating rate index enumeration will be expressed as a number once the rate is observed.">
+{
+	rate number;
+}
+
+function DaysInPeriod( calculationPeriodDates CalculationPeriodDates )
+{
+	days int;
+}

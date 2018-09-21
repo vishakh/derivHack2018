@@ -1,0 +1,7 @@
+@startuml
+
+    class MessageInformationValidator [[MessageInformationValidator.html]] {
+        +validate(MessageInformation): ValidationResult<MessageInformation>
+    }
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+    class MultipleExercise [[MultipleExercise.html]] {
+        +getMaximumNotionalAmount(): BigDecimal
+        +getMaximumNumberOfOptions(): BigDecimal
+        +toBuilder(): MultipleExercise.MultipleExerciseBuilder
+        {static} +builder(): MultipleExercise.MultipleExerciseBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

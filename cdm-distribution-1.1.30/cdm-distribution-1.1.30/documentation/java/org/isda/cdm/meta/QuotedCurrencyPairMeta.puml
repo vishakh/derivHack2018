@@ -1,0 +1,12 @@
+@startuml
+
+    class QuotedCurrencyPairMeta [[QuotedCurrencyPairMeta.html]] {
+        +dataRules(): List<Validator<QuotedCurrencyPair>>
+        +choiceRuleValidators(): List<Validator<QuotedCurrencyPair>>
+        +getOutMappings(): Multimap<String, OutMapping<QuotedCurrencyPair, ?>>
+        +getQualifyFunctions(): List<Function<QuotedCurrencyPair, QualifyResult>>
+        +validator(): Validator<QuotedCurrencyPair>
+        +onlyExistsValidator(): ValidatorWithArg<QuotedCurrencyPair, String>
+    }
+
+@enduml

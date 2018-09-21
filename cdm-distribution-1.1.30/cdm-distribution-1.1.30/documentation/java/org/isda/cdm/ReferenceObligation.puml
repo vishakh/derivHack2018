@@ -1,0 +1,18 @@
+@startuml
+
+    class ReferenceObligation [[ReferenceObligation.html]] {
+        +getBond(): Bond
+        +getConvertibleBond(): ConvertibleBond
+        +getGuarantor(): LegalEntity
+        +getGuarantorReference(): String
+        +getLoan(): Loan
+        +getMortgage(): Mortgage
+        +getPrimaryObligor(): LegalEntity
+        +getPrimaryObligorReference(): String
+        +getStandardReferenceObligation(): Boolean
+        +toBuilder(): ReferenceObligation.ReferenceObligationBuilder
+        {static} +builder(): ReferenceObligation.ReferenceObligationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class DateInstancesChoiceRule [[DateInstancesChoiceRule.html]] {
+        +validate(DateInstances): ValidationResult<DateInstances>
+    }
+
+@enduml

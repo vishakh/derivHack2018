@@ -1,0 +1,23 @@
+@startuml
+
+    class EventEffect.EventEffectBuilder [[EventEffect.EventEffectBuilder.html]] {
+        +getContract(): List<String>
+        +getContractReference(): List<String>
+        +getEffectedContract(): List<String>
+        +getEffectedContractReference(): List<String>
+        +getEffectedEvent(): String
+        +getListedProduct(): List<String>
+        +getPayment(): List<String>
+        +getTransfer(): List<String>
+        +addContract(String): EventEffect.EventEffectBuilder
+        +addContractReference(String): EventEffect.EventEffectBuilder
+        +addEffectedContract(String): EventEffect.EventEffectBuilder
+        +addEffectedContractReference(String): EventEffect.EventEffectBuilder
+        +setEffectedEvent(String): EventEffect.EventEffectBuilder
+        +addListedProduct(String): EventEffect.EventEffectBuilder
+        +addPayment(String): EventEffect.EventEffectBuilder
+        +addTransfer(String): EventEffect.EventEffectBuilder
+        +build(): EventEffect
+    }
+
+@enduml

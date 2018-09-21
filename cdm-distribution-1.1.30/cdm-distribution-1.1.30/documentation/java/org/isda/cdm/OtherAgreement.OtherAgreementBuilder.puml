@@ -1,0 +1,21 @@
+@startuml
+
+    class OtherAgreement.OtherAgreementBuilder [[OtherAgreement.OtherAgreementBuilder.html]] {
+        +getDate(): LocalDate
+        +getIdentifier(): String
+        +getIdentifierScheme(): String
+        +getType(): String
+        +getTypeScheme(): String
+        +getVersion(): String
+        +getVersionScheme(): String
+        +setDate(LocalDate): OtherAgreement.OtherAgreementBuilder
+        +setIdentifier(String): OtherAgreement.OtherAgreementBuilder
+        +setIdentifierScheme(String): OtherAgreement.OtherAgreementBuilder
+        +setType(String): OtherAgreement.OtherAgreementBuilder
+        +setTypeScheme(String): OtherAgreement.OtherAgreementBuilder
+        +setVersion(String): OtherAgreement.OtherAgreementBuilder
+        +setVersionScheme(String): OtherAgreement.OtherAgreementBuilder
+        +build(): OtherAgreement
+    }
+
+@enduml

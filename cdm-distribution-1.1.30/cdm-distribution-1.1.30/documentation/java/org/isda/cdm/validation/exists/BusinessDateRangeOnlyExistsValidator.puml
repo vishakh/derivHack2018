@@ -1,0 +1,7 @@
+@startuml
+
+    class BusinessDateRangeOnlyExistsValidator [[BusinessDateRangeOnlyExistsValidator.html]] {
+        +validate(BusinessDateRange, String): ValidationResult<BusinessDateRange>
+    }
+
+@enduml

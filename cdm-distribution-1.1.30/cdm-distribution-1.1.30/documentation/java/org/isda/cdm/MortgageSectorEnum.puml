@@ -1,0 +1,10 @@
+@startuml
+
+    enum MortgageSectorEnum [[MortgageSectorEnum.html]] {
+        {static} +ABS
+        {static} +CDO
+        {static} +CMBS
+        {static} +RMBS
+    }
+
+@enduml

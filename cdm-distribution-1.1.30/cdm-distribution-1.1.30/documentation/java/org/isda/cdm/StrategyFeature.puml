@@ -1,0 +1,11 @@
+@startuml
+
+    class StrategyFeature [[StrategyFeature.html]] {
+        +getCalendarSpread(): CalendarSpread
+        +getStrikeSpread(): StrikeSpread
+        +toBuilder(): StrategyFeature.StrategyFeatureBuilder
+        {static} +builder(): StrategyFeature.StrategyFeatureBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

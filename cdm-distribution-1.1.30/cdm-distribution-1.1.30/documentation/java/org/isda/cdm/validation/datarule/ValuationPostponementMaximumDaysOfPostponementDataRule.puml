@@ -1,0 +1,7 @@
+@startuml
+
+    class ValuationPostponementMaximumDaysOfPostponementDataRule [[ValuationPostponementMaximumDaysOfPostponementDataRule.html]] {
+        +validate(FallbackReferencePrice): ValidationResult<FallbackReferencePrice>
+    }
+
+@enduml

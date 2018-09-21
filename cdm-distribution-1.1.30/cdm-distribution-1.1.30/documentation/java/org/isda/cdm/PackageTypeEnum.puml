@@ -1,0 +1,14 @@
+@startuml
+
+    enum PackageTypeEnum [[PackageTypeEnum.html]] {
+        {static} +BUTTERFLY
+        {static} +CALENDAR_ROLL
+        {static} +CALENDAR_SPREAD
+        {static} +CUSTOM
+        {static} +INDEX_ROLL
+        {static} +ONE_CANCELS_OTHERS
+        {static} +SWAP_SPREAD
+        {static} +SWITCH
+    }
+
+@enduml

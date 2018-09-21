@@ -1,0 +1,7 @@
+@startuml
+
+    class ReferenceObligationChoice2ChoiceRule [[ReferenceObligationChoice2ChoiceRule.html]] {
+        +validate(ReferenceObligation): ValidationResult<ReferenceObligation>
+    }
+
+@enduml

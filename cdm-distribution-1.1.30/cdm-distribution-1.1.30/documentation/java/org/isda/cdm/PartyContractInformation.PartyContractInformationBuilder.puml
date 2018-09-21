@@ -1,0 +1,13 @@
+@startuml
+
+    class PartyContractInformation.PartyContractInformationBuilder [[PartyContractInformation.PartyContractInformationBuilder.html]] {
+        +getNaturalPersonRole(): List<NaturalPersonRole.NaturalPersonRoleBuilder>
+        +getOrCreateNaturalPersonRole(int): NaturalPersonRole.NaturalPersonRoleBuilder
+        +getPartyReference(): String
+        +addNaturalPersonRole(NaturalPersonRole): PartyContractInformation.PartyContractInformationBuilder
+        +addNaturalPersonRoleBuilder(NaturalPersonRole.NaturalPersonRoleBuilder): PartyContractInformation.PartyContractInformationBuilder
+        +setPartyReference(String): PartyContractInformation.PartyContractInformationBuilder
+        +build(): PartyContractInformation
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class IsDerivedObservation [[IsDerivedObservation.html]] {
+        +apply(Event): QualifyResult
+    }
+
+@enduml

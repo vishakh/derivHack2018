@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractualQuantityValidator [[ContractualQuantityValidator.html]] {
+        +validate(ContractualQuantity): ValidationResult<ContractualQuantity>
+    }
+
+@enduml

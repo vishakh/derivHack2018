@@ -1,0 +1,9 @@
+@startuml
+
+    enum MatrixTypeEnum [[MatrixTypeEnum.html]] {
+        {static} +CREDIT_DERIVATIVES_PHYSICAL_SETTLEMENT_MATRIX
+        {static} +EQUITY_DERIVATIVES_MATRIX
+        {static} +SETTLEMENT_MATRIX
+    }
+
+@enduml

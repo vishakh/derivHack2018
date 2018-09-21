@@ -1,0 +1,23 @@
+@startuml
+
+    class Resource [[Resource.html]] {
+        +getComments(): String
+        +getLanguage(): String
+        +getLanguageScheme(): String
+        +getLength(): ResourceLength
+        +getMimeType(): String
+        +getMimeTypeScheme(): String
+        +getName(): String
+        +getResourceId(): String
+        +getResourceIdScheme(): String
+        +getResourceType(): ResourceTypeEnum
+        +getResourceTypeScheme(): String
+        +getSizeInBytes(): BigDecimal
+        +getString(): String
+        +getUrl(): String
+        +toBuilder(): Resource.ResourceBuilder
+        {static} +builder(): Resource.ResourceBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

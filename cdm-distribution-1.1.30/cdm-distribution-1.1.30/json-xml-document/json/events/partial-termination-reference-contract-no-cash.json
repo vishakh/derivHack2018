@@ -1,0 +1,62 @@
+{
+  "effectiveDate" : "2018-03-15",
+  "eventDate" : "2018-03-14",
+  "eventEffect" : {
+    "contractReference" : [ "734f5286" ],
+    "effectedContractReference" : [ "734ede27" ],
+    "effectedEvent" : "3d198d3c"
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "00426D8TH894"
+    },
+    "version" : 1
+  },
+  "eventQualifier" : "PartialTermination",
+  "intent" : "PARTIAL_TERMINATION",
+  "party" : [ {
+    "id" : "gfr5683d",
+    "partyId" : [ "894500DM8LVOSCMP9T34" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "t65jdgwu",
+    "partyId" : [ "549300JZDC6K840D7F79" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "quantityChange" : [ {
+      "after" : {
+        "contractReference" : [ {
+          "identifierValue" : {
+            "identifier" : "TR346NHFDERLN",
+            "identifierScheme" : "http://www.party1.com/swaps/trade-id"
+          },
+          "version" : 2,
+          "partyReference" : "gfr5683d",
+          "rosettaKey" : "734f5286"
+        } ]
+      },
+      "before" : {
+        "contractReference" : [ {
+          "identifierValue" : {
+            "identifier" : "TR346NHFDERLN",
+            "identifierScheme" : "http://www.party1.com/swaps/trade-id"
+          },
+          "version" : 1,
+          "partyReference" : "gfr5683d",
+          "rosettaKey" : "734ede27"
+        } ]
+      },
+      "change" : [ {
+        "notionalAmount" : {
+          "amount" : -5000000,
+          "currency" : "USD"
+        }
+      } ]
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2018-03-14T18:13:51"
+  },
+  "rosettaKey" : "3d198d3c"
+}

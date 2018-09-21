@@ -1,0 +1,12 @@
+@startuml
+
+    class StubPeriodMeta [[StubPeriodMeta.html]] {
+        +dataRules(): List<Validator<StubPeriod>>
+        +choiceRuleValidators(): List<Validator<StubPeriod>>
+        +getOutMappings(): Multimap<String, OutMapping<StubPeriod, ?>>
+        +getQualifyFunctions(): List<Function<StubPeriod, QualifyResult>>
+        +validator(): Validator<StubPeriod>
+        +onlyExistsValidator(): ValidatorWithArg<StubPeriod, String>
+    }
+
+@enduml

@@ -1,0 +1,92 @@
+{
+  "eventDate" : "2018-03-20",
+  "eventEffect" : {
+    "effectedEvent" : "4841896b",
+    "payment" : [ "61110b5b" ]
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "payment-1"
+    }
+  },
+  "eventQualifier" : "Payment",
+  "lineage" : {
+    "contractReference" : [ {
+      "identifierValue" : {
+        "identifier" : "TW9235"
+      },
+      "issuer" : "rty569ks"
+    }, {
+      "identifierValue" : {
+        "identifier" : "SW2000"
+      },
+      "issuer" : "e6785mdo"
+    } ],
+    "eventReference" : [ {
+      "identifierValue" : {
+        "identifier" : "reset-1"
+      }
+    } ]
+  },
+  "messageInformation" : {
+    "messageId" : "1486297",
+    "messageIdScheme" : "http://www.party1.com/message-id",
+    "sentBy" : "894500DM8LVOSCMP9T34",
+    "sentTo" : "49300JZDC6K840D7F79"
+  },
+  "party" : [ {
+    "id" : "rty569ks",
+    "partyId" : [ "894500DM8LVOSCMP9T34" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "e6785mdo",
+    "partyId" : [ "549300JZDC6K840D7F79" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "payment" : [ {
+      "payerReceiver" : {
+        "payerPartyReference" : "e6785mdo",
+        "receiverPartyReference" : "rty569ks"
+      },
+      "grossCashflow" : [ {
+        "payerReceiver" : {
+          "payerPartyReference" : "e6785mdo",
+          "receiverPartyReference" : "rty569ks"
+        },
+        "cashflowAmount" : {
+          "amount" : 7800.00,
+          "currency" : "EUR"
+        }
+      }, {
+        "payerReceiver" : {
+          "payerPartyReference" : "rty569ks",
+          "receiverPartyReference" : "e6785mdo"
+        },
+        "cashflowAmount" : {
+          "amount" : 2800.00,
+          "currency" : "EUR"
+        }
+      } ],
+      "paymentAmount" : {
+        "amount" : 5000.00,
+        "currency" : "EUR"
+      },
+      "paymentDate" : {
+        "dateAdjustments" : {
+          "businessCenters" : {
+            "businessCenter" : [ "EUTA" ]
+          },
+          "businessDayConvention" : "MODFOLLOWING"
+        },
+        "unadjustedDate" : "2018-03-28"
+      },
+      "paymentStatus" : "PENDING",
+      "rosettaKey" : "61110b5b"
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2018-03-20T18:13:51"
+  },
+  "rosettaKey" : "4841896b"
+}

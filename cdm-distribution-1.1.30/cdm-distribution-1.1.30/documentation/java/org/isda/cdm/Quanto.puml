@@ -1,0 +1,11 @@
+@startuml
+
+    class Quanto [[Quanto.html]] {
+        +getFxRate(): List<FxRate>
+        +getFxSpotRateSource(): FxSpotRateSource
+        +toBuilder(): Quanto.QuantoBuilder
+        {static} +builder(): Quanto.QuantoBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

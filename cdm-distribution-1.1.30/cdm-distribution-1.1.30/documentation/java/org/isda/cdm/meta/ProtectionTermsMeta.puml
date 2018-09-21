@@ -1,0 +1,12 @@
+@startuml
+
+    class ProtectionTermsMeta [[ProtectionTermsMeta.html]] {
+        +dataRules(): List<Validator<ProtectionTerms>>
+        +choiceRuleValidators(): List<Validator<ProtectionTerms>>
+        +getOutMappings(): Multimap<String, OutMapping<ProtectionTerms, ?>>
+        +getQualifyFunctions(): List<Function<ProtectionTerms, QualifyResult>>
+        +validator(): Validator<ProtectionTerms>
+        +onlyExistsValidator(): ValidatorWithArg<ProtectionTerms, String>
+    }
+
+@enduml

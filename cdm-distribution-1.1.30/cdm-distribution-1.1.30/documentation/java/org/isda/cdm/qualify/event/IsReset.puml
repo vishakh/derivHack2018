@@ -1,0 +1,7 @@
+@startuml
+
+    class IsReset [[IsReset.html]] {
+        +apply(Event): QualifyResult
+    }
+
+@enduml

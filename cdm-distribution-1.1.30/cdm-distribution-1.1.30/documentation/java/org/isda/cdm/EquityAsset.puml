@@ -1,0 +1,10 @@
+@startuml
+
+    class EquityAsset [[EquityAsset.html]] {
+        +EquityAsset(EquityAsset.EquityAssetBuilder)
+        +toBuilder(): EquityAsset.EquityAssetBuilder
+        {static} +builder(): EquityAsset.EquityAssetBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class InterestShortFallValidator [[InterestShortFallValidator.html]] {
+        +validate(InterestShortFall): ValidationResult<InterestShortFall>
+    }
+
+@enduml

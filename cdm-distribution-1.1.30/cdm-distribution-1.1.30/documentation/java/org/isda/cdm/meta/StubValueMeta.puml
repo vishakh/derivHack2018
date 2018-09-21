@@ -1,0 +1,12 @@
+@startuml
+
+    class StubValueMeta [[StubValueMeta.html]] {
+        +dataRules(): List<Validator<StubValue>>
+        +choiceRuleValidators(): List<Validator<StubValue>>
+        +getOutMappings(): Multimap<String, OutMapping<StubValue, ?>>
+        +getQualifyFunctions(): List<Function<StubValue, QualifyResult>>
+        +validator(): Validator<StubValue>
+        +onlyExistsValidator(): ValidatorWithArg<StubValue, String>
+    }
+
+@enduml

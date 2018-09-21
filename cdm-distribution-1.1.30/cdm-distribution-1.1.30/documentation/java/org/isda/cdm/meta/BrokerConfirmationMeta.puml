@@ -1,0 +1,12 @@
+@startuml
+
+    class BrokerConfirmationMeta [[BrokerConfirmationMeta.html]] {
+        +dataRules(): List<Validator<BrokerConfirmation>>
+        +choiceRuleValidators(): List<Validator<BrokerConfirmation>>
+        +getOutMappings(): Multimap<String, OutMapping<BrokerConfirmation, ?>>
+        +getQualifyFunctions(): List<Function<BrokerConfirmation, QualifyResult>>
+        +validator(): Validator<BrokerConfirmation>
+        +onlyExistsValidator(): ValidatorWithArg<BrokerConfirmation, String>
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class ObservationSource.ObservationSourceBuilder [[ObservationSource.ObservationSourceBuilder.html]] {
+        +getCurve(): Curve.CurveBuilder
+        +getOrCreateCurve(): Curve.CurveBuilder
+        +getInformationSource(): InformationSource.InformationSourceBuilder
+        +getOrCreateInformationSource(): InformationSource.InformationSourceBuilder
+        +setCurve(Curve): ObservationSource.ObservationSourceBuilder
+        +setCurveBuilder(Curve.CurveBuilder): ObservationSource.ObservationSourceBuilder
+        +setInformationSource(InformationSource): ObservationSource.ObservationSourceBuilder
+        +setInformationSourceBuilder(InformationSource.InformationSourceBuilder): ObservationSource.ObservationSourceBuilder
+        +build(): ObservationSource
+    }
+
+@enduml

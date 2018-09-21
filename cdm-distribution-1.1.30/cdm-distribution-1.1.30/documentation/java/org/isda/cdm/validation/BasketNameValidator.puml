@@ -1,0 +1,7 @@
+@startuml
+
+    class BasketNameValidator [[BasketNameValidator.html]] {
+        +validate(BasketName): ValidationResult<BasketName>
+    }
+
+@enduml

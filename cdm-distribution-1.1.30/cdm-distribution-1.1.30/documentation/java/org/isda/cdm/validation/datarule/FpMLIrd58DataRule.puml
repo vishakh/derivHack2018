@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLIrd58DataRule [[FpMLIrd58DataRule.html]] {
+        +validate(CalculationPeriodFrequency): ValidationResult<CalculationPeriodFrequency>
+    }
+
+@enduml

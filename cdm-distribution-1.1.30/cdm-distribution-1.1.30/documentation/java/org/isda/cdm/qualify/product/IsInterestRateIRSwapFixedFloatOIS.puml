@@ -1,0 +1,7 @@
+@startuml
+
+    class IsInterestRateIRSwapFixedFloatOIS [[IsInterestRateIRSwapFixedFloatOIS.html]] {
+        +apply(EconomicTerms): QualifyResult
+    }
+
+@enduml

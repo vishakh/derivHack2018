@@ -1,0 +1,10 @@
+@startuml
+
+    class ExtendibleProvisionAdjustedDates [[ExtendibleProvisionAdjustedDates.html]] {
+        +getExtensionEvent(): List<ExtensionEvent>
+        +toBuilder(): ExtendibleProvisionAdjustedDates.ExtendibleProvisionAdjustedDatesBuilder
+        {static} +builder(): ExtendibleProvisionAdjustedDates.ExtendibleProvisionAdjustedDatesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

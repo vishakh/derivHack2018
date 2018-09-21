@@ -1,0 +1,11 @@
+@startuml
+
+    enum CalculationAgentPartyEnum [[CalculationAgentPartyEnum.html]] {
+        {static} +EXERCISING_PARTY
+        {static} +NON_EXERCISING_PARTY
+        {static} +AS_SPECIFIED_IN_MASTER_AGREEMENT
+        {static} +AS_SPECIFIED_IN_STANDARD_TERMS_SUPPLEMENT
+        {static} +BOTH
+    }
+
+@enduml

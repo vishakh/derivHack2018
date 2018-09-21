@@ -1,0 +1,7 @@
+@startuml
+
+    class MultipleExerciseValidator [[MultipleExerciseValidator.html]] {
+        +validate(MultipleExercise): ValidationResult<MultipleExercise>
+    }
+
+@enduml

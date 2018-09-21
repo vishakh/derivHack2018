@@ -1,0 +1,12 @@
+@startuml
+
+    class InterestRate [[InterestRate.html]] {
+        +getFixedRate(): Schedule
+        +getFloatingRate(): FloatingRateCalculation
+        +getInflationRate(): InflationRateCalculation
+        +toBuilder(): InterestRate.InterestRateBuilder
+        {static} +builder(): InterestRate.InterestRateBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

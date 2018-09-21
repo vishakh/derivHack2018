@@ -1,0 +1,189 @@
+{
+  "effectiveDate" : "2018-03-15",
+  "eventDate" : "2018-03-14",
+  "eventEffect" : {
+    "contract" : [ "87fba0d4" ],
+    "effectedContract" : [ "42a5a147" ],
+    "effectedEvent" : "5fcf498d"
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "00426D8TH894"
+    },
+    "version" : 1
+  },
+  "eventQualifier" : "Termination",
+  "intent" : "TERMINATION",
+  "party" : [ {
+    "id" : "p1",
+    "partyId" : [ "894500DM8LVOSCMP9T34" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "p2",
+    "partyId" : [ "549300JZDC6K840D7F79" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "quantityChange" : [ {
+      "after" : {
+        "contract" : [ {
+          "contractIdentifier" : [ {
+            "identifierValue" : {
+              "identifier" : "IRG858TH30",
+              "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+            },
+            "partyReference" : "p1"
+          } ],
+          "contractualProduct" : {
+            "economicTerms" : {
+              "payout" : {
+                "cashflow" : [ {
+                  "payerReceiver" : {
+                    "payerPartyReference" : "p1",
+                    "receiverPartyReference" : "p2"
+                  },
+                  "cashflowAmount" : {
+                    "amount" : 17000,
+                    "currency" : "EUR"
+                  },
+                  "rosettaKeyValue" : "abbcfb8a"
+                } ],
+                "creditDefaultPayout" : {
+                  "generalTerms" : {
+                    "buyerSeller" : {
+                      "buyerPartyReference" : "p1",
+                      "sellerPartyReference" : "p2"
+                    },
+                    "indexReferenceInformation" : {
+                      "excludedReferenceEntity" : [ {
+                        "name" : "TESCO PLC"
+                      } ],
+                      "indexAnnexVersion" : 1,
+                      "indexName" : "Dow Jones iTraxx Europe Consumers Series 2 Version 1",
+                      "indexSeries" : 2
+                    }
+                  },
+                  "protectionTerms" : {
+                    "notionalAmount" : {
+                      "amount" : 0,
+                      "currency" : "USD"
+                    }
+                  },
+                  "rosettaKeyValue" : "d0906188"
+                },
+                "interestRatePayout" : [ {
+                  "calculationPeriodDates" : {
+                    "terminationDate" : {
+                      "unadjustedDate" : "2010-03-20"
+                    }
+                  },
+                  "payerReceiver" : {
+                    "payerPartyReference" : "p1",
+                    "receiverPartyReference" : "p2"
+                  },
+                  "rosettaKeyValue" : "c27c22ac"
+                } ]
+              },
+              "rosettaKeyValue" : "d8223292"
+            }
+          },
+          "documentation" : {
+            "masterConfirmation" : {
+              "masterConfirmationDate" : "2004-10-11",
+              "masterConfirmationType" : "DJ_I_TRAXX_EUROPE"
+            }
+          },
+          "state" : "TERMINATED",
+          "tradeDate" : {
+            "date" : "2004-11-03"
+          },
+          "rosettaKey" : "87fba0d4"
+        } ]
+      },
+      "before" : {
+        "contract" : [ {
+          "contractIdentifier" : [ {
+            "identifierValue" : {
+              "identifier" : "IRG858TH30",
+              "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+            },
+            "partyReference" : "p1"
+          } ],
+          "contractualProduct" : {
+            "economicTerms" : {
+              "payout" : {
+                "cashflow" : [ {
+                  "payerReceiver" : {
+                    "payerPartyReference" : "p1",
+                    "receiverPartyReference" : "p2"
+                  },
+                  "cashflowAmount" : {
+                    "amount" : 17000,
+                    "currency" : "EUR"
+                  },
+                  "rosettaKeyValue" : "abbcfb8a"
+                } ],
+                "creditDefaultPayout" : {
+                  "generalTerms" : {
+                    "buyerSeller" : {
+                      "buyerPartyReference" : "p1",
+                      "sellerPartyReference" : "p2"
+                    },
+                    "indexReferenceInformation" : {
+                      "excludedReferenceEntity" : [ {
+                        "name" : "TESCO PLC"
+                      } ],
+                      "indexAnnexVersion" : 1,
+                      "indexName" : "Dow Jones iTraxx Europe Consumers Series 2 Version 1",
+                      "indexSeries" : 2
+                    }
+                  },
+                  "protectionTerms" : {
+                    "notionalAmount" : {
+                      "amount" : 25000000,
+                      "currency" : "USD"
+                    }
+                  },
+                  "rosettaKeyValue" : "6a17b9c8"
+                },
+                "interestRatePayout" : [ {
+                  "calculationPeriodDates" : {
+                    "terminationDate" : {
+                      "unadjustedDate" : "2010-03-20"
+                    }
+                  },
+                  "payerReceiver" : {
+                    "payerPartyReference" : "p1",
+                    "receiverPartyReference" : "p2"
+                  },
+                  "rosettaKeyValue" : "c27c22ac"
+                } ]
+              },
+              "rosettaKeyValue" : "2d347ad2"
+            }
+          },
+          "documentation" : {
+            "masterConfirmation" : {
+              "masterConfirmationDate" : "2004-10-11",
+              "masterConfirmationType" : "DJ_I_TRAXX_EUROPE"
+            }
+          },
+          "tradeDate" : {
+            "date" : "2004-11-03"
+          },
+          "rosettaKey" : "42a5a147"
+        } ]
+      },
+      "change" : [ {
+        "notionalAmount" : {
+          "amount" : -25000000,
+          "currency" : "USD"
+        }
+      } ]
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2018-03-14T18:13:51"
+  },
+  "rosettaKey" : "5fcf498d"
+}

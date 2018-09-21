@@ -1,0 +1,142 @@
+{
+  "eventDate" : "2018-02-20",
+  "eventEffect" : {
+    "contract" : [ "a68be02f" ],
+    "effectedEvent" : "d93363e8"
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "trd-123456"
+    }
+  },
+  "eventQualifier" : "NewTradeBusinessEvent",
+  "party" : [ {
+    "id" : "trg6836",
+    "legalEntity" : {
+      "name" : "XYZ Bank"
+    },
+    "partyId" : [ "XYZBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "zgr5867g",
+    "legalEntity" : {
+      "name" : "ABC Bank"
+    },
+    "partyId" : [ "ABCBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "primitive" : {
+    "inception" : [ {
+      "after" : {
+        "contract" : [ {
+          "calculationAgent" : {
+            "calculationAgentBusinessCenter" : "JPTO"
+          },
+          "contractIdentifier" : [ {
+            "identifierValue" : {
+              "identifier" : "56ERT7RHWE4",
+              "identifierScheme" : "http://www.fpml.org/coding-scheme/external/uti"
+            },
+            "partyReference" : "trg6836"
+          } ],
+          "contractualProduct" : {
+            "economicTerms" : {
+              "payout" : {
+                "creditDefaultPayout" : {
+                  "generalTerms" : {
+                    "buyerSeller" : {
+                      "buyerPartyReference" : "trg6836",
+                      "sellerPartyReference" : "zgr5867g"
+                    },
+                    "referenceInformation" : {
+                      "referenceEntity" : {
+                        "entityId" : "008FAQ",
+                        "id" : "uy6758",
+                        "name" : "Aiful Corporation"
+                      },
+                      "referenceObligation" : [ {
+                        "bond" : {
+                          "productIdentifierScheme" : "http://www.fpml.org/spec/2002/instrument-id-ISIN-1-0",
+                          "couponRate" : 0.02,
+                          "maturity" : "2004-01-26"
+                        },
+                        "primaryObligorReference" : "uy6758"
+                      } ]
+                    }
+                  },
+                  "protectionTerms" : {
+                    "creditEvents" : {
+                      "bankruptcy" : false,
+                      "governmentalIntervention" : true,
+                      "obligationAcceleration" : true,
+                      "obligationDefault" : false,
+                      "repudiationMoratorium" : true,
+                      "restructuring" : {
+                        "applicable" : true,
+                        "multipleHolderObligation" : true
+                      }
+                    },
+                    "id" : "pt-12345",
+                    "notionalAmount" : {
+                      "amount" : 500000000,
+                      "currency" : "JPY"
+                    }
+                  },
+                  "rosettaKeyValue" : "ede5c897"
+                },
+                "interestRatePayout" : [ {
+                  "calculationPeriodDates" : {
+                    "calculationPeriodFrequency" : {
+                      "rollConvention" : "_5"
+                    },
+                    "effectiveDate" : {
+                      "adjustableDate" : {
+                        "unadjustedDate" : "2002-12-05"
+                      }
+                    },
+                    "terminationDate" : {
+                      "unadjustedDate" : "2007-12-05"
+                    }
+                  },
+                  "id" : "fee-12345",
+                  "interestRate" : {
+                    "fixedRate" : {
+                      "initialValue" : 0.007
+                    }
+                  },
+                  "payerReceiver" : {
+                    "payerPartyReference" : "trg6836",
+                    "receiverPartyReference" : "zgr5867g"
+                  },
+                  "paymentDates" : {
+                    "firstPaymentDate" : "2003-03-05",
+                    "paymentFrequency" : {
+                      "period" : "M",
+                      "periodMultiplier" : 3
+                    }
+                  },
+                  "rosettaKeyValue" : "282dac72"
+                } ]
+              },
+              "rosettaKeyValue" : "e91de0a5"
+            }
+          },
+          "documentation" : {
+            "masterConfirmation" : {
+              "masterConfirmationDate" : "2003-06-06",
+              "masterConfirmationType" : "ISDA_2003_CREDIT_JAPAN"
+            }
+          },
+          "tradeDate" : {
+            "date" : "2002-12-04"
+          },
+          "rosettaKey" : "a68be02f"
+        } ]
+      }
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2018-02-20T18:13:51"
+  },
+  "rosettaKey" : "d93363e8"
+}

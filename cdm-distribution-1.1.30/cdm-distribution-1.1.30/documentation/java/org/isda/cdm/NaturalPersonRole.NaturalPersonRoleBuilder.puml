@@ -1,0 +1,13 @@
+@startuml
+
+    class NaturalPersonRole.NaturalPersonRoleBuilder [[NaturalPersonRole.NaturalPersonRoleBuilder.html]] {
+        +getPersonReference(): String
+        +getRole(): NaturalPersonRoleEnum
+        +getRoleScheme(): String
+        +setPersonReference(String): NaturalPersonRole.NaturalPersonRoleBuilder
+        +setRole(NaturalPersonRoleEnum): NaturalPersonRole.NaturalPersonRoleBuilder
+        +setRoleScheme(String): NaturalPersonRole.NaturalPersonRoleBuilder
+        +build(): NaturalPersonRole
+    }
+
+@enduml

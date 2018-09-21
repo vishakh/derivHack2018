@@ -1,0 +1,33 @@
+@startuml
+
+    class Mortgage.MortgageBuilder [[Mortgage.MortgageBuilder.html]] {
+        +getDayCountFraction(): DayCountFractionEnum
+        +getDayCountFractionScheme(): String
+        +getInsurer(): Party.PartyBuilder
+        +getOrCreateInsurer(): Party.PartyBuilder
+        +getInsurerReference(): String
+        +getOriginalPrincipalAmount(): BigDecimal
+        +getPaymentFrequency(): Period.PeriodBuilder
+        +getOrCreatePaymentFrequency(): Period.PeriodBuilder
+        +getPool(): AssetPool.AssetPoolBuilder
+        +getOrCreatePool(): AssetPool.AssetPoolBuilder
+        +getSector(): MortgageSectorEnum
+        +getSectorScheme(): String
+        +getTranche(): String
+        +setDayCountFraction(DayCountFractionEnum): Mortgage.MortgageBuilder
+        +setDayCountFractionScheme(String): Mortgage.MortgageBuilder
+        +setInsurer(Party): Mortgage.MortgageBuilder
+        +setInsurerBuilder(Party.PartyBuilder): Mortgage.MortgageBuilder
+        +setInsurerReference(String): Mortgage.MortgageBuilder
+        +setOriginalPrincipalAmount(BigDecimal): Mortgage.MortgageBuilder
+        +setPaymentFrequency(Period): Mortgage.MortgageBuilder
+        +setPaymentFrequencyBuilder(Period.PeriodBuilder): Mortgage.MortgageBuilder
+        +setPool(AssetPool): Mortgage.MortgageBuilder
+        +setPoolBuilder(AssetPool.AssetPoolBuilder): Mortgage.MortgageBuilder
+        +setSector(MortgageSectorEnum): Mortgage.MortgageBuilder
+        +setSectorScheme(String): Mortgage.MortgageBuilder
+        +setTranche(String): Mortgage.MortgageBuilder
+        +build(): Mortgage
+    }
+
+@enduml

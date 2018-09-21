@@ -1,0 +1,7 @@
+@startuml
+
+    class ResolveRateIndexImpl [[ResolveRateIndexImpl.html]] {
+        +execute(FloatingRateIndexEnum): ResolveRateIndex.CalculationResult
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionDenominationValidator [[OptionDenominationValidator.html]] {
+        +validate(OptionDenomination): ValidationResult<OptionDenomination>
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class AssetPool.AssetPoolBuilder [[AssetPool.AssetPoolBuilder.html]] {
+        +getCurrentFactor(): BigDecimal
+        +getEffectiveDate(): LocalDate
+        +getInitialFactor(): BigDecimal
+        +getVersion(): String
+        +setCurrentFactor(BigDecimal): AssetPool.AssetPoolBuilder
+        +setEffectiveDate(LocalDate): AssetPool.AssetPoolBuilder
+        +setInitialFactor(BigDecimal): AssetPool.AssetPoolBuilder
+        +setVersion(String): AssetPool.AssetPoolBuilder
+        +build(): AssetPool
+    }
+
+@enduml

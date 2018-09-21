@@ -1,0 +1,14 @@
+@startuml
+
+    class FxFeature [[FxFeature.html]] {
+        +getComposite(): Composite
+        +getCrossCurrency(): Composite
+        +getQuanto(): Quanto
+        +getReferenceCurrency(): String
+        +getReferenceCurrencyScheme(): String
+        +toBuilder(): FxFeature.FxFeatureBuilder
+        {static} +builder(): FxFeature.FxFeatureBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+
+    class DateList [[DateList.html]] {
+        +getDate(): List<LocalDate>
+        +toBuilder(): DateList.DateListBuilder
+        {static} +builder(): DateList.DateListBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

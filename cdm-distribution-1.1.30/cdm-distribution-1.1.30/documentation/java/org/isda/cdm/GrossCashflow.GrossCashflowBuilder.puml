@@ -1,0 +1,19 @@
+@startuml
+
+    class GrossCashflow.GrossCashflowBuilder [[GrossCashflow.GrossCashflowBuilder.html]] {
+        +getCashflowAmount(): Money.MoneyBuilder
+        +getOrCreateCashflowAmount(): Money.MoneyBuilder
+        +getCashflowCalculation(): String
+        +getCashflowType(): CashflowTypeEnum
+        +getPayoutLineage(): PayoutLineage.PayoutLineageBuilder
+        +getOrCreatePayoutLineage(): PayoutLineage.PayoutLineageBuilder
+        +setCashflowAmount(Money): GrossCashflow.GrossCashflowBuilder
+        +setCashflowAmountBuilder(Money.MoneyBuilder): GrossCashflow.GrossCashflowBuilder
+        +setCashflowCalculation(String): GrossCashflow.GrossCashflowBuilder
+        +setCashflowType(CashflowTypeEnum): GrossCashflow.GrossCashflowBuilder
+        +setPayoutLineage(PayoutLineage): GrossCashflow.GrossCashflowBuilder
+        +setPayoutLineageBuilder(PayoutLineage.PayoutLineageBuilder): GrossCashflow.GrossCashflowBuilder
+        +build(): GrossCashflow
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class StrategyFeatureValidator [[StrategyFeatureValidator.html]] {
+        +validate(StrategyFeature): ValidationResult<StrategyFeature>
+    }
+
+@enduml

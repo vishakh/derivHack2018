@@ -1,0 +1,101 @@
+{
+  "effectiveDate" : "2018-03-15",
+  "eventDate" : "2018-03-14",
+  "eventEffect" : {
+    "contractReference" : [ "84fffd0" ],
+    "effectedContractReference" : [ "84fffd0" ],
+    "effectedEvent" : "d2acf97",
+    "payment" : [ "3fae3b4d", "cfb89358" ]
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "pterm12345"
+    },
+    "version" : 1
+  },
+  "eventQualifier" : "PartialTermination",
+  "intent" : "PARTIAL_TERMINATION",
+  "messageInformation" : {
+    "messageId" : "1486297",
+    "messageIdScheme" : "http://www.party1.com/message-id",
+    "sentBy" : "894500DM8LVOSCMP9T34",
+    "sentTo" : "49300JZDC6K840D7F79"
+  },
+  "party" : [ {
+    "id" : "g4789",
+    "partyId" : [ "894500DM8LVOSCMP9T34" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "xdf45",
+    "partyId" : [ "549300JZDC6K840D7F79" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "payment" : [ {
+      "payerReceiver" : {
+        "payerPartyReference" : "g4789",
+        "receiverPartyReference" : "xdf45"
+      },
+      "paymentAmount" : {
+        "amount" : 250,
+        "currency" : "EUR"
+      },
+      "paymentDate" : {
+        "adjustedDate" : "2018-02-09"
+      },
+      "rosettaKey" : "3fae3b4d"
+    }, {
+      "payerReceiver" : {
+        "payerPartyReference" : "xdf45",
+        "receiverPartyReference" : "g4789"
+      },
+      "paymentAmount" : {
+        "amount" : 5,
+        "currency" : "EUR"
+      },
+      "paymentDate" : {
+        "adjustedDate" : "2018-02-09"
+      },
+      "rosettaKey" : "cfb89358"
+    } ],
+    "quantityChange" : [ {
+      "after" : {
+        "contractReference" : [ {
+          "identifierValue" : {
+            "identifier" : "56ERT7RHWE4",
+            "identifierScheme" : "http://www.party1.com/swaps/trade-id"
+          },
+          "version" : 1,
+          "partyReference" : "g4789",
+          "rosettaKey" : "84fffd0"
+        } ]
+      },
+      "before" : {
+        "contractReference" : [ {
+          "identifierValue" : {
+            "identifier" : "56ERT7RHWE4",
+            "identifierScheme" : "http://www.party1.com/swaps/trade-id"
+          },
+          "version" : 1,
+          "partyReference" : "g4789",
+          "rosettaKey" : "84fffd0"
+        } ]
+      },
+      "change" : [ {
+        "notionalAmount" : {
+          "amount" : -200.00,
+          "currency" : "EUR"
+        }
+      }, {
+        "notionalAmount" : {
+          "amount" : -308.33,
+          "currency" : "USD"
+        }
+      } ]
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2018-03-14T18:13:51"
+  },
+  "rosettaKey" : "d2acf97"
+}

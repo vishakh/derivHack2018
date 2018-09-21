@@ -1,0 +1,12 @@
+@startuml
+
+    class EarlyTerminationProvisionMeta [[EarlyTerminationProvisionMeta.html]] {
+        +dataRules(): List<Validator<EarlyTerminationProvision>>
+        +choiceRuleValidators(): List<Validator<EarlyTerminationProvision>>
+        +getOutMappings(): Multimap<String, OutMapping<EarlyTerminationProvision, ?>>
+        +getQualifyFunctions(): List<Function<EarlyTerminationProvision, QualifyResult>>
+        +validator(): Validator<EarlyTerminationProvision>
+        +onlyExistsValidator(): ValidatorWithArg<EarlyTerminationProvision, String>
+    }
+
+@enduml

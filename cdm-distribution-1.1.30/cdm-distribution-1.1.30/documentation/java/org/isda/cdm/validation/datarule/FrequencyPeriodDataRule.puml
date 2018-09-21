@@ -1,0 +1,7 @@
+@startuml
+
+    class FrequencyPeriodDataRule [[FrequencyPeriodDataRule.html]] {
+        +validate(Frequency): ValidationResult<Frequency>
+    }
+
+@enduml

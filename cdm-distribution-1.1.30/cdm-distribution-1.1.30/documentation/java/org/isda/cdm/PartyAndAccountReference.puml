@@ -1,0 +1,11 @@
+@startuml
+
+    class PartyAndAccountReference [[PartyAndAccountReference.html]] {
+        +getAccountReference(): String
+        +getPartyReference(): String
+        +toBuilder(): PartyAndAccountReference.PartyAndAccountReferenceBuilder
+        {static} +builder(): PartyAndAccountReference.PartyAndAccountReferenceBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

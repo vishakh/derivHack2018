@@ -1,0 +1,11 @@
+@startuml
+
+    class TermsChangePrimitive [[TermsChangePrimitive.html]] {
+        +getAfter(): ContractOrContractReference
+        +getBefore(): ContractOrContractReference
+        +toBuilder(): TermsChangePrimitive.TermsChangePrimitiveBuilder
+        {static} +builder(): TermsChangePrimitive.TermsChangePrimitiveBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

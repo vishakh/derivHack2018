@@ -1,0 +1,25 @@
+@startuml
+
+    class RateObservation.RateObservationBuilder [[RateObservation.RateObservationBuilder.html]] {
+        +getAdjustedFixingDate(): LocalDate
+        +getForecastRate(): BigDecimal
+        +getId(): String
+        +getObservationWeight(): Integer
+        +getObservedRate(): BigDecimal
+        +getRateReference(): String
+        +getResetDate(): LocalDate
+        +getTreatedForecastRate(): BigDecimal
+        +getTreatedRate(): BigDecimal
+        +setAdjustedFixingDate(LocalDate): RateObservation.RateObservationBuilder
+        +setForecastRate(BigDecimal): RateObservation.RateObservationBuilder
+        +setId(String): RateObservation.RateObservationBuilder
+        +setObservationWeight(Integer): RateObservation.RateObservationBuilder
+        +setObservedRate(BigDecimal): RateObservation.RateObservationBuilder
+        +setRateReference(String): RateObservation.RateObservationBuilder
+        +setResetDate(LocalDate): RateObservation.RateObservationBuilder
+        +setTreatedForecastRate(BigDecimal): RateObservation.RateObservationBuilder
+        +setTreatedRate(BigDecimal): RateObservation.RateObservationBuilder
+        +build(): RateObservation
+    }
+
+@enduml

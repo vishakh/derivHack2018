@@ -1,0 +1,15 @@
+@startuml
+
+    class CalculationAgent.CalculationAgentBuilder [[CalculationAgent.CalculationAgentBuilder.html]] {
+        +getCalculationAgentBusinessCenter(): BusinessCenterEnum
+        +getCalculationAgentBusinessCenterScheme(): String
+        +getCalculationAgentParty(): CalculationAgentPartyEnum
+        +getCalculationAgentPartyReference(): List<String>
+        +setCalculationAgentBusinessCenter(BusinessCenterEnum): CalculationAgent.CalculationAgentBuilder
+        +setCalculationAgentBusinessCenterScheme(String): CalculationAgent.CalculationAgentBuilder
+        +setCalculationAgentParty(CalculationAgentPartyEnum): CalculationAgent.CalculationAgentBuilder
+        +addCalculationAgentPartyReference(String): CalculationAgent.CalculationAgentBuilder
+        +build(): CalculationAgent
+    }
+
+@enduml

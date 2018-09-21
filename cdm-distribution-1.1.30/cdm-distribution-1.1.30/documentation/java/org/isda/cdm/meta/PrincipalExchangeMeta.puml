@@ -1,0 +1,12 @@
+@startuml
+
+    class PrincipalExchangeMeta [[PrincipalExchangeMeta.html]] {
+        +dataRules(): List<Validator<PrincipalExchange>>
+        +choiceRuleValidators(): List<Validator<PrincipalExchange>>
+        +getOutMappings(): Multimap<String, OutMapping<PrincipalExchange, ?>>
+        +getQualifyFunctions(): List<Function<PrincipalExchange, QualifyResult>>
+        +validator(): Validator<PrincipalExchange>
+        +onlyExistsValidator(): ValidatorWithArg<PrincipalExchange, String>
+    }
+
+@enduml

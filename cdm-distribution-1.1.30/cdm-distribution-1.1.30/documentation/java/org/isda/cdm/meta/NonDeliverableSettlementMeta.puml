@@ -1,0 +1,12 @@
+@startuml
+
+    class NonDeliverableSettlementMeta [[NonDeliverableSettlementMeta.html]] {
+        +dataRules(): List<Validator<NonDeliverableSettlement>>
+        +choiceRuleValidators(): List<Validator<NonDeliverableSettlement>>
+        +getOutMappings(): Multimap<String, OutMapping<NonDeliverableSettlement, ?>>
+        +getQualifyFunctions(): List<Function<NonDeliverableSettlement, QualifyResult>>
+        +validator(): Validator<NonDeliverableSettlement>
+        +onlyExistsValidator(): ValidatorWithArg<NonDeliverableSettlement, String>
+    }
+
+@enduml

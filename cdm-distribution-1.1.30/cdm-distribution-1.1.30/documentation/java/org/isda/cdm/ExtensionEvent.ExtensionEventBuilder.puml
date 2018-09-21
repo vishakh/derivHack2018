@@ -1,0 +1,13 @@
+@startuml
+
+    class ExtensionEvent.ExtensionEventBuilder [[ExtensionEvent.ExtensionEventBuilder.html]] {
+        +getAdjustedExerciseDate(): LocalDate
+        +getAdjustedExtendedTerminationDate(): LocalDate
+        +getId(): String
+        +setAdjustedExerciseDate(LocalDate): ExtensionEvent.ExtensionEventBuilder
+        +setAdjustedExtendedTerminationDate(LocalDate): ExtensionEvent.ExtensionEventBuilder
+        +setId(String): ExtensionEvent.ExtensionEventBuilder
+        +build(): ExtensionEvent
+    }
+
+@enduml

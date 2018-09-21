@@ -1,0 +1,7 @@
+@startuml
+
+    class PaymentCalculationPeriodChoiceRule [[PaymentCalculationPeriodChoiceRule.html]] {
+        +validate(PaymentCalculationPeriod): ValidationResult<PaymentCalculationPeriod>
+    }
+
+@enduml

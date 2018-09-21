@@ -1,0 +1,29 @@
+@startuml
+
+    class CreditDefaultPayout.CreditDefaultPayoutBuilder [[CreditDefaultPayout.CreditDefaultPayoutBuilder.html]] {
+        +getCashSettlementTerms(): CashSettlementTerms.CashSettlementTermsBuilder
+        +getOrCreateCashSettlementTerms(): CashSettlementTerms.CashSettlementTermsBuilder
+        +getGeneralTerms(): GeneralTerms.GeneralTermsBuilder
+        +getOrCreateGeneralTerms(): GeneralTerms.GeneralTermsBuilder
+        +getId(): String
+        +getPhysicalSettlementTerms(): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        +getOrCreatePhysicalSettlementTerms(): PhysicalSettlementTerms.PhysicalSettlementTermsBuilder
+        +getProtectionTerms(): ProtectionTerms.ProtectionTermsBuilder
+        +getOrCreateProtectionTerms(): ProtectionTerms.ProtectionTermsBuilder
+        +getTransactedPrice(): TransactedPrice.TransactedPriceBuilder
+        +getOrCreateTransactedPrice(): TransactedPrice.TransactedPriceBuilder
+        +setCashSettlementTerms(CashSettlementTerms): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +setCashSettlementTermsBuilder(CashSettlementTerms.CashSettlementTermsBuilder): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +setGeneralTerms(GeneralTerms): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +setGeneralTermsBuilder(GeneralTerms.GeneralTermsBuilder): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +setId(String): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +setPhysicalSettlementTerms(PhysicalSettlementTerms): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +setPhysicalSettlementTermsBuilder(PhysicalSettlementTerms.PhysicalSettlementTermsBuilder): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +setProtectionTerms(ProtectionTerms): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +setProtectionTermsBuilder(ProtectionTerms.ProtectionTermsBuilder): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +setTransactedPrice(TransactedPrice): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +setTransactedPriceBuilder(TransactedPrice.TransactedPriceBuilder): CreditDefaultPayout.CreditDefaultPayoutBuilder
+        +build(): CreditDefaultPayout
+    }
+
+@enduml

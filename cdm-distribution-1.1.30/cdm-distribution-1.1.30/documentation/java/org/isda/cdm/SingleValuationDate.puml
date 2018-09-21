@@ -1,0 +1,10 @@
+@startuml
+
+    class SingleValuationDate [[SingleValuationDate.html]] {
+        +getBusinessDays(): Integer
+        +toBuilder(): SingleValuationDate.SingleValuationDateBuilder
+        {static} +builder(): SingleValuationDate.SingleValuationDateBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

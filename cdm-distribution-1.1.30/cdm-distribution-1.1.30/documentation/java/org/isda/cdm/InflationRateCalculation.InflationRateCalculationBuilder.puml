@@ -1,0 +1,27 @@
+@startuml
+
+    class InflationRateCalculation.InflationRateCalculationBuilder [[InflationRateCalculation.InflationRateCalculationBuilder.html]] {
+        +getFallbackBondApplicable(): Boolean
+        +getIndexSource(): String
+        +getIndexSourceScheme(): String
+        +getInflationLag(): Offset.OffsetBuilder
+        +getOrCreateInflationLag(): Offset.OffsetBuilder
+        +getInitialIndexLevel(): BigDecimal
+        +getInterpolationMethod(): InterpolationMethodEnum
+        +getInterpolationMethodScheme(): String
+        +getMainPublication(): String
+        +getMainPublicationScheme(): String
+        +setFallbackBondApplicable(Boolean): InflationRateCalculation.InflationRateCalculationBuilder
+        +setIndexSource(String): InflationRateCalculation.InflationRateCalculationBuilder
+        +setIndexSourceScheme(String): InflationRateCalculation.InflationRateCalculationBuilder
+        +setInflationLag(Offset): InflationRateCalculation.InflationRateCalculationBuilder
+        +setInflationLagBuilder(Offset.OffsetBuilder): InflationRateCalculation.InflationRateCalculationBuilder
+        +setInitialIndexLevel(BigDecimal): InflationRateCalculation.InflationRateCalculationBuilder
+        +setInterpolationMethod(InterpolationMethodEnum): InflationRateCalculation.InflationRateCalculationBuilder
+        +setInterpolationMethodScheme(String): InflationRateCalculation.InflationRateCalculationBuilder
+        +setMainPublication(String): InflationRateCalculation.InflationRateCalculationBuilder
+        +setMainPublicationScheme(String): InflationRateCalculation.InflationRateCalculationBuilder
+        +build(): InflationRateCalculation
+    }
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+
+    class FxSpotRateSource.FxSpotRateSourceBuilder [[FxSpotRateSource.FxSpotRateSourceBuilder.html]] {
+        +getFixingTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getOrCreateFixingTime(): BusinessCenterTime.BusinessCenterTimeBuilder
+        +getPrimaryRateSource(): InformationSource.InformationSourceBuilder
+        +getOrCreatePrimaryRateSource(): InformationSource.InformationSourceBuilder
+        +getSecondaryRateSource(): InformationSource.InformationSourceBuilder
+        +getOrCreateSecondaryRateSource(): InformationSource.InformationSourceBuilder
+        +setFixingTime(BusinessCenterTime): FxSpotRateSource.FxSpotRateSourceBuilder
+        +setFixingTimeBuilder(BusinessCenterTime.BusinessCenterTimeBuilder): FxSpotRateSource.FxSpotRateSourceBuilder
+        +setPrimaryRateSource(InformationSource): FxSpotRateSource.FxSpotRateSourceBuilder
+        +setPrimaryRateSourceBuilder(InformationSource.InformationSourceBuilder): FxSpotRateSource.FxSpotRateSourceBuilder
+        +setSecondaryRateSource(InformationSource): FxSpotRateSource.FxSpotRateSourceBuilder
+        +setSecondaryRateSourceBuilder(InformationSource.InformationSourceBuilder): FxSpotRateSource.FxSpotRateSourceBuilder
+        +build(): FxSpotRateSource
+    }
+
+@enduml

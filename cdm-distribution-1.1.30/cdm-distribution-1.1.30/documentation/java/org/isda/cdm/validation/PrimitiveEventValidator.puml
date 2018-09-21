@@ -1,0 +1,7 @@
+@startuml
+
+    class PrimitiveEventValidator [[PrimitiveEventValidator.html]] {
+        +validate(PrimitiveEvent): ValidationResult<PrimitiveEvent>
+    }
+
+@enduml

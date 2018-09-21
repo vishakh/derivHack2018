@@ -1,0 +1,7 @@
+@startuml
+
+    class KnockOnlyExistsValidator [[KnockOnlyExistsValidator.html]] {
+        +validate(Knock, String): ValidationResult<Knock>
+    }
+
+@enduml

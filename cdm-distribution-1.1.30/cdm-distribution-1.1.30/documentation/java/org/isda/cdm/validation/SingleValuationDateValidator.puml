@@ -1,0 +1,7 @@
+@startuml
+
+    class SingleValuationDateValidator [[SingleValuationDateValidator.html]] {
+        +validate(SingleValuationDate): ValidationResult<SingleValuationDate>
+    }
+
+@enduml

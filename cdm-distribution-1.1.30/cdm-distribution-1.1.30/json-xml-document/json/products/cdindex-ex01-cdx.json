@@ -1,0 +1,95 @@
+{
+  "contractIdentifier" : [ {
+    "identifierValue" : {
+      "identifier" : "CDX1234",
+      "identifierScheme" : "http://www.fpml.org/coding-scheme/external/unique-transaction-identifier"
+    },
+    "partyReference" : "r84fs"
+  } ],
+  "contractualProduct" : {
+    "economicTerms" : {
+      "payout" : {
+        "cashflow" : [ {
+          "payerReceiver" : {
+            "payerPartyReference" : "r84fs",
+            "receiverPartyReference" : "n5s4r"
+          },
+          "cashflowAmount" : {
+            "amount" : 16000,
+            "currency" : "USD"
+          },
+          "rosettaKeyValue" : "75918666"
+        } ],
+        "creditDefaultPayout" : {
+          "generalTerms" : {
+            "buyerSeller" : {
+              "buyerPartyReference" : "n5s4r",
+              "sellerPartyReference" : "r84fs"
+            },
+            "indexReferenceInformation" : {
+              "indexAnnexDate" : "2004-07-06",
+              "indexAnnexSource" : "PUBLISHER",
+              "indexName" : "Dow Jones CDX NA IG.2",
+              "indexSeries" : 2
+            }
+          },
+          "protectionTerms" : {
+            "notionalAmount" : {
+              "amount" : 25000000,
+              "currency" : "USD"
+            }
+          },
+          "rosettaKeyValue" : "c8941696"
+        },
+        "interestRatePayout" : [ {
+          "calculationPeriodDates" : {
+            "effectiveDate" : {
+              "adjustableDate" : {
+                "unadjustedDate" : "2004-03-23"
+              }
+            },
+            "terminationDate" : {
+              "unadjustedDate" : "2009-03-20"
+            }
+          },
+          "interestRate" : {
+            "fixedRate" : {
+              "initialValue" : 0.0060
+            }
+          },
+          "payerReceiver" : {
+            "payerPartyReference" : "n5s4r",
+            "receiverPartyReference" : "r84fs"
+          },
+          "rosettaKeyValue" : "890e857d"
+        } ]
+      },
+      "rosettaKeyValue" : "1e920b13"
+    }
+  },
+  "documentation" : {
+    "masterConfirmation" : {
+      "masterConfirmationDate" : "2004-10-18",
+      "masterConfirmationType" : "DJ_CDX_NA"
+    }
+  },
+  "party" : [ {
+    "id" : "r84fs",
+    "legalEntity" : {
+      "name" : "New Bank, New York"
+    },
+    "partyId" : [ "NEWBANKNYBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  }, {
+    "id" : "n5s4r",
+    "legalEntity" : {
+      "name" : "Massive Bank, New York"
+    },
+    "partyId" : [ "MASSIVENYBICXXX" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso9362"
+  } ],
+  "tradeDate" : {
+    "date" : "2005-01-24"
+  },
+  "rosettaKey" : "9599d46c"
+}

@@ -1,0 +1,7 @@
+@startuml
+
+    class CalculationPeriodChoice3ChoiceRule [[CalculationPeriodChoice3ChoiceRule.html]] {
+        +validate(CalculationPeriod): ValidationResult<CalculationPeriod>
+    }
+
+@enduml

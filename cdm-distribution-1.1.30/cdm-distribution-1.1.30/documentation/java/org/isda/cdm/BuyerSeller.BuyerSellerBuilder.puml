@@ -1,0 +1,15 @@
+@startuml
+
+    class BuyerSeller.BuyerSellerBuilder [[BuyerSeller.BuyerSellerBuilder.html]] {
+        +getBuyerAccountReference(): String
+        +getBuyerPartyReference(): String
+        +getSellerAccountReference(): String
+        +getSellerPartyReference(): String
+        +setBuyerAccountReference(String): BuyerSeller.BuyerSellerBuilder
+        +setBuyerPartyReference(String): BuyerSeller.BuyerSellerBuilder
+        +setSellerAccountReference(String): BuyerSeller.BuyerSellerBuilder
+        +setSellerPartyReference(String): BuyerSeller.BuyerSellerBuilder
+        +build(): BuyerSeller
+    }
+
+@enduml

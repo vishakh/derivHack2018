@@ -1,0 +1,9 @@
+@startuml
+
+    enum DiscountingTypeEnum [[DiscountingTypeEnum.html]] {
+        {static} +STANDARD
+        {static} +FRA
+        {static} +FRA_YIELD
+    }
+
+@enduml

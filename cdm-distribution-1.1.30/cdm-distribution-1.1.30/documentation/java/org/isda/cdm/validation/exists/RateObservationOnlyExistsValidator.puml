@@ -1,0 +1,7 @@
+@startuml
+
+    class RateObservationOnlyExistsValidator [[RateObservationOnlyExistsValidator.html]] {
+        +validate(RateObservation, String): ValidationResult<RateObservation>
+    }
+
+@enduml

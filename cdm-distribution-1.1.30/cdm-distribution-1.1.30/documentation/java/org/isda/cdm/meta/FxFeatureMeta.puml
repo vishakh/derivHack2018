@@ -1,0 +1,12 @@
+@startuml
+
+    class FxFeatureMeta [[FxFeatureMeta.html]] {
+        +dataRules(): List<Validator<FxFeature>>
+        +choiceRuleValidators(): List<Validator<FxFeature>>
+        +getOutMappings(): Multimap<String, OutMapping<FxFeature, ?>>
+        +getQualifyFunctions(): List<Function<FxFeature, QualifyResult>>
+        +validator(): Validator<FxFeature>
+        +onlyExistsValidator(): ValidatorWithArg<FxFeature, String>
+    }
+
+@enduml

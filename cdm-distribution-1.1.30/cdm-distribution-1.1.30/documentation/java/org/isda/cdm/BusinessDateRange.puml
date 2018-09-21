@@ -1,0 +1,11 @@
+@startuml
+
+    class BusinessDateRange [[BusinessDateRange.html]] {
+        +getBusinessCenters(): BusinessCenters
+        +getBusinessDayConvention(): BusinessDayConventionEnum
+        +toBuilder(): BusinessDateRange.BusinessDateRangeBuilder
+        {static} +builder(): BusinessDateRange.BusinessDateRangeBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

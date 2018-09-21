@@ -1,0 +1,7 @@
+@startuml
+
+    class LoanParticipationValidator [[LoanParticipationValidator.html]] {
+        +validate(LoanParticipation): ValidationResult<LoanParticipation>
+    }
+
+@enduml

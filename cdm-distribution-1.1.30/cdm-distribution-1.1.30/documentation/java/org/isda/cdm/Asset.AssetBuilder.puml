@@ -1,0 +1,15 @@
+@startuml
+
+    class Asset.AssetBuilder [[Asset.AssetBuilder.html]] {
+        +getCommodity(): Commodity.CommodityBuilder
+        +getOrCreateCommodity(): Commodity.CommodityBuilder
+        +getListedProduct(): ListedProduct.ListedProductBuilder
+        +getOrCreateListedProduct(): ListedProduct.ListedProductBuilder
+        +setCommodity(Commodity): Asset.AssetBuilder
+        +setCommodityBuilder(Commodity.CommodityBuilder): Asset.AssetBuilder
+        +setListedProduct(ListedProduct): Asset.AssetBuilder
+        +setListedProductBuilder(ListedProduct.ListedProductBuilder): Asset.AssetBuilder
+        +build(): Asset
+    }
+
+@enduml

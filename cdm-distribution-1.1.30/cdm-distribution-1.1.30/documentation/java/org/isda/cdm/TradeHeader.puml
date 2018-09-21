@@ -1,0 +1,11 @@
+@startuml
+
+    class TradeHeader [[TradeHeader.html]] {
+        +getIdentifier(): List<PartyContractIdentifier>
+        +getTradeDate(): LocalDate
+        +toBuilder(): TradeHeader.TradeHeaderBuilder
+        {static} +builder(): TradeHeader.TradeHeaderBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

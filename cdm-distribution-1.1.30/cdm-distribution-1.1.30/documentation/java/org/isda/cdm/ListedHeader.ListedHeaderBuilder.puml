@@ -1,0 +1,29 @@
+@startuml
+
+    abstract class ListedHeader.ListedHeaderBuilder [[ListedHeader.ListedHeaderBuilder.html]] {
+        +getClearanceSystem(): String
+        +getClearanceSystemScheme(): String
+        +getCurrency(): String
+        +getCurrencyScheme(): String
+        +getDescription(): String
+        +getId(): String
+        +getProductIdentifier(): List<ProductIdentifier.ProductIdentifierBuilder>
+        +getOrCreateProductIdentifier(int): ProductIdentifier.ProductIdentifierBuilder
+        +getProductIdentifierScheme(): String
+        +getProductTaxonomy(): List<ProductTaxonomy.ProductTaxonomyBuilder>
+        +getOrCreateProductTaxonomy(int): ProductTaxonomy.ProductTaxonomyBuilder
+        +setClearanceSystem(String): ListedHeader.ListedHeaderBuilder
+        +setClearanceSystemScheme(String): ListedHeader.ListedHeaderBuilder
+        +setCurrency(String): ListedHeader.ListedHeaderBuilder
+        +setCurrencyScheme(String): ListedHeader.ListedHeaderBuilder
+        +setDescription(String): ListedHeader.ListedHeaderBuilder
+        +setId(String): ListedHeader.ListedHeaderBuilder
+        +addProductIdentifier(ProductIdentifier): ListedHeader.ListedHeaderBuilder
+        +addProductIdentifierBuilder(ProductIdentifier.ProductIdentifierBuilder): ListedHeader.ListedHeaderBuilder
+        +setProductIdentifierScheme(String): ListedHeader.ListedHeaderBuilder
+        +addProductTaxonomy(ProductTaxonomy): ListedHeader.ListedHeaderBuilder
+        +addProductTaxonomyBuilder(ProductTaxonomy.ProductTaxonomyBuilder): ListedHeader.ListedHeaderBuilder
+        {abstract} +build(): ListedHeader
+    }
+
+@enduml

@@ -1,0 +1,228 @@
+{
+  "eventDate" : "2018-03-20",
+  "eventEffect" : {
+    "contract" : [ "2c88d7b9" ],
+    "effectedEvent" : "28426aa5"
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "789325456"
+    }
+  },
+  "eventQualifier" : "NewTradeEvent",
+  "messageInformation" : {
+    "messageId" : "1486297",
+    "messageIdScheme" : "http://www.party1.com/message-id",
+    "sentBy" : "894500DM8LVOSCMP9T34",
+    "sentTo" : "49300JZDC6K840D7F79"
+  },
+  "party" : [ {
+    "id" : "r4562d",
+    "partyId" : [ "894500DM8LVOSCMP9T34" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "mlk45",
+    "partyId" : [ "549300JZDC6K840D7F79" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "newTrade" : [ {
+      "contract" : {
+        "contractIdentifier" : [ {
+          "identifierValue" : {
+            "identifier" : "TW9235",
+            "identifierScheme" : "http://www.partyA.com/swaps/trade-id"
+          },
+          "partyReference" : "r4562d"
+        }, {
+          "identifierValue" : {
+            "identifier" : "SW2000",
+            "identifierScheme" : "http://www.barclays.com/swaps/trade-id"
+          },
+          "partyReference" : "mlk45"
+        } ],
+        "contractualProduct" : {
+          "economicTerms" : {
+            "payout" : {
+              "interestRatePayout" : [ {
+                "calculationPeriodDates" : {
+                  "calculationPeriodDatesAdjustments" : {
+                    "businessCenters" : {
+                      "businessCentersReference" : "primaryBusinessCenters"
+                    },
+                    "businessDayConvention" : "MODFOLLOWING"
+                  },
+                  "calculationPeriodFrequency" : {
+                    "period" : "M",
+                    "periodMultiplier" : 3,
+                    "rollConvention" : "_3"
+                  },
+                  "effectiveDate" : {
+                    "adjustableDate" : {
+                      "dateAdjustments" : {
+                        "businessDayConvention" : "NONE"
+                      },
+                      "unadjustedDate" : "2018-01-03"
+                    }
+                  },
+                  "id" : "floatingCalcPeriodDates",
+                  "terminationDate" : {
+                    "dateAdjustments" : {
+                      "businessCenters" : {
+                        "businessCenter" : [ "DEFR" ],
+                        "id" : "primaryBusinessCenters"
+                      },
+                      "businessDayConvention" : "MODFOLLOWING"
+                    },
+                    "unadjustedDate" : "2020-01-03"
+                  }
+                },
+                "dayCountFraction" : "ACT_360",
+                "interestRate" : {
+                  "floatingRate" : {
+                    "floatingRateIndex" : "EUR_LIBOR_BBA",
+                    "indexTenor" : {
+                      "period" : "M",
+                      "periodMultiplier" : 3
+                    }
+                  }
+                },
+                "payerReceiver" : {
+                  "payerPartyReference" : "r4562d",
+                  "receiverPartyReference" : "mlk45"
+                },
+                "paymentDates" : {
+                  "calculationPeriodDatesReference" : "floatingCalcPeriodDates",
+                  "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+                  "paymentDatesAdjustments" : {
+                    "businessCenters" : {
+                      "businessCentersReference" : "primaryBusinessCenters"
+                    },
+                    "businessDayConvention" : "MODFOLLOWING"
+                  },
+                  "paymentFrequency" : {
+                    "period" : "M",
+                    "periodMultiplier" : 3
+                  }
+                },
+                "quantity" : {
+                  "notionalSchedule" : {
+                    "notionalStepSchedule" : {
+                      "initialValue" : 50000000.00,
+                      "currency" : "EUR",
+                      "currencyScheme" : "http://www.fpml.org/coding-scheme/external/iso4217"
+                    }
+                  }
+                },
+                "resetDates" : {
+                  "calculationPeriodDatesReference" : "floatingCalcPeriodDates",
+                  "fixingDates" : {
+                    "period" : "D",
+                    "periodMultiplier" : -2,
+                    "dayType" : "BUSINESS",
+                    "businessCenters" : {
+                      "businessCenter" : [ "GBLO" ]
+                    },
+                    "businessDayConvention" : "NONE",
+                    "dateRelativeTo" : "resetDates"
+                  },
+                  "id" : "resetDates",
+                  "resetDatesAdjustments" : {
+                    "businessCenters" : {
+                      "businessCentersReference" : "primaryBusinessCenters"
+                    },
+                    "businessDayConvention" : "MODFOLLOWING"
+                  },
+                  "resetFrequency" : {
+                    "period" : "M",
+                    "periodMultiplier" : 6
+                  },
+                  "resetRelativeTo" : "CALCULATION_PERIOD_START_DATE"
+                },
+                "rosettaKeyValue" : "be756f34"
+              }, {
+                "calculationPeriodDates" : {
+                  "calculationPeriodDatesAdjustments" : {
+                    "businessCenters" : {
+                      "businessCentersReference" : "primaryBusinessCenters"
+                    },
+                    "businessDayConvention" : "MODFOLLOWING"
+                  },
+                  "calculationPeriodFrequency" : {
+                    "period" : "M",
+                    "periodMultiplier" : 3,
+                    "rollConvention" : "_3"
+                  },
+                  "effectiveDate" : {
+                    "adjustableDate" : {
+                      "dateAdjustments" : {
+                        "businessDayConvention" : "NONE"
+                      },
+                      "unadjustedDate" : "2018-01-03"
+                    }
+                  },
+                  "id" : "fixedCalcPeriodDates",
+                  "terminationDate" : {
+                    "dateAdjustments" : {
+                      "businessCenters" : {
+                        "businessCentersReference" : "primaryBusinessCenters"
+                      },
+                      "businessDayConvention" : "MODFOLLOWING"
+                    },
+                    "unadjustedDate" : "2020-01-03"
+                  }
+                },
+                "dayCountFraction" : "_30E_360",
+                "interestRate" : {
+                  "fixedRate" : {
+                    "initialValue" : 0.06
+                  }
+                },
+                "payerReceiver" : {
+                  "payerPartyReference" : "mlk45",
+                  "receiverPartyReference" : "r4562d"
+                },
+                "paymentDates" : {
+                  "calculationPeriodDatesReference" : "fixedCalcPeriodDates",
+                  "payRelativeTo" : "CALCULATION_PERIOD_END_DATE",
+                  "paymentDatesAdjustments" : {
+                    "businessCenters" : {
+                      "businessCentersReference" : "primaryBusinessCenters"
+                    },
+                    "businessDayConvention" : "MODFOLLOWING"
+                  },
+                  "paymentFrequency" : {
+                    "period" : "M",
+                    "periodMultiplier" : 3
+                  }
+                },
+                "quantity" : {
+                  "notionalSchedule" : {
+                    "notionalStepSchedule" : {
+                      "initialValue" : 50000000.00,
+                      "currency" : "EUR",
+                      "currencyScheme" : "http://www.fpml.org/coding-scheme/external/iso4217"
+                    }
+                  }
+                },
+                "rosettaKeyValue" : "576cad05"
+              } ]
+            },
+            "rosettaKeyValue" : "a6616ae7"
+          },
+          "productIdentification" : {
+            "productQualifier" : "InterestRate_IRSwap_FixedFloat"
+          }
+        },
+        "tradeDate" : {
+          "date" : "2018-01-03"
+        },
+        "rosettaKey" : "2c88d7b9"
+      }
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2018-03-20T18:13:51"
+  },
+  "rosettaKey" : "28426aa5"
+}

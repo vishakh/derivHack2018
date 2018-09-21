@@ -1,0 +1,7 @@
+@startuml
+
+    class FpMLCd32DataRule [[FpMLCd32DataRule.html]] {
+        +validate(Contract): ValidationResult<Contract>
+    }
+
+@enduml

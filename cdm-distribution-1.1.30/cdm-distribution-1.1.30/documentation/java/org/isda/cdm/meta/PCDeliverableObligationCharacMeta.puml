@@ -1,0 +1,12 @@
+@startuml
+
+    class PCDeliverableObligationCharacMeta [[PCDeliverableObligationCharacMeta.html]] {
+        +dataRules(): List<Validator<PCDeliverableObligationCharac>>
+        +choiceRuleValidators(): List<Validator<PCDeliverableObligationCharac>>
+        +getOutMappings(): Multimap<String, OutMapping<PCDeliverableObligationCharac, ?>>
+        +getQualifyFunctions(): List<Function<PCDeliverableObligationCharac, QualifyResult>>
+        +validator(): Validator<PCDeliverableObligationCharac>
+        +onlyExistsValidator(): ValidatorWithArg<PCDeliverableObligationCharac, String>
+    }
+
+@enduml

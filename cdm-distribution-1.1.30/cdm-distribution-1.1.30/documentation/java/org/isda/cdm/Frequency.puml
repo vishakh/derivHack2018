@@ -1,0 +1,12 @@
+@startuml
+
+    class Frequency [[Frequency.html]] {
+        +getId(): String
+        +getPeriod(): PeriodExtendedEnum
+        +getPeriodMultiplier(): Integer
+        +toBuilder(): Frequency.FrequencyBuilder
+        {static} +builder(): Frequency.FrequencyBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

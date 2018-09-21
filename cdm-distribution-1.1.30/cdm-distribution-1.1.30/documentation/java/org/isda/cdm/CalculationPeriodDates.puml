@@ -1,0 +1,21 @@
+@startuml
+
+    class CalculationPeriodDates [[CalculationPeriodDates.html]] {
+        +getCalculationPeriodDatesAdjustments(): BusinessDayAdjustments
+        +getCalculationPeriodFrequency(): CalculationPeriodFrequency
+        +getEffectiveDate(): DateInstances
+        +getFirstCompoundingPeriodEndDate(): LocalDate
+        +getFirstPeriodStartDate(): AdjustableDate
+        +getFirstRegularPeriodStartDate(): LocalDate
+        +getId(): String
+        +getLastRegularPeriodEndDate(): LocalDate
+        +getRelativeEffectiveDate(): AdjustedRelativeDateOffset
+        +getRelativeTerminationDate(): RelativeDateOffset
+        +getStubPeriodType(): StubPeriodTypeEnum
+        +getTerminationDate(): AdjustableDate
+        +toBuilder(): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        {static} +builder(): CalculationPeriodDates.CalculationPeriodDatesBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

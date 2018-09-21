@@ -1,0 +1,15 @@
+@startuml
+
+    class Schedule.ScheduleBuilder [[Schedule.ScheduleBuilder.html]] {
+        +getId(): String
+        +getInitialValue(): BigDecimal
+        +getStep(): List<Step.StepBuilder>
+        +getOrCreateStep(int): Step.StepBuilder
+        +setId(String): Schedule.ScheduleBuilder
+        +setInitialValue(BigDecimal): Schedule.ScheduleBuilder
+        +addStep(Step): Schedule.ScheduleBuilder
+        +addStepBuilder(Step.StepBuilder): Schedule.ScheduleBuilder
+        +build(): Schedule
+    }
+
+@enduml

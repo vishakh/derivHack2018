@@ -1,0 +1,77 @@
+{
+  "eventDate" : "2020-02-22",
+  "eventEffect" : {
+    "effectedEvent" : "6220efea",
+    "listedProduct" : [ "25b0fb08" ],
+    "transfer" : [ "9fa3a14c", "ef0fa9a2" ]
+  },
+  "eventIdentifier" : {
+    "identifierValue" : {
+      "identifier" : "trs-456123"
+    },
+    "version" : 1
+  },
+  "eventQualifier" : "SecuritySettlement",
+  "party" : [ {
+    "id" : "party1",
+    "partyId" : [ "Party 1" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  }, {
+    "id" : "party2",
+    "partyId" : [ "Party 2" ],
+    "partyIdScheme" : "http://www.fpml.org/coding-scheme/external/iso17442"
+  } ],
+  "primitive" : {
+    "transfer" : [ {
+      "asset" : {
+        "listedProduct" : {
+          "bond" : {
+            "productIdentifierScheme" : "CUSIP"
+          },
+          "rosettaKey" : "25b0fb08"
+        }
+      },
+      "payerReceiver" : {
+        "payerPartyReference" : "party1",
+        "receiverPartyReference" : "party2"
+      },
+      "quantity" : {
+        "amount" : 200
+      },
+      "transferDate" : {
+        "dateAdjustments" : {
+          "businessCenters" : {
+            "businessCenter" : [ "JPTO" ]
+          },
+          "businessDayConvention" : "MODFOLLOWING"
+        },
+        "unadjustedDate" : "2018-06-20"
+      },
+      "transferType" : "SECURITY_TRANSFER",
+      "rosettaKey" : "9fa3a14c"
+    }, {
+      "amount" : {
+        "amount" : 9970000000,
+        "currency" : "JPY"
+      },
+      "payerReceiver" : {
+        "payerPartyReference" : "party2",
+        "receiverPartyReference" : "party1"
+      },
+      "transferDate" : {
+        "dateAdjustments" : {
+          "businessCenters" : {
+            "businessCenter" : [ "JPTO" ]
+          },
+          "businessDayConvention" : "MODFOLLOWING"
+        },
+        "unadjustedDate" : "2018-06-20"
+      },
+      "rosettaKey" : "ef0fa9a2"
+    } ]
+  },
+  "timestamp" : {
+    "creationTimestamp" : "2020-02-22T14:26:00"
+  },
+  "rosettaKey" : "6220efea"
+}

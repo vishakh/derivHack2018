@@ -1,0 +1,11 @@
+@startuml
+
+    class MultipleValuationDates.MultipleValuationDatesBuilder [[MultipleValuationDates.MultipleValuationDatesBuilder.html]] {
+        +getBusinessDaysThereafter(): Integer
+        +getNumberValuationDates(): Integer
+        +setBusinessDaysThereafter(Integer): MultipleValuationDates.MultipleValuationDatesBuilder
+        +setNumberValuationDates(Integer): MultipleValuationDates.MultipleValuationDatesBuilder
+        +build(): MultipleValuationDates
+    }
+
+@enduml

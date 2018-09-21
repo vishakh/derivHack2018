@@ -1,0 +1,21 @@
+@startuml
+
+    class Party.PartyBuilder [[Party.PartyBuilder.html]] {
+        +getId(): String
+        +getLegalEntity(): LegalEntity.LegalEntityBuilder
+        +getOrCreateLegalEntity(): LegalEntity.LegalEntityBuilder
+        +getNaturalPerson(): List<NaturalPerson.NaturalPersonBuilder>
+        +getOrCreateNaturalPerson(int): NaturalPerson.NaturalPersonBuilder
+        +getPartyId(): List<String>
+        +getPartyIdScheme(): String
+        +setId(String): Party.PartyBuilder
+        +setLegalEntity(LegalEntity): Party.PartyBuilder
+        +setLegalEntityBuilder(LegalEntity.LegalEntityBuilder): Party.PartyBuilder
+        +addNaturalPerson(NaturalPerson): Party.PartyBuilder
+        +addNaturalPersonBuilder(NaturalPerson.NaturalPersonBuilder): Party.PartyBuilder
+        +addPartyId(String): Party.PartyBuilder
+        +setPartyIdScheme(String): Party.PartyBuilder
+        +build(): Party
+    }
+
+@enduml

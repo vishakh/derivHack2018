@@ -1,0 +1,7 @@
+@startuml
+
+    class PayoutValidator [[PayoutValidator.html]] {
+        +validate(Payout): ValidationResult<Payout>
+    }
+
+@enduml

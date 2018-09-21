@@ -1,0 +1,7 @@
+@startuml
+
+    class IsExercise [[IsExercise.html]] {
+        +apply(Event): QualifyResult
+    }
+
+@enduml

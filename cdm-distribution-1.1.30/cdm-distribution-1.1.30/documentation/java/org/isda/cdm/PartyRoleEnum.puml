@@ -1,0 +1,11 @@
+@startuml
+
+    enum PartyRoleEnum [[PartyRoleEnum.html]] {
+        {static} +BARRIER_DETERMINATION_AGENT
+        {static} +BENEFICIARY
+        {static} +BROKER
+        {static} +DETERMINING_PARTY
+        {static} +HEDGING_PARTY
+    }
+
+@enduml

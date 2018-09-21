@@ -1,0 +1,12 @@
+@startuml
+
+    class MultipleExerciseMeta [[MultipleExerciseMeta.html]] {
+        +dataRules(): List<Validator<MultipleExercise>>
+        +choiceRuleValidators(): List<Validator<MultipleExercise>>
+        +getOutMappings(): Multimap<String, OutMapping<MultipleExercise, ?>>
+        +getQualifyFunctions(): List<Function<MultipleExercise, QualifyResult>>
+        +validator(): Validator<MultipleExercise>
+        +onlyExistsValidator(): ValidatorWithArg<MultipleExercise, String>
+    }
+
+@enduml

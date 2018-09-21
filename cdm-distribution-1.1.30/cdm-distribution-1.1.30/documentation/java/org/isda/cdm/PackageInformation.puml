@@ -1,0 +1,12 @@
+@startuml
+
+    class PackageInformation [[PackageInformation.html]] {
+        +getCategory(): List<CategoryEnum>
+        +getIntentToAllocate(): Boolean
+        +getRelatedParty(): List<RelatedParty>
+        +toBuilder(): PackageInformation.PackageInformationBuilder
+        {static} +builder(): PackageInformation.PackageInformationBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

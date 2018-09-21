@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractIdentifierValidator [[ContractIdentifierValidator.html]] {
+        +validate(ContractIdentifier): ValidationResult<ContractIdentifier>
+    }
+
+@enduml

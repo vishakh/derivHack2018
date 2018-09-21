@@ -1,0 +1,7 @@
+@startuml
+
+    class ContractReferenceValidator [[ContractReferenceValidator.html]] {
+        +validate(ContractReference): ValidationResult<ContractReference>
+    }
+
+@enduml

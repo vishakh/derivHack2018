@@ -1,0 +1,15 @@
+@startuml
+
+    class ExerciseNotice.ExerciseNoticeBuilder [[ExerciseNotice.ExerciseNoticeBuilder.html]] {
+        +getBusinessCenter(): BusinessCenterEnum
+        +getBusinessCenterScheme(): String
+        +getExerciseNoticePartyReference(): String
+        +getPartyReference(): String
+        +setBusinessCenter(BusinessCenterEnum): ExerciseNotice.ExerciseNoticeBuilder
+        +setBusinessCenterScheme(String): ExerciseNotice.ExerciseNoticeBuilder
+        +setExerciseNoticePartyReference(String): ExerciseNotice.ExerciseNoticeBuilder
+        +setPartyReference(String): ExerciseNotice.ExerciseNoticeBuilder
+        +build(): ExerciseNotice
+    }
+
+@enduml

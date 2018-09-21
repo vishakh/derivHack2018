@@ -1,0 +1,10 @@
+@startuml
+
+    enum PremiumTypeEnum [[PremiumTypeEnum.html]] {
+        {static} +PRE_PAID
+        {static} +POST_PAID
+        {static} +VARIABLE
+        {static} +FIXED
+    }
+
+@enduml

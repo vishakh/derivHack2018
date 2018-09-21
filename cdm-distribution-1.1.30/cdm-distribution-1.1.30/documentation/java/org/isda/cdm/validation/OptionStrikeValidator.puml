@@ -1,0 +1,7 @@
+@startuml
+
+    class OptionStrikeValidator [[OptionStrikeValidator.html]] {
+        +validate(OptionStrike): ValidationResult<OptionStrike>
+    }
+
+@enduml

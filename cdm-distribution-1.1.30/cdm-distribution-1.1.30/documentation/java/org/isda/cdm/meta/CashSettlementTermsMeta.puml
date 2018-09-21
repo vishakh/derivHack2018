@@ -1,0 +1,12 @@
+@startuml
+
+    class CashSettlementTermsMeta [[CashSettlementTermsMeta.html]] {
+        +dataRules(): List<Validator<CashSettlementTerms>>
+        +choiceRuleValidators(): List<Validator<CashSettlementTerms>>
+        +getOutMappings(): Multimap<String, OutMapping<CashSettlementTerms, ?>>
+        +getQualifyFunctions(): List<Function<CashSettlementTerms, QualifyResult>>
+        +validator(): Validator<CashSettlementTerms>
+        +onlyExistsValidator(): ValidatorWithArg<CashSettlementTerms, String>
+    }
+
+@enduml

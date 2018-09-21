@@ -1,0 +1,25 @@
+@startuml
+
+    class InterestRatePayout [[InterestRatePayout.html]] {
+        +getBondReference(): BondReference
+        +getCalculationPeriodDates(): CalculationPeriodDates
+        +getCashflowRepresentation(): CashflowRepresentation
+        +getCompoundingMethod(): CompoundingMethodEnum
+        +getCrossCurrencyTerms(): CrossCurrencyTerms
+        +getDayCountFraction(): DayCountFractionEnum
+        +getDayCountFractionScheme(): String
+        +getDiscounting(): Discounting
+        +getId(): String
+        +getInterestRate(): InterestRate
+        +getPayerReceiver(): PayerReceiver
+        +getPaymentDates(): PaymentDates
+        +getQuantity(): ContractualQuantity
+        +getResetDates(): ResetDates
+        +getStubPeriod(): StubPeriod
+        +toBuilder(): InterestRatePayout.InterestRatePayoutBuilder
+        {static} +builder(): InterestRatePayout.InterestRatePayoutBuilder
+        +getRosettaKeyValue(): String
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

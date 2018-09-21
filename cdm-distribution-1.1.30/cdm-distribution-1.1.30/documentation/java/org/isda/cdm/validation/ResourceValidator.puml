@@ -1,0 +1,7 @@
+@startuml
+
+    class ResourceValidator [[ResourceValidator.html]] {
+        +validate(Resource): ValidationResult<Resource>
+    }
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+    class IdentifiedAsset.IdentifiedAssetBuilder [[IdentifiedAsset.IdentifiedAssetBuilder.html]] {
+        +getDescription(): String
+        +getId(): String
+        +getInstrumentIdentifier(): List<String>
+        +getInstrumentIdentifierScheme(): String
+        +setDescription(String): IdentifiedAsset.IdentifiedAssetBuilder
+        +setId(String): IdentifiedAsset.IdentifiedAssetBuilder
+        +addInstrumentIdentifier(String): IdentifiedAsset.IdentifiedAssetBuilder
+        +setInstrumentIdentifierScheme(String): IdentifiedAsset.IdentifiedAssetBuilder
+        +build(): IdentifiedAsset
+    }
+
+@enduml

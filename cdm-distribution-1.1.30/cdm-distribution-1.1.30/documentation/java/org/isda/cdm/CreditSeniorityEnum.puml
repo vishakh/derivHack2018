@@ -1,0 +1,13 @@
+@startuml
+
+    enum CreditSeniorityEnum [[CreditSeniorityEnum.html]] {
+        {static} +OTHER
+        {static} +SENIOR_SEC
+        {static} +SENIOR_UN_SEC
+        {static} +SUB_LOWER_TIER_2
+        {static} +SUB_TIER_1
+        {static} +SUB_TIER_3
+        {static} +SUB_UPPER_TIER_2
+    }
+
+@enduml

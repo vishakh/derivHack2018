@@ -1,0 +1,13 @@
+@startuml
+
+    enum TimeTypeEnum [[TimeTypeEnum.html]] {
+        {static} +CLOSE
+        {static} +OPEN
+        {static} +OSP
+        {static} +SPECIFIC_TIME
+        {static} +XETRA
+        {static} +DERIVATIVES_CLOSE
+        {static} +AS_SPECIFIED_IN_MASTER_CONFIRMATION
+    }
+
+@enduml

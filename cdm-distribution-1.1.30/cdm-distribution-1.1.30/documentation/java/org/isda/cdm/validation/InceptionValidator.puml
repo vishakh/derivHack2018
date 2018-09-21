@@ -1,0 +1,7 @@
+@startuml
+
+    class InceptionValidator [[InceptionValidator.html]] {
+        +validate(Inception): ValidationResult<Inception>
+    }
+
+@enduml

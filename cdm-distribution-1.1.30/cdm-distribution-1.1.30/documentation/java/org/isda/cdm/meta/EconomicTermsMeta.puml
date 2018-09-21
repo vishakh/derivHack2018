@@ -1,0 +1,12 @@
+@startuml
+
+    class EconomicTermsMeta [[EconomicTermsMeta.html]] {
+        +dataRules(): List<Validator<EconomicTerms>>
+        +choiceRuleValidators(): List<Validator<EconomicTerms>>
+        +getOutMappings(): Multimap<String, OutMapping<EconomicTerms, ?>>
+        +getQualifyFunctions(): List<Function<EconomicTerms, QualifyResult>>
+        +validator(): Validator<EconomicTerms>
+        +onlyExistsValidator(): ValidatorWithArg<EconomicTerms, String>
+    }
+
+@enduml

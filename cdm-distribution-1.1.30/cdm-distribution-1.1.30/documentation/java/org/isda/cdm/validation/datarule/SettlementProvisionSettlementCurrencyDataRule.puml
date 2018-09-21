@@ -1,0 +1,7 @@
+@startuml
+
+    class SettlementProvisionSettlementCurrencyDataRule [[SettlementProvisionSettlementCurrencyDataRule.html]] {
+        +validate(InterestRatePayout): ValidationResult<InterestRatePayout>
+    }
+
+@enduml

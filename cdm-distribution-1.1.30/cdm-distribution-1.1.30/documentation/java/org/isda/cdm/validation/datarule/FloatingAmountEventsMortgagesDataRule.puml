@@ -1,0 +1,7 @@
+@startuml
+
+    class FloatingAmountEventsMortgagesDataRule [[FloatingAmountEventsMortgagesDataRule.html]] {
+        +validate(Contract): ValidationResult<Contract>
+    }
+
+@enduml

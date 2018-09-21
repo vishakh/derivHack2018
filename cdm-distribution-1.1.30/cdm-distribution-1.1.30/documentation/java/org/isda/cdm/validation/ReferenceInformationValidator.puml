@@ -1,0 +1,7 @@
+@startuml
+
+    class ReferenceInformationValidator [[ReferenceInformationValidator.html]] {
+        +validate(ReferenceInformation): ValidationResult<ReferenceInformation>
+    }
+
+@enduml

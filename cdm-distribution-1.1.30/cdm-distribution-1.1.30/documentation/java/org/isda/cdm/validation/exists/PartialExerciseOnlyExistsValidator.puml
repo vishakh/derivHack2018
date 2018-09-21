@@ -1,0 +1,7 @@
+@startuml
+
+    class PartialExerciseOnlyExistsValidator [[PartialExerciseOnlyExistsValidator.html]] {
+        +validate(PartialExercise, String): ValidationResult<PartialExercise>
+    }
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+
+    class FxLinkedNotionalScheduleOnlyExistsValidator [[FxLinkedNotionalScheduleOnlyExistsValidator.html]] {
+        +validate(FxLinkedNotionalSchedule, String): ValidationResult<FxLinkedNotionalSchedule>
+    }
+
+@enduml

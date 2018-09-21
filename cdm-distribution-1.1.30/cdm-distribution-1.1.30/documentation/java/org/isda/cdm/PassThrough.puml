@@ -1,0 +1,10 @@
+@startuml
+
+    class PassThrough [[PassThrough.html]] {
+        +getPassThroughItem(): List<PassThroughItem>
+        +toBuilder(): PassThrough.PassThroughBuilder
+        {static} +builder(): PassThrough.PassThroughBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

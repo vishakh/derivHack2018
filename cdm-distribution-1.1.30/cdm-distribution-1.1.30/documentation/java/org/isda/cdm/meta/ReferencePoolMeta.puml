@@ -1,0 +1,12 @@
+@startuml
+
+    class ReferencePoolMeta [[ReferencePoolMeta.html]] {
+        +dataRules(): List<Validator<ReferencePool>>
+        +choiceRuleValidators(): List<Validator<ReferencePool>>
+        +getOutMappings(): Multimap<String, OutMapping<ReferencePool, ?>>
+        +getQualifyFunctions(): List<Function<ReferencePool, QualifyResult>>
+        +validator(): Validator<ReferencePool>
+        +onlyExistsValidator(): ValidatorWithArg<ReferencePool, String>
+    }
+
+@enduml

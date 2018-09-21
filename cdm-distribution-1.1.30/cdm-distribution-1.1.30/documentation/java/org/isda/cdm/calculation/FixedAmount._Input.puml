@@ -1,0 +1,7 @@
+@startuml
+
+    class FixedAmount._Input [[FixedAmount._Input.html]] {
+        +create(InterestRatePayout, DaysInPeriod, CalculationPeriod): FixedAmount._Input
+    }
+
+@enduml

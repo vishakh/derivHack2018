@@ -1,0 +1,7 @@
+@startuml
+
+    class AdjustableOrRelativeDatesChoiceRule [[AdjustableOrRelativeDatesChoiceRule.html]] {
+        +validate(AdjustableOrRelativeDates): ValidationResult<AdjustableOrRelativeDates>
+    }
+
+@enduml

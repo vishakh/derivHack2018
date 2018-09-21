@@ -1,0 +1,12 @@
+@startuml
+
+    class CalculationAmountMeta [[CalculationAmountMeta.html]] {
+        +dataRules(): List<Validator<CalculationAmount>>
+        +choiceRuleValidators(): List<Validator<CalculationAmount>>
+        +getOutMappings(): Multimap<String, OutMapping<CalculationAmount, ?>>
+        +getQualifyFunctions(): List<Function<CalculationAmount, QualifyResult>>
+        +validator(): Validator<CalculationAmount>
+        +onlyExistsValidator(): ValidatorWithArg<CalculationAmount, String>
+    }
+
+@enduml

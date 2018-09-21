@@ -1,0 +1,12 @@
+@startuml
+
+    class OptionSettlementMeta [[OptionSettlementMeta.html]] {
+        +dataRules(): List<Validator<OptionSettlement>>
+        +choiceRuleValidators(): List<Validator<OptionSettlement>>
+        +getOutMappings(): Multimap<String, OutMapping<OptionSettlement, ?>>
+        +getQualifyFunctions(): List<Function<OptionSettlement, QualifyResult>>
+        +validator(): Validator<OptionSettlement>
+        +onlyExistsValidator(): ValidatorWithArg<OptionSettlement, String>
+    }
+
+@enduml

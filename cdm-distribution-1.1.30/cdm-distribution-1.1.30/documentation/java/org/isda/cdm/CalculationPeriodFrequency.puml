@@ -1,0 +1,10 @@
+@startuml
+
+    class CalculationPeriodFrequency [[CalculationPeriodFrequency.html]] {
+        +getRollConvention(): RollConventionEnum
+        +toBuilder(): CalculationPeriodFrequency.CalculationPeriodFrequencyBuilder
+        {static} +builder(): CalculationPeriodFrequency.CalculationPeriodFrequencyBuilder
+        #rosettaKeyValueHashCode(): int
+    }
+
+@enduml

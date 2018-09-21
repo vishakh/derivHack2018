@@ -1,0 +1,7 @@
+@startuml
+
+    class BusinessCenterTimeValidator [[BusinessCenterTimeValidator.html]] {
+        +validate(BusinessCenterTime): ValidationResult<BusinessCenterTime>
+    }
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+    class MandatoryEarlyTerminationAdjustedDates.MandatoryEarlyTerminationAdjustedDatesBuilder [[MandatoryEarlyTerminationAdjustedDates.MandatoryEarlyTerminationAdjustedDatesBuilder.html]] {
+        +getAdjustedCashSettlementPaymentDate(): LocalDate
+        +getAdjustedCashSettlementValuationDate(): LocalDate
+        +getAdjustedEarlyTerminationDate(): LocalDate
+        +setAdjustedCashSettlementPaymentDate(LocalDate): MandatoryEarlyTerminationAdjustedDates.MandatoryEarlyTerminationAdjustedDatesBuilder
+        +setAdjustedCashSettlementValuationDate(LocalDate): MandatoryEarlyTerminationAdjustedDates.MandatoryEarlyTerminationAdjustedDatesBuilder
+        +setAdjustedEarlyTerminationDate(LocalDate): MandatoryEarlyTerminationAdjustedDates.MandatoryEarlyTerminationAdjustedDatesBuilder
+        +build(): MandatoryEarlyTerminationAdjustedDates
+    }
+
+@enduml

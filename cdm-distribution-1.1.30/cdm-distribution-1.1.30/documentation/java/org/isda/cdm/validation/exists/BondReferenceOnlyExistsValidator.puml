@@ -1,0 +1,7 @@
+@startuml
+
+    class BondReferenceOnlyExistsValidator [[BondReferenceOnlyExistsValidator.html]] {
+        +validate(BondReference, String): ValidationResult<BondReference>
+    }
+
+@enduml
